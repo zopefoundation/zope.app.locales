@@ -16,8 +16,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zope X3\n"
-"POT-Creation-Date: Tue Sep  7 17:00:13 2004\n"
-"PO-Revision-Date: 2004-09-08 17:10+0000\n"
+"POT-Creation-Date: Thu Oct  7 15:41:22 2004\n"
+"PO-Revision-Date: 2004-10-07 15:43+0000\n"
 "Last-Translator: Dmitry Vasiliev <dima@hlabs.spb.ru>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
 "MIME-Version: 1.0\n"
@@ -168,20 +168,23 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"    Данный модуль позволяет получить информацию о модулях и классах определенных в Zope 3 и "
-"вспомогательных пакетах. Данный модуль поддерживает два способа навигации для поиска "
-"интересующих классов.\n"
+"    Данный модуль позволяет получить информацию о модулях и классах "
+"определенных в Zope 3 и вспомогательных пакетах. Данный модуль поддерживает "
+"два способа навигации для поиска интересующих классов.\n"
 "\n"
-"    Первый способ - набрать часть пути Python до интересующего класса и модуль будет искать совпадения "
-"в реестре классов. Затем список найденных объектов будет показан в меню.\n"
+"    Первый способ - набрать часть пути Python до интересующего класса и "
+"модуль будет искать совпадения в реестре классов. Затем список найденных "
+"объектов будет показан в меню.\n"
 "\n"
-"    Второй способ - нажать на ссылку \"Просмотр исходного кода Zope 3\" и в основном окне "
-"будут показаны модули верхнего уровня Zope 3. Далее можно выбирать модули для просмотра "
-"их содержимого, если будут найдены классы они будут выделены жирным шрифтом.\n"
+"    Второй способ - нажать на ссылку \"Просмотр исходного кода Zope 3\" и в "
+"основном окне будут показаны модули верхнего уровня Zope 3. Далее можно "
+"выбирать модули для просмотра их содержимого, если будут найдены классы они "
+"будут выделены жирным шрифтом.\n"
 "\n"
-"    Документация по классам предоставляет огромное количество информации. Не только базовые "
-"классы, реализованные интерфейсы, атрибуты и методы, но также и интерфейс требующий реализации "
-"того или иного метода или атрибута и права необходимые для доступа к методам и атрибутам."
+"    Документация по классам предоставляет огромное количество информации. Не "
+"только базовые классы, реализованные интерфейсы, атрибуты и методы, но также "
+"и интерфейс требующий реализации того или иного метода или атрибута и права "
+"необходимые для доступа к методам и атрибутам."
 
 #: src/zope/app/apidoc/classmodule/__init__.py:587
 msgid "Zope 3 root."
@@ -413,12 +416,12 @@ msgid ""
 "Service."
 msgstr "Внимание: показаны только интерфейсы зарегистрированные сервисом интерфейсов."
 
-#: src/zope/app/apidoc/servicemodule/__init__.py:73
+#: src/zope/app/apidoc/servicemodule/__init__.py:75
 #: src/zope/app/site/browser/configure.zcml:87
 msgid "Services"
 msgstr "Сервисы"
 
-#: src/zope/app/apidoc/servicemodule/__init__.py:76
+#: src/zope/app/apidoc/servicemodule/__init__.py:78
 msgid ""
 "\n"
 "    The services module let's the reader browse through all defined\n"
@@ -451,8 +454,8 @@ msgstr ""
 "    В данном случае по умолчанию мы используем None для context (текущего "
 "контекста) и следовательно всегда возвращается глобальный сервис. Если "
 "использовать объект имеющий местоположение в дереве просмотра, будет "
-"возвращен ближайший сервис, включающий локальные сервисы. Имя сервиса "
-"может быть одно из имен представленных в меню.\n"
+"возвращен ближайший сервис, включающий локальные сервисы. Имя сервиса может "
+"быть одно из имен представленных в меню.\n"
 "\n"
 "    Для каждого сервиса показаны атрибуты и методы интерфейса сервиса. Ниже "
 "представлен список реализаций сервиса."
@@ -501,13 +504,13 @@ msgstr "Список всех доступных сервисов по имен�
 msgid "n/a"
 msgstr "Нет информации"
 
-#: src/zope/app/apidoc/utilitymodule/__init__.py:127
+#: src/zope/app/apidoc/utilitymodule/__init__.py:129
 #: src/zope/app/utility/browser/configure.zcml:31
 #: src/zope/app/apidoc/ifacemodule/index.pt:223
 msgid "Utilities"
 msgstr "Утилиты"
 
-#: src/zope/app/apidoc/utilitymodule/__init__.py:130
+#: src/zope/app/apidoc/utilitymodule/__init__.py:132
 msgid ""
 "\n"
 "    Utilities are also nicely registered in a service, so that it is easy "
@@ -525,13 +528,14 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"    Утилиты всегда регистрируются в сервисе утилит, поэтому легко получить список доступных утилит. "
-"Утилита идентифицируется предоставляемым интерфейсом и именем, которое может быть пустым. "
-"Меню показывает список интерфейсов предоставляемых утилитами и в качестве дочерних элементов "
-"имена различных реализаций.\n"
+"    Утилиты всегда регистрируются в сервисе утилит, поэтому легко получить "
+"список доступных утилит. Утилита идентифицируется предоставляемым "
+"интерфейсом и именем, которое может быть пустым. Меню показывает список "
+"интерфейсов предоставляемых утилитами и в качестве дочерних элементов имена "
+"различных реализаций.\n"
 "\n"
-"    Документация по утилите описывает все атрибуты/поля и методы, предоставляемые утилитой, и также "
-"ссылку на реализацию."
+"    Документация по утилите описывает все атрибуты/поля и методы, "
+"предоставляемые утилитой, и также ссылку на реализацию."
 
 #: src/zope/app/apidoc/utilitymodule/index.pt:17
 msgid "Component:"
@@ -585,9 +589,9 @@ msgid ""
 msgstr ""
 "\n"
 "    Модуль представлений достаточно сложен т.к. представление или ресурс не "
-"может быть идентифицировано одним интерфейсом или именем, а только "
-"набором от четырех до пяти параметров. Меню позволяет выбрать интерфейс "
-"и тип представления для которого представление должно быть найдено.\n"
+"может быть идентифицировано одним интерфейсом или именем, а только набором "
+"от четырех до пяти параметров. Меню позволяет выбрать интерфейс и тип "
+"представления для которого представление должно быть найдено.\n"
 "\n"
 "    По умолчанию результат исключает представления не требующие интерфейса "
 "(``None``) или зарегистрированные для интерфейса ``zope.interface."
@@ -603,8 +607,8 @@ msgstr ""
 "фабрики, например, класс представления, шаблон или ресурс.\n"
 "\n"
 "    Также в меню есть отдельная, независимая, ссылка \"Показать оформления и "
-"слои оформлений\" при нажатии на которую будут показаны соответствия "
-"между слоями и оформлениями."
+"слои оформлений\" при нажатии на которую будут показаны соответствия между "
+"слоями и оформлениями."
 
 #: src/zope/app/apidoc/viewmodule/index.pt:14
 msgid "Layer"
@@ -653,6 +657,11 @@ msgstr "Тип представления:"
 #: src/zope/app/apidoc/viewmodule/menu.pt:28
 msgid "Show all views:"
 msgstr "Показать все представления:"
+
+# Default: "Show"
+#: src/zope/app/apidoc/viewmodule/menu.pt:31
+msgid "show-button"
+msgstr "Показать"
 
 #: src/zope/app/apidoc/viewmodule/menu.pt:36
 msgid "Show Skins and Layers"
@@ -761,10 +770,8 @@ msgid "Subdirectives"
 msgstr "Поддирективы"
 
 #: src/zope/app/apidoc/zcmlmodule/menu.pt:4
-msgid "Namespaces that are not full URLs start with \"http://namespaces.zope.org\"."
-msgstr ""
-"Пространства имен не показанные как полные URL начинаются с \"http://"
-"namespaces.zope.org\"."
+msgid "Namespaces that are not full URLs start with \"http://namespaces.zope.org/\"."
+msgstr "Пространства имен не показанные как полные URL начинаются с \"http://namespaces.zope.org/\"."
 
 #: src/zope/app/applicationcontrol/browser/configure.zcml:10
 msgid "Server Control"
@@ -868,6 +875,11 @@ msgstr "Вы остановили сервер"
 msgid "Domain"
 msgstr "Область"
 
+#: src/zope/app/applicationcontrol/browser/translationdomaincontrol.pt:16
+#: src/zope/app/i18n/browser/synchronize.pt:88
+msgid "Language"
+msgstr "Язык"
+
 #: src/zope/app/applicationcontrol/browser/translationdomaincontrol.pt:17
 msgid "Files"
 msgstr "Файлы"
@@ -952,6 +964,17 @@ msgstr "На данный момент объект использует ${cache
 #: src/zope/app/cache/browser/cacheableedit.pt:37
 msgid "Cache name"
 msgstr "Название кэша"
+
+# Default: "Save Changes"
+#: src/zope/app/cache/browser/cacheableedit.pt:45
+#: src/zope/app/cache/browser/ramedit.pt:51
+#: src/zope/app/dublincore/browser/edit.pt:35
+#: src/zope/app/rdb/browser/rdbconnection.pt:28
+#: src/zope/app/errorservice/browser/error_config.pt:46
+#: src/zope/app/securitypolicy/browser/manage_roleform.pt:63
+#: src/zope/app/securitypolicy/browser/manage_permissionform.pt:86
+msgid "save-changes-button"
+msgstr "Сохранить"
 
 # Default: "Invalidate Cached Value"
 #: src/zope/app/cache/browser/cacheableedit.pt:47
@@ -1096,7 +1119,6 @@ msgid "You didn't specify any ids to rename."
 msgstr "Вы не выбрали элементы для переименования."
 
 #: src/zope/app/container/browser/metaconfigure.py:65
-#: src/zope/app/folder/browser/configure.zcml:20
 #: src/zope/app/site/browser/configure.zcml:19
 msgid "Contents"
 msgstr "Содержимое"
@@ -1131,6 +1153,10 @@ msgstr "1 элемент"
 #: src/zope/app/container/size.py:41
 msgid "${items} items"
 msgstr "${items} элементов(а)"
+
+#: src/zope/app/dav/tests/test_adapter.py:56
+msgid "${num} robot unit"
+msgstr ""
 
 #: src/zope/app/debugskin/error_debug.pt:12
 msgid "Error object: ${error_object}"
@@ -1357,8 +1383,6 @@ msgstr "Загрузить файл"
 
 #: src/zope/app/file/browser/configure.zcml:37
 #: src/zope/app/file/browser/configure.zcml:77
-#: src/zope/app/i18nfile/browser/configure.zcml:34
-#: src/zope/app/i18nfile/browser/configure.zcml:76
 msgid "Upload"
 msgstr "Загрузить"
 
@@ -1405,8 +1429,6 @@ msgid " ${width}x${height}"
 msgstr " ${width}x${height}"
 
 #: src/zope/app/file/interfaces.py:25
-#: src/zope/app/i18nfile/browser/file_edit.pt:31
-#: src/zope/app/i18nfile/browser/image_edit.pt:32
 msgid "Content Type"
 msgstr "Тип данных"
 
@@ -1415,8 +1437,6 @@ msgid "The content type identifies the type of data."
 msgstr "Идентифицирует тип данных."
 
 #: src/zope/app/file/interfaces.py:33
-#: src/zope/app/i18nfile/browser/file_edit.pt:78
-#: src/zope/app/i18nfile/browser/image_edit.pt:79
 msgid "Data"
 msgstr "Данные"
 
@@ -1424,7 +1444,7 @@ msgstr "Данные"
 msgid "The actual content of the object."
 msgstr "Содержимое объекта."
 
-#: src/zope/app/folder/browser/configure.zcml:40
+#: src/zope/app/folder/browser/configure.zcml:29
 #: src/zope/app/dtmlpage/configure.zcml:93
 #: src/zope/app/file/browser/configure.zcml:122
 #: src/zope/app/file/browser/configure.zcml:130
@@ -1463,83 +1483,6 @@ msgstr "выкл."
 msgid "on"
 msgstr "вкл."
 
-#: src/zope/app/form/browser/complexsample/complexsample.py:47
-msgid "sampleWidget-button-move-up"
-msgstr "Переместить вверх"
-
-#: src/zope/app/form/browser/complexsample/complexsample.py:48
-msgid "sampleWidget-button-move-down"
-msgstr "Переместить вниз"
-
-#: src/zope/app/form/browser/complexsample/complexsample.py:49
-msgid "sampleWidget-button-remove"
-msgstr "Удалить"
-
-#: src/zope/app/form/browser/complexsample/complexsample.py:50
-msgid "sampleWidget-button-add-done"
-msgstr "Добавить и завершить"
-
-#: src/zope/app/form/browser/complexsample/complexsample.py:51
-msgid "sampleWidget-button-add-more"
-msgstr "Добавить и продолжить"
-
-#: src/zope/app/form/browser/complexsample/complexsample.py:52
-msgid "sampleWidget-button-more"
-msgstr "Еще"
-
-#: src/zope/app/form/browser/complexsample/complexsample.py:53
-msgid "sampleWidget-button-clear"
-msgstr "Сбросить значение"
-
-#: src/zope/app/form/browser/complexsample/complexsample.py:54
-msgid "sampleWidget-button-query"
-msgstr "Искать"
-
-#: src/zope/app/form/browser/complexsample/complexsample.py:55
-msgid "sampleWidget-button-select"
-msgstr "Выбрать"
-
-#: src/zope/app/form/browser/complexsample/complexsample.py:56
-msgid "sampleWidget-button-dismiss"
-msgstr "Отказаться"
-
-#: src/zope/app/form/browser/complexsample/complexsample.py:59
-msgid "sampleWidget-label-enter-search-text"
-msgstr "Текст для поиска:"
-
-#: src/zope/app/form/browser/complexsample/complexsample.py:61
-msgid "sampleWidget-label-select-content-type"
-msgstr "Выберите тип контента:"
-
-#: src/zope/app/form/browser/complexsample/complexsample.py:63
-msgid "sampleWidget-label-any-content-type"
-msgstr "(любой)"
-
-#: src/zope/app/form/browser/complexsample/complexsample.py:65
-msgid "sampleWidget-label-inaccessable-object"
-msgstr "(недоступный или отсутствующий объект)"
-
-#: src/zope/app/form/browser/complexsample/interfaces.py:31
-#: src/zope/app/publisher/interfaces/browser.py:44
-#: src/zope/app/publisher/interfaces/browser.py:87
-#: src/zope/app/security/interfaces.py:44
-#: src/zope/app/security/interfaces.py:189 src/zope/schema/interfaces.py:100
-#: src/zope/schema/interfaces.py:484
-#: src/zope/app/site/browser/interfacebrowse.pt:11
-#: src/zope/app/dublincore/browser/edit.pt:16
-#: src/zope/app/container/browser/contents.pt:33
-#: src/zope/app/container/browser/index.pt:27
-msgid "Title"
-msgstr "Заголовок"
-
-#: src/zope/app/form/browser/complexsample/widgetapi.py:58
-msgid "widget-missing-single-value"
-msgstr "(нет значения)"
-
-#: src/zope/app/form/browser/complexsample/widgetapi.py:60
-msgid "widget-missing-multiple-value"
-msgstr "(нет значений)"
-
 #: src/zope/app/form/browser/editview.py:116
 msgid "Updated on ${date_time}"
 msgstr "Обновлено ${date_time}"
@@ -1564,20 +1507,20 @@ msgstr "Нет изменений для сохранения"
 msgid "Changes saved"
 msgstr "Изменения сохранены"
 
-#: src/zope/app/form/browser/itemswidgets.py:202
+#: src/zope/app/form/browser/itemswidgets.py:201
 msgid "item-missing-single-value-for-display"
 msgstr "(нет значения)"
 
-#: src/zope/app/form/browser/itemswidgets.py:218
+#: src/zope/app/form/browser/itemswidgets.py:217
 msgid "vocabulary-missing-multiple-value-for-display"
 msgstr "(нет значений)"
 
-#: src/zope/app/form/browser/itemswidgets.py:398
-#: src/zope/app/form/browser/itemswidgets.py:442
+#: src/zope/app/form/browser/itemswidgets.py:367
+#: src/zope/app/form/browser/itemswidgets.py:411
 msgid "vocabulary-missing-single-value-for-edit"
 msgstr "(нет значения)"
 
-#: src/zope/app/form/browser/itemswidgets.py:516
+#: src/zope/app/form/browser/itemswidgets.py:485
 msgid "vocabulary-missing-multiple-value-for-edit"
 msgstr "(нет значений)"
 
@@ -1589,26 +1532,6 @@ msgstr "Удалить выбранные элементы"
 #: src/zope/app/form/browser/sequencewidget.py:91
 msgid "Add %s"
 msgstr "Добавить %s"
-
-#: src/zope/app/form/browser/vocabularyquery.py:167
-msgid "vocabulary-query-button-add-done"
-msgstr "Добавить и завершить"
-
-#: src/zope/app/form/browser/vocabularyquery.py:169
-msgid "vocabulary-query-button-add-more"
-msgstr "Добавить и продолжить"
-
-#: src/zope/app/form/browser/vocabularyquery.py:171
-msgid "vocabulary-query-button-more"
-msgstr "Еще"
-
-#: src/zope/app/form/browser/vocabularyquery.py:173
-msgid "vocabulary-query-message-no-results"
-msgstr "Нет результатов"
-
-#: src/zope/app/form/browser/vocabularyquery.py:175
-msgid "vocabulary-query-header-results"
-msgstr "Результаты поиска"
 
 #: src/zope/app/generations/browser/configure.zcml:6
 msgid "Database Schemas"
@@ -1808,98 +1731,6 @@ msgstr "Сервис переводов - Перевести"
 msgid "Edit Message"
 msgstr "Редактировать сообщение"
 
-#: src/zope/app/i18nfile/browser/configure.zcml:39
-msgid "A file that supports multiple locales."
-msgstr "Файл содержащий контент для нескольких языков."
-
-#: src/zope/app/i18nfile/browser/configure.zcml:81
-msgid "A multi-locale version of an Image."
-msgstr "Изображение содержащее изображения для нескольких языков."
-
-#: src/zope/app/i18nfile/browser/file_edit.pt:39
-#: src/zope/app/i18nfile/browser/image_edit.pt:40
-msgid "Default Language"
-msgstr "Язык по умолчанию"
-
-#: src/zope/app/i18nfile/browser/file_edit.pt:54
-#: src/zope/app/i18nfile/browser/image_edit.pt:55
-#: src/zope/app/applicationcontrol/browser/translationdomaincontrol.pt:16
-#: src/zope/app/i18n/browser/synchronize.pt:88
-msgid "Language"
-msgstr "Язык"
-
-# Default: "Show"
-#: src/zope/app/i18nfile/browser/file_edit.pt:66
-#: src/zope/app/i18nfile/browser/image_edit.pt:67
-#: src/zope/app/apidoc/viewmodule/menu.pt:31
-msgid "show-button"
-msgstr "Показать"
-
-# Default: "Remove"
-#: src/zope/app/i18nfile/browser/file_edit.pt:68
-#: src/zope/app/i18nfile/browser/image_edit.pt:69
-#: src/zope/app/introspector/marker.pt:118
-#: src/zope/app/registration/browser/editregistration.pt:53
-msgid "remove-button"
-msgstr "Удалить"
-
-#: src/zope/app/i18nfile/browser/file_edit.pt:71
-#: src/zope/app/i18nfile/browser/image_edit.pt:72
-msgid "Add new language"
-msgstr "Добавить новый язык"
-
-# Default: "Save Changes"
-#: src/zope/app/i18nfile/browser/file_edit.pt:87
-#: src/zope/app/i18nfile/browser/image_edit.pt:94
-#: src/zope/app/cache/browser/cacheableedit.pt:45
-#: src/zope/app/cache/browser/ramedit.pt:51
-#: src/zope/app/dublincore/browser/edit.pt:35
-#: src/zope/app/rdb/browser/rdbconnection.pt:28
-#: src/zope/app/errorservice/browser/error_config.pt:46
-#: src/zope/app/securitypolicy/browser/manage_roleform.pt:63
-#: src/zope/app/securitypolicy/browser/manage_permissionform.pt:86
-msgid "save-changes-button"
-msgstr "Сохранить"
-
-#: src/zope/app/i18nfile/browser/i18nfile.py:44
-#: src/zope/app/i18nfile/browser/i18nimage.py:27
-msgid "Edit Form"
-msgstr "Форма редактирования"
-
-#: src/zope/app/i18nfile/browser/i18nfile.py:45
-msgid "This edit form allows you to make changes to the properties of this file."
-msgstr ""
-"Данная форма редактирования позволяет сделать изменения в свойствах данного "
-"файла."
-
-#: src/zope/app/i18nfile/browser/i18nimage.py:28
-msgid "This edit form allows you to make changes to the properties of this image."
-msgstr ""
-"Данная форма редактирования позволяет сделать изменения в свойствах данного "
-"изображения."
-
-#: src/zope/app/i18nfile/browser/image_edit.pt:85
-msgid "Dimensions"
-msgstr "Размеры"
-
-#: src/zope/app/i18nfile/configure.zcml:22
-msgid "An Internationalized File"
-msgstr "Мультиязыковой файл"
-
-#: src/zope/app/i18nfile/configure.zcml:22
-#: src/zope/app/i18nfile/browser/configure.zcml:39
-msgid "I18n File"
-msgstr "Мультиязыковой файл"
-
-#: src/zope/app/i18nfile/configure.zcml:49
-msgid "An Internationalized Image"
-msgstr "Мультиязыковое изображение"
-
-#: src/zope/app/i18nfile/configure.zcml:49
-#: src/zope/app/i18nfile/browser/configure.zcml:81
-msgid "I18n Image"
-msgstr "Мультиязыковое изображение"
-
 #: src/zope/app/introspector/configure.zcml:42
 msgid "Introspector"
 msgstr "Информация"
@@ -1934,6 +1765,12 @@ msgstr "Атрибуты"
 #: src/zope/app/introspector/marker.pt:109
 msgid "Remove Interfaces:"
 msgstr "Удалить интерфейсы:"
+
+# Default: "Remove"
+#: src/zope/app/introspector/marker.pt:118
+#: src/zope/app/registration/browser/editregistration.pt:53
+msgid "remove-button"
+msgstr "Удалить"
 
 #: src/zope/app/introspector/marker.pt:124
 msgid "Add Interfaces:"
@@ -2213,8 +2050,6 @@ msgstr "Редактировать информацию пользователя
 #: src/zope/app/utility/browser/configure.zcml:85
 #: src/zope/app/cache/browser/configure.zcml:24
 #: src/zope/app/file/browser/configure.zcml:29
-#: src/zope/app/i18nfile/browser/configure.zcml:31
-#: src/zope/app/i18nfile/browser/configure.zcml:73
 #: src/zope/app/rdb/browser/configure.zcml:27
 #: src/zope/app/zptpage/browser/configure.zcml:39
 #: src/zope/app/securitypolicy/browser/configure.zcml:25
@@ -2268,6 +2103,18 @@ msgstr "Относительный URL используемый когда пу�
 #: src/zope/app/publisher/interfaces/browser.py:39
 msgid "The url is relative to the object the menu is being displayed for."
 msgstr "URL относителен к объекту для которого будет показываться меню."
+
+#: src/zope/app/publisher/interfaces/browser.py:44
+#: src/zope/app/publisher/interfaces/browser.py:87
+#: src/zope/app/security/interfaces.py:44
+#: src/zope/app/security/interfaces.py:189 src/zope/schema/interfaces.py:100
+#: src/zope/schema/interfaces.py:463
+#: src/zope/app/site/browser/interfacebrowse.pt:11
+#: src/zope/app/dublincore/browser/edit.pt:16
+#: src/zope/app/container/browser/contents.pt:33
+#: src/zope/app/container/browser/index.pt:27
+msgid "Title"
+msgstr "Заголовок"
 
 #: src/zope/app/publisher/interfaces/browser.py:45
 msgid "The text to be displayed for the menu item"
@@ -2934,7 +2781,7 @@ msgstr "Добавить утилиту"
 
 #: src/zope/app/site/browser/__init__.py:214
 #: src/zope/app/site/browser/tools.py:107
-#: src/zope/app/utility/browser/__init__.py:57
+#: src/zope/app/utility/browser/__init__.py:59
 msgid "Please select at least one checkbox"
 msgstr "Необходимо выбрать хотя бы один пункт"
 
@@ -3580,11 +3427,15 @@ msgstr ""
 "Данная форма позволит Вам отменить ваши транзакции. Показаны только "
 "транзакции инициированные Вами."
 
-#: src/zope/app/utility/browser/__init__.py:102
+#: src/zope/app/utility/browser/__init__.py:100
+msgid "Deactivated: ${deactivated_utilities}"
+msgstr "Деактивированы: ${deactivated_utilities}"
+
+#: src/zope/app/utility/browser/__init__.py:104
 msgid "None of the checked utilities were active"
 msgstr "Ни одна из выбранных утилит не активирована"
 
-#: src/zope/app/utility/browser/__init__.py:114
+#: src/zope/app/utility/browser/__init__.py:116
 msgid ""
 "Can't delete active utility/utilites: ${utility_names}; use the Deactivate "
 "button to deactivate"
@@ -3596,17 +3447,13 @@ msgstr ""
 msgid "Deleted: ${utility_names}"
 msgstr "Удалены: ${utility_names}"
 
-#: src/zope/app/utility/browser/__init__.py:83
+#: src/zope/app/utility/browser/__init__.py:85
 msgid "Activated: ${activated_utilities}"
 msgstr "Активированы: ${activated_utilities}"
 
-#: src/zope/app/utility/browser/__init__.py:87
+#: src/zope/app/utility/browser/__init__.py:89
 msgid "All of the checked utilities were already active"
 msgstr "Все указанные утилиты уже активированы"
-
-#: src/zope/app/utility/browser/__init__.py:98
-msgid "Deactivated: ${deactivated_utilities}"
-msgstr "Деактивированы: ${deactivated_utilities}"
 
 #: src/zope/app/utility/browser/configure.zcml:23
 msgid "A Local Utility Service allows you to register Utilities in this site"
@@ -3703,12 +3550,12 @@ msgstr "Обнаружено ошибок при вводе: ${num_errors}"
 
 #: src/zope/app/zptpage/configure.zcml:12
 #: src/zope/app/zptpage/browser/configure.zcml:23
-msgid "A simple, content-based Page Template"
+msgid "ZPT Page"
 msgstr "Шаблон страницы"
 
 #: src/zope/app/zptpage/configure.zcml:12
 #: src/zope/app/zptpage/browser/configure.zcml:23
-msgid "ZPT Page"
+msgid "A simple, content-based Page Template"
 msgstr "Шаблон страницы"
 
 #: src/zope/app/zptpage/interfaces.py:37
@@ -3984,6 +3831,111 @@ msgstr "Bar"
 #: src/zope/schema/tests/test_objectfield.py:44
 msgid "Bar description"
 msgstr "Описание bar"
+
+#~ msgid "sampleWidget-button-move-up"
+#~ msgstr "Переместить вверх"
+
+#~ msgid "sampleWidget-button-move-down"
+#~ msgstr "Переместить вниз"
+
+#~ msgid "sampleWidget-button-remove"
+#~ msgstr "Удалить"
+
+#~ msgid "sampleWidget-button-add-done"
+#~ msgstr "Добавить и завершить"
+
+#~ msgid "sampleWidget-button-add-more"
+#~ msgstr "Добавить и продолжить"
+
+#~ msgid "sampleWidget-button-more"
+#~ msgstr "Еще"
+
+#~ msgid "sampleWidget-button-clear"
+#~ msgstr "Сбросить значение"
+
+#~ msgid "sampleWidget-button-query"
+#~ msgstr "Искать"
+
+#~ msgid "sampleWidget-button-select"
+#~ msgstr "Выбрать"
+
+#~ msgid "sampleWidget-button-dismiss"
+#~ msgstr "Отказаться"
+
+#~ msgid "sampleWidget-label-enter-search-text"
+#~ msgstr "Текст для поиска:"
+
+#~ msgid "sampleWidget-label-select-content-type"
+#~ msgstr "Выберите тип контента:"
+
+#~ msgid "sampleWidget-label-any-content-type"
+#~ msgstr "(любой)"
+
+#~ msgid "sampleWidget-label-inaccessable-object"
+#~ msgstr "(недоступный или отсутствующий объект)"
+
+#~ msgid "widget-missing-single-value"
+#~ msgstr "(нет значения)"
+
+#~ msgid "widget-missing-multiple-value"
+#~ msgstr "(нет значений)"
+
+#~ msgid "vocabulary-query-button-add-done"
+#~ msgstr "Добавить и завершить"
+
+#~ msgid "vocabulary-query-button-add-more"
+#~ msgstr "Добавить и продолжить"
+
+#~ msgid "vocabulary-query-button-more"
+#~ msgstr "Еще"
+
+#~ msgid "vocabulary-query-message-no-results"
+#~ msgstr "Нет результатов"
+
+#~ msgid "vocabulary-query-header-results"
+#~ msgstr "Результаты поиска"
+
+#~ msgid "A file that supports multiple locales."
+#~ msgstr "Файл содержащий контент для нескольких языков."
+
+#~ msgid "A multi-locale version of an Image."
+#~ msgstr "Изображение содержащее изображения для нескольких языков."
+
+#~ msgid "Default Language"
+#~ msgstr "Язык по умолчанию"
+
+#~ msgid "Add new language"
+#~ msgstr "Добавить новый язык"
+
+#~ msgid "Edit Form"
+#~ msgstr "Форма редактирования"
+
+#~ msgid ""
+#~ "This edit form allows you to make changes to the properties of this file."
+#~ msgstr ""
+#~ "Данная форма редактирования позволяет сделать изменения в свойствах "
+#~ "данного файла."
+
+#~ msgid ""
+#~ "This edit form allows you to make changes to the properties of this image."
+#~ msgstr ""
+#~ "Данная форма редактирования позволяет сделать изменения в свойствах "
+#~ "данного изображения."
+
+#~ msgid "Dimensions"
+#~ msgstr "Размеры"
+
+#~ msgid "An Internationalized File"
+#~ msgstr "Мультиязыковой файл"
+
+#~ msgid "I18n File"
+#~ msgstr "Мультиязыковой файл"
+
+#~ msgid "An Internationalized Image"
+#~ msgstr "Мультиязыковое изображение"
+
+#~ msgid "I18n Image"
+#~ msgstr "Мультиязыковое изображение"
 
 #~ msgid "Location:&nbsp;"
 #~ msgstr "Путь:&nbsp;"
