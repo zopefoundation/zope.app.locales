@@ -326,7 +326,7 @@ def tal_strings(dir, domain="zope", include_default_domain=False):
     from zope.tal.htmltalparser import HTMLTALParser
     engine = POEngine()
 
-    class Devnull:
+    class Devnull(object):
         def write(self, s):
             pass
 
