@@ -12,19 +12,19 @@
 # FOR A PARTICULAR PURPOSE.
 #
 # #############################################################################
-# Dmitry Vasiliev <dima@hlabs.spb.ru>, 2004
+# Dmitry Vasiliev <dima@hlabs.spb.ru>, 2004, 2005.
 msgid ""
 msgstr ""
-"Project-Id-Version: Development/Revision: 27408\n"
+"Project-Id-Version: Development/Revision: 29229\n"
 "POT-Creation-Date: Mon Feb 21 11:30:46 2005\n"
-"PO-Revision-Date: 2004-11-09 12:20+0000\n"
+"PO-Revision-Date: 2005-02-22 12:13+0300\n"
 "Last-Translator: Dmitry Vasiliev <dima@hlabs.spb.ru>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: zope/app/translation_files/extract.py\n"
-"X-Generator: KBabel 1.0\n"
+"X-Generator: KBabel 1.3.1\n"
 
 #: src/zope/app/apidoc/bookmodule/book.py:50
 msgid "Book"
@@ -41,7 +41,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"    Книга разработчика собранная из всех файлов документации.\n"
+"    Книга разработчика собранная из файлов документации.\n"
 "    Эта книга не претендует быть полной или цельной, скорее каждая глава - это "
 "    своя небольшая история.\n"
 "    "
@@ -306,14 +306,12 @@ msgid ""
 "Below you see a short description of every module."
 msgstr ""
 "Модули документации обычно взаимосвязанны друг с другом через ссылки между "
-"модулями. Каждый модуль имеет \"тему\" которой он следует и которая "
-"разработана для упрощения поиска необходимой разработчику информации. Ниже "
-"Вы можете увидеть краткое описание каждого модуля документации."
+"модулями. Каждый модуль описывает одну из \"тем\" позволяющих упростить поиск необходимой документации. Ниже дано краткое описание каждого модуля документации."
 
 #: src/zope/app/apidoc/browser/contents.pt:4
 #: src/zope/app/apidoc/browser/index.pt:3
 msgid "Zope 3 API Documentation"
-msgstr "Документация по API Zope 3"
+msgstr "Документация по Zope 3 API"
 
 #: src/zope/app/apidoc/browser/contents.pt:6
 msgid ""
@@ -323,23 +321,23 @@ msgid ""
 "on a module, the module's menu will appear below. In the menu you have then "
 "navigational means to access the documentation content of the module."
 msgstr ""
-"Добро пожаловать на страницу документации по API Zope 3. Документация "
-"которая здесь расположена разделена на несколько отдельных модулей "
-"документации. Список доступных модулей показан в верхнем-левом окне экрана. "
-"При выборе модуля в окне ниже будет показано меню модуля. Через меню Вы "
-"затем сможете получить доступ к документации содержащейся в модуле."
+"Добро пожаловать на страницу документации по Zope 3 API. Документация "
+"расположенная здесь разбита на несколько отдельных модулей. Список "
+"доступных модулей показан в верхнем-левом окне экрана. "
+"При выборе конкретного модуля в окне ниже появится меню выбранного модуля. "
+"Меню позволяет получить доступ к документации содержащейся в модуле."
 
 #: src/zope/app/apidoc/browser/menu.pt:5
 msgid ""
 "Click on one of the Documentation Modules above and a menu for this module "
 "will appear."
-msgstr "Меню модуля документации будет показано при выборе модуля из списка выше."
+msgstr "Меню конкретного модуля документации будет показано после выбора модуля из списка выше."
 
 #: src/zope/app/apidoc/browser/menu_macros.pt:11
 #: src/zope/app/apidoc/browser/details_macros.pt:10
 #: src/zope/app/rotterdam/dialog_macros.pt:11
 msgid "Z3 UI"
-msgstr "Пользовательский интерфейс Zope 3"
+msgstr "Интерфейс пользователя Zope 3"
 
 #: src/zope/app/apidoc/browser/menu_macros.pt:34
 msgid "Menu"
@@ -347,7 +345,7 @@ msgstr "Меню"
 
 #: src/zope/app/apidoc/browser/modules.pt:6
 msgid "Zope 3 API Docs"
-msgstr "Документация по API Zope 3"
+msgstr "Документация по Zope 3 API"
 
 # Default: "Bases"
 #: src/zope/app/apidoc/classmodule/__init__.py:579
@@ -497,7 +495,7 @@ msgstr "Определение метода"
 
 #: src/zope/app/apidoc/classmodule/menu.pt:18
 msgid "Class Finder:"
-msgstr "Поиск класса:"
+msgstr "Поиск классов:"
 
 #: src/zope/app/apidoc/classmodule/menu.pt:19
 msgid "(Enter partial Python path)"
@@ -723,7 +721,7 @@ msgstr "Методы или поля не определены."
 #: src/zope/app/apidoc/zcmlmodule/index.pt:157
 #: src/zope/app/apidoc/ifacemodule/index.pt:275
 msgid "required"
-msgstr "необходим"
+msgstr "обязательный"
 
 #: src/zope/app/apidoc/viewmodule/__init__.py:195
 #: src/zope/app/apidoc/viewmodule/__init__.py:259
@@ -1036,7 +1034,7 @@ msgstr "Вы остановили сервер"
 
 #: src/zope/app/applicationcontrol/browser/translationdomaincontrol.pt:15
 msgid "Domain"
-msgstr "Область"
+msgstr "Домен"
 
 #: src/zope/app/applicationcontrol/browser/translationdomaincontrol.pt:17
 msgid "Files"
@@ -1057,7 +1055,7 @@ msgstr "Размер базы данных: ${size}"
 
 #: src/zope/app/applicationcontrol/browser/zodbcontrol.pt:24
 msgid "Keep up to:"
-msgstr "Сохранять до:"
+msgstr "Сохранять за:"
 
 #: src/zope/app/applicationcontrol/browser/zodbcontrol.pt:28
 msgid "days"
@@ -1228,7 +1226,7 @@ msgstr ""
 msgid "Please provide Login Information"
 msgstr ""
 
-	# Default: "Pack"
+# Default: "Pack"
 #: src/zope/app/authentication/browser/schemasearch.py:30
 #: src/zope/app/security/browser/auth.py:30
 msgid "search-button"
@@ -2925,22 +2923,22 @@ msgid ""
 "Translation Domains allow you to localize your software by       providing "
 "message translations."
 msgstr ""
-"Области переводов позволят Вам локализовать Ваше программное обеспечение "
+"Домены переводов позволят Вам локализовать Ваше программное обеспечение "
 "предоставляя переводы сообщений."
 
 #: src/zope/app/i18n/browser/configure.zcml:5
 #: src/zope/app/applicationcontrol/browser/configure.zcml:32
 #: src/zope/app/applicationcontrol/browser/translationdomaincontrol.pt:3
 msgid "Translation Domains"
-msgstr "Области переводов"
+msgstr "Домены переводов"
 
 #: src/zope/app/i18n/browser/configure.zcml:61
 msgid "Translation Domain"
-msgstr "Область переводов"
+msgstr "Домен переводов"
 
 #: src/zope/app/i18n/browser/configure.zcml:61
 msgid "A Persistent Translation Domain"
-msgstr "Хранимая область переводов"
+msgstr "Хранимый домен переводов"
 
 #: src/zope/app/i18n/browser/exportimport.pt:10
 msgid "Import and Export Messages"
@@ -2948,7 +2946,7 @@ msgstr "Импортирование и экспортирование сооб�
 
 #: src/zope/app/i18n/browser/exportimport.pt:12
 msgid "Here you can export and import messages from your Translation Domain."
-msgstr "Здесь Вы можете загружать и сохранять переводы для Вашей области переводов."
+msgstr "Здесь Вы можете загружать и сохранять переводы для Вашего домена переводов."
 
 #: src/zope/app/i18n/browser/exportimport.pt:32
 msgid "Import File Name:"
@@ -3032,7 +3030,7 @@ msgstr "Выберите языки:"
 #: src/zope/app/i18n/browser/translatemessage.pt:3
 #: src/zope/app/i18n/browser/exportimport.pt:3
 msgid "Translation Domain - Translate"
-msgstr "Область переводов - Перевести"
+msgstr "Домен переводов - Перевести"
 
 # Default: "Edit"
 #: src/zope/app/i18n/browser/translate.pt:34
