@@ -13,8 +13,8 @@
 ##############################################################################
 msgid ""
 msgstr ""
-"Project-Id-Version: Development/Revision: 29438\n"
-"POT-Creation-Date: Fri Mar 11 17:01:32 2005\n"
+"Project-Id-Version: Development/Revision: 29457\n"
+"POT-Creation-Date: Mon Mar 14 13:45:19 2005\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
@@ -22,6 +22,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: zope/app/locales/extract.py\n"
+
+#: securitypolicy.zcml:11
+msgid "All users have this role implicitly"
+msgstr ""
+
+#: securitypolicy.zcml:11
+msgid "Everybody"
+msgstr ""
+
+#: securitypolicy.zcml:13
+msgid "Site Manager"
+msgstr ""
+
+#: securitypolicy.zcml:14
+msgid "Site Member"
+msgstr ""
 
 #: src/zope/app/apidoc/bookmodule/book.py:50
 #: src/zope/app/apidoc/bookmodule/book.py:64
@@ -1316,6 +1332,7 @@ msgid "reset-button"
 msgstr ""
 
 #: src/zope/app/cache/browser/ramstats.pt:20
+#: src/zope/app/recorder/sessions.pt:22
 msgid "Path"
 msgstr ""
 
@@ -2005,7 +2022,7 @@ msgstr ""
 msgid "(unnamed utility)"
 msgstr ""
 
-#: src/zope/app/container/browser/adding.py:118
+#: src/zope/app/container/browser/adding.py:117
 msgid "You must select the type of object to add."
 msgstr ""
 
@@ -2144,92 +2161,80 @@ msgstr ""
 msgid "A simple case insensitive Folder."
 msgstr ""
 
-#: src/zope/app/demo/menu/configure.zcml:101
-#: src/zope/app/demo/menu/configure.zcml:154
-msgid "Save"
-msgstr ""
-
-#: src/zope/app/demo/menu/configure.zcml:109
-msgid "Save All"
-msgstr ""
-
-#: src/zope/app/demo/menu/configure.zcml:116
-msgid "Save As ..."
-msgstr ""
-
-#: src/zope/app/demo/menu/configure.zcml:133
+#: src/zope/app/demo/menu/configure.zcml:111
 msgid "New"
 msgstr ""
 
-#: src/zope/app/demo/menu/configure.zcml:140
+#: src/zope/app/demo/menu/configure.zcml:118
 msgid "Open"
 msgstr ""
 
-#: src/zope/app/demo/menu/configure.zcml:165
-#: src/zope/app/demo/menu/configure.zcml:218
+#: src/zope/app/demo/menu/configure.zcml:143
+#: src/zope/app/demo/menu/configure.zcml:196
 msgid "Undo"
 msgstr ""
 
-#: src/zope/app/demo/menu/configure.zcml:173
+#: src/zope/app/demo/menu/configure.zcml:151
 msgid "Undo Last"
 msgstr ""
 
-#: src/zope/app/demo/menu/configure.zcml:179
+#: src/zope/app/demo/menu/configure.zcml:157
 msgid "Undo All"
 msgstr ""
 
-#: src/zope/app/demo/menu/configure.zcml:187
-#: src/zope/app/demo/menu/configure.zcml:225
+#: src/zope/app/demo/menu/configure.zcml:165
+#: src/zope/app/demo/menu/configure.zcml:203
 msgid "Redo"
 msgstr ""
 
-#: src/zope/app/demo/menu/configure.zcml:195
+#: src/zope/app/demo/menu/configure.zcml:173
 msgid "Redo Last"
 msgstr ""
 
-#: src/zope/app/demo/menu/configure.zcml:201
+#: src/zope/app/demo/menu/configure.zcml:179
 msgid "Redo All"
 msgstr ""
 
-#: src/zope/app/demo/menu/configure.zcml:232
+#: src/zope/app/demo/menu/configure.zcml:210
 msgid "Cut"
 msgstr ""
 
-#: src/zope/app/demo/menu/configure.zcml:239
+#: src/zope/app/demo/menu/configure.zcml:217
 msgid "Copy"
 msgstr ""
 
-#: src/zope/app/demo/menu/configure.zcml:246
+#: src/zope/app/demo/menu/configure.zcml:224
 msgid "Paste"
 msgstr ""
 
-#: src/zope/app/demo/menu/configure.zcml:264
+#: src/zope/app/demo/menu/configure.zcml:242
 msgid "About Menus"
 msgstr ""
 
-#: src/zope/app/demo/menu/configure.zcml:270
+#: src/zope/app/demo/menu/configure.zcml:248
 msgid "About Zope 3"
 msgstr ""
 
-#: src/zope/app/demo/menu/configure.zcml:280
+#: src/zope/app/demo/menu/configure.zcml:258
 msgid "Menu Bar"
 msgstr ""
 
 #: src/zope/app/demo/menu/configure.zcml:74
-#: src/zope/app/demo/menu/configure.zcml:147
+#: src/zope/app/demo/menu/configure.zcml:125
 msgid "Open Recent"
 msgstr ""
 
-#: src/zope/app/demo/menu/configure.zcml:82
-msgid "myfile.txt"
+#: src/zope/app/demo/menu/configure.zcml:79
+#: src/zope/app/demo/menu/configure.zcml:132
+msgid "Save"
 msgstr ""
 
-#: src/zope/app/demo/menu/configure.zcml:88
-msgid "folderX"
+#: src/zope/app/demo/menu/configure.zcml:87
+msgid "Save All"
 msgstr ""
 
 #: src/zope/app/demo/menu/configure.zcml:94
-msgid "picture.png"
+msgid "Save As ..."
 msgstr ""
 
 #: src/zope/app/demo/menu/menudemo.pt:10
@@ -2605,6 +2610,7 @@ msgstr ""
 
 #: src/zope/app/error/browser/error.pt:21
 #: src/zope/app/error/browser/errorentry.pt:20
+#: src/zope/app/recorder/sessions.pt:20
 msgid "Time"
 msgstr ""
 
@@ -2753,8 +2759,8 @@ msgstr ""
 
 #: src/zope/app/file/configure.zcml:28
 #: src/zope/app/file/browser/configure.zcml:53
-#: src/zope/app/demo/menu/configure.zcml:125
-#: src/zope/app/demo/menu/configure.zcml:288
+#: src/zope/app/demo/menu/configure.zcml:103
+#: src/zope/app/demo/menu/configure.zcml:266
 msgid "File"
 msgstr ""
 
@@ -2929,6 +2935,35 @@ msgstr ""
 #: src/zope/app/form/browser/source.py:87
 # Default: "Invalid value"
 msgid "SourceDisplayWidget-invalid"
+msgstr ""
+
+#: src/zope/app/form/browser/textwidgets.py:154
+msgid "Invalid text data"
+msgstr ""
+
+#: src/zope/app/form/browser/textwidgets.py:166
+msgid "Invalid textual data"
+msgstr ""
+
+#: src/zope/app/form/browser/textwidgets.py:308
+msgid "Invalid unicode data"
+msgstr ""
+
+#: src/zope/app/form/browser/textwidgets.py:413
+msgid "Form input is not a file object"
+msgstr ""
+
+#: src/zope/app/form/browser/textwidgets.py:446
+msgid "Invalid integer data"
+msgstr ""
+
+#: src/zope/app/form/browser/textwidgets.py:460
+msgid "Invalid floating point data"
+msgstr ""
+
+#: src/zope/app/form/browser/textwidgets.py:475
+#: src/zope/app/form/browser/textwidgets.py:491
+msgid "Invalid datetime data"
 msgstr ""
 
 #: src/zope/app/fssync/browser/__init__.py:158
@@ -3155,6 +3190,7 @@ msgid "synchronize-button"
 msgstr ""
 
 #: src/zope/app/i18n/browser/synchronize.pt:89
+#: src/zope/app/recorder/sessions.pt:23
 msgid "Status"
 msgstr ""
 
@@ -3547,8 +3583,8 @@ msgid "View Module Names"
 msgstr ""
 
 #: src/zope/app/onlinehelp/browser/configure.zcml:48
-#: src/zope/app/demo/menu/configure.zcml:256
-#: src/zope/app/demo/menu/configure.zcml:300
+#: src/zope/app/demo/menu/configure.zcml:234
+#: src/zope/app/demo/menu/configure.zcml:278
 #: src/zope/app/zopetop/widget_macros.pt:235
 msgid "Help"
 msgstr ""
@@ -3758,8 +3794,8 @@ msgstr ""
 #: src/zope/app/rdb/browser/configure.zcml:27
 #: src/zope/app/schemacontent/browser/configure.zcml:32
 #: src/zope/app/schemacontent/browser/configure.zcml:65
-#: src/zope/app/demo/menu/configure.zcml:210
-#: src/zope/app/demo/menu/configure.zcml:294
+#: src/zope/app/demo/menu/configure.zcml:188
+#: src/zope/app/demo/menu/configure.zcml:272
 #: src/zope/app/demo/widget/browser/intwidget.zcml:29
 #: src/zope/app/demo/widget/browser/intwidget.zcml:29
 #: src/zope/app/demo/widget/browser/textwidget.zcml:29
@@ -3885,53 +3921,19 @@ msgstr ""
 msgid "Principal Annotations"
 msgstr ""
 
-#: src/zope/app/publisher/interfaces/browser.py:108
-msgid "Sub-Menu Type"
-msgstr ""
-
-#: src/zope/app/publisher/interfaces/browser.py:109
-msgid "The menu interface of the menu that describes the sub-menu below this item."
-msgstr ""
-
-#: src/zope/app/publisher/interfaces/browser.py:49
-msgid "Menu item title"
-msgstr ""
-
-#: src/zope/app/publisher/interfaces/browser.py:50
-msgid "The title provides the basic label for the menu item."
-msgstr ""
-
-#: src/zope/app/publisher/interfaces/browser.py:55
-msgid "Menu item description"
-msgstr ""
-
-#: src/zope/app/publisher/interfaces/browser.py:56
-msgid "A description of the menu item. This might be shown on menu pages or in pop-up help for menu items."
-msgstr ""
-
-#: src/zope/app/publisher/interfaces/browser.py:62
-#: src/zope/app/publisher/interfaces/browser.py:114
-msgid "The URL to display if the item is selected"
-msgstr ""
-
-#: src/zope/app/publisher/interfaces/browser.py:63
-#: src/zope/app/publisher/interfaces/browser.py:115
-msgid "When a user selects a browser menu item, the URLgiven in the action is displayed. The action is usually given as a relative URL, relative to the object the menu item is for."
-msgstr ""
-
-#: src/zope/app/publisher/interfaces/browser.py:71
+#: src/zope/app/publisher/interfaces/browser.py:106
 msgid "Menu item ordering hint"
 msgstr ""
 
-#: src/zope/app/publisher/interfaces/browser.py:72
+#: src/zope/app/publisher/interfaces/browser.py:107
 msgid "This attribute provides a hint for menu item ordering.Menu items will generally be sorted by the `for_`attribute and then by the order."
 msgstr ""
 
-#: src/zope/app/publisher/interfaces/browser.py:78
+#: src/zope/app/publisher/interfaces/browser.py:113
 msgid "A condition for displaying the menu item"
 msgstr ""
 
-#: src/zope/app/publisher/interfaces/browser.py:79
+#: src/zope/app/publisher/interfaces/browser.py:114
 msgid ""
 "The condition is given as a TALES expression. The expression has access to the variables:\n"
 "\n"
@@ -3945,12 +3947,71 @@ msgid ""
 "filter and the filter evaluates to a false value."
 msgstr ""
 
-#: src/zope/app/publisher/interfaces/browser.py:94
+#: src/zope/app/publisher/interfaces/browser.py:129
 msgid "Icon URI"
 msgstr ""
 
-#: src/zope/app/publisher/interfaces/browser.py:95
+#: src/zope/app/publisher/interfaces/browser.py:130
 msgid "URI of the icon representing this menu item"
+msgstr ""
+
+#: src/zope/app/publisher/interfaces/browser.py:143
+msgid "Sub-Menu Id"
+msgstr ""
+
+#: src/zope/app/publisher/interfaces/browser.py:144
+msgid "The menu id of the menu that describes the sub-menu below this item."
+msgstr ""
+
+#: src/zope/app/publisher/interfaces/browser.py:51
+#: src/zope/app/schemacontent/interfaces.py:45
+msgid "Menu Id"
+msgstr ""
+
+#: src/zope/app/publisher/interfaces/browser.py:52
+msgid "The id uniquly identifies this menu."
+msgstr ""
+
+#: src/zope/app/publisher/interfaces/browser.py:57
+msgid "Menu title"
+msgstr ""
+
+#: src/zope/app/publisher/interfaces/browser.py:58
+msgid "The title provides the basic label for the menu."
+msgstr ""
+
+#: src/zope/app/publisher/interfaces/browser.py:63
+msgid "Menu description"
+msgstr ""
+
+#: src/zope/app/publisher/interfaces/browser.py:64
+msgid "A description of the menu. This might be shown on menu pages or in pop-up help for menus."
+msgstr ""
+
+#: src/zope/app/publisher/interfaces/browser.py:84
+msgid "Menu item title"
+msgstr ""
+
+#: src/zope/app/publisher/interfaces/browser.py:85
+msgid "The title provides the basic label for the menu item."
+msgstr ""
+
+#: src/zope/app/publisher/interfaces/browser.py:90
+msgid "Menu item description"
+msgstr ""
+
+#: src/zope/app/publisher/interfaces/browser.py:91
+msgid "A description of the menu item. This might be shown on menu pages or in pop-up help for menu items."
+msgstr ""
+
+#: src/zope/app/publisher/interfaces/browser.py:97
+#: src/zope/app/publisher/interfaces/browser.py:149
+msgid "The URL to display if the item is selected"
+msgstr ""
+
+#: src/zope/app/publisher/interfaces/browser.py:98
+#: src/zope/app/publisher/interfaces/browser.py:150
+msgid "When a user selects a browser menu item, the URLgiven in the action is displayed. The action is usually given as a relative URL, relative to the object the menu item is for."
 msgstr ""
 
 #: src/zope/app/pythonpage/__init__.py:40
@@ -4089,6 +4150,50 @@ msgid ""
 "dbi://user:passwd@host:port/dbname;param1=value...\n"
 "\n"
 "All values should be properlu URL-encoded."
+msgstr ""
+
+#: src/zope/app/recorder/browser.py:40
+msgid "URLs to ignore"
+msgstr ""
+
+#: src/zope/app/recorder/browser.py:41
+msgid ""
+"A list of regular expressions.\n"
+"\n"
+"                     Requests whose paths match any of the expressions listed\n"
+"                     here will not be shown."
+msgstr ""
+
+#: src/zope/app/recorder/browser.py:81
+msgid "Invalid regex: %s"
+msgstr ""
+
+#: src/zope/app/recorder/configure.zcml:11
+msgid "Recorded Sessions"
+msgstr ""
+
+#: src/zope/app/recorder/sessions.pt:11
+msgid "There are no recorded requests that pass your filter."
+msgstr ""
+
+#: src/zope/app/recorder/sessions.pt:21
+msgid "Method"
+msgstr ""
+
+#: src/zope/app/recorder/sessions.pt:3
+msgid "Recorded HTTP Sessions"
+msgstr ""
+
+#: src/zope/app/recorder/sessions.pt:41
+msgid "Create Functional Doctest"
+msgstr ""
+
+#: src/zope/app/recorder/sessions.pt:43
+msgid "Clear All"
+msgstr ""
+
+#: src/zope/app/recorder/sessions.pt:63
+msgid "Filter"
 msgstr ""
 
 #: src/zope/app/renderer/configure.zcml:14
@@ -4457,10 +4562,6 @@ msgstr ""
 msgid "Specifies the interface this menu item is for."
 msgstr ""
 
-#: src/zope/app/schemacontent/interfaces.py:45
-msgid "Menu Id"
-msgstr ""
-
 #: src/zope/app/schemacontent/interfaces.py:46
 msgid "Specifies the menu this menu item will be added to."
 msgstr ""
@@ -4772,22 +4873,6 @@ msgstr ""
 #: src/zope/app/securitypolicy/browser/rolepermissionview.py:63
 # Default: "Deny"
 msgid "permission-deny"
-msgstr ""
-
-#: src/zope/app/securitypolicy/configure.zcml:89
-msgid "All users have this role implicitly"
-msgstr ""
-
-#: src/zope/app/securitypolicy/configure.zcml:89
-msgid "Everybody"
-msgstr ""
-
-#: src/zope/app/securitypolicy/configure.zcml:91
-msgid "Site Manager"
-msgstr ""
-
-#: src/zope/app/securitypolicy/configure.zcml:92
-msgid "Site Member"
 msgstr ""
 
 #: src/zope/app/securitypolicy/role.py:26
