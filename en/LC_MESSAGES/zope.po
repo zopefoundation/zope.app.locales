@@ -1,5 +1,5 @@
 # English translation
-# This file contains now message ids because Zope's default language
+# This file contains no message ids because Zope's default language
 # is English
 #
 msgid ""
