@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zope X3 Pre-M4\n"
-"POT-Creation-Date: Tue Sep  7 17:00:13 2004\n"
+"POT-Creation-Date: Thu Oct  7 15:41:22 2004\n"
 "PO-Revision-Date: 2003-08-07 18:51-0300\n"
 "Last-Translator: Sidnei da Silva <sidnei@plone.org>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
@@ -365,12 +365,12 @@ msgid ""
 "Service."
 msgstr ""
 
-#: src/zope/app/apidoc/servicemodule/__init__.py:73
+#: src/zope/app/apidoc/servicemodule/__init__.py:75
 #: src/zope/app/site/browser/configure.zcml:87
 msgid "Services"
 msgstr ""
 
-#: src/zope/app/apidoc/servicemodule/__init__.py:76
+#: src/zope/app/apidoc/servicemodule/__init__.py:78
 msgid ""
 "\n"
 "    The services module let's the reader browse through all defined\n"
@@ -436,13 +436,13 @@ msgstr ""
 msgid "n/a"
 msgstr ""
 
-#: src/zope/app/apidoc/utilitymodule/__init__.py:127
+#: src/zope/app/apidoc/utilitymodule/__init__.py:129
 #: src/zope/app/utility/browser/configure.zcml:31
 #: src/zope/app/apidoc/ifacemodule/index.pt:223
 msgid "Utilities"
 msgstr ""
 
-#: src/zope/app/apidoc/utilitymodule/__init__.py:130
+#: src/zope/app/apidoc/utilitymodule/__init__.py:132
 msgid ""
 "\n"
 "    Utilities are also nicely registered in a service, so that it is easy "
@@ -560,6 +560,10 @@ msgstr ""
 msgid "Show all views:"
 msgstr ""
 
+#: src/zope/app/apidoc/viewmodule/menu.pt:31
+msgid "show-button"
+msgstr ""
+
 #: src/zope/app/apidoc/viewmodule/menu.pt:36
 msgid "Show Skins and Layers"
 msgstr ""
@@ -651,7 +655,7 @@ msgstr ""
 
 #: src/zope/app/apidoc/zcmlmodule/menu.pt:4
 msgid ""
-"Namespaces that are not full URLs start with \"http://namespaces.zope.org\"."
+"Namespaces that are not full URLs start with \"http://namespaces.zope.org/\"."
 msgstr ""
 
 #: src/zope/app/applicationcontrol/browser/configure.zcml:10
@@ -764,6 +768,11 @@ msgstr "Você desligou o servidor."
 msgid "Domain"
 msgstr ""
 
+#: src/zope/app/applicationcontrol/browser/translationdomaincontrol.pt:16
+#: src/zope/app/i18n/browser/synchronize.pt:88
+msgid "Language"
+msgstr ""
+
 #: src/zope/app/applicationcontrol/browser/translationdomaincontrol.pt:17
 msgid "Files"
 msgstr ""
@@ -848,6 +857,16 @@ msgstr "Atualmente o objeto está utilizando ${cache_id_or_url}."
 #: src/zope/app/cache/browser/cacheableedit.pt:37
 msgid "Cache name"
 msgstr "Nome do Cache"
+
+#: src/zope/app/cache/browser/cacheableedit.pt:45
+#: src/zope/app/cache/browser/ramedit.pt:51
+#: src/zope/app/dublincore/browser/edit.pt:35
+#: src/zope/app/rdb/browser/rdbconnection.pt:28
+#: src/zope/app/errorservice/browser/error_config.pt:46
+#: src/zope/app/securitypolicy/browser/manage_roleform.pt:63
+#: src/zope/app/securitypolicy/browser/manage_permissionform.pt:86
+msgid "save-changes-button"
+msgstr "Salvar Modificações"
 
 #: src/zope/app/cache/browser/cacheableedit.pt:47
 msgid "invalidate-cache-button"
@@ -987,7 +1006,6 @@ msgid "You didn't specify any ids to rename."
 msgstr "Você não especificou nenhum id para renomear."
 
 #: src/zope/app/container/browser/metaconfigure.py:65
-#: src/zope/app/folder/browser/configure.zcml:20
 #: src/zope/app/site/browser/configure.zcml:19
 msgid "Contents"
 msgstr "Conteúdo"
@@ -1021,6 +1039,10 @@ msgstr ""
 
 #: src/zope/app/container/size.py:41
 msgid "${items} items"
+msgstr ""
+
+#: src/zope/app/dav/tests/test_adapter.py:56
+msgid "${num} robot unit"
 msgstr ""
 
 #: src/zope/app/debugskin/error_debug.pt:12
@@ -1248,8 +1270,6 @@ msgstr "Selecionar um arquivo"
 
 #: src/zope/app/file/browser/configure.zcml:37
 #: src/zope/app/file/browser/configure.zcml:77
-#: src/zope/app/i18nfile/browser/configure.zcml:34
-#: src/zope/app/i18nfile/browser/configure.zcml:76
 msgid "Upload"
 msgstr ""
 
@@ -1297,8 +1317,6 @@ msgid " ${width}x${height}"
 msgstr ""
 
 #: src/zope/app/file/interfaces.py:25
-#: src/zope/app/i18nfile/browser/file_edit.pt:31
-#: src/zope/app/i18nfile/browser/image_edit.pt:32
 msgid "Content Type"
 msgstr ""
 
@@ -1307,8 +1325,6 @@ msgid "The content type identifies the type of data."
 msgstr ""
 
 #: src/zope/app/file/interfaces.py:33
-#: src/zope/app/i18nfile/browser/file_edit.pt:78
-#: src/zope/app/i18nfile/browser/image_edit.pt:79
 msgid "Data"
 msgstr ""
 
@@ -1316,7 +1332,7 @@ msgstr ""
 msgid "The actual content of the object."
 msgstr ""
 
-#: src/zope/app/folder/browser/configure.zcml:40
+#: src/zope/app/folder/browser/configure.zcml:29
 #: src/zope/app/dtmlpage/configure.zcml:93
 #: src/zope/app/file/browser/configure.zcml:122
 #: src/zope/app/file/browser/configure.zcml:130
@@ -1356,83 +1372,6 @@ msgstr ""
 msgid "on"
 msgstr ""
 
-#: src/zope/app/form/browser/complexsample/complexsample.py:47
-msgid "sampleWidget-button-move-up"
-msgstr ""
-
-#: src/zope/app/form/browser/complexsample/complexsample.py:48
-msgid "sampleWidget-button-move-down"
-msgstr ""
-
-#: src/zope/app/form/browser/complexsample/complexsample.py:49
-msgid "sampleWidget-button-remove"
-msgstr ""
-
-#: src/zope/app/form/browser/complexsample/complexsample.py:50
-msgid "sampleWidget-button-add-done"
-msgstr ""
-
-#: src/zope/app/form/browser/complexsample/complexsample.py:51
-msgid "sampleWidget-button-add-more"
-msgstr ""
-
-#: src/zope/app/form/browser/complexsample/complexsample.py:52
-msgid "sampleWidget-button-more"
-msgstr ""
-
-#: src/zope/app/form/browser/complexsample/complexsample.py:53
-msgid "sampleWidget-button-clear"
-msgstr ""
-
-#: src/zope/app/form/browser/complexsample/complexsample.py:54
-msgid "sampleWidget-button-query"
-msgstr ""
-
-#: src/zope/app/form/browser/complexsample/complexsample.py:55
-msgid "sampleWidget-button-select"
-msgstr ""
-
-#: src/zope/app/form/browser/complexsample/complexsample.py:56
-msgid "sampleWidget-button-dismiss"
-msgstr ""
-
-#: src/zope/app/form/browser/complexsample/complexsample.py:59
-msgid "sampleWidget-label-enter-search-text"
-msgstr ""
-
-#: src/zope/app/form/browser/complexsample/complexsample.py:61
-msgid "sampleWidget-label-select-content-type"
-msgstr ""
-
-#: src/zope/app/form/browser/complexsample/complexsample.py:63
-msgid "sampleWidget-label-any-content-type"
-msgstr ""
-
-#: src/zope/app/form/browser/complexsample/complexsample.py:65
-msgid "sampleWidget-label-inaccessable-object"
-msgstr ""
-
-#: src/zope/app/form/browser/complexsample/interfaces.py:31
-#: src/zope/app/publisher/interfaces/browser.py:44
-#: src/zope/app/publisher/interfaces/browser.py:87
-#: src/zope/app/security/interfaces.py:44
-#: src/zope/app/security/interfaces.py:189 src/zope/schema/interfaces.py:100
-#: src/zope/schema/interfaces.py:484
-#: src/zope/app/site/browser/interfacebrowse.pt:11
-#: src/zope/app/dublincore/browser/edit.pt:16
-#: src/zope/app/container/browser/contents.pt:33
-#: src/zope/app/container/browser/index.pt:27
-msgid "Title"
-msgstr ""
-
-#: src/zope/app/form/browser/complexsample/widgetapi.py:58
-msgid "widget-missing-single-value"
-msgstr ""
-
-#: src/zope/app/form/browser/complexsample/widgetapi.py:60
-msgid "widget-missing-multiple-value"
-msgstr ""
-
 #: src/zope/app/form/browser/editview.py:116
 msgid "Updated on ${date_time}"
 msgstr ""
@@ -1455,20 +1394,20 @@ msgstr ""
 msgid "Changes saved"
 msgstr ""
 
-#: src/zope/app/form/browser/itemswidgets.py:202
+#: src/zope/app/form/browser/itemswidgets.py:201
 msgid "item-missing-single-value-for-display"
 msgstr ""
 
-#: src/zope/app/form/browser/itemswidgets.py:218
+#: src/zope/app/form/browser/itemswidgets.py:217
 msgid "vocabulary-missing-multiple-value-for-display"
 msgstr ""
 
-#: src/zope/app/form/browser/itemswidgets.py:398
-#: src/zope/app/form/browser/itemswidgets.py:442
+#: src/zope/app/form/browser/itemswidgets.py:367
+#: src/zope/app/form/browser/itemswidgets.py:411
 msgid "vocabulary-missing-single-value-for-edit"
 msgstr ""
 
-#: src/zope/app/form/browser/itemswidgets.py:516
+#: src/zope/app/form/browser/itemswidgets.py:485
 msgid "vocabulary-missing-multiple-value-for-edit"
 msgstr ""
 
@@ -1481,26 +1420,6 @@ msgstr ""
 #, fuzzy
 msgid "Add %s"
 msgstr "Adicionar"
-
-#: src/zope/app/form/browser/vocabularyquery.py:167
-msgid "vocabulary-query-button-add-done"
-msgstr ""
-
-#: src/zope/app/form/browser/vocabularyquery.py:169
-msgid "vocabulary-query-button-add-more"
-msgstr ""
-
-#: src/zope/app/form/browser/vocabularyquery.py:171
-msgid "vocabulary-query-button-more"
-msgstr ""
-
-#: src/zope/app/form/browser/vocabularyquery.py:173
-msgid "vocabulary-query-message-no-results"
-msgstr ""
-
-#: src/zope/app/form/browser/vocabularyquery.py:175
-msgid "vocabulary-query-header-results"
-msgstr ""
 
 #: src/zope/app/generations/browser/configure.zcml:6
 msgid "Database Schemas"
@@ -1694,94 +1613,6 @@ msgstr ""
 msgid "Edit Message"
 msgstr ""
 
-#: src/zope/app/i18nfile/browser/configure.zcml:39
-msgid "A file that supports multiple locales."
-msgstr ""
-
-#: src/zope/app/i18nfile/browser/configure.zcml:81
-msgid "A multi-locale version of an Image."
-msgstr ""
-
-#: src/zope/app/i18nfile/browser/file_edit.pt:39
-#: src/zope/app/i18nfile/browser/image_edit.pt:40
-msgid "Default Language"
-msgstr ""
-
-#: src/zope/app/i18nfile/browser/file_edit.pt:54
-#: src/zope/app/i18nfile/browser/image_edit.pt:55
-#: src/zope/app/applicationcontrol/browser/translationdomaincontrol.pt:16
-#: src/zope/app/i18n/browser/synchronize.pt:88
-msgid "Language"
-msgstr ""
-
-#: src/zope/app/i18nfile/browser/file_edit.pt:66
-#: src/zope/app/i18nfile/browser/image_edit.pt:67
-#: src/zope/app/apidoc/viewmodule/menu.pt:31
-msgid "show-button"
-msgstr ""
-
-#: src/zope/app/i18nfile/browser/file_edit.pt:68
-#: src/zope/app/i18nfile/browser/image_edit.pt:69
-#: src/zope/app/introspector/marker.pt:118
-#: src/zope/app/registration/browser/editregistration.pt:53
-msgid "remove-button"
-msgstr ""
-
-#: src/zope/app/i18nfile/browser/file_edit.pt:71
-#: src/zope/app/i18nfile/browser/image_edit.pt:72
-msgid "Add new language"
-msgstr ""
-
-#: src/zope/app/i18nfile/browser/file_edit.pt:87
-#: src/zope/app/i18nfile/browser/image_edit.pt:94
-#: src/zope/app/cache/browser/cacheableedit.pt:45
-#: src/zope/app/cache/browser/ramedit.pt:51
-#: src/zope/app/dublincore/browser/edit.pt:35
-#: src/zope/app/rdb/browser/rdbconnection.pt:28
-#: src/zope/app/errorservice/browser/error_config.pt:46
-#: src/zope/app/securitypolicy/browser/manage_roleform.pt:63
-#: src/zope/app/securitypolicy/browser/manage_permissionform.pt:86
-msgid "save-changes-button"
-msgstr "Salvar Modificações"
-
-#: src/zope/app/i18nfile/browser/i18nfile.py:44
-#: src/zope/app/i18nfile/browser/i18nimage.py:27
-msgid "Edit Form"
-msgstr ""
-
-#: src/zope/app/i18nfile/browser/i18nfile.py:45
-#, fuzzy
-msgid ""
-"This edit form allows you to make changes to the properties of this file."
-msgstr "Este formulário permite associar um cache a este objeto."
-
-#: src/zope/app/i18nfile/browser/i18nimage.py:28
-msgid ""
-"This edit form allows you to make changes to the properties of this image."
-msgstr ""
-
-#: src/zope/app/i18nfile/browser/image_edit.pt:85
-msgid "Dimensions"
-msgstr ""
-
-#: src/zope/app/i18nfile/configure.zcml:22
-msgid "An Internationalized File"
-msgstr ""
-
-#: src/zope/app/i18nfile/configure.zcml:22
-#: src/zope/app/i18nfile/browser/configure.zcml:39
-msgid "I18n File"
-msgstr ""
-
-#: src/zope/app/i18nfile/configure.zcml:49
-msgid "An Internationalized Image"
-msgstr ""
-
-#: src/zope/app/i18nfile/configure.zcml:49
-#: src/zope/app/i18nfile/browser/configure.zcml:81
-msgid "I18n Image"
-msgstr ""
-
 #: src/zope/app/introspector/configure.zcml:42
 msgid "Introspector"
 msgstr ""
@@ -1812,6 +1643,11 @@ msgstr ""
 
 #: src/zope/app/introspector/marker.pt:109
 msgid "Remove Interfaces:"
+msgstr ""
+
+#: src/zope/app/introspector/marker.pt:118
+#: src/zope/app/registration/browser/editregistration.pt:53
+msgid "remove-button"
 msgstr ""
 
 #: src/zope/app/introspector/marker.pt:124
@@ -2090,8 +1926,6 @@ msgstr ""
 #: src/zope/app/utility/browser/configure.zcml:85
 #: src/zope/app/cache/browser/configure.zcml:24
 #: src/zope/app/file/browser/configure.zcml:29
-#: src/zope/app/i18nfile/browser/configure.zcml:31
-#: src/zope/app/i18nfile/browser/configure.zcml:73
 #: src/zope/app/rdb/browser/configure.zcml:27
 #: src/zope/app/zptpage/browser/configure.zcml:39
 #: src/zope/app/securitypolicy/browser/configure.zcml:25
@@ -2142,6 +1976,18 @@ msgstr ""
 
 #: src/zope/app/publisher/interfaces/browser.py:39
 msgid "The url is relative to the object the menu is being displayed for."
+msgstr ""
+
+#: src/zope/app/publisher/interfaces/browser.py:44
+#: src/zope/app/publisher/interfaces/browser.py:87
+#: src/zope/app/security/interfaces.py:44
+#: src/zope/app/security/interfaces.py:189 src/zope/schema/interfaces.py:100
+#: src/zope/schema/interfaces.py:463
+#: src/zope/app/site/browser/interfacebrowse.pt:11
+#: src/zope/app/dublincore/browser/edit.pt:16
+#: src/zope/app/container/browser/contents.pt:33
+#: src/zope/app/container/browser/index.pt:27
+msgid "Title"
 msgstr ""
 
 #: src/zope/app/publisher/interfaces/browser.py:45
@@ -2766,7 +2612,7 @@ msgstr ""
 
 #: src/zope/app/site/browser/__init__.py:214
 #: src/zope/app/site/browser/tools.py:107
-#: src/zope/app/utility/browser/__init__.py:57
+#: src/zope/app/utility/browser/__init__.py:59
 msgid "Please select at least one checkbox"
 msgstr ""
 
@@ -3382,11 +3228,15 @@ msgid ""
 "transactions initiated by you."
 msgstr ""
 
-#: src/zope/app/utility/browser/__init__.py:102
+#: src/zope/app/utility/browser/__init__.py:100
+msgid "Deactivated: ${deactivated_utilities}"
+msgstr ""
+
+#: src/zope/app/utility/browser/__init__.py:104
 msgid "None of the checked utilities were active"
 msgstr ""
 
-#: src/zope/app/utility/browser/__init__.py:114
+#: src/zope/app/utility/browser/__init__.py:116
 msgid ""
 "Can't delete active utility/utilites: ${utility_names}; use the Deactivate "
 "button to deactivate"
@@ -3396,16 +3246,12 @@ msgstr ""
 msgid "Deleted: ${utility_names}"
 msgstr ""
 
-#: src/zope/app/utility/browser/__init__.py:83
+#: src/zope/app/utility/browser/__init__.py:85
 msgid "Activated: ${activated_utilities}"
 msgstr ""
 
-#: src/zope/app/utility/browser/__init__.py:87
+#: src/zope/app/utility/browser/__init__.py:89
 msgid "All of the checked utilities were already active"
-msgstr ""
-
-#: src/zope/app/utility/browser/__init__.py:98
-msgid "Deactivated: ${deactivated_utilities}"
 msgstr ""
 
 #: src/zope/app/utility/browser/configure.zcml:23
@@ -3497,12 +3343,12 @@ msgstr ""
 
 #: src/zope/app/zptpage/configure.zcml:12
 #: src/zope/app/zptpage/browser/configure.zcml:23
-msgid "A simple, content-based Page Template"
+msgid "ZPT Page"
 msgstr ""
 
 #: src/zope/app/zptpage/configure.zcml:12
 #: src/zope/app/zptpage/browser/configure.zcml:23
-msgid "ZPT Page"
+msgid "A simple, content-based Page Template"
 msgstr ""
 
 #: src/zope/app/zptpage/interfaces.py:37
@@ -3754,6 +3600,11 @@ msgstr ""
 #: src/zope/schema/tests/test_objectfield.py:44
 msgid "Bar description"
 msgstr ""
+
+#, fuzzy
+#~ msgid ""
+#~ "This edit form allows you to make changes to the properties of this file."
+#~ msgstr "Este formulário permite associar um cache a este objeto."
 
 #, fuzzy
 #~ msgid "A simple case insensitive Folder."
