@@ -17,7 +17,6 @@ and ZCML files.
 
 $Id$
 """
-
 import os, sys, fnmatch
 import time
 import tokenize
@@ -27,15 +26,13 @@ from pygettext import safe_eval, normalize, make_escapes
 from interfaces import IPOTEntry, IPOTMaker, ITokenEater
 from zope.interface import implements
 
-__metaclass__ = type
-
 DEFAULT_CHARSET = 'UTF-8'
 DEFAULT_ENCODING = '8bit'
 
 pot_header = '''\
 ##############################################################################
 #
-# Copyright (c) 2003 Zope Corporation and Contributors.
+# Copyright (c) 2003-2004 Zope Corporation and Contributors.
 # All Rights Reserved.
 #
 # This software is subject to the provisions of the Zope Public License,
@@ -60,7 +57,7 @@ msgstr ""
 
 '''
 
-class POTEntry:
+class POTEntry(object):
     """This class represents a single message entry in the POT file.
     """
     implements(IPOTEntry)
@@ -89,7 +86,7 @@ class POTEntry:
     def __cmp__(self, other):
         return cmp(self.comments, other.comments)
 
-class POTMaker:
+class POTMaker(object):
     """This class inserts sets of strings into a POT file.
     """
     implements(IPOTMaker)
@@ -137,7 +134,7 @@ class POTMaker:
             
         file.close()
 
-class TokenEater:
+class TokenEater(object):
     """This is almost 100% taken from pygettext.py, except that I
     removed all option handling and output a dictionary.
 
