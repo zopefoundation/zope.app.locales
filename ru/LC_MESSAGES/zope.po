@@ -3546,7 +3546,7 @@ msgstr "Участник сайта"
 
 #: src/zope/app/session/browser.zcml:15
 msgid "Cookie Client Id Manager Properties"
-msgstr "Свойства менеджера идентификационной cookie"
+msgstr "Свойства менеджера идентификации клиента через cookie"
 
 #: src/zope/app/session/browser.zcml:23
 msgid "Stores session data persistently in the ZODB"
