@@ -1733,7 +1733,7 @@ msgstr "Предоставляемый интерфейс"
 #: src/zope/app/container/browser/contents.pt:32
 #: src/zope/app/container/browser/index.pt:26
 msgid "Name"
-msgstr "Имя"
+msgstr "Название"
 
 #: src/zope/app/component/interfaces/__init__.py:140
 msgid "The permission required for use"
@@ -1741,7 +1741,7 @@ msgstr "Права необходимые для использования"
 
 #: src/zope/app/component/interfaces/__init__.py:148
 msgid "Factory Name"
-msgstr "Имя фабрики"
+msgstr "Название фабрики"
 
 #: src/zope/app/component/interfaces/__init__.py:164
 msgid "Register As"
@@ -2243,7 +2243,7 @@ msgstr "Контейнер не является Zope контейнером."
 
 #: src/zope/app/container/contained.py:705
 msgid "An empty name was provided. Names cannot be empty."
-msgstr "Было введено пустое имя. Имена не могут быть пустыми."
+msgstr "Было введено пустое название.Названия не могут быть пустыми."
 
 #: src/zope/app/container/contained.py:715
 msgid "Names cannot begin with '+' or '@' or contain '/'"
@@ -2251,7 +2251,7 @@ msgstr "Имена не могут начинаться с '+' или '@', ил�
 
 #: src/zope/app/container/contained.py:720
 msgid "The given name is already being used"
-msgstr "Данное имя уже используется"
+msgstr "Данное название уже используется"
 
 #: src/zope/app/container/size.py:40
 msgid "1 item"
@@ -2867,7 +2867,7 @@ msgstr "Обновлено ${date_time}"
 #: src/zope/app/file/browser/file_add.pt:46
 #: src/zope/app/form/browser/add.pt:55
 msgid "Object Name"
-msgstr "Имя объекта"
+msgstr "Название объекта"
 
 #: src/zope/app/file/browser/file_upload.pt:27
 msgid "(currently ${content-type})"
@@ -3661,7 +3661,7 @@ msgstr "Имя хоста"
 
 #: src/zope/app/mail/interfaces.py:155
 msgid "Name of server to be used as SMTP server."
-msgstr "Имя SMPP сервера."
+msgstr "Имя SMTP сервера."
 
 #: src/zope/app/mail/interfaces.py:158
 msgid "Port"
@@ -3841,11 +3841,11 @@ msgstr "Интерфейс для которого зарегистрирова�
 
 #: src/zope/app/onlinehelp/interfaces.py:82
 msgid "View Name"
-msgstr "Имя представления"
+msgstr "Название представления"
 
 #: src/zope/app/onlinehelp/interfaces.py:83
 msgid "The View Name for which this Help Topic is registered"
-msgstr "Имя представления для которого зарегистрирована данная тема справки"
+msgstr "Название представления для которого зарегистрирована данная тема справки"
 
 #: src/zope/app/pagelet/exceptions.py:30
 msgid "Pagelet slot interface not found."
@@ -4052,7 +4052,7 @@ msgstr "для:"
 #: src/zope/app/apidoc/ifacemodule/component_macros.pt:28
 #: src/zope/app/component/browser/utilreg_details.pt:7
 msgid "name:"
-msgstr "имя:"
+msgstr "название:"
 
 #: src/zope/app/principalannotation/configure.zcml:18
 msgid "Stores Annotations for Principals"
@@ -4430,7 +4430,7 @@ msgstr "Необходимо выбрать поле для удаления"
 
 #: src/zope/app/schema/browser/__init__.py:63
 msgid "Invalid field name: %s"
-msgstr "Неверное имя поля: %s"
+msgstr "Неверное название поля: %s"
 
 #: src/zope/app/schema/browser/__init__.py:69
 msgid "Invalid position: %s"
@@ -5106,14 +5106,14 @@ msgstr "Менеджер идентификации клиента через co
 
 #: src/zope/app/session/http.py:48
 msgid "Cookie Name"
-msgstr "Имя cookie"
+msgstr "Название cookie"
 
 #: src/zope/app/session/http.py:49
 msgid ""
 "Name of cookie used to maintain state. Must be unique to the site domain "
 "name, and only contain ASCII letters, digits and '_'"
 msgstr ""
-"Имя cookie используемой для сохранения состояния. Должно быть уникально для "
+"Название cookie используемой для сохранения состояния. Должно быть уникально для "
 "доменного имени сайта и содержать только символы ASCII, цифры и символ '_'"
 
 #: src/zope/app/session/http.py:61
