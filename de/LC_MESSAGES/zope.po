@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: zope\n"
-"POT-Creation-Date: Mon Jul 26 13:53:10 2004\n"
+"POT-Creation-Date: Tue Jul 27 16:25:14 2004\n"
 "PO-Revision-Date: 2004-06-02 06:40-0400\n"
 "Last-Translator: Stephan Richter <stephan.richter@tufts.edu>\n"
 "Language-Team: German <zope3-dev@zope.org>\n"
@@ -33,7 +33,7 @@ msgid "The interface provided"
 msgstr "Das bereitgestellte Interface"
 
 #: src/zope/app/adapter/adapter.py:298 src/zope/app/site/interfaces.py:162
-#: src/zope/app/site/browser/tool.pt:40
+#: src/zope/app/site/browser/tool.pt:39
 #: src/zope/app/container/browser/contents.pt:32
 #: src/zope/app/container/browser/index.pt:26
 msgid "Name"
@@ -373,7 +373,7 @@ msgstr "Implementationen"
 msgid "This is a list of all available services by name."
 msgstr "Dies ist eine Liste aller Dienstnamen."
 
-#: src/zope/app/apidoc/utilities.py:254 src/zope/app/apidoc/utilities.py:256
+#: src/zope/app/apidoc/utilities.py:262 src/zope/app/apidoc/utilities.py:264
 #: src/zope/app/applicationcontrol/browser/runtimeinfo.py:55
 msgid "n/a"
 msgstr "entfällt"
@@ -2208,7 +2208,7 @@ msgstr "Aktualisiert"
 
 #: src/zope/app/registration/browser/configure.zcml:32
 #: src/zope/app/registration/browser/configure.zcml:80
-#: src/zope/app/site/browser/tool.pt:41
+#: src/zope/app/site/browser/tool.pt:40
 #: src/zope/app/site/browser/serviceactivation.pt:27
 msgid "Registration"
 msgstr "Registrierung"
@@ -2669,6 +2669,12 @@ msgstr "Dienst hinzufügen"
 msgid "Add Utility"
 msgstr "Werkzeug hinzufügen"
 
+#: src/zope/app/site/browser/__init__.py:214
+#: src/zope/app/site/browser/tools.py:106
+#: src/zope/app/utility/browser/__init__.py:59
+msgid "Please select at least one checkbox"
+msgstr "Bitte machen Sie wenigstens ein Häkchen"
+
 #: src/zope/app/site/browser/__init__.py:234
 msgid "Activated: ${activated_services}"
 msgstr "Aktiviert: ${activated_services}"
@@ -2875,11 +2881,6 @@ msgstr "Registrierungen für den ${service_type}-Dienst"
 msgid "submit-button"
 msgstr "Abschicken"
 
-#: src/zope/app/site/browser/services.pt:15
-#: src/zope/app/utility/browser/utilities.pt:11
-msgid "(click to clear message)"
-msgstr "(Nachricht löschen)"
-
 #: src/zope/app/site/browser/services.pt:18
 msgid "No services are registered."
 msgstr "Es sind keine Dienste registriert."
@@ -2977,11 +2978,11 @@ msgstr ""
 "Die Webseitenverwaltungs-Oberfläche erlaubt es, Software dieser Webseite zu "
 "installieren und konfigurieren."
 
-#: src/zope/app/site/browser/tool.pt:102
+#: src/zope/app/site/browser/tool.pt:101
 msgid "rename-button"
 msgstr "Umbenennen"
 
-#: src/zope/app/site/browser/tool.pt:106
+#: src/zope/app/site/browser/tool.pt:105
 #: src/zope/app/site/browser/services.pt:74
 #: src/zope/app/utility/browser/utilities.pt:50
 #: src/zope/app/zptpage/browser/inlinecode.pt:63
@@ -2992,38 +2993,44 @@ msgstr "Umbenennen"
 msgid "refresh-button"
 msgstr "Auffrischen"
 
-#: src/zope/app/site/browser/tool.pt:110
+#: src/zope/app/site/browser/tool.pt:109
 #: src/zope/app/securitypolicy/browser/principal_role_association.pt:98
 msgid "apply-button"
 msgstr "Anwenden"
 
-#: src/zope/app/site/browser/tool.pt:113
+#: src/zope/app/site/browser/tool.pt:112
 msgid "cancel-button"
 msgstr "Abbrechen"
 
-#: src/zope/app/site/browser/tool.pt:25
+#: src/zope/app/site/browser/tool.pt:21
+#: src/zope/app/site/browser/services.pt:15
+#: src/zope/app/utility/browser/utilities.pt:11
+msgid "(click to clear message)"
+msgstr "(Nachricht löschen)"
+
+#: src/zope/app/site/browser/tool.pt:24
 msgid "No tools are registered."
 msgstr "Es sind keine Werkzeuge registriert."
 
-#: src/zope/app/site/browser/tool.pt:30
+#: src/zope/app/site/browser/tool.pt:29
 msgid "Unless a tool is disabled the tool name links to the active tool. ..."
 msgstr ""
 "Der Werkzeugname verweist auf das aktive Werkzeug, es sei denn das Werkzeug "
 "ist deaktiviert "
 
-#: src/zope/app/site/browser/tool.pt:42
+#: src/zope/app/site/browser/tool.pt:41
 msgid "Parent"
 msgstr "Eltern"
 
-#: src/zope/app/site/browser/tool.pt:67
+#: src/zope/app/site/browser/tool.pt:66
 msgid "active"
 msgstr "aktiv"
 
-#: src/zope/app/site/browser/tool.pt:72
+#: src/zope/app/site/browser/tool.pt:71
 msgid "disabled"
 msgstr "deaktiviert"
 
-#: src/zope/app/site/browser/tool.pt:91
+#: src/zope/app/site/browser/tool.pt:90
 #: src/zope/app/site/browser/services.pt:66
 #: src/zope/app/site/browser/add_svc_config.pt:16
 #: src/zope/app/utility/browser/utilities.pt:42
@@ -3031,21 +3038,21 @@ msgstr "deaktiviert"
 msgid "activate-button"
 msgstr "Aktivieren"
 
-#: src/zope/app/site/browser/tool.pt:93
+#: src/zope/app/site/browser/tool.pt:92
 #: src/zope/app/site/browser/services.pt:68
 #: src/zope/app/utility/browser/utilities.pt:44
 #: src/zope/app/registration/browser/registration.pt:25
 msgid "deactivate-button"
 msgstr "Deaktivieren"
 
-#: src/zope/app/site/browser/tool.pt:96
+#: src/zope/app/site/browser/tool.pt:95
 #: src/zope/app/i18n/browser/translate.pt:48
 #: src/zope/app/container/browser/add.pt:38
 #: src/zope/app/introspector/marker.pt:133 src/zope/app/form/browser/add.pt:52
 msgid "add-button"
 msgstr "Hinzufügen"
 
-#: src/zope/app/site/browser/tool.pt:99
+#: src/zope/app/site/browser/tool.pt:98
 #: src/zope/app/site/browser/services.pt:71
 #: src/zope/app/utility/browser/utilities.pt:47
 #: src/zope/app/i18n/browser/translate.pt:37
@@ -3056,23 +3063,19 @@ msgstr "Löschen"
 msgid "Available Tools"
 msgstr "Verfügbare Werkzeuge"
 
-#: src/zope/app/site/browser/tools.py:159
-#: src/zope/app/site/browser/tools.py:303
+#: src/zope/app/site/browser/tools.py:109
 msgid "Deleted selected tools."
 msgstr "Ausgewählte Tools wurden gelöscht."
 
-#: src/zope/app/site/browser/tools.py:162
-#: src/zope/app/site/browser/tools.py:308
+#: src/zope/app/site/browser/tools.py:114
 msgid "Renamed selected tools."
 msgstr "Ausgewählte Tools umbenannt."
 
-#: src/zope/app/site/browser/tools.py:167
-#: src/zope/app/site/browser/tools.py:313
+#: src/zope/app/site/browser/tools.py:117
 msgid "Activated registrations."
 msgstr "Registrierungen wurden aktiviert."
 
-#: src/zope/app/site/browser/tools.py:170
-#: src/zope/app/site/browser/tools.py:316
+#: src/zope/app/site/browser/tools.py:120
 msgid "Deactivated registrations."
 msgstr "Registrierungen wurden deaktiviert."
 
@@ -3326,10 +3329,6 @@ msgstr ""
 #: src/zope/app/utility/browser/__init__.py:148
 msgid "Deleted: ${utility_names}"
 msgstr "Gelöscht: ${utility_names}"
-
-#: src/zope/app/utility/browser/__init__.py:59
-msgid "Please select at least one checkbox"
-msgstr "Bitte machen Sie wenigstens ein Häkchen"
 
 #: src/zope/app/utility/browser/__init__.py:85
 msgid "Activated: ${activated_utilities}"
