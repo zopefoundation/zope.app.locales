@@ -2014,7 +2014,7 @@ msgid "Please note the following:"
 msgstr "Per favore fai attenzione a:"
 
 #: src/zope/app/exception/browser/notfound.pt:13
-msgid "You might have miss-spelled the url"
+msgid "You might have misspelled the url"
 msgstr "Puoi non aver scritto correttamente l'URL"
 
 #: src/zope/app/exception/browser/notfound.pt:14

@@ -1996,7 +1996,7 @@ msgid "Please note the following:"
 msgstr "Veuillez noter ce qui suit:"
 
 #: src/zope/app/exception/browser/notfound.pt:13
-msgid "You might have miss-spelled the url"
+msgid "You might have misspelled the url"
 msgstr "Vous devez avoir incorrectement orthographier l'URL"
 
 #: src/zope/app/exception/browser/notfound.pt:14
