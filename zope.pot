@@ -13,8 +13,8 @@
 ##############################################################################
 msgid ""
 msgstr ""
-"Project-Id-Version: Development/Revision: 29515\n"
-"POT-Creation-Date: Thu Mar 17 11:23:29 2005\n"
+"Project-Id-Version: Development/Revision: 29519\n"
+"POT-Creation-Date: Thu Mar 17 16:36:48 2005\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
@@ -1571,6 +1571,10 @@ msgstr ""
 
 #: src/zope/app/component/browser/registration.py:113
 msgid "Updated"
+msgstr ""
+
+#: src/zope/app/component/browser/site.py:33
+msgid "<no name>"
 msgstr ""
 
 #: src/zope/app/component/browser/site_management.pt:5
@@ -3935,7 +3939,6 @@ msgstr ""
 
 #: src/zope/app/presentation/pagereg_details.pt:7
 #: src/zope/app/apidoc/ifacemodule/component_macros.pt:28
-#: src/zope/app/component/browser/utilreg_details.pt:7
 msgid "name:"
 msgstr ""
 
