@@ -11,16 +11,16 @@
 # FOR A PARTICULAR PURPOSE.
 #
 ##############################################################################
-"""
+"""Tests for the message string extraction tool.
+
 $Id$
 """
-
 import unittest
 from zope.testing.doctestunit import DocTestSuite
 
 def test_suite():
     return unittest.TestSuite((
-        DocTestSuite('zope.app.translation_files.extract'),
+        DocTestSuite('zope.app.locales.extract'),
         ))
 
 if __name__ == '__main__':

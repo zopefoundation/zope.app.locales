@@ -24,7 +24,7 @@ Internationalization (I18n) and Localization (L10n)
   ----------------------------------------------------
 
     1. Go to the right directory, such as 
-       'zope/app/translation_files/locales/de/LC_MESSAGES'.
+       'zope/app/locales/de/LC_MESSAGES'.
 
     2. Run the following command::
 
