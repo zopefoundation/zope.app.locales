@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zope X3 Pre-M4\n"
-"POT-Creation-Date: Mon Jul 19 17:51:08 2004\n"
+"POT-Creation-Date: Mon Jul 26 13:53:10 2004\n"
 "PO-Revision-Date: 2003-08-07 18:51-0300\n"
 "Last-Translator: Sidnei da Silva <sidnei@plone.org>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
@@ -124,11 +124,11 @@ msgstr ""
 msgid "[top]"
 msgstr ""
 
-#: src/zope/app/apidoc/classmodule/class_index.pt:102
+#: src/zope/app/apidoc/classmodule/class_index.pt:103
 msgid "There are no attributes in this class."
 msgstr ""
 
-#: src/zope/app/apidoc/classmodule/class_index.pt:144
+#: src/zope/app/apidoc/classmodule/class_index.pt:145
 msgid "There are no methods in this class."
 msgstr ""
 
@@ -137,43 +137,47 @@ msgstr ""
 msgid "Bases"
 msgstr ""
 
-#: src/zope/app/apidoc/classmodule/class_index.pt:34
+#: src/zope/app/apidoc/classmodule/class_index.pt:29
+msgid "(C-based class)"
+msgstr ""
+
+#: src/zope/app/apidoc/classmodule/class_index.pt:35
 #: src/zope/app/apidoc/ifacemodule/index.pt:40
 msgid "There are no base classes."
 msgstr ""
 
-#: src/zope/app/apidoc/classmodule/class_index.pt:39
+#: src/zope/app/apidoc/classmodule/class_index.pt:40
 msgid "Implemented Interfaces"
 msgstr ""
 
-#: src/zope/app/apidoc/classmodule/class_index.pt:54
+#: src/zope/app/apidoc/classmodule/class_index.pt:55
 #, fuzzy
 msgid "There are no implemented interfaces."
 msgstr "Use 'atualizar' ou entre com mais interfaces"
 
-#: src/zope/app/apidoc/classmodule/class_index.pt:60
+#: src/zope/app/apidoc/classmodule/class_index.pt:61
 msgid "Attributes/Properties"
 msgstr ""
 
-#: src/zope/app/apidoc/classmodule/class_index.pt:73
+#: src/zope/app/apidoc/classmodule/class_index.pt:74
 #: src/zope/app/apidoc/classmodule/function_index.pt:40
 #: src/zope/app/apidoc/classmodule/function_index.pt:44
 msgid "type:"
 msgstr ""
 
-#: src/zope/app/apidoc/classmodule/class_index.pt:79
+#: src/zope/app/apidoc/classmodule/class_index.pt:80
 #: src/zope/app/apidoc/classmodule/function_index.pt:51
 msgid "Value:"
 msgstr ""
 
-#: src/zope/app/apidoc/classmodule/class_index.pt:93
-#: src/zope/app/apidoc/classmodule/class_index.pt:135
+#: src/zope/app/apidoc/classmodule/class_index.pt:94
+#: src/zope/app/apidoc/classmodule/class_index.pt:136
 #, fuzzy
 msgid "(read)"
 msgstr "Criado"
 
-#: src/zope/app/apidoc/classmodule/class_index.pt:95
-#: src/zope/app/apidoc/classmodule/class_index.pt:137
+#: src/zope/app/apidoc/classmodule/class_index.pt:96
+#: src/zope/app/apidoc/classmodule/class_index.pt:138
 msgid "(write)"
 msgstr ""
 
@@ -310,8 +314,8 @@ msgid "Services"
 msgstr ""
 
 #: src/zope/app/apidoc/servicemodule/index.pt:17
-#: src/zope/app/apidoc/classmodule/class_index.pt:83
-#: src/zope/app/apidoc/classmodule/class_index.pt:124
+#: src/zope/app/apidoc/classmodule/class_index.pt:84
+#: src/zope/app/apidoc/classmodule/class_index.pt:125
 msgid "Interface:"
 msgstr ""
 
@@ -329,7 +333,7 @@ msgstr ""
 
 #: src/zope/app/apidoc/servicemodule/index.pt:62
 #: src/zope/app/apidoc/utilitymodule/index.pt:68
-#: src/zope/app/apidoc/classmodule/class_index.pt:108
+#: src/zope/app/apidoc/classmodule/class_index.pt:109
 #: src/zope/app/apidoc/ifacemodule/index.pt:84
 msgid "Methods"
 msgstr ""
@@ -411,8 +415,8 @@ msgid "views for"
 msgstr ""
 
 #: src/zope/app/apidoc/viewmodule/index.pt:77
-#: src/zope/app/apidoc/classmodule/class_index.pt:91
-#: src/zope/app/apidoc/classmodule/class_index.pt:133
+#: src/zope/app/apidoc/classmodule/class_index.pt:92
+#: src/zope/app/apidoc/classmodule/class_index.pt:134
 msgid "Permissions:"
 msgstr ""
 
@@ -781,31 +785,31 @@ msgstr "Você precisa selecionar um objeto para adicionar."
 msgid "Find"
 msgstr "Busca"
 
-#: src/zope/app/container/browser/contents.pt:119
+#: src/zope/app/container/browser/contents.pt:118
 msgid "container-rename-button"
 msgstr "Renomear"
 
-#: src/zope/app/container/browser/contents.pt:123
+#: src/zope/app/container/browser/contents.pt:122
 msgid "container-cut-button"
 msgstr "Recortar"
 
-#: src/zope/app/container/browser/contents.pt:127
+#: src/zope/app/container/browser/contents.pt:126
 msgid "container-copy-button"
 msgstr "Copiar"
 
-#: src/zope/app/container/browser/contents.pt:131
+#: src/zope/app/container/browser/contents.pt:130
 msgid "container-paste-button"
 msgstr "Colar"
 
-#: src/zope/app/container/browser/contents.pt:135
+#: src/zope/app/container/browser/contents.pt:134
 msgid "container-delete-button"
 msgstr "Excluir"
 
-#: src/zope/app/container/browser/contents.pt:162
+#: src/zope/app/container/browser/contents.pt:161
 msgid "container-apply-button"
 msgstr "Aplicar"
 
-#: src/zope/app/container/browser/contents.pt:165
+#: src/zope/app/container/browser/contents.pt:164
 msgid "container-cancel-button"
 msgstr "Cancelar"
 
@@ -819,19 +823,19 @@ msgstr "Listagem de conteúdo"
 msgid "Modified"
 msgstr "Modificado"
 
-#: src/zope/app/container/browser/contents.py:232
+#: src/zope/app/container/browser/contents.py:241
 msgid "You didn't specify any ids to remove."
 msgstr "Você não especificou nenhum id para ser excluído."
 
-#: src/zope/app/container/browser/contents.py:244
+#: src/zope/app/container/browser/contents.py:253
 msgid "You didn't specify any ids to copy."
 msgstr "Você não especificou nenhum id para copiar."
 
-#: src/zope/app/container/browser/contents.py:264
+#: src/zope/app/container/browser/contents.py:273
 msgid "You didn't specify any ids to cut."
 msgstr "Você não especificou nenhum id para recortar."
 
-#: src/zope/app/container/browser/contents.py:61
+#: src/zope/app/container/browser/contents.py:62
 msgid "You didn't specify any ids to rename."
 msgstr "Você não especificou nenhum id para renomear."
 
@@ -1189,7 +1193,7 @@ msgid "Object Name"
 msgstr "Nome"
 
 #: src/zope/app/form/browser/add.py:60
-#: src/zope/app/form/browser/editview.py:105
+#: src/zope/app/form/browser/editview.py:106
 msgid "An error occured."
 msgstr ""
 
@@ -1282,7 +1286,7 @@ msgstr ""
 msgid "widget-missing-multiple-value"
 msgstr ""
 
-#: src/zope/app/form/browser/editview.py:114
+#: src/zope/app/form/browser/editview.py:116
 msgid "Updated on ${date_time}"
 msgstr ""
 
@@ -1897,15 +1901,15 @@ msgstr "Nome"
 msgid "The View Name for which this Help Topic is registered"
 msgstr ""
 
-#: src/zope/app/pagetemplate/engine.py:102
-msgid "No interpreter named \"${lang_name}\" was found."
-msgstr ""
-
-#: src/zope/app/pagetemplate/engine.py:93
+#: src/zope/app/pagetemplate/engine.py:136
 msgid ""
 "Inline Code Evaluation is deactivated, which means that you cannot have "
 "inline code snippets in your Page Template. Activate Inline Code Evaluation "
 "and try again."
+msgstr ""
+
+#: src/zope/app/pagetemplate/engine.py:145
+msgid "No interpreter named \"${lang_name}\" was found."
 msgstr ""
 
 #: src/zope/app/pluggableauth/browser/configure.zcml:22
@@ -2551,38 +2555,38 @@ msgid "Role(s)"
 msgstr ""
 
 #: src/zope/app/securitypolicy/browser/principalroleview.py:92
-#: src/zope/app/securitypolicy/browser/rolepermissionview.py:139
+#: src/zope/app/securitypolicy/browser/rolepermissionview.py:138
 msgid "Settings changed at ${date_time}"
 msgstr ""
 
 # Default: "Acquire"
-#: src/zope/app/securitypolicy/browser/rolepermissionview.py:47
+#: src/zope/app/securitypolicy/browser/rolepermissionview.py:46
 msgid "permission-acquire"
 msgstr ""
 
 # Default: "Allow"
-#: src/zope/app/securitypolicy/browser/rolepermissionview.py:49
+#: src/zope/app/securitypolicy/browser/rolepermissionview.py:48
 msgid "permission-allow"
 msgstr ""
 
 # Default: "Deny"
-#: src/zope/app/securitypolicy/browser/rolepermissionview.py:51
+#: src/zope/app/securitypolicy/browser/rolepermissionview.py:50
 msgid "permission-deny"
 msgstr ""
 
-#: src/zope/app/securitypolicy/configure.zcml:63
+#: src/zope/app/securitypolicy/configure.zcml:90
 msgid "All users have this role implicitly"
 msgstr ""
 
-#: src/zope/app/securitypolicy/configure.zcml:63
+#: src/zope/app/securitypolicy/configure.zcml:90
 msgid "Everybody"
 msgstr ""
 
-#: src/zope/app/securitypolicy/configure.zcml:65
+#: src/zope/app/securitypolicy/configure.zcml:92
 msgid "Site Manager"
 msgstr "Administrador"
 
-#: src/zope/app/securitypolicy/configure.zcml:66
+#: src/zope/app/securitypolicy/configure.zcml:93
 msgid "Site Member"
 msgstr "Membro"
 
@@ -3368,11 +3372,11 @@ msgid ""
 "feature."
 msgstr ""
 
-#: src/zope/app/zptpage/zptpage.py:105
+#: src/zope/app/zptpage/zptpage.py:103
 msgid "1 line"
 msgstr ""
 
-#: src/zope/app/zptpage/zptpage.py:106
+#: src/zope/app/zptpage/zptpage.py:104
 msgid "${lines} lines"
 msgstr ""
 
