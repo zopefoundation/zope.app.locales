@@ -471,7 +471,7 @@ msgstr "Дерево Оформлений/Слоев"
 
 #: src/zope/app/apidoc/viewmodule/skin_layer.pt:28
 msgid "(default)"
-msgstr "(по-умолчанию)"
+msgstr "(по умолчанию)"
 
 #: src/zope/app/apidoc/viewmodule/skin_layer.pt:4
 msgid "Skins &amp; Layers"
@@ -523,7 +523,7 @@ msgstr "Схема"
 #: src/zope/app/apidoc/zcmlmodule/index.pt:68
 #: src/zope/app/apidoc/ifacemodule/index.pt:69
 msgid "default"
-msgstr "по-умолчанию"
+msgstr "по умолчанию"
 
 #: src/zope/app/apidoc/zcmlmodule/index.pt:76
 #: src/zope/app/apidoc/zcmlmodule/index.pt:138
@@ -1593,7 +1593,7 @@ msgstr "Изображение содержащее изображения дл�
 #: src/zope/app/i18nfile/browser/file_edit.pt:39
 #: src/zope/app/i18nfile/browser/image_edit.pt:40
 msgid "Default Language"
-msgstr "Язык по-умолчанию"
+msgstr "Язык по умолчанию"
 
 #: src/zope/app/i18nfile/browser/file_edit.pt:54
 #: src/zope/app/i18nfile/browser/image_edit.pt:55
@@ -2761,7 +2761,7 @@ msgstr "Интерфейсы"
 
 #: src/zope/app/site/browser/configure.zcml:138
 msgid "Visit default folder"
-msgstr "Сайт по-умолчанию"
+msgstr "Сайт по умолчанию"
 
 #: src/zope/app/site/browser/configure.zcml:142
 msgid "Add service"
@@ -3567,7 +3567,7 @@ msgstr "Если установлено, то значение поля не м�
 #: src/zope/schema/interfaces.py:126 src/zope/schema/interfaces.py:266
 #: src/zope/schema/interfaces.py:315
 msgid "Default Value"
-msgstr "Значение по-умолчанию"
+msgstr "Значение по умолчанию"
 
 #: src/zope/schema/interfaces.py:127 src/zope/schema/interfaces.py:267
 #: src/zope/schema/interfaces.py:316
@@ -3575,7 +3575,7 @@ msgid ""
 "The field default value may be None or a legal\n"
 "                        field value"
 msgstr ""
-"Значение по-умолчанию может быть None\n"
+"Значение по умолчанию может быть None\n"
 "            или допустимое для поля значение"
 
 #: src/zope/schema/interfaces.py:132
