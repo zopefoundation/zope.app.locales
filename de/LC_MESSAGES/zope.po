@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zope\n"
 "POT-Creation-Date: Tue Jul 27 16:25:14 2004\n"
-"PO-Revision-Date: 2004-06-02 06:40-0400\n"
+"PO-Revision-Date: 2004-08-23 08:49-0400\n"
 "Last-Translator: Stephan Richter <stephan.richter@tufts.edu>\n"
 "Language-Team: German <zope3-dev@zope.org>\n"
 "MIME-Version: 1.0\n"
@@ -155,9 +155,8 @@ msgid "Bases"
 msgstr "Basen"
 
 #: src/zope/app/apidoc/classmodule/class_index.pt:29
-#, fuzzy
 msgid "(C-based class)"
-msgstr "Seitenklasse"
+msgstr "(C-basierte Klasse)"
 
 #: src/zope/app/apidoc/classmodule/class_index.pt:35
 #: src/zope/app/apidoc/ifacemodule/index.pt:40
@@ -531,8 +530,7 @@ msgid "Subdirectives"
 msgstr "Unterdirektiven"
 
 #: src/zope/app/apidoc/zcmlmodule/menu.pt:4
-msgid ""
-"Namespaces that are not full URLs start with \"http://namespaces.zope.org\"."
+msgid "Namespaces that are not full URLs start with \"http://namespaces.zope.org\"."
 msgstr ""
 "Namensräume, die nicht als volle URIs angegeben sind, starten mit \"http://"
 "namespaces.zope.org\"."
@@ -606,8 +604,7 @@ msgid "seconds"
 msgstr "Sekunden"
 
 #: src/zope/app/applicationcontrol/browser/server-control.pt:13
-msgid ""
-"If you specify a time of 0 seconds, then the server will do a hard shutdown."
+msgid "If you specify a time of 0 seconds, then the server will do a hard shutdown."
 msgstr ""
 "Wenn Sie eine Zeit von 0 Sekunden eingeben, dann wird der Server sofort "
 "angehalten (hard shutdown)."
@@ -728,8 +725,7 @@ msgstr "Cache ungültig machen"
 
 #: src/zope/app/cache/browser/cacheableedit.pt:5
 msgid "This edit form allows you to associate a cache with this object."
-msgstr ""
-"Dieses Formular erlaubt Ihnen, einen Cache für dieses Objekt zu definieren."
+msgstr "Dieses Formular erlaubt Ihnen, einen Cache für dieses Objekt zu definieren."
 
 #: src/zope/app/cache/browser/cacheableedit.pt:9
 msgid "Currently there is no cache associated with the object."
@@ -737,25 +733,23 @@ msgstr "Derzeit ist kein Cache für dieses Objekt definiert."
 
 #: src/zope/app/cache/browser/configure.zcml:12
 msgid "RAM Cache"
-msgstr ""
+msgstr "RAM Cache"
 
 #: src/zope/app/cache/browser/configure.zcml:12
 msgid "A RAM cache is a volatile (in memory) cache"
-msgstr ""
+msgstr "A RAM Cache ist ein unbestäniger (im Arbeitsspeicher) Cache"
 
 #: src/zope/app/cache/browser/configure.zcml:26
-#, fuzzy
 msgid "Statistics"
-msgstr "Status"
+msgstr "Statistiken"
 
 #: src/zope/app/cache/browser/configure.zcml:6
-#, fuzzy
 msgid "Caches"
-msgstr "Cachename"
+msgstr "Caches"
 
 #: src/zope/app/cache/browser/configure.zcml:6
 msgid "Caches can be used to make your site run faster."
-msgstr ""
+msgstr "Caches können dayu benutzt werden, ihre Seite schneller laufen zu lassen."
 
 #: src/zope/app/cache/browser/ramedit.pt:20
 msgid "Maximum cached entries"
@@ -995,8 +989,7 @@ msgid "Error Reporting Service for Logging Errors"
 msgstr "Fehlermeldedienst für Logging Fehler"
 
 #: src/zope/app/errorservice/browser/error.pt:10
-msgid ""
-"This page lists the exceptions that have occurred in this site recently."
+msgid "This page lists the exceptions that have occurred in this site recently."
 msgstr ""
 "Diese Seite listet die Ausnahmen auf, die kürzlich in dieser Webseite "
 "aufgetreten sind."
@@ -1377,8 +1370,7 @@ msgid "Database Schemas"
 msgstr "Datenbanken-Schemas"
 
 #: src/zope/app/generations/browser/managers.pt:18
-msgid ""
-"The database was updated to generation ${generation} for ${application}."
+msgid "The database was updated to generation ${generation} for ${application}."
 msgstr ""
 "Die Datenbank wurde auf Generation ${generation} für ${application} "
 "aktualisiert."
@@ -1477,8 +1469,7 @@ msgstr "Exportieren"
 
 #: src/zope/app/i18n/browser/synchronize.pt:122
 msgid "No connection could be made to remote data source."
-msgstr ""
-"Es konnte keine Verbindung mit der Fremddatenquelle hergestellt werden."
+msgstr "Es konnte keine Verbindung mit der Fremddatenquelle hergestellt werden."
 
 #: src/zope/app/i18n/browser/synchronize.pt:26
 msgid "Server URL"
@@ -1626,15 +1617,13 @@ msgid "Edit Form"
 msgstr "Bearbeitungsformular"
 
 #: src/zope/app/i18nfile/browser/i18nfile.py:48
-msgid ""
-"This edit form allows you to make changes to the properties of this file."
+msgid "This edit form allows you to make changes to the properties of this file."
 msgstr ""
 "Dieses Berarbeitungsformular erlaubt es Ihnen, Änderungen an den "
 "Einstellungen ihrer Datei vorzunehmen."
 
 #: src/zope/app/i18nfile/browser/i18nimage.py:28
-msgid ""
-"This edit form allows you to make changes to the properties of this image."
+msgid "This edit form allows you to make changes to the properties of this image."
 msgstr ""
 "Dieses Berarbeitungsformular erlaubt es Ihnen, Änderungen an den "
 "Einstellungen ihres Bildes vorzunehmen."
@@ -1793,8 +1782,7 @@ msgstr "Menü der hinzufügbaren Caches"
 
 #: src/zope/app/menus.zcml:17
 msgid "Menu of objects to be added to content folders"
-msgstr ""
-"Menü von Objekten die als Inhalt zu dem Ordner hinzugefügt werden können"
+msgstr "Menü von Objekten die als Inhalt zu dem Ordner hinzugefügt werden können"
 
 #: src/zope/app/menus.zcml:21
 msgid "Menu for objects to be added according to containment constraints"
@@ -1804,8 +1792,7 @@ msgstr ""
 
 #: src/zope/app/menus.zcml:26
 msgid "Menu of objects to be added to site management folders"
-msgstr ""
-"Menü von Objekten die Webseitenverwaltungs-Ordnern hinzugefügt werden können"
+msgstr "Menü von Objekten die Webseitenverwaltungs-Ordnern hinzugefügt werden können"
 
 #: src/zope/app/menus.zcml:30
 msgid "Menu of database connections to be added"
@@ -1988,8 +1975,7 @@ msgstr "Anmeldung"
 
 #: src/zope/app/pluggableauth/interfaces.py:31
 msgid "The Login/Username of the user. This value can change."
-msgstr ""
-"Eine Anmeldung (Benutzername) fuer den Nutzer. Dieser Wert kann sich ändern."
+msgstr "Eine Anmeldung (Benutzername) fuer den Nutzer. Dieser Wert kann sich ändern."
 
 #: src/zope/app/pluggableauth/interfaces.py:37
 msgid "The password for the user."
@@ -2019,8 +2005,7 @@ msgstr "Die URL, die aufgerufen werden soll, wenn der Eintrag ausgewählt ist"
 
 #: src/zope/app/publisher/interfaces/browser.py:39
 msgid "The url is relative to the object the menu is being displayed for."
-msgstr ""
-"DIe URL ist relativ zu dem Objekt für das der Menüeintrag angezeigt wird."
+msgstr "DIe URL ist relativ zu dem Objekt für das der Menüeintrag angezeigt wird."
 
 #: src/zope/app/publisher/interfaces/browser.py:45
 msgid "The text to be displayed for the menu item"
@@ -2104,8 +2089,7 @@ msgid "Add Database Connection Registration"
 msgstr "Datenbankverbindungs-Registrierung hinzufügen"
 
 #: src/zope/app/rdb/browser/configure.zcml:5
-msgid ""
-"Database Adapters are used to connect to external       relational databases."
+msgid "Database Adapters are used to connect to external       relational databases."
 msgstr ""
 "Datenbankadapter werde benutzt, um Verbindungen zu externen relationalen "
 "Datenbanken herzustellen."
@@ -2157,8 +2141,7 @@ msgstr "Datenbankadapter - Testverbindung"
 
 #: src/zope/app/rdb/browser/rdbtestsql.pt:13
 msgid "Here you can enter an SQL statement, so you can test the connection."
-msgstr ""
-"Sie können hier eine SQL-Abfrage eingeben, um die Verbindung zu testen."
+msgstr "Sie können hier eine SQL-Abfrage eingeben, um die Verbindung zu testen."
 
 #: src/zope/app/rdb/browser/rdbtestsql.pt:18
 msgid "Query"
@@ -2398,8 +2381,7 @@ msgid "Login Failed!"
 msgstr "Login fehlgeschlagen!"
 
 #: src/zope/app/security/browser/login_failed.pt:9
-msgid ""
-"You cancelled the login procedure. <a href=\"\"> Click here to return. </a>"
+msgid "You cancelled the login procedure. <a href=\"\"> Click here to return. </a>"
 msgstr ""
 "Sie haben den Loginprozess abgebrochen. <a href=\"\"> Bitte hier klicken um "
 "zurückzukehren. </a>"
@@ -2562,9 +2544,8 @@ msgid "Roles"
 msgstr "Rollen"
 
 #: src/zope/app/securitypolicy/browser/manage_access.pt:89
-#, fuzzy
 msgid "Save Changes"
-msgstr "Änderungen gespeichert."
+msgstr "Speichere Änderungen"
 
 #: src/zope/app/securitypolicy/browser/manage_permissionform.pt:24
 msgid "Helpful message."
@@ -2584,8 +2565,7 @@ msgstr "Der Rolle zugewiesene Berechtigungen ${perm_title} (id: ${perm_id})"
 
 #: src/zope/app/securitypolicy/browser/manage_roleform.pt:9
 msgid "Helpful message explaining about how to set specific roles"
-msgstr ""
-"Hilfreiche Nachricht die erklärt wie man spezifische Rollen setzen kann."
+msgstr "Hilfreiche Nachricht die erklärt wie man spezifische Rollen setzen kann."
 
 #: src/zope/app/securitypolicy/browser/principal_permission_edit.pt:12
 msgid "Permission Settings"
@@ -3370,8 +3350,7 @@ msgid "update-button"
 msgstr "Aktualisieren"
 
 #: src/zope/app/utility/browser/configureutility.pt:9
-msgid ""
-"Utility registrations for interface ${interface} with name ${utility_name}"
+msgid "Utility registrations for interface ${interface} with name ${utility_name}"
 msgstr ""
 "Werkzeugregistrierung für Interface ${interface} mit dem Namen "
 "${utility_name}"
@@ -3553,8 +3532,7 @@ msgstr "Vorgegebener Wert"
 msgid ""
 "The field default value may be None or a legal\n"
 "                        field value"
-msgstr ""
-"Der \"default\" Wert des Feldes kann None oder ein legaler Feldwert sein"
+msgstr "Der \"default\" Wert des Feldes kann None oder ein legaler Feldwert sein"
 
 #: src/zope/schema/interfaces.py:132
 msgid "Missing Value"
@@ -3638,8 +3616,7 @@ msgid "Value Type"
 msgstr "Werttyp"
 
 #: src/zope/schema/interfaces.py:385
-msgid ""
-"Field value items must conform to the given type, expressed via a Field."
+msgid "Field value items must conform to the given type, expressed via a Field."
 msgstr "Feldwerte müssen sich auf den Typen in diesem Feld anpassen."
 
 #: src/zope/schema/interfaces.py:389
@@ -3712,1131 +3689,3 @@ msgstr "Bar"
 msgid "Bar description"
 msgstr "Bar Beschreibung"
 
-#~ msgid "Activated: ${activated}.\n"
-#~ msgstr "Aktiviert: ${activated}.\n"
-
-#~ msgid "Registered: ${registered}.\n"
-#~ msgstr "Registriert: ${registered}.\n"
-
-#~ msgid "unregistered ${count} registrations"
-#~ msgstr "unregistrierte ${count} Registrierungen"
-
-#~ msgid "Services needed by this bundle"
-#~ msgstr "Dienste, die von diesem Bündel gebraucht werden"
-
-#~ msgid "(is: ${active_status})"
-#~ msgstr "(ist: ${active_status})"
-
-#~ msgid "No registrations are provided by this bundle."
-#~ msgstr "Dieses Bündel stellt keine Registrierungen zur Verfügung."
-
-#~ msgid "Click \"Activate bundle\" to perform the above actions."
-#~ msgstr ""
-#~ "Klicken Sie auf \"Bündel aktivieren\" um die o.a. Aktionen durchzuführen."
-
-#~ msgid "activate-bundle-button"
-#~ msgstr "Aktivieren"
-
-#~ msgid ""
-#~ "Click \"Deactivate bundle\" to unregister all registrations in this "
-#~ "bundle."
-#~ msgstr ""
-#~ "Klicken Sie auf \"Bündel deaktivieren\", um alle Registrierungen in "
-#~ "diesem Bündel nichtig zu machen."
-
-#~ msgid "deactivate-bundle-button"
-#~ msgstr "Deaktivieren"
-
-#~ msgid "${service_name} service"
-#~ msgstr "${service_name}-Dienst"
-
-#~ msgid "present in site at ${path}"
-#~ msgstr "befindet sich in Webseite ${path}"
-
-#~ msgid "registered in bundle at ${path}"
-#~ msgstr "registriert in Bündel ${path}"
-
-#~ msgid "Bundle Information"
-#~ msgstr "Bündelinformationen"
-
-#~ msgid "UNFULFILLED DEPENDENCY"
-#~ msgstr "NICHT ERFÜLLTE ABHÄNGIGKEIT"
-
-#~ msgid ""
-#~ "(You must <a href=\"../default/AddService\">add a ${service_name} service "
-#~ "to this site</a> before you can activate this bundle)"
-#~ msgstr ""
-#~ "(Sie müssen der Webseite <a href=\"../default/AddService\">einen "
-#~ "${service_name}-Dienst hinzufügen</a>, bevor Sie dieses Bündel aktivieren "
-#~ "können)"
-
-#~ msgid "No services are required by this bundle."
-#~ msgstr "Dieses Bündel benötigt keine Dienste."
-
-#~ msgid "Registrations in this bundle"
-#~ msgstr "Registrierungen in diesem Bündel"
-
-#~ msgid "For ${service_name} service"
-#~ msgstr "Für den ${service_name}-Dienst"
-
-#~ msgid "${usage_summary} implemented by ${impl_summary}"
-#~ msgstr "${usage_summary} implementiert von ${impl_summary}"
-
-#~ msgid "Conflicts with"
-#~ msgstr "widerspricht sich mit"
-
-#~ msgid "Overrides"
-#~ msgstr "Überschreibt"
-
-#~ msgid "Register only"
-#~ msgstr "Nur registrieren"
-
-#~ msgid "Register and activate"
-#~ msgstr "Registrieren und aktivieren"
-
-#~ msgid "Bundle"
-#~ msgstr "Bündel"
-
-#~ msgid "Case insensitive Folder"
-#~ msgstr "Ordner, der Groß-/Kleinschreibung nicht beachtet"
-
-#~ msgid "A simple case insensitive Folder."
-#~ msgstr "Ein einfacher Ordner, der Groß-/Kleinschreibung nicht beachtet"
-
-#~ msgid "File Name"
-#~ msgstr "Dateiname"
-
-#~ msgid "File name of the data file."
-#~ msgstr "Dateinamen der Datei."
-
-#~ msgid "required argument 'name' missing"
-#~ msgstr "Erforderliches Argument 'name' fehlt"
-
-#~ msgid "Up-to-date check failed:"
-#~ msgstr "Up-to-date Check fehlgeschlagen:"
-
-#~ msgid "Content-Type is not application/x-snarf"
-#~ msgstr "Der Inhaltstyp ist nicht application/x-snarf"
-
-#~ msgid "Commit results: ${results}"
-#~ msgstr "Ergebnisse einchecken: ${results}"
-
-#~ msgid "Upload a zipfile in the following form"
-#~ msgstr "Eine ZIP-Datei in dem folgenden Formular hochladen"
-
-#~ msgid "upload-button"
-#~ msgstr "Hochladen"
-
-#~ msgid "Commit Action"
-#~ msgstr "Aktion abschicken"
-
-#~ msgid "Edit Browser Menu Item"
-#~ msgstr "Browsermenü-Eintrag bearbeiten"
-
-#~ msgid "A Service For Persistent Browser Menus"
-#~ msgstr "Ein Dienst für persistente Browsermenüs"
-
-#~ msgid "Overview"
-#~ msgstr "Überblick"
-
-#~ msgid "Add Browser Menu (Registration)"
-#~ msgstr "Browsermenü hinzufügen (Registrierung)"
-
-#~ msgid ""
-#~ "Browser Menu tools are used to build menus for Web user        interfaces."
-#~ msgstr ""
-#~ "Browsermenü-Werkzeuge werden benutzt, um Menüs für Web-"
-#~ "Benutzeroberflächen zu erstellen."
-
-#~ msgid "Add Browser Menu"
-#~ msgstr "Browsermenü hinzufügen"
-
-#~ msgid "Edit Browser Menu"
-#~ msgstr "Browsermenü bearbeiten"
-
-#~ msgid "Add Menu Item"
-#~ msgstr "Menüeintrag hinzufügen"
-
-#~ msgid "Add Browser Menu Item"
-#~ msgstr "Browsermenü-Eintrag hinzufügen"
-
-#~ msgid "Action"
-#~ msgstr "Aktion"
-
-#~ msgid "Local Items"
-#~ msgstr "Lokale Einträge"
-
-#~ msgid "Inherited Items"
-#~ msgstr "Geerbte Einträge"
-
-#~ msgid "Menu Service"
-#~ msgstr "Menüdienst"
-
-#~ msgid "Inherited Menus"
-#~ msgstr "Geerbte Menüs"
-
-#~ msgid "Local Menus"
-#~ msgstr "Lokale Menüs"
-
-#~ msgid "Browser Menu"
-#~ msgstr "Browsermenü"
-
-#~ msgid "A Persistent Browser Menu"
-#~ msgstr "Ein persistentes Browsermenü"
-
-#~ msgid "Browser Menu Item"
-#~ msgstr "Browsermenü-Eintrag"
-
-#~ msgid "A Persistent Browser Menu Item"
-#~ msgstr "Ein Eintrag in einem persistenten Browsermenü"
-
-#~ msgid "A Persistent Browser Menu Service"
-#~ msgstr "Ein Dienst für persistente Browsermenüs"
-
-#~ msgid "Browser Menu Service"
-#~ msgstr "Browsermenüdienst"
-
-#~ msgid "Inherit Items"
-#~ msgstr "Geerbte Einträge"
-
-#~ msgid "If true, this menu will inherit menu items from menushigher up."
-#~ msgstr "Wenn wahr, dann erbt dieses Menü Einträge von höherliegenden Menüs"
-
-#~ msgid "module name must be provided"
-#~ msgstr "Modulname muss bereitgestellt werden"
-
-#~ msgid "The source was updated."
-#~ msgstr "Der Quellcode wurde aktualisiert."
-
-#~ msgid "add-module-button"
-#~ msgstr "Modul hinzufügen"
-
-#~ msgid "Add a Module"
-#~ msgstr "Modul hinzufügen"
-
-#~ msgid "Enter the module source code."
-#~ msgstr "Geben sie den Quellcode des Moduls ein."
-
-#~ msgid "View Module Names"
-#~ msgstr "Modulnamen anzeigen"
-
-#~ msgid "Browse"
-#~ msgstr "Durchsuchen"
-
-#~ msgid "Module"
-#~ msgstr "Modul"
-
-#~ msgid "Edit a Module"
-#~ msgstr "Ein Modul bearbeiten"
-
-#~ msgid "Change page"
-#~ msgstr "Seite ändern"
-
-#~ msgid "Register a view page"
-#~ msgstr "Eine neue Seite registrieren"
-
-#~ msgid "Presentation Service"
-#~ msgstr "Präsentationsdienst"
-
-#~ msgid ""
-#~ "A Presentation Service allows you to register views, resources and skins"
-#~ msgstr ""
-#~ "Ein Präsentationsdienst erlaubt es Ihnen, Ansichten, Ressourcen und "
-#~ "Themen zu registrieren."
-
-#~ msgid "Default Registration"
-#~ msgstr "Standard-Registrierung"
-
-#~ msgid "Default registration parameters"
-#~ msgstr "Standard-Parameter für die Registrierung"
-
-#~ msgid "Page Folder"
-#~ msgstr "Seiten Ordner"
-
-#~ msgid "Register a view ZPT"
-#~ msgstr "Eine neue Ansichts-Seitenschablone registrieren"
-
-#~ msgid "The interface of the objects being viewed"
-#~ msgstr "Das Interface der Objekte welches angesehen wird"
-
-#~ msgid "The dotted name of a factory for creating the view"
-#~ msgstr "Der Name der zur Erzeugung notwendigen Fabrik einer Ansicht"
-
-#~ msgid "The skin layer the view is registered for"
-#~ msgstr "Die Themenebene, für welche die Ansicht registriert ist"
-
-#~ msgid "The permission required to use the view"
-#~ msgstr "Die Berechtigung, die zur Verwendung der Ansicht benötigt wird"
-
-#~ msgid "Apply changes to existing pages"
-#~ msgstr "Änderungen auf die existierenden Seiten anwenden"
-
-#~ msgid "View Folder"
-#~ msgstr "Ansichtenordner"
-
-#~ msgid "any-interface"
-#~ msgstr "Jegliches"
-
-#~ msgid "${view_name} ${ptype} View for ${iface_name}"
-#~ msgstr "${view_name} ${ptype} Ansicht für {iface_name}"
-
-#~ msgid "${view_name} ${ptype} View for ${iface_name} in layer ${layer}"
-#~ msgstr "${view_name} ${ptype} Ansicht für {iface_name} in Ebene ${layer}"
-
-#~ msgid "Registered by ZCML"
-#~ msgstr "Registriert durch ZCML"
-
-#~ msgid "Request type"
-#~ msgstr "Anfrage-Typ"
-
-#~ msgid "The type of requests the view works with"
-#~ msgstr "Der Typ der Anfrage mit welcher die Ansicht arbeitet"
-
-#~ msgid "view-component"
-#~ msgstr "Ansicht"
-
-#~ msgid "${view_name} for ${pname} ${what} ${iface_name}"
-#~ msgstr "${view_name} für ${pname} {what} {iface_name}"
-
-#~ msgid "${view_name} for ${pname} ${what} ${iface_name} in layer ${layer}"
-#~ msgstr "${view_name} für ${pname} {what} {iface_name} in Ebene ${layer}"
-
-#~ msgid "Page template"
-#~ msgstr "Seitenschablone"
-
-#~ msgid "Class attribute"
-#~ msgstr "Klassenattribut"
-
-#~ msgid "Factory to be called to construct an adapter"
-#~ msgstr "Fabrik die zur Erzeugung des Adapters aufgerufen wird"
-
-#~ msgid "page-component"
-#~ msgstr "Seite"
-
-#~ msgid "Page Template"
-#~ msgstr "Seitenschablone"
-
-#~ msgid "ZPT Template"
-#~ msgstr "ZPT Schablone"
-
-#~ msgid "The source of the Python page."
-#~ msgstr "Der Quellcode der Python-Seite."
-
-#~ msgid "The content type the script outputs."
-#~ msgstr "Der Typ des Inhalts, den das Skript ausgiebt."
-
-#~ msgid "A syntax error occured."
-#~ msgstr "Ein Syntaxfehler ist aufgetreten."
-
-#~ msgid "A simple, content-based Python Page"
-#~ msgstr "Eine einfache, auf Inhalt basierte Python-Seite"
-
-#~ msgid "Python Page"
-#~ msgstr "Python-Seite"
-
-#~ msgid "Add Python Page"
-#~ msgstr "Python-Seite hinzufügen"
-
-#~ msgid "An Python Page"
-#~ msgstr "Eine Python-Seite"
-
-#~ msgid "Edit Python Page"
-#~ msgstr "Python-Seite bearbeiten"
-
-#~ msgid "Syntax Error: ${msg}"
-#~ msgstr "Syntaxfehler: ${msg}"
-
-#~ msgid "File \"${filename}\", line ${lineno}, offset ${offset}"
-#~ msgstr "Datei \"${filename}\", Zeile ${lineno}, Verschub ${offset}"
-
-#~ msgid "Must select a field to delete"
-#~ msgstr "Zum löschen müssen Sie ein Feld auswählen"
-
-#~ msgid "Invalid field name: %s"
-#~ msgstr "Ungültiger Feldname: %s"
-
-#~ msgid "Invalid position: %s"
-#~ msgstr "Ungültige Position: %s"
-
-#~ msgid "Menu of Fields to be added to a schema."
-#~ msgstr "Menü von Feldern, die dem Schema hinzugefügt werden können"
-
-#~ msgid "New Mutable Schema Registration"
-#~ msgstr "Neue Registrierung für veränderbare Schemata"
-
-#~ msgid "These are schemas that live in the ZODB and are modifiable."
-#~ msgstr ""
-#~ "Es handelt sich um Schemas, die in der ZODB leben und verändert werden "
-#~ "können."
-
-#~ msgid "Persistent, Local Schemas"
-#~ msgstr "Persistente lokale Schemas"
-
-#~ msgid "Edit Schema"
-#~ msgstr "Schema bearbeiten"
-
-#~ msgid "Read-Only"
-#~ msgstr "Nur lesbar"
-
-#~ msgid "delete-field-button"
-#~ msgstr "Feld löschen"
-
-#~ msgid "Schema Name: ${schema_name}"
-#~ msgstr "Schemaname: ${schema_name}"
-
-#~ msgid "Mutable Schema"
-#~ msgstr "Veränderbares Schema"
-
-#~ msgid "A Persistent Schema that can be edited through the web"
-#~ msgstr "Ein persistentes Schema, das online bearbeitet werden kann"
-
-#~ msgid "A Float Field"
-#~ msgstr "Ein Fließkommazahlenfeld"
-
-#~ msgid "Add Float Field"
-#~ msgstr "Fließkommazahlenfeld hinzufügen"
-
-#~ msgid "Edit Float Field"
-#~ msgstr "Fließkommazahlenfeld bearbeiten"
-
-#~ msgid "Add Datetime Field"
-#~ msgstr "Zeitdatumfeld hinzufügen"
-
-#~ msgid "A Datetime Field"
-#~ msgstr "Ein Zeitdatumfeld"
-
-#~ msgid "Edit Datetime Field"
-#~ msgstr "Zeitdatumfeld bearbeiten"
-
-#~ msgid "Edit Text Field"
-#~ msgstr "Textfeld bearbeiten"
-
-#~ msgid "TextLine Field"
-#~ msgstr "Textzeilenfeld"
-
-#~ msgid "A TextLine Field"
-#~ msgstr "Ein Textzeilenfeld"
-
-#~ msgid "Add TextLine Field"
-#~ msgstr "Textzeilenfeld hinzufügen"
-
-#~ msgid "Edit TextLine Field"
-#~ msgstr "Textzeilenfeld bearbeiten"
-
-#~ msgid "Add Boolean Field"
-#~ msgstr "Boolsches Feld hinzufügen"
-
-#~ msgid "A Boolean Field"
-#~ msgstr "Ein Boolsches Feld"
-
-#~ msgid "A Text Field"
-#~ msgstr "Ein Textfeld"
-
-#~ msgid "Add Text Field"
-#~ msgstr "Textfeld hinzufügen"
-
-#~ msgid "Edit Boolean Field"
-#~ msgstr "Boolsches Feld bearbeiten"
-
-#~ msgid "Add Integer Field"
-#~ msgstr "Ganzahlfeld hinzufügen"
-
-#~ msgid "An Integer Field"
-#~ msgstr "Ein Ganzahlfeld"
-
-#~ msgid "Edit Integer Field"
-#~ msgstr "Ganzahlfeld bearbeiten"
-
-#~ msgid "BytesLine Field"
-#~ msgstr "Byteszeilenfeld"
-
-#~ msgid "Text Field"
-#~ msgstr "Textfeld"
-
-#~ msgid "Text Line Field"
-#~ msgstr "Textzeilenfeld"
-
-#~ msgid "Boolean Field"
-#~ msgstr "Boolsches Feld"
-
-#~ msgid "Integer Field"
-#~ msgstr "Ganzahlfeld"
-
-#~ msgid "Float Field"
-#~ msgstr "Fließkommazahlenfeld"
-
-#~ msgid "Tuple Field"
-#~ msgstr "Tupelfeld"
-
-#~ msgid "List Field"
-#~ msgstr "Listenfeld"
-
-#~ msgid "Set Field"
-#~ msgstr "Setfeld"
-
-#~ msgid "Password Field"
-#~ msgstr "Passwortfeld"
-
-#~ msgid "Dict Field"
-#~ msgstr "Dict-Feld"
-
-#~ msgid "Datetime Field"
-#~ msgstr "Zeitdatumfeld"
-
-#~ msgid "SourceText Field"
-#~ msgstr "Quelltextfeld"
-
-#~ msgid "Object Field"
-#~ msgstr "Objektfeld"
-
-#~ msgid "URI Field"
-#~ msgstr "URI-Feld"
-
-#~ msgid "Id Field"
-#~ msgstr "ID-Feld"
-
-#~ msgid "Interface Field"
-#~ msgstr "Interface-Feld"
-
-#~ msgid "Container Field"
-#~ msgstr "Behälterfeld"
-
-#~ msgid "Iterable Field"
-#~ msgstr "Wiederholendes Feld"
-
-#~ msgid "Basic Field"
-#~ msgstr "Grundfeld"
-
-#~ msgid "Orderable Field"
-#~ msgstr "Sortierbares Feld"
-
-#~ msgid "MinMaxLen Field"
-#~ msgstr "MinMaxLen-Feld"
-
-#~ msgid "Bytes Field"
-#~ msgstr "Bytesfeld"
-
-#~ msgid "Schema-based Content Component Instance"
-#~ msgstr "Schema-basierte Inhaltskomponenten-Instanz"
-
-#~ msgid "Schema-based Content"
-#~ msgstr "Schemabasierter Inhalt"
-
-#~ msgid "Content Component Definition Registration"
-#~ msgstr "Registrierung für Definitionen von Inhaltskomponenten"
-
-#~ msgid ""
-#~ "Content Component Definitions are used to declare       schema-based "
-#~ "content objects."
-#~ msgstr ""
-#~ "Inhaltskomponentendefinitionen werden dazu verwendet, um Schema-basierte "
-#~ "Inhaltsobjekte zu deklarieren."
-
-#~ msgid "Define Permissions"
-#~ msgstr "Berechtigungen definieren"
-
-#~ msgid "Menu Item"
-#~ msgstr "Menüeintrag"
-
-#~ msgid "New Content Component Instance"
-#~ msgstr "Neue Inhaltskomponenten-Instanz"
-
-#~ msgid "Map permissions to Schema fields"
-#~ msgstr "Berechtigungen auf Schema-Felder zuweisen"
-
-#~ msgid "change-button"
-#~ msgstr "Änderungen Speichern"
-
-#~ msgid "A Persistent Content Component Definition"
-#~ msgstr "Eine persistente Definition von Inhaltskomponenten"
-
-#~ msgid "Content Component Definition"
-#~ msgstr "Definition von Inhaltskomponenten"
-
-#~ msgid "No local/peristent Browser Menu Service found."
-#~ msgstr "Kein lokaler/persistenter Browsermenüdienst gefunden."
-
-#~ msgid "No local Browser Menu called \"${name}\" found."
-#~ msgstr "Kein lokales Browsermenü names \"${name}\" gefunden."
-
-#~ msgid "Menu Id"
-#~ msgstr "Menü-ID"
-
-#~ msgid "Specifies the menu this menu item will be added to."
-#~ msgstr "Gibt das Menü an, zu dem dieser Menüeintrag hinzugefügt wird."
-
-#~ msgid "Create Menu"
-#~ msgstr "Menü erstellen"
-
-#~ msgid ""
-#~ "If set to True, the system will create a local Browser Menu Service and "
-#~ "local Browser Menu for you. If this option is set to False, the system "
-#~ "will try to find the next local browser menu service that has a menu with "
-#~ "the specifed id. If no menu was found or the menu is a global menu, then "
-#~ "an error is created."
-#~ msgstr ""
-#~ "Wenn dies auf True (wahr) gesetzt wird, wird das System einen lokalen "
-#~ "Browsermenüdienst und ein lokales Browsermenü für Sie erstellen. Falls "
-#~ "False (falsch, unwahr) angegeben wird, wird das System versuchen, den "
-#~ "nächsten lokalen Browsermenüdienst mit der angegebenen ID zu finden. "
-#~ "Falls kein Menü gefunden werde kann oder das Menü ein globales Menü sein "
-#~ "sollte, wird ein Fehler ausgegeben."
-
-#~ msgid "Name of Content Component Type"
-#~ msgstr "Name des Inhaltskomponenten-Typ"
-
-#~ msgid "This is the name of the document type."
-#~ msgstr "Name des Dokumenttypen."
-
-#~ msgid "Specifies the schema that characterizes the document."
-#~ msgstr "Gibt das Schema an, welches das Dokument charakterisiert."
-
-#~ msgid "Copy Schema"
-#~ msgstr "Schema kopieren"
-
-#~ msgid ""
-#~ "If this field is set to True, a copied version of the schema will be used "
-#~ "in the Content Component instance. This has the advantage that an "
-#~ "existing Content Component's schema is set in stone and can never change, "
-#~ "even when a mutable schema evolves. If the value is False, then the "
-#~ "Content Component's can change (which is desirable in some cases - i.e. "
-#~ "during development.)"
-#~ msgstr ""
-#~ "Falls dieses Feld auf Wahr gesetzt wird, wird eine Kopie des Schemas in "
-#~ "der Instanz der Inhaltskomponente verwendet. Dies hat den Vorteil, dass "
-#~ "das Schema einer bereits existierenden Inhaltskomponente in Stein "
-#~ "gemeißelt ist und sich niemals ändern kann, selbst wenn das Schema "
-#~ "verändernt wird. Falls der Wert Falsch ist, dann können sich "
-#~ "Inhaltskomponenten ändern (was manchmal erwünscht ist, z.B. während der "
-#~ "Entwicklung)"
-
-#~ msgid "Cookie Browser ID Manager Properties"
-#~ msgstr "Cookie-Browser-ID-Verwalter Eigenschaften"
-
-#~ msgid "Stores session data persistently in the ZODB"
-#~ msgstr "Speichert Sitzungsdaten persistent in der ZODB"
-
-#~ msgid "Persistent Session Data Container"
-#~ msgstr "Persistenter Sitzungsdatenbehälter"
-
-#~ msgid "Stores session data in RAM"
-#~ msgstr "Speichert Sitzungsdaten im RAM"
-
-#~ msgid "RAM Session Data Container"
-#~ msgstr "RAM-Sitzungsdatenbehälter"
-
-#~ msgid "Session Data Container Properties"
-#~ msgstr "Eigenschaften von Sitzungsdatenbehälter"
-
-#~ msgid ""
-#~ "Uses a cookie to uniquely identify a browser, allowing        state to be "
-#~ "maintained between requests"
-#~ msgstr ""
-#~ "Benutzt einen Cookie, um einen Browser eindeutig zu identifzieren, so "
-#~ "dass der Sitzungsstatus zwischen Anfragen behalten werden kann."
-
-#~ msgid "Cookie Browser Id Manager"
-#~ msgstr "Cookie-Browser-ID-Verwalter"
-
-#~ msgid "Timeout"
-#~ msgstr "Auszeit"
-
-#~ msgid "Number of seconds before data becomes stale and may be removed"
-#~ msgstr ""
-#~ "Anzahl von Sekunden bis die Daten verfallen und gelöscht werden können"
-
-#~ msgid "Purge Interval"
-#~ msgstr "Abfrageintervall"
-
-#~ msgid ""
-#~ "How often stale data is purged in seconds. Higer values improve "
-#~ "performance."
-#~ msgstr ""
-#~ "Wie oft verfallene Daten gelöscht werden, in Sekunden. Höhere Werte "
-#~ "verbessern die Geschwindigkeit."
-
-#~ msgid "Last Access Time"
-#~ msgstr "Letzter Zugriff"
-
-#~ msgid ""
-#~ "Approximate epoch time this ISessionData was last retrieved from its "
-#~ "ISessionDataContainer"
-#~ msgstr ""
-#~ "Ungefähre Epoch-Zeit, seitdem der ISessionDataContainer zuletzt auf "
-#~ "dieses ISessionData zugegriffen hat."
-
-#~ msgid "Cookie Name"
-#~ msgstr "Cookie-Name"
-
-#~ msgid ""
-#~ "Name of cookie used to maintain state. Must be unique to the site domain "
-#~ "name, and only contain ASCII letters, digits and '_'"
-#~ msgstr ""
-#~ "Name des Cookies, der zur Sitzungsidentifkation benutzt wird. Er muss "
-#~ "eindeutig sein und darf nur ASCII Buchstaben, Zahlen und '_' enthalten."
-
-#~ msgid "Cookie Lifetime"
-#~ msgstr "Cookie-Lebensdauer"
-
-#~ msgid ""
-#~ "Number of seconds until the browser expires the cookie. Leave blank "
-#~ "expire the cookie when the browser is quit. Set to 0 to never expire. "
-#~ msgstr ""
-#~ "Anzahl von Sekunden bis der Cookie im Browser verfällt. Lassen Sie dieses "
-#~ "Feld leer, verfällt der Cookie, wenn der Browser beendet wird, setzten "
-#~ "sie es auf 0, verfällt der Cookie niemals."
-
-#, fuzzy
-#~ msgid "Registered Objects"
-#~ msgstr "Registriert"
-
-#, fuzzy
-#~ msgid "Unique Id Utility"
-#~ msgstr "Werkzeug hinzufügen"
-
-#, fuzzy
-#~ msgid "objects"
-#~ msgstr "Kaputtes Objekt"
-
-#, fuzzy
-#~ msgid "Object"
-#~ msgstr "Objektname"
-
-# XXX
-# there is a problem with this message id
-# in src/zope/app/services/view.py:274, 'View' means a view component
-# and is refering to the substantive.
-#
-# In src/zope/app/security/configure.zcml:10, 'View' is refering to
-# the permission, the verb. While the substantive and the verb
-# happen to be equal in English, they aren't in most other languages.
-# This needs a fix.
-#~ msgid "View"
-#~ msgstr "Ansicht"
-
-#~ msgid "Parents"
-#~ msgstr "Eltern"
-
-#~ msgid "Comment"
-#~ msgstr "Kommentar"
-
-#~ msgid "A Comment"
-#~ msgstr "Ein Kommentar"
-
-#~ msgid "Menu for Wiki Page related actions."
-#~ msgstr "Menü für Wikiseiten-bezogene Aktionen"
-
-#~ msgid "Table of Contents"
-#~ msgstr "Inhaltsverzeichnis"
-
-#~ msgid "Wiki"
-#~ msgstr "Wiki"
-
-#~ msgid "A Wiki"
-#~ msgstr "Ein Wiki"
-
-#~ msgid "TOC"
-#~ msgstr "Inhaltsverz."
-
-#~ msgid "Search"
-#~ msgstr "Suchen"
-
-#~ msgid "Subscriptions"
-#~ msgstr "Abonnements"
-
-#~ msgid "Change Wiki Page"
-#~ msgstr "Wiki-Seite ändern"
-
-#~ msgid "Add Wiki"
-#~ msgstr "Wiki hinzufügen"
-
-#~ msgid "reparent-button"
-#~ msgstr "Erneuere Eltern Verzweigung"
-
-#~ msgid "Branch"
-#~ msgstr "Zweig"
-
-#~ msgid "Last modified by ${user} on ${date}"
-#~ msgstr "Zuletzt von ${user} am ${date} modifiziert"
-
-#~ msgid "Jump to:"
-#~ msgstr "Springe zu:"
-
-#~ msgid ""
-#~ "User: ${user} (${login}) <div id=\"search\"> <a href=\"../@@search.html"
-#~ "\">Search Wiki</a> </div>"
-#~ msgstr ""
-#~ "Benutzer: ${user} (${login}) <div id=\"search\"> <a href=\"../@@search."
-#~ "html\">Wiki Durchsuchen</a> </div>"
-
-#~ msgid "Current Subscriptions"
-#~ msgstr "Aktuelle Abonnements"
-
-#~ msgid "Enter new Users (separate by 'Return')"
-#~ msgstr "Geben Sie neue Benutzer sein (pro Zeile einen Benutzer)"
-
-#~ msgid "Wiki Search"
-#~ msgstr "Wiki-Suche"
-
-#~ msgid "Wiki Table of Contents"
-#~ msgstr "Wiki Inhaltsverzeichnis"
-
-#~ msgid "A Wiki Page"
-#~ msgstr "Wiki-Seite hinzufügen"
-
-#~ msgid "Wiki Page"
-#~ msgstr "Wiki-Seite"
-
-#~ msgid "The Wiki Editor can create and edit wikis."
-#~ msgstr "Der Wiki-Editor kann Wikis erstellen und bearbeiten."
-
-#~ msgid "Wiki Editor"
-#~ msgstr "Wiki-Editor"
-
-#~ msgid "A Wiki Page Comment"
-#~ msgstr "Ein Wiki-Seiten-Kommentar"
-
-#~ msgid "Wiki Page Comment"
-#~ msgstr "Wikiseiten-Kommentar"
-
-#~ msgid "Wiki Administrator"
-#~ msgstr "Wiki-Administrator"
-
-#~ msgid "The Wiki Admin can fully manage wiki pages."
-#~ msgstr "Der Wiki-Administrator kann Wiki-Seiten komplett verwalten."
-
-#~ msgid "View Wiki Page"
-#~ msgstr "Wiki-Seite ansehen"
-
-#~ msgid "View a Wiki Page"
-#~ msgstr "Wiki-Seite ansehen"
-
-#~ msgid "Comment on Wiki Page"
-#~ msgstr "Wiki-Seite kommentieren"
-
-#~ msgid "Make a comment on Wiki Page"
-#~ msgstr "Ein Kommentar zu einer Wiki-Seite abgeben"
-
-#~ msgid "Add Wiki Page"
-#~ msgstr "Wiki-Seite hinzufügen"
-
-#~ msgid "Edit Wiki Page"
-#~ msgstr "Wiki-Seite bearbeiten"
-
-#~ msgid "Delete Wiki Page"
-#~ msgstr "Wiki-Seite löschen"
-
-#~ msgid "Reparent Wiki Page"
-#~ msgstr "Wiki-Seite neu zuordnen"
-
-#~ msgid "Reparent a Wiki Page"
-#~ msgstr "Wiki-Seite neu zuordnen"
-
-#~ msgid "Wiki User"
-#~ msgstr "Wiki-Benutzer"
-
-#~ msgid "Wiki visitors, which can only view and comment on wikis."
-#~ msgstr "Wiki-Besucher, die nur betrachten und kommentieren dürfen."
-
-#~ msgid "Minimal Wiki Page Container implementation "
-#~ msgstr "Minimale Wikiseiten-Behälter-Implementation"
-
-#~ msgid "Previous Source Text"
-#~ msgstr "Vorheriger Quelltext"
-
-#~ msgid "Previous source text of the Wiki Page."
-#~ msgstr "Vorheriger Quelltext der Wiki Page."
-
-#~ msgid "Comment Title"
-#~ msgstr "Kommentartitel"
-
-#~ msgid "Renderable source text of the comment."
-#~ msgstr "Darstellbarer Quelltext des Kommentars."
-
-#~ msgid "Renderable source text of the Wiki Page."
-#~ msgstr "Darstellbarer Quelltext der Wiki Page."
-
-#~ msgid "Wiki Page Parents"
-#~ msgstr "Übergeordnete Wiki Seiten"
-
-#~ msgid "Parents of a Wiki"
-#~ msgstr "Wiki-Eltern"
-
-#~ msgid "Parent Name"
-#~ msgstr "Elternname"
-
-#~ msgid "Name of the parent wiki page."
-#~ msgstr "Name der übergeordneten Wiki Seite."
-
-#~ msgid ""
-#~ "Workflow Process Definitions define a particular workflow       for an "
-#~ "object."
-#~ msgstr ""
-#~ "Prozessdefinitionen werden dazu benutzt, das Verhalten von "
-#~ "Arbeitsabläufen zu definieren."
-
-#~ msgid "Process Definition: ${pd_name}"
-#~ msgstr "Prozessdefinition: ${pd_name}"
-
-#~ msgid "Process Definition"
-#~ msgstr "Prozessdefinition"
-
-#~ msgid "Import / Export Process Definitions:"
-#~ msgstr "Import / Export Prozessdefinitionen:"
-
-#~ msgid "Import:"
-#~ msgstr "Importiern:"
-
-#~ msgid "Export: <a href=\"@@export.html\">save as file</a>"
-#~ msgstr "Exportieren: <a href=\"@@export.html\">Speichere als Datei</a>"
-
-#~ msgid "Import was successfull!"
-#~ msgstr "Import war erfolgreich!"
-
-#~ msgid "Status: ${status}"
-#~ msgstr "Status: ${status}"
-
-#~ msgid "Outgoing Transitions:"
-#~ msgstr "Verlassende Übergänge"
-
-#~ msgid "Key"
-#~ msgstr "Schlüssel"
-
-#~ msgid "create-workflow-processinstances-permission"
-#~ msgstr "Arbeitsablauf-Prozessinstanzen erstellen"
-
-#~ msgid "use-workflow-processinstances-permission"
-#~ msgstr "Arbeitsablauf-Prozessinstanzen benutzen"
-
-#~ msgid "manage-workflow-processdefinitions-permission"
-#~ msgstr "Arbeitsablauf-Prozessdefinitionen verwalten"
-
-#~ msgid "Add Content"
-#~ msgstr "Inhaltstyp hinzufügen"
-
-#~ msgid "Add State"
-#~ msgstr "Zustand hinzufügen"
-
-#~ msgid "Add Transition"
-#~ msgstr "Übergang hinzufügen"
-
-#~ msgid "Edit a Transition"
-#~ msgstr "Übergang bearbeiten"
-
-#~ msgid "Stateful Transition"
-#~ msgstr "Zustandsbasierter Übergang"
-
-#~ msgid "Content Workflows Manager"
-#~ msgstr "Verwalter von Arbeitsabläufen von Inhalten"
-
-#~ msgid "An utility to manage content and workflow interaction."
-#~ msgstr "Ein Werkzeug, um Inhalt und Arbeitsläufe zu verwalten."
-
-#~ msgid "Content/Process Registry"
-#~ msgstr "Inhalt/Prozess-Registrierung"
-
-#~ msgid "Workflows"
-#~ msgstr "Arbeitsabläufe"
-
-#~ msgid "Relevant Data Schema"
-#~ msgstr "Revelantes Datenschema"
-
-#~ msgid "Manage States"
-#~ msgstr "Zustände verwalten"
-
-#~ msgid "Manage Transitions"
-#~ msgstr "Übergänge verwalten"
-
-#~ msgid "State Items"
-#~ msgstr "Zustände"
-
-#~ msgid "Transition Items"
-#~ msgstr "Übergänge"
-
-#~ msgid "A stateful workflow process definition"
-#~ msgstr "Eine zustandsbasierte Arbeitsablauf-Prozessdefinition"
-
-#~ msgid "Stateful Process Definition"
-#~ msgstr "Zustandsbasierte Prozessdefinition"
-
-#~ msgid "Stateful State"
-#~ msgstr "Zustandsbasierter Zustand"
-
-#~ msgid "Mapping(s) added."
-#~ msgstr "Zuweisung(en) hinzugefügt."
-
-#~ msgid "Mapping(s) removed."
-#~ msgstr "Zuweisung(en) entfernt."
-
-#~ msgid ""
-#~ "This screen let's you specify which content types (by interface) can "
-#~ "receive which workflows (process definitions)."
-#~ msgstr ""
-#~ "Diese Ansicht erlaubt es ihnen zu sagen, welche Inhaltstypen (per "
-#~ "Interface) welche Arbeitsabläufe (Prozessdefinitionen) erhalten könen."
-
-#~ msgid "Available Mappings"
-#~ msgstr "Verfügbare Zuweisungen"
-
-#~ msgid "switch-view-button"
-#~ msgstr "Ansicht ändern"
-
-#~ msgid "remove-mappings-button"
-#~ msgstr "Zuweisungne Entfernen"
-
-#~ msgid "Add new Mapping"
-#~ msgstr "Neue Zuweisungen hinzufügen"
-
-#~ msgid "add-mappings-button"
-#~ msgstr "Zuweisung Hinzufügen"
-
-#~ msgid "Set Workflow-Relevant Data Schema"
-#~ msgstr "Arbeitsablauf-relevantes Datenschema bestimmen"
-
-#~ msgid "set-schema-button"
-#~ msgstr "Schema ändern"
-
-#~ msgid "Process Definition <-> Content Type Registry"
-#~ msgstr "Prozessdefinition <-> Inhaltstyp-Registrierung"
-
-#~ msgid "Process Definition: ${name}"
-#~ msgstr "Prozessdefinition: ${name}"
-
-#~ msgid "States"
-#~ msgstr "Zustände"
-
-#~ msgid "Process Definition States"
-#~ msgstr "Prozessdefinitionen-Zustände"
-
-#~ msgid "Transitions"
-#~ msgstr "Übergänge"
-
-#~ msgid "Process Definition Transitions"
-#~ msgstr "Prozessdefinitionen-Übergänge"
-
-#~ msgid "Updated Workflow Data."
-#~ msgstr "Arbeitsablaufdaten wurden aktualisiert."
-
-#~ msgid "Workflow:"
-#~ msgstr "Arbeitsablauf:"
-
-#~ msgid "choose-button"
-#~ msgstr "Auswählen"
-
-#~ msgid "Workflow: ${wf_title}"
-#~ msgstr "Arbeitsablauf: ${wf_title}"
-
-#~ msgid "Current Status:"
-#~ msgstr "Derzetiger Zustand:"
-
-#~ msgid "Possible State Changes:"
-#~ msgstr "Mögliche Zustandsänderungen"
-
-#~ msgid "Workflow Options"
-#~ msgstr "Arbeitsablauf-Optionen"
-
-#~ msgid "make-transition-button"
-#~ msgstr "Übergang vornehmen"
-
-#~ msgid "Workflow-relevant Data"
-#~ msgstr "Arbeitsablauf-relevante Daten"
-
-#~ msgid "Name of the source state."
-#~ msgstr "Name des Ursprungsstatus."
-
-#~ msgid "Destination State"
-#~ msgstr "Ziel-Zustand"
-
-#~ msgid "Name of the destination state."
-#~ msgstr "Name des Zielstatus."
-
-#~ msgid "Condition"
-#~ msgstr "Bedingung"
-
-#~ msgid ""
-#~ "The condition that is evaluated to decide if the\n"
-#~ "                        transition can be fired or not."
-#~ msgstr ""
-#~ "Die Kondition die evaluiert wird um zu entscheiden ob ein Übergang "
-#~ "möglich ist oder nicht."
-
-#~ msgid "Script"
-#~ msgstr "Skript"
-
-#~ msgid ""
-#~ "The script that is evaluated to decide if the\n"
-#~ "                        transition can be fired or not."
-#~ msgstr ""
-#~ "Das Skript das evaluiert wird um zu entscheiden ob ein Übergang möglich "
-#~ "ist oder nicht."
-
-#~ msgid "The permission needed to fire the Transition."
-#~ msgstr "Die Berechtigung, die zum Ausführen des Überganges benötigt wird."
-
-#~ msgid "Trigger Mode"
-#~ msgstr "Auslösemodus"
-
-#~ msgid "How the Transition is triggered (Automatic/Manual)"
-#~ msgstr "Wie der Übergang ausgelöst wird (Automatisch/Manuell)"
-
-#~ msgid "Workflow-Relevant Data Schema"
-#~ msgstr "Arbeitsablauf-relevantes Datenschema"
-
-#~ msgid ""
-#~ "Specifies the schema that characterizes the workflow relevant data of a "
-#~ "process instance, found in pd.data."
-#~ msgstr ""
-#~ "Gibt das Schema an, welches die Arbeitsablauf-relevanten Daten einer "
-#~ "Prozessinstanz charakterisiert."
-
-#~ msgid "Source State"
-#~ msgstr "Quell-Zustand"
-
-#~ msgid "Logged in as ${user_title}"
-#~ msgstr "Sie sind nun als  ${user_title} eingelogged."
-
-#~ msgid "Views"
-#~ msgstr "Ansichten"
-
-#~ msgid "Actions"
-#~ msgstr "Tätigkeiten"
-
-#~ msgid "Location:"
-#~ msgstr "Standort:"
-
-#~ msgid "Common Tasks"
-#~ msgstr "Oftgenutzte Aufgaben"
-
-#~ msgid "user accounts"
-#~ msgstr "Benutzerkonten"
-
-#~ msgid "User Accounts"
-#~ msgstr "Benutzerkonten"
-
-#~ msgid "control panels"
-#~ msgstr "Kontrollen"
-
-#~ msgid "Control Panels"
-#~ msgstr "Kontrollen"
-
-#~ msgid "system security"
-#~ msgstr "Systemsicherheit"
-
-#~ msgid "System Security"
-#~ msgstr "Systemsicherheit"
-
-#~ msgid "add more"
-#~ msgstr "Mehr hinzufügen"
-
-#~ msgid "Add More"
-#~ msgstr "Mehr hinzufügen"
-
-#~ msgid "Root Folder"
-#~ msgstr "Wurzelordner"
-
-#~ msgid "You are not allowed to access ${name} in this context"
-#~ msgstr ""
-#~ "Es ist Ihnen nicht gestattet auf ${name} in diesem Kontext zuzugreifen."
-
-#~ msgid "a particular ${object}"
-#~ msgstr "ein bestimmtes ${object}"
