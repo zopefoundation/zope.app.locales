@@ -69,19 +69,19 @@ msgstr "Безопасность"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:110
 msgid "Untrusted Interpreters"
-msgstr ""
+msgstr "Недоверительные интерпретаторы"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:116
 msgid "Untrusted Python Interpreter"
-msgstr ""
+msgstr "Недоверительный интерпретатор Python"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:122
 msgid "Restricted Python Code"
-msgstr ""
+msgstr "Ограниченный код Python"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:128
 msgid "Safe Builtins"
-msgstr ""
+msgstr "Безопасные встроенные функции"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:136
 msgid "Default Security Policy"
@@ -89,11 +89,11 @@ msgstr "Политика безопасности по умолчанию"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:144
 msgid "Global Principals"
-msgstr ""
+msgstr "Глобальные пользователи"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:152
 msgid "Pluggable Authentication"
-msgstr ""
+msgstr "Подключаемая аутентификация"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:158
 msgid "Id Picker"
@@ -101,20 +101,20 @@ msgstr ""
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:16
 msgid "Adapter Registry"
-msgstr ""
+msgstr "Реестр адаптеров"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:164
 #: src/zope/app/authentication/browser/configure.zcml:21
 msgid "Principal Folder"
-msgstr ""
+msgstr "Папка пользователей"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:170
 msgid "Group Folders"
-msgstr ""
+msgstr "Папка групп"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:178
 msgid "Principal Home Folder"
-msgstr ""
+msgstr "Домашняя папка пользователя"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:188
 msgid "Events"
@@ -126,19 +126,19 @@ msgstr "Тестирование"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:201
 msgid "Functional DocTest"
-msgstr ""
+msgstr "Функциональные тесты"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:209
 msgid "FDocTest (How to)"
-msgstr ""
+msgstr "Создание функциональных тестов"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:217
 msgid "Form Parse"
-msgstr ""
+msgstr "Обработка форм"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:22
 msgid "Adapters (light version)"
-msgstr ""
+msgstr "Адаптеры (краткая версия)"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:227
 msgid "ZAPI"
@@ -220,7 +220,7 @@ msgstr "Схемы"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:361
 msgid "Zope Tree"
-msgstr ""
+msgstr "Иерархия Zope"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:370
 msgid "Persistent Key References"
@@ -228,7 +228,7 @@ msgstr ""
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:379
 msgid "BForest API"
-msgstr ""
+msgstr "BForest API"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:388
 msgid "Deprecation API"
@@ -252,7 +252,7 @@ msgstr "Управление соединениями"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:42
 msgid "Schema Fields"
-msgstr ""
+msgstr "Поля схем"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:425
 msgid "Sub-Transactions"
@@ -1575,7 +1575,7 @@ msgstr "Создать сайт"
 
 #: src/zope/app/component/browser/configure.zcml:152
 msgid "Manage Site"
-msgstr "Сайт"
+msgstr "Сайты"
 
 #: src/zope/app/component/browser/configure.zcml:166
 msgid "Visit default folder"
