@@ -61,7 +61,7 @@ msgstr ""
 '''
 
 class POTEntry(object):
-    """This class represents a single message entry in the POT file.
+    r"""This class represents a single message entry in the POT file.
 
     >>> make_escapes(0)
     >>> class FakeFile(object):
@@ -83,6 +83,17 @@ class POTEntry(object):
     msgid "test"
     msgstr ""
     <BLANKLINE>
+
+    Multiline default values generate correct comments:
+
+    >>> entry = POTEntry(MessageID("test", default="\nline1\n\tline2"))
+    >>> entry.write(FakeFile())
+    # Default: ""
+    #  "line1\n"
+    #  "\tline2"
+    msgid "test"
+    msgstr ""
+    <BLANKLINE>
     """
 
     implements(IPOTEntry)
@@ -99,11 +110,16 @@ class POTEntry(object):
             filename.replace(os.sep, '/'), line)
 
     def write(self, file):
-        file.write(self.comments)
+        if self.comments:
+            file.write(self.comments)
         if (isinstance(self.msgid, MessageID) and
                self.msgid != self.msgid.default):
             default = self.msgid.default.strip()
-            file.write('# Default: %s\n' % normalize(default))
+            lines = normalize(default).split("\n")
+            lines[0] = "# Default: %s\n" % lines[0]
+            for i in range(1, len(lines)):
+                lines[i] = "#  %s\n" % lines[i]
+            file.write("".join(lines))
         file.write('msgid %s\n' % normalize(self.msgid))
         file.write('msgstr ""\n')
         file.write('\n')
