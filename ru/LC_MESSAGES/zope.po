@@ -16,7 +16,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Development/Revision: 29457\n"
-"POT-Creation-Date: Thu Mar 17 11:23:29 2005\n"
+"POT-Creation-Date: Thu Mar 17 14:42:29 2005\n"
 "PO-Revision-Date: 2005-02-22 12:13+0300\n"
 "Last-Translator: Dmitry Vasiliev <dima@hlabs.spb.ru>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
@@ -1689,6 +1689,10 @@ msgstr "Заблокирован"
 msgid "Updated"
 msgstr "Обновлен"
 
+#: src/zope/app/component/browser/site.py:33
+msgid "<no name>"
+msgstr "<без названия>"
+
 #: src/zope/app/component/browser/site_management.pt:5
 msgid "<b>Site Management</b>"
 msgstr "<b>Управление сайтом</b>"
@@ -1753,7 +1757,7 @@ msgstr "Зарегистрирован как"
 
 #: src/zope/app/component/interfaces/__init__.py:165
 msgid "The name under which the utility will be known."
-msgstr ""
+msgstr "Название под которым утилита будет известна."
 
 #: src/zope/app/component/interfaces/__init__.py:173
 msgid "The interface provided by the utility"
@@ -1772,15 +1776,15 @@ msgstr "Менеджер регистрации"
 
 #: src/zope/app/component/interfaces/registration.py:213
 msgid "The registration manager keeps track of all component registrations."
-msgstr ""
+msgstr "Менеджер регистрации хранит регистрацию для всех компонентов."
 
 #: src/zope/app/component/interfaces/registration.py:32
 msgid "Inactive"
-msgstr "Не активен"
+msgstr "Не активна"
 
 #: src/zope/app/component/interfaces/registration.py:33
 msgid "Active"
-msgstr "Активен"
+msgstr "Активна"
 
 #: src/zope/app/component/interfaces/registration.py:61
 msgid "Registration status"
@@ -1788,19 +1792,19 @@ msgstr "Статус регистрации"
 
 #: src/zope/app/component/interfaces/registration.py:92
 msgid "Registration Component"
-msgstr ""
+msgstr "Регистрируемый компонент"
 
 #: src/zope/app/component/interfaces/registration.py:93
 msgid "The component the registration is for."
-msgstr ""
+msgstr "Компонент для которого предназначена регистрация."
 
 #: src/zope/app/component/interfaces/registration.py:97
 msgid "Component Interface"
-msgstr ""
+msgstr "Интерфейс компонента"
 
 #: src/zope/app/component/interfaces/registration.py:98
 msgid "The interface the component provides through this registration."
-msgstr ""
+msgstr "Интерфейс предоставляемый компонентом для данной регистрации."
 
 #: src/zope/app/component/metadirectives.py:112
 msgid "View attributes that are also allowed if the user has permission."
@@ -2766,11 +2770,11 @@ msgstr "Журнал ошибок (выше расположены более п
 
 #: src/zope/app/error/browser/error_config.pt:18
 msgid "Number of exceptions to keep"
-msgstr "Количество ошибок"
+msgstr "Количество ошибок для сохранения"
 
 #: src/zope/app/error/browser/error_config.pt:26
 msgid "Copy exceptions to the event log"
-msgstr "Копировать в журнал событий?"
+msgstr "Копировать ошибки в лог-файл"
 
 #: src/zope/app/error/browser/error_config.pt:3
 msgid "Configure Error Log"
@@ -2778,7 +2782,7 @@ msgstr "Настроить журнал ошибок"
 
 #: src/zope/app/error/browser/error_config.pt:36
 msgid "Ignored exception types"
-msgstr "Игнорировать типы ошибок:"
+msgstr "Игнорируемые типы ошибок"
 
 #: src/zope/app/error/browser/error_config.pt:8
 msgid ""
@@ -2786,7 +2790,7 @@ msgid ""
 "exceptions should be copied to Zope's event log file(s)."
 msgstr ""
 "Вы можете настроить количество ошибок сохраняемых в журнале и должны ли "
-"ошибки сохраняться в файл(ы) журнала событий Zope."
+"ошибки сохраняться в лог-файл(ы) Zope."
 
 #: src/zope/app/error/browser/errorentry.pt:11
 msgid "Exception traceback"
@@ -4083,7 +4087,6 @@ msgstr "для:"
 
 #: src/zope/app/presentation/pagereg_details.pt:7
 #: src/zope/app/apidoc/ifacemodule/component_macros.pt:28
-#: src/zope/app/component/browser/utilreg_details.pt:7
 msgid "name:"
 msgstr "название:"
 
