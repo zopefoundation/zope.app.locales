@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: zope\n"
-"POT-Creation-Date: Sat Mar 19 18:51:23 2005\n"
-"PO-Revision-Date: 2005-03-19 19:13+0100\n"
+"POT-Creation-Date: Sat Mar 19 21:58:36 2005\n"
+"PO-Revision-Date: 2005-03-19 22:10+0100\n"
 "Last-Translator: Egon Frerich <e.frerich@nord-com.net>\n"
 "Language-Team: German <<zope3-dev@zope.org>>\n"
 "MIME-Version: 1.0\n"
@@ -1812,42 +1812,42 @@ msgid "<no name>"
 msgstr ""
 
 # Default: "Add"
-#: src\zope\app\component\browser\site_management.pt:103
+#: src\zope\app\component\browser\site_management.pt:104
 msgid "ADD-TOOL-SUBMIT"
 msgstr "Hinzufügen"
 
 # Default: "Cancel"
-#: src\zope\app\component\browser\site_management.pt:105
+#: src\zope\app\component\browser\site_management.pt:106
 msgid "CANCEL-ADD-TOOL-SUBMIT"
 msgstr "Abbrechen"
 
 # Default: "Activate"
-#: src\zope\app\component\browser\site_management.pt:111
+#: src\zope\app\component\browser\site_management.pt:112
 msgid "ACTIVATE-SUBMIT"
 msgstr "Aktivieren"
 
 # Default: "Deactivate"
-#: src\zope\app\component\browser\site_management.pt:114
+#: src\zope\app\component\browser\site_management.pt:115
 msgid "DEACTIVATE-SUBMIT"
 msgstr "Deaktivieren"
 
 # Default: "Add"
-#: src\zope\app\component\browser\site_management.pt:118
+#: src\zope\app\component\browser\site_management.pt:119
 msgid "ADD-SUBMIT"
 msgstr "Hinzufügen"
 
 # Default: "Delete"
-#: src\zope\app\component\browser\site_management.pt:121
+#: src\zope\app\component\browser\site_management.pt:122
 msgid "DELETE-SUBMIT"
 msgstr "Löschen"
 
 # Default: "Rename"
-#: src\zope\app\component\browser\site_management.pt:124
+#: src\zope\app\component\browser\site_management.pt:125
 msgid "RENAME-SUBMIT"
 msgstr "Umbenennen"
 
 # Default: "Cancel"
-#: src\zope\app\component\browser\site_management.pt:126
+#: src\zope\app\component\browser\site_management.pt:127
 msgid "RENAME-CANCEL-SUBMIT"
 msgstr "Umbenennen abbrechen"
 
@@ -1858,8 +1858,8 @@ msgstr "Eineindeutige Utilities"
 #: src\zope\app\component\browser\site_management.pt:19
 msgid "Unique utilities can only exist once per site manager and have no name."
 msgstr ""
-"Eineindeutige Utilities können pro Webplatz-Verwalter vorhanden sein und "
-"haben keinen Namen."
+"Eineindeutige Utilities können pro Webplatz-Verwalter nur einmal vorhanden sein "
+"und haben keinen Namen."
 
 # Default: "Install"
 #: src\zope\app\component\browser\site_management.pt:39
@@ -1874,6 +1874,10 @@ msgstr "Deinstallieren"
 #: src\zope\app\component\browser\site_management.pt:5
 msgid "<b>Site Management</b>"
 msgstr "<b>Webplatz-Verwalter</b>"
+
+#: src\zope\app\component\browser\site_management.pt:90
+msgid "<i>No instances of this utility are available yet.</i>"
+msgstr "<i>Von diesem Utility sind keine Instanzen vorhanden.</i>"
 
 #: src\zope\app\component\browser\utilreg_details.pt:11
 msgid "component:"
@@ -2744,7 +2748,42 @@ msgstr "Dateiname"
 msgid "File name of the data file."
 msgstr "Dateinamen der Datei."
 
+#: src\zope\app\demo\widget\browser\boolwidget.zcml:21
+#, fuzzy
+msgid "BoolWidget Index"
+msgstr "TextWidget-Index"
+
+# XXX
+# there is a problem with this message id
+# in src/zope/app/services/view.py:274, 'View' means a view component
+# and is refering to the substantive.
+#
+# In src/zope/app/security/configure.zcml:10, 'View' is refering to
+# the permission, the verb. While the substantive and the verb
+# happen to be equal in English, they aren't in most other languages.
+# This needs a fix.
+#: src\zope\app\demo\widget\browser\boolwidget.zcml:21
+#: src\zope\app\demo\widget\browser\intwidget.zcml:21
+#: src\zope\app\demo\widget\browser\textwidget.zcml:21
+#: src\zope\app\demo\widget\browser\textareawidget.zcml:21
+#: src\zwiki\browser\configure.zcml:101 src\zwiki\browser\configure.zcml:158
+msgid "View"
+msgstr "Ansicht"
+
+#: src\zope\app\demo\widget\browser\boolwidget.zcml:5
+#: src\zope\app\demo\widget\browser\boolwidget.zcml:13
+#, fuzzy
+msgid "Add a Demo BoolWidget"
+msgstr "Einen Demo IntWidget hinzufügen"
+
+#: src\zope\app\demo\widget\browser\boolwidget.zcml:5
+#: src\zope\app\demo\widget\help\configure.zcml:14
+#, fuzzy
+msgid "BoolWidget"
+msgstr "Widgets"
+
 #: src\zope\app\demo\widget\browser\configure.zcml:25
+#: src\zope\app\demo\widget\browser\boolwidget.zcml:38
 #: src\zope\app\demo\widget\browser\intwidget.zcml:38
 #: src\zope\app\demo\widget\browser\textwidget.zcml:38
 #: src\zope\app\demo\widget\browser\textareawidget.zcml:38
@@ -2759,30 +2798,15 @@ msgstr "Demo Widgets"
 msgid "IntWidget Index"
 msgstr ""
 
-# XXX
-# there is a problem with this message id
-# in src/zope/app/services/view.py:274, 'View' means a view component
-# and is refering to the substantive.
-#
-# In src/zope/app/security/configure.zcml:10, 'View' is refering to
-# the permission, the verb. While the substantive and the verb
-# happen to be equal in English, they aren't in most other languages.
-# This needs a fix.
-#: src\zope\app\demo\widget\browser\intwidget.zcml:21
-#: src\zope\app\demo\widget\browser\textwidget.zcml:21
-#: src\zope\app\demo\widget\browser\textareawidget.zcml:21
-#: src\zwiki\browser\configure.zcml:101 src\zwiki\browser\configure.zcml:158
-msgid "View"
-msgstr "Ansicht"
-
-#: src\zope\app\demo\widget\browser\intwidget.zcml:5
-msgid "IntWidget"
-msgstr ""
-
 #: src\zope\app\demo\widget\browser\intwidget.zcml:5
 #: src\zope\app\demo\widget\browser\intwidget.zcml:13
 msgid "Add a Demo IntWidget"
 msgstr "Einen Demo IntWidget hinzufügen"
+
+#: src\zope\app\demo\widget\browser\intwidget.zcml:5
+#: src\zope\app\demo\widget\help\configure.zcml:22
+msgid "IntWidget"
+msgstr ""
 
 #: src\zope\app\demo\widget\browser\textareawidget.zcml:21
 msgid "TextAreaWidget Index"
@@ -2807,30 +2831,35 @@ msgid "Add a Demo TextWidget"
 msgstr "Ein Demo TextWidget hinzufügen"
 
 #: src\zope\app\demo\widget\browser\textwidget.zcml:5
-#: src\zope\app\demo\widget\help\configure.zcml:14
+#: src\zope\app\demo\widget\help\configure.zcml:30
 msgid "TextWidget"
 msgstr "TextWidget"
 
+#: src\zope\app\demo\widget\interfaces\boolwidget.py:31
 #: src\zope\app\demo\widget\interfaces\intwidget.py:31
 #: src\zope\app\demo\widget\interfaces\textareawidget.py:31
 #: src\zope\app\demo\widget\interfaces\textwidget.py:31
 msgid "readonly"
 msgstr "Nur lesbar"
 
+#: src\zope\app\demo\widget\interfaces\boolwidget.py:32
 #: src\zope\app\demo\widget\interfaces\intwidget.py:32
 msgid "zope.schema.Int field with readonly = True."
 msgstr ""
 
+#: src\zope\app\demo\widget\interfaces\boolwidget.py:42
 #: src\zope\app\demo\widget\interfaces\intwidget.py:42
 #: src\zope\app\demo\widget\interfaces\textareawidget.py:41
 #: src\zope\app\demo\widget\interfaces\textwidget.py:42
 msgid "standard"
 msgstr ""
 
-#: src\zope\app\demo\widget\interfaces\intwidget.py:43
-msgid "zope.schema.Int field with only title and description."
-msgstr ""
+#: src\zope\app\demo\widget\interfaces\boolwidget.py:43
+#, fuzzy
+msgid "zope.schema.Bool field with only title and description."
+msgstr "TextLine-Feld, das nur Titel und Beschreibung hat"
 
+#: src\zope\app\demo\widget\interfaces\boolwidget.py:47
 #: src\zope\app\demo\widget\interfaces\intwidget.py:47
 #: src\zope\app\demo\widget\interfaces\textareawidget.py:46
 #: src\zope\app\demo\widget\interfaces\textwidget.py:47
@@ -2839,26 +2868,49 @@ msgstr ""
 msgid "required"
 msgstr "notwendig"
 
-#: src\zope\app\demo\widget\interfaces\intwidget.py:48
-msgid "zope.schema.Int field with required = True."
-msgstr ""
+#: src\zope\app\demo\widget\interfaces\boolwidget.py:48
+#, fuzzy
+msgid "zope.schema.Bool field with required = True."
+msgstr "TextLine-Feld, das vorhanden sein muß (also: `required = True`)"
 
+#: src\zope\app\demo\widget\interfaces\boolwidget.py:52
 #: src\zope\app\demo\widget\interfaces\intwidget.py:52
 #: src\zope\app\demo\widget\interfaces\textareawidget.py:51
 #: src\zope\app\demo\widget\interfaces\textwidget.py:52
 msgid "constraint"
 msgstr ""
 
-#: src\zope\app\demo\widget\interfaces\intwidget.py:53
-msgid "zope.schema.Int field with constraint lambda x: x == 42."
+#: src\zope\app\demo\widget\interfaces\boolwidget.py:53
+#, fuzzy
+msgid "zope.schema.Bool field with constraint lambda x: x == True."
 msgstr ""
+"TextLine-Feld, wobei die Daten die Bedingung `lambda x: x == u'constraint'` "
+"erfüllen müssen."
 
+#: src\zope\app\demo\widget\interfaces\boolwidget.py:58
 #: src\zope\app\demo\widget\interfaces\intwidget.py:58
 #: src\zope\app\demo\widget\interfaces\textareawidget.py:57
 #: src\zope\app\demo\widget\interfaces\textwidget.py:58
 #: src\zope\app\apidoc\ifacemodule\iface_macros.pt:22
 msgid "default"
 msgstr "voreingestellt"
+
+#: src\zope\app\demo\widget\interfaces\boolwidget.py:59
+#, fuzzy
+msgid "zope.schema.Bool field with default = True."
+msgstr "TextLine-Feld, bei dem `u'default'` voreingestellt ist."
+
+#: src\zope\app\demo\widget\interfaces\intwidget.py:43
+msgid "zope.schema.Int field with only title and description."
+msgstr ""
+
+#: src\zope\app\demo\widget\interfaces\intwidget.py:48
+msgid "zope.schema.Int field with required = True."
+msgstr ""
+
+#: src\zope\app\demo\widget\interfaces\intwidget.py:53
+msgid "zope.schema.Int field with constraint lambda x: x == 42."
+msgstr ""
 
 #: src\zope\app\demo\widget\interfaces\intwidget.py:59
 msgid "zope.schema.Int field with default = u'default'."
@@ -4269,6 +4321,7 @@ msgstr "Nutzer-Informationen bearbeiten"
 #: src\zope\app\schemacontent\browser\configure.zcml:65
 #: src\zope\app\demo\menu\configure.zcml:188
 #: src\zope\app\demo\menu\configure.zcml:272
+#: src\zope\app\demo\widget\browser\boolwidget.zcml:29
 #: src\zope\app\demo\widget\browser\intwidget.zcml:29
 #: src\zope\app\demo\widget\browser\textwidget.zcml:29
 #: src\zope\app\demo\widget\browser\textareawidget.zcml:29
@@ -6123,4 +6176,539 @@ msgstr "Arbeitsablauf-relevantes Datenschema"
 #: src\zope\app\workflow\stateful\interfaces.py:148
 msgid ""
 "Specifies the schema that characterizes the workflow relevant data of a "
-"process instance, found in pd.dat
+"process instance, found in pd.data."
+msgstr ""
+"Gibt das Schema an, welches die Arbeitsablauf-relevanten Daten einer "
+"Prozessinstanz charakterisiert."
+
+#: src\zope\app\workflow\stateful\interfaces.py:99
+#: src\zope\app\workflow\stateful\browser\addtransition.pt:19
+msgid "Source State"
+msgstr "Quell-Zustand"
+
+#: src\zope\app\zopetop\widget_macros.pt:169
+msgid "Actions"
+msgstr "Tätigkeiten"
+
+#: src\zope\app\zopetop\widget_macros.pt:32
+msgid "Logged in as ${user_title}"
+msgstr "Sie sind nun als  ${user_title} eingelogged."
+
+#: src\zope\app\zopetop\widget_macros.pt:54
+msgid "Tools"
+msgstr "Utilities"
+
+#: src\zope\app\zopetop\widget_macros.pt:57
+msgid "user accounts"
+msgstr "Benutzerkonten"
+
+#: src\zope\app\zopetop\widget_macros.pt:60
+msgid "User Accounts"
+msgstr "Benutzerkonten"
+
+#: src\zope\app\zopetop\widget_macros.pt:63
+msgid "control panels"
+msgstr "Steuerungspult"
+
+#: src\zope\app\zopetop\widget_macros.pt:66
+msgid "Control Panels"
+msgstr "Steuerungspulte"
+
+#: src\zope\app\zopetop\widget_macros.pt:69
+msgid "system security"
+msgstr "Systemsicherheit"
+
+#: src\zope\app\zopetop\widget_macros.pt:72
+msgid "System Security"
+msgstr "Systemsicherheit"
+
+#: src\zope\app\zopetop\widget_macros.pt:75
+msgid "add more"
+msgstr "Mehr hinzufügen"
+
+#: src\zope\app\zopetop\widget_macros.pt:78
+msgid "Add More"
+msgstr "Mehr hinzufügen"
+
+#: src\zope\app\zopetop\widget_macros.pt:86
+msgid "Root Folder"
+msgstr "Wurzelordner"
+
+#: src\zope\app\zptpage\browser\configure.zcml:31
+msgid "Add a ZPT Page"
+msgstr "Eine ZPT Seite hinzufügen"
+
+#: src\zope\app\zptpage\browser\configure.zcml:39
+msgid "Edit a ZPT page"
+msgstr "Eine ZPT Seite bearbeiten"
+
+#: src\zope\app\zptpage\browser\configure.zcml:49
+msgid "Inline Code"
+msgstr "Inline Code"
+
+#: src\zope\app\zptpage\browser\inlinecode.pt:28
+msgid ""
+"This screen allows you to activate Inline Code Evaluation. This means that "
+"you can say ${code-example-1} or ${code-example-2}"
+msgstr ""
+"Dieser Schirm erlaubt es Ihnen, die Ausführung von Inline-Code zu "
+"aktivieren. Das bedeutet, Sie können ${code-example-1} oder ${code-example-"
+"2} schreiben."
+
+#: src\zope\app\zptpage\browser\inlinecode.pt:34
+msgid ""
+"Many Zope 3 developers consider inline code blocks something very bad, since "
+"it does not follow the design of Page Templates or Zope 3 in general. "
+"However, application and application server developers are not the only "
+"audience for Zope 3. Scripters are used to inline code from other "
+"technologies like PHP and it fits their brain, which is very important."
+msgstr ""
+"Viele Zope 3 Entwickler halten Inline Code für etwas sehr schlechtes, da es "
+"weder der Machart von Seitenschablonen im Speziellen noch der von Zope 3 im "
+"Generellen entspricht. Allerdings sind Anwendungs- und Anwendungsserver-"
+"Entwickler nicht das einzige Publikum für Zope 3. Sogenannte \"Skripter\" "
+"sind Inline Code von anderen Technologien wie PHP gewohnt. Inline Code "
+"entspricht daher ihrem Denken mehr."
+
+#: src\zope\app\zptpage\configure.zcml:12
+#: src\zope\app\zptpage\browser\configure.zcml:23
+msgid "A simple, content-based Page Template"
+msgstr "Eine einfache, auf Inhalt basierte Seitenschablone"
+
+#: src\zope\app\zptpage\configure.zcml:12
+#: src\zope\app\zptpage\browser\configure.zcml:23
+msgid "ZPT Page"
+msgstr "ZPT-Seite"
+
+#: src\zope\app\zptpage\interfaces.py:37
+msgid "The source of the page template."
+msgstr "Der Quelltext der Seitenschablone."
+
+#: src\zope\app\zptpage\interfaces.py:41
+msgid "Expand macros"
+msgstr "Makros anzeigen"
+
+#: src\zope\app\zptpage\interfaces.py:42
+msgid "Expand Macros so that they all are shown in the code."
+msgstr "Makros aufklappen, so dass alle im Code angezeigt werden."
+
+#: src\zope\app\zptpage\interfaces.py:48
+msgid "Evaluate Inline Code"
+msgstr "Inline Code ausführen"
+
+#: src\zope\app\zptpage\interfaces.py:49
+msgid ""
+"Evaluate code snippets in TAL. We usually discourage people from using this "
+"feature."
+msgstr ""
+"Codeschnipsel in TAL ausführen. Wir raten Entwicklern normalerweise von der "
+"Benutzung dieser Funktion ab."
+
+#: src\zope\app\zptpage\zptpage.py:109
+msgid "1 line"
+msgstr "1 Zeile"
+
+#: src\zope\app\zptpage\zptpage.py:110
+msgid "${lines} lines"
+msgstr "${lines} Zeilen"
+
+#: src\zope\schema\_bootstrapinterfaces.py:43
+msgid "Required input is missing."
+msgstr "Erforderliche Eingabe fehlt."
+
+#: src\zope\schema\_bootstrapinterfaces.py:46
+msgid "Object is of wrong type."
+msgstr "Objekttyp ist falsch."
+
+#: src\zope\schema\_bootstrapinterfaces.py:49
+msgid "Value is too big"
+msgstr "Wert ist zu groß."
+
+#: src\zope\schema\_bootstrapinterfaces.py:52
+msgid "Value is too small"
+msgstr "Wert ist zu klein."
+
+#: src\zope\schema\_bootstrapinterfaces.py:55
+msgid "Value is too long"
+msgstr "Wert ist zu lang."
+
+#: src\zope\schema\_bootstrapinterfaces.py:58
+msgid "Value is too short"
+msgstr "Wert ist zu kurz."
+
+#: src\zope\schema\_bootstrapinterfaces.py:61
+msgid "Invalid value"
+msgstr "Ungültiger Wert"
+
+#: src\zope\schema\_bootstrapinterfaces.py:64
+msgid "Constraint not satisfied"
+msgstr "Einschränkung ist nicht erfüllt"
+
+#: src\zope\schema\_bootstrapinterfaces.py:67
+msgid "Not a container"
+msgstr "Kein Behälter"
+
+#: src\zope\schema\_bootstrapinterfaces.py:70
+msgid "Not an iterator"
+msgstr "Kein Iterator"
+
+#: src\zope\schema\interfaces.py:101
+msgid "A short summary or label"
+msgstr "Eine kurze Zusammenfassung oder ein Etikett"
+
+#: src\zope\schema\interfaces.py:108
+msgid "A description of the field"
+msgstr "Eine Beschreibung des Feldes"
+
+#: src\zope\schema\interfaces.py:114
+#: src\zope\app\schema\browser\schema_edit.pt:39
+msgid "Required"
+msgstr "Notwendig"
+
+#: src\zope\schema\interfaces.py:116
+msgid "Tells whether a field requires its value to exist."
+msgstr "Sagt, ob ein Feld einen Wert benötigt."
+
+#: src\zope\schema\interfaces.py:120
+msgid "Read Only"
+msgstr "Nur lesbar"
+
+#: src\zope\schema\interfaces.py:121
+msgid "If true, the field's value cannot be changed."
+msgstr "Wenn wahr kann der Wert dieses Feldes nicht geändert werden."
+
+#: src\zope\schema\interfaces.py:126
+#: src\zope\schema\interfaces.py:266
+#: src\zope\schema\interfaces.py:315
+msgid "Default Value"
+msgstr "Vorgegebener Wert"
+
+#: src\zope\schema\interfaces.py:127
+#: src\zope\schema\interfaces.py:267
+#: src\zope\schema\interfaces.py:316
+msgid ""
+"The field default value may be None or a legal\n"
+"                        field value"
+msgstr "Der \"default\" Wert des Feldes kann None oder ein legaler Feldwert sein"
+
+#: src\zope\schema\interfaces.py:132
+msgid "Missing Value"
+msgstr "Fehlender Wert"
+
+#: src\zope\schema\interfaces.py:133
+msgid ""
+"If input for this Field is missing, and that's ok,\n"
+"                          then this is the value to use"
+msgstr ""
+"Wenn ein Eingabewert für dieses Feld fehlt, und wenn dieses okay ist, dann "
+"nutze diesen Wert stattdessen"
+
+#: src\zope\schema\interfaces.py:138
+msgid "Field Order"
+msgstr "Feldreihenfolge"
+
+#: src\zope\schema\interfaces.py:139
+msgid ""
+"        The order attribute can be used to determine the order in\n"
+"        which fields in a schema were defined. If one field is created\n"
+"        after another (in the same thread), its order will be\n"
+"        greater.\n"
+"\n"
+"        (Fields in separate threads could have the same order.)\n"
+"        "
+msgstr ""
+"        Mit dem Ordnungsattribut (order) kann festgestellt werden, in \n"
+"        welcher Reihenfolge die Felder in einem Schema definiert wurden.\n"
+"       Wenn ein Feld (im gleichen Arbeitsgang) nach einem anderen\n"
+"       erstellt wurde, dann ist seine Ordnungsnummer größer.\n"
+"\n"
+"       (Felder in unterschiedlichen Arbeitsgängen können die gleiche \n"
+"       Ordnungsnummer haben.)"
+
+#: src\zope\schema\interfaces.py:220
+#: src\zope\schema\interfaces.py:303
+msgid "Start of the range"
+msgstr "Anfang der Auswahl"
+
+#: src\zope\schema\interfaces.py:226
+#: src\zope\schema\interfaces.py:309
+msgid "End of the range (excluding the value itself)"
+msgstr "Ende der Auswahl (ausschließlich dem Wert selbst)"
+
+#: src\zope\schema\interfaces.py:236
+msgid "Minimum length"
+msgstr "Minimale Länge"
+
+#: src\zope\schema\interfaces.py:237
+msgid ""
+"        Value after whitespace processing cannot have less than\n"
+"        min_length characters (if a string type) or elements (if\n"
+"        another sequence type). If min_length is None, there is\n"
+"        no minimum.\n"
+"        "
+msgstr ""
+"Der Wert nach der Leerraumbearbeitung kann nicht weniger als min_length "
+"Zeichen (wenn es eine Zeichenkette ist) oder Objekte (für all anderen "
+"Folgetypen) haben. Wenn min_length None ist, dann gibt es kein Minimum."
+
+#: src\zope\schema\interfaces.py:248
+msgid "Maximum length"
+msgstr "Maximale Länge"
+
+#: src\zope\schema\interfaces.py:249
+msgid ""
+"        Value after whitespace processing cannot have greater\n"
+"        or equal than max_length characters (if a string type) or \n"
+"        elements (if another sequence type). If max_length is\n"
+"        None, there is no maximum."
+msgstr ""
+"Der Wert nach der Leerraumbearbeitung kann nicht mehr als max_length Zeichen "
+"(wenn es eine Zeichenkette ist) oder Objekte (für all anderen Folgetypen) "
+"haben. Wenn max_length None ist, dann gibt es kein Maximum."
+
+#: src\zope\schema\interfaces.py:379
+msgid "Value Type"
+msgstr "Werttyp"
+
+#: src\zope\schema\interfaces.py:38
+msgid "Wrong contained type"
+msgstr "Falscher Typ für Behälterinhalt"
+
+#: src\zope\schema\interfaces.py:380
+msgid "Field value items must conform to the given type, expressed via a Field."
+msgstr "Feldwerte müssen sich dem Typ dieses Feldes entsprechen."
+
+#: src\zope\schema\interfaces.py:384
+msgid "Unique Members"
+msgstr "Eindeutige Mitglieder"
+
+#: src\zope\schema\interfaces.py:385
+msgid "Specifies whether the members of the collection must be unique."
+msgstr "Die Mitglieder der Sammlung müssen eindeutig spezifiziert sein."
+
+#: src\zope\schema\interfaces.py:41
+msgid "One or more entries of sequence are not unique."
+msgstr "Eine oder mehrere Einträge der Sequenz sind nicht eindeutig."
+
+#: src\zope\schema\interfaces.py:417
+msgid "The Interface that defines the Fields comprising the Object."
+msgstr "Die Schnittstelle, die die im Objekt enthaltenen Felder definiert."
+
+#: src\zope\schema\interfaces.py:427
+msgid ""
+"Field keys must conform to the given type, expressed\n"
+"           via a Field.\n"
+"        "
+msgstr "Schlüssel desFeldes müssen mit dem Typ dieses Feldes übereinstimmen."
+
+#: src\zope\schema\interfaces.py:432
+msgid ""
+"Field values must conform to the given type, expressed\n"
+"           via a Field.\n"
+"        "
+msgstr "Feldwerte müssen mit dem Typ dieses Feldes übereinstimmen."
+
+#: src\zope\schema\interfaces.py:44
+msgid "Schema not fully implemented"
+msgstr "Schema nicht vollständig implementiert"
+
+#: src\zope\schema\interfaces.py:47
+msgid "Schema not provided"
+msgstr "Schema nicht bereitgestellt."
+
+#: src\zope\schema\interfaces.py:50
+msgid "The specified URI is not valid."
+msgstr "Die angegebene URI ist nicht gültig."
+
+#: src\zope\schema\interfaces.py:53
+msgid "The specified id is not valid."
+msgstr "Die angegebene ID ist nicht gültig."
+
+#: src\zope\schema\interfaces.py:56
+msgid "The specified dotted name is not valid."
+msgstr "Der angegebene gepunktete Namen ist nicht gültig."
+
+#: src\zope\schema\interfaces.py:59
+msgid "The field is not bound."
+msgstr "Das Feld ist nicht gebunden."
+
+#: src\zope\schema\tests\test_objectfield.py:37
+msgid "Foo"
+msgstr "Foo"
+
+#: src\zope\schema\tests\test_objectfield.py:38
+msgid "Foo description"
+msgstr "Foo Beschreibung"
+
+#: src\zope\schema\tests\test_objectfield.py:43
+msgid "Bar"
+msgstr "Bar"
+
+#: src\zope\schema\tests\test_objectfield.py:44
+msgid "Bar description"
+msgstr "Bar Beschreibung"
+
+#: src\zope\security\interfaces.py:259
+msgid "The unique identification of the principal."
+msgstr "Die eineindeutige Identifikation des Nutzungsberechtigten."
+
+#: src\zope\security\interfaces.py:265
+msgid "The title of the principal. This is usually used in the UI."
+msgstr ""
+"Der Titel des Nutzungsberechtigten. Dieser wird normalerweise in der "
+"Benutzeroberfläche verwendet."
+
+#: src\zope\security\interfaces.py:271
+msgid "A detailed description of the principal."
+msgstr "Eine detailierte Beschreibung des Nutzungsberechtigten."
+
+#: src\zope\security\interfaces.py:281
+msgid "Groups"
+msgstr "Gruppen"
+
+#: src\zope\security\interfaces.py:282
+msgid "List of ids of groups the principal belongs to"
+msgstr "Liste der IDs derjenigen Gruppen, zu den der Nutzungsberechtigte gehört."
+
+#: src\zope\security\interfaces.py:295
+msgid "Id as which this permission will be known and used."
+msgstr "ID, unter der diese Berechtigung bekannt sein und benutzt werden wird."
+
+#: src\zwiki\browser\configure.zcml:109
+#: src\zwiki\browser\configure.zcml:161
+msgid "Parents"
+msgstr "Eltern"
+
+#: src\zwiki\browser\configure.zcml:134
+#: src\zwiki\browser\configure.zcml:143
+#: src\zwiki\browser\configure.zcml:159
+msgid "Comment"
+msgstr "Kommentar"
+
+#: src\zwiki\browser\configure.zcml:143
+msgid "A Comment"
+msgstr "Ein Kommentar"
+
+#: src\zwiki\browser\configure.zcml:152
+msgid "Menu for Wiki Page related actions."
+msgstr "Menü für Wikiseiten-bezogene Aktionen"
+
+#: src\zwiki\browser\configure.zcml:168
+msgid "Table of Contents"
+msgstr "Inhaltsverzeichnis"
+
+#: src\zwiki\browser\configure.zcml:17
+msgid "Wiki"
+msgstr "Wiki"
+
+#: src\zwiki\browser\configure.zcml:17
+msgid "A Wiki"
+msgstr "Ein Wiki"
+
+#: src\zwiki\browser\configure.zcml:24
+#: src\zwiki\browser\configure.zcml:162
+msgid "TOC"
+msgstr "Inhaltsverz."
+
+#: src\zwiki\browser\configure.zcml:32
+#: src\zwiki\browser\configure.zcml:169
+msgid "Search"
+msgstr "Suchen"
+
+#: src\zwiki\browser\configure.zcml:44
+#: src\zwiki\browser\configure.zcml:118
+#: src\zwiki\browser\configure.zcml:163 src\zwiki\browser\configure.zcml:170
+msgid "Subscriptions"
+msgstr "Abonnements"
+
+#: src\zwiki\browser\configure.zcml:76
+msgid "Change Wiki Page"
+msgstr "Wiki-Seite ändern"
+
+#: src\zwiki\browser\configure.zcml:8
+msgid "Add Wiki"
+msgstr "Wiki hinzufügen"
+
+#: src\zwiki\configure.zcml:14
+msgid "Wiki User"
+msgstr "Wiki-Benutzer"
+
+#: src\zwiki\configure.zcml:14
+msgid "Wiki visitors, which can only view and comment on wikis."
+msgstr "Wiki-Besucher, die nur betrachten und kommentieren dürfen."
+
+#: src\zwiki\configure.zcml:144
+#: src\zwiki\browser\configure.zcml:69
+msgid "A Wiki Page"
+msgstr "Wiki-Seite hinzufügen"
+
+#: src\zwiki\configure.zcml:144
+#: src\zwiki\browser\configure.zcml:69
+msgid "Wiki Page"
+msgstr "Wiki-Seite"
+
+#: src\zwiki\configure.zcml:188
+msgid "A Wiki Page Comment"
+msgstr "Ein Wiki-Seiten-Kommentar"
+
+#: src\zwiki\configure.zcml:188
+msgid "Wiki Page Comment"
+msgstr "Wikiseiten-Kommentar"
+
+#: src\zwiki\configure.zcml:19
+msgid "The Wiki Editor can create and edit wikis."
+msgstr "Der Wiki-Editor kann Wikis erstellen und bearbeiten."
+
+#: src\zwiki\configure.zcml:19
+msgid "Wiki Editor"
+msgstr "Wiki-Editor"
+
+#: src\zwiki\configure.zcml:24
+msgid "Wiki Administrator"
+msgstr "Wiki-Administrator"
+
+#: src\zwiki\configure.zcml:24
+msgid "The Wiki Admin can fully manage wiki pages."
+msgstr "Der Wiki-Administrator kann Wiki-Seiten komplett verwalten."
+
+#: src\zwiki\configure.zcml:29
+msgid "View Wiki Page"
+msgstr "Wiki-Seite ansehen"
+
+#: src\zwiki\configure.zcml:29
+msgid "View a Wiki Page"
+msgstr "Wiki-Seite ansehen"
+
+#: src\zwiki\configure.zcml:38
+msgid "Comment on Wiki Page"
+msgstr "Wiki-Seite kommentieren"
+
+#: src\zwiki\configure.zcml:38
+msgid "Make a comment on Wiki Page"
+msgstr "Ein Kommentar zu einer Wiki-Seite abgeben"
+
+#: src\zwiki\configure.zcml:47
+#: src\zwiki\browser\configure.zcml:60
+msgid "Add Wiki Page"
+msgstr "Wiki-Seite hinzufügen"
+
+#: src\zwiki\configure.zcml:56
+msgid "Edit Wiki Page"
+msgstr "Wiki-Seite bearbeiten"
+
+#: src\zwiki\configure.zcml:65
+msgid "Delete Wiki Page"
+msgstr "Wiki-Seite löschen"
+
+#: src\zwiki\configure.zcml:74
+msgid "Reparent Wiki Page"
+msgstr "Wiki-Seite neu zuordnen"
+
+#: src\zwiki\configure.zcml:74
+msgid "Reparent a Wiki Page"
+msgstr "Wiki-Seite neu zuordnen"
+
+#: src\zwiki\configure.zcml:98
+msgid "Minimal Wiki Page Container implementation "
+msgstr "Minimale Wikiseiten-Behälter-Implementation"
+

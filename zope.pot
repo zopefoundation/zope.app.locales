@@ -13,8 +13,8 @@
 ##############################################################################
 msgid ""
 msgstr ""
-"Project-Id-Version: Development/Revision: 29562\n"
-"POT-Creation-Date: Sat Mar 19 18:51:23 2005\n"
+"Project-Id-Version: Development/Revision: 29579\n"
+"POT-Creation-Date: Sat Mar 19 21:58:36 2005\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
@@ -1661,42 +1661,42 @@ msgstr ""
 msgid "<no name>"
 msgstr ""
 
-#: src\zope\app\component\browser\site_management.pt:103
+#: src\zope\app\component\browser\site_management.pt:104
 # Default: "Add"
 msgid "ADD-TOOL-SUBMIT"
 msgstr ""
 
-#: src\zope\app\component\browser\site_management.pt:105
+#: src\zope\app\component\browser\site_management.pt:106
 # Default: "Cancel"
 msgid "CANCEL-ADD-TOOL-SUBMIT"
 msgstr ""
 
-#: src\zope\app\component\browser\site_management.pt:111
+#: src\zope\app\component\browser\site_management.pt:112
 # Default: "Activate"
 msgid "ACTIVATE-SUBMIT"
 msgstr ""
 
-#: src\zope\app\component\browser\site_management.pt:114
+#: src\zope\app\component\browser\site_management.pt:115
 # Default: "Deactivate"
 msgid "DEACTIVATE-SUBMIT"
 msgstr ""
 
-#: src\zope\app\component\browser\site_management.pt:118
+#: src\zope\app\component\browser\site_management.pt:119
 # Default: "Add"
 msgid "ADD-SUBMIT"
 msgstr ""
 
-#: src\zope\app\component\browser\site_management.pt:121
+#: src\zope\app\component\browser\site_management.pt:122
 # Default: "Delete"
 msgid "DELETE-SUBMIT"
 msgstr ""
 
-#: src\zope\app\component\browser\site_management.pt:124
+#: src\zope\app\component\browser\site_management.pt:125
 # Default: "Rename"
 msgid "RENAME-SUBMIT"
 msgstr ""
 
-#: src\zope\app\component\browser\site_management.pt:126
+#: src\zope\app\component\browser\site_management.pt:127
 # Default: "Cancel"
 msgid "RENAME-CANCEL-SUBMIT"
 msgstr ""
@@ -1721,6 +1721,10 @@ msgstr ""
 
 #: src\zope\app\component\browser\site_management.pt:5
 msgid "<b>Site Management</b>"
+msgstr ""
+
+#: src\zope\app\component\browser\site_management.pt:90
+msgid "<i>No instances of this utility are available yet.</i>"
 msgstr ""
 
 #: src\zope\app\component\browser\utilreg_details.pt:11
@@ -2487,7 +2491,31 @@ msgstr ""
 msgid "File name of the data file."
 msgstr ""
 
+#: src\zope\app\demo\widget\browser\boolwidget.zcml:21
+msgid "BoolWidget Index"
+msgstr ""
+
+#: src\zope\app\demo\widget\browser\boolwidget.zcml:21
+#: src\zope\app\demo\widget\browser\intwidget.zcml:21
+#: src\zope\app\demo\widget\browser\textwidget.zcml:21
+#: src\zope\app\demo\widget\browser\textareawidget.zcml:21
+#: src\zwiki\browser\configure.zcml:101
+#: src\zwiki\browser\configure.zcml:158
+msgid "View"
+msgstr ""
+
+#: src\zope\app\demo\widget\browser\boolwidget.zcml:5
+#: src\zope\app\demo\widget\browser\boolwidget.zcml:13
+msgid "Add a Demo BoolWidget"
+msgstr ""
+
+#: src\zope\app\demo\widget\browser\boolwidget.zcml:5
+#: src\zope\app\demo\widget\help\configure.zcml:14
+msgid "BoolWidget"
+msgstr ""
+
 #: src\zope\app\demo\widget\browser\configure.zcml:25
+#: src\zope\app\demo\widget\browser\boolwidget.zcml:38
 #: src\zope\app\demo\widget\browser\intwidget.zcml:38
 #: src\zope\app\demo\widget\browser\textwidget.zcml:38
 #: src\zope\app\demo\widget\browser\textareawidget.zcml:38
@@ -2502,21 +2530,14 @@ msgstr ""
 msgid "IntWidget Index"
 msgstr ""
 
-#: src\zope\app\demo\widget\browser\intwidget.zcml:21
-#: src\zope\app\demo\widget\browser\textwidget.zcml:21
-#: src\zope\app\demo\widget\browser\textareawidget.zcml:21
-#: src\zwiki\browser\configure.zcml:101
-#: src\zwiki\browser\configure.zcml:158
-msgid "View"
-msgstr ""
-
-#: src\zope\app\demo\widget\browser\intwidget.zcml:5
-msgid "IntWidget"
-msgstr ""
-
 #: src\zope\app\demo\widget\browser\intwidget.zcml:5
 #: src\zope\app\demo\widget\browser\intwidget.zcml:13
 msgid "Add a Demo IntWidget"
+msgstr ""
+
+#: src\zope\app\demo\widget\browser\intwidget.zcml:5
+#: src\zope\app\demo\widget\help\configure.zcml:22
+msgid "IntWidget"
 msgstr ""
 
 #: src\zope\app\demo\widget\browser\textareawidget.zcml:21
@@ -2542,30 +2563,34 @@ msgid "Add a Demo TextWidget"
 msgstr ""
 
 #: src\zope\app\demo\widget\browser\textwidget.zcml:5
-#: src\zope\app\demo\widget\help\configure.zcml:14
+#: src\zope\app\demo\widget\help\configure.zcml:30
 msgid "TextWidget"
 msgstr ""
 
+#: src\zope\app\demo\widget\interfaces\boolwidget.py:31
 #: src\zope\app\demo\widget\interfaces\intwidget.py:31
 #: src\zope\app\demo\widget\interfaces\textareawidget.py:31
 #: src\zope\app\demo\widget\interfaces\textwidget.py:31
 msgid "readonly"
 msgstr ""
 
+#: src\zope\app\demo\widget\interfaces\boolwidget.py:32
 #: src\zope\app\demo\widget\interfaces\intwidget.py:32
 msgid "zope.schema.Int field with readonly = True."
 msgstr ""
 
+#: src\zope\app\demo\widget\interfaces\boolwidget.py:42
 #: src\zope\app\demo\widget\interfaces\intwidget.py:42
 #: src\zope\app\demo\widget\interfaces\textareawidget.py:41
 #: src\zope\app\demo\widget\interfaces\textwidget.py:42
 msgid "standard"
 msgstr ""
 
-#: src\zope\app\demo\widget\interfaces\intwidget.py:43
-msgid "zope.schema.Int field with only title and description."
+#: src\zope\app\demo\widget\interfaces\boolwidget.py:43
+msgid "zope.schema.Bool field with only title and description."
 msgstr ""
 
+#: src\zope\app\demo\widget\interfaces\boolwidget.py:47
 #: src\zope\app\demo\widget\interfaces\intwidget.py:47
 #: src\zope\app\demo\widget\interfaces\textareawidget.py:46
 #: src\zope\app\demo\widget\interfaces\textwidget.py:47
@@ -2574,25 +2599,43 @@ msgstr ""
 msgid "required"
 msgstr ""
 
-#: src\zope\app\demo\widget\interfaces\intwidget.py:48
-msgid "zope.schema.Int field with required = True."
+#: src\zope\app\demo\widget\interfaces\boolwidget.py:48
+msgid "zope.schema.Bool field with required = True."
 msgstr ""
 
+#: src\zope\app\demo\widget\interfaces\boolwidget.py:52
 #: src\zope\app\demo\widget\interfaces\intwidget.py:52
 #: src\zope\app\demo\widget\interfaces\textareawidget.py:51
 #: src\zope\app\demo\widget\interfaces\textwidget.py:52
 msgid "constraint"
 msgstr ""
 
-#: src\zope\app\demo\widget\interfaces\intwidget.py:53
-msgid "zope.schema.Int field with constraint lambda x: x == 42."
+#: src\zope\app\demo\widget\interfaces\boolwidget.py:53
+msgid "zope.schema.Bool field with constraint lambda x: x == True."
 msgstr ""
 
+#: src\zope\app\demo\widget\interfaces\boolwidget.py:58
 #: src\zope\app\demo\widget\interfaces\intwidget.py:58
 #: src\zope\app\demo\widget\interfaces\textareawidget.py:57
 #: src\zope\app\demo\widget\interfaces\textwidget.py:58
 #: src\zope\app\apidoc\ifacemodule\iface_macros.pt:22
 msgid "default"
+msgstr ""
+
+#: src\zope\app\demo\widget\interfaces\boolwidget.py:59
+msgid "zope.schema.Bool field with default = True."
+msgstr ""
+
+#: src\zope\app\demo\widget\interfaces\intwidget.py:43
+msgid "zope.schema.Int field with only title and description."
+msgstr ""
+
+#: src\zope\app\demo\widget\interfaces\intwidget.py:48
+msgid "zope.schema.Int field with required = True."
+msgstr ""
+
+#: src\zope\app\demo\widget\interfaces\intwidget.py:53
+msgid "zope.schema.Int field with constraint lambda x: x == 42."
 msgstr ""
 
 #: src\zope\app\demo\widget\interfaces\intwidget.py:59
@@ -3967,6 +4010,8 @@ msgstr ""
 #: src\zope\app\schemacontent\browser\configure.zcml:65
 #: src\zope\app\demo\menu\configure.zcml:188
 #: src\zope\app\demo\menu\configure.zcml:272
+#: src\zope\app\demo\widget\browser\boolwidget.zcml:29
+#: src\zope\app\demo\widget\browser\boolwidget.zcml:29
 #: src\zope\app\demo\widget\browser\intwidget.zcml:29
 #: src\zope\app\demo\widget\browser\intwidget.zcml:29
 #: src\zope\app\demo\widget\browser\textwidget.zcml:29
