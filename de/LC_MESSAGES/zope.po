@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: zope\n"
-"POT-Creation-Date: Mon Jul 19 17:08:59 2004\n"
+"POT-Creation-Date: Mon Jul 26 13:29:17 2004\n"
 "PO-Revision-Date: 2004-07-07 10:43-0400\n"
 "Last-Translator: Stephan Richter <stephan.richter@tufts.edu>\n"
 "Language-Team: German <zope3-dev@zope.org>\n"
@@ -132,16 +132,16 @@ msgid "Zope 3 API Docs"
 msgstr "Zope 3 API Doku"
 
 # Default: "Bases"
-#: src/zope/app/apidoc/classmodule/__init__.py:545
+#: src/zope/app/apidoc/classmodule/__init__.py:563
 #: src/zope/app/apidoc/ifacemodule/index.pt:265
 msgid "Classes"
 msgstr "Klassen"
 
-#: src/zope/app/apidoc/classmodule/__init__.py:583
+#: src/zope/app/apidoc/classmodule/__init__.py:601
 msgid "Zope 3 root."
 msgstr "Zope 3 Wurzel"
 
-#: src/zope/app/apidoc/classmodule/browser.py:675
+#: src/zope/app/apidoc/classmodule/browser.py:721
 #: src/zope/app/rotterdam/template.pt:102
 msgid "[top]"
 msgstr "[oben]"
@@ -154,10 +154,24 @@ msgstr "Es gibt keine Attribute in dieser Klasse."
 msgid "There are no methods in this class."
 msgstr "Diese Klasse hat keine Methoden."
 
+#: src/zope/app/apidoc/classmodule/class_index.pt:149
+msgid "Known Subclasses"
+msgstr ""
+
 #: src/zope/app/apidoc/classmodule/class_index.pt:16
 #: src/zope/app/apidoc/ifacemodule/index.pt:26
 msgid "Bases"
 msgstr "Basen"
+
+#: src/zope/app/apidoc/classmodule/class_index.pt:162
+#, fuzzy
+msgid "(C-based class)"
+msgstr "Seitenklasse"
+
+#: src/zope/app/apidoc/classmodule/class_index.pt:168
+#, fuzzy
+msgid "There are no known subclasses."
+msgstr "Es gibt keine Basisklassen."
 
 #: src/zope/app/apidoc/classmodule/class_index.pt:34
 #: src/zope/app/apidoc/ifacemodule/index.pt:40
@@ -924,43 +938,43 @@ msgstr "Sie müssen den Inhaltstypen auswählen, den sie hinzufügen möchten."
 msgid "Find"
 msgstr "Suchen"
 
-#: src/zope/app/container/browser/contents.pt:119
+#: src/zope/app/container/browser/contents.pt:118
 msgid "container-rename-button"
 msgstr "Umbenennen"
 
-#: src/zope/app/container/browser/contents.pt:123
+#: src/zope/app/container/browser/contents.pt:122
 msgid "container-cut-button"
 msgstr "Ausschneiden"
 
-#: src/zope/app/container/browser/contents.pt:127
+#: src/zope/app/container/browser/contents.pt:126
 msgid "container-copy-button"
 msgstr "Kopieren"
 
-#: src/zope/app/container/browser/contents.pt:131
+#: src/zope/app/container/browser/contents.pt:130
 msgid "container-paste-button"
 msgstr "Einfügen"
 
-#: src/zope/app/container/browser/contents.pt:162
+#: src/zope/app/container/browser/contents.pt:161
 msgid "container-apply-button"
 msgstr "Anwenden"
 
-#: src/zope/app/container/browser/contents.pt:165
+#: src/zope/app/container/browser/contents.pt:164
 msgid "container-cancel-button"
 msgstr "Abbrechen"
 
-#: src/zope/app/container/browser/contents.py:233
+#: src/zope/app/container/browser/contents.py:242
 msgid "You didn't specify any ids to remove."
 msgstr "Sie haben keine Ids zum Löschen angegeben."
 
-#: src/zope/app/container/browser/contents.py:245
+#: src/zope/app/container/browser/contents.py:254
 msgid "You didn't specify any ids to copy."
 msgstr "Sie haben keine Ids zum Kopieren angegeben."
 
-#: src/zope/app/container/browser/contents.py:265
+#: src/zope/app/container/browser/contents.py:274
 msgid "You didn't specify any ids to cut."
 msgstr "Sie haben keine Ids zum Ausschneiden angegeben."
 
-#: src/zope/app/container/browser/contents.py:62
+#: src/zope/app/container/browser/contents.py:63
 msgid "You didn't specify any ids to rename."
 msgstr "Sie haben keine Ids zum Umbenennen angegeben."
 
@@ -1031,11 +1045,11 @@ msgstr "Ordner, der Groß-/Kleinschreibung nicht beachtet"
 msgid "A simple case insensitive Folder."
 msgstr "Ein einfacher Ordner, der Groß-/Kleinschreibung nicht beachtet"
 
-#: src/zope/app/demo/passwdauth/interfaces.py:27
+#: src/zope/app/demo/passwdauth/interfaces.py:29
 msgid "File Name"
 msgstr "Dateiname"
 
-#: src/zope/app/demo/passwdauth/interfaces.py:28
+#: src/zope/app/demo/passwdauth/interfaces.py:30
 msgid "File name of the data file."
 msgstr "Dateinamen der Datei."
 
@@ -1060,14 +1074,14 @@ msgstr "Eine DTML-Seite hinzufügen"
 msgid "A simple, content-based DTML page"
 msgstr "Eine einfache, auf Inhalt basierte DTML-Seite"
 
-#: src/zope/app/dtmlpage/interfaces.py:32
+#: src/zope/app/dtmlpage/interfaces.py:34
 #: src/zope/app/pythonpage/__init__.py:39
 #: src/zope/app/sqlscript/interfaces.py:45
 #: src/zope/app/zptpage/interfaces.py:36
 msgid "Source"
 msgstr "Quellcode"
 
-#: src/zope/app/dtmlpage/interfaces.py:33
+#: src/zope/app/dtmlpage/interfaces.py:35
 msgid "The source of the dtml page."
 msgstr "Der Quellcode der DTML Page"
 
@@ -1084,7 +1098,7 @@ msgstr "Inhalt wurde zuletzt geändert am"
 msgid "Creator"
 msgstr "Autor"
 
-#: src/zope/app/dublincore/browser/metadataedit.py:38
+#: src/zope/app/dublincore/browser/metadataedit.py:40
 msgid "Changed data ${datetime}"
 msgstr "Daten am ${datetime} geändert"
 
@@ -1287,27 +1301,27 @@ msgstr "Ein Bild"
 msgid "Image"
 msgstr "Bild"
 
-#: src/zope/app/file/image.py:72
+#: src/zope/app/file/image.py:74
 msgid " ${width}x${height}"
 msgstr " ${width}x${height}"
 
-#: src/zope/app/file/interfaces.py:25 src/zope/app/pythonpage/__init__.py:44
+#: src/zope/app/file/interfaces.py:27 src/zope/app/pythonpage/__init__.py:44
 #: src/zope/app/i18nfile/browser/file_edit.pt:31
 #: src/zope/app/i18nfile/browser/image_edit.pt:32
 msgid "Content Type"
 msgstr "Inhaltstyp"
 
-#: src/zope/app/file/interfaces.py:26
+#: src/zope/app/file/interfaces.py:28
 msgid "The content type identifies the type of data."
 msgstr "Der Inhaltstyp identifiziert den Typ der Daten."
 
-#: src/zope/app/file/interfaces.py:33
+#: src/zope/app/file/interfaces.py:35
 #: src/zope/app/i18nfile/browser/file_edit.pt:78
 #: src/zope/app/i18nfile/browser/image_edit.pt:79
 msgid "Data"
 msgstr "Daten"
 
-#: src/zope/app/file/interfaces.py:34
+#: src/zope/app/file/interfaces.py:36
 msgid "The actual content of the object."
 msgstr "Der eigentliche Inhalt des Objekts."
 
@@ -1334,83 +1348,83 @@ msgstr "Minimaler Ordner"
 msgid "Object Name"
 msgstr "Objektname"
 
-#: src/zope/app/form/browser/add.py:60
-#: src/zope/app/form/browser/editview.py:108
+#: src/zope/app/form/browser/add.py:62
+#: src/zope/app/form/browser/editview.py:112
 #: src/zope/app/schema/browser/__init__.py:53
 #: src/zope/app/schema/browser/__init__.py:64
 #: src/zope/app/schema/browser/__init__.py:70
 msgid "An error occured."
 msgstr "Ein Fehler ist aufgetreten."
 
-#: src/zope/app/form/browser/boolwidgets.py:91
-#: src/zope/app/form/browser/boolwidgets.py:96
-#: src/zope/app/form/browser/boolwidgets.py:103
+#: src/zope/app/form/browser/boolwidgets.py:93
+#: src/zope/app/form/browser/boolwidgets.py:98
+#: src/zope/app/form/browser/boolwidgets.py:105
 msgid "off"
 msgstr "aus"
 
-#: src/zope/app/form/browser/boolwidgets.py:91
-#: src/zope/app/form/browser/boolwidgets.py:96
-#: src/zope/app/form/browser/boolwidgets.py:103
+#: src/zope/app/form/browser/boolwidgets.py:93
+#: src/zope/app/form/browser/boolwidgets.py:98
+#: src/zope/app/form/browser/boolwidgets.py:105
 msgid "on"
 msgstr "an"
 
-#: src/zope/app/form/browser/complexsample/complexsample.py:45
+#: src/zope/app/form/browser/complexsample/complexsample.py:47
 msgid "sampleWidget-button-move-up"
 msgstr "nach oben"
 
-#: src/zope/app/form/browser/complexsample/complexsample.py:46
+#: src/zope/app/form/browser/complexsample/complexsample.py:48
 msgid "sampleWidget-button-move-down"
 msgstr "nach unten"
 
-#: src/zope/app/form/browser/complexsample/complexsample.py:47
+#: src/zope/app/form/browser/complexsample/complexsample.py:49
 msgid "sampleWidget-button-remove"
 msgstr "Entfernen"
 
-#: src/zope/app/form/browser/complexsample/complexsample.py:48
+#: src/zope/app/form/browser/complexsample/complexsample.py:50
 msgid "sampleWidget-button-add-done"
 msgstr "Hinzufügen und fertig"
 
-#: src/zope/app/form/browser/complexsample/complexsample.py:49
+#: src/zope/app/form/browser/complexsample/complexsample.py:51
 msgid "sampleWidget-button-add-more"
 msgstr "Mehr hinzufügen"
 
-#: src/zope/app/form/browser/complexsample/complexsample.py:50
+#: src/zope/app/form/browser/complexsample/complexsample.py:52
 msgid "sampleWidget-button-more"
 msgstr "Mehr"
 
-#: src/zope/app/form/browser/complexsample/complexsample.py:51
+#: src/zope/app/form/browser/complexsample/complexsample.py:53
 msgid "sampleWidget-button-clear"
 msgstr "Löschen"
 
-#: src/zope/app/form/browser/complexsample/complexsample.py:52
+#: src/zope/app/form/browser/complexsample/complexsample.py:54
 msgid "sampleWidget-button-query"
 msgstr "Abfragen"
 
-#: src/zope/app/form/browser/complexsample/complexsample.py:53
+#: src/zope/app/form/browser/complexsample/complexsample.py:55
 msgid "sampleWidget-button-select"
 msgstr "Auswählen"
 
-#: src/zope/app/form/browser/complexsample/complexsample.py:54
+#: src/zope/app/form/browser/complexsample/complexsample.py:56
 msgid "sampleWidget-button-dismiss"
 msgstr "Schließen"
 
-#: src/zope/app/form/browser/complexsample/complexsample.py:57
+#: src/zope/app/form/browser/complexsample/complexsample.py:59
 msgid "sampleWidget-label-enter-search-text"
 msgstr "Suchtext eingeben"
 
-#: src/zope/app/form/browser/complexsample/complexsample.py:59
+#: src/zope/app/form/browser/complexsample/complexsample.py:61
 msgid "sampleWidget-label-select-content-type"
 msgstr "Inhaltstyp auswählen"
 
-#: src/zope/app/form/browser/complexsample/complexsample.py:61
+#: src/zope/app/form/browser/complexsample/complexsample.py:63
 msgid "sampleWidget-label-any-content-type"
 msgstr "Irgendein Inhaltstyp"
 
-#: src/zope/app/form/browser/complexsample/complexsample.py:63
+#: src/zope/app/form/browser/complexsample/complexsample.py:65
 msgid "sampleWidget-label-inaccessable-object"
 msgstr "Unzugängliches Objekt"
 
-#: src/zope/app/form/browser/complexsample/interfaces.py:29
+#: src/zope/app/form/browser/complexsample/interfaces.py:31
 #: src/zope/app/publisher/interfaces/browser.py:44
 #: src/zope/app/publisher/interfaces/browser.py:87
 #: src/zope/app/security/interfaces/__init__.py:44
@@ -1425,15 +1439,15 @@ msgstr "Unzugängliches Objekt"
 msgid "Title"
 msgstr "Titel"
 
-#: src/zope/app/form/browser/complexsample/widgetapi.py:56
+#: src/zope/app/form/browser/complexsample/widgetapi.py:58
 msgid "widget-missing-single-value"
 msgstr "Einfacher Wert fehlt"
 
-#: src/zope/app/form/browser/complexsample/widgetapi.py:58
+#: src/zope/app/form/browser/complexsample/widgetapi.py:60
 msgid "widget-missing-multiple-value"
 msgstr "Mehrere Werte fehlen"
 
-#: src/zope/app/form/browser/editview.py:117
+#: src/zope/app/form/browser/editview.py:122
 msgid "Updated on ${date_time}"
 msgstr "Daten am ${date_time} geändert"
 
@@ -1447,69 +1461,69 @@ msgstr "Zurück"
 msgid "next-button"
 msgstr "Nächste"
 
-#: src/zope/app/form/browser/editwizard.py:148
+#: src/zope/app/form/browser/editwizard.py:149
 msgid "No changes to save"
 msgstr "Keine Änderungen zu speichern"
 
-#: src/zope/app/form/browser/editwizard.py:150
+#: src/zope/app/form/browser/editwizard.py:151
 msgid "Changes saved"
 msgstr "Änderungen gespeichert"
 
-#: src/zope/app/form/browser/itemswidgets.py:228
+#: src/zope/app/form/browser/itemswidgets.py:230
 msgid "item-missing-single-value-for-display"
 msgstr "Einfacher Wert fehlt."
 
-#: src/zope/app/form/browser/itemswidgets.py:244
+#: src/zope/app/form/browser/itemswidgets.py:246
 msgid "vocabulary-missing-multiple-value-for-display"
 msgstr "Mehrere Werte fehlen"
 
-#: src/zope/app/form/browser/itemswidgets.py:426
-#: src/zope/app/form/browser/itemswidgets.py:470
+#: src/zope/app/form/browser/itemswidgets.py:428
+#: src/zope/app/form/browser/itemswidgets.py:472
 msgid "vocabulary-missing-single-value-for-edit"
 msgstr "Einfacher Wert fehlt"
 
-#: src/zope/app/form/browser/itemswidgets.py:544
+#: src/zope/app/form/browser/itemswidgets.py:546
 msgid "vocabulary-missing-multiple-value-for-edit"
 msgstr "Mehrere Werte fehlen"
 
 # Default: "Remove selected items"
-#: src/zope/app/form/browser/sequencewidget.py:82
+#: src/zope/app/form/browser/sequencewidget.py:84
 msgid "remove-selected-items"
 msgstr "Ausgewählte Einträge entfernen"
 
-#: src/zope/app/form/browser/sequencewidget.py:89
+#: src/zope/app/form/browser/sequencewidget.py:91
 msgid "Add %s"
 msgstr "%s hinzufügen"
 
-#: src/zope/app/form/browser/vocabularyquery.py:165
+#: src/zope/app/form/browser/vocabularyquery.py:167
 msgid "vocabulary-query-button-add-done"
 msgstr "Hinzufügen und fertig"
 
-#: src/zope/app/form/browser/vocabularyquery.py:167
+#: src/zope/app/form/browser/vocabularyquery.py:169
 msgid "vocabulary-query-button-add-more"
 msgstr "Mehr hinzufügen"
 
-#: src/zope/app/form/browser/vocabularyquery.py:169
+#: src/zope/app/form/browser/vocabularyquery.py:171
 msgid "vocabulary-query-button-more"
 msgstr "Mehr"
 
-#: src/zope/app/form/browser/vocabularyquery.py:171
+#: src/zope/app/form/browser/vocabularyquery.py:173
 msgid "vocabulary-query-message-no-results"
 msgstr "Keine Ergebnisse"
 
-#: src/zope/app/form/browser/vocabularyquery.py:173
+#: src/zope/app/form/browser/vocabularyquery.py:175
 msgid "vocabulary-query-header-results"
 msgstr "Kopfergebnisse"
 
-#: src/zope/app/fssync/browser/__init__.py:156
+#: src/zope/app/fssync/browser/__init__.py:158
 msgid "required argument 'name' missing"
 msgstr "Erforderliches Argument 'name' fehlt"
 
-#: src/zope/app/fssync/browser/__init__.py:215
+#: src/zope/app/fssync/browser/__init__.py:217
 msgid "Up-to-date check failed:"
 msgstr "Up-to-date Check fehlgeschlagen:"
 
-#: src/zope/app/fssync/browser/__init__.py:90
+#: src/zope/app/fssync/browser/__init__.py:92
 msgid "Content-Type is not application/x-snarf"
 msgstr "Der Inhaltstyp ist nicht application/x-snarf"
 
@@ -2007,7 +2021,7 @@ msgid "Modified"
 msgstr "Modifiziert am"
 
 #: src/zope/app/menu/browser/menu_contents.pt:78
-#: src/zope/app/container/browser/contents.pt:135
+#: src/zope/app/container/browser/contents.pt:134
 msgid "container-delete-button"
 msgstr "Löschen"
 
@@ -2250,11 +2264,7 @@ msgstr "Ansichtenname"
 msgid "The View Name for which this Help Topic is registered"
 msgstr "Der Ansichtenname, für welchen dieses Hilfethema registriert ist"
 
-#: src/zope/app/pagetemplate/engine.py:102
-msgid "No interpreter named \"${lang_name}\" was found."
-msgstr "Ein Interpreter mit Namen \"${name}\" wurde nicht gefunden."
-
-#: src/zope/app/pagetemplate/engine.py:93
+#: src/zope/app/pagetemplate/engine.py:136
 msgid ""
 "Inline Code Evaluation is deactivated, which means that you cannot have "
 "inline code snippets in your Page Template. Activate Inline Code Evaluation "
@@ -2263,6 +2273,10 @@ msgstr ""
 "Inline Code-Ausführung ist deaktiviert. Das bedeutet, dass Sie keinen Inline "
 "Code in Ihren Seitenschablonen haben dürfen. Aktivieren Sie Inline Code-"
 "Ausführung und versuchen Sie es nochmals."
+
+#: src/zope/app/pagetemplate/engine.py:145
+msgid "No interpreter named \"${lang_name}\" was found."
+msgstr "Ein Interpreter mit Namen \"${name}\" wurde nicht gefunden."
 
 #: src/zope/app/pluggableauth/browser/configure.zcml:22
 msgid "Add Principal Source"
@@ -3497,35 +3511,35 @@ msgid "Role(s)"
 msgstr "Rolle(n)"
 
 #: src/zope/app/securitypolicy/browser/principalroleview.py:92
-#: src/zope/app/securitypolicy/browser/rolepermissionview.py:139
+#: src/zope/app/securitypolicy/browser/rolepermissionview.py:138
 msgid "Settings changed at ${date_time}"
 msgstr "Daten am ${date_time} geändert"
 
-#: src/zope/app/securitypolicy/browser/rolepermissionview.py:47
+#: src/zope/app/securitypolicy/browser/rolepermissionview.py:46
 msgid "permission-acquire"
 msgstr "Erwerben"
 
-#: src/zope/app/securitypolicy/browser/rolepermissionview.py:49
+#: src/zope/app/securitypolicy/browser/rolepermissionview.py:48
 msgid "permission-allow"
 msgstr "Erlauben"
 
-#: src/zope/app/securitypolicy/browser/rolepermissionview.py:51
+#: src/zope/app/securitypolicy/browser/rolepermissionview.py:50
 msgid "permission-deny"
 msgstr "Verweigern"
 
-#: src/zope/app/securitypolicy/configure.zcml:92
+#: src/zope/app/securitypolicy/configure.zcml:90
 msgid "All users have this role implicitly"
 msgstr "Alle Benutzer haben diese Rolle impliziterweise"
 
-#: src/zope/app/securitypolicy/configure.zcml:92
+#: src/zope/app/securitypolicy/configure.zcml:90
 msgid "Everybody"
 msgstr "Alle"
 
-#: src/zope/app/securitypolicy/configure.zcml:94
+#: src/zope/app/securitypolicy/configure.zcml:92
 msgid "Site Manager"
 msgstr "Webseiten-Verwalter"
 
-#: src/zope/app/securitypolicy/configure.zcml:95
+#: src/zope/app/securitypolicy/configure.zcml:93
 msgid "Site Member"
 msgstr "Webseiten-Mitglied"
 
@@ -4823,11 +4837,11 @@ msgstr ""
 "Codeschnipsel in TAL ausführen. Wir raten Entwicklern normalerweise von der "
 "Benutzung dieser Funktion ab."
 
-#: src/zope/app/zptpage/zptpage.py:112
+#: src/zope/app/zptpage/zptpage.py:110
 msgid "1 line"
 msgstr "1 Zeile"
 
-#: src/zope/app/zptpage/zptpage.py:113
+#: src/zope/app/zptpage/zptpage.py:111
 msgid "${lines} lines"
 msgstr "${lines} Zeilen"
 
