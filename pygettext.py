@@ -135,8 +135,9 @@ Options:
         conjunction with the -D option above.
 
 If `inputfile' is -, standard input is read.
-"""
 
+$Id$
+"""
 import os
 import sys
 import time
