@@ -138,6 +138,8 @@ If `inputfile' is -, standard input is read.
 
 $Id$
 """
+__docformat__ = 'restructuredtext'
+
 import os
 import sys
 import time

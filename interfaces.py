@@ -15,6 +15,7 @@
 
 $Id$
 """
+__docformat__ = 'restructuredtext'
 
 from zope.interface import Interface
 
@@ -40,7 +41,7 @@ class IPOTMaker(Interface):
     """
     
     def add(strings, base_dir=None):
-        """Add strings to the internal catalog.
+        """Add `strings` to the internal catalog.
         """
 
     def write():
