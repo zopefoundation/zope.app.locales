@@ -1,0 +1,31 @@
+Internationalization (I18n) and Localization (L10n)
+=====================================================
+
+  Creating/Updating Message Catalog Template (POT) Files
+  -----------------------------------------------------
+
+    1. Execute i18nextract.py from ZOPE/utilities directory::
+
+        python2.3 i18nextract.py
+
+
+  Updating Message Catalog (PO) Files
+  -----------------------------------
+
+    1. For each language do simply::
+
+        msgmerge -U de/LC_MESSAGES/zope.po zope.pot
+
+    2. Translate the updated PO file. 
+       Note: KBabel is a great tool for this task!
+
+
+  Compiling Message Catalogs (PO) to binary (MO) Files
+  ----------------------------------------------------
+
+    1. Go to the right directory, such as 
+       'zope/app/translation_files/locales/de/LC_MESSAGES'.
+
+    2. Run the following command::
+
+        msgfmt -o zope.mo zope.po
