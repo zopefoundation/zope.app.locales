@@ -4344,6 +4344,8 @@ msgid ""
 "listed\n"
 "                     here will not be shown."
 msgstr ""
+"Список регулярных выражений.\n"
+"Если путь запроса совпадает с любым из выражений он не будет показан."
 
 #: src/zope/app/recorder/browser.py:81
 msgid "Invalid regex: %s"
@@ -4368,15 +4370,15 @@ msgstr "Записанные HTTP сессии"
 
 #: src/zope/app/recorder/sessions.pt:41
 msgid "Create Functional Doctest"
-msgstr ""
+msgstr "Создать функциональный тест"
 
 #: src/zope/app/recorder/sessions.pt:43
 msgid "Clear All"
-msgstr ""
+msgstr "Очистить все"
 
 #: src/zope/app/recorder/sessions.pt:63
 msgid "Filter"
-msgstr "Фильтр"
+msgstr "Фильтровать"
 
 #: src/zope/app/renderer/configure.zcml:14
 msgid "Plain Text Source"
