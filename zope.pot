@@ -13,8 +13,8 @@
 ##############################################################################
 msgid ""
 msgstr ""
-"Project-Id-Version: Development/Revision: 29428\n"
-"POT-Creation-Date: Thu Mar 10 15:30:03 2005\n"
+"Project-Id-Version: Development/Revision: 29438\n"
+"POT-Creation-Date: Fri Mar 11 17:01:32 2005\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
@@ -3546,35 +3546,6 @@ msgstr ""
 msgid "View Module Names"
 msgstr ""
 
-#: src/zope/app/module/browser/configure.zcml:13
-#: src/zope/app/security/browser/configure.zcml:58
-msgid "Add Permission"
-msgstr ""
-
-#: src/zope/app/module/browser/configure.zcml:22
-msgid "Module"
-msgstr ""
-
-#: src/zope/app/module/browser/configure.zcml:22
-msgid "A Persistent Python Module"
-msgstr ""
-
-#: src/zope/app/module/browser/configure.zcml:30
-msgid "Edit Module"
-msgstr ""
-
-#: src/zope/app/module/browser/configure.zcml:37
-msgid "Browse"
-msgstr ""
-
-#: src/zope/app/module/browser/configure.zcml:6
-msgid "Persistent Python Modules"
-msgstr ""
-
-#: src/zope/app/module/browser/configure.zcml:6
-msgid "Persistent Python Modules allow you to develop new Python                    through-the-Web and store them in the ZODB."
-msgstr ""
-
 #: src/zope/app/onlinehelp/browser/configure.zcml:48
 #: src/zope/app/demo/menu/configure.zcml:256
 #: src/zope/app/demo/menu/configure.zcml:300
@@ -3767,7 +3738,6 @@ msgstr ""
 #: src/zope/app/schema/fieldforms.zcml:99
 #: src/zope/app/schema/fieldforms.zcml:125
 #: src/zope/app/schema/fieldforms.zcml:151
-#: src/zope/app/module/browser/configure.zcml:30
 #: src/zope/app/security/browser/configure.zcml:75
 #: src/zope/app/component/browser/configure.zcml:240
 #: src/zope/app/authentication/configure.zcml:26
@@ -4554,6 +4524,10 @@ msgstr ""
 msgid "Security Permission"
 msgstr ""
 
+#: src/zope/app/security/browser/configure.zcml:58
+msgid "Add Permission"
+msgstr ""
+
 #: src/zope/app/security/browser/configure.zcml:67
 msgid "A Security Permission"
 msgstr ""
@@ -4574,8 +4548,12 @@ msgstr ""
 msgid "Login Failed!"
 msgstr ""
 
+#: src/zope/app/security/browser/login_failed.pt:8
+msgid "You cancelled the login procedure."
+msgstr ""
+
 #: src/zope/app/security/browser/login_failed.pt:9
-msgid "You cancelled the login procedure. <a href=\"XXX\">Click here to return.</a>"
+msgid "Click here to return."
 msgstr ""
 
 #: src/zope/app/security/browser/logout.pt:11
