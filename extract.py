@@ -306,14 +306,15 @@ def py_strings(dir, domain="zope"):
     # strings have the domain the user specified.   
     return eater.getCatalog()
 
-def zcml_strings(dir, domain="zope"):
+def zcml_strings(dir, domain="zope", site_zcml=None):
     """Retrieve all ZCML messages from dir that are in the domain.
     """
     from zope.app.appsetup import config
     import zope
     dirname = os.path.dirname
-    site_zcml = os.path.join(dirname(dirname(dirname(zope.__file__))),
-                             "site.zcml")
+    if site_zcml is None:
+        site_zcml = os.path.join(dirname(dirname(dirname(zope.__file__))),
+                                 "site.zcml")
     context = config(site_zcml, execute=False)
     return context.i18n_strings.get(domain, {})
 
