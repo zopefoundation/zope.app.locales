@@ -302,7 +302,11 @@ def py_strings(dir, domain="zope"):
                     e[0], filename, e[1][0], e[1][1])
         finally:
             fp.close()            
-    # XXX: No support for domains yet :(
+    # One limitation of the Python message extractor is that it cannot
+    # determine the domain of the string, since it is not contained anywhere
+    # directly. The only way this could be done is by loading the module and
+    # inspect the '_' function. For now we simply assume that all the found
+    # strings have the domain the user specified.   
     return eater.getCatalog()
 
 def zcml_strings(dir, domain="zope"):
