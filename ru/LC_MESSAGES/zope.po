@@ -16,7 +16,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Development/Revision: 29274\n"
-"POT-Creation-Date: Thu Mar 10 15:30:03 2005\n"
+"POT-Creation-Date: Fri Mar 11 17:01:32 2005\n"
 "PO-Revision-Date: 2005-02-22 12:13+0300\n"
 "Last-Translator: Dmitry Vasiliev <dima@hlabs.spb.ru>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
@@ -2258,7 +2258,7 @@ msgstr "Тип ошибки: ${error_type}"
 
 #: src/zope/app/debugskin/unauthorized.pt:7
 msgid "Unauthorized"
-msgstr "Нет прав для доступа"
+msgstr "Нет прав доступа"
 
 #: src/zope/app/debugskin/unauthorized.pt:8
 msgid "You're not allowed in here."
@@ -2832,7 +2832,7 @@ msgstr "Страница, которую Вы запрашивали, недос
 
 #: src/zope/app/exception/browser/unauthorized.pt:10
 msgid "You are not authorized"
-msgstr "Нет прав для доступа"
+msgstr "Нет прав доступа"
 
 #: src/zope/app/file/browser/configure.zcml:109
 msgid "Add an Image"
@@ -3692,37 +3692,6 @@ msgstr "Меню для показа выполняемого действия"
 msgid "View Module Names"
 msgstr "Просмотр имен модулей"
 
-#: src/zope/app/module/browser/configure.zcml:13
-#: src/zope/app/security/browser/configure.zcml:58
-msgid "Add Permission"
-msgstr ""
-
-#: src/zope/app/module/browser/configure.zcml:22
-msgid "Module"
-msgstr "Модуль Python"
-
-#: src/zope/app/module/browser/configure.zcml:22
-msgid "A Persistent Python Module"
-msgstr ""
-
-#: src/zope/app/module/browser/configure.zcml:30
-msgid "Edit Module"
-msgstr ""
-
-#: src/zope/app/module/browser/configure.zcml:37
-msgid "Browse"
-msgstr "Просмотр"
-
-#: src/zope/app/module/browser/configure.zcml:6
-msgid "Persistent Python Modules"
-msgstr ""
-
-#: src/zope/app/module/browser/configure.zcml:6
-msgid ""
-"Persistent Python Modules allow you to develop new Python                    "
-"through-the-Web and store them in the ZODB."
-msgstr ""
-
 #: src/zope/app/onlinehelp/browser/configure.zcml:48
 #: src/zope/app/demo/menu/configure.zcml:256
 #: src/zope/app/demo/menu/configure.zcml:300
@@ -3924,7 +3893,6 @@ msgstr "Редактировать информацию пользователя
 #: src/zope/app/schema/fieldforms.zcml:99
 #: src/zope/app/schema/fieldforms.zcml:125
 #: src/zope/app/schema/fieldforms.zcml:151
-#: src/zope/app/module/browser/configure.zcml:30
 #: src/zope/app/security/browser/configure.zcml:75
 #: src/zope/app/component/browser/configure.zcml:240
 #: src/zope/app/authentication/configure.zcml:26
@@ -4705,12 +4673,12 @@ msgstr ""
 #: src/zope/app/security/browser/auth.py:131
 #: src/zope/app/boston/browser/template.pt:78
 msgid "[Login]"
-msgstr "[Войти в систему]"
+msgstr "[Войти]"
 
 #: src/zope/app/security/browser/auth.py:134
 #: src/zope/app/boston/browser/template.pt:74
 msgid "[Logout]"
-msgstr "[Выйти из системы]"
+msgstr "[Выйти]"
 
 #: src/zope/app/security/browser/configure.zcml:20
 msgid "Authentication"
@@ -4724,6 +4692,10 @@ msgstr ""
 msgid "Security Permission"
 msgstr ""
 
+#: src/zope/app/security/browser/configure.zcml:58
+msgid "Add Permission"
+msgstr ""
+
 #: src/zope/app/security/browser/configure.zcml:67
 msgid "A Security Permission"
 msgstr ""
@@ -4734,19 +4706,23 @@ msgstr ""
 
 #: src/zope/app/security/browser/login.pt:5
 msgid "Login successful!"
-msgstr "Вы успешно вошли в систему!"
+msgstr "Вы успешно вошли!"
 
 #: src/zope/app/security/browser/login.pt:9
 msgid "You are now logged in as ${UserTitle}."
-msgstr "Вы вошли в систему как ${UserTitle}."
+msgstr "Вы вошли как ${UserTitle}."
 
 #: src/zope/app/security/browser/login_failed.pt:5
 msgid "Login Failed!"
-msgstr "Вход в систему неудачен!"
+msgstr "Вход был неудачен!"
+
+#: src/zope/app/security/browser/login_failed.pt:8
+msgid "You cancelled the login procedure."
+msgstr "Вы прервали процедуру входа."
 
 #: src/zope/app/security/browser/login_failed.pt:9
-msgid "You cancelled the login procedure. <a href=\"XXX\">Click here to return.</a>"
-msgstr "Вы прервали процедуру входа в систему. <a href=\"XXX\">Вернуться назад.</a>"
+msgid "Click here to return."
+msgstr "Вернуться назад"
 
 #: src/zope/app/security/browser/logout.pt:11
 #: src/zope/app/security/browser/login.pt:13
@@ -4755,11 +4731,11 @@ msgstr "Вернуться к основной странице."
 
 #: src/zope/app/security/browser/logout.pt:5
 msgid "Logout successful!"
-msgstr "Вы успешно вышли из системы!"
+msgstr "Вы успешно вышли!"
 
 #: src/zope/app/security/browser/logout.pt:7
 msgid "You are now logged out."
-msgstr "Вы вышли из системы."
+msgstr "Вы вышли."
 
 #: src/zope/app/security/browser/redirect.pt:11
 msgid "You are being redirected!"
@@ -4767,7 +4743,7 @@ msgstr "Ваш запрос был перенаправлен!"
 
 #: src/zope/app/security/browser/redirect.pt:14
 msgid "If you you see this screen for more than 5 seconds, click here."
-msgstr "Если вы видите данную страницу больше чем 5 секунд, идите по данной ссылке."
+msgstr "Нажмите, если вы видите данную страницу больше чем 5 секунд."
 
 # Default: "Manage Services"
 #: src/zope/app/security/configure.zcml:101
