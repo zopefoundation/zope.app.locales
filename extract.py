@@ -375,7 +375,7 @@ def tal_strings(dir, domain="zope", include_default_domain=False):
     # When the Domain is 'default', then this means that none was found;
     # Include these strings; yes or no?
     if include_default_domain:
-        catalog.update(engine.catalog['default'])
+        catalog.update(engine.catalog['zope'])
     for msgid, locations in catalog.items():
         catalog[msgid] = map(lambda l: (l[0], l[1][0]), locations)
     return catalog
