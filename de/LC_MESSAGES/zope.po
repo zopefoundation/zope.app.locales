@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zope\n"
 "POT-Creation-Date: Fri Jun 18 17:40:55 2004\n"
-"PO-Revision-Date: 2004-06-11 16:39-0400\n"
+"PO-Revision-Date: 2004-07-07 10:43-0400\n"
 "Last-Translator: Stephan Richter <stephan.richter@tufts.edu>\n"
 "Language-Team: German <zope3-dev@zope.org>\n"
 "MIME-Version: 1.0\n"
@@ -528,8 +528,7 @@ msgid "Subdirectives"
 msgstr "Unterdirektiven"
 
 #: src/zope/app/apidoc/zcmlmodule/menu.pt:4
-msgid ""
-"Namespaces that are not full URLs start with \"http://namespaces.zope.org\"."
+msgid "Namespaces that are not full URLs start with \"http://namespaces.zope.org\"."
 msgstr ""
 "Namensräume, die nicht als volle URIs angegeben sind, starten mit \"http://"
 "namespaces.zope.org\"."
@@ -603,8 +602,7 @@ msgid "seconds"
 msgstr "Sekunden"
 
 #: src/zope/app/applicationcontrol/browser/server-control.pt:13
-msgid ""
-"If you specify a time of 0 seconds, then the server will do a hard shutdown."
+msgid "If you specify a time of 0 seconds, then the server will do a hard shutdown."
 msgstr ""
 "Wenn Sie eine Zeit von 0 Sekunden eingeben, dann wird der Server sofort "
 "angehalten (hard shutdown)."
@@ -724,16 +722,14 @@ msgstr "Dieses Bündel stellt keine Registrierungen zur Verfügung."
 
 #: src/zope/app/bundle/browser/bundle.pt:123
 msgid "Click \"Activate bundle\" to perform the above actions."
-msgstr ""
-"Klicken Sie auf \"Bündel aktivieren\" um die o.a. Aktionen durchzuführen."
+msgstr "Klicken Sie auf \"Bündel aktivieren\" um die o.a. Aktionen durchzuführen."
 
 #: src/zope/app/bundle/browser/bundle.pt:127
 msgid "activate-bundle-button"
 msgstr "Aktivieren"
 
 #: src/zope/app/bundle/browser/bundle.pt:137
-msgid ""
-"Click \"Deactivate bundle\" to unregister all registrations in this bundle."
+msgid "Click \"Deactivate bundle\" to unregister all registrations in this bundle."
 msgstr ""
 "Klicken Sie auf \"Bündel deaktivieren\", um alle Registrierungen in diesem "
 "Bündel nichtig zu machen."
@@ -837,8 +833,7 @@ msgstr "Cache ungültig machen"
 
 #: src/zope/app/cache/browser/cacheableedit.pt:5
 msgid "This edit form allows you to associate a cache with this object."
-msgstr ""
-"Dieses Formular erlaubt Ihnen, einen Cache für dieses Objekt zu definieren."
+msgstr "Dieses Formular erlaubt Ihnen, einen Cache für dieses Objekt zu definieren."
 
 #: src/zope/app/cache/browser/cacheableedit.pt:9
 msgid "Currently there is no cache associated with the object."
@@ -1087,8 +1082,7 @@ msgid "Error Reporting Service for Logging Errors"
 msgstr "Fehlermeldedienst für Logging Fehler"
 
 #: src/zope/app/errorservice/browser/error.pt:10
-msgid ""
-"This page lists the exceptions that have occurred in this site recently."
+msgid "This page lists the exceptions that have occurred in this site recently."
 msgstr ""
 "Diese Seite listet die Ausnahmen auf, die kürzlich in dieser Webseite "
 "aufgetreten sind."
@@ -1501,8 +1495,7 @@ msgid "Database Schemas"
 msgstr "Datenbanken-Schemas"
 
 #: src/zope/app/generations/browser/managers.pt:18
-msgid ""
-"The database was updated to generation ${generation} for ${application}."
+msgid "The database was updated to generation ${generation} for ${application}."
 msgstr ""
 "Die Datenbank wurde auf Generation ${generation} für ${application} "
 "aktualisiert."
@@ -1598,8 +1591,7 @@ msgstr "Exportieren"
 
 #: src/zope/app/i18n/browser/synchronize.pt:122
 msgid "No connection could be made to remote data source."
-msgstr ""
-"Es konnte keine Verbindung mit der Fremddatenquelle hergestellt werden."
+msgstr "Es konnte keine Verbindung mit der Fremddatenquelle hergestellt werden."
 
 #: src/zope/app/i18n/browser/synchronize.pt:26
 msgid "Server URL"
@@ -1749,15 +1741,13 @@ msgid "Edit Form"
 msgstr "Bearbeitungsformular"
 
 #: src/zope/app/i18nfile/browser/i18nfile.py:46
-msgid ""
-"This edit form allows you to make changes to the properties of this file."
+msgid "This edit form allows you to make changes to the properties of this file."
 msgstr ""
 "Dieses Berarbeitungsformular erlaubt es Ihnen, Änderungen an den "
 "Einstellungen ihrer Datei vorzunehmen."
 
 #: src/zope/app/i18nfile/browser/i18nimage.py:28
-msgid ""
-"This edit form allows you to make changes to the properties of this image."
+msgid "This edit form allows you to make changes to the properties of this image."
 msgstr ""
 "Dieses Berarbeitungsformular erlaubt es Ihnen, Änderungen an den "
 "Einstellungen ihres Bildes vorzunehmen."
@@ -1927,8 +1917,7 @@ msgid "Add Browser Menu (Registration)"
 msgstr "Browsermenü hinzufügen (Registrierung)"
 
 #: src/zope/app/menu/browser/configure.zcml:5
-msgid ""
-"Browser Menu tools are used to build menus for Web user        interfaces."
+msgid "Browser Menu tools are used to build menus for Web user        interfaces."
 msgstr ""
 "Browsermenü-Werkzeuge werden benutzt, um Menüs für Web-Benutzeroberflächen "
 "zu erstellen."
@@ -2041,8 +2030,7 @@ msgstr "Menü der hinzufügbaren Caches"
 
 #: src/zope/app/menus.zcml:17
 msgid "Menu of objects to be added to content folders"
-msgstr ""
-"Menü von Objekten die als Inhalt zu dem Ordner hinzugefügt werden können"
+msgstr "Menü von Objekten die als Inhalt zu dem Ordner hinzugefügt werden können"
 
 #: src/zope/app/menus.zcml:21
 msgid "Menu for objects to be added according to containment constraints"
@@ -2052,8 +2040,7 @@ msgstr ""
 
 #: src/zope/app/menus.zcml:26
 msgid "Menu of objects to be added to site management folders"
-msgstr ""
-"Menü von Objekten die Webseitenverwaltungs-Ordnern hinzugefügt werden können"
+msgstr "Menü von Objekten die Webseitenverwaltungs-Ordnern hinzugefügt werden können"
 
 #: src/zope/app/menus.zcml:30
 msgid "Menu of database connections to be added"
@@ -2293,8 +2280,7 @@ msgstr "Anmeldung"
 
 #: src/zope/app/pluggableauth/interfaces.py:31
 msgid "The Login/Username of the user. This value can change."
-msgstr ""
-"Eine Anmeldung (Benutzername) fuer den Nutzer. Dieser Wert kann sich ändern."
+msgstr "Eine Anmeldung (Benutzername) fuer den Nutzer. Dieser Wert kann sich ändern."
 
 #: src/zope/app/pluggableauth/interfaces.py:37
 msgid "The password for the user."
@@ -2313,8 +2299,7 @@ msgid "Presentation Service"
 msgstr "Präsentationsdienst"
 
 #: src/zope/app/presentation/browser/configure.zcml:3
-msgid ""
-"A Presentation Service allows you to register views, resources and skins"
+msgid "A Presentation Service allows you to register views, resources and skins"
 msgstr ""
 "Ein Präsentationsdienst erlaubt es Ihnen, Ansichten, Ressourcen und Themen "
 "zu registrieren."
@@ -2467,8 +2452,7 @@ msgstr "Die URL, die aufgerufen werden soll, wenn der Eintrag ausgewählt ist"
 
 #: src/zope/app/publisher/interfaces/browser.py:39
 msgid "The url is relative to the object the menu is being displayed for."
-msgstr ""
-"DIe URL ist relativ zu dem Objekt für das der Menüeintrag angezeigt wird."
+msgstr "DIe URL ist relativ zu dem Objekt für das der Menüeintrag angezeigt wird."
 
 #: src/zope/app/publisher/interfaces/browser.py:45
 msgid "The text to be displayed for the menu item"
@@ -2593,8 +2577,7 @@ msgid "Add Database Connection Registration"
 msgstr "Datenbankverbindungs-Registrierung hinzufügen"
 
 #: src/zope/app/rdb/browser/configure.zcml:5
-msgid ""
-"Database Adapters are used to connect to external       relational databases."
+msgid "Database Adapters are used to connect to external       relational databases."
 msgstr ""
 "Datenbankadapter werde benutzt, um Verbindungen zu externen relationalen "
 "Datenbanken herzustellen."
@@ -2646,8 +2629,7 @@ msgstr "Datenbankadapter - Testverbindung"
 
 #: src/zope/app/rdb/browser/rdbtestsql.pt:13
 msgid "Here you can enter an SQL statement, so you can test the connection."
-msgstr ""
-"Sie können hier eine SQL-Abfrage eingeben, um die Verbindung zu testen."
+msgstr "Sie können hier eine SQL-Abfrage eingeben, um die Verbindung zu testen."
 
 #: src/zope/app/rdb/browser/rdbtestsql.pt:18
 msgid "Query"
@@ -3241,8 +3223,7 @@ msgid "Login Failed!"
 msgstr "Login fehlgeschlagen!"
 
 #: src/zope/app/security/browser/login_failed.pt:9
-msgid ""
-"You cancelled the login procedure. <a href=\"\"> Click here to return. </a>"
+msgid "You cancelled the login procedure. <a href=\"\"> Click here to return. </a>"
 msgstr ""
 "Sie haben den Loginprozess abgebrochen. <a href=\"\"> Bitte hier klicken um "
 "zurückzukehren. </a>"
@@ -3401,9 +3382,8 @@ msgid "Roles"
 msgstr "Rollen"
 
 #: src/zope/app/securitypolicy/browser/manage_access.pt:89
-#, fuzzy
 msgid "Save Changes"
-msgstr "Änderungen gespeichert."
+msgstr "Änderungen speichern"
 
 #: src/zope/app/securitypolicy/browser/manage_permissionform.pt:24
 msgid "Helpful message."
@@ -3423,8 +3403,7 @@ msgstr "Der Rolle zugewiesene Berechtigungen ${perm_title} (id: ${perm_id})"
 
 #: src/zope/app/securitypolicy/browser/manage_roleform.pt:9
 msgid "Helpful message explaining about how to set specific roles"
-msgstr ""
-"Hilfreiche Nachricht die erklärt wie man spezifische Rollen setzen kann."
+msgstr "Hilfreiche Nachricht die erklärt wie man spezifische Rollen setzen kann."
 
 #: src/zope/app/securitypolicy/browser/principal_permission_edit.pt:12
 msgid "Permission Settings"
@@ -3549,8 +3528,7 @@ msgid "Purge Interval"
 msgstr "Abfrageintervall"
 
 #: src/zope/app/session/interfaces.py:110
-msgid ""
-"How often stale data is purged in seconds. Higer values improve performance."
+msgid "How often stale data is purged in seconds. Higer values improve performance."
 msgstr ""
 "Wie oft verfallene Daten gelöscht werden, in Sekunden. Höhere Werte "
 "verbessern die Geschwindigkeit."
@@ -4256,32 +4234,28 @@ msgstr ""
 "ausgegangen sind."
 
 #: src/zope/app/uniqueid/browser/configure.zcml:12
-#, fuzzy
 msgid "Registered Objects"
-msgstr "Registriert"
+msgstr "Registrierte Objekte"
 
 #: src/zope/app/uniqueid/browser/configure.zcml:5
 msgid "A utility that provides unique ids to objects"
-msgstr ""
+msgstr "Ein Hilfsmittel welches eindeutige Ids für Objekte erstellt."
 
 #: src/zope/app/uniqueid/browser/configure.zcml:5
-#, fuzzy
 msgid "Unique Id Utility"
-msgstr "Werkzeug hinzufügen"
+msgstr "Eindeutige-Id Hilfsmittel"
 
 #: src/zope/app/uniqueid/browser/registrations.pt:5
-#, fuzzy
 msgid "objects"
-msgstr "Kaputtes Objekt"
+msgstr "Objekte"
 
 #: src/zope/app/uniqueid/browser/registrations.pt:9
-#, fuzzy
 msgid "Object"
-msgstr "Objektname"
+msgstr "Objekt"
 
 #: src/zope/app/uniqueid/browser/registrations.pt:9
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: src/zope/app/utility/browser/__init__.py:100
 msgid "Deactivated: ${deactivated_utilities}"
@@ -4347,8 +4321,7 @@ msgid "update-button"
 msgstr "Aktualisieren"
 
 #: src/zope/app/utility/browser/configureutility.pt:9
-msgid ""
-"Utility registrations for interface ${interface} with name ${utility_name}"
+msgid "Utility registrations for interface ${interface} with name ${utility_name}"
 msgstr ""
 "Werkzeugregistrierung für Interface ${interface} mit dem Namen "
 "${utility_name}"
@@ -5050,8 +5023,7 @@ msgstr "${lines} Zeilen"
 #: src/zope/exceptions/unauthorized.py:69
 #: src/zope/exceptions/unauthorized.py:72
 msgid "You are not allowed to access ${name} in this context"
-msgstr ""
-"Es ist Ihnen nicht gestattet auf ${name} in diesem Kontext zuzugreifen."
+msgstr "Es ist Ihnen nicht gestattet auf ${name} in diesem Kontext zuzugreifen."
 
 #: src/zope/exceptions/unauthorized.py:74
 msgid "You are not authorized"
@@ -5136,8 +5108,7 @@ msgstr "Vorgegebener Wert"
 msgid ""
 "The field default value may be None or a legal\n"
 "                        field value"
-msgstr ""
-"Der \"default\" Wert des Feldes kann None oder ein legaler Feldwert sein"
+msgstr "Der \"default\" Wert des Feldes kann None oder ein legaler Feldwert sein"
 
 #: src/zope/schema/interfaces.py:132
 msgid "Missing Value"
@@ -5221,8 +5192,7 @@ msgid "Value Type"
 msgstr "Werttyp"
 
 #: src/zope/schema/interfaces.py:385
-msgid ""
-"Field value items must conform to the given type, expressed via a Field."
+msgid "Field value items must conform to the given type, expressed via a Field."
 msgstr "Feldwerte müssen sich auf den Typen in diesem Feld anpassen."
 
 #: src/zope/schema/interfaces.py:389
@@ -5295,6 +5265,3 @@ msgstr "Bar"
 msgid "Bar description"
 msgstr "Bar Beschreibung"
 
-#, fuzzy
-#~ msgid "Unset"
-#~ msgstr "Benutzer"
