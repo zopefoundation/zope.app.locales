@@ -27,6 +27,7 @@ from pygettext import safe_eval, normalize, make_escapes
 
 from interfaces import IPOTEntry, IPOTMaker, ITokenEater
 from zope.interface import implements
+from zope.i18nmessageid import MessageID
 
 DEFAULT_CHARSET = 'UTF-8'
 DEFAULT_ENCODING = '8bit'
@@ -61,7 +62,29 @@ msgstr ""
 
 class POTEntry(object):
     """This class represents a single message entry in the POT file.
+
+    >>> make_escapes(0)
+    >>> class FakeFile(object):
+    ...     def write(self, data):
+    ...         print data,
+
+    Let's create a message entry:
+
+    >>> entry = POTEntry(MessageID("test", default="default"))
+    >>> entry.addComment("# Some comment")
+    >>> entry.addLocationComment(os.path.join("path", "file"), 10)
+
+    Then we feed it a fake file:
+
+    >>> entry.write(FakeFile())
+    # Some comment
+    #: path/file:10
+    # Default: "default"
+    msgid "test"
+    msgstr ""
+    <BLANKLINE>
     """
+
     implements(IPOTEntry)
 
     def __init__(self, msgid, comments=None):
@@ -72,13 +95,13 @@ class POTEntry(object):
         self.comments += comment + '\n'
 
     def addLocationComment(self, filename, line):
-        self.comments += '#: %s:%s\n' %(filename, line)
+        self.comments += '#: %s:%s\n' % (
+            filename.replace(os.sep, '/'), line)
 
     def write(self, file):
         file.write(self.comments)
-        from zope.i18n.messageid import MessageID
-        if isinstance(self.msgid, MessageID) and \
-               self.msgid != self.msgid.default:
+        if (isinstance(self.msgid, MessageID) and
+               self.msgid != self.msgid.default):
             default = self.msgid.default.strip()
             file.write('# Default: %s\n' % normalize(default))
         file.write('msgid %s\n' % normalize(self.msgid))
@@ -239,7 +262,6 @@ class TokenEater(object):
             lineno = self.__lineno
 
         if default is not None:
-            from zope.i18n.messageid import MessageID
             msg = MessageID(msg, default=default)
         entry = (self.__curfile, lineno)
         self.__messages.setdefault(msg, {})[entry] = isdocstring
