@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zope X3 Pre-M4\n"
-"POT-Creation-Date: Mon Jul 26 13:29:17 2004\n"
+"POT-Creation-Date: Tue Jul 27 15:43:24 2004\n"
 "PO-Revision-Date: 2004-06-25 16:00+0100\n"
 "Last-Translator: Thierry Goyvaerts <Thierry.Goyvaerts@skynet.be>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope3.org>\n"
@@ -32,7 +32,7 @@ msgid "The interface provided"
 msgstr "L'Interface fournie"
 
 #: src/zope/app/adapter/adapter.py:298 src/zope/app/site/interfaces.py:162
-#: src/zope/app/site/browser/tool.pt:40
+#: src/zope/app/site/browser/tool.pt:39
 #: src/zope/app/schema/browser/schema_edit.pt:36
 #: src/zope/app/workflow/browser/instancecontainer_index.pt:19
 #: src/zope/app/workflow/browser/instancecontainer_main.pt:18
@@ -140,15 +140,15 @@ msgstr "Racine Zope 3."
 msgid "[top]"
 msgstr "[dessus]"
 
-#: src/zope/app/apidoc/classmodule/class_index.pt:102
+#: src/zope/app/apidoc/classmodule/class_index.pt:103
 msgid "There are no attributes in this class."
 msgstr "Il n'y a pas d'attribut dans cette Classe."
 
-#: src/zope/app/apidoc/classmodule/class_index.pt:144
+#: src/zope/app/apidoc/classmodule/class_index.pt:145
 msgid "There are no methods in this class."
 msgstr "Il n'y a pas de Méthodes dans cette Classe."
 
-#: src/zope/app/apidoc/classmodule/class_index.pt:149
+#: src/zope/app/apidoc/classmodule/class_index.pt:150
 msgid "Known Subclasses"
 msgstr ""
 
@@ -157,56 +157,57 @@ msgstr ""
 msgid "Bases"
 msgstr "Bases"
 
-#: src/zope/app/apidoc/classmodule/class_index.pt:162
-#, fuzzy
-msgid "(C-based class)"
-msgstr "Classe de page"
-
-#: src/zope/app/apidoc/classmodule/class_index.pt:168
+#: src/zope/app/apidoc/classmodule/class_index.pt:169
 #, fuzzy
 msgid "There are no known subclasses."
 msgstr "Il n'y a pas de Classe De Base."
 
-#: src/zope/app/apidoc/classmodule/class_index.pt:34
+#: src/zope/app/apidoc/classmodule/class_index.pt:29
+#: src/zope/app/apidoc/classmodule/class_index.pt:163
+#, fuzzy
+msgid "(C-based class)"
+msgstr "Classe de page"
+
+#: src/zope/app/apidoc/classmodule/class_index.pt:35
 #: src/zope/app/apidoc/ifacemodule/index.pt:40
 msgid "There are no base classes."
 msgstr "Il n'y a pas de Classe De Base."
 
-#: src/zope/app/apidoc/classmodule/class_index.pt:39
+#: src/zope/app/apidoc/classmodule/class_index.pt:40
 msgid "Implemented Interfaces"
 msgstr "Interfaces implémentées"
 
-#: src/zope/app/apidoc/classmodule/class_index.pt:54
+#: src/zope/app/apidoc/classmodule/class_index.pt:55
 msgid "There are no implemented interfaces."
 msgstr "Il n'y a pas d'Interface implémentée."
 
-#: src/zope/app/apidoc/classmodule/class_index.pt:60
+#: src/zope/app/apidoc/classmodule/class_index.pt:61
 msgid "Attributes/Properties"
 msgstr "Attributs/Propriétés"
 
-#: src/zope/app/apidoc/classmodule/class_index.pt:73
+#: src/zope/app/apidoc/classmodule/class_index.pt:74
 #: src/zope/app/apidoc/classmodule/function_index.pt:40
 #: src/zope/app/apidoc/classmodule/function_index.pt:44
 msgid "type:"
 msgstr "type:"
 
-#: src/zope/app/apidoc/classmodule/class_index.pt:79
+#: src/zope/app/apidoc/classmodule/class_index.pt:80
 #: src/zope/app/apidoc/classmodule/function_index.pt:51
 msgid "Value:"
 msgstr "Valeur:"
 
-#: src/zope/app/apidoc/classmodule/class_index.pt:91
-#: src/zope/app/apidoc/classmodule/class_index.pt:133
+#: src/zope/app/apidoc/classmodule/class_index.pt:92
+#: src/zope/app/apidoc/classmodule/class_index.pt:134
 msgid "Permissions:"
 msgstr "Permissions:"
 
-#: src/zope/app/apidoc/classmodule/class_index.pt:93
-#: src/zope/app/apidoc/classmodule/class_index.pt:135
+#: src/zope/app/apidoc/classmodule/class_index.pt:94
+#: src/zope/app/apidoc/classmodule/class_index.pt:136
 msgid "(read)"
 msgstr "(lecture)"
 
-#: src/zope/app/apidoc/classmodule/class_index.pt:95
-#: src/zope/app/apidoc/classmodule/class_index.pt:137
+#: src/zope/app/apidoc/classmodule/class_index.pt:96
+#: src/zope/app/apidoc/classmodule/class_index.pt:138
 msgid "(write)"
 msgstr "(écriture)"
 
@@ -348,8 +349,8 @@ msgid "Services"
 msgstr "Services"
 
 #: src/zope/app/apidoc/servicemodule/index.pt:17
-#: src/zope/app/apidoc/classmodule/class_index.pt:83
-#: src/zope/app/apidoc/classmodule/class_index.pt:124
+#: src/zope/app/apidoc/classmodule/class_index.pt:84
+#: src/zope/app/apidoc/classmodule/class_index.pt:125
 msgid "Interface:"
 msgstr "Interface:"
 
@@ -368,7 +369,7 @@ msgstr "Il n'y a pas d'attribut ou de Champ spécifié."
 # Default: "Methods"
 #: src/zope/app/apidoc/servicemodule/index.pt:62
 #: src/zope/app/apidoc/utilitymodule/index.pt:68
-#: src/zope/app/apidoc/classmodule/class_index.pt:108
+#: src/zope/app/apidoc/classmodule/class_index.pt:109
 #: src/zope/app/apidoc/ifacemodule/index.pt:85
 msgid "Methods"
 msgstr "Méthodes"
@@ -386,7 +387,7 @@ msgstr "Implémentations"
 msgid "This is a list of all available services by name."
 msgstr "Ceci est une liste de tous les Services triés par nom."
 
-#: src/zope/app/apidoc/utilities.py:233 src/zope/app/apidoc/utilities.py:235
+#: src/zope/app/apidoc/utilities.py:241 src/zope/app/apidoc/utilities.py:243
 #: src/zope/app/applicationcontrol/browser/runtimeinfo.py:58
 msgid "n/a"
 msgstr "non disponible"
@@ -2734,7 +2735,7 @@ msgstr "Mis à jour"
 
 #: src/zope/app/registration/browser/configure.zcml:32
 #: src/zope/app/registration/browser/configure.zcml:80
-#: src/zope/app/site/browser/tool.pt:41
+#: src/zope/app/site/browser/tool.pt:40
 #: src/zope/app/site/browser/serviceactivation.pt:27
 msgid "Registration"
 msgstr "Enregistrement"
@@ -3649,6 +3650,12 @@ msgstr "Ajouter un Service"
 msgid "Add Utility"
 msgstr "Ajouter un Utilitaire"
 
+#: src/zope/app/site/browser/__init__.py:214
+#: src/zope/app/site/browser/tools.py:107
+#: src/zope/app/utility/browser/__init__.py:59
+msgid "Please select at least one checkbox"
+msgstr "Veuillez sélectionner au moins une boîte à cocher"
+
 #: src/zope/app/site/browser/__init__.py:234
 msgid "Activated: ${activated_services}"
 msgstr "Activé: ${activated_services}"
@@ -3939,41 +3946,41 @@ msgstr ""
 "L'interface de gestion de site est utilisée pour installer et configurer les "
 "logiciels de ce site."
 
-#: src/zope/app/site/browser/tool.pt:102
+#: src/zope/app/site/browser/tool.pt:101
 msgid "rename-button"
 msgstr "Renommer"
 
-#: src/zope/app/site/browser/tool.pt:110
+#: src/zope/app/site/browser/tool.pt:109
 #: src/zope/app/securitypolicy/browser/principal_role_association.pt:98
 msgid "apply-button"
 msgstr "Appliquer"
 
-#: src/zope/app/site/browser/tool.pt:113
+#: src/zope/app/site/browser/tool.pt:112
 msgid "cancel-button"
 msgstr "Annuler"
 
-#: src/zope/app/site/browser/tool.pt:25
+#: src/zope/app/site/browser/tool.pt:24
 msgid "No tools are registered."
 msgstr "Aucun outils n'est enregistré."
 
-#: src/zope/app/site/browser/tool.pt:30
+#: src/zope/app/site/browser/tool.pt:29
 msgid "Unless a tool is disabled the tool name links to the active tool. ..."
 msgstr ""
 "Sauf si l'outil est hors service le nom de l'outil est lié à l'outil actif..."
 
-#: src/zope/app/site/browser/tool.pt:42
+#: src/zope/app/site/browser/tool.pt:41
 msgid "Parent"
 msgstr "Parent"
 
-#: src/zope/app/site/browser/tool.pt:67
+#: src/zope/app/site/browser/tool.pt:66
 msgid "active"
 msgstr "Actif"
 
-#: src/zope/app/site/browser/tool.pt:72
+#: src/zope/app/site/browser/tool.pt:71
 msgid "disabled"
 msgstr "Désactivé"
 
-#: src/zope/app/site/browser/tool.pt:96
+#: src/zope/app/site/browser/tool.pt:95
 #: src/zope/app/schema/browser/schema_add.pt:39
 #: src/zope/app/workflow/stateful/browser/add.pt:65
 #: src/zope/app/workflow/stateful/browser/addtransition.pt:55
@@ -3988,23 +3995,19 @@ msgstr "Ajouter"
 msgid "Available Tools"
 msgstr "Outils disponibles"
 
-#: src/zope/app/site/browser/tools.py:160
-#: src/zope/app/site/browser/tools.py:304
+#: src/zope/app/site/browser/tools.py:110
 msgid "Deleted selected tools."
 msgstr "Effacer les outils sélectionnés."
 
-#: src/zope/app/site/browser/tools.py:163
-#: src/zope/app/site/browser/tools.py:309
+#: src/zope/app/site/browser/tools.py:115
 msgid "Renamed selected tools."
 msgstr "Renommer les outils sélectionnés."
 
-#: src/zope/app/site/browser/tools.py:168
-#: src/zope/app/site/browser/tools.py:314
+#: src/zope/app/site/browser/tools.py:118
 msgid "Activated registrations."
 msgstr "Activé des enregistrements."
 
-#: src/zope/app/site/browser/tools.py:171
-#: src/zope/app/site/browser/tools.py:317
+#: src/zope/app/site/browser/tools.py:121
 msgid "Deactivated registrations."
 msgstr "Désactivé des enregistrements."
 
@@ -4293,10 +4296,6 @@ msgstr ""
 msgid "Deleted: ${utility_names}"
 msgstr "Supprimé: ${utility_names}"
 
-#: src/zope/app/utility/browser/__init__.py:59
-msgid "Please select at least one checkbox"
-msgstr "Veuillez sélectionner au moins une boîte à cocher"
-
 #: src/zope/app/utility/browser/__init__.py:85
 msgid "Activated: ${activated_utilities}"
 msgstr "Activé: ${activated_utilities}"
@@ -4343,6 +4342,7 @@ msgstr ""
 "Enregistrements d'Utilitaire d'Interface ${interface} nommé ${utility_name}"
 
 #: src/zope/app/utility/browser/utilities.pt:11
+#: src/zope/app/site/browser/tool.pt:21
 #: src/zope/app/site/browser/services.pt:15
 #: src/zope/app/bundle/browser/bundle.pt:53
 msgid "(click to clear message)"
@@ -4353,7 +4353,7 @@ msgid "change registration"
 msgstr "Modifier Enregistrement"
 
 #: src/zope/app/utility/browser/utilities.pt:42
-#: src/zope/app/site/browser/tool.pt:91
+#: src/zope/app/site/browser/tool.pt:90
 #: src/zope/app/site/browser/services.pt:66
 #: src/zope/app/site/browser/add_svc_config.pt:16
 #: src/zope/app/registration/browser/registration.pt:30
@@ -4361,14 +4361,14 @@ msgid "activate-button"
 msgstr "Activer"
 
 #: src/zope/app/utility/browser/utilities.pt:44
-#: src/zope/app/site/browser/tool.pt:93
+#: src/zope/app/site/browser/tool.pt:92
 #: src/zope/app/site/browser/services.pt:68
 #: src/zope/app/registration/browser/registration.pt:25
 msgid "deactivate-button"
 msgstr "Désactiver"
 
 #: src/zope/app/utility/browser/utilities.pt:47
-#: src/zope/app/site/browser/tool.pt:99
+#: src/zope/app/site/browser/tool.pt:98
 #: src/zope/app/site/browser/services.pt:71
 #: src/zope/app/workflow/browser/instancecontainer_main.pt:47
 #: src/zope/app/i18n/browser/translate.pt:37
@@ -4376,7 +4376,7 @@ msgid "delete-button"
 msgstr "Effacer"
 
 #: src/zope/app/utility/browser/utilities.pt:50
-#: src/zope/app/site/browser/tool.pt:106
+#: src/zope/app/site/browser/tool.pt:105
 #: src/zope/app/site/browser/services.pt:74
 #: src/zope/app/zptpage/browser/inlinecode.pt:63
 #: src/zope/app/dublincore/browser/edit.pt:33
