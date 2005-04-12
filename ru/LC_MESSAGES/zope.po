@@ -3951,7 +3951,7 @@ msgstr "Сохраняемый шаблон страницы"
 
 #: src/zope/app/presentation/interfaces.py:104
 msgid "The dotted name of a factory for creating the view"
-msgstr "Путь к модулю фабрики для создания предсталения"
+msgstr "Путь к модулю фабрики для создания представления"
 
 #: src/zope/app/presentation/interfaces.py:109
 msgid "The permission required to use the view"
