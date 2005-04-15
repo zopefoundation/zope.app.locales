@@ -27,7 +27,7 @@ from pygettext import safe_eval, normalize, make_escapes
 
 from interfaces import IPOTEntry, IPOTMaker, ITokenEater
 from zope.interface import implements
-from zope.i18nmessageid import MessageID
+from zope.i18nmessageid import MessageID, Message
 
 DEFAULT_CHARSET = 'UTF-8'
 DEFAULT_ENCODING = '8bit'
@@ -113,7 +113,9 @@ class POTEntry(object):
         if self.comments:
             file.write(self.comments)
         if (isinstance(self.msgid, MessageID) and
-               self.msgid != self.msgid.default):
+               self.msgid != self.msgid.default) or (
+           isinstance(self.msgid, Message) and
+               self.msgid.default is not None):
             default = self.msgid.default.strip()
             lines = normalize(default).split("\n")
             lines[0] = "# Default: %s\n" % lines[0]
