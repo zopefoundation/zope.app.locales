@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Development/Revision: 29457\n"
 "POT-Creation-Date: Mon Mar 21 14:46:57 2005\n"
-"PO-Revision-Date: 2005-04-02 22:42+0300\n"
+"PO-Revision-Date: 2005-04-16 22:34+0300\n"
 "Last-Translator: Dmitry Vasiliev <dima@hlabs.spb.ru>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
 "MIME-Version: 1.0\n"
@@ -1031,79 +1031,79 @@ msgstr "ZODB успешно упакована"
 
 #: src/zope/app/authentication/browser/configure.zcml:13
 msgid "Edit Pluggable Authentication Utility"
-msgstr ""
+msgstr "Настройки подключаемой утилиты идентификации"
 
 #: src/zope/app/authentication/browser/configure.zcml:21
 msgid "Plugins"
-msgstr ""
+msgstr "Модули"
 
 #: src/zope/app/authentication/browser/configure.zcml:37
 msgid "New Pluggable Authentication Utility Registration"
-msgstr ""
+msgstr "Новая регистрация подключаемой утилиты идентификации"
 
 #: src/zope/app/authentication/browser/configure.zcml:49
 msgid "New Credentials Plugin Registration"
-msgstr ""
+msgstr "Регистрация нового модуля удостоверений"
 
 #: src/zope/app/authentication/browser/configure.zcml:6
 msgid "New-style pluggable authentication utility"
-msgstr ""
+msgstr "Новая подключаемая утилита идентификации"
 
 #: src/zope/app/authentication/browser/configure.zcml:6
 msgid "Pluggable Authentication Utility"
-msgstr ""
+msgstr "Подключаемая утилита идентификации"
 
 #: src/zope/app/authentication/browser/configure.zcml:61
 msgid "New Authenticator Plugin Registration"
-msgstr ""
+msgstr "Регистрация нового модуля идентификации"
 
 #: src/zope/app/authentication/browser/configure.zcml:73
 msgid "Credentials Plugin"
-msgstr ""
+msgstr "Модуль удостоверений"
 
 #: src/zope/app/authentication/browser/configure.zcml:78
 msgid "Authenticator Plugin"
-msgstr ""
+msgstr "Модуль идентификации"
 
 #: src/zope/app/authentication/browser/groupfolder.zcml:15
 msgid "Add group information"
-msgstr ""
+msgstr "Добавить группу"
 
 #: src/zope/app/authentication/browser/groupfolder.zcml:24
 msgid "Group"
-msgstr ""
+msgstr "Группа"
 
 #: src/zope/app/authentication/browser/groupfolder.zcml:24
 msgid "A principals group"
-msgstr ""
+msgstr "Группа пользователей"
 
 #: src/zope/app/authentication/browser/groupfolder.zcml:32
 msgid "Groups Folder"
-msgstr ""
+msgstr "Папка групп"
 
 #: src/zope/app/authentication/browser/groupfolder.zcml:38
 msgid "Add group folder"
-msgstr ""
+msgstr "Добавить папку групп"
 
 #: src/zope/app/authentication/browser/groupfolder.zcml:47
 msgid "Group Folder"
-msgstr ""
+msgstr "Папка групп"
 
 #: src/zope/app/authentication/browser/groupfolder.zcml:47
 msgid "A Group folder"
-msgstr ""
+msgstr "Папка групп"
 
 #: src/zope/app/authentication/browser/groupfolder.zcml:7
 msgid "Change group information"
-msgstr ""
+msgstr "Изменить информацию о группе"
 
 #: src/zope/app/authentication/browser/httpplugins.zcml:13
 msgid "Realm"
-msgstr ""
+msgstr "Название области"
 
 #: src/zope/app/authentication/browser/httpplugins.zcml:7
 msgid "HTTP Basic-Auth Plugin"
-msgstr ""
+msgstr "Модуль простой HHTP идентификации"
 
 #: src/zope/app/authentication/browser/loginform.pt:11
 msgid "You are not authorized to perform this action. However, you may login as a different user who is authorized."
@@ -1128,27 +1128,27 @@ msgstr ""
 
 #: src/zope/app/authentication/browser/principalfolder.zcml:14
 msgid "A Pluggable Authentication Persistent Authentication Plugin"
-msgstr ""
+msgstr "Сохраняемый модуль подключаемой идентификации"
 
 #: src/zope/app/authentication/browser/principalfolder.zcml:22
 msgid "Add Principal Information"
-msgstr ""
+msgstr "Добавить пользователя"
 
 #: src/zope/app/authentication/browser/principalfolder.zcml:32
 msgid "Principal Information"
-msgstr ""
+msgstr "Пользователь"
 
 #: src/zope/app/authentication/browser/principalfolder.zcml:39
 msgid "Change Internal Principal"
-msgstr ""
+msgstr "Изменить информацию пользователя"
 
 #: src/zope/app/authentication/browser/principalfolder.zcml:5
 msgid "Add Principal Folder"
-msgstr ""
+msgstr "Добавить папку пользователей"
 
 #: src/zope/app/authentication/browser/principalfolder.zcml:54
 msgid "Principal Folder Prefix"
-msgstr ""
+msgstr "Префикс пользователей в папке"
 
 # Default: "Pack"
 #: src/zope/app/authentication/browser/schemasearch.py:30
@@ -1170,7 +1170,7 @@ msgstr ""
 
 #: src/zope/app/authentication/browser/session.zcml:5
 msgid "Session Credentials Plugin"
-msgstr ""
+msgstr "Модуль удостоверений сессии"
 
 #: src/zope/app/authentication/groupfolder.py:44
 #: src/zope/app/authentication/principalfolder.py:49
@@ -1214,7 +1214,7 @@ msgstr "Предоставляет описание для прав доступ
 
 #: src/zope/app/authentication/groupfolder.py:54
 msgid "Principals"
-msgstr ""
+msgstr "Пользователи"
 
 #: src/zope/app/authentication/groupfolder.py:57
 msgid "List of ids of principals which belong to the group"
@@ -1223,7 +1223,7 @@ msgstr "Список идентификаторов пользователей �
 #: src/zope/app/authentication/principalfolder.py:40
 #: src/zope/app/pluggableauth/interfaces.py:32
 msgid "Login"
-msgstr "Пользовательский идентификатор"
+msgstr "Идентификатор пользователя"
 
 #: src/zope/app/authentication/principalfolder.py:41
 msgid "The Login/Username of the principal. This value can change."
@@ -1252,11 +1252,11 @@ msgstr ""
 #: src/zope/app/authentication/principalfolder.py:64
 #: src/zope/app/authentication/browser/principalfolder.zcml:54
 msgid "Prefix"
-msgstr ""
+msgstr "Префикс"
 
 #: src/zope/app/authentication/principalfolder.py:65
 msgid "Prefix to be added to all principal ids to assure that all ids are unique within the authentication service"
-msgstr ""
+msgstr "Префикс который будет добавлен всем идентификаторам пользователей чтобы быть уверенным, что все идентификаторы уникальны в пределах сервиса идентификации"
 
 #: src/zope/app/authentication/principalfolder.py:86
 msgid "Search String"
@@ -1533,7 +1533,7 @@ msgstr "Регистрация новой утилиты"
 
 #: src/zope/app/component/browser/configure.zcml:240
 msgid "Edit Utility Registration"
-msgstr "Редактирование регистрации утилиты"
+msgstr "Настройки регистрации утилиты"
 
 #: src/zope/app/component/browser/configure.zcml:278
 msgid "Change adapter"
@@ -1769,11 +1769,11 @@ msgstr "Права необходимые для использования ко
 #: src/zope/app/component/browser/editregistration.pt:4
 #: src/zope/app/component/browser/editregistration.pt:11
 msgid "Registration Manager"
-msgstr "Менеджер регистрации"
+msgstr "Менеджер регистраций"
 
 #: src/zope/app/component/interfaces/registration.py:215
 msgid "The registration manager keeps track of all component registrations."
-msgstr "Менеджер регистрации хранит регистрацию для всех компонентов."
+msgstr "Менеджер регистраций хранит регистрации для всех компонентов."
 
 #: src/zope/app/component/interfaces/registration.py:32
 msgid "Inactive"
@@ -2807,7 +2807,7 @@ msgstr ""
 
 #: src/zope/app/error/browser/configure.zcml:35
 msgid "Error Logging Utility"
-msgstr ""
+msgstr "Утилита журналирования ошибок"
 
 #: src/zope/app/error/browser/configure.zcml:41
 msgid "Component to record all uncaught errors and exceptions."
@@ -3180,7 +3180,7 @@ msgstr "Удалить"
 #: src/zope/app/form/browser/source.py:190
 #: src/zope/app/form/browser/source.py:200
 msgid "SourceDisplayWidget-missing"
-msgstr ""
+msgstr "Отсутствуют"
 
 # Default: "Invalid value"
 #: src/zope/app/form/browser/source.py:62
@@ -3278,32 +3278,32 @@ msgstr "Поколения базы данных"
 
 #: src/zope/app/homefolder/configure.zcml:32
 msgid "Add Home Folder Manager"
-msgstr ""
+msgstr "Добавить менеджер домашних папок"
 
 #: src/zope/app/homefolder/configure.zcml:45
 #: src/zope/app/homefolder/configure.zcml:74
 msgid "Home Folder Manager"
-msgstr ""
+msgstr "Менеджер домашних папок"
 
 #: src/zope/app/homefolder/configure.zcml:52
 msgid "Edit Home Folder Manager"
-msgstr ""
+msgstr "Настройки менеджера домашних папок"
 
 #: src/zope/app/homefolder/configure.zcml:65
 msgid "Assignments"
-msgstr ""
+msgstr "Связывание"
 
 #: src/zope/app/homefolder/configure.zcml:74
 msgid "A Principal Home Folder Manager"
-msgstr ""
+msgstr "Менеджер домашней папки пользователя"
 
 #: src/zope/app/homefolder/interfaces.py:28
 msgid "Home Folder"
-msgstr ""
+msgstr "Домашняя папка"
 
 #: src/zope/app/homefolder/interfaces.py:29
 msgid "The principal's home folder; if none has been defined, this attribute will be `None`."
-msgstr ""
+msgstr "Домашняя папка пользователя. Если не определена данный атрибут будет `None`."
 
 #: src/zope/app/homefolder/interfaces.py:41
 msgid "Base Folder"
@@ -3311,23 +3311,23 @@ msgstr ""
 
 #: src/zope/app/homefolder/interfaces.py:42
 msgid "The Base Folder for the Principal Home Folder."
-msgstr ""
+msgstr "Базовая папка для домашней папки пользователя."
 
 #: src/zope/app/homefolder/interfaces.py:46
 msgid "Create Home Folder"
-msgstr ""
+msgstr "Создать домашнюю папку"
 
 #: src/zope/app/homefolder/interfaces.py:47
 msgid "Whether home folders should be created, if missing."
-msgstr ""
+msgstr "Должна ли домашняя папка быть создана если отсутствует."
 
 #: src/zope/app/homefolder/interfaces.py:52
 msgid "Local Home Folder Role"
-msgstr ""
+msgstr "Роль для домашней папки"
 
 #: src/zope/app/homefolder/interfaces.py:53
 msgid "The local role that the user will have in its home folder. This role is only set on folders that are created by the manager."
-msgstr ""
+msgstr "Локальная роль которая будет у пользователя в этой папке. Данная роль устанавливается только для папок созданных данным менеджером."
 
 #: src/zope/app/i18n/browser/configure.zcml:17
 msgid "Translate"
@@ -3541,11 +3541,11 @@ msgstr "Просмотр информации о классах и интерф�
 
 #: src/zope/app/locking/adapter.py:69
 msgid "Multiple principals found"
-msgstr ""
+msgstr "Найдено больше одного пользователя"
 
 #: src/zope/app/locking/adapter.py:71
 msgid "No principal found"
-msgstr ""
+msgstr "Пользователей не найдено"
 
 #: src/zope/app/locking/adapter.py:80
 msgid "Object is already locked"
@@ -3892,16 +3892,16 @@ msgstr "Настройки пользователя"
 
 #: src/zope/app/preference/configure.zcml:70
 msgid "A Default User Preferences Provider"
-msgstr ""
+msgstr "Менеджер умолчаний для пользовательских настроек"
 
 #: src/zope/app/preference/configure.zcml:70
 #: src/zope/app/preference/configure.zcml:77
 msgid "Default User Preferences Provider"
-msgstr ""
+msgstr "Менеджер умолчаний для пользовательских настроек"
 
 #: src/zope/app/preference/configure.zcml:77
 msgid "           This component lets you define the local default user           preferences. The values of this provider are used, if the           user has not made a selection yet."
-msgstr ""
+msgstr "Данный компонент позволяет определить умолчания для пользовательских настроек. Значения используются если пользователь еще не выбрал значений."
 
 #: src/zope/app/preference/menu.pt:5
 msgid "Preferences"
@@ -3999,7 +3999,7 @@ msgstr "Сохраняет аннотации для пользователей"
 
 #: src/zope/app/principalannotation/configure.zcml:18
 msgid "Principal Annotation Utility"
-msgstr ""
+msgstr "Утилита аннотаций пользователя"
 
 #: src/zope/app/principalannotation/configure.zcml:24
 msgid "Stores annotations for any principal."
@@ -4007,7 +4007,7 @@ msgstr ""
 
 #: src/zope/app/principalannotation/configure.zcml:24
 msgid "Principal Annotations"
-msgstr ""
+msgstr "Аннотации пользователя"
 
 #: src/zope/app/publisher/interfaces/browser.py:106
 msgid "Menu item ordering hint"
@@ -4190,7 +4190,7 @@ msgstr "Разъединить"
 
 #: src/zope/app/rdb/browser/rdbconnection.pt:4
 msgid "Edit Relational Database Adapter"
-msgstr "Редактировать адаптер реляционной базы данных"
+msgstr "Настройки адаптера реляционной базы данных"
 
 #: src/zope/app/rdb/browser/rdbtestresults.pt:12
 msgid "Executed Query:"
@@ -4225,7 +4225,7 @@ msgstr "Адаптер базы данных Gadfly"
 
 #: src/zope/app/rdb/interfaces.py:376
 msgid "DSN"
-msgstr "Имя источника данных"
+msgstr "Источник данных"
 
 #: src/zope/app/rdb/interfaces.py:377
 msgid ""
@@ -4677,7 +4677,7 @@ msgstr ""
 
 #: src/zope/app/security/browser/configure.zcml:20
 msgid "Authenticates Principals."
-msgstr ""
+msgstr "Идентифицируемые пользователи."
 
 #: src/zope/app/security/browser/configure.zcml:61
 msgid "Security Permission"
