@@ -14,7 +14,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Development/Revision: 30242\n"
-"POT-Creation-Date: Thu May  5 12:01:13 2005\n"
+"POT-Creation-Date: Thu May  5 16:51:08 2005\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
@@ -498,7 +498,7 @@ msgid "Interface Details"
 msgstr ""
 
 #: src/zope/app/apidoc/ifacemodule/iface_macros.pt:108
-msgid "XXX Views"
+msgid "${name} Views"
 msgstr ""
 
 #: src/zope/app/apidoc/ifacemodule/iface_macros.pt:3
@@ -1208,31 +1208,6 @@ msgstr ""
 #: src/zope/app/cache/browser/cacheableedit.pt:48
 # Default: "Invalidate Cached Value"
 msgid "invalidate-cache-button"
-msgstr ""
-
-#: src/zope/app/cache/browser/cacheableedit.pt:53
-#: src/zope/app/cache/browser/ramstats.pt:38
-#: src/zope/app/cache/browser/ramedit.pt:56
-#: src/zope/app/file/browser/image_edit.pt:13
-#: src/zope/app/dublincore/browser/edit.pt:12
-#: src/zope/app/zopetop/widget_macros.pt:210
-#: src/zope/app/zopetop/widget_macros.pt:225
-#: src/zope/app/apidoc/ifacemodule/iface_macros.pt:125
-#: src/zope/app/rotterdam/view_macros.pt:5
-#: src/zope/app/rotterdam/view_macros.pt:24
-#: src/zope/app/rotterdam/template.pt:112
-#: src/zope/app/rotterdam/template.pt:131
-#: src/zope/app/rotterdam/template.pt:141
-#: src/zope/app/rotterdam/template_tablelayout.pt:113
-#: src/zope/app/rotterdam/template_tablelayout.pt:131
-#: src/zope/app/rotterdam/template_tablelayout.pt:138
-#: src/zope/app/container/browser/commontasks.pt:11
-#: src/zope/app/container/browser/commontasks.pt:21
-#: src/zope/app/container/browser/commontasks.pt:31
-#: src/zope/app/securitypolicy/browser/manage_access.pt:42
-#: src/zope/app/securitypolicy/browser/manage_access.pt:62
-#: src/zope/app/component/browser/site_management.pt:10
-msgid "XXX"
 msgstr ""
 
 #: src/zope/app/cache/browser/cacheableedit.pt:6
@@ -3599,7 +3574,7 @@ msgstr ""
 #: src/zope/app/onlinehelp/browser/configure.zcml:48
 #: src/zope/app/demo/menu/configure.zcml:234
 #: src/zope/app/demo/menu/configure.zcml:278
-#: src/zope/app/zopetop/widget_macros.pt:235
+#: src/zope/app/zopetop/widget_macros.pt:233
 msgid "Help"
 msgstr ""
 
@@ -4186,8 +4161,8 @@ msgid "ReStructured Text (ReST) Source"
 msgstr ""
 
 #: src/zope/app/rotterdam/dialog_macros.pt:138
-#: src/zope/app/rotterdam/template.pt:195
-#: src/zope/app/rotterdam/template_tablelayout.pt:186
+#: src/zope/app/rotterdam/template.pt:192
+#: src/zope/app/rotterdam/template_tablelayout.pt:183
 msgid "Tip"
 msgstr ""
 
@@ -4198,8 +4173,8 @@ msgstr ""
 msgid "User:"
 msgstr ""
 
-#: src/zope/app/rotterdam/view_macros.pt:36
-msgid "User: XXX"
+#: src/zope/app/rotterdam/view_macros.pt:35
+msgid "User: ${user}"
 msgstr ""
 
 #: src/zope/app/rotterdam/xmlobject.py:34
@@ -4821,7 +4796,7 @@ msgstr ""
 msgid "Roles"
 msgstr ""
 
-#: src/zope/app/securitypolicy/browser/manage_access.pt:91
+#: src/zope/app/securitypolicy/browser/manage_access.pt:89
 msgid "Save Changes"
 msgstr ""
 
@@ -5494,9 +5469,9 @@ msgstr ""
 msgid "Location:"
 msgstr ""
 
-#: src/zope/app/zopetop/widget_macros.pt:249
+#: src/zope/app/zopetop/widget_macros.pt:247
 #: src/zope/app/rotterdam/dialog_macros.pt:161
-#: src/zope/app/rotterdam/view_macros.pt:41
+#: src/zope/app/rotterdam/view_macros.pt:40
 #: src/zope/app/basicskin/view_macros.pt:41
 msgid "Powered by Zope"
 msgstr ""
