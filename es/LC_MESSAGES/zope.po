@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zope X3 Pre-M4\n"
-"POT-Creation-Date: Mon Apr 18 17:26:38 2005\n"
+"POT-Creation-Date: Thu May  5 16:51:08 2005\n"
 "PO-Revision-Date: 2003-08-06 11:22-0500\n"
 "Last-Translator: Philipp von Weitershausen\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
@@ -47,260 +47,160 @@ msgid ""
 "    "
 msgstr ""
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:105
-#, fuzzy
-msgid "Security"
-msgstr "Script SQL"
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:110
-msgid "Untrusted Interpreters"
-msgstr ""
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:116
-msgid "Untrusted Python Interpreter"
-msgstr ""
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:122
-msgid "Restricted Python Code"
-msgstr ""
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:128
-msgid "Safe Builtins"
-msgstr ""
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:136
-msgid "Default Security Policy"
-msgstr ""
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:144
-#, fuzzy
-msgid "Global Principals"
-msgstr "Principal"
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:152
-#, fuzzy
-msgid "Pluggable Authentication"
-msgstr "Servicio de autentificación"
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:158
-#: src/zope/app/authentication/browser/principalfolder.zcml:14
-#, fuzzy
-msgid "Principal Folder"
-msgstr "Carpeta mínima"
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:16
-#, fuzzy
-msgid "Adapter Registry"
-msgstr "Registración de adaptador"
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:164
-#, fuzzy
-msgid "Group Folders"
-msgstr "Carpeta"
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:172
-#, fuzzy
-msgid "Principal Home Folder"
-msgstr "Carpeta mínima"
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:182
+#: src/zope/app/apidoc/bookmodule/book.zcml:107
 #, fuzzy
 msgid "Events"
 msgstr "Entradas"
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:190
+#: src/zope/app/apidoc/bookmodule/book.zcml:116
+#, fuzzy
+msgid "Security"
+msgstr "Script SQL"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:121
+msgid "Untrusted Interpreters"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:127
+msgid "Untrusted Python Interpreter"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:133
+msgid "Restricted Python Code"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:139
+msgid "Safe Builtins"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:147
+#, fuzzy
+msgid "Global Principals"
+msgstr "Principal"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:156
 #, fuzzy
 msgid "Testing"
 msgstr "Ajuste"
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:195
+#: src/zope/app/apidoc/bookmodule/book.zcml:161
 msgid "Functional DocTest"
 msgstr ""
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:203
+#: src/zope/app/apidoc/bookmodule/book.zcml:169
 msgid "FDocTest (How to)"
 msgstr ""
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:211
+#: src/zope/app/apidoc/bookmodule/book.zcml:17
+#, fuzzy
+msgid "Adapter Registry"
+msgstr "Registración de adaptador"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:177
 msgid "Form Parser"
 msgstr ""
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:22
-#, fuzzy
-msgid "Adapters (light version)"
-msgstr "Registración de adaptador"
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:221
-msgid "ZAPI"
-msgstr ""
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:230
-msgid "WfMC Workflows"
-msgstr ""
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:235
-msgid "Workflows using XPDL"
-msgstr ""
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:243
-#, fuzzy
-msgid "Registering XPDL using ZCML"
-msgstr "Registrado por ZCML"
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:252
-msgid "Indexes and Catalogs"
-msgstr ""
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:257
-#, fuzzy
-msgid "Field Indexes"
-msgstr "Índice de Campo"
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:263
-#, fuzzy
-msgid "Text Indexes"
-msgstr "Índice de Texto"
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:271
-#: src/zope/app/catalog/browser/configure.zcml:7
-#: src/zope/app/catalog/browser/configure.zcml:14
-msgid "Catalog"
-msgstr "Catálogo"
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:28
-msgid "Food For Thought"
-msgstr ""
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:281
-#, fuzzy
-msgid "Sessions"
-msgstr "Permisos:"
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:286
-msgid "API"
-msgstr ""
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:295
+#: src/zope/app/apidoc/bookmodule/book.zcml:186
 msgid "I18n and L10n"
 msgstr ""
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:300
+#: src/zope/app/apidoc/bookmodule/book.zcml:191
 #, fuzzy
 msgid "Message Ids"
 msgstr "Id del mensaje"
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:310
+#: src/zope/app/apidoc/bookmodule/book.zcml:201
 msgid "Cached Properties"
 msgstr ""
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:319
-#, fuzzy
-msgid "Generations"
-msgstr "Presentaciones"
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:328
-#, fuzzy
-msgid "Object Locking"
-msgstr "Campo de Objeto"
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:337
-#, fuzzy
-msgid "Version Control"
-msgstr "Control de servidor"
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:346
-#, fuzzy
-msgid "Persistent Modules"
-msgstr "Un Rol Persistente"
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:355
-msgid "Zope Tree"
-msgstr ""
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:36
-#, fuzzy
-msgid "Schemas"
-msgstr "Esquema"
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:364
-#, fuzzy
-msgid "Persistent Key References"
-msgstr "Un Rol Persistente"
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:373
+#: src/zope/app/apidoc/bookmodule/book.zcml:211
 msgid "BForest API"
 msgstr ""
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:382
+#: src/zope/app/apidoc/bookmodule/book.zcml:220
 msgid "Deprecation API"
 msgstr ""
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:391
+#: src/zope/app/apidoc/bookmodule/book.zcml:229
 #, fuzzy
 msgid "Persistent Framework"
 msgstr "Un Rol Persistente"
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:400
+#: src/zope/app/apidoc/bookmodule/book.zcml:23
+#, fuzzy
+msgid "Adapters (light version)"
+msgstr "Registración de adaptador"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:238
 msgid "Zope Object Database (ZODB)"
 msgstr ""
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:404
+#: src/zope/app/apidoc/bookmodule/book.zcml:242
 #, fuzzy
 msgid "Connection Management"
 msgstr "Nombre de la conexión"
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:410
+#: src/zope/app/apidoc/bookmodule/book.zcml:248
 #, fuzzy
 msgid "Sub-Transactions"
 msgstr "Transiciones"
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:416
+#: src/zope/app/apidoc/bookmodule/book.zcml:254
 msgid "Collaborations"
 msgstr ""
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:42
+#: src/zope/app/apidoc/bookmodule/book.zcml:29
+msgid "Food For Thought"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:37
+#, fuzzy
+msgid "Schemas"
+msgstr "Esquema"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:43
 #, fuzzy
 msgid "Schema Fields"
 msgstr "Esquema"
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:5
-#, fuzzy
-msgid "Interfaces and Schemas"
-msgstr "Nombre del Interfaz"
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:51
+#: src/zope/app/apidoc/bookmodule/book.zcml:52
 #, fuzzy
 msgid "Component Architecture"
 msgstr "Locación del componente"
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:56
+#: src/zope/app/apidoc/bookmodule/book.zcml:58
 msgid "Global Component Architecture"
 msgstr ""
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:62
+#: src/zope/app/apidoc/bookmodule/book.zcml:6
+#, fuzzy
+msgid "Interfaces and Schemas"
+msgstr "Nombre del Interfaz"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:64
 msgid "Global CA (Socket Example)"
 msgstr ""
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:68
+#: src/zope/app/apidoc/bookmodule/book.zcml:70
 #: src/zope/app/apidoc/ifacemodule/index.pt:280
 msgid "Factories"
 msgstr "Fábricas"
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:77
+#: src/zope/app/apidoc/bookmodule/book.zcml:79
 msgid "Local Component Architecture"
 msgstr ""
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:83
+#: src/zope/app/apidoc/bookmodule/book.zcml:85
 #, fuzzy
 msgid "Registration Framework"
 msgstr "Administrador de registraciones"
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:89
+#: src/zope/app/apidoc/bookmodule/book.zcml:91
 #, fuzzy
 msgid "Local Adapter Registry"
 msgstr "Registración de adaptador"
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:95
+#: src/zope/app/apidoc/bookmodule/book.zcml:97
 #, fuzzy
 msgid "Local Sites & Site Managers"
 msgstr "Administrador del sitio"
@@ -463,6 +363,8 @@ msgid "(Enter partial Python path)"
 msgstr ""
 
 #: src/zope/app/apidoc/codemodule/browser/module.py:81
+#: src/zope/app/rotterdam/xmlobject.py:160
+#: src/zope/app/rotterdam/xmlobject.py:163
 #: src/zope/app/rotterdam/template.pt:95
 #: src/zope/app/rotterdam/template_tablelayout.pt:74
 #: src/zope/app/boston/browser/template.pt:72
@@ -642,8 +544,8 @@ msgstr "Campo de Interfaz"
 
 #: src/zope/app/apidoc/ifacemodule/iface_macros.pt:108
 #, fuzzy
-msgid "XXX Views"
-msgstr "Vistas"
+msgid "${name} Views"
+msgstr "${lines} líneas"
 
 #: src/zope/app/apidoc/ifacemodule/iface_macros.pt:3
 msgid "(Attribute)"
@@ -670,7 +572,7 @@ msgstr "No hay métodos en este clase."
 #: src/zope/app/catalog/text.py:35
 #: src/zope/app/component/metadirectives.py:423
 #: src/zope/app/apidoc/configure.zcml:35
-#: src/zope/app/apidoc/bookmodule/book.zcml:10
+#: src/zope/app/apidoc/bookmodule/book.zcml:11
 msgid "Interfaces"
 msgstr "Interfaces"
 
@@ -1194,6 +1096,12 @@ msgstr ""
 msgid "A Pluggable Authentication Persistent Authentication Plugin"
 msgstr "Un Dominio de Traducciones Persistente para el desarrollo en línea"
 
+#: src/zope/app/authentication/browser/principalfolder.zcml:14
+#: src/zope/app/authentication/principalfolder.zcml:45
+#, fuzzy
+msgid "Principal Folder"
+msgstr "Carpeta mínima"
+
 #: src/zope/app/authentication/browser/principalfolder.zcml:22
 #, fuzzy
 msgid "Add Principal Information"
@@ -1241,6 +1149,11 @@ msgstr ""
 msgid "Session Credentials Plugin"
 msgstr ""
 
+#: src/zope/app/authentication/configure.zcml:49
+#, fuzzy
+msgid "Pluggable Authentication"
+msgstr "Servicio de autentificación"
+
 #: src/zope/app/authentication/groupfolder.py:44
 #: src/zope/app/authentication/principalfolder.py:49
 #: src/zope/app/component/metadirectives.py:306
@@ -1286,6 +1199,11 @@ msgstr "Principal"
 #: src/zope/app/authentication/groupfolder.py:57
 msgid "List of ids of principals which belong to the group"
 msgstr ""
+
+#: src/zope/app/authentication/groupfolder.zcml:53
+#, fuzzy
+msgid "Group Folders"
+msgstr "Carpeta"
 
 #: src/zope/app/authentication/principalfolder.py:40
 #: src/zope/app/pluggableauth/interfaces.py:32
@@ -1391,31 +1309,6 @@ msgstr "Guardar cambios"
 msgid "invalidate-cache-button"
 msgstr "Invalidar el caché"
 
-#: src/zope/app/cache/browser/cacheableedit.pt:53
-#: src/zope/app/cache/browser/ramstats.pt:38
-#: src/zope/app/cache/browser/ramedit.pt:56
-#: src/zope/app/file/browser/image_edit.pt:13
-#: src/zope/app/dublincore/browser/edit.pt:12
-#: src/zope/app/zopetop/widget_macros.pt:210
-#: src/zope/app/zopetop/widget_macros.pt:225
-#: src/zope/app/apidoc/ifacemodule/iface_macros.pt:125
-#: src/zope/app/rotterdam/view_macros.pt:5
-#: src/zope/app/rotterdam/view_macros.pt:24
-#: src/zope/app/rotterdam/template.pt:112
-#: src/zope/app/rotterdam/template.pt:131
-#: src/zope/app/rotterdam/template.pt:141
-#: src/zope/app/rotterdam/template_tablelayout.pt:113
-#: src/zope/app/rotterdam/template_tablelayout.pt:131
-#: src/zope/app/rotterdam/template_tablelayout.pt:138
-#: src/zope/app/container/browser/commontasks.pt:11
-#: src/zope/app/container/browser/commontasks.pt:21
-#: src/zope/app/container/browser/commontasks.pt:31
-#: src/zope/app/securitypolicy/browser/manage_access.pt:42
-#: src/zope/app/securitypolicy/browser/manage_access.pt:62
-#: src/zope/app/component/browser/site_management.pt:10
-msgid "XXX"
-msgstr ""
-
 #: src/zope/app/cache/browser/cacheableedit.pt:6
 msgid "This edit form allows you to associate a cache with this object."
 msgstr "En esta ficha puede asociar un caché con este objeto."
@@ -1519,6 +1412,12 @@ msgstr "Configurar"
 msgid "Objects that support indexed searching"
 msgstr ""
 
+#: src/zope/app/catalog/browser/configure.zcml:7
+#: src/zope/app/catalog/browser/configure.zcml:14
+#: src/zope/app/catalog/configure.zcml:85
+msgid "Catalog"
+msgstr "Catálogo"
+
 #: src/zope/app/catalog/browser/configure.zcml:72
 #, fuzzy
 msgid "Add a text index"
@@ -1533,6 +1432,20 @@ msgstr ""
 #: src/zope/app/catalog/browser/configure.zcml:82
 #: src/zope/app/catalog/browser/configure.zcml:91
 msgid "Text Index"
+msgstr "Índice de Texto"
+
+#: src/zope/app/catalog/configure.zcml:81
+msgid "Indexes and Catalogs"
+msgstr ""
+
+#: src/zope/app/catalog/configure.zcml:93
+#, fuzzy
+msgid "Field Indexes"
+msgstr "Índice de Campo"
+
+#: src/zope/app/catalog/configure.zcml:99
+#, fuzzy
+msgid "Text Indexes"
 msgstr "Índice de Texto"
 
 #: src/zope/app/catalog/interfaces.py:64 src/zope/app/catalog/text.py:33
@@ -3404,6 +3317,11 @@ msgstr ""
 msgid "Database generations"
 msgstr "Generaciones de Base de Datos"
 
+#: src/zope/app/generations/configure.zcml:28
+#, fuzzy
+msgid "Generations"
+msgstr "Presentaciones"
+
 #: src/zope/app/homefolder/configure.zcml:32
 #, fuzzy
 msgid "Add Home Folder Manager"
@@ -3428,6 +3346,11 @@ msgstr "Argumentos"
 #, fuzzy
 msgid "A Principal Home Folder Manager"
 msgstr "Añadir fuente de principales"
+
+#: src/zope/app/homefolder/configure.zcml:86
+#, fuzzy
+msgid "Principal Home Folder"
+msgstr "Carpeta mínima"
 
 #: src/zope/app/homefolder/interfaces.py:28
 #, fuzzy
@@ -3703,6 +3626,11 @@ msgstr ""
 msgid "zope.app.introspector.Introspect"
 msgstr ""
 
+#: src/zope/app/keyreference/configure.zcml:26
+#, fuzzy
+msgid "Persistent Key References"
+msgstr "Un Rol Persistente"
+
 #: src/zope/app/locking/adapter.py:69
 #, fuzzy
 msgid "Multiple principals found"
@@ -3836,7 +3764,7 @@ msgstr ""
 #: src/zope/app/onlinehelp/browser/configure.zcml:48
 #: src/zope/app/demo/menu/configure.zcml:234
 #: src/zope/app/demo/menu/configure.zcml:278
-#: src/zope/app/zopetop/widget_macros.pt:235
+#: src/zope/app/zopetop/widget_macros.pt:233
 msgid "Help"
 msgstr "Auxilio"
 
@@ -3991,57 +3919,21 @@ msgstr ""
 msgid "No interpreter named \"${lang_name}\" was found."
 msgstr ""
 
-#: src/zope/app/pluggableauth/browser/configure.zcml:23
+#: src/zope/app/pluggableauth/browser/configure.zcml:24
 msgid "Add Principal Source"
 msgstr "Añadir fuente de principales"
 
-#: src/zope/app/pluggableauth/browser/configure.zcml:37
+#: src/zope/app/pluggableauth/browser/configure.zcml:38
 msgid "Add Simple User with details"
 msgstr "Añadir Usuario Sencillo con detalles"
 
-#: src/zope/app/pluggableauth/browser/configure.zcml:48
+#: src/zope/app/pluggableauth/browser/configure.zcml:49
 msgid "Principal"
 msgstr "Principal"
 
-#: src/zope/app/pluggableauth/browser/configure.zcml:55
+#: src/zope/app/pluggableauth/browser/configure.zcml:56
 msgid "Edit User Information"
 msgstr "Editar información de usuarios"
-
-#: src/zope/app/pluggableauth/browser/configure.zcml:55
-#: src/zope/app/schema/fieldforms.zcml:21
-#: src/zope/app/schema/fieldforms.zcml:47
-#: src/zope/app/schema/fieldforms.zcml:73
-#: src/zope/app/schema/fieldforms.zcml:99
-#: src/zope/app/schema/fieldforms.zcml:125
-#: src/zope/app/schema/fieldforms.zcml:151
-#: src/zope/app/security/browser/configure.zcml:84
-#: src/zope/app/component/browser/configure.zcml:240
-#: src/zope/app/authentication/browser/session.zcml:11
-#: src/zope/app/authentication/browser/httpplugins.zcml:13
-#: src/zope/app/authentication/browser/principalfolder.zcml:39
-#: src/zope/app/authentication/browser/groupfolder.zcml:7
-#: src/zope/app/cache/browser/configure.zcml:24
-#: src/zope/app/file/browser/configure.zcml:22
-#: src/zope/app/homefolder/configure.zcml:52
-#: src/zope/app/i18nfile/browser/configure.zcml:31
-#: src/zope/app/i18nfile/browser/configure.zcml:73
-#: src/zope/app/demo/pageletchooser/browser/configure.zcml:33
-#: src/zope/app/demo/pagelet/browser/configure.zcml:33
-#: src/zope/app/pythonpage/configure.zcml:57
-#: src/zope/app/rdb/browser/configure.zcml:27
-#: src/zope/app/schemacontent/browser/configure.zcml:22
-#: src/zope/app/schemacontent/browser/configure.zcml:55
-#: src/zope/app/demo/menu/configure.zcml:188
-#: src/zope/app/demo/menu/configure.zcml:272
-#: src/zope/app/demo/widget/browser/boolwidget.zcml:29
-#: src/zope/app/demo/widget/browser/intwidget.zcml:29
-#: src/zope/app/demo/widget/browser/textwidget.zcml:29
-#: src/zope/app/demo/widget/browser/textareawidget.zcml:29
-#: src/zope/app/session/browser.zcml:15 src/zope/app/session/browser.zcml:38
-#: src/zope/app/zptpage/browser/configure.zcml:39
-#: src/zope/app/securitypolicy/browser/configure.zcml:35
-msgid "Edit"
-msgstr "Editar"
 
 #: src/zope/app/pluggableauth/interfaces.py:33
 msgid "The Login/Username of the user. This value can change."
@@ -4493,8 +4385,8 @@ msgid "ReStructured Text (ReST) Source"
 msgstr ""
 
 #: src/zope/app/rotterdam/dialog_macros.pt:138
-#: src/zope/app/rotterdam/template.pt:195
-#: src/zope/app/rotterdam/template_tablelayout.pt:186
+#: src/zope/app/rotterdam/template.pt:192
+#: src/zope/app/rotterdam/template_tablelayout.pt:183
 msgid "Tip"
 msgstr ""
 
@@ -4505,14 +4397,18 @@ msgstr ""
 msgid "User:"
 msgstr "Usuario:"
 
+#: src/zope/app/rotterdam/view_macros.pt:35
+msgid "User: ${user}"
+msgstr ""
+
+#: src/zope/app/rotterdam/xmlobject.py:34
+msgid "Contains $${num} item(s)"
+msgstr ""
+
+#: src/zope/app/rotterdam/xmlobject.py:35
 #: src/zope/app/rotterdam/navigation_macros.pt:32
 msgid "Loading..."
 msgstr "Cargando..."
-
-#: src/zope/app/rotterdam/view_macros.pt:36
-#, fuzzy
-msgid "User: XXX"
-msgstr "Usuario:"
 
 #: src/zope/app/schema/browser/__init__.py:52
 msgid "Must select a field to delete"
@@ -4597,6 +4493,42 @@ msgstr "Editar Campo de Fecha y Tiempo"
 #: src/zope/app/schema/fieldforms.zcml:21
 msgid "Edit Text Field"
 msgstr ""
+
+#: src/zope/app/schema/fieldforms.zcml:21
+#: src/zope/app/schema/fieldforms.zcml:47
+#: src/zope/app/schema/fieldforms.zcml:73
+#: src/zope/app/schema/fieldforms.zcml:99
+#: src/zope/app/schema/fieldforms.zcml:125
+#: src/zope/app/schema/fieldforms.zcml:151
+#: src/zope/app/security/browser/configure.zcml:84
+#: src/zope/app/component/browser/configure.zcml:240
+#: src/zope/app/authentication/browser/session.zcml:11
+#: src/zope/app/authentication/browser/httpplugins.zcml:13
+#: src/zope/app/authentication/browser/principalfolder.zcml:39
+#: src/zope/app/authentication/browser/groupfolder.zcml:7
+#: src/zope/app/cache/browser/configure.zcml:24
+#: src/zope/app/file/browser/configure.zcml:22
+#: src/zope/app/homefolder/configure.zcml:52
+#: src/zope/app/i18nfile/browser/configure.zcml:31
+#: src/zope/app/i18nfile/browser/configure.zcml:73
+#: src/zope/app/demo/pageletchooser/browser/configure.zcml:33
+#: src/zope/app/demo/pagelet/browser/configure.zcml:33
+#: src/zope/app/pythonpage/configure.zcml:57
+#: src/zope/app/rdb/browser/configure.zcml:27
+#: src/zope/app/schemacontent/browser/configure.zcml:22
+#: src/zope/app/schemacontent/browser/configure.zcml:55
+#: src/zope/app/demo/menu/configure.zcml:188
+#: src/zope/app/demo/menu/configure.zcml:272
+#: src/zope/app/demo/widget/browser/boolwidget.zcml:29
+#: src/zope/app/demo/widget/browser/intwidget.zcml:29
+#: src/zope/app/demo/widget/browser/textwidget.zcml:29
+#: src/zope/app/demo/widget/browser/textareawidget.zcml:29
+#: src/zope/app/pluggableauth/browser/configure.zcml:56
+#: src/zope/app/session/browser.zcml:15 src/zope/app/session/browser.zcml:38
+#: src/zope/app/zptpage/browser/configure.zcml:39
+#: src/zope/app/securitypolicy/browser/configure.zcml:35
+msgid "Edit"
+msgstr "Editar"
 
 #: src/zope/app/schema/fieldforms.zcml:33
 msgid "TextLine Field"
@@ -5077,7 +5009,7 @@ msgstr ""
 msgid "Roles"
 msgstr "Roles"
 
-#: src/zope/app/securitypolicy/browser/manage_access.pt:91
+#: src/zope/app/securitypolicy/browser/manage_access.pt:89
 #, fuzzy
 msgid "Save Changes"
 msgstr "Los cambios han sido guardados."
@@ -5118,6 +5050,10 @@ msgstr "Permitir"
 msgid "permission-deny"
 msgstr ""
 
+#: src/zope/app/securitypolicy/configure.zcml:96
+msgid "Default Security Policy"
+msgstr ""
+
 #: src/zope/app/securitypolicy/role.py:26
 #, fuzzy
 msgid "<role not activated>"
@@ -5155,6 +5091,15 @@ msgstr ""
 
 #: src/zope/app/session/browser.zcml:8
 msgid "Cookie Client Id Manager"
+msgstr ""
+
+#: src/zope/app/session/configure.zcml:82
+#, fuzzy
+msgid "Sessions"
+msgstr "Permisos:"
+
+#: src/zope/app/session/configure.zcml:87
+msgid "API"
 msgstr ""
 
 #: src/zope/app/session/http.py:48
@@ -5347,6 +5292,10 @@ msgstr ""
 msgid "Navigation"
 msgstr "Navegación"
 
+#: src/zope/app/tree/configure.zcml:57
+msgid "Zope Tree"
+msgstr ""
+
 #: src/zope/app/undo/configure.zcml:108
 msgid "Redo!"
 msgstr ""
@@ -5533,6 +5482,19 @@ msgstr ""
 #: src/zope/app/versioncontrol/interfaces.py:261
 msgid "path to the object upon which the action was taken"
 msgstr ""
+
+#: src/zope/app/wfmc/configure.zcml:13
+msgid "WfMC Workflows"
+msgstr ""
+
+#: src/zope/app/wfmc/configure.zcml:18
+msgid "Workflows using XPDL"
+msgstr ""
+
+#: src/zope/app/wfmc/configure.zcml:26
+#, fuzzy
+msgid "Registering XPDL using ZCML"
+msgstr "Registrado por ZCML"
 
 #: src/zope/app/workflow/browser/configure.zcml:6
 msgid ""
@@ -5730,6 +5692,10 @@ msgstr ""
 msgid "Source State"
 msgstr "Estado de Fuente"
 
+#: src/zope/app/zapi/configure.zcml:13
+msgid "ZAPI"
+msgstr ""
+
 #: src/zope/app/zopetop/widget_macros.pt:152
 #: src/zope/app/apidoc/ifacemodule/index.pt:168
 msgid "Views"
@@ -5745,9 +5711,9 @@ msgstr "Acciones"
 msgid "Location:"
 msgstr "Localización:"
 
-#: src/zope/app/zopetop/widget_macros.pt:249
+#: src/zope/app/zopetop/widget_macros.pt:247
 #: src/zope/app/rotterdam/dialog_macros.pt:161
-#: src/zope/app/rotterdam/view_macros.pt:41
+#: src/zope/app/rotterdam/view_macros.pt:40
 #: src/zope/app/basicskin/view_macros.pt:41
 msgid "Powered by Zope"
 msgstr ""
@@ -6095,6 +6061,26 @@ msgstr ""
 #: src/zope/security/interfaces.py:295
 msgid "Id as which this permission will be known and used."
 msgstr ""
+
+#, fuzzy
+#~ msgid "Object Locking"
+#~ msgstr "Campo de Objeto"
+
+#, fuzzy
+#~ msgid "Version Control"
+#~ msgstr "Control de servidor"
+
+#, fuzzy
+#~ msgid "Persistent Modules"
+#~ msgstr "Un Rol Persistente"
+
+#, fuzzy
+#~ msgid "XXX Views"
+#~ msgstr "Vistas"
+
+#, fuzzy
+#~ msgid "User: XXX"
+#~ msgstr "Usuario:"
 
 #, fuzzy
 #~ msgid "Transaction API"
