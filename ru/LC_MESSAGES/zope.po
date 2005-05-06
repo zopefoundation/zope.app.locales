@@ -16,7 +16,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Development/Revision: 29457\n"
-"POT-Creation-Date: Thu May  5 16:16:15 2005\n"
+"POT-Creation-Date: Fri May  6 11:57:40 2005\n"
 "PO-Revision-Date: 2005-04-16 22:34+0300\n"
 "Last-Translator: Dmitry Vasiliev <dima@hlabs.spb.ru>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
@@ -1104,7 +1104,9 @@ msgstr "Модуль простой HHTP идентификации"
 msgid ""
 "You are not authorized to perform this action. However, you may login as a "
 "different user who is authorized."
-msgstr "Вы не имеете прав доступа для данного действия. Конечно Вы можете войти под другим пользователем который имеет доступ."
+msgstr ""
+"Вы не имеете прав доступа для данного действия. Конечно Вы можете войти под "
+"другим пользователем который имеет доступ."
 
 #: src/zope/app/authentication/browser/loginform.pt:20
 msgid "User Name"
@@ -1696,9 +1698,37 @@ msgstr "Удалить"
 msgid "<b>Site Management</b>"
 msgstr "<b>Управление сайтом</b>"
 
+#: src/zope/app/component/browser/site_management.pt:67
+msgid "${name} (Active)"
+msgstr "${name} (активен)"
+
+#: src/zope/app/component/browser/site_management.pt:75
+msgid "${name} (Inactive)"
+msgstr "${name} (неактивен)"
+
 #: src/zope/app/component/browser/site_management.pt:91
 msgid "<i>No instances of this utility are available yet.</i>"
 msgstr "<i>На данный момент нет доступных экземпляров этой утилиты.</>"
+
+#: src/zope/app/component/browser/tools.py:104
+msgid "Tools successullfy renamed."
+msgstr "Утилиты успешно переименованы."
+
+#: src/zope/app/component/browser/tools.py:80
+msgid "Tools successufully installed."
+msgstr "Утилиты успешно установлены."
+
+#: src/zope/app/component/browser/tools.py:83
+msgid "Tools successufully uninstalled."
+msgstr "Утилиты успешно удалены."
+
+#: src/zope/app/component/browser/tools.py:91
+msgid "Tools successfully activated."
+msgstr "Утилиты успешно активированы."
+
+#: src/zope/app/component/browser/tools.py:94
+msgid "Tools successfully deactivated."
+msgstr "Утилиты успешно деактивированы."
 
 #: src/zope/app/component/browser/utilreg_details.pt:11
 msgid "component:"
@@ -1811,7 +1841,7 @@ msgstr "Интерфейс компонента"
 
 #: src/zope/app/component/metadirectives.py:112
 msgid "View attributes that are also allowed if the user has permission."
-msgstr ""
+msgstr "Атрибуты представления которые также доступны если пользователь имеет права доступа."
 
 #: src/zope/app/component/metadirectives.py:114
 msgid ""
@@ -1821,6 +1851,9 @@ msgid ""
 "        you can make the permission also apply to the extra attributes\n"
 "        on the view object."
 msgstr ""
+"\n"
+"По умолчанию права доступа действуют только для просмотра представления и возможных дочерних представлений. В случае определения allowed_attributes возможно "
+"также расширить права доступа на указанные атрибуты представления."
 
 #: src/zope/app/component/metadirectives.py:129
 msgid "The name of the resource."
@@ -1828,7 +1861,7 @@ msgstr "Название ресурса."
 
 #: src/zope/app/component/metadirectives.py:130
 msgid "The name shows up in URLs/paths. For example 'foo'."
-msgstr ""
+msgstr "Имя для показа в URL/путях. Для примера: 'foo'."
 
 #: src/zope/app/component/metadirectives.py:136
 msgid "The interface this component provides."
@@ -1840,6 +1873,8 @@ msgid ""
 "        A view can provide an interface.  This would be used for\n"
 "        views that support other views."
 msgstr ""
+"\n"
+"Представление может предоставлять интерфейс. Это может быть использовано для представлений которые поддерживают другие представления."
 
 #: src/zope/app/component/metadirectives.py:145
 #: src/zope/app/component/metadirectives.py:496
@@ -1853,7 +1888,7 @@ msgstr "Тип интерфейса"
 
 #: src/zope/app/component/metadirectives.py:170
 msgid "Adapter factory/factories"
-msgstr ""
+msgstr "Фабрика/фабрики адаптера"
 
 #: src/zope/app/component/metadirectives.py:171
 msgid "A list of factories (usually just one) that create the adapter instance."
@@ -1868,7 +1903,7 @@ msgstr "Интерфейс предоставляемый компонентом
 #: src/zope/app/component/metadirectives.py:179
 #: src/zope/app/component/metadirectives.py:241
 msgid "This attribute specifes the interface the adapter instance must provide."
-msgstr ""
+msgstr "Данный атрибут определяет интерфейс который должен предоставлять экземпляр адаптера."
 
 #: src/zope/app/component/metadirectives.py:185
 msgid "Specifications to be adapted"
@@ -1877,23 +1912,23 @@ msgstr "Адаптируемые спецификации"
 #: src/zope/app/component/metadirectives.py:186
 #: src/zope/app/component/metadirectives.py:248
 msgid "This should be a list of interfaces or classes"
-msgstr ""
+msgstr "Это должен быть список интерфейсов или классов"
 
 #: src/zope/app/component/metadirectives.py:195
 msgid "This adapter is only available, if the principal has this permission."
-msgstr ""
+msgstr "Данный адаптер доступен только если пользователь имеет данные права доступа."
 
 #: src/zope/app/component/metadirectives.py:202
 msgid ""
 "Adapters can have names.\n"
 "\n"
 "This attribute allows you to specify the name for this adapter."
-msgstr ""
+msgstr "Адаптер может иметь имена. Данный атрибут позволяет определить имя для данного адаптера."
 
 #: src/zope/app/component/metadirectives.py:209
 #: src/zope/app/component/metadirectives.py:263
 msgid "Trusted"
-msgstr ""
+msgstr "Доверительный"
 
 #: src/zope/app/component/metadirectives.py:210
 msgid ""
@@ -1905,15 +1940,15 @@ msgid ""
 "        objects, you get a security-proxied adapter of unproxied\n"
 "        objects.\n"
 "        "
-msgstr ""
+msgstr "Сделать адаптер доверительным адаптером. Доверительные адаптеры имеют свободный доступ к объектам которые они адаптируют. В случае запроса адаптации для защищенных объектов вместо получения незащищенного адаптера для защищенного объекта будет получен защищенный адаптер для незащищенного объекта."
 
 #: src/zope/app/component/metadirectives.py:228
 msgid "Subscriber factory"
-msgstr ""
+msgstr "Фабрика подписчика"
 
 #: src/zope/app/component/metadirectives.py:229
 msgid "A factory used to create the subscriber instance."
-msgstr ""
+msgstr "Фабрика используемая для создания экземпляра подписчика."
 
 #: src/zope/app/component/metadirectives.py:234
 msgid "Handler"
@@ -1921,15 +1956,15 @@ msgstr "Обработчик"
 
 #: src/zope/app/component/metadirectives.py:235
 msgid "A callable object that handles events."
-msgstr ""
+msgstr "Вызываемый объект для обработки событий."
 
 #: src/zope/app/component/metadirectives.py:247
 msgid "Interfaces or classes that this subscriber depends on"
-msgstr ""
+msgstr "Интерфейсы или классы от которых зависит данный подписчик"
 
 #: src/zope/app/component/metadirectives.py:257
 msgid "This subscriber is only available, if the principal has this permission."
-msgstr ""
+msgstr "Данный подписчик присутствует только если пользователь имеет данные права."
 
 #: src/zope/app/component/metadirectives.py:264
 msgid ""
@@ -1941,7 +1976,7 @@ msgid ""
 "        objects, you get a security-proxied subscriber of unproxied\n"
 "        objects.\n"
 "        "
-msgstr ""
+msgstr "Сделать подписчика доверительным подписчиком. Доверительные подписчики имеют свободный доступ к объектам которые они адаптируют. В случае запроса адаптации для защищенных объектов вместо получения незащищенного адаптера для защищенного объекта будет получен защищенный адаптер для незащищенного объекта."
 
 #: src/zope/app/component/metadirectives.py:281
 msgid "Interface provided by the utility."
@@ -1951,7 +1986,7 @@ msgstr "Интерфейс предоставляемый утилитой."
 msgid ""
 "Name of the registration.  This is used by application code when locating a "
 "utility."
-msgstr ""
+msgstr "Имя регистрации. Имя используется приложениями при поиске утилиты."
 
 #: src/zope/app/component/metadirectives.py:296
 msgid "Component to be used"
@@ -1965,12 +2000,12 @@ msgstr "Идентификатор"
 #: src/zope/app/component/metadirectives.py:307
 #: src/zope/app/component/metadirectives.py:480
 msgid "Text suitable for use in the 'add content' menu of a management interface"
-msgstr ""
+msgstr "Текст для использования в меню 'добавление контента' интерфейса управления"
 
 #: src/zope/app/component/metadirectives.py:314
 #: src/zope/app/component/metadirectives.py:487
 msgid "Longer narrative description of what this factory does"
-msgstr ""
+msgstr "Длинное, повествовательное описание того, что делает эта фабрика"
 
 #: src/zope/app/component/metadirectives.py:340
 msgid "The interface this view is the default for."
@@ -1985,6 +2020,8 @@ msgid ""
 "available\n"
 "        for all objects."
 msgstr ""
+"\n"
+"Определяет интерфейс для которого объявлено представление по умолчанию. Все объекты реализующие данный интерфейс используют эти установки. Если данный атрибут не определен представление по умолчанию доступно для всех объектов."
 
 #: src/zope/app/component/metadirectives.py:356
 msgid "The layer the resource is in."
@@ -1992,7 +2029,7 @@ msgstr "Слой оформления в котором находится ре�
 
 #: src/zope/app/component/metadirectives.py:367
 msgid "View attributes that are also allowed if user has permission."
-msgstr ""
+msgstr "Атрибуты представления которые также будут доступны если пользователь имеет права доступа."
 
 #: src/zope/app/component/metadirectives.py:388
 msgid "One or more interfaces"
@@ -2007,7 +2044,7 @@ msgid ""
 "Python name of the implementation object.  This must identify an object in a "
 "module using the full dotted name.  If specified, the ``factory`` field must "
 "be left blank."
-msgstr ""
+msgstr "Путь к объекту реализации. Необходимо указать полный путь Python для идентификации объекта внутри модуля. Если определено поле ``factory`` должно быть оставлено пустым."
 
 #: src/zope/app/component/metadirectives.py:400
 msgid ""
@@ -2015,6 +2052,8 @@ msgid ""
 "        Specifies the permission by id that will be required to\n"
 "        access or mutate the attributes and methods specified."
 msgstr ""
+"\n"
+"Определяет права доступа по идентификатору который будет необходим для доступа или изменения указанных атрибутов и методов."
 
 #: src/zope/app/component/metadirectives.py:407
 msgid "Attributes and methods"
@@ -2022,31 +2061,31 @@ msgstr "Атрибуты и методы"
 
 #: src/zope/app/component/metadirectives.py:408
 msgid "This is a list of attributes and methods that can be accessed."
-msgstr ""
+msgstr "Список атрибутов и методов которые могут быть доступны."
 
 #: src/zope/app/component/metadirectives.py:415
 msgid "Attributes that can be set"
-msgstr ""
+msgstr "Атрибуты которые могут быть установлены"
 
 #: src/zope/app/component/metadirectives.py:416
 msgid "This is a list of attributes that can be modified/mutated."
-msgstr ""
+msgstr "Список атрибутов которые могут быть изменены."
 
 #: src/zope/app/component/metadirectives.py:424
 msgid "The listed interfaces' methods and attributes can be accessed."
-msgstr ""
+msgstr "Список интерфейсов методов и атрибутов которые могут быть доступны."
 
 #: src/zope/app/component/metadirectives.py:431
 msgid "The attributes specified by the schema can be set"
-msgstr ""
+msgstr "Атрибуты заданные данной схемой могут быть установлены"
 
 #: src/zope/app/component/metadirectives.py:432
 msgid "The listed schemas' properties can be modified/mutated."
-msgstr ""
+msgstr "Список свойств схем которые могут быть изменены."
 
 #: src/zope/app/component/metadirectives.py:439
 msgid "Configure like this class"
-msgstr ""
+msgstr "Конфигурировать как данный класс"
 
 #: src/zope/app/component/metadirectives.py:440
 msgid ""
@@ -2056,6 +2095,8 @@ msgid ""
 "        same way the specified class' security is. If this argument is\n"
 "        specifed, no other argument can be used."
 msgstr ""
+"\n"
+"Данный аргумент указывает, что данный класс контента должен быть сконфигурирован по безопасности также как указанный класс. Если данный аргумент определен другие атрибуты не могут быть использованы."
 
 # Default: "Attributes"
 #: src/zope/app/component/metadirectives.py:455
@@ -2070,6 +2111,8 @@ msgid ""
 "        identification scheme.  If not given, defaults to the literal\n"
 "        string given as the content directive's 'class' attribute."
 msgstr ""
+"\n"
+"Идентификатор для данной фабрики в схеме идентификации фабрики интерфейса управления. Если не указан умолчания заданы как атрибут `class` директивы контента."
 
 #: src/zope/app/component/metadirectives.py:48
 #: src/zope/app/component/metadirectives.py:77
