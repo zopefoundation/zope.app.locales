@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: zope\n"
-"POT-Creation-Date: Thu May  5 16:51:08 2005\n"
+"POT-Creation-Date: Fri May  6 11:57:40 2005\n"
 "PO-Revision-Date: 2005-04-03 11:31+0200\n"
 "Last-Translator: Egon Frerich <e.frerich@nord-com.net>\n"
 "Language-Team: German <<zope3-dev@zope.org>>\n"
@@ -1733,9 +1733,44 @@ msgstr "Deinstallieren"
 msgid "<b>Site Management</b>"
 msgstr "<b>Webplatz-Verwalter</b>"
 
+#: src/zope/app/component/browser/site_management.pt:67
+#, fuzzy
+msgid "${name} (Active)"
+msgstr "${lines} Zeilen"
+
+#: src/zope/app/component/browser/site_management.pt:75
+#, fuzzy
+msgid "${name} (Inactive)"
+msgstr "${lines} Zeilen"
+
 #: src/zope/app/component/browser/site_management.pt:91
 msgid "<i>No instances of this utility are available yet.</i>"
 msgstr "<i>Von diesem Utility sind keine Instanzen vorhanden.</i>"
+
+#: src/zope/app/component/browser/tools.py:104
+#, fuzzy
+msgid "Tools successullfy renamed."
+msgstr "ZODB erfolgreich gepackt."
+
+#: src/zope/app/component/browser/tools.py:80
+#, fuzzy
+msgid "Tools successufully installed."
+msgstr "ZODB erfolgreich gepackt."
+
+#: src/zope/app/component/browser/tools.py:83
+#, fuzzy
+msgid "Tools successufully uninstalled."
+msgstr "ZODB erfolgreich gepackt."
+
+#: src/zope/app/component/browser/tools.py:91
+#, fuzzy
+msgid "Tools successfully activated."
+msgstr "ZODB erfolgreich gepackt."
+
+#: src/zope/app/component/browser/tools.py:94
+#, fuzzy
+msgid "Tools successfully deactivated."
+msgstr "ZODB erfolgreich gepackt."
 
 #: src/zope/app/component/browser/utilreg_details.pt:11
 msgid "component:"

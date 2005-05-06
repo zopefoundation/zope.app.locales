@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zope X3 Pre-M4\n"
-"POT-Creation-Date: Thu May  5 16:51:08 2005\n"
+"POT-Creation-Date: Fri May  6 11:57:40 2005\n"
 "PO-Revision-Date: 2003-08-07 18:51-0300\n"
 "Last-Translator: Sidnei da Silva <sidnei@plone.org>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
@@ -1643,8 +1643,36 @@ msgstr ""
 msgid "<b>Site Management</b>"
 msgstr "Administrador"
 
+#: src/zope/app/component/browser/site_management.pt:67
+msgid "${name} (Active)"
+msgstr ""
+
+#: src/zope/app/component/browser/site_management.pt:75
+msgid "${name} (Inactive)"
+msgstr ""
+
 #: src/zope/app/component/browser/site_management.pt:91
 msgid "<i>No instances of this utility are available yet.</i>"
+msgstr ""
+
+#: src/zope/app/component/browser/tools.py:104
+msgid "Tools successullfy renamed."
+msgstr ""
+
+#: src/zope/app/component/browser/tools.py:80
+msgid "Tools successufully installed."
+msgstr ""
+
+#: src/zope/app/component/browser/tools.py:83
+msgid "Tools successufully uninstalled."
+msgstr ""
+
+#: src/zope/app/component/browser/tools.py:91
+msgid "Tools successfully activated."
+msgstr ""
+
+#: src/zope/app/component/browser/tools.py:94
+msgid "Tools successfully deactivated."
 msgstr ""
 
 #: src/zope/app/component/browser/utilreg_details.pt:11
