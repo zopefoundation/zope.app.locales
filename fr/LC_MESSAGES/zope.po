@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zope X3 Pre-M4\n"
-"POT-Creation-Date: Thu May 19 14:28:43 2005\n"
+"POT-Creation-Date: Thu May 26 15:39:18 2005\n"
 "PO-Revision-Date: 2004-06-25 16:00+0100\n"
 "Last-Translator: Thierry Goyvaerts <Thierry.Goyvaerts@skynet.be>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope3.org>\n"
@@ -581,7 +581,7 @@ msgstr "Il n'y a pas de Classe De Base."
 
 #: src/zope/app/apidoc/ifacemodule/ifacemodule.py:51
 #: src/zope/app/catalog/text.py:35
-#: src/zope/app/component/metadirectives.py:423
+#: src/zope/app/component/metadirectives.py:445
 #: src/zope/app/apidoc/configure.zcml:35
 #: src/zope/app/apidoc/bookmodule/book.zcml:11
 msgid "Interfaces"
@@ -1186,8 +1186,8 @@ msgstr "Service D'Authentification"
 
 #: src/zope/app/authentication/groupfolder.py:44
 #: src/zope/app/authentication/principalfolder.py:49
-#: src/zope/app/component/metadirectives.py:306
-#: src/zope/app/component/metadirectives.py:479
+#: src/zope/app/component/metadirectives.py:328
+#: src/zope/app/component/metadirectives.py:501
 #: src/zope/app/demo/pagelet/interfaces.py:38
 #: src/zope/app/demo/pageletchooser/interfaces.py:37
 #: src/zope/schema/interfaces.py:100 src/zope/schema/interfaces.py:459
@@ -1206,8 +1206,8 @@ msgstr "Définir un titre pour la permission."
 
 #: src/zope/app/authentication/groupfolder.py:49
 #: src/zope/app/authentication/principalfolder.py:53
-#: src/zope/app/component/metadirectives.py:313
-#: src/zope/app/component/metadirectives.py:486
+#: src/zope/app/component/metadirectives.py:335
+#: src/zope/app/component/metadirectives.py:508
 #: src/zope/app/demo/pagelet/interfaces.py:44
 #: src/zope/app/demo/pageletchooser/interfaces.py:43
 #: src/zope/schema/interfaces.py:107 src/zope/security/interfaces.py:270
@@ -1342,81 +1342,6 @@ msgstr "Enregistrer les modifications"
 #: src/zope/app/cache/browser/cacheableedit.pt:48
 msgid "invalidate-cache-button"
 msgstr "Invalider Cache"
-
-#: src/zope/app/cache/browser/cacheableedit.pt:53
-#: src/zope/app/cache/browser/ramstats.pt:38
-#: src/zope/app/cache/browser/ramedit.pt:56
-#: src/zope/app/applicationcontrol/browser/zodbcontrol.pt:18
-#: src/zope/app/applicationcontrol/browser/runtimeinfo.pt:12
-#: src/zope/app/applicationcontrol/browser/translationdomaincontrol.pt:9
-#: src/zope/app/undo/undo_macros.pt:86
-#: src/zope/app/file/browser/file_upload.pt:11
-#: src/zope/app/file/browser/file_add.pt:11
-#: src/zope/app/file/browser/image_edit.pt:13
-#: src/zope/app/dublincore/browser/edit.pt:12
-#: src/zope/app/zopetop/widget_macros.pt:15
-#: src/zope/app/zopetop/widget_macros.pt:23
-#: src/zope/app/zopetop/widget_macros.pt:158
-#: src/zope/app/zopetop/widget_macros.pt:175
-#: src/zope/app/zopetop/widget_macros.pt:212
-#: src/zope/app/zopetop/widget_macros.pt:227
-#: src/zope/app/apidoc/codemodule/browser/module_index.pt:9
-#: src/zope/app/apidoc/codemodule/browser/module_index.pt:16
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:11
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:96
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:98
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:138
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:140
-#: src/zope/app/apidoc/ifacemodule/iface_macros.pt:126
-#: src/zope/app/rotterdam/view_macros.pt:5
-#: src/zope/app/rotterdam/view_macros.pt:24
-#: src/zope/app/rotterdam/template.pt:112
-#: src/zope/app/rotterdam/template.pt:130
-#: src/zope/app/rotterdam/template.pt:139
-#: src/zope/app/rotterdam/template_tablelayout.pt:113
-#: src/zope/app/rotterdam/template_tablelayout.pt:130
-#: src/zope/app/rotterdam/template_tablelayout.pt:137
-#: src/zope/app/container/browser/contents.pt:20
-#: src/zope/app/container/browser/contents.pt:78
-#: src/zope/app/container/browser/contents.pt:96
-#: src/zope/app/container/browser/contents.pt:103
-#: src/zope/app/container/browser/contents.pt:110
-#: src/zope/app/container/browser/contents.pt:113
-#: src/zope/app/container/browser/contents.pt:116
-#: src/zope/app/container/browser/commontasks.pt:11
-#: src/zope/app/container/browser/commontasks.pt:21
-#: src/zope/app/container/browser/commontasks.pt:31
-#: src/zope/app/container/browser/index.pt:45
-#: src/zope/app/container/browser/index.pt:52
-#: src/zope/app/container/browser/index.pt:54
-#: src/zope/app/container/browser/index.pt:56
-#: src/zope/app/container/browser/add.pt:9
-#: src/zope/app/container/browser/add.pt:26
-#: src/zope/app/container/browser/add.pt:28
-#: src/zope/app/securitypolicy/browser/manage_roleform.pt:6
-#: src/zope/app/securitypolicy/browser/manage_roleform.pt:16
-#: src/zope/app/securitypolicy/browser/manage_roleform.pt:40
-#: src/zope/app/securitypolicy/browser/manage_roleform.pt:53
-#: src/zope/app/securitypolicy/browser/manage_permissionform.pt:34
-#: src/zope/app/securitypolicy/browser/manage_permissionform.pt:74
-#: src/zope/app/securitypolicy/browser/manage_access.pt:16
-#: src/zope/app/securitypolicy/browser/manage_access.pt:42
-#: src/zope/app/securitypolicy/browser/manage_access.pt:61
-#: src/zope/app/securitypolicy/browser/granting.pt:6
-#: src/zope/app/securitypolicy/browser/granting.pt:35
-#: src/zope/app/securitypolicy/browser/granting.pt:61
-#: src/zope/app/component/browser/site_management.pt:10
-#: src/zope/app/component/browser/site_management.pt:28
-#: src/zope/app/component/browser/site_management.pt:33
-#: src/zope/app/component/browser/site_management.pt:53
-#: src/zope/app/component/browser/site_management.pt:55
-#: src/zope/app/component/browser/site_management.pt:100
-#: src/zope/app/form/browser/display.pt:9
-#: src/zope/app/form/browser/editwizard.pt:14
-#: src/zope/app/form/browser/add.pt:13 src/zope/app/form/browser/add.pt:19
-#: src/zope/app/form/browser/edit.pt:14 src/zope/app/form/browser/edit.pt:20
-msgid "${DYNAMIC_CONTENT}"
-msgstr ""
 
 #: src/zope/app/cache/browser/cacheableedit.pt:6
 msgid "This edit form allows you to associate a cache with this object."
@@ -1562,7 +1487,7 @@ msgstr "Champ de type Texte"
 
 #: src/zope/app/catalog/interfaces.py:64 src/zope/app/catalog/text.py:33
 #: src/zope/app/component/metadirectives.py:155
-#: src/zope/app/component/metadirectives.py:461
+#: src/zope/app/component/metadirectives.py:483
 #, fuzzy
 msgid "Interface"
 msgstr "Interface:"
@@ -1854,7 +1779,7 @@ msgstr ""
 
 #: src/zope/app/component/interfaces/__init__.py:126
 #: src/zope/app/component/interfaces/__init__.py:172
-#: src/zope/app/component/metadirectives.py:280
+#: src/zope/app/component/metadirectives.py:302
 msgid "Provided interface"
 msgstr "Interface fournie"
 
@@ -1864,7 +1789,7 @@ msgstr "L'Interface fournie"
 
 #: src/zope/app/component/interfaces/__init__.py:133
 #: src/zope/app/component/metadirectives.py:201
-#: src/zope/app/component/metadirectives.py:286
+#: src/zope/app/component/metadirectives.py:308
 #: src/zope/app/schema/browser/schema_edit.pt:37
 #: src/zope/app/workflow/browser/instancecontainer_index.pt:20
 #: src/zope/app/workflow/browser/instancecontainer_main.pt:19
@@ -1977,7 +1902,7 @@ msgid ""
 msgstr ""
 
 #: src/zope/app/component/metadirectives.py:145
-#: src/zope/app/component/metadirectives.py:496
+#: src/zope/app/component/metadirectives.py:518
 #: src/zope/app/presentation/interfaces.py:31
 msgid "Request type"
 msgstr "Type de requête"
@@ -2001,13 +1926,13 @@ msgstr ""
 
 # Default: "Interface"
 #: src/zope/app/component/metadirectives.py:178
-#: src/zope/app/component/metadirectives.py:240
+#: src/zope/app/component/metadirectives.py:251
 #, fuzzy
 msgid "Interface the component provides"
 msgstr "Interface"
 
 #: src/zope/app/component/metadirectives.py:179
-#: src/zope/app/component/metadirectives.py:241
+#: src/zope/app/component/metadirectives.py:252
 msgid ""
 "This attribute specifes the interface the adapter instance must provide."
 msgstr ""
@@ -2017,7 +1942,7 @@ msgid "Specifications to be adapted"
 msgstr ""
 
 #: src/zope/app/component/metadirectives.py:186
-#: src/zope/app/component/metadirectives.py:248
+#: src/zope/app/component/metadirectives.py:259
 msgid "This should be a list of interfaces or classes"
 msgstr ""
 
@@ -2033,7 +1958,7 @@ msgid ""
 msgstr ""
 
 #: src/zope/app/component/metadirectives.py:209
-#: src/zope/app/component/metadirectives.py:263
+#: src/zope/app/component/metadirectives.py:274
 #, fuzzy
 msgid "Trusted"
 msgstr "Traduire"
@@ -2050,33 +1975,49 @@ msgid ""
 "        "
 msgstr ""
 
-#: src/zope/app/component/metadirectives.py:228
+#: src/zope/app/component/metadirectives.py:223
+#: src/zope/app/component/metadirectives.py:288
+#, fuzzy
+msgid "Locate"
+msgstr "Eléments De Locale"
+
+#: src/zope/app/component/metadirectives.py:224
+#: src/zope/app/component/metadirectives.py:289
+msgid ""
+"Make the adapter a locatable adapter\n"
+"\n"
+"        Located adapter should be used if a non-public permission\n"
+"        is used.\n"
+"        "
+msgstr ""
+
+#: src/zope/app/component/metadirectives.py:239
 msgid "Subscriber factory"
 msgstr ""
 
-#: src/zope/app/component/metadirectives.py:229
+#: src/zope/app/component/metadirectives.py:240
 msgid "A factory used to create the subscriber instance."
 msgstr ""
 
-#: src/zope/app/component/metadirectives.py:234
+#: src/zope/app/component/metadirectives.py:245
 #, fuzzy
 msgid "Handler"
 msgstr "Gestionnaire:"
 
-#: src/zope/app/component/metadirectives.py:235
+#: src/zope/app/component/metadirectives.py:246
 msgid "A callable object that handles events."
 msgstr ""
 
-#: src/zope/app/component/metadirectives.py:247
+#: src/zope/app/component/metadirectives.py:258
 msgid "Interfaces or classes that this subscriber depends on"
 msgstr ""
 
-#: src/zope/app/component/metadirectives.py:257
+#: src/zope/app/component/metadirectives.py:268
 msgid ""
 "This subscriber is only available, if the principal has this permission."
 msgstr ""
 
-#: src/zope/app/component/metadirectives.py:264
+#: src/zope/app/component/metadirectives.py:275
 msgid ""
 "Make the subscriber a trusted subscriber\n"
 "\n"
@@ -2088,44 +2029,44 @@ msgid ""
 "        "
 msgstr ""
 
-#: src/zope/app/component/metadirectives.py:281
+#: src/zope/app/component/metadirectives.py:303
 #, fuzzy
 msgid "Interface provided by the utility."
 msgstr "L'Interface délivrée avec l'Utilitaire"
 
-#: src/zope/app/component/metadirectives.py:287
+#: src/zope/app/component/metadirectives.py:309
 msgid ""
 "Name of the registration.  This is used by application code when locating a "
 "utility."
 msgstr ""
 
-#: src/zope/app/component/metadirectives.py:296
+#: src/zope/app/component/metadirectives.py:318
 #, fuzzy
 msgid "Component to be used"
 msgstr "Chemin De Composant"
 
-#: src/zope/app/component/metadirectives.py:301
-#: src/zope/app/component/metadirectives.py:470
+#: src/zope/app/component/metadirectives.py:323
+#: src/zope/app/component/metadirectives.py:492
 msgid "ID"
 msgstr ""
 
-#: src/zope/app/component/metadirectives.py:307
-#: src/zope/app/component/metadirectives.py:480
+#: src/zope/app/component/metadirectives.py:329
+#: src/zope/app/component/metadirectives.py:502
 msgid ""
 "Text suitable for use in the 'add content' menu of a management interface"
 msgstr ""
 
-#: src/zope/app/component/metadirectives.py:314
-#: src/zope/app/component/metadirectives.py:487
+#: src/zope/app/component/metadirectives.py:336
+#: src/zope/app/component/metadirectives.py:509
 msgid "Longer narrative description of what this factory does"
 msgstr ""
 
-#: src/zope/app/component/metadirectives.py:340
+#: src/zope/app/component/metadirectives.py:362
 #, fuzzy
 msgid "The interface this view is the default for."
 msgstr "Spécifier l'Interface à laquelle est liée cet élément de menu."
 
-#: src/zope/app/component/metadirectives.py:341
+#: src/zope/app/component/metadirectives.py:363
 msgid ""
 "\n"
 "        Specifies the interface for which the default view is declared. All\n"
@@ -2135,19 +2076,14 @@ msgid ""
 "        for all objects."
 msgstr ""
 
-#: src/zope/app/component/metadirectives.py:356
+#: src/zope/app/component/metadirectives.py:378
 #, fuzzy
 msgid "The layer the resource is in."
 msgstr "La Couche Thème pour laquelle la vue est enregistrée"
 
-#: src/zope/app/component/metadirectives.py:367
+#: src/zope/app/component/metadirectives.py:389
 msgid "View attributes that are also allowed if user has permission."
 msgstr ""
-
-#: src/zope/app/component/metadirectives.py:388
-#, fuzzy
-msgid "One or more interfaces"
-msgstr "Supprimer Interfaces:"
 
 #: src/zope/app/component/metadirectives.py:39
 #, fuzzy
@@ -2161,47 +2097,52 @@ msgid ""
 "be left blank."
 msgstr ""
 
-#: src/zope/app/component/metadirectives.py:400
+#: src/zope/app/component/metadirectives.py:410
+#, fuzzy
+msgid "One or more interfaces"
+msgstr "Supprimer Interfaces:"
+
+#: src/zope/app/component/metadirectives.py:422
 msgid ""
 "\n"
 "        Specifies the permission by id that will be required to\n"
 "        access or mutate the attributes and methods specified."
 msgstr ""
 
-#: src/zope/app/component/metadirectives.py:407
+#: src/zope/app/component/metadirectives.py:429
 #, fuzzy
 msgid "Attributes and methods"
 msgstr "Attributs/Champs"
 
-#: src/zope/app/component/metadirectives.py:408
+#: src/zope/app/component/metadirectives.py:430
 msgid "This is a list of attributes and methods that can be accessed."
 msgstr ""
 
-#: src/zope/app/component/metadirectives.py:415
+#: src/zope/app/component/metadirectives.py:437
 msgid "Attributes that can be set"
 msgstr ""
 
-#: src/zope/app/component/metadirectives.py:416
+#: src/zope/app/component/metadirectives.py:438
 msgid "This is a list of attributes that can be modified/mutated."
 msgstr ""
 
-#: src/zope/app/component/metadirectives.py:424
+#: src/zope/app/component/metadirectives.py:446
 msgid "The listed interfaces' methods and attributes can be accessed."
 msgstr ""
 
-#: src/zope/app/component/metadirectives.py:431
+#: src/zope/app/component/metadirectives.py:453
 msgid "The attributes specified by the schema can be set"
 msgstr ""
 
-#: src/zope/app/component/metadirectives.py:432
+#: src/zope/app/component/metadirectives.py:454
 msgid "The listed schemas' properties can be modified/mutated."
 msgstr ""
 
-#: src/zope/app/component/metadirectives.py:439
+#: src/zope/app/component/metadirectives.py:461
 msgid "Configure like this class"
 msgstr ""
 
-#: src/zope/app/component/metadirectives.py:440
+#: src/zope/app/component/metadirectives.py:462
 msgid ""
 "\n"
 "        This argument says that this content class should be configured in "
@@ -2211,24 +2152,16 @@ msgid ""
 msgstr ""
 
 # Default: "Attributes"
-#: src/zope/app/component/metadirectives.py:455
+#: src/zope/app/component/metadirectives.py:477
 #: src/zope/app/apidoc/codemodule/browser/function_index.pt:32
 msgid "Attributes"
 msgstr "Attributs"
 
-#: src/zope/app/component/metadirectives.py:471
-msgid ""
-"\n"
-"        the identifier for this factory in the ZMI factory\n"
-"        identification scheme.  If not given, defaults to the literal\n"
-"        string given as the content directive's 'class' attribute."
-msgstr ""
-
 #: src/zope/app/component/metadirectives.py:48
 #: src/zope/app/component/metadirectives.py:77
 #: src/zope/app/component/metadirectives.py:194
-#: src/zope/app/component/metadirectives.py:256
-#: src/zope/app/component/metadirectives.py:399
+#: src/zope/app/component/metadirectives.py:267
+#: src/zope/app/component/metadirectives.py:421
 #: src/zope/app/presentation/interfaces.py:108
 #: src/zope/app/security/browser/configure.zcml:61
 #: src/zope/app/security/browser/configure.zcml:76
@@ -2241,12 +2174,20 @@ msgstr "Permission"
 msgid "Permission required to use this component."
 msgstr "La permission nécessaire à l'utilisation du composant"
 
-#: src/zope/app/component/metadirectives.py:501
+#: src/zope/app/component/metadirectives.py:493
+msgid ""
+"\n"
+"        the identifier for this factory in the ZMI factory\n"
+"        identification scheme.  If not given, defaults to the literal\n"
+"        string given as the content directive's 'class' attribute."
+msgstr ""
+
+#: src/zope/app/component/metadirectives.py:523
 msgid "Layer"
 msgstr "Couche"
 
 #: src/zope/app/component/metadirectives.py:54
-#: src/zope/app/component/metadirectives.py:324
+#: src/zope/app/component/metadirectives.py:346
 #, fuzzy
 msgid "Factory"
 msgstr "Usines"
@@ -2275,7 +2216,7 @@ msgid "The permission needed to use the view."
 msgstr "La permission requise pour utiliser la vue"
 
 #: src/zope/app/component/metadirectives.py:83
-#: src/zope/app/component/metadirectives.py:378
+#: src/zope/app/component/metadirectives.py:400
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:7
 #, fuzzy
 msgid "Class"
@@ -2300,7 +2241,7 @@ msgid ""
 msgstr ""
 
 #: src/zope/app/component/metadirectives.py:98
-#: src/zope/app/component/metadirectives.py:361
+#: src/zope/app/component/metadirectives.py:383
 msgid "Interface that is also allowed if user has permission."
 msgstr ""
 
@@ -2362,19 +2303,19 @@ msgstr "Annuler Conteneur"
 msgid "Modified"
 msgstr "Modifié"
 
-#: src/zope/app/container/browser/contents.py:253
+#: src/zope/app/container/browser/contents.py:254
 msgid "You didn't specify any ids to remove."
 msgstr "Vous n'avez pas spécifié d'identificateurs à effacer."
 
-#: src/zope/app/container/browser/contents.py:265
+#: src/zope/app/container/browser/contents.py:266
 msgid "You didn't specify any ids to copy."
 msgstr "Vous n'avez pas spécifié d'identificateurs à copier"
 
-#: src/zope/app/container/browser/contents.py:285
+#: src/zope/app/container/browser/contents.py:286
 msgid "You didn't specify any ids to cut."
 msgstr "Vous n'avez pas spécifié d'identificateurs à couper"
 
-#: src/zope/app/container/browser/contents.py:67
+#: src/zope/app/container/browser/contents.py:68
 msgid "You didn't specify any ids to rename."
 msgstr "Vous n'avez pas spécifié d'identificateurs à renommer"
 
@@ -2675,7 +2616,7 @@ msgid "There are ${num_errors} input errors."
 msgstr "Il y a ${num_errors} erreurs d'encodage."
 
 #: src/zope/app/demo/widget/browser/popup.pt:65
-#: src/zope/app/file/browser/file_upload.pt:51
+#: src/zope/app/file/browser/file_upload.pt:48
 #: src/zope/app/file/browser/file_add.pt:46
 #: src/zope/app/dublincore/browser/edit.pt:50
 #: src/zope/app/error/browser/error.pt:53
@@ -3174,7 +3115,7 @@ msgstr "Charger une Image"
 msgid "Change a file"
 msgstr "Modifier un fichier"
 
-#: src/zope/app/file/browser/file.py:179
+#: src/zope/app/file/browser/file.py:181
 #: src/zope/app/form/browser/editview.py:114
 msgid "Updated on ${date_time}"
 msgstr "Mis à jour le ${date_time}"
@@ -3198,11 +3139,7 @@ msgstr "Nom de l'objet"
 msgid "Add a File"
 msgstr "Un Fichier"
 
-#: src/zope/app/file/browser/file_upload.pt:29
-msgid "(currently ${content-type})"
-msgstr ""
-
-#: src/zope/app/file/browser/file_upload.pt:53
+#: src/zope/app/file/browser/file_upload.pt:50
 #: src/zope/app/i18n/browser/synchronize.pt:118
 msgid "update-button"
 msgstr "Mettre à jour"
@@ -3260,13 +3197,13 @@ msgid "The content type identifies the type of data."
 msgstr "Le type de contenu identifie le type de données."
 
 #: src/zope/app/file/interfaces.py:35
-#: src/zope/app/file/browser/file_upload.pt:36
+#: src/zope/app/file/browser/file_upload.pt:33
 #: src/zope/app/file/browser/file_add.pt:31
 msgid "Data"
 msgstr "Données"
 
 #: src/zope/app/file/interfaces.py:36
-#: src/zope/app/file/browser/file_upload.pt:36
+#: src/zope/app/file/browser/file_upload.pt:33
 #: src/zope/app/file/browser/file_add.pt:31
 msgid "The actual content of the object."
 msgstr "Le contenu de l'objet."
@@ -3290,7 +3227,7 @@ msgstr "Dossier"
 msgid "Minimal folder"
 msgstr "Dossier minimum"
 
-#: src/zope/app/form/browser/add.py:62
+#: src/zope/app/form/browser/add.py:63
 #: src/zope/app/form/browser/editview.py:104
 #: src/zope/app/form/browser/formview.py:75
 #: src/zope/app/schema/browser/__init__.py:53
@@ -5588,7 +5525,7 @@ msgstr ""
 msgid "Widgets"
 msgstr ""
 
-#: src/zope/app/traversing/browser/absoluteurl.py:28
+#: src/zope/app/traversing/browser/absoluteurl.py:29
 msgid ""
 "There isn't enough context to get URL information. This is probably due to a "
 "bug in setting up location information."
@@ -5730,11 +5667,11 @@ msgstr ""
 "Ce formulaire vous permet d'annuler vos dernières transactions. Vous ne "
 "visualisez que les transactions que vous avez initiées."
 
-#: src/zope/app/versioncontrol/interfaces.py:197
+#: src/zope/app/versioncontrol/interfaces.py:205
 msgid "time value indicating the when the bookkeeping information was created"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:203
+#: src/zope/app/versioncontrol/interfaces.py:211
 msgid ""
 "\n"
 "        Id of the version history related to the version controlled "
@@ -5744,67 +5681,67 @@ msgid ""
 "        "
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:212
+#: src/zope/app/versioncontrol/interfaces.py:220
 msgid "version id that the version controlled resource is based upon"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:216
+#: src/zope/app/versioncontrol/interfaces.py:224
 msgid "status of the version controlled resource"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:218
+#: src/zope/app/versioncontrol/interfaces.py:226
 msgid "Checked out"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:219
+#: src/zope/app/versioncontrol/interfaces.py:227
 msgid "Checked in"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:226
+#: src/zope/app/versioncontrol/interfaces.py:234
 msgid ""
 "id of the effective user at the time the bookkeeping information was created"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:240
+#: src/zope/app/versioncontrol/interfaces.py:248
 msgid "time that the log entry was created"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:243
+#: src/zope/app/versioncontrol/interfaces.py:251
 msgid "version id of the resource related to the log entry"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:246
+#: src/zope/app/versioncontrol/interfaces.py:254
 msgid "the action that was taken"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:248
+#: src/zope/app/versioncontrol/interfaces.py:256
 msgid "Checkout"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:249
+#: src/zope/app/versioncontrol/interfaces.py:257
 msgid "Checkin"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:250
+#: src/zope/app/versioncontrol/interfaces.py:258
 msgid "Uncheckout"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:251
+#: src/zope/app/versioncontrol/interfaces.py:259
 #, fuzzy
 msgid "Update"
 msgstr "Mis à jour"
 
-#: src/zope/app/versioncontrol/interfaces.py:254
+#: src/zope/app/versioncontrol/interfaces.py:262
 msgid ""
 "Message provided by the user at the time of the action.  This may be empty."
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:258
+#: src/zope/app/versioncontrol/interfaces.py:266
 #, fuzzy
 msgid "id of the user causing the audited action"
 msgstr "Fin de la série (à l'exclusion de la valeur elle-même)"
 
-#: src/zope/app/versioncontrol/interfaces.py:261
+#: src/zope/app/versioncontrol/interfaces.py:269
 msgid "path to the object upon which the action was taken"
 msgstr ""
 
@@ -7494,9 +7431,6 @@ msgstr "Identificateur de la permission."
 
 #~ msgid "Action"
 #~ msgstr "Action"
-
-#~ msgid "Local Items"
-#~ msgstr "Eléments De Locale"
 
 #~ msgid "Inherited Items"
 #~ msgstr "Eléments Hérités"
