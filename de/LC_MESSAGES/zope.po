@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: zope\n"
-"POT-Creation-Date: Thu May 26 15:39:18 2005\n"
+"POT-Creation-Date: Mon May 30 13:22:09 2005\n"
 "PO-Revision-Date: 2005-05-20 22:14+0100\n"
 "Last-Translator: Egon Frerich <e.frerich@nord-com.net>\n"
 "Language-Team: German <<zope3-dev@zope.org>>\n"
@@ -712,6 +712,10 @@ msgstr "Besondere Adapter"
 #: src/zope/app/apidoc/ifacemodule/index.pt:88
 msgid "There are no specific adapters registered for this interface."
 msgstr "Es sind keine besonderen Adapter für diese Schnittstelle registriert."
+
+#: src/zope/app/apidoc/ifacemodule/menu.pt:12
+msgid "name only search"
+msgstr ""
 
 #: src/zope/app/apidoc/ifacemodule/menu.pt:35
 msgid ""
@@ -2381,19 +2385,19 @@ msgstr "Abbrechen"
 msgid "Modified"
 msgstr "Modifiziert am"
 
-#: src/zope/app/container/browser/contents.py:254
+#: src/zope/app/container/browser/contents.py:253
 msgid "You didn't specify any ids to remove."
 msgstr "Sie haben keine IDs zum Löschen angegeben."
 
-#: src/zope/app/container/browser/contents.py:266
+#: src/zope/app/container/browser/contents.py:265
 msgid "You didn't specify any ids to copy."
 msgstr "Sie haben keine IDs zum Kopieren angegeben."
 
-#: src/zope/app/container/browser/contents.py:286
+#: src/zope/app/container/browser/contents.py:285
 msgid "You didn't specify any ids to cut."
 msgstr "Sie haben keine IDs zum Ausschneiden angegeben."
 
-#: src/zope/app/container/browser/contents.py:68
+#: src/zope/app/container/browser/contents.py:67
 msgid "You didn't specify any ids to rename."
 msgstr "Sie haben keine IDs zum Umbenennen angegeben."
 
@@ -2440,6 +2444,15 @@ msgstr "Namen dürfen nicht mit '+' or '@' beginnen, noch '/' enthalten."
 #: src/zope/app/container/contained.py:720
 msgid "The given name is already being used"
 msgstr "Der gegebene Name existiert bereits."
+
+#: src/zope/app/container/dependency.py:27
+msgid ""
+"\n"
+"Removal of object (${object}) which has dependents (${dependents})\n"
+"is not possible !\n"
+"\n"
+"You must deactivate this object before trying to remove it.\n"
+msgstr ""
 
 #: src/zope/app/container/size.py:40
 msgid "1 item"
@@ -5536,7 +5549,7 @@ msgstr "Anzeigeform"
 msgid "Widgets"
 msgstr "Widgets"
 
-#: src/zope/app/traversing/browser/absoluteurl.py:29
+#: src/zope/app/traversing/browser/absoluteurl.py:28
 msgid ""
 "There isn't enough context to get URL information. This is probably due to a "
 "bug in setting up location information."
@@ -5676,11 +5689,11 @@ msgstr ""
 "rückgängig zu machen. Sie betrachten gerade die Transaktionen, die von Ihnen "
 "ausgegangen sind."
 
-#: src/zope/app/versioncontrol/interfaces.py:205
+#: src/zope/app/versioncontrol/interfaces.py:181
 msgid "time value indicating the when the bookkeeping information was created"
 msgstr "Zeitpunkt, zu dem die Protokolldaten erzeugt wurden"
 
-#: src/zope/app/versioncontrol/interfaces.py:211
+#: src/zope/app/versioncontrol/interfaces.py:187
 msgid ""
 "\n"
 "        Id of the version history related to the version controlled "
@@ -5695,69 +5708,69 @@ msgstr ""
 "    Wenn sie nicht gesetzt ist (ist `None`), ...\n"
 "    "
 
-#: src/zope/app/versioncontrol/interfaces.py:220
+#: src/zope/app/versioncontrol/interfaces.py:196
 msgid "version id that the version controlled resource is based upon"
 msgstr "Versionskennung, auf der die versionsgeführte Ressource beruht"
 
-#: src/zope/app/versioncontrol/interfaces.py:224
+#: src/zope/app/versioncontrol/interfaces.py:200
 msgid "status of the version controlled resource"
 msgstr "Status der versionsgeführten Ressource"
 
-#: src/zope/app/versioncontrol/interfaces.py:226
+#: src/zope/app/versioncontrol/interfaces.py:202
 msgid "Checked out"
 msgstr "Herausgeholt"
 
-#: src/zope/app/versioncontrol/interfaces.py:227
+#: src/zope/app/versioncontrol/interfaces.py:203
 msgid "Checked in"
 msgstr "Eingebucht"
 
-#: src/zope/app/versioncontrol/interfaces.py:234
+#: src/zope/app/versioncontrol/interfaces.py:210
 msgid ""
 "id of the effective user at the time the bookkeeping information was created"
 msgstr ""
 "Kennung des tatsächlichen Benutzers zu dem Zeitpunkt, als die Protokolldaten "
 "erzeugt wurden"
 
-#: src/zope/app/versioncontrol/interfaces.py:248
+#: src/zope/app/versioncontrol/interfaces.py:224
 msgid "time that the log entry was created"
 msgstr "Zeitpunkt, an dem der Logbucheintrag erzeugt wurde"
 
-#: src/zope/app/versioncontrol/interfaces.py:251
+#: src/zope/app/versioncontrol/interfaces.py:227
 msgid "version id of the resource related to the log entry"
 msgstr "Versionskennung der Ressource, auf die sich der Logbucheintrag bezieht"
 
-#: src/zope/app/versioncontrol/interfaces.py:254
+#: src/zope/app/versioncontrol/interfaces.py:230
 msgid "the action that was taken"
 msgstr "Die ausgeführte Aktion"
 
-#: src/zope/app/versioncontrol/interfaces.py:256
+#: src/zope/app/versioncontrol/interfaces.py:232
 msgid "Checkout"
 msgstr "Herausholen"
 
-#: src/zope/app/versioncontrol/interfaces.py:257
+#: src/zope/app/versioncontrol/interfaces.py:233
 msgid "Checkin"
 msgstr "Einbuchen"
 
-#: src/zope/app/versioncontrol/interfaces.py:258
+#: src/zope/app/versioncontrol/interfaces.py:234
 msgid "Uncheckout"
 msgstr "Änderungen zurück"
 
-#: src/zope/app/versioncontrol/interfaces.py:259
+#: src/zope/app/versioncontrol/interfaces.py:235
 msgid "Update"
 msgstr "Aktualisiert"
 
-#: src/zope/app/versioncontrol/interfaces.py:262
+#: src/zope/app/versioncontrol/interfaces.py:238
 msgid ""
 "Message provided by the user at the time of the action.  This may be empty."
 msgstr ""
 "Vom Benutzerzum Zeitpunkt der Aktion bereitgestellte Nachricht. Sie kann "
 "leer sein."
 
-#: src/zope/app/versioncontrol/interfaces.py:266
+#: src/zope/app/versioncontrol/interfaces.py:242
 msgid "id of the user causing the audited action"
 msgstr "Kennung des Benutzers, der die geprüfte Aktion verursachte"
 
-#: src/zope/app/versioncontrol/interfaces.py:269
+#: src/zope/app/versioncontrol/interfaces.py:245
 msgid "path to the object upon which the action was taken"
 msgstr "Pfad zum Objekt, auf das sich die Aktion bezog"
 
