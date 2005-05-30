@@ -16,7 +16,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Development/Revision: 29457\n"
-"POT-Creation-Date: Thu May 26 15:39:18 2005\n"
+"POT-Creation-Date: Mon May 30 13:22:09 2005\n"
 "PO-Revision-Date: 2005-04-16 22:34+0300\n"
 "Last-Translator: Dmitry Vasiliev <dima@hlabs.spb.ru>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
@@ -687,6 +687,10 @@ msgstr "Конкретные адаптеры"
 #: src/zope/app/apidoc/ifacemodule/index.pt:88
 msgid "There are no specific adapters registered for this interface."
 msgstr "Для данного интерфейса конкретные адаптеры не зарегистрированны."
+
+#: src/zope/app/apidoc/ifacemodule/menu.pt:12
+msgid "name only search"
+msgstr "поиск только по именам"
 
 #: src/zope/app/apidoc/ifacemodule/menu.pt:35
 msgid "Note: These are only interfaces that are registered with the site manager."
@@ -1515,11 +1519,11 @@ msgstr "Создать сайт"
 
 #: src/zope/app/component/browser/configure.zcml:152
 msgid "Manage Site"
-msgstr "Сайты"
+msgstr "Сайт"
 
 #: src/zope/app/component/browser/configure.zcml:166
 msgid "Visit default folder"
-msgstr "Сайт по умолчанию"
+msgstr "Папка по умолчанию"
 
 #: src/zope/app/component/browser/configure.zcml:173
 msgid "Software"
@@ -1527,7 +1531,7 @@ msgstr "Программное обеспечение"
 
 #: src/zope/app/component/browser/configure.zcml:181
 msgid "Add Site Management Folder"
-msgstr "Добавить сайт"
+msgstr "Добавить папку"
 
 #: src/zope/app/component/browser/configure.zcml:200
 msgid "Site Management"
@@ -1968,7 +1972,9 @@ msgid ""
 "        Located adapter should be used if a non-public permission\n"
 "        is used.\n"
 "        "
-msgstr "Сделать адаптер с местоположением. Такие адаптеры должны быть использованы если используются не публичные права доступа."
+msgstr ""
+"Сделать адаптер с местоположением. Такие адаптеры должны быть использованы "
+"если используются не публичные права доступа."
 
 #: src/zope/app/component/metadirectives.py:239
 msgid "Subscriber factory"
@@ -2189,7 +2195,10 @@ msgid ""
 "Python name of a factory which can create the implementation object.  This "
 "must identify an object in a module using the full dotted name. If "
 "specified, the ``component`` field must be left blank."
-msgstr "Python имя фабрики которая создает реализуемый объект. Имя должно идентифицировать объект в модуле используя полный Python путь. Если определено поле ``component`` должно быть оставлено пустым."
+msgstr ""
+"Python имя фабрики которая создает реализуемый объект. Имя должно "
+"идентифицировать объект в модуле используя полный Python путь. Если "
+"определено поле ``component`` должно быть оставлено пустым."
 
 #: src/zope/app/component/metadirectives.py:67
 msgid "Specifications of the objects to be viewed"
@@ -2249,8 +2258,10 @@ msgid ""
 "        whitespace."
 msgstr ""
 "\n"
-"По умолчанию 'permission' (права доступа) действуют только для просмотра представления и возможных дочерних представлений. Указывая данный атрибут "
-"возможно расширить права доступа на все описанное в данном интерфейсе. Несколько интерфейсов могут быть указаны, разделенные пробелами."
+"По умолчанию 'permission' (права доступа) действуют только для просмотра "
+"представления и возможных дочерних представлений. Указывая данный атрибут "
+"возможно расширить права доступа на все описанное в данном интерфейсе. "
+"Несколько интерфейсов могут быть указаны, разделенные пробелами."
 
 #: src/zope/app/component/vocabulary.py:274
 msgid "(unnamed utility)"
@@ -2304,19 +2315,19 @@ msgstr "Отказаться"
 msgid "Modified"
 msgstr "Изменен"
 
-#: src/zope/app/container/browser/contents.py:254
+#: src/zope/app/container/browser/contents.py:253
 msgid "You didn't specify any ids to remove."
 msgstr "Вы не выбрали элементы для удаления."
 
-#: src/zope/app/container/browser/contents.py:266
+#: src/zope/app/container/browser/contents.py:265
 msgid "You didn't specify any ids to copy."
 msgstr "Вы не выбрали элементы для копирования."
 
-#: src/zope/app/container/browser/contents.py:286
+#: src/zope/app/container/browser/contents.py:285
 msgid "You didn't specify any ids to cut."
 msgstr "Вы не выбрали элементы для вырезания."
 
-#: src/zope/app/container/browser/contents.py:68
+#: src/zope/app/container/browser/contents.py:67
 msgid "You didn't specify any ids to rename."
 msgstr "Вы не выбрали элементы для переименования."
 
@@ -2362,6 +2373,18 @@ msgstr "Имена не могут начинаться с '+' или '@', ил�
 #: src/zope/app/container/contained.py:720
 msgid "The given name is already being used"
 msgstr "Данное название уже используется"
+
+#: src/zope/app/container/dependency.py:27
+msgid ""
+"\n"
+"Removal of object (${object}) which has dependents (${dependents})\n"
+"is not possible !\n"
+"\n"
+"You must deactivate this object before trying to remove it.\n"
+msgstr ""
+"\n"
+"Удаление объекта (${object}) который имеет зависимых (${dependents}) не "
+"возможно! Необходимо деактивировать объект перед удалением.\n"
 
 #: src/zope/app/container/size.py:40
 msgid "1 item"
@@ -2921,7 +2944,7 @@ msgstr "Настройки"
 
 #: src/zope/app/error/browser/configure.zcml:35
 msgid "Error Reporting Utility for Logging Errors"
-msgstr ""
+msgstr "Утилита журналирования ошибок для сбора информации об ошибках"
 
 #: src/zope/app/error/browser/configure.zcml:35
 msgid "Error Logging Utility"
@@ -2930,10 +2953,12 @@ msgstr "Утилита журналирования ошибок"
 #: src/zope/app/error/browser/configure.zcml:41
 msgid "Component to record all uncaught errors and exceptions."
 msgstr ""
+"Компонент для сохранения информации обо всех не перехваченных ошибках и "
+"исключениях."
 
 #: src/zope/app/error/browser/configure.zcml:41
 msgid "Error Reporting"
-msgstr ""
+msgstr "Журналирование ошибок"
 
 #: src/zope/app/error/browser/error.pt:11
 msgid "This page lists the exceptions that have occurred in this site recently."
@@ -3495,7 +3520,7 @@ msgstr "Переводы"
 #: src/zope/app/i18n/browser/configure.zcml:35
 #: src/zope/app/workflow/browser/configure.zcml:15
 msgid "Import/Export"
-msgstr "Импортировать/Экпортировать"
+msgstr "Импорт/Экспорт"
 
 #: src/zope/app/i18n/browser/configure.zcml:48
 msgid "Synchronize"
@@ -3525,7 +3550,7 @@ msgstr "Хранимый домен переводов"
 
 #: src/zope/app/i18n/browser/exportimport.pt:11
 msgid "Import and Export Messages"
-msgstr "Импортирование и экспортирование сообщений"
+msgstr "Импорт и экспорт сообщений"
 
 #: src/zope/app/i18n/browser/exportimport.pt:13
 msgid "Here you can export and import messages from your Translation Domain."
@@ -5412,7 +5437,7 @@ msgstr "Оформление"
 msgid "Widgets"
 msgstr "Элементы управления"
 
-#: src/zope/app/traversing/browser/absoluteurl.py:29
+#: src/zope/app/traversing/browser/absoluteurl.py:28
 msgid ""
 "There isn't enough context to get URL information. This is probably due to a "
 "bug in setting up location information."
@@ -5552,11 +5577,11 @@ msgstr ""
 "Данная форма позволит Вам отменить ваши транзакции. Показаны только "
 "транзакции инициированные Вами."
 
-#: src/zope/app/versioncontrol/interfaces.py:205
+#: src/zope/app/versioncontrol/interfaces.py:181
 msgid "time value indicating the when the bookkeeping information was created"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:211
+#: src/zope/app/versioncontrol/interfaces.py:187
 msgid ""
 "\n"
 "        Id of the version history related to the version controlled "
@@ -5566,63 +5591,63 @@ msgid ""
 "        "
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:220
+#: src/zope/app/versioncontrol/interfaces.py:196
 msgid "version id that the version controlled resource is based upon"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:224
+#: src/zope/app/versioncontrol/interfaces.py:200
 msgid "status of the version controlled resource"
 msgstr "статус ресура под контролем версий"
 
-#: src/zope/app/versioncontrol/interfaces.py:226
+#: src/zope/app/versioncontrol/interfaces.py:202
 msgid "Checked out"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:227
+#: src/zope/app/versioncontrol/interfaces.py:203
 msgid "Checked in"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:234
+#: src/zope/app/versioncontrol/interfaces.py:210
 msgid "id of the effective user at the time the bookkeeping information was created"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:248
+#: src/zope/app/versioncontrol/interfaces.py:224
 msgid "time that the log entry was created"
 msgstr "время когда была создана данная запись лога"
 
-#: src/zope/app/versioncontrol/interfaces.py:251
+#: src/zope/app/versioncontrol/interfaces.py:227
 msgid "version id of the resource related to the log entry"
 msgstr "идентификатор версии ресурса относящегося к данной записи лога"
 
-#: src/zope/app/versioncontrol/interfaces.py:254
+#: src/zope/app/versioncontrol/interfaces.py:230
 msgid "the action that was taken"
 msgstr "произведенное действие"
 
-#: src/zope/app/versioncontrol/interfaces.py:256
+#: src/zope/app/versioncontrol/interfaces.py:232
 msgid "Checkout"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:257
+#: src/zope/app/versioncontrol/interfaces.py:233
 msgid "Checkin"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:258
+#: src/zope/app/versioncontrol/interfaces.py:234
 msgid "Uncheckout"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:259
+#: src/zope/app/versioncontrol/interfaces.py:235
 msgid "Update"
 msgstr "Обновить"
 
-#: src/zope/app/versioncontrol/interfaces.py:262
+#: src/zope/app/versioncontrol/interfaces.py:238
 msgid "Message provided by the user at the time of the action.  This may be empty."
 msgstr "Сообщение предоставленное пользователем в момент акции. Может быть пустым."
 
-#: src/zope/app/versioncontrol/interfaces.py:266
+#: src/zope/app/versioncontrol/interfaces.py:242
 msgid "id of the user causing the audited action"
 msgstr "Идентификатор пользователя инициировавшего действие проверки"
 
-#: src/zope/app/versioncontrol/interfaces.py:269
+#: src/zope/app/versioncontrol/interfaces.py:245
 msgid "path to the object upon which the action was taken"
 msgstr "путь к объекту над которым было произведено действие"
 
