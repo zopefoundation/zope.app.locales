@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zope X3 Pre-M4\n"
-"POT-Creation-Date: Mon May 30 13:22:09 2005\n"
+"POT-Creation-Date: Thu Jun  2 14:04:36 2005\n"
 "PO-Revision-Date: 2004-06-25 16:00+0100\n"
 "Last-Translator: Thierry Goyvaerts <Thierry.Goyvaerts@skynet.be>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope3.org>\n"
@@ -424,33 +424,33 @@ msgstr ""
 msgid "Zope 3 root."
 msgstr "Racine Zope 3."
 
-#: src/zope/app/apidoc/codemodule/interfaces.py:174
+#: src/zope/app/apidoc/codemodule/interfaces.py:185
 #, fuzzy
 msgid "Configuration Filename"
 msgstr "Configurer"
 
-#: src/zope/app/apidoc/codemodule/interfaces.py:175
+#: src/zope/app/apidoc/codemodule/interfaces.py:186
 #, fuzzy
 msgid "Path to the configuration file"
 msgstr "Le Chemin vers la Ressource"
 
-#: src/zope/app/apidoc/codemodule/interfaces.py:179
+#: src/zope/app/apidoc/codemodule/interfaces.py:190
 #, fuzzy
 msgid "Configuration Package"
 msgstr "Configurer"
 
-#: src/zope/app/apidoc/codemodule/interfaces.py:180
+#: src/zope/app/apidoc/codemodule/interfaces.py:191
 msgid ""
 "Specifies the package from which the configuration file will be\n"
 "        executed. If you do not specify the package, then the configuration\n"
 "        cannot be fully validated and improper ZCML files might be written."
 msgstr ""
 
-#: src/zope/app/apidoc/codemodule/interfaces.py:187
+#: src/zope/app/apidoc/codemodule/interfaces.py:198
 msgid "XML Root Element"
 msgstr ""
 
-#: src/zope/app/apidoc/codemodule/interfaces.py:188
+#: src/zope/app/apidoc/codemodule/interfaces.py:199
 msgid "XML element representing the configuration root."
 msgstr ""
 
@@ -948,11 +948,6 @@ msgstr "Vous avez arrêté le serveur."
 msgid "Domain"
 msgstr "Domaine"
 
-#: src/zope/app/applicationcontrol/browser/translationdomaincontrol.pt:24
-#: src/zope/app/i18n/browser/synchronize.pt:89
-msgid "Language"
-msgstr "Langage"
-
 #: src/zope/app/applicationcontrol/browser/translationdomaincontrol.pt:25
 msgid "Files"
 msgstr "Fichiers"
@@ -1333,16 +1328,6 @@ msgstr "Actuellement, cet objet utilise ${cache_id_or_url}."
 msgid "Cache name"
 msgstr "Nom du cache"
 
-#: src/zope/app/cache/browser/cacheableedit.pt:46
-#: src/zope/app/cache/browser/ramedit.pt:52
-#: src/zope/app/dublincore/browser/edit.pt:52
-#: src/zope/app/rdb/browser/rdbconnection.pt:29
-#: src/zope/app/error/browser/error_config.pt:47
-#: src/zope/app/securitypolicy/browser/manage_roleform.pt:67
-#: src/zope/app/securitypolicy/browser/manage_permissionform.pt:88
-msgid "save-changes-button"
-msgstr "Enregistrer les modifications"
-
 #: src/zope/app/cache/browser/cacheableedit.pt:48
 msgid "invalidate-cache-button"
 msgstr "Invalider Cache"
@@ -1454,7 +1439,7 @@ msgstr ""
 
 #: src/zope/app/catalog/browser/configure.zcml:7
 #: src/zope/app/catalog/browser/configure.zcml:14
-#: src/zope/app/catalog/configure.zcml:85
+#: src/zope/app/catalog/configure.zcml:87
 msgid "Catalog"
 msgstr ""
 
@@ -1475,19 +1460,19 @@ msgstr ""
 msgid "Text Index"
 msgstr "Champ de type Texte"
 
-#: src/zope/app/catalog/configure.zcml:81
-msgid "Indexes and Catalogs"
-msgstr ""
-
-#: src/zope/app/catalog/configure.zcml:93
-#, fuzzy
-msgid "Field Indexes"
-msgstr "Champ de type Ordonné"
-
-#: src/zope/app/catalog/configure.zcml:99
+#: src/zope/app/catalog/configure.zcml:101
 #, fuzzy
 msgid "Text Indexes"
 msgstr "Champ de type Texte"
+
+#: src/zope/app/catalog/configure.zcml:83
+msgid "Indexes and Catalogs"
+msgstr ""
+
+#: src/zope/app/catalog/configure.zcml:95
+#, fuzzy
+msgid "Field Indexes"
+msgstr "Champ de type Ordonné"
 
 #: src/zope/app/catalog/interfaces.py:64 src/zope/app/catalog/text.py:33
 #: src/zope/app/component/metadirectives.py:155
@@ -1582,10 +1567,6 @@ msgstr "Résumé"
 #: src/zope/app/component/browser/editregistration.pt:36
 msgid "(disabled)"
 msgstr "(hors service)"
-
-#: src/zope/app/component/browser/editregistration.pt:50
-msgid "remove-button"
-msgstr "Supprimer"
 
 #: src/zope/app/component/browser/registered.pt:19
 msgid "Add a registration for this object"
@@ -1986,7 +1967,6 @@ msgid "Locate"
 msgstr "Eléments De Locale"
 
 #: src/zope/app/component/metadirectives.py:224
-#: src/zope/app/component/metadirectives.py:289
 msgid ""
 "Make the adapter a locatable adapter\n"
 "\n"
@@ -2030,6 +2010,15 @@ msgid ""
 "        rather than getting an unproxied subscriber of security-proxied\n"
 "        objects, you get a security-proxied subscriber of unproxied\n"
 "        objects.\n"
+"        "
+msgstr ""
+
+#: src/zope/app/component/metadirectives.py:289
+msgid ""
+"Make the subscriber a locatable subscriber\n"
+"\n"
+"        Located subscribers should be used if a non-public permission\n"
+"        is used.\n"
 "        "
 msgstr ""
 
@@ -3198,6 +3187,8 @@ msgid " ${width}x${height}"
 msgstr " ${width}x${height}"
 
 #: src/zope/app/file/interfaces.py:27 src/zope/app/pythonpage/__init__.py:44
+#: src/zope/app/i18nfile/browser/file_edit.pt:32
+#: src/zope/app/i18nfile/browser/image_edit.pt:33
 #: src/zope/app/file/browser/file_upload.pt:16
 #: src/zope/app/file/browser/file_add.pt:16
 msgid "Content Type"
@@ -3210,6 +3201,8 @@ msgid "The content type identifies the type of data."
 msgstr "Le type de contenu identifie le type de données."
 
 #: src/zope/app/file/interfaces.py:35
+#: src/zope/app/i18nfile/browser/file_edit.pt:79
+#: src/zope/app/i18nfile/browser/image_edit.pt:80
 #: src/zope/app/file/browser/file_upload.pt:33
 #: src/zope/app/file/browser/file_add.pt:31
 msgid "Data"
@@ -3329,11 +3322,11 @@ msgid "vocabulary-missing-multiple-value-for-edit"
 msgstr "Valeur multiple manquante pour l'édition"
 
 # Default: "Remove selected items"
-#: src/zope/app/form/browser/sequencewidget.py:84
+#: src/zope/app/form/browser/sequencewidget.py:78
 msgid "remove-selected-items"
 msgstr "Supprimer les éléments sélectionnés"
 
-#: src/zope/app/form/browser/sequencewidget.py:91
+#: src/zope/app/form/browser/sequencewidget.py:85
 msgid "Add %s"
 msgstr "Ajouter %s"
 
@@ -3712,8 +3705,48 @@ msgstr "Un fichier qui supporte de multiple locales."
 msgid "A multi-locale version of an Image."
 msgstr "Une version multi-locale d'une Image."
 
+#: src/zope/app/i18nfile/browser/file_edit.pt:40
+#: src/zope/app/i18nfile/browser/image_edit.pt:41
+msgid "Default Language"
+msgstr "Langage par défaut"
+
+#: src/zope/app/i18nfile/browser/file_edit.pt:55
+#: src/zope/app/i18nfile/browser/image_edit.pt:56
+#: src/zope/app/applicationcontrol/browser/translationdomaincontrol.pt:24
+#: src/zope/app/i18n/browser/synchronize.pt:89
+msgid "Language"
+msgstr "Langage"
+
+#: src/zope/app/i18nfile/browser/file_edit.pt:67
+#: src/zope/app/i18nfile/browser/image_edit.pt:68
+msgid "show-button"
+msgstr "Afficher"
+
+#: src/zope/app/i18nfile/browser/file_edit.pt:69
+#: src/zope/app/i18nfile/browser/image_edit.pt:70
+#: src/zope/app/component/browser/editregistration.pt:50
+msgid "remove-button"
+msgstr "Supprimer"
+
+#: src/zope/app/i18nfile/browser/file_edit.pt:72
+#: src/zope/app/i18nfile/browser/image_edit.pt:73
+msgid "Add new language"
+msgstr "Ajouter un nouveau langage"
+
+#: src/zope/app/i18nfile/browser/file_edit.pt:88
+#: src/zope/app/i18nfile/browser/image_edit.pt:94
+#: src/zope/app/cache/browser/cacheableedit.pt:46
+#: src/zope/app/cache/browser/ramedit.pt:52
+#: src/zope/app/dublincore/browser/edit.pt:52
+#: src/zope/app/rdb/browser/rdbconnection.pt:29
+#: src/zope/app/error/browser/error_config.pt:47
+#: src/zope/app/securitypolicy/browser/manage_roleform.pt:67
+#: src/zope/app/securitypolicy/browser/manage_permissionform.pt:88
+msgid "save-changes-button"
+msgstr "Enregistrer les modifications"
+
 #: src/zope/app/i18nfile/browser/i18nfile.py:46
-#: src/zope/app/i18nfile/browser/i18nimage.py:31
+#: src/zope/app/i18nfile/browser/i18nimage.py:32
 msgid "Edit Form"
 msgstr "Formulaire D'Edition"
 
@@ -3723,11 +3756,15 @@ msgid ""
 msgstr ""
 "Ce formulaire d'édition vous permet de changer les propriétés de ce fichier."
 
-#: src/zope/app/i18nfile/browser/i18nimage.py:32
+#: src/zope/app/i18nfile/browser/i18nimage.py:33
 msgid ""
 "This edit form allows you to make changes to the properties of this image."
 msgstr ""
 "Ce formulaire d'édition vous permet de changer les propriétés de cette image."
+
+#: src/zope/app/i18nfile/browser/image_edit.pt:86
+msgid "Dimensions"
+msgstr "Dimensions"
 
 #: src/zope/app/i18nfile/configure.zcml:22
 msgid "An Internationalized File"
@@ -6600,18 +6637,6 @@ msgstr "Identificateur de la permission."
 #, fuzzy
 #~ msgid "unassign-button"
 #~ msgstr "Annuler"
-
-#~ msgid "Default Language"
-#~ msgstr "Langage par défaut"
-
-#~ msgid "show-button"
-#~ msgstr "Afficher"
-
-#~ msgid "Add new language"
-#~ msgstr "Ajouter un nouveau langage"
-
-#~ msgid "Dimensions"
-#~ msgstr "Dimensions"
 
 #, fuzzy
 #~ msgid "XXX objects"
