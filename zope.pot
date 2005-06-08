@@ -13,8 +13,8 @@
 ##############################################################################
 msgid ""
 msgstr ""
-"Project-Id-Version: Development/Revision: 30597\n"
-"POT-Creation-Date: Thu Jun  2 14:04:36 2005\n"
+"Project-Id-Version: Development/Revision: 30674\n"
+"POT-Creation-Date: Tue Jun  7 17:28:13 2005\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
@@ -1268,6 +1268,23 @@ msgstr ""
 msgid "RAMCache statistics"
 msgstr ""
 
+#: src/zope/app/catalog/browser/advanced.pt:10
+msgid "Document Count"
+msgstr ""
+
+#: src/zope/app/catalog/browser/advanced.pt:11
+msgid "Word Count"
+msgstr ""
+
+#: src/zope/app/catalog/browser/advanced.pt:22
+# Default: "Reindex"
+msgid "reindex-button"
+msgstr ""
+
+#: src/zope/app/catalog/browser/advanced.pt:6
+msgid "Catalog statistics"
+msgstr ""
+
 #: src/zope/app/catalog/browser/configure.zcml:14
 msgid "A Catalog allows indexing and searching of objects"
 msgstr ""
@@ -1859,6 +1876,7 @@ msgstr ""
 
 #: src/zope/app/component/metadirectives.py:323
 #: src/zope/app/component/metadirectives.py:492
+#: src/zope/app/intid/browser/registrations.pt:11
 msgid "ID"
 msgstr ""
 
@@ -2108,8 +2126,28 @@ msgstr ""
 msgid "You didn't specify any ids to copy."
 msgstr ""
 
-#: src/zope/app/container/browser/contents.py:285
+#: src/zope/app/container/browser/contents.py:282
+# Default: "Object '${name}' (${title}) cannot be copied"
+msgid "titled-object-cannot-be-copied"
+msgstr ""
+
+#: src/zope/app/container/browser/contents.py:287
+# Default: "Object '${name}' cannot be copied"
+msgid "untitled-object-cannot-be-copied"
+msgstr ""
+
+#: src/zope/app/container/browser/contents.py:304
 msgid "You didn't specify any ids to cut."
+msgstr ""
+
+#: src/zope/app/container/browser/contents.py:321
+# Default: "Object '${name}' (${title}) cannot be moved"
+msgid "titled-object-cannot-be-moved"
+msgstr ""
+
+#: src/zope/app/container/browser/contents.py:326
+# Default: "Object '${name}' cannot be moved"
+msgid "untitled-object-cannot-be-moved"
 msgstr ""
 
 #: src/zope/app/container/browser/contents.py:67
@@ -2303,6 +2341,7 @@ msgstr ""
 
 #: src/zope/app/demo/pageletchooser/browser/configure.zcml:24
 #: src/zope/app/demo/pagelet/browser/configure.zcml:24
+#: src/zope/app/catalog/browser/advanced.pt:9
 msgid "Index"
 msgstr ""
 
@@ -2858,6 +2897,10 @@ msgstr ""
 msgid "You are not authorized"
 msgstr ""
 
+#: src/zope/app/externaleditor/configure.zcml:7
+msgid "External Edit"
+msgstr ""
+
 #: src/zope/app/file/browser/configure.zcml:102
 msgid "Add an Image"
 msgstr ""
@@ -3024,23 +3067,23 @@ msgstr ""
 msgid "on"
 msgstr ""
 
-#: src/zope/app/form/browser/configure.zcml:427
+#: src/zope/app/form/browser/configure.zcml:436
 msgid "Widgets and Forms"
 msgstr ""
 
-#: src/zope/app/form/browser/configure.zcml:431
+#: src/zope/app/form/browser/configure.zcml:440
 msgid "Basic Widgets"
 msgstr ""
 
-#: src/zope/app/form/browser/configure.zcml:437
+#: src/zope/app/form/browser/configure.zcml:446
 msgid "Source Widgets"
 msgstr ""
 
-#: src/zope/app/form/browser/configure.zcml:443
+#: src/zope/app/form/browser/configure.zcml:452
 msgid "Advanced Widgets"
 msgstr ""
 
-#: src/zope/app/form/browser/configure.zcml:449
+#: src/zope/app/form/browser/configure.zcml:458
 msgid "The browser:form Directive"
 msgstr ""
 
@@ -3079,6 +3122,16 @@ msgstr ""
 
 #: src/zope/app/form/browser/itemswidgets.py:510
 msgid "vocabulary-missing-multiple-value-for-edit"
+msgstr ""
+
+#: src/zope/app/form/browser/sequencewidget.py:242
+# Default: "(no value available)"
+msgid "sequence-value-not-provided"
+msgstr ""
+
+#: src/zope/app/form/browser/sequencewidget.py:245
+# Default: "(no values)"
+msgid "sequence-value-is-empty"
 msgstr ""
 
 #: src/zope/app/form/browser/sequencewidget.py:78
@@ -3532,6 +3585,14 @@ msgstr ""
 
 #: src/zope/app/intid/browser/configure.zcml:5
 msgid "Unique Ids Tools are used to provide system-wide unique ids       for documents."
+msgstr ""
+
+#: src/zope/app/intid/browser/registrations.pt:11
+msgid "Object"
+msgstr ""
+
+#: src/zope/app/intid/browser/registrations.pt:6
+msgid "${count} objects"
 msgstr ""
 
 #: src/zope/app/introspector/configure.zcml:6
@@ -4325,6 +4386,7 @@ msgstr ""
 #: src/zope/app/schema/browser/schema_edit.pt:31
 #: src/zope/app/container/browser/contents.pt:27
 #: src/zope/app/container/browser/index.pt:19
+#: src/zope/app/intid/browser/registrations.pt:9
 msgid "Content listing"
 msgstr ""
 
@@ -5438,11 +5500,11 @@ msgid "Stateful Transition"
 msgstr ""
 
 #: src/zope/app/workflow/stateful/browser/configure.zcml:121
-msgid "An utility to manage content and workflow interaction."
+msgid "Content Workflows Manager"
 msgstr ""
 
 #: src/zope/app/workflow/stateful/browser/configure.zcml:121
-msgid "Content Workflows Manager"
+msgid "An utility to manage content and workflow interaction."
 msgstr ""
 
 #: src/zope/app/workflow/stateful/browser/configure.zcml:129
