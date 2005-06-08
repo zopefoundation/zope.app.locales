@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zope X3 Pre-M4\n"
-"POT-Creation-Date: Thu Jun  2 14:04:36 2005\n"
+"POT-Creation-Date: Tue Jun  7 17:28:13 2005\n"
 "PO-Revision-Date: 2003-08-06 11:22-0500\n"
 "Last-Translator: Philipp von Weitershausen\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
@@ -1369,6 +1369,26 @@ msgstr "Entradas"
 msgid "RAMCache statistics"
 msgstr "Statisticas RAMCache"
 
+#: src/zope/app/catalog/browser/advanced.pt:10
+#, fuzzy
+msgid "Document Count"
+msgstr "Documentación"
+
+#: src/zope/app/catalog/browser/advanced.pt:11
+#, fuzzy
+msgid "Word Count"
+msgstr "Palabras: ${word_count}"
+
+#: src/zope/app/catalog/browser/advanced.pt:22
+#, fuzzy
+msgid "reindex-button"
+msgstr "Renombrar"
+
+#: src/zope/app/catalog/browser/advanced.pt:6
+#, fuzzy
+msgid "Catalog statistics"
+msgstr "Statisticas RAMCache"
+
 #: src/zope/app/catalog/browser/configure.zcml:14
 msgid "A Catalog allows indexing and searching of objects"
 msgstr ""
@@ -1989,6 +2009,7 @@ msgstr "Locación del componente"
 
 #: src/zope/app/component/metadirectives.py:323
 #: src/zope/app/component/metadirectives.py:492
+#: src/zope/app/intid/browser/registrations.pt:11
 msgid "ID"
 msgstr ""
 
@@ -2245,9 +2266,29 @@ msgstr "No especificó un id para borrar."
 msgid "You didn't specify any ids to copy."
 msgstr "No especificó un id para copiar."
 
-#: src/zope/app/container/browser/contents.py:285
+# Default: "Object '${name}' (${title}) cannot be copied"
+#: src/zope/app/container/browser/contents.py:282
+msgid "titled-object-cannot-be-copied"
+msgstr ""
+
+# Default: "Object '${name}' cannot be copied"
+#: src/zope/app/container/browser/contents.py:287
+msgid "untitled-object-cannot-be-copied"
+msgstr ""
+
+#: src/zope/app/container/browser/contents.py:304
 msgid "You didn't specify any ids to cut."
 msgstr "No especificó un id para cortar."
+
+# Default: "Object '${name}' (${title}) cannot be moved"
+#: src/zope/app/container/browser/contents.py:321
+msgid "titled-object-cannot-be-moved"
+msgstr ""
+
+# Default: "Object '${name}' cannot be moved"
+#: src/zope/app/container/browser/contents.py:326
+msgid "untitled-object-cannot-be-moved"
+msgstr ""
 
 #: src/zope/app/container/browser/contents.py:67
 msgid "You didn't specify any ids to rename."
@@ -2448,6 +2489,7 @@ msgstr "Descripción"
 
 #: src/zope/app/demo/pageletchooser/browser/configure.zcml:24
 #: src/zope/app/demo/pagelet/browser/configure.zcml:24
+#: src/zope/app/catalog/browser/advanced.pt:9
 #, fuzzy
 msgid "Index"
 msgstr "Índices"
@@ -3024,6 +3066,10 @@ msgstr "Ocurrió un error syntax."
 msgid "You are not authorized"
 msgstr ""
 
+#: src/zope/app/externaleditor/configure.zcml:7
+msgid "External Edit"
+msgstr ""
+
 #: src/zope/app/file/browser/configure.zcml:102
 #, fuzzy
 msgid "Add an Image"
@@ -3190,26 +3236,26 @@ msgstr ""
 msgid "on"
 msgstr ""
 
-#: src/zope/app/form/browser/configure.zcml:427
+#: src/zope/app/form/browser/configure.zcml:436
 msgid "Widgets and Forms"
 msgstr ""
 
-#: src/zope/app/form/browser/configure.zcml:431
+#: src/zope/app/form/browser/configure.zcml:440
 #, fuzzy
 msgid "Basic Widgets"
 msgstr "Campo Básico"
 
-#: src/zope/app/form/browser/configure.zcml:437
+#: src/zope/app/form/browser/configure.zcml:446
 #, fuzzy
 msgid "Source Widgets"
 msgstr "Texto Fuente"
 
-#: src/zope/app/form/browser/configure.zcml:443
+#: src/zope/app/form/browser/configure.zcml:452
 #, fuzzy
 msgid "Advanced Widgets"
 msgstr "Opciones Avanzadas"
 
-#: src/zope/app/form/browser/configure.zcml:449
+#: src/zope/app/form/browser/configure.zcml:458
 msgid "The browser:form Directive"
 msgstr ""
 
@@ -3246,6 +3292,16 @@ msgstr ""
 
 #: src/zope/app/form/browser/itemswidgets.py:510
 msgid "vocabulary-missing-multiple-value-for-edit"
+msgstr ""
+
+# Default: "(no value available)"
+#: src/zope/app/form/browser/sequencewidget.py:242
+msgid "sequence-value-not-provided"
+msgstr ""
+
+# Default: "(no values)"
+#: src/zope/app/form/browser/sequencewidget.py:245
+msgid "sequence-value-is-empty"
 msgstr ""
 
 # Default: "Remove selected items"
@@ -3720,6 +3776,15 @@ msgstr "Añadir Herramienta"
 msgid ""
 "Unique Ids Tools are used to provide system-wide unique ids       for "
 "documents."
+msgstr ""
+
+#: src/zope/app/intid/browser/registrations.pt:11
+#, fuzzy
+msgid "Object"
+msgstr "Campo de Objeto"
+
+#: src/zope/app/intid/browser/registrations.pt:6
+msgid "${count} objects"
 msgstr ""
 
 #: src/zope/app/introspector/configure.zcml:6
@@ -4552,6 +4617,7 @@ msgstr ""
 #: src/zope/app/schema/browser/schema_edit.pt:31
 #: src/zope/app/container/browser/contents.pt:27
 #: src/zope/app/container/browser/index.pt:19
+#: src/zope/app/intid/browser/registrations.pt:9
 msgid "Content listing"
 msgstr "Lista de contenido"
 
@@ -5679,11 +5745,11 @@ msgid "Stateful Transition"
 msgstr ""
 
 #: src/zope/app/workflow/stateful/browser/configure.zcml:121
-msgid "An utility to manage content and workflow interaction."
+msgid "Content Workflows Manager"
 msgstr ""
 
 #: src/zope/app/workflow/stateful/browser/configure.zcml:121
-msgid "Content Workflows Manager"
+msgid "An utility to manage content and workflow interaction."
 msgstr ""
 
 #: src/zope/app/workflow/stateful/browser/configure.zcml:129
@@ -6272,22 +6338,6 @@ msgstr ""
 #~ msgid "Pluggable-Authentication Search Plugin"
 #~ msgstr "Servicio de autentificación"
 
-#, fuzzy
-#~ msgid "Word Count"
-#~ msgstr "Palabras: ${word_count}"
-
-#, fuzzy
-#~ msgid "reindex-button"
-#~ msgstr "Renombrar"
-
-#, fuzzy
-#~ msgid "Catalog statistics"
-#~ msgstr "Statisticas RAMCache"
-
-#, fuzzy
-#~ msgid "Document Count"
-#~ msgstr "Documentación"
-
 #~ msgid "Commit results: ${results}"
 #~ msgstr "Cometer resultados: ${results}"
 
@@ -6318,10 +6368,6 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "XXX objects"
-#~ msgstr "Campo de Objeto"
-
-#, fuzzy
-#~ msgid "Object"
 #~ msgstr "Campo de Objeto"
 
 #~ msgid "modify-button"

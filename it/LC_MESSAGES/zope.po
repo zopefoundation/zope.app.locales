@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: zope\n"
-"POT-Creation-Date: Thu Jun  2 14:04:36 2005\n"
+"POT-Creation-Date: Tue Jun  7 17:28:13 2005\n"
 "PO-Revision-Date: 2004-07-02 11:20+0200\n"
 "Last-Translator: Fabrizio Reale\n"
 "Language-Team:  <fabrizio.reale@redomino.com>\n"
@@ -1417,6 +1417,27 @@ msgstr "Elementi"
 msgid "RAMCache statistics"
 msgstr "Statistiche sulla RAM Cache"
 
+#: src/zope/app/catalog/browser/advanced.pt:10
+#, fuzzy
+msgid "Document Count"
+msgstr "Documentazione"
+
+#: src/zope/app/catalog/browser/advanced.pt:11
+#, fuzzy
+msgid "Word Count"
+msgstr "Parole: ${word_count}"
+
+# Default: "Cancella"
+#: src/zope/app/catalog/browser/advanced.pt:22
+#, fuzzy
+msgid "reindex-button"
+msgstr "Cancella"
+
+#: src/zope/app/catalog/browser/advanced.pt:6
+#, fuzzy
+msgid "Catalog statistics"
+msgstr "Statistiche sulla RAM Cache"
+
 #: src/zope/app/catalog/browser/configure.zcml:14
 msgid "A Catalog allows indexing and searching of objects"
 msgstr "Un Catalogo permette l'indicizzazione e la ricerca di oggetti"
@@ -2058,6 +2079,7 @@ msgstr "Percorso del componente"
 
 #: src/zope/app/component/metadirectives.py:323
 #: src/zope/app/component/metadirectives.py:492
+#: src/zope/app/intid/browser/registrations.pt:11
 msgid "ID"
 msgstr ""
 
@@ -2329,9 +2351,29 @@ msgstr "Non hai specificato nessun id da cancellare."
 msgid "You didn't specify any ids to copy."
 msgstr "Non hai specificato nessun id da copiare."
 
-#: src/zope/app/container/browser/contents.py:285
+# Default: "Object '${name}' (${title}) cannot be copied"
+#: src/zope/app/container/browser/contents.py:282
+msgid "titled-object-cannot-be-copied"
+msgstr ""
+
+# Default: "Object '${name}' cannot be copied"
+#: src/zope/app/container/browser/contents.py:287
+msgid "untitled-object-cannot-be-copied"
+msgstr ""
+
+#: src/zope/app/container/browser/contents.py:304
 msgid "You didn't specify any ids to cut."
 msgstr "Non hai specificato nessun id da tagliare."
+
+# Default: "Object '${name}' (${title}) cannot be moved"
+#: src/zope/app/container/browser/contents.py:321
+msgid "titled-object-cannot-be-moved"
+msgstr ""
+
+# Default: "Object '${name}' cannot be moved"
+#: src/zope/app/container/browser/contents.py:326
+msgid "untitled-object-cannot-be-moved"
+msgstr ""
 
 #: src/zope/app/container/browser/contents.py:67
 msgid "You didn't specify any ids to rename."
@@ -2537,6 +2579,7 @@ msgstr "Una descrizione dettagliata dell'utente."
 
 #: src/zope/app/demo/pageletchooser/browser/configure.zcml:24
 #: src/zope/app/demo/pagelet/browser/configure.zcml:24
+#: src/zope/app/catalog/browser/advanced.pt:9
 #, fuzzy
 msgid "Index"
 msgstr "Indici"
@@ -3126,6 +3169,11 @@ msgstr "Si è verificato un errore di sintassi."
 msgid "You are not authorized"
 msgstr "Non autorizzato"
 
+#: src/zope/app/externaleditor/configure.zcml:7
+#, fuzzy
+msgid "External Edit"
+msgstr "Editor esteso"
+
 #: src/zope/app/file/browser/configure.zcml:102
 #, fuzzy
 msgid "Add an Image"
@@ -3294,26 +3342,26 @@ msgstr "spento"
 msgid "on"
 msgstr "acceso"
 
-#: src/zope/app/form/browser/configure.zcml:427
+#: src/zope/app/form/browser/configure.zcml:436
 msgid "Widgets and Forms"
 msgstr ""
 
-#: src/zope/app/form/browser/configure.zcml:431
+#: src/zope/app/form/browser/configure.zcml:440
 #, fuzzy
 msgid "Basic Widgets"
 msgstr "Campo Base"
 
-#: src/zope/app/form/browser/configure.zcml:437
+#: src/zope/app/form/browser/configure.zcml:446
 #, fuzzy
 msgid "Source Widgets"
 msgstr "Testo Sorgente"
 
-#: src/zope/app/form/browser/configure.zcml:443
+#: src/zope/app/form/browser/configure.zcml:452
 #, fuzzy
 msgid "Advanced Widgets"
 msgstr "Opzioni avanzate"
 
-#: src/zope/app/form/browser/configure.zcml:449
+#: src/zope/app/form/browser/configure.zcml:458
 msgid "The browser:form Directive"
 msgstr ""
 
@@ -3352,6 +3400,16 @@ msgstr ""
 
 #: src/zope/app/form/browser/itemswidgets.py:510
 msgid "vocabulary-missing-multiple-value-for-edit"
+msgstr ""
+
+#: src/zope/app/form/browser/sequencewidget.py:242
+#, fuzzy
+msgid "sequence-value-not-provided"
+msgstr "Schema non fornito"
+
+# Default: "(no values)"
+#: src/zope/app/form/browser/sequencewidget.py:245
+msgid "sequence-value-is-empty"
 msgstr ""
 
 # Default: "Cancella gli elementi selezionati"
@@ -3848,6 +3906,16 @@ msgid ""
 "Unique Ids Tools are used to provide system-wide unique ids       for "
 "documents."
 msgstr ""
+
+#: src/zope/app/intid/browser/registrations.pt:11
+#, fuzzy
+msgid "Object"
+msgstr "Campo Oggetto"
+
+#: src/zope/app/intid/browser/registrations.pt:6
+#, fuzzy
+msgid "${count} objects"
+msgstr "Oggetto rotto"
 
 #: src/zope/app/introspector/configure.zcml:6
 msgid ""
@@ -4724,6 +4792,7 @@ msgstr "Nome dello schema: ${schema_name}"
 #: src/zope/app/schema/browser/schema_edit.pt:31
 #: src/zope/app/container/browser/contents.pt:27
 #: src/zope/app/container/browser/index.pt:19
+#: src/zope/app/intid/browser/registrations.pt:9
 msgid "Content listing"
 msgstr "Lista dei contenuti"
 
@@ -5946,12 +6015,12 @@ msgid "Stateful Transition"
 msgstr "Transizione"
 
 #: src/zope/app/workflow/stateful/browser/configure.zcml:121
-msgid "An utility to manage content and workflow interaction."
-msgstr "Un'utilità per gestire le interazioni tra contenuti e workflow."
-
-#: src/zope/app/workflow/stateful/browser/configure.zcml:121
 msgid "Content Workflows Manager"
 msgstr "Gestore del workflow dei contenuti"
+
+#: src/zope/app/workflow/stateful/browser/configure.zcml:121
+msgid "An utility to manage content and workflow interaction."
+msgstr "Un'utilità per gestire le interazioni tra contenuti e workflow."
 
 #: src/zope/app/workflow/stateful/browser/configure.zcml:129
 msgid "Content/Process Registry"
@@ -6654,23 +6723,6 @@ msgstr ""
 #~ msgid "Pluggable-Authentication Search Plugin"
 #~ msgstr "Servizio di Autenticazione"
 
-#, fuzzy
-#~ msgid "Word Count"
-#~ msgstr "Parole: ${word_count}"
-
-# Default: "Cancella"
-#, fuzzy
-#~ msgid "reindex-button"
-#~ msgstr "Cancella"
-
-#, fuzzy
-#~ msgid "Catalog statistics"
-#~ msgstr "Statistiche sulla RAM Cache"
-
-#, fuzzy
-#~ msgid "Document Count"
-#~ msgstr "Documentazione"
-
 #~ msgid "Commit results: ${results}"
 #~ msgstr "Risultati: ${results}"
 
@@ -6704,10 +6756,6 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "XXX objects"
-#~ msgstr "Campo Oggetto"
-
-#, fuzzy
-#~ msgid "Object"
 #~ msgstr "Campo Oggetto"
 
 # Default: "Modifica"
@@ -6760,9 +6808,6 @@ msgstr ""
 
 #~ msgid "File \"${filename}\", line ${lineno}, offset ${offset}"
 #~ msgstr "File \"${filename}\", linea ${lineno}, colonna ${offset}"
-
-#~ msgid "Extended Editor"
-#~ msgstr "Editor esteso"
 
 #~ msgid "Map permissions to Schema fields"
 #~ msgstr "Mappa i permessi ai campi degli Schemi"
