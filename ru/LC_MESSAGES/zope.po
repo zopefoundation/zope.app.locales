@@ -16,7 +16,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Development/Revision: 29457\n"
-"POT-Creation-Date: Tue Jun  7 17:28:13 2005\n"
+"POT-Creation-Date: Thu Jun  9 14:31:44 2005\n"
 "PO-Revision-Date: 2005-06-04 21:38+0300\n"
 "Last-Translator: Dmitry Vasiliev <dima@hlabs.spb.ru>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
@@ -2330,29 +2330,25 @@ msgstr "Вы не выбрали элементы для удаления."
 msgid "You didn't specify any ids to copy."
 msgstr "Вы не выбрали элементы для копирования."
 
-# Default: "Object '${name}' (${title}) cannot be copied"
 #: src/zope/app/container/browser/contents.py:282
-msgid "titled-object-cannot-be-copied"
-msgstr ""
+msgid "Object '${name}' (${title}) cannot be copied"
+msgstr "Объект '${name}' (${title}) не может быть скопирован"
 
-# Default: "Object '${name}' cannot be copied"
-#: src/zope/app/container/browser/contents.py:287
-msgid "untitled-object-cannot-be-copied"
-msgstr ""
+#: src/zope/app/container/browser/contents.py:286
+msgid "Object '${name}' cannot be copied"
+msgstr "Объект '${name}' не может быть скопирован"
 
-#: src/zope/app/container/browser/contents.py:304
+#: src/zope/app/container/browser/contents.py:301
 msgid "You didn't specify any ids to cut."
 msgstr "Вы не выбрали элементы для вырезания."
 
-# Default: "Object '${name}' (${title}) cannot be moved"
-#: src/zope/app/container/browser/contents.py:321
-msgid "titled-object-cannot-be-moved"
-msgstr ""
+#: src/zope/app/container/browser/contents.py:318
+msgid "Object '${name}' (${title}) cannot be moved"
+msgstr "Объект '${name}' (${title}) не может быть перемещен"
 
-# Default: "Object '${name}' cannot be moved"
-#: src/zope/app/container/browser/contents.py:326
-msgid "untitled-object-cannot-be-moved"
-msgstr ""
+#: src/zope/app/container/browser/contents.py:322
+msgid "Object '${name}' cannot be moved"
+msgstr "Объект '${name}' не может быть перемещен"
 
 #: src/zope/app/container/browser/contents.py:67
 msgid "You didn't specify any ids to rename."
@@ -2649,7 +2645,8 @@ msgstr "Элемент интерфейса для целого"
 
 #: src/zope/app/demo/widget/browser/popup.pt:36
 #: src/zope/app/schema/browser/schema_edit.pt:21
-#: src/zope/app/form/browser/add.pt:25 src/zope/app/form/browser/edit.pt:26
+#: src/zope/app/pythonpage/edit.pt:24 src/zope/app/form/browser/add.pt:25
+#: src/zope/app/form/browser/edit.pt:26
 msgid "There are ${num_errors} input errors."
 msgstr "Ошибок при вводе: ${num_errors}"
 
@@ -2658,7 +2655,7 @@ msgstr "Ошибок при вводе: ${num_errors}"
 #: src/zope/app/file/browser/file_upload.pt:48
 #: src/zope/app/file/browser/file_add.pt:46
 #: src/zope/app/dublincore/browser/edit.pt:50
-#: src/zope/app/error/browser/error.pt:53
+#: src/zope/app/pythonpage/edit.pt:70 src/zope/app/error/browser/error.pt:53
 #: src/zope/app/component/browser/editregistration.pt:48
 #: src/zope/app/form/browser/add.pt:53 src/zope/app/form/browser/edit.pt:53
 msgid "refresh-button"
@@ -2666,6 +2663,7 @@ msgstr "Обновить"
 
 # Default: "Submit"
 #: src/zope/app/demo/widget/browser/popup.pt:67
+#: src/zope/app/pythonpage/edit.pt:72
 #: src/zope/app/form/browser/editwizard.pt:48
 #: src/zope/app/form/browser/addwizard.pt:68
 #: src/zope/app/form/browser/edit.pt:55
@@ -3117,7 +3115,7 @@ msgstr "Нет прав доступа"
 
 #: src/zope/app/externaleditor/configure.zcml:7
 msgid "External Edit"
-msgstr ""
+msgstr "Внешний редактор"
 
 #: src/zope/app/file/browser/configure.zcml:102
 msgid "Add an Image"
@@ -3341,9 +3339,46 @@ msgstr "(нет значения)"
 msgid "vocabulary-missing-multiple-value-for-edit"
 msgstr "(нет значений)"
 
+#: src/zope/app/form/browser/metaconfigure.py:292
+#: src/zope/app/schema/fieldforms.zcml:21
+#: src/zope/app/schema/fieldforms.zcml:47
+#: src/zope/app/schema/fieldforms.zcml:73
+#: src/zope/app/schema/fieldforms.zcml:99
+#: src/zope/app/schema/fieldforms.zcml:125
+#: src/zope/app/schema/fieldforms.zcml:151
+#: src/zope/app/security/browser/configure.zcml:84
+#: src/zope/app/component/browser/configure.zcml:240
+#: src/zope/app/authentication/browser/session.zcml:11
+#: src/zope/app/authentication/browser/httpplugins.zcml:13
+#: src/zope/app/authentication/browser/principalfolder.zcml:39
+#: src/zope/app/authentication/browser/groupfolder.zcml:7
+#: src/zope/app/cache/browser/configure.zcml:24
+#: src/zope/app/file/browser/configure.zcml:22
+#: src/zope/app/homefolder/configure.zcml:52
+#: src/zope/app/i18nfile/browser/configure.zcml:31
+#: src/zope/app/i18nfile/browser/configure.zcml:73
+#: src/zope/app/demo/pageletchooser/browser/configure.zcml:33
+#: src/zope/app/demo/pagelet/browser/configure.zcml:33
+#: src/zope/app/pythonpage/configure.zcml:57
+#: src/zope/app/rdb/browser/configure.zcml:27
+#: src/zope/app/schemacontent/browser/configure.zcml:22
+#: src/zope/app/schemacontent/browser/configure.zcml:55
+#: src/zope/app/demo/menu/configure.zcml:188
+#: src/zope/app/demo/menu/configure.zcml:272
+#: src/zope/app/demo/widget/browser/boolwidget.zcml:29
+#: src/zope/app/demo/widget/browser/intwidget.zcml:29
+#: src/zope/app/demo/widget/browser/textwidget.zcml:29
+#: src/zope/app/demo/widget/browser/textareawidget.zcml:29
+#: src/zope/app/pluggableauth/browser/configure.zcml:56
+#: src/zope/app/session/browser.zcml:15 src/zope/app/session/browser.zcml:38
+#: src/zope/app/zptpage/browser/configure.zcml:39
+#: src/zope/app/securitypolicy/browser/configure.zcml:35
+msgid "Edit"
+msgstr "Редактировать"
+
 #: src/zope/app/form/browser/sequencewidget.py:242
 msgid "sequence-value-not-provided"
-msgstr ""
+msgstr "нет значения для последовательности"
 
 # Default: "(no values)"
 #: src/zope/app/form/browser/sequencewidget.py:245
@@ -4449,6 +4484,14 @@ msgstr "Python-страница"
 msgid "Edit Python Page"
 msgstr "Редактировать Python-страницу"
 
+#: src/zope/app/pythonpage/edit.pt:32
+msgid "Syntax Error: ${msg}"
+msgstr "Ошибка синтаксиса: ${msg}"
+
+#: src/zope/app/pythonpage/edit.pt:40
+msgid "File \"${filename}\", line ${lineno}, offset ${offset}"
+msgstr "Файл \"${filename}\", строка ${lineno}, столбец ${offset}"
+
 # Default: "Test"
 #: src/zope/app/rdb/browser/configure.zcml:39
 #: src/zope/app/sqlscript/browser/configure.zcml:41
@@ -4736,42 +4779,6 @@ msgstr "Редактировать поле для даты и времени"
 msgid "Edit Text Field"
 msgstr "Редактировать поле для текста"
 
-#: src/zope/app/schema/fieldforms.zcml:21
-#: src/zope/app/schema/fieldforms.zcml:47
-#: src/zope/app/schema/fieldforms.zcml:73
-#: src/zope/app/schema/fieldforms.zcml:99
-#: src/zope/app/schema/fieldforms.zcml:125
-#: src/zope/app/schema/fieldforms.zcml:151
-#: src/zope/app/security/browser/configure.zcml:84
-#: src/zope/app/component/browser/configure.zcml:240
-#: src/zope/app/authentication/browser/session.zcml:11
-#: src/zope/app/authentication/browser/httpplugins.zcml:13
-#: src/zope/app/authentication/browser/principalfolder.zcml:39
-#: src/zope/app/authentication/browser/groupfolder.zcml:7
-#: src/zope/app/cache/browser/configure.zcml:24
-#: src/zope/app/file/browser/configure.zcml:22
-#: src/zope/app/homefolder/configure.zcml:52
-#: src/zope/app/i18nfile/browser/configure.zcml:31
-#: src/zope/app/i18nfile/browser/configure.zcml:73
-#: src/zope/app/demo/pageletchooser/browser/configure.zcml:33
-#: src/zope/app/demo/pagelet/browser/configure.zcml:33
-#: src/zope/app/pythonpage/configure.zcml:57
-#: src/zope/app/rdb/browser/configure.zcml:27
-#: src/zope/app/schemacontent/browser/configure.zcml:22
-#: src/zope/app/schemacontent/browser/configure.zcml:55
-#: src/zope/app/demo/menu/configure.zcml:188
-#: src/zope/app/demo/menu/configure.zcml:272
-#: src/zope/app/demo/widget/browser/boolwidget.zcml:29
-#: src/zope/app/demo/widget/browser/intwidget.zcml:29
-#: src/zope/app/demo/widget/browser/textwidget.zcml:29
-#: src/zope/app/demo/widget/browser/textareawidget.zcml:29
-#: src/zope/app/pluggableauth/browser/configure.zcml:56
-#: src/zope/app/session/browser.zcml:15 src/zope/app/session/browser.zcml:38
-#: src/zope/app/zptpage/browser/configure.zcml:39
-#: src/zope/app/securitypolicy/browser/configure.zcml:35
-msgid "Edit"
-msgstr "Редактировать"
-
 #: src/zope/app/schema/fieldforms.zcml:33
 msgid "TextLine Field"
 msgstr "Поле для текстовой строки"
@@ -4966,11 +4973,15 @@ msgstr "Создать меню"
 
 #: src/zope/app/schemacontent/interfaces.py:52
 msgid ""
-"If set to True, the system will create a local Browserlocal browser menu "
-"item for you. If this option is set to False, the system will try to find "
-"the next site manager that has a menu with the specifed id. If no menu was "
-"found or the menu is a global menu, then an error is created."
+"If set to True, the system will create a local browser menu for you. If this "
+"option is set to False, the system will try to find the next site manager "
+"that has a menu with the specifed id. If no menu was found or the menu is a "
+"global menu, then an error is occurred."
 msgstr ""
+"Если установлено в True система сама создаст локальное меню. Если "
+"установлено в False система будет пытаться найти ближайший менеджер сайта в "
+"котором есть меню с указанным идентификатором. Если меню не найдено или это "
+"глобальное меню произойдет ошибка."
 
 #: src/zope/app/schemacontent/interfaces.py:73
 #: src/zope/app/schemacontent/interfaces.py:105
@@ -5858,12 +5869,12 @@ msgid "Stateful Transition"
 msgstr "Переход состояния с состоянием"
 
 #: src/zope/app/workflow/stateful/browser/configure.zcml:121
-msgid "Content Workflows Manager"
-msgstr "Менеджер рабочих циклов контента"
-
-#: src/zope/app/workflow/stateful/browser/configure.zcml:121
 msgid "An utility to manage content and workflow interaction."
 msgstr "Утилита для управления взаимодействием контента и рабочего цикла"
+
+#: src/zope/app/workflow/stateful/browser/configure.zcml:121
+msgid "Content Workflows Manager"
+msgstr "Менеджер рабочих циклов контента"
 
 #: src/zope/app/workflow/stateful/browser/configure.zcml:129
 msgid "Content/Process Registry"
