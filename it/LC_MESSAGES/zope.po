@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: zope\n"
-"POT-Creation-Date: Tue Jun  7 17:28:13 2005\n"
+"POT-Creation-Date: Thu Jun  9 14:31:44 2005\n"
 "PO-Revision-Date: 2004-07-02 11:20+0200\n"
 "Last-Translator: Fabrizio Reale\n"
 "Language-Team:  <fabrizio.reale@redomino.com>\n"
@@ -2351,28 +2351,24 @@ msgstr "Non hai specificato nessun id da cancellare."
 msgid "You didn't specify any ids to copy."
 msgstr "Non hai specificato nessun id da copiare."
 
-# Default: "Object '${name}' (${title}) cannot be copied"
 #: src/zope/app/container/browser/contents.py:282
-msgid "titled-object-cannot-be-copied"
+msgid "Object '${name}' (${title}) cannot be copied"
 msgstr ""
 
-# Default: "Object '${name}' cannot be copied"
-#: src/zope/app/container/browser/contents.py:287
-msgid "untitled-object-cannot-be-copied"
+#: src/zope/app/container/browser/contents.py:286
+msgid "Object '${name}' cannot be copied"
 msgstr ""
 
-#: src/zope/app/container/browser/contents.py:304
+#: src/zope/app/container/browser/contents.py:301
 msgid "You didn't specify any ids to cut."
 msgstr "Non hai specificato nessun id da tagliare."
 
-# Default: "Object '${name}' (${title}) cannot be moved"
-#: src/zope/app/container/browser/contents.py:321
-msgid "titled-object-cannot-be-moved"
+#: src/zope/app/container/browser/contents.py:318
+msgid "Object '${name}' (${title}) cannot be moved"
 msgstr ""
 
-# Default: "Object '${name}' cannot be moved"
-#: src/zope/app/container/browser/contents.py:326
-msgid "untitled-object-cannot-be-moved"
+#: src/zope/app/container/browser/contents.py:322
+msgid "Object '${name}' cannot be moved"
 msgstr ""
 
 #: src/zope/app/container/browser/contents.py:67
@@ -2683,7 +2679,8 @@ msgstr ""
 
 #: src/zope/app/demo/widget/browser/popup.pt:36
 #: src/zope/app/schema/browser/schema_edit.pt:21
-#: src/zope/app/form/browser/add.pt:25 src/zope/app/form/browser/edit.pt:26
+#: src/zope/app/pythonpage/edit.pt:24 src/zope/app/form/browser/add.pt:25
+#: src/zope/app/form/browser/edit.pt:26
 msgid "There are ${num_errors} input errors."
 msgstr "Ci sono ${num_errors} errori di inserimento."
 
@@ -2692,7 +2689,7 @@ msgstr "Ci sono ${num_errors} errori di inserimento."
 #: src/zope/app/file/browser/file_upload.pt:48
 #: src/zope/app/file/browser/file_add.pt:46
 #: src/zope/app/dublincore/browser/edit.pt:50
-#: src/zope/app/error/browser/error.pt:53
+#: src/zope/app/pythonpage/edit.pt:70 src/zope/app/error/browser/error.pt:53
 #: src/zope/app/component/browser/editregistration.pt:48
 #: src/zope/app/form/browser/add.pt:53 src/zope/app/form/browser/edit.pt:53
 msgid "refresh-button"
@@ -2700,6 +2697,7 @@ msgstr "Rigenera"
 
 # Default: "Invia"
 #: src/zope/app/demo/widget/browser/popup.pt:67
+#: src/zope/app/pythonpage/edit.pt:72
 #: src/zope/app/form/browser/editwizard.pt:48
 #: src/zope/app/form/browser/addwizard.pt:68
 #: src/zope/app/form/browser/edit.pt:55
@@ -3401,6 +3399,43 @@ msgstr ""
 #: src/zope/app/form/browser/itemswidgets.py:510
 msgid "vocabulary-missing-multiple-value-for-edit"
 msgstr ""
+
+#: src/zope/app/form/browser/metaconfigure.py:292
+#: src/zope/app/schema/fieldforms.zcml:21
+#: src/zope/app/schema/fieldforms.zcml:47
+#: src/zope/app/schema/fieldforms.zcml:73
+#: src/zope/app/schema/fieldforms.zcml:99
+#: src/zope/app/schema/fieldforms.zcml:125
+#: src/zope/app/schema/fieldforms.zcml:151
+#: src/zope/app/security/browser/configure.zcml:84
+#: src/zope/app/component/browser/configure.zcml:240
+#: src/zope/app/authentication/browser/session.zcml:11
+#: src/zope/app/authentication/browser/httpplugins.zcml:13
+#: src/zope/app/authentication/browser/principalfolder.zcml:39
+#: src/zope/app/authentication/browser/groupfolder.zcml:7
+#: src/zope/app/cache/browser/configure.zcml:24
+#: src/zope/app/file/browser/configure.zcml:22
+#: src/zope/app/homefolder/configure.zcml:52
+#: src/zope/app/i18nfile/browser/configure.zcml:31
+#: src/zope/app/i18nfile/browser/configure.zcml:73
+#: src/zope/app/demo/pageletchooser/browser/configure.zcml:33
+#: src/zope/app/demo/pagelet/browser/configure.zcml:33
+#: src/zope/app/pythonpage/configure.zcml:57
+#: src/zope/app/rdb/browser/configure.zcml:27
+#: src/zope/app/schemacontent/browser/configure.zcml:22
+#: src/zope/app/schemacontent/browser/configure.zcml:55
+#: src/zope/app/demo/menu/configure.zcml:188
+#: src/zope/app/demo/menu/configure.zcml:272
+#: src/zope/app/demo/widget/browser/boolwidget.zcml:29
+#: src/zope/app/demo/widget/browser/intwidget.zcml:29
+#: src/zope/app/demo/widget/browser/textwidget.zcml:29
+#: src/zope/app/demo/widget/browser/textareawidget.zcml:29
+#: src/zope/app/pluggableauth/browser/configure.zcml:56
+#: src/zope/app/session/browser.zcml:15 src/zope/app/session/browser.zcml:38
+#: src/zope/app/zptpage/browser/configure.zcml:39
+#: src/zope/app/securitypolicy/browser/configure.zcml:35
+msgid "Edit"
+msgstr "Modifica"
 
 #: src/zope/app/form/browser/sequencewidget.py:242
 #, fuzzy
@@ -4551,6 +4586,14 @@ msgstr "Una Pagina Python"
 msgid "Edit Python Page"
 msgstr "Modifica una Pagina Python"
 
+#: src/zope/app/pythonpage/edit.pt:32
+msgid "Syntax Error: ${msg}"
+msgstr "Errore di sintassi: ${msg}"
+
+#: src/zope/app/pythonpage/edit.pt:40
+msgid "File \"${filename}\", line ${lineno}, offset ${offset}"
+msgstr "File \"${filename}\", linea ${lineno}, colonna ${offset}"
+
 # Default: "Test"
 #: src/zope/app/rdb/browser/configure.zcml:39
 #: src/zope/app/sqlscript/browser/configure.zcml:41
@@ -4843,42 +4886,6 @@ msgstr "Modifica il Campo di Data"
 msgid "Edit Text Field"
 msgstr "Modifica campo di testo"
 
-#: src/zope/app/schema/fieldforms.zcml:21
-#: src/zope/app/schema/fieldforms.zcml:47
-#: src/zope/app/schema/fieldforms.zcml:73
-#: src/zope/app/schema/fieldforms.zcml:99
-#: src/zope/app/schema/fieldforms.zcml:125
-#: src/zope/app/schema/fieldforms.zcml:151
-#: src/zope/app/security/browser/configure.zcml:84
-#: src/zope/app/component/browser/configure.zcml:240
-#: src/zope/app/authentication/browser/session.zcml:11
-#: src/zope/app/authentication/browser/httpplugins.zcml:13
-#: src/zope/app/authentication/browser/principalfolder.zcml:39
-#: src/zope/app/authentication/browser/groupfolder.zcml:7
-#: src/zope/app/cache/browser/configure.zcml:24
-#: src/zope/app/file/browser/configure.zcml:22
-#: src/zope/app/homefolder/configure.zcml:52
-#: src/zope/app/i18nfile/browser/configure.zcml:31
-#: src/zope/app/i18nfile/browser/configure.zcml:73
-#: src/zope/app/demo/pageletchooser/browser/configure.zcml:33
-#: src/zope/app/demo/pagelet/browser/configure.zcml:33
-#: src/zope/app/pythonpage/configure.zcml:57
-#: src/zope/app/rdb/browser/configure.zcml:27
-#: src/zope/app/schemacontent/browser/configure.zcml:22
-#: src/zope/app/schemacontent/browser/configure.zcml:55
-#: src/zope/app/demo/menu/configure.zcml:188
-#: src/zope/app/demo/menu/configure.zcml:272
-#: src/zope/app/demo/widget/browser/boolwidget.zcml:29
-#: src/zope/app/demo/widget/browser/intwidget.zcml:29
-#: src/zope/app/demo/widget/browser/textwidget.zcml:29
-#: src/zope/app/demo/widget/browser/textareawidget.zcml:29
-#: src/zope/app/pluggableauth/browser/configure.zcml:56
-#: src/zope/app/session/browser.zcml:15 src/zope/app/session/browser.zcml:38
-#: src/zope/app/zptpage/browser/configure.zcml:39
-#: src/zope/app/securitypolicy/browser/configure.zcml:35
-msgid "Edit"
-msgstr "Modifica"
-
 #: src/zope/app/schema/fieldforms.zcml:33
 msgid "TextLine Field"
 msgstr "Casella di Testo"
@@ -5074,10 +5081,10 @@ msgstr "Crea Menu"
 #: src/zope/app/schemacontent/interfaces.py:52
 #, fuzzy
 msgid ""
-"If set to True, the system will create a local Browserlocal browser menu "
-"item for you. If this option is set to False, the system will try to find "
-"the next site manager that has a menu with the specifed id. If no menu was "
-"found or the menu is a global menu, then an error is created."
+"If set to True, the system will create a local browser menu for you. If this "
+"option is set to False, the system will try to find the next site manager "
+"that has a menu with the specifed id. If no menu was found or the menu is a "
+"global menu, then an error is occurred."
 msgstr ""
 "Se impostato a Vero, il sistema creerà un Servizio Locale di consultazione "
 "del Menu e un Menu di Consultazione locale. Se settata a Falso, il sistema "
@@ -6015,12 +6022,12 @@ msgid "Stateful Transition"
 msgstr "Transizione"
 
 #: src/zope/app/workflow/stateful/browser/configure.zcml:121
-msgid "Content Workflows Manager"
-msgstr "Gestore del workflow dei contenuti"
-
-#: src/zope/app/workflow/stateful/browser/configure.zcml:121
 msgid "An utility to manage content and workflow interaction."
 msgstr "Un'utilità per gestire le interazioni tra contenuti e workflow."
+
+#: src/zope/app/workflow/stateful/browser/configure.zcml:121
+msgid "Content Workflows Manager"
+msgstr "Gestore del workflow dei contenuti"
 
 #: src/zope/app/workflow/stateful/browser/configure.zcml:129
 msgid "Content/Process Registry"
@@ -6802,12 +6809,6 @@ msgstr ""
 
 #~ msgid "View Module Names"
 #~ msgstr "Mostra i nomi dei moduli"
-
-#~ msgid "Syntax Error: ${msg}"
-#~ msgstr "Errore di sintassi: ${msg}"
-
-#~ msgid "File \"${filename}\", line ${lineno}, offset ${offset}"
-#~ msgstr "File \"${filename}\", linea ${lineno}, colonna ${offset}"
 
 #~ msgid "Map permissions to Schema fields"
 #~ msgstr "Mappa i permessi ai campi degli Schemi"
