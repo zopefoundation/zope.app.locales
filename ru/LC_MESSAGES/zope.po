@@ -1561,7 +1561,7 @@ msgstr "Регистрации"
 
 #: src/zope/app/component/browser/editregistration.pt:23
 msgid "Summary"
-msgstr "Итог"
+msgstr "Сводка"
 
 #: src/zope/app/component/browser/editregistration.pt:36
 msgid "(disabled)"
@@ -2972,11 +2972,11 @@ msgstr "Настройки"
 
 #: src/zope/app/error/browser/configure.zcml:35
 msgid "Error Reporting Utility for Logging Errors"
-msgstr "Утилита журналирования ошибок для сбора информации об ошибках"
+msgstr "Журнал ошибок для сбора информации об ошибках"
 
 #: src/zope/app/error/browser/configure.zcml:35
 msgid "Error Logging Utility"
-msgstr "Утилита журналирования ошибок"
+msgstr "Журнал ошибок"
 
 #: src/zope/app/error/browser/configure.zcml:41
 msgid "Component to record all uncaught errors and exceptions."
@@ -3842,7 +3842,7 @@ msgstr "Утилита, предоставляющая уникальные ид
 
 #: src/zope/app/intid/browser/configure.zcml:12
 msgid "Unique Id Utility"
-msgstr "Утилита для генерации уникальных идентификаторов"
+msgstr "Генератор уникальных идентификаторов"
 
 #: src/zope/app/intid/browser/configure.zcml:19
 msgid "Registered Objects"
@@ -5332,7 +5332,7 @@ msgstr "Хранит данные сессии в ZODB"
 
 #: src/zope/app/session/browser.zcml:23
 msgid "Persistent Session Data Container"
-msgstr "Контейнер для хранимых данных сессии"
+msgstr "Хранилище данных сессии в ZODB"
 
 #: src/zope/app/session/browser.zcml:31
 msgid "Stores session data in RAM"
@@ -5340,11 +5340,11 @@ msgstr "Хранит данные сессии в памяти"
 
 #: src/zope/app/session/browser.zcml:31
 msgid "RAM Session Data Container"
-msgstr "Контейнер для хранимых в памяти данных сессии"
+msgstr "Хранилище данных сессии в памяти"
 
 #: src/zope/app/session/browser.zcml:38
 msgid "Session Data Container Properties"
-msgstr "Свойства контейнера для хранимых данных сессии"
+msgstr "Свойства хранилища данных сессии"
 
 #: src/zope/app/session/browser.zcml:8
 msgid ""
@@ -5400,9 +5400,7 @@ msgstr "Время последнего доступа"
 msgid ""
 "Approximate epoch time this ISessionData was last retrieved from its "
 "ISessionDataContainer"
-msgstr ""
-"Приблизительное время с начала эпохи показывающее когда ISessionData была "
-"последний раз запрошена из своего ISessionDataContainer"
+msgstr "Приблизительное время с начала эпохи показывающее когда был последний запрос ISessionData из ISessionDataContainer"
 
 #: src/zope/app/session/interfaces.py:66
 msgid "Timeout"
