@@ -16,7 +16,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Development/Revision: 29457\n"
-"POT-Creation-Date: Thu Jun  9 14:31:44 2005\n"
+"POT-Creation-Date: Wed Jun 22 14:59:23 2005\n"
 "PO-Revision-Date: 2005-06-04 21:38+0300\n"
 "Last-Translator: Dmitry Vasiliev <dima@hlabs.spb.ru>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
@@ -28,7 +28,7 @@ msgstr ""
 
 #: securitypolicy.zcml:11
 msgid "All users have this role implicitly"
-msgstr "Все пользователи неявно имею эту роль"
+msgstr "Все пользователи неявно имеют эту роль"
 
 #: securitypolicy.zcml:11
 msgid "Everybody"
@@ -743,7 +743,7 @@ msgstr ""
 "    необходимо определить все интерфейсы контента.\n"
 "    "
 
-#: src/zope/app/apidoc/utilities.py:117 src/zope/app/apidoc/utilities.py:119
+#: src/zope/app/apidoc/utilities.py:125 src/zope/app/apidoc/utilities.py:127
 msgid "n/a"
 msgstr "Нет информации"
 
@@ -1025,7 +1025,7 @@ msgstr "ZODB успешно упакована"
 
 #: src/zope/app/authentication/browser/configure.zcml:13
 msgid "Edit Pluggable Authentication Utility"
-msgstr "Настройки подключаемой утилиты идентификации"
+msgstr "Настройки утилиты подключаемых аутентификаций"
 
 #: src/zope/app/authentication/browser/configure.zcml:21
 msgid "Plugins"
@@ -1033,7 +1033,7 @@ msgstr "Модули"
 
 #: src/zope/app/authentication/browser/configure.zcml:37
 msgid "New Pluggable Authentication Utility Registration"
-msgstr "Новая регистрация подключаемой утилиты идентификации"
+msgstr "Новая регистрация утилиты подключаемых аутентификаций"
 
 #: src/zope/app/authentication/browser/configure.zcml:49
 msgid "New Credentials Plugin Registration"
@@ -1041,15 +1041,15 @@ msgstr "Регистрация нового модуля удостоверен�
 
 #: src/zope/app/authentication/browser/configure.zcml:6
 msgid "New-style pluggable authentication utility"
-msgstr "Новая подключаемая утилита идентификации"
+msgstr "Новая утилита подключаемых аутентификаций"
 
 #: src/zope/app/authentication/browser/configure.zcml:6
 msgid "Pluggable Authentication Utility"
-msgstr "Подключаемая утилита идентификации"
+msgstr "Утилита подключаемых аутентификаций"
 
 #: src/zope/app/authentication/browser/configure.zcml:61
 msgid "New Authenticator Plugin Registration"
-msgstr "Регистрация нового модуля идентификации"
+msgstr "Регистрация нового модуля аутентификации"
 
 #: src/zope/app/authentication/browser/configure.zcml:73
 msgid "Credentials Plugin"
@@ -1057,7 +1057,7 @@ msgstr "Модуль удостоверений"
 
 #: src/zope/app/authentication/browser/configure.zcml:78
 msgid "Authenticator Plugin"
-msgstr "Модуль идентификации"
+msgstr "Модуль аутентификации"
 
 #: src/zope/app/authentication/browser/groupfolder.zcml:15
 msgid "Add group information"
@@ -1097,7 +1097,7 @@ msgstr "Название области"
 
 #: src/zope/app/authentication/browser/httpplugins.zcml:7
 msgid "HTTP Basic-Auth Plugin"
-msgstr "Модуль простой HHTP идентификации"
+msgstr "Модуль простой HHTP аутентификации"
 
 #: src/zope/app/authentication/browser/loginform.pt:11
 msgid ""
@@ -1126,7 +1126,7 @@ msgstr "Пожалуйста предоставте информацию для 
 
 #: src/zope/app/authentication/browser/principalfolder.zcml:14
 msgid "A Pluggable Authentication Persistent Authentication Plugin"
-msgstr "Сохраняемый модуль подключаемой идентификации"
+msgstr "Подключаемый модуль сохраняемых в ZODB аутентификаций"
 
 #: src/zope/app/authentication/browser/principalfolder.zcml:14
 #: src/zope/app/authentication/principalfolder.zcml:45
@@ -1155,7 +1155,7 @@ msgstr "Префикс пользователей в папке"
 
 # Default: "Pack"
 #: src/zope/app/authentication/browser/schemasearch.py:30
-#: src/zope/app/security/browser/auth.py:32
+#: src/zope/app/security/browser/auth.py:30
 msgid "search-button"
 msgstr "Искать"
 
@@ -1180,7 +1180,7 @@ msgid "Pluggable Authentication"
 msgstr "Подключаемая аутентификация"
 
 #: src/zope/app/authentication/groupfolder.py:44
-#: src/zope/app/authentication/principalfolder.py:49
+#: src/zope/app/authentication/principalfolder.py:50
 #: src/zope/app/component/metadirectives.py:328
 #: src/zope/app/component/metadirectives.py:501
 #: src/zope/app/demo/pagelet/interfaces.py:38
@@ -1200,7 +1200,7 @@ msgid "Provides a title for the permission."
 msgstr "Предоставляет заголовок для прав доступа."
 
 #: src/zope/app/authentication/groupfolder.py:49
-#: src/zope/app/authentication/principalfolder.py:53
+#: src/zope/app/authentication/principalfolder.py:54
 #: src/zope/app/component/metadirectives.py:335
 #: src/zope/app/component/metadirectives.py:508
 #: src/zope/app/demo/pagelet/interfaces.py:44
@@ -1228,16 +1228,30 @@ msgstr "Список идентификаторов пользователей �
 msgid "Group Folders"
 msgstr "Папка групп"
 
-#: src/zope/app/authentication/principalfolder.py:40
+#: src/zope/app/authentication/interfaces.py:38
+msgid "Credentials Plugins"
+msgstr "Подключаемые модули удостоверений"
+
+#: src/zope/app/authentication/interfaces.py:44
+msgid "Authenticator Plugins"
+msgstr "Подключаемые модули аутентификации"
+
+#: src/zope/app/authentication/interfaces.py:50
+#: src/zope/app/authentication/principalfolder.py:65
+#: src/zope/app/authentication/browser/principalfolder.zcml:54
+msgid "Prefix"
+msgstr "Префикс"
+
+#: src/zope/app/authentication/principalfolder.py:41
 #: src/zope/app/pluggableauth/interfaces.py:32
 msgid "Login"
 msgstr "Идентификатор пользователя"
 
-#: src/zope/app/authentication/principalfolder.py:41
+#: src/zope/app/authentication/principalfolder.py:42
 msgid "The Login/Username of the principal. This value can change."
 msgstr "Идентификатор/имя пользователя. Данное значение может быть изменено."
 
-#: src/zope/app/authentication/principalfolder.py:45
+#: src/zope/app/authentication/principalfolder.py:46
 #: src/zope/app/mail/interfaces.py:167
 #: src/zope/app/pluggableauth/interfaces.py:38
 #: src/zope/app/i18n/browser/synchronize.pt:37
@@ -1245,36 +1259,32 @@ msgstr "Идентификатор/имя пользователя. Данное
 msgid "Password"
 msgstr "Пароль"
 
-#: src/zope/app/authentication/principalfolder.py:46
+#: src/zope/app/authentication/principalfolder.py:47
 msgid "The password for the principal."
 msgstr "Пароль пользователя."
 
-#: src/zope/app/authentication/principalfolder.py:50
+#: src/zope/app/authentication/principalfolder.py:51
 msgid "Provides a title for the principal."
 msgstr "Заголовок для описания пользователя."
 
-#: src/zope/app/authentication/principalfolder.py:54
+#: src/zope/app/authentication/principalfolder.py:55
 msgid "Provides a description for the principal."
 msgstr "Краткое описание пользователя."
 
-#: src/zope/app/authentication/principalfolder.py:64
-#: src/zope/app/authentication/browser/principalfolder.zcml:54
-msgid "Prefix"
-msgstr "Префикс"
-
-#: src/zope/app/authentication/principalfolder.py:65
+#: src/zope/app/authentication/principalfolder.py:66
 msgid ""
 "Prefix to be added to all principal ids to assure that all ids are unique "
 "within the authentication service"
 msgstr ""
 "Префикс который будет добавлен всем идентификаторам пользователей чтобы быть "
-"уверенным, что все идентификаторы уникальны в пределах сервиса идентификации"
+"уверенным, что все идентификаторы уникальны в пределах сервиса аутентификации"
 
-#: src/zope/app/authentication/principalfolder.py:86
+#: src/zope/app/authentication/principalfolder.py:87
+#: src/zope/app/security/browser/auth.py:31
 msgid "Search String"
 msgstr "Строка для поиска"
 
-#: src/zope/app/authentication/principalfolder.py:87
+#: src/zope/app/authentication/principalfolder.py:88
 msgid "A Search String"
 msgstr "Строка для поиска"
 
@@ -1562,6 +1572,10 @@ msgstr "Регистрации"
 #: src/zope/app/component/browser/editregistration.pt:23
 msgid "Summary"
 msgstr "Сводка"
+
+#: src/zope/app/component/browser/editregistration.pt:34
+msgid "Config item ${name}"
+msgstr "Элемент конфигурации ${name}"
 
 #: src/zope/app/component/browser/editregistration.pt:36
 msgid "(disabled)"
@@ -2322,35 +2336,39 @@ msgstr "Отказаться"
 msgid "Modified"
 msgstr "Изменен"
 
-#: src/zope/app/container/browser/contents.py:253
+#: src/zope/app/container/browser/contents.py:255
 msgid "You didn't specify any ids to remove."
 msgstr "Вы не выбрали элементы для удаления."
 
-#: src/zope/app/container/browser/contents.py:265
+#: src/zope/app/container/browser/contents.py:267
 msgid "You didn't specify any ids to copy."
 msgstr "Вы не выбрали элементы для копирования."
 
-#: src/zope/app/container/browser/contents.py:282
+#: src/zope/app/container/browser/contents.py:284
 msgid "Object '${name}' (${title}) cannot be copied"
 msgstr "Объект '${name}' (${title}) не может быть скопирован"
 
-#: src/zope/app/container/browser/contents.py:286
+#: src/zope/app/container/browser/contents.py:288
 msgid "Object '${name}' cannot be copied"
 msgstr "Объект '${name}' не может быть скопирован"
 
-#: src/zope/app/container/browser/contents.py:301
+#: src/zope/app/container/browser/contents.py:303
 msgid "You didn't specify any ids to cut."
 msgstr "Вы не выбрали элементы для вырезания."
 
-#: src/zope/app/container/browser/contents.py:318
+#: src/zope/app/container/browser/contents.py:320
 msgid "Object '${name}' (${title}) cannot be moved"
 msgstr "Объект '${name}' (${title}) не может быть перемещен"
 
-#: src/zope/app/container/browser/contents.py:322
+#: src/zope/app/container/browser/contents.py:324
 msgid "Object '${name}' cannot be moved"
 msgstr "Объект '${name}' не может быть перемещен"
 
-#: src/zope/app/container/browser/contents.py:67
+#: src/zope/app/container/browser/contents.py:407
+msgid "The given name(s) %s is / are already being used"
+msgstr "Данные имена (имя) %s уже используются"
+
+#: src/zope/app/container/browser/contents.py:69
 msgid "You didn't specify any ids to rename."
 msgstr "Вы не выбрали элементы для переименования."
 
@@ -2367,17 +2385,16 @@ msgstr ""
 #: src/zope/app/container/browser/metaconfigure.py:76
 #: src/zope/app/component/browser/configure.zcml:113
 #: src/zope/app/authentication/browser/configure.zcml:30
-#: src/zope/app/workflow/browser/configure.zcml:35
 msgid "Contents"
 msgstr "Содержимое"
 
 #: src/zope/app/container/browser/metaconfigure.py:85
-#: src/zope/app/schema/browser/configure.zcml:15
 #: src/zope/app/container/browser/configure.zcml:5
 #: src/zope/app/component/browser/configure.zcml:57
 #: src/zope/app/component/browser/configure.zcml:122
 #: src/zope/app/workflow/stateful/browser/configure.zcml:48
 #: src/zope/app/workflow/stateful/browser/configure.zcml:85
+#: src/zope/app/schema/browser/configure.zcml:15
 msgid "Add"
 msgstr "Добавить"
 
@@ -2943,7 +2960,7 @@ msgstr "Последнее изменение"
 msgid "Creator"
 msgstr "Создатель"
 
-#: src/zope/app/dublincore/browser/metadataedit.py:40
+#: src/zope/app/dublincore/browser/metadataedit.py:42
 msgid "Changed data ${datetime}"
 msgstr "Дата изменена ${datetime}"
 
@@ -3136,8 +3153,8 @@ msgstr "Загрузить изображение"
 msgid "Change a file"
 msgstr "Изменить файл"
 
-#: src/zope/app/file/browser/file.py:181
-#: src/zope/app/form/browser/editview.py:114
+#: src/zope/app/file/browser/file.py:218
+#: src/zope/app/form/browser/editview.py:116
 msgid "Updated on ${date_time}"
 msgstr "Обновлено ${date_time}"
 
@@ -3234,7 +3251,7 @@ msgstr "Данные"
 msgid "The actual content of the object."
 msgstr "Данные объекта."
 
-#: src/zope/app/folder/browser/configure.zcml:29
+#: src/zope/app/folder/browser/configure.zcml:30
 #: src/zope/app/dtmlpage/configure.zcml:93
 #: src/zope/app/file/browser/configure.zcml:115
 #: src/zope/app/file/browser/configure.zcml:123
@@ -3253,8 +3270,8 @@ msgstr "Папка"
 msgid "Minimal folder"
 msgstr "Простая папка"
 
-#: src/zope/app/form/browser/add.py:63
-#: src/zope/app/form/browser/editview.py:104
+#: src/zope/app/form/browser/add.py:65
+#: src/zope/app/form/browser/editview.py:106
 #: src/zope/app/form/browser/formview.py:75
 #: src/zope/app/schema/browser/__init__.py:53
 #: src/zope/app/schema/browser/__init__.py:64
@@ -3314,38 +3331,32 @@ msgstr "Предыдущий"
 msgid "next-button"
 msgstr "Следующий"
 
-#: src/zope/app/form/browser/editwizard.py:139
+#: src/zope/app/form/browser/editwizard.py:140
 msgid "No changes to save"
 msgstr "Нет изменений для сохранения"
 
-#: src/zope/app/form/browser/editwizard.py:141
+#: src/zope/app/form/browser/editwizard.py:142
 msgid "Changes saved"
 msgstr "Изменения сохранены"
 
-#: src/zope/app/form/browser/itemswidgets.py:223
+#: src/zope/app/form/browser/itemswidgets.py:226
 msgid "item-missing-single-value-for-display"
 msgstr "(нет значения)"
 
-#: src/zope/app/form/browser/itemswidgets.py:243
+#: src/zope/app/form/browser/itemswidgets.py:246
 msgid "vocabulary-missing-multiple-value-for-display"
 msgstr "(нет значений)"
 
-#: src/zope/app/form/browser/itemswidgets.py:392
-#: src/zope/app/form/browser/itemswidgets.py:436
+#: src/zope/app/form/browser/itemswidgets.py:395
+#: src/zope/app/form/browser/itemswidgets.py:439
 msgid "vocabulary-missing-single-value-for-edit"
 msgstr "(нет значения)"
 
-#: src/zope/app/form/browser/itemswidgets.py:510
+#: src/zope/app/form/browser/itemswidgets.py:513
 msgid "vocabulary-missing-multiple-value-for-edit"
 msgstr "(нет значений)"
 
 #: src/zope/app/form/browser/metaconfigure.py:292
-#: src/zope/app/schema/fieldforms.zcml:21
-#: src/zope/app/schema/fieldforms.zcml:47
-#: src/zope/app/schema/fieldforms.zcml:73
-#: src/zope/app/schema/fieldforms.zcml:99
-#: src/zope/app/schema/fieldforms.zcml:125
-#: src/zope/app/schema/fieldforms.zcml:151
 #: src/zope/app/security/browser/configure.zcml:84
 #: src/zope/app/component/browser/configure.zcml:240
 #: src/zope/app/authentication/browser/session.zcml:11
@@ -3370,6 +3381,12 @@ msgstr "(нет значений)"
 #: src/zope/app/demo/widget/browser/textwidget.zcml:29
 #: src/zope/app/demo/widget/browser/textareawidget.zcml:29
 #: src/zope/app/pluggableauth/browser/configure.zcml:56
+#: src/zope/app/schema/fieldforms.zcml:21
+#: src/zope/app/schema/fieldforms.zcml:47
+#: src/zope/app/schema/fieldforms.zcml:73
+#: src/zope/app/schema/fieldforms.zcml:99
+#: src/zope/app/schema/fieldforms.zcml:125
+#: src/zope/app/schema/fieldforms.zcml:151
 #: src/zope/app/session/browser.zcml:15 src/zope/app/session/browser.zcml:38
 #: src/zope/app/zptpage/browser/configure.zcml:39
 #: src/zope/app/securitypolicy/browser/configure.zcml:35
@@ -3884,6 +3901,16 @@ msgstr "Просмотр информации о классах и интерф�
 #: src/zope/app/keyreference/configure.zcml:26
 msgid "Persistent Key References"
 msgstr "Ссылки по сохраняемым ключам"
+
+#: src/zope/app/keyreference/interfaces.py:37
+msgid "Key Type Id"
+msgstr ""
+
+#: src/zope/app/keyreference/interfaces.py:38
+msgid ""
+"Key references should sort first on their key type and second on any type-"
+"specific information."
+msgstr ""
 
 #: src/zope/app/locking/adapter.py:69
 msgid "Multiple principals found"
@@ -5023,19 +5050,19 @@ msgstr ""
 "компоненты контента могут изменяться. (что может быть желательно в "
 "определенных случаях, например в процессе разработки)"
 
-#: src/zope/app/security/browser/auth.py:159
+#: src/zope/app/security/browser/auth.py:158
 #: src/zope/app/boston/browser/template.pt:55
 msgid "[Login]"
 msgstr "[Войти]"
 
-#: src/zope/app/security/browser/auth.py:164
+#: src/zope/app/security/browser/auth.py:163
 #: src/zope/app/boston/browser/template.pt:51
 msgid "[Logout]"
 msgstr "[Выйти]"
 
 #: src/zope/app/security/browser/configure.zcml:20
 msgid "Authentication"
-msgstr "Идентификация"
+msgstr "Аутентификация"
 
 #: src/zope/app/security/browser/configure.zcml:20
 msgid "Authenticates Principals."
@@ -5400,7 +5427,9 @@ msgstr "Время последнего доступа"
 msgid ""
 "Approximate epoch time this ISessionData was last retrieved from its "
 "ISessionDataContainer"
-msgstr "Приблизительное время с начала эпохи показывающее когда был последний запрос ISessionData из ISessionDataContainer"
+msgstr ""
+"Приблизительное время с начала эпохи показывающее когда был последний запрос "
+"ISessionData из ISessionDataContainer"
 
 #: src/zope/app/session/interfaces.py:66
 msgid "Timeout"
