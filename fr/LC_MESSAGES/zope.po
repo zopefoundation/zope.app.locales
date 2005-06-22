@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zope X3 Pre-M4\n"
-"POT-Creation-Date: Thu Jun  9 14:31:44 2005\n"
+"POT-Creation-Date: Wed Jun 22 14:59:23 2005\n"
 "PO-Revision-Date: 2004-06-25 16:00+0100\n"
 "Last-Translator: Thierry Goyvaerts <Thierry.Goyvaerts@skynet.be>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope3.org>\n"
@@ -742,7 +742,7 @@ msgid ""
 "    "
 msgstr ""
 
-#: src/zope/app/apidoc/utilities.py:117 src/zope/app/apidoc/utilities.py:119
+#: src/zope/app/apidoc/utilities.py:125 src/zope/app/apidoc/utilities.py:127
 msgid "n/a"
 msgstr "non disponible"
 
@@ -1155,7 +1155,7 @@ msgid "Principal Folder Prefix"
 msgstr "Dossier minimum"
 
 #: src/zope/app/authentication/browser/schemasearch.py:30
-#: src/zope/app/security/browser/auth.py:32
+#: src/zope/app/security/browser/auth.py:30
 #, fuzzy
 msgid "search-button"
 msgstr "Nettoyer"
@@ -1184,7 +1184,7 @@ msgid "Pluggable Authentication"
 msgstr "Service D'Authentification"
 
 #: src/zope/app/authentication/groupfolder.py:44
-#: src/zope/app/authentication/principalfolder.py:49
+#: src/zope/app/authentication/principalfolder.py:50
 #: src/zope/app/component/metadirectives.py:328
 #: src/zope/app/component/metadirectives.py:501
 #: src/zope/app/demo/pagelet/interfaces.py:38
@@ -1204,7 +1204,7 @@ msgid "Provides a title for the permission."
 msgstr "Définir un titre pour la permission."
 
 #: src/zope/app/authentication/groupfolder.py:49
-#: src/zope/app/authentication/principalfolder.py:53
+#: src/zope/app/authentication/principalfolder.py:54
 #: src/zope/app/component/metadirectives.py:335
 #: src/zope/app/component/metadirectives.py:508
 #: src/zope/app/demo/pagelet/interfaces.py:44
@@ -1234,17 +1234,34 @@ msgstr ""
 msgid "Group Folders"
 msgstr "Dossier Racine"
 
-#: src/zope/app/authentication/principalfolder.py:40
+#: src/zope/app/authentication/interfaces.py:38
+#, fuzzy
+msgid "Credentials Plugins"
+msgstr "Nouveau Enregistrement D'Utilitaire"
+
+#: src/zope/app/authentication/interfaces.py:44
+#, fuzzy
+msgid "Authenticator Plugins"
+msgstr "Service D'Authentification"
+
+#: src/zope/app/authentication/interfaces.py:50
+#: src/zope/app/authentication/principalfolder.py:65
+#: src/zope/app/authentication/browser/principalfolder.zcml:54
+#, fuzzy
+msgid "Prefix"
+msgstr "Aperçu"
+
+#: src/zope/app/authentication/principalfolder.py:41
 #: src/zope/app/pluggableauth/interfaces.py:32
 msgid "Login"
 msgstr "Nom de connexion"
 
-#: src/zope/app/authentication/principalfolder.py:41
+#: src/zope/app/authentication/principalfolder.py:42
 #, fuzzy
 msgid "The Login/Username of the principal. This value can change."
 msgstr "Le nom de connexion/Nom d'utilisateur. Cette valeur peut changer."
 
-#: src/zope/app/authentication/principalfolder.py:45
+#: src/zope/app/authentication/principalfolder.py:46
 #: src/zope/app/mail/interfaces.py:167
 #: src/zope/app/pluggableauth/interfaces.py:38
 #: src/zope/app/i18n/browser/synchronize.pt:37
@@ -1252,39 +1269,34 @@ msgstr "Le nom de connexion/Nom d'utilisateur. Cette valeur peut changer."
 msgid "Password"
 msgstr "Mot De Passe"
 
-#: src/zope/app/authentication/principalfolder.py:46
+#: src/zope/app/authentication/principalfolder.py:47
 #, fuzzy
 msgid "The password for the principal."
 msgstr "Le mot de passe de l'utilisateur."
 
-#: src/zope/app/authentication/principalfolder.py:50
+#: src/zope/app/authentication/principalfolder.py:51
 #, fuzzy
 msgid "Provides a title for the principal."
 msgstr "Définir un titre pour la permission."
 
-#: src/zope/app/authentication/principalfolder.py:54
+#: src/zope/app/authentication/principalfolder.py:55
 #, fuzzy
 msgid "Provides a description for the principal."
 msgstr "Définir une description pour la permission."
 
-#: src/zope/app/authentication/principalfolder.py:64
-#: src/zope/app/authentication/browser/principalfolder.zcml:54
-#, fuzzy
-msgid "Prefix"
-msgstr "Aperçu"
-
-#: src/zope/app/authentication/principalfolder.py:65
+#: src/zope/app/authentication/principalfolder.py:66
 msgid ""
 "Prefix to be added to all principal ids to assure that all ids are unique "
 "within the authentication service"
 msgstr ""
 
-#: src/zope/app/authentication/principalfolder.py:86
+#: src/zope/app/authentication/principalfolder.py:87
+#: src/zope/app/security/browser/auth.py:31
 #, fuzzy
 msgid "Search String"
 msgstr "Chercher"
 
-#: src/zope/app/authentication/principalfolder.py:87
+#: src/zope/app/authentication/principalfolder.py:88
 msgid "A Search String"
 msgstr ""
 
@@ -1582,6 +1594,11 @@ msgstr "Enregistrement"
 #: src/zope/app/component/browser/editregistration.pt:23
 msgid "Summary"
 msgstr "Résumé"
+
+#: src/zope/app/component/browser/editregistration.pt:34
+#, fuzzy
+msgid "Config item ${name}"
+msgstr "Configurer"
 
 #: src/zope/app/component/browser/editregistration.pt:36
 msgid "(disabled)"
@@ -2316,35 +2333,40 @@ msgstr "Annuler Conteneur"
 msgid "Modified"
 msgstr "Modifié"
 
-#: src/zope/app/container/browser/contents.py:253
+#: src/zope/app/container/browser/contents.py:255
 msgid "You didn't specify any ids to remove."
 msgstr "Vous n'avez pas spécifié d'identificateurs à effacer."
 
-#: src/zope/app/container/browser/contents.py:265
+#: src/zope/app/container/browser/contents.py:267
 msgid "You didn't specify any ids to copy."
 msgstr "Vous n'avez pas spécifié d'identificateurs à copier"
 
-#: src/zope/app/container/browser/contents.py:282
+#: src/zope/app/container/browser/contents.py:284
 msgid "Object '${name}' (${title}) cannot be copied"
 msgstr ""
 
-#: src/zope/app/container/browser/contents.py:286
+#: src/zope/app/container/browser/contents.py:288
 msgid "Object '${name}' cannot be copied"
 msgstr ""
 
-#: src/zope/app/container/browser/contents.py:301
+#: src/zope/app/container/browser/contents.py:303
 msgid "You didn't specify any ids to cut."
 msgstr "Vous n'avez pas spécifié d'identificateurs à couper"
 
-#: src/zope/app/container/browser/contents.py:318
+#: src/zope/app/container/browser/contents.py:320
 msgid "Object '${name}' (${title}) cannot be moved"
 msgstr ""
 
-#: src/zope/app/container/browser/contents.py:322
+#: src/zope/app/container/browser/contents.py:324
 msgid "Object '${name}' cannot be moved"
 msgstr ""
 
-#: src/zope/app/container/browser/contents.py:67
+#: src/zope/app/container/browser/contents.py:407
+#, fuzzy
+msgid "The given name(s) %s is / are already being used"
+msgstr "Le nom spécifié est déjà utilisé"
+
+#: src/zope/app/container/browser/contents.py:69
 msgid "You didn't specify any ids to rename."
 msgstr "Vous n'avez pas spécifié d'identificateurs à renommer"
 
@@ -2358,17 +2380,16 @@ msgstr ""
 #: src/zope/app/container/browser/metaconfigure.py:76
 #: src/zope/app/component/browser/configure.zcml:113
 #: src/zope/app/authentication/browser/configure.zcml:30
-#: src/zope/app/workflow/browser/configure.zcml:35
 msgid "Contents"
 msgstr "Contenu"
 
 #: src/zope/app/container/browser/metaconfigure.py:85
-#: src/zope/app/schema/browser/configure.zcml:15
 #: src/zope/app/container/browser/configure.zcml:5
 #: src/zope/app/component/browser/configure.zcml:57
 #: src/zope/app/component/browser/configure.zcml:122
 #: src/zope/app/workflow/stateful/browser/configure.zcml:48
 #: src/zope/app/workflow/stateful/browser/configure.zcml:85
+#: src/zope/app/schema/browser/configure.zcml:15
 msgid "Add"
 msgstr "Ajouter"
 
@@ -2960,7 +2981,7 @@ msgstr "Contenu Modifié Récemment"
 msgid "Creator"
 msgstr "Créateur"
 
-#: src/zope/app/dublincore/browser/metadataedit.py:40
+#: src/zope/app/dublincore/browser/metadataedit.py:42
 msgid "Changed data ${datetime}"
 msgstr "Données changées le ${datetime}"
 
@@ -3161,8 +3182,8 @@ msgstr "Charger une Image"
 msgid "Change a file"
 msgstr "Modifier un fichier"
 
-#: src/zope/app/file/browser/file.py:181
-#: src/zope/app/form/browser/editview.py:114
+#: src/zope/app/file/browser/file.py:218
+#: src/zope/app/form/browser/editview.py:116
 msgid "Updated on ${date_time}"
 msgstr "Mis à jour le ${date_time}"
 
@@ -3258,7 +3279,7 @@ msgstr "Données"
 msgid "The actual content of the object."
 msgstr "Le contenu de l'objet."
 
-#: src/zope/app/folder/browser/configure.zcml:29
+#: src/zope/app/folder/browser/configure.zcml:30
 #: src/zope/app/dtmlpage/configure.zcml:93
 #: src/zope/app/file/browser/configure.zcml:115
 #: src/zope/app/file/browser/configure.zcml:123
@@ -3277,8 +3298,8 @@ msgstr "Dossier"
 msgid "Minimal folder"
 msgstr "Dossier minimum"
 
-#: src/zope/app/form/browser/add.py:63
-#: src/zope/app/form/browser/editview.py:104
+#: src/zope/app/form/browser/add.py:65
+#: src/zope/app/form/browser/editview.py:106
 #: src/zope/app/form/browser/formview.py:75
 #: src/zope/app/schema/browser/__init__.py:53
 #: src/zope/app/schema/browser/__init__.py:64
@@ -3340,38 +3361,32 @@ msgstr "Précédent"
 msgid "next-button"
 msgstr "Suivant"
 
-#: src/zope/app/form/browser/editwizard.py:139
+#: src/zope/app/form/browser/editwizard.py:140
 msgid "No changes to save"
 msgstr "Pas de changement à sauvegarder"
 
-#: src/zope/app/form/browser/editwizard.py:141
+#: src/zope/app/form/browser/editwizard.py:142
 msgid "Changes saved"
 msgstr "Changements sauvegardés"
 
-#: src/zope/app/form/browser/itemswidgets.py:223
+#: src/zope/app/form/browser/itemswidgets.py:226
 msgid "item-missing-single-value-for-display"
 msgstr "Valeur simple manquante pour l'affichage"
 
-#: src/zope/app/form/browser/itemswidgets.py:243
+#: src/zope/app/form/browser/itemswidgets.py:246
 msgid "vocabulary-missing-multiple-value-for-display"
 msgstr "Valeur multiple manquante pour l'affichage"
 
-#: src/zope/app/form/browser/itemswidgets.py:392
-#: src/zope/app/form/browser/itemswidgets.py:436
+#: src/zope/app/form/browser/itemswidgets.py:395
+#: src/zope/app/form/browser/itemswidgets.py:439
 msgid "vocabulary-missing-single-value-for-edit"
 msgstr "Valeur simple manquante pour l'édition"
 
-#: src/zope/app/form/browser/itemswidgets.py:510
+#: src/zope/app/form/browser/itemswidgets.py:513
 msgid "vocabulary-missing-multiple-value-for-edit"
 msgstr "Valeur multiple manquante pour l'édition"
 
 #: src/zope/app/form/browser/metaconfigure.py:292
-#: src/zope/app/schema/fieldforms.zcml:21
-#: src/zope/app/schema/fieldforms.zcml:47
-#: src/zope/app/schema/fieldforms.zcml:73
-#: src/zope/app/schema/fieldforms.zcml:99
-#: src/zope/app/schema/fieldforms.zcml:125
-#: src/zope/app/schema/fieldforms.zcml:151
 #: src/zope/app/security/browser/configure.zcml:84
 #: src/zope/app/component/browser/configure.zcml:240
 #: src/zope/app/authentication/browser/session.zcml:11
@@ -3396,6 +3411,12 @@ msgstr "Valeur multiple manquante pour l'édition"
 #: src/zope/app/demo/widget/browser/textwidget.zcml:29
 #: src/zope/app/demo/widget/browser/textareawidget.zcml:29
 #: src/zope/app/pluggableauth/browser/configure.zcml:56
+#: src/zope/app/schema/fieldforms.zcml:21
+#: src/zope/app/schema/fieldforms.zcml:47
+#: src/zope/app/schema/fieldforms.zcml:73
+#: src/zope/app/schema/fieldforms.zcml:99
+#: src/zope/app/schema/fieldforms.zcml:125
+#: src/zope/app/schema/fieldforms.zcml:151
 #: src/zope/app/session/browser.zcml:15 src/zope/app/session/browser.zcml:38
 #: src/zope/app/zptpage/browser/configure.zcml:39
 #: src/zope/app/securitypolicy/browser/configure.zcml:35
@@ -3925,6 +3946,16 @@ msgstr ""
 #, fuzzy
 msgid "Persistent Key References"
 msgstr "Un Service Persistant De Menu De Navigation"
+
+#: src/zope/app/keyreference/interfaces.py:37
+msgid "Key Type Id"
+msgstr ""
+
+#: src/zope/app/keyreference/interfaces.py:38
+msgid ""
+"Key references should sort first on their key type and second on any type-"
+"specific information."
+msgstr ""
 
 #: src/zope/app/locking/adapter.py:69
 #, fuzzy
@@ -5091,12 +5122,12 @@ msgstr ""
 "valeur est Fausse alors le Composant De Contenu pourra être modifié (ce qui "
 "peut-être utile dans certains cas - ex.: en cours de développement)."
 
-#: src/zope/app/security/browser/auth.py:159
+#: src/zope/app/security/browser/auth.py:158
 #: src/zope/app/boston/browser/template.pt:55
 msgid "[Login]"
 msgstr "[Connexion]"
 
-#: src/zope/app/security/browser/auth.py:164
+#: src/zope/app/security/browser/auth.py:163
 #: src/zope/app/boston/browser/template.pt:51
 msgid "[Logout]"
 msgstr "[Déconnexion]"
