@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: zope\n"
-"POT-Creation-Date: Wed Jun 22 14:59:23 2005\n"
+"POT-Creation-Date: Fri Jun 24 14:55:05 2005\n"
 "PO-Revision-Date: 2004-07-02 11:20+0200\n"
 "Last-Translator: Fabrizio Reale\n"
 "Language-Team:  <fabrizio.reale@redomino.com>\n"
@@ -1169,12 +1169,12 @@ msgstr "Cartella minimale"
 msgid "search-button"
 msgstr "Compatta"
 
-#: src/zope/app/authentication/browser/schemasearch.py:54
+#: src/zope/app/authentication/browser/schemasearch.py:31
 #, fuzzy
 msgid "Source path"
 msgstr "Sorgente"
 
-#: src/zope/app/authentication/browser/schemasearch.py:55
+#: src/zope/app/authentication/browser/schemasearch.py:32
 #, fuzzy
 msgid "Path to the source utility"
 msgstr "Percorso della Risorsa"
@@ -3611,6 +3611,10 @@ msgstr "Generazioni del database"
 msgid "Generations"
 msgstr "Generazione minima"
 
+#: src/zope/app/homefolder/browser.py:40
+msgid "path is not correct !"
+msgstr ""
+
 #: src/zope/app/homefolder/configure.zcml:32
 #, fuzzy
 msgid "Add Home Folder Manager"
@@ -5415,16 +5419,21 @@ msgstr "Assegna i ruoli ai principal"
 msgid "<strong>Permissions</strong>&nbsp;"
 msgstr ""
 
-#: src/zope/app/securitypolicy/browser/granting.py:37
+#: src/zope/app/securitypolicy/browser/granting.py:226
+#, fuzzy
+msgid "Grants updated."
+msgstr "Il sorcente è stato aggiornato."
+
+#: src/zope/app/securitypolicy/browser/granting.py:39
 msgid "Allow"
 msgstr ""
 
-#: src/zope/app/securitypolicy/browser/granting.py:38
+#: src/zope/app/securitypolicy/browser/granting.py:40
 #, fuzzy
 msgid "Unset"
 msgstr "Utente"
 
-#: src/zope/app/securitypolicy/browser/granting.py:39
+#: src/zope/app/securitypolicy/browser/granting.py:41
 msgid "Deny"
 msgstr ""
 
@@ -7140,9 +7149,6 @@ msgstr ""
 
 #~ msgid "module name must be provided"
 #~ msgstr "il nome del modulo è obbligatorio"
-
-#~ msgid "The source was updated."
-#~ msgstr "Il sorcente è stato aggiornato."
 
 # Default: "Aggiungi un modulo"
 #~ msgid "add-module-button"

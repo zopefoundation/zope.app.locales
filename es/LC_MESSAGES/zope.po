@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zope X3 Pre-M4\n"
-"POT-Creation-Date: Wed Jun 22 14:59:23 2005\n"
+"POT-Creation-Date: Fri Jun 24 14:55:05 2005\n"
 "PO-Revision-Date: 2003-08-06 11:22-0500\n"
 "Last-Translator: Philipp von Weitershausen\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
@@ -1131,12 +1131,12 @@ msgstr "Carpeta mínima"
 msgid "search-button"
 msgstr "Empacar"
 
-#: src/zope/app/authentication/browser/schemasearch.py:54
+#: src/zope/app/authentication/browser/schemasearch.py:31
 #, fuzzy
 msgid "Source path"
 msgstr "Estado de Fuente"
 
-#: src/zope/app/authentication/browser/schemasearch.py:55
+#: src/zope/app/authentication/browser/schemasearch.py:32
 msgid "Path to the source utility"
 msgstr ""
 
@@ -3496,6 +3496,10 @@ msgstr "Generaciones de Base de Datos"
 msgid "Generations"
 msgstr "Presentaciones"
 
+#: src/zope/app/homefolder/browser.py:40
+msgid "path is not correct !"
+msgstr ""
+
 #: src/zope/app/homefolder/configure.zcml:32
 #, fuzzy
 msgid "Add Home Folder Manager"
@@ -5202,16 +5206,20 @@ msgstr "Conceder roles a principales"
 msgid "<strong>Permissions</strong>&nbsp;"
 msgstr ""
 
-#: src/zope/app/securitypolicy/browser/granting.py:37
+#: src/zope/app/securitypolicy/browser/granting.py:226
+msgid "Grants updated."
+msgstr ""
+
+#: src/zope/app/securitypolicy/browser/granting.py:39
 msgid "Allow"
 msgstr ""
 
-#: src/zope/app/securitypolicy/browser/granting.py:38
+#: src/zope/app/securitypolicy/browser/granting.py:40
 #, fuzzy
 msgid "Unset"
 msgstr "Usuario"
 
-#: src/zope/app/securitypolicy/browser/granting.py:39
+#: src/zope/app/securitypolicy/browser/granting.py:41
 msgid "Deny"
 msgstr ""
 
