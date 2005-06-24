@@ -13,8 +13,8 @@
 ##############################################################################
 msgid ""
 msgstr ""
-"Project-Id-Version: Development/Revision: 30879\n"
-"POT-Creation-Date: Wed Jun 22 16:02:32 2005\n"
+"Project-Id-Version: Development/Revision: 30902\n"
+"POT-Creation-Date: Fri Jun 24 14:55:05 2005\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
@@ -1033,11 +1033,11 @@ msgstr ""
 msgid "search-button"
 msgstr ""
 
-#: src/zope/app/authentication/browser/schemasearch.py:54
+#: src/zope/app/authentication/browser/schemasearch.py:31
 msgid "Source path"
 msgstr ""
 
-#: src/zope/app/authentication/browser/schemasearch.py:55
+#: src/zope/app/authentication/browser/schemasearch.py:32
 msgid "Path to the source utility"
 msgstr ""
 
@@ -3329,6 +3329,10 @@ msgstr ""
 msgid "Generations"
 msgstr ""
 
+#: src/zope/app/homefolder/browser.py:40
+msgid "path is not correct !"
+msgstr ""
+
 #: src/zope/app/homefolder/configure.zcml:32
 msgid "Add Home Folder Manager"
 msgstr ""
@@ -4979,15 +4983,19 @@ msgstr ""
 msgid "<strong>Permissions</strong>&nbsp;"
 msgstr ""
 
-#: src/zope/app/securitypolicy/browser/granting.py:37
-msgid "Allow"
-msgstr ""
-
-#: src/zope/app/securitypolicy/browser/granting.py:38
-msgid "Unset"
+#: src/zope/app/securitypolicy/browser/granting.py:226
+msgid "Grants updated."
 msgstr ""
 
 #: src/zope/app/securitypolicy/browser/granting.py:39
+msgid "Allow"
+msgstr ""
+
+#: src/zope/app/securitypolicy/browser/granting.py:40
+msgid "Unset"
+msgstr ""
+
+#: src/zope/app/securitypolicy/browser/granting.py:41
 msgid "Deny"
 msgstr ""
 
