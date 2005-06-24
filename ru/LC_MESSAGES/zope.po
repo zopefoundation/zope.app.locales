@@ -16,7 +16,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Development/Revision: 29457\n"
-"POT-Creation-Date: Wed Jun 22 14:59:23 2005\n"
+"POT-Creation-Date: Fri Jun 24 14:55:05 2005\n"
 "PO-Revision-Date: 2005-06-04 21:38+0300\n"
 "Last-Translator: Dmitry Vasiliev <dima@hlabs.spb.ru>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
@@ -1159,11 +1159,11 @@ msgstr "Префикс пользователей в папке"
 msgid "search-button"
 msgstr "Искать"
 
-#: src/zope/app/authentication/browser/schemasearch.py:54
+#: src/zope/app/authentication/browser/schemasearch.py:31
 msgid "Source path"
 msgstr "Путь источника"
 
-#: src/zope/app/authentication/browser/schemasearch.py:55
+#: src/zope/app/authentication/browser/schemasearch.py:32
 msgid "Path to the source utility"
 msgstr "Путь к утилите-источнику"
 
@@ -3537,6 +3537,10 @@ msgstr "Поколения базы данных"
 msgid "Generations"
 msgstr "Поколения"
 
+#: src/zope/app/homefolder/browser.py:40
+msgid "path is not correct !"
+msgstr "Некорректный путь!"
+
 #: src/zope/app/homefolder/configure.zcml:32
 msgid "Add Home Folder Manager"
 msgstr "Добавить менеджер домашних папок"
@@ -3904,13 +3908,13 @@ msgstr "Ссылки по сохраняемым ключам"
 
 #: src/zope/app/keyreference/interfaces.py:37
 msgid "Key Type Id"
-msgstr ""
+msgstr "Id типа ключа"
 
 #: src/zope/app/keyreference/interfaces.py:38
 msgid ""
 "Key references should sort first on their key type and second on any type-"
 "specific information."
-msgstr ""
+msgstr "Ключевые ссылки должны быть вначале отсортированы по типу ключа и затем по любой специфичной для типа информации."
 
 #: src/zope/app/locking/adapter.py:69
 msgid "Multiple principals found"
@@ -5278,15 +5282,19 @@ msgstr "Установить роли и права для пользовате�
 msgid "<strong>Permissions</strong>&nbsp;"
 msgstr "<strong>Права</strong>&nbsp;"
 
-#: src/zope/app/securitypolicy/browser/granting.py:37
+#: src/zope/app/securitypolicy/browser/granting.py:226
+msgid "Grants updated."
+msgstr "Права обновлены"
+
+#: src/zope/app/securitypolicy/browser/granting.py:39
 msgid "Allow"
 msgstr "Разрешить"
 
-#: src/zope/app/securitypolicy/browser/granting.py:38
+#: src/zope/app/securitypolicy/browser/granting.py:40
 msgid "Unset"
 msgstr "Не установлено"
 
-#: src/zope/app/securitypolicy/browser/granting.py:39
+#: src/zope/app/securitypolicy/browser/granting.py:41
 msgid "Deny"
 msgstr "Зарпетить"
 
@@ -5731,7 +5739,7 @@ msgstr ""
 
 #: src/zope/app/versioncontrol/interfaces.py:181
 msgid "time value indicating the when the bookkeeping information was created"
-msgstr ""
+msgstr "временное значение показывающее когда была создана информация хранения"
 
 #: src/zope/app/versioncontrol/interfaces.py:187
 msgid ""
@@ -5764,7 +5772,7 @@ msgstr "Изменения залиты"
 
 #: src/zope/app/versioncontrol/interfaces.py:210
 msgid "id of the effective user at the time the bookkeeping information was created"
-msgstr ""
+msgstr "id пользователя на момент когда была создана информация хранения"
 
 #: src/zope/app/versioncontrol/interfaces.py:224
 msgid "time that the log entry was created"
