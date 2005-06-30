@@ -16,7 +16,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Development/Revision: 29457\n"
-"POT-Creation-Date: Fri Jun 24 14:55:05 2005\n"
+"POT-Creation-Date: Thu Jun 30 11:24:36 2005\n"
 "PO-Revision-Date: 2005-06-04 21:38+0300\n"
 "Last-Translator: Dmitry Vasiliev <dima@hlabs.spb.ru>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
@@ -2053,7 +2053,7 @@ msgstr "Компонент который будет использоватьс�
 
 #: src/zope/app/component/metadirectives.py:323
 #: src/zope/app/component/metadirectives.py:492
-#: src/zope/app/intid/browser/registrations.pt:11
+#: src/zope/app/intid/browser/registrations.pt:12
 msgid "ID"
 msgstr "Идентификатор"
 
@@ -2284,6 +2284,14 @@ msgstr ""
 "возможно расширить права доступа на все описанное в данном интерфейсе. "
 "Несколько интерфейсов могут быть указаны, разделенные пробелами."
 
+#: src/zope/app/component/registration.py:150
+msgid "Can't delete active registration (${path})"
+msgstr "Невозможно удалить активную регистрацию (${path})"
+
+#: src/zope/app/component/registration.py:190
+msgid "Can't move a registered component from its container."
+msgstr "Невозможно переместить зарегистрированный компонент."
+
 #: src/zope/app/component/vocabulary.py:274
 msgid "(unnamed utility)"
 msgstr "(безымянная утилита)"
@@ -2402,15 +2410,15 @@ msgstr "Добавить"
 msgid "Container is not a valid Zope container."
 msgstr "Контейнер не является Zope контейнером."
 
-#: src/zope/app/container/contained.py:705
+#: src/zope/app/container/contained.py:706
 msgid "An empty name was provided. Names cannot be empty."
 msgstr "Было введено пустое название.Названия не могут быть пустыми."
 
-#: src/zope/app/container/contained.py:715
+#: src/zope/app/container/contained.py:716
 msgid "Names cannot begin with '+' or '@' or contain '/'"
 msgstr "Имена не могут начинаться с '+' или '@', или содержать '/'"
 
-#: src/zope/app/container/contained.py:720
+#: src/zope/app/container/contained.py:721
 msgid "The given name is already being used"
 msgstr "Данное название уже используется"
 
@@ -3881,7 +3889,7 @@ msgstr ""
 "Инструментарий генерации уникальных идентификаторов используется для "
 "генерации уникальных в системе идентификаторов для документов."
 
-#: src/zope/app/intid/browser/registrations.pt:11
+#: src/zope/app/intid/browser/registrations.pt:12
 msgid "Object"
 msgstr "Объект"
 
@@ -3914,7 +3922,9 @@ msgstr "Id типа ключа"
 msgid ""
 "Key references should sort first on their key type and second on any type-"
 "specific information."
-msgstr "Ключевые ссылки должны быть вначале отсортированы по типу ключа и затем по любой специфичной для типа информации."
+msgstr ""
+"Ключевые ссылки должны быть вначале отсортированы по типу ключа и затем по "
+"любой специфичной для типа информации."
 
 #: src/zope/app/locking/adapter.py:69
 msgid "Multiple principals found"
@@ -4160,7 +4170,7 @@ msgstr ""
 
 #: src/zope/app/pagelet/exceptions.py:37
 msgid "IPageletSlot interface not provided."
-msgstr ""
+msgstr "Интерфейс IPageletSlot не предоставлен."
 
 #: src/zope/app/pagelet/interfaces.py:150
 msgid "Pagelets registred for context, request, view and slot."
@@ -4172,7 +4182,7 @@ msgstr ""
 
 #: src/zope/app/pagelet/interfaces.py:185
 msgid "Page data adapter registred for context, request and view."
-msgstr ""
+msgstr "Адаптер данных страницы зарегистрированный для контекста, запроса и представления."
 
 #: src/zope/app/pagelet/interfaces.py:58
 msgid "weight"
@@ -5737,11 +5747,11 @@ msgstr ""
 "Данная форма позволит Вам отменить ваши транзакции. Показаны только "
 "транзакции инициированные Вами."
 
-#: src/zope/app/versioncontrol/interfaces.py:181
+#: src/zope/app/versioncontrol/interfaces.py:182
 msgid "time value indicating the when the bookkeeping information was created"
 msgstr "временное значение показывающее когда была создана информация хранения"
 
-#: src/zope/app/versioncontrol/interfaces.py:187
+#: src/zope/app/versioncontrol/interfaces.py:188
 msgid ""
 "\n"
 "        Id of the version history related to the version controlled "
@@ -5754,65 +5764,89 @@ msgstr ""
 "Идентификатор истории версий относящейся к ресурсу под контролем версий. "
 "Если не установлен, то равен None."
 
-#: src/zope/app/versioncontrol/interfaces.py:196
+#: src/zope/app/versioncontrol/interfaces.py:197
 msgid "version id that the version controlled resource is based upon"
 msgstr "идентификатор версии на которой базируется ресурс под контролем версий"
 
-#: src/zope/app/versioncontrol/interfaces.py:200
+#: src/zope/app/versioncontrol/interfaces.py:201
 msgid "status of the version controlled resource"
 msgstr "статус ресура под контролем версий"
 
-#: src/zope/app/versioncontrol/interfaces.py:202
+#: src/zope/app/versioncontrol/interfaces.py:203
 msgid "Checked out"
 msgstr "Изменения загружены"
 
-#: src/zope/app/versioncontrol/interfaces.py:203
+#: src/zope/app/versioncontrol/interfaces.py:204
 msgid "Checked in"
 msgstr "Изменения залиты"
 
-#: src/zope/app/versioncontrol/interfaces.py:210
+#: src/zope/app/versioncontrol/interfaces.py:211
 msgid "id of the effective user at the time the bookkeeping information was created"
 msgstr "id пользователя на момент когда была создана информация хранения"
 
-#: src/zope/app/versioncontrol/interfaces.py:224
+#: src/zope/app/versioncontrol/interfaces.py:225
 msgid "time that the log entry was created"
 msgstr "время когда была создана данная запись лога"
 
-#: src/zope/app/versioncontrol/interfaces.py:227
+#: src/zope/app/versioncontrol/interfaces.py:228
 msgid "version id of the resource related to the log entry"
 msgstr "идентификатор версии ресурса относящегося к данной записи лога"
 
-#: src/zope/app/versioncontrol/interfaces.py:230
+#: src/zope/app/versioncontrol/interfaces.py:231
 msgid "the action that was taken"
 msgstr "произведенное действие"
 
-#: src/zope/app/versioncontrol/interfaces.py:232
+#: src/zope/app/versioncontrol/interfaces.py:233
 msgid "Checkout"
 msgstr "Загрузить изменения"
 
-#: src/zope/app/versioncontrol/interfaces.py:233
+#: src/zope/app/versioncontrol/interfaces.py:234
 msgid "Checkin"
 msgstr "Залить изменения"
 
-#: src/zope/app/versioncontrol/interfaces.py:234
+#: src/zope/app/versioncontrol/interfaces.py:235
 msgid "Uncheckout"
 msgstr "Отменить загрузку изменений"
 
-#: src/zope/app/versioncontrol/interfaces.py:235
+#: src/zope/app/versioncontrol/interfaces.py:236
 msgid "Update"
 msgstr "Обновить"
 
-#: src/zope/app/versioncontrol/interfaces.py:238
+#: src/zope/app/versioncontrol/interfaces.py:239
 msgid "Message provided by the user at the time of the action.  This may be empty."
 msgstr "Сообщение предоставленное пользователем в момент акции. Может быть пустым."
 
-#: src/zope/app/versioncontrol/interfaces.py:242
+#: src/zope/app/versioncontrol/interfaces.py:243
 msgid "id of the user causing the audited action"
 msgstr "Идентификатор пользователя инициировавшего действие проверки"
 
-#: src/zope/app/versioncontrol/interfaces.py:245
+#: src/zope/app/versioncontrol/interfaces.py:246
 msgid "path to the object upon which the action was taken"
 msgstr "путь к объекту над которым было произведено действие"
+
+#: src/zope/app/versioncontrol/interfaces.py:314
+msgid "Message"
+msgstr "Сообщение"
+
+#: src/zope/app/versioncontrol/interfaces.py:315
+msgid "Message text passed to applyVersionControl() for the object."
+msgstr "Текст сообщения переданный applyVersionControl() для объекта."
+
+#: src/zope/app/versioncontrol/interfaces.py:351
+msgid "Label"
+msgstr "Метка"
+
+#: src/zope/app/versioncontrol/interfaces.py:352
+msgid "Label applied to the version."
+msgstr "Метка добавленная к версии."
+
+#: src/zope/app/versioncontrol/interfaces.py:361
+msgid "Branch Id"
+msgstr "Идентификатор ветви"
+
+#: src/zope/app/versioncontrol/interfaces.py:362
+msgid "Identifier for the new branch."
+msgstr "Идентификатор для новой ветви."
 
 #: src/zope/app/wfmc/configure.zcml:13
 msgid "WfMC Workflows"
