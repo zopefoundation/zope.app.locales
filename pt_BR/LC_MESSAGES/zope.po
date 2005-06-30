@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zope X3 Pre-M4\n"
-"POT-Creation-Date: Fri Jun 24 14:55:05 2005\n"
+"POT-Creation-Date: Thu Jun 30 11:24:36 2005\n"
 "PO-Revision-Date: 2003-08-07 18:51-0300\n"
 "Last-Translator: Sidnei da Silva <sidnei@plone.org>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
@@ -1982,7 +1982,7 @@ msgstr "Conteúdo"
 
 #: src/zope/app/component/metadirectives.py:323
 #: src/zope/app/component/metadirectives.py:492
-#: src/zope/app/intid/browser/registrations.pt:11
+#: src/zope/app/intid/browser/registrations.pt:12
 msgid "ID"
 msgstr ""
 
@@ -2183,6 +2183,14 @@ msgid ""
 "        whitespace."
 msgstr ""
 
+#: src/zope/app/component/registration.py:150
+msgid "Can't delete active registration (${path})"
+msgstr ""
+
+#: src/zope/app/component/registration.py:190
+msgid "Can't move a registered component from its container."
+msgstr ""
+
 #: src/zope/app/component/vocabulary.py:274
 msgid "(unnamed utility)"
 msgstr ""
@@ -2291,15 +2299,15 @@ msgstr "Adicionar"
 msgid "Container is not a valid Zope container."
 msgstr ""
 
-#: src/zope/app/container/contained.py:705
+#: src/zope/app/container/contained.py:706
 msgid "An empty name was provided. Names cannot be empty."
 msgstr ""
 
-#: src/zope/app/container/contained.py:715
+#: src/zope/app/container/contained.py:716
 msgid "Names cannot begin with '+' or '@' or contain '/'"
 msgstr ""
 
-#: src/zope/app/container/contained.py:720
+#: src/zope/app/container/contained.py:721
 msgid "The given name is already being used"
 msgstr ""
 
@@ -3774,7 +3782,7 @@ msgid ""
 "documents."
 msgstr ""
 
-#: src/zope/app/intid/browser/registrations.pt:11
+#: src/zope/app/intid/browser/registrations.pt:12
 #, fuzzy
 msgid "Object"
 msgstr "Nome"
@@ -5556,11 +5564,11 @@ msgid ""
 "transactions initiated by you."
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:181
+#: src/zope/app/versioncontrol/interfaces.py:182
 msgid "time value indicating the when the bookkeeping information was created"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:187
+#: src/zope/app/versioncontrol/interfaces.py:188
 msgid ""
 "\n"
 "        Id of the version history related to the version controlled "
@@ -5570,67 +5578,91 @@ msgid ""
 "        "
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:196
+#: src/zope/app/versioncontrol/interfaces.py:197
 msgid "version id that the version controlled resource is based upon"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:200
+#: src/zope/app/versioncontrol/interfaces.py:201
 msgid "status of the version controlled resource"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:202
+#: src/zope/app/versioncontrol/interfaces.py:203
 msgid "Checked out"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:203
+#: src/zope/app/versioncontrol/interfaces.py:204
 msgid "Checked in"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:210
+#: src/zope/app/versioncontrol/interfaces.py:211
 msgid ""
 "id of the effective user at the time the bookkeeping information was created"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:224
+#: src/zope/app/versioncontrol/interfaces.py:225
 msgid "time that the log entry was created"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:227
+#: src/zope/app/versioncontrol/interfaces.py:228
 msgid "version id of the resource related to the log entry"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:230
+#: src/zope/app/versioncontrol/interfaces.py:231
 msgid "the action that was taken"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:232
+#: src/zope/app/versioncontrol/interfaces.py:233
 msgid "Checkout"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:233
+#: src/zope/app/versioncontrol/interfaces.py:234
 msgid "Checkin"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:234
+#: src/zope/app/versioncontrol/interfaces.py:235
 msgid "Uncheckout"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:235
+#: src/zope/app/versioncontrol/interfaces.py:236
 #, fuzzy
 msgid "Update"
 msgstr "Rodando a:"
 
-#: src/zope/app/versioncontrol/interfaces.py:238
+#: src/zope/app/versioncontrol/interfaces.py:239
 msgid ""
 "Message provided by the user at the time of the action.  This may be empty."
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:242
+#: src/zope/app/versioncontrol/interfaces.py:243
 msgid "id of the user causing the audited action"
 msgstr ""
 
-#: src/zope/app/versioncontrol/interfaces.py:245
+#: src/zope/app/versioncontrol/interfaces.py:246
 msgid "path to the object upon which the action was taken"
+msgstr ""
+
+#: src/zope/app/versioncontrol/interfaces.py:314
+msgid "Message"
+msgstr ""
+
+#: src/zope/app/versioncontrol/interfaces.py:315
+msgid "Message text passed to applyVersionControl() for the object."
+msgstr ""
+
+#: src/zope/app/versioncontrol/interfaces.py:351
+msgid "Label"
+msgstr ""
+
+#: src/zope/app/versioncontrol/interfaces.py:352
+msgid "Label applied to the version."
+msgstr ""
+
+#: src/zope/app/versioncontrol/interfaces.py:361
+msgid "Branch Id"
+msgstr ""
+
+#: src/zope/app/versioncontrol/interfaces.py:362
+msgid "Identifier for the new branch."
 msgstr ""
 
 #: src/zope/app/wfmc/configure.zcml:13

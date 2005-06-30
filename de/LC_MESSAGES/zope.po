@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: zope\n"
-"POT-Creation-Date: Fri Jun 24 14:55:05 2005\n"
+"POT-Creation-Date: Thu Jun 30 11:24:36 2005\n"
 "PO-Revision-Date: 2005-06-11 00:03+0100\n"
 "Last-Translator: Egon Frerich <e.frerich@nord-com.net>\n"
 "Language-Team: German <<zope3-dev@zope.org>>\n"
@@ -2116,7 +2116,7 @@ msgstr "Zu benutzende Komponente"
 
 #: src/zope/app/component/metadirectives.py:323
 #: src/zope/app/component/metadirectives.py:492
-#: src/zope/app/intid/browser/registrations.pt:11
+#: src/zope/app/intid/browser/registrations.pt:12
 msgid "ID"
 msgstr "ID"
 
@@ -2371,6 +2371,14 @@ msgstr ""
 "    werden.\n"
 "."
 
+#: src/zope/app/component/registration.py:150
+msgid "Can't delete active registration (${path})"
+msgstr ""
+
+#: src/zope/app/component/registration.py:190
+msgid "Can't move a registered component from its container."
+msgstr ""
+
 #: src/zope/app/component/vocabulary.py:274
 msgid "(unnamed utility)"
 msgstr "(unbenanntes Utility)"
@@ -2484,15 +2492,15 @@ msgstr "Hinzufügen"
 msgid "Container is not a valid Zope container."
 msgstr "Behälter ist kein gültiger Zope-Behälter."
 
-#: src/zope/app/container/contained.py:705
+#: src/zope/app/container/contained.py:706
 msgid "An empty name was provided. Names cannot be empty."
 msgstr "Ein leerer Name wurde angegeben. Namen dürfen aber nicht leer sein."
 
-#: src/zope/app/container/contained.py:715
+#: src/zope/app/container/contained.py:716
 msgid "Names cannot begin with '+' or '@' or contain '/'"
 msgstr "Namen dürfen nicht mit '+' or '@' beginnen, noch '/' enthalten."
 
-#: src/zope/app/container/contained.py:720
+#: src/zope/app/container/contained.py:721
 msgid "The given name is already being used"
 msgstr "Der angegebene Name existiert bereits."
 
@@ -3971,7 +3979,7 @@ msgstr ""
 "Das Utility 'Eindeutige IDs' stellt systemweit eindeutige IDs für Dokumente "
 "bereit."
 
-#: src/zope/app/intid/browser/registrations.pt:11
+#: src/zope/app/intid/browser/registrations.pt:12
 msgid "Object"
 msgstr "Objekt"
 
@@ -5837,11 +5845,11 @@ msgstr ""
 "rückgängig zu machen. Sie betrachten gerade die Transaktionen, die von Ihnen "
 "ausgegangen sind."
 
-#: src/zope/app/versioncontrol/interfaces.py:181
+#: src/zope/app/versioncontrol/interfaces.py:182
 msgid "time value indicating the when the bookkeeping information was created"
 msgstr "Zeitpunkt, zu dem die Protokolldaten erzeugt wurden"
 
-#: src/zope/app/versioncontrol/interfaces.py:187
+#: src/zope/app/versioncontrol/interfaces.py:188
 msgid ""
 "\n"
 "        Id of the version history related to the version controlled "
@@ -5856,71 +5864,97 @@ msgstr ""
 "    Wenn sie nicht gesetzt ist (ist `None`), ...\n"
 "    "
 
-#: src/zope/app/versioncontrol/interfaces.py:196
+#: src/zope/app/versioncontrol/interfaces.py:197
 msgid "version id that the version controlled resource is based upon"
 msgstr "Versionskennung, auf der die versionsgeführte Ressource beruht"
 
-#: src/zope/app/versioncontrol/interfaces.py:200
+#: src/zope/app/versioncontrol/interfaces.py:201
 msgid "status of the version controlled resource"
 msgstr "Status der versionsgeführten Ressource"
 
-#: src/zope/app/versioncontrol/interfaces.py:202
+#: src/zope/app/versioncontrol/interfaces.py:203
 msgid "Checked out"
 msgstr "Herausgeholt"
 
-#: src/zope/app/versioncontrol/interfaces.py:203
+#: src/zope/app/versioncontrol/interfaces.py:204
 msgid "Checked in"
 msgstr "Eingebucht"
 
-#: src/zope/app/versioncontrol/interfaces.py:210
+#: src/zope/app/versioncontrol/interfaces.py:211
 msgid ""
 "id of the effective user at the time the bookkeeping information was created"
 msgstr ""
 "Kennung des tatsächlichen Benutzers zu dem Zeitpunkt, als die Protokolldaten "
 "erzeugt wurden"
 
-#: src/zope/app/versioncontrol/interfaces.py:224
+#: src/zope/app/versioncontrol/interfaces.py:225
 msgid "time that the log entry was created"
 msgstr "Zeitpunkt, an dem der Logbucheintrag erzeugt wurde"
 
-#: src/zope/app/versioncontrol/interfaces.py:227
+#: src/zope/app/versioncontrol/interfaces.py:228
 msgid "version id of the resource related to the log entry"
 msgstr "Versionskennung der Ressource, auf die sich der Logbucheintrag bezieht"
 
-#: src/zope/app/versioncontrol/interfaces.py:230
+#: src/zope/app/versioncontrol/interfaces.py:231
 msgid "the action that was taken"
 msgstr "Die ausgeführte Aktion"
 
-#: src/zope/app/versioncontrol/interfaces.py:232
+#: src/zope/app/versioncontrol/interfaces.py:233
 msgid "Checkout"
 msgstr "Herausholen"
 
-#: src/zope/app/versioncontrol/interfaces.py:233
+#: src/zope/app/versioncontrol/interfaces.py:234
 msgid "Checkin"
 msgstr "Einbuchen"
 
-#: src/zope/app/versioncontrol/interfaces.py:234
+#: src/zope/app/versioncontrol/interfaces.py:235
 msgid "Uncheckout"
 msgstr "Änderungen zurück"
 
-#: src/zope/app/versioncontrol/interfaces.py:235
+#: src/zope/app/versioncontrol/interfaces.py:236
 msgid "Update"
 msgstr "Aktualisiert"
 
-#: src/zope/app/versioncontrol/interfaces.py:238
+#: src/zope/app/versioncontrol/interfaces.py:239
 msgid ""
 "Message provided by the user at the time of the action.  This may be empty."
 msgstr ""
 "Vom Benutzerzum Zeitpunkt der Aktion bereitgestellte Nachricht. Sie kann "
 "leer sein."
 
-#: src/zope/app/versioncontrol/interfaces.py:242
+#: src/zope/app/versioncontrol/interfaces.py:243
 msgid "id of the user causing the audited action"
 msgstr "Kennung des Benutzers, der die geprüfte Aktion verursachte"
 
-#: src/zope/app/versioncontrol/interfaces.py:245
+#: src/zope/app/versioncontrol/interfaces.py:246
 msgid "path to the object upon which the action was taken"
 msgstr "Pfad zum Objekt, auf das sich die Aktion bezog"
+
+#: src/zope/app/versioncontrol/interfaces.py:314
+#, fuzzy
+msgid "Message"
+msgstr "Nachrichten-ID"
+
+#: src/zope/app/versioncontrol/interfaces.py:315
+msgid "Message text passed to applyVersionControl() for the object."
+msgstr ""
+
+#: src/zope/app/versioncontrol/interfaces.py:351
+#, fuzzy
+msgid "Label"
+msgstr "Ebene"
+
+#: src/zope/app/versioncontrol/interfaces.py:352
+msgid "Label applied to the version."
+msgstr ""
+
+#: src/zope/app/versioncontrol/interfaces.py:361
+msgid "Branch Id"
+msgstr ""
+
+#: src/zope/app/versioncontrol/interfaces.py:362
+msgid "Identifier for the new branch."
+msgstr ""
 
 #: src/zope/app/wfmc/configure.zcml:13
 msgid "WfMC Workflows"
