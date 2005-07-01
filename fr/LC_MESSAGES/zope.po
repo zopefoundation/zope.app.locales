@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zope X3 Pre-M4\n"
-"POT-Creation-Date: Thu Jun 30 11:24:36 2005\n"
+"POT-Creation-Date: Fri Jul  1 16:14:17 2005\n"
 "PO-Revision-Date: 2004-06-25 16:00+0100\n"
 "Last-Translator: Thierry Goyvaerts <Thierry.Goyvaerts@skynet.be>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope3.org>\n"
@@ -2678,6 +2678,7 @@ msgid "IntWidget"
 msgstr ""
 
 #: src/zope/app/demo/widget/browser/popup.pt:36
+#: src/zope/app/zptpage/browser/inlinecode.pt:50
 #: src/zope/app/schema/browser/schema_edit.pt:21
 #: src/zope/app/pythonpage/edit.pt:24 src/zope/app/form/browser/add.pt:25
 #: src/zope/app/form/browser/edit.pt:26
@@ -2685,6 +2686,7 @@ msgid "There are ${num_errors} input errors."
 msgstr "Il y a ${num_errors} erreurs d'encodage."
 
 #: src/zope/app/demo/widget/browser/popup.pt:65
+#: src/zope/app/zptpage/browser/inlinecode.pt:64
 #: src/zope/app/file/browser/file_upload.pt:48
 #: src/zope/app/file/browser/file_add.pt:46
 #: src/zope/app/dublincore/browser/edit.pt:50
@@ -2695,6 +2697,7 @@ msgid "refresh-button"
 msgstr "Rafraîchir"
 
 #: src/zope/app/demo/widget/browser/popup.pt:67
+#: src/zope/app/zptpage/browser/inlinecode.pt:66
 #: src/zope/app/pythonpage/edit.pt:72
 #: src/zope/app/form/browser/editwizard.pt:48
 #: src/zope/app/form/browser/addwizard.pt:68
@@ -6258,6 +6261,30 @@ msgstr "Editer une Page ZPT"
 msgid "Inline Code"
 msgstr "Code En Ligne"
 
+#: src/zope/app/zptpage/browser/inlinecode.pt:29
+msgid ""
+"This screen allows you to activate Inline Code Evaluation. This means that "
+"you can say ${code-example-1} or ${code-example-2}"
+msgstr ""
+"Cet écran vous permet d'activer l'Evaluation Du Code En Ligne. C'est-à-dire "
+"que vous pouvez dire ${code-example-1} ou ${code-example-2}"
+
+#: src/zope/app/zptpage/browser/inlinecode.pt:35
+msgid ""
+"Many Zope 3 developers consider inline code blocks something very bad, since "
+"it does not follow the design of Page Templates or Zope 3 in general. "
+"However, application and application server developers are not the only "
+"audience for Zope 3. Scripters are used to inline code from other "
+"technologies like PHP and it fits their brain, which is very important."
+msgstr ""
+"Beaucoup de développeurs de Zope 3 considèrent que le code en ligne n'est "
+"pas une bonne chose puisqu'en général il ne suit pas le concept de Formats "
+"De Page ou de Zope 3. Cependant, les développeurs d'application et de "
+"serveur d'application ne sont pas les seules parties de Zope 3. Les "
+"développeurs de Scripts sont habitués au code en ligne.  Ils proviennent "
+"d'autres technologies telle : PHP et cela leur convient, ce qui est très "
+"important."
+
 #: src/zope/app/zptpage/configure.zcml:12
 #: src/zope/app/zptpage/browser/configure.zcml:23
 msgid "A simple, content-based Page Template"
@@ -6909,29 +6936,6 @@ msgstr "Identificateur de la permission."
 
 #~ msgid "Workflow-relevant Data"
 #~ msgstr "Données appropriées à la Gestion De Flux"
-
-#~ msgid ""
-#~ "This screen allows you to activate Inline Code Evaluation. This means "
-#~ "that you can say ${code-example-1} or ${code-example-2}"
-#~ msgstr ""
-#~ "Cet écran vous permet d'activer l'Evaluation Du Code En Ligne. C'est-à-"
-#~ "dire que vous pouvez dire ${code-example-1} ou ${code-example-2}"
-
-#~ msgid ""
-#~ "Many Zope 3 developers consider inline code blocks something very bad, "
-#~ "since it does not follow the design of Page Templates or Zope 3 in "
-#~ "general. However, application and application server developers are not "
-#~ "the only audience for Zope 3. Scripters are used to inline code from "
-#~ "other technologies like PHP and it fits their brain, which is very "
-#~ "important."
-#~ msgstr ""
-#~ "Beaucoup de développeurs de Zope 3 considèrent que le code en ligne n'est "
-#~ "pas une bonne chose puisqu'en général il ne suit pas le concept de "
-#~ "Formats De Page ou de Zope 3. Cependant, les développeurs d'application "
-#~ "et de serveur d'application ne sont pas les seules parties de Zope 3. Les "
-#~ "développeurs de Scripts sont habitués au code en ligne.  Ils proviennent "
-#~ "d'autres technologies telle : PHP et cela leur convient, ce qui est très "
-#~ "important."
 
 #~ msgid "The dotted name of a factory for creating the adapter"
 #~ msgstr "Le nom web d'une Usine afin de créer un Adaptateur"

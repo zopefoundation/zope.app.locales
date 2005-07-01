@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zope X3 Pre-M4\n"
-"POT-Creation-Date: Thu Jun 30 11:24:36 2005\n"
+"POT-Creation-Date: Fri Jul  1 16:14:17 2005\n"
 "PO-Revision-Date: 2003-08-06 11:22-0500\n"
 "Last-Translator: Philipp von Weitershausen\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
@@ -2615,6 +2615,7 @@ msgid "IntWidget"
 msgstr ""
 
 #: src/zope/app/demo/widget/browser/popup.pt:36
+#: src/zope/app/zptpage/browser/inlinecode.pt:50
 #: src/zope/app/schema/browser/schema_edit.pt:21
 #: src/zope/app/pythonpage/edit.pt:24 src/zope/app/form/browser/add.pt:25
 #: src/zope/app/form/browser/edit.pt:26
@@ -2622,6 +2623,7 @@ msgid "There are ${num_errors} input errors."
 msgstr ""
 
 #: src/zope/app/demo/widget/browser/popup.pt:65
+#: src/zope/app/zptpage/browser/inlinecode.pt:64
 #: src/zope/app/file/browser/file_upload.pt:48
 #: src/zope/app/file/browser/file_add.pt:46
 #: src/zope/app/dublincore/browser/edit.pt:50
@@ -2632,6 +2634,7 @@ msgid "refresh-button"
 msgstr "Actualizar"
 
 #: src/zope/app/demo/widget/browser/popup.pt:67
+#: src/zope/app/zptpage/browser/inlinecode.pt:66
 #: src/zope/app/pythonpage/edit.pt:72
 #: src/zope/app/form/browser/editwizard.pt:48
 #: src/zope/app/form/browser/addwizard.pt:68
@@ -6033,6 +6036,21 @@ msgstr "Editar una pagina ZPT"
 
 #: src/zope/app/zptpage/browser/configure.zcml:49
 msgid "Inline Code"
+msgstr ""
+
+#: src/zope/app/zptpage/browser/inlinecode.pt:29
+msgid ""
+"This screen allows you to activate Inline Code Evaluation. This means that "
+"you can say ${code-example-1} or ${code-example-2}"
+msgstr ""
+
+#: src/zope/app/zptpage/browser/inlinecode.pt:35
+msgid ""
+"Many Zope 3 developers consider inline code blocks something very bad, since "
+"it does not follow the design of Page Templates or Zope 3 in general. "
+"However, application and application server developers are not the only "
+"audience for Zope 3. Scripters are used to inline code from other "
+"technologies like PHP and it fits their brain, which is very important."
 msgstr ""
 
 #: src/zope/app/zptpage/configure.zcml:12
