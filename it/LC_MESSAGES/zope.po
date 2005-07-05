@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: zope\n"
-"POT-Creation-Date: Fri Jul  1 16:14:17 2005\n"
+"POT-Creation-Date: Tue Jul  5 14:55:34 2005\n"
 "PO-Revision-Date: 2004-07-02 11:20+0200\n"
 "Last-Translator: Fabrizio Reale\n"
 "Language-Team:  <fabrizio.reale@redomino.com>\n"
@@ -4157,6 +4157,16 @@ msgstr "Aiuto"
 msgid "Menu for displaying help actions to be performed with popup"
 msgstr ""
 "Menu per mostrare le azioni di aiuto che possono essere eseguite con un popup"
+
+#: src/zope/app/onlinehelp/browser/onlinehelp_macros.pt:44
+#, fuzzy
+msgid "Onlinehelp"
+msgstr "Aiuto online - Indice"
+
+#: src/zope/app/onlinehelp/browser/onlinehelp_navigation_macros.pt:4
+#, fuzzy
+msgid "Topics"
+msgstr "Argomento dell'Aiuto"
 
 #: src/zope/app/onlinehelp/help/configure.zcml:14
 msgid "Zope Developer Info"

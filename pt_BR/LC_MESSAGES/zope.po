@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zope X3 Pre-M4\n"
-"POT-Creation-Date: Fri Jul  1 16:14:17 2005\n"
+"POT-Creation-Date: Tue Jul  5 14:55:34 2005\n"
 "PO-Revision-Date: 2003-08-07 18:51-0300\n"
 "Last-Translator: Sidnei da Silva <sidnei@plone.org>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
@@ -3957,6 +3957,14 @@ msgstr ""
 
 #: src/zope/app/onlinehelp/browser/configure.zcml:7
 msgid "Menu for displaying help actions to be performed with popup"
+msgstr ""
+
+#: src/zope/app/onlinehelp/browser/onlinehelp_macros.pt:44
+msgid "Onlinehelp"
+msgstr ""
+
+#: src/zope/app/onlinehelp/browser/onlinehelp_navigation_macros.pt:4
+msgid "Topics"
 msgstr ""
 
 #: src/zope/app/onlinehelp/help/configure.zcml:14
