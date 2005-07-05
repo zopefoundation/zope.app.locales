@@ -16,7 +16,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Development/Revision: 29457\n"
-"POT-Creation-Date: Fri Jul  1 16:14:17 2005\n"
+"POT-Creation-Date: Tue Jul  5 14:55:34 2005\n"
 "PO-Revision-Date: 2005-06-04 21:38+0300\n"
 "Last-Translator: Dmitry Vasiliev <dima@hlabs.spb.ru>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
@@ -4066,6 +4066,14 @@ msgstr "Справка"
 msgid "Menu for displaying help actions to be performed with popup"
 msgstr "Меню для показа справочной информации в виде popup"
 
+#: src/zope/app/onlinehelp/browser/onlinehelp_macros.pt:44
+msgid "Onlinehelp"
+msgstr "Система справки"
+
+#: src/zope/app/onlinehelp/browser/onlinehelp_navigation_macros.pt:4
+msgid "Topics"
+msgstr "Темы"
+
 #: src/zope/app/onlinehelp/help/configure.zcml:14
 msgid "Zope Developer Info"
 msgstr "Информация для Zope разработчика"
@@ -6164,8 +6172,8 @@ msgid ""
 "This screen allows you to activate Inline Code Evaluation. This means that "
 "you can say ${code-example-1} or ${code-example-2}"
 msgstr ""
-"Данный экран позволяет активировать выполнение всроенного кода. Это значит что "
-"можно будет написать ${code-example-1} или ${code-example-2}"
+"Данный экран позволяет активировать выполнение всроенного кода. Это значит "
+"что можно будет написать ${code-example-1} или ${code-example-2}"
 
 #: src/zope/app/zptpage/browser/inlinecode.pt:35
 msgid ""
@@ -6174,7 +6182,12 @@ msgid ""
 "However, application and application server developers are not the only "
 "audience for Zope 3. Scripters are used to inline code from other "
 "technologies like PHP and it fits their brain, which is very important."
-msgstr "Большинство разработчиков Zope 3 рассматривают встроенные блоки кода как плохой подход т.к. это не следует общему дизайну шаблонов страниц в Zope 3. Конечно разработчики приложений и разработчики сервера приложений не единственные пользователи Zope 3. Разработчики скриптов привыкли использовать встроенный код в таких технологиях как, например, PHP."
+msgstr ""
+"Большинство разработчиков Zope 3 рассматривают встроенные блоки кода как "
+"плохой подход т.к. это не следует общему дизайну шаблонов страниц в Zope 3. "
+"Конечно разработчики приложений и разработчики сервера приложений не "
+"единственные пользователи Zope 3. Разработчики скриптов привыкли "
+"использовать встроенный код в таких технологиях как, например, PHP."
 
 #: src/zope/app/zptpage/configure.zcml:12
 #: src/zope/app/zptpage/browser/configure.zcml:23
