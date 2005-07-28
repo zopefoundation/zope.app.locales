@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zope X3 Pre-M4\n"
-"POT-Creation-Date: Fri Jul  8 14:51:48 2005\n"
+"POT-Creation-Date: Thu Jul 28 10:52:20 2005\n"
 "PO-Revision-Date: 2004-06-25 16:00+0100\n"
 "Last-Translator: Thierry Goyvaerts <Thierry.Goyvaerts@skynet.be>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope3.org>\n"
@@ -500,7 +500,7 @@ msgstr ""
 #: src/zope/app/apidoc/configure.zcml:68
 msgid ""
 "          These are all the preferences related to viewing the API          "
-"documtation."
+"documentation."
 msgstr ""
 
 #: src/zope/app/apidoc/ifacemodule/component_macros.pt:13
@@ -1203,20 +1203,7 @@ msgstr "Nettoyer"
 msgid "ZODB Controller"
 msgstr "Contrôleur ZODB"
 
-#: src/zope/app/applicationcontrol/browser/zodbcontrol.py:33
-#: src/zope/app/size/__init__.py:50
-msgid "${size} MB"
-msgstr "${size} MB"
-
-#: src/zope/app/applicationcontrol/browser/zodbcontrol.py:36
-msgid "${size} kB"
-msgstr "${size} kB"
-
-#: src/zope/app/applicationcontrol/browser/zodbcontrol.py:39
-msgid "${size} Bytes"
-msgstr "${size} Octets"
-
-#: src/zope/app/applicationcontrol/browser/zodbcontrol.py:52
+#: src/zope/app/applicationcontrol/browser/zodbcontrol.py:44
 msgid "ZODB successfully packed."
 msgstr "Nettoyage de la ZODB réussi."
 
@@ -2408,7 +2395,7 @@ msgstr "Attributs"
 #: src/zope/app/presentation/interfaces.py:108
 #: src/zope/app/security/browser/configure.zcml:61
 #: src/zope/app/security/browser/configure.zcml:76
-#: src/zope/app/securitypolicy/browser/manage_access.pt:28
+#: src/zope/app/securitypolicy/browser/manage_access.pt:23
 msgid "Permission"
 msgstr "Permission"
 
@@ -2554,35 +2541,35 @@ msgstr "Annuler Conteneur"
 msgid "Modified"
 msgstr "Modifié"
 
-#: src/zope/app/container/browser/contents.py:255
+#: src/zope/app/container/browser/contents.py:254
 msgid "You didn't specify any ids to remove."
 msgstr "Vous n'avez pas spécifié d'identificateurs à effacer."
 
-#: src/zope/app/container/browser/contents.py:267
+#: src/zope/app/container/browser/contents.py:266
 msgid "You didn't specify any ids to copy."
 msgstr "Vous n'avez pas spécifié d'identificateurs à copier"
 
-#: src/zope/app/container/browser/contents.py:284
+#: src/zope/app/container/browser/contents.py:283
 msgid "Object '${name}' (${title}) cannot be copied"
 msgstr ""
 
-#: src/zope/app/container/browser/contents.py:288
+#: src/zope/app/container/browser/contents.py:287
 msgid "Object '${name}' cannot be copied"
 msgstr ""
 
-#: src/zope/app/container/browser/contents.py:303
+#: src/zope/app/container/browser/contents.py:302
 msgid "You didn't specify any ids to cut."
 msgstr "Vous n'avez pas spécifié d'identificateurs à couper"
 
-#: src/zope/app/container/browser/contents.py:320
+#: src/zope/app/container/browser/contents.py:319
 msgid "Object '${name}' (${title}) cannot be moved"
 msgstr ""
 
-#: src/zope/app/container/browser/contents.py:324
+#: src/zope/app/container/browser/contents.py:323
 msgid "Object '${name}' cannot be moved"
 msgstr ""
 
-#: src/zope/app/container/browser/contents.py:407
+#: src/zope/app/container/browser/contents.py:406
 #, fuzzy
 msgid "The given name(s) %s is / are already being used"
 msgstr "Le nom spécifié est déjà utilisé"
@@ -2639,11 +2626,11 @@ msgid ""
 "You must deactivate this object before trying to remove it.\n"
 msgstr ""
 
-#: src/zope/app/container/size.py:40
+#: src/zope/app/container/size.py:40 src/zope/app/locking/storage.py:160
 msgid "1 item"
 msgstr "1 élément"
 
-#: src/zope/app/container/size.py:41
+#: src/zope/app/container/size.py:41 src/zope/app/locking/storage.py:161
 msgid "${items} items"
 msgstr "${items} éléments"
 
@@ -3650,56 +3637,56 @@ msgstr "Valeur multiple manquante pour l'édition"
 msgid "Edit"
 msgstr "Editer"
 
-#: src/zope/app/form/browser/sequencewidget.py:242
+#: src/zope/app/form/browser/sequencewidget.py:241
 #, fuzzy
 msgid "sequence-value-not-provided"
 msgstr "Schéma non fourni"
 
 # Default: "(no values)"
-#: src/zope/app/form/browser/sequencewidget.py:245
+#: src/zope/app/form/browser/sequencewidget.py:244
 msgid "sequence-value-is-empty"
 msgstr ""
 
 # Default: "Remove selected items"
-#: src/zope/app/form/browser/sequencewidget.py:78
+#: src/zope/app/form/browser/sequencewidget.py:77
 msgid "remove-selected-items"
 msgstr "Supprimer les éléments sélectionnés"
 
-#: src/zope/app/form/browser/sequencewidget.py:85
+#: src/zope/app/form/browser/sequencewidget.py:84
 msgid "Add %s"
 msgstr "Ajouter %s"
 
 # Default: "Selected"
-#: src/zope/app/form/browser/source.py:190
-#: src/zope/app/form/browser/source.py:213
+#: src/zope/app/form/browser/source.py:197
+#: src/zope/app/form/browser/source.py:220
 msgid "SourceDisplayWidget-label"
 msgstr ""
 
-#: src/zope/app/form/browser/source.py:251
+#: src/zope/app/form/browser/source.py:259
 #, fuzzy
 msgid "SourceInputWidget-apply"
 msgstr "Texte Source"
 
 # Default: "Remove"
-#: src/zope/app/form/browser/source.py:419
+#: src/zope/app/form/browser/source.py:433
 msgid "MultipleSourceInputWidget-remove"
 msgstr ""
 
 # Default: "Apply"
-#: src/zope/app/form/browser/source.py:448
+#: src/zope/app/form/browser/source.py:462
 msgid "SourceListInputWidget-apply"
 msgstr ""
 
 # Default: "Nothing"
-#: src/zope/app/form/browser/source.py:55
-#: src/zope/app/form/browser/source.py:196
-#: src/zope/app/form/browser/source.py:206
+#: src/zope/app/form/browser/source.py:56
+#: src/zope/app/form/browser/source.py:203
+#: src/zope/app/form/browser/source.py:213
 msgid "SourceDisplayWidget-missing"
 msgstr ""
 
 # Default: "Invalid value"
-#: src/zope/app/form/browser/source.py:66
-#: src/zope/app/form/browser/source.py:91
+#: src/zope/app/form/browser/source.py:67
+#: src/zope/app/form/browser/source.py:98
 msgid "SourceDisplayWidget-invalid"
 msgstr ""
 
@@ -4081,7 +4068,7 @@ msgstr "Ajouter un nouveau langage"
 #: src/zope/app/cache/browser/cacheableedit.pt:46
 #: src/zope/app/cache/browser/ramedit.pt:52
 #: src/zope/app/dublincore/browser/edit.pt:52
-#: src/zope/app/rdb/browser/rdbconnection.pt:29
+#: src/zope/app/rdb/browser/rdbconnection.pt:34
 #: src/zope/app/error/browser/error_config.pt:47
 #: src/zope/app/securitypolicy/browser/manage_roleform.pt:67
 #: src/zope/app/securitypolicy/browser/manage_permissionform.pt:88
@@ -4870,11 +4857,15 @@ msgid "Template: dbi://username:password@host:port/dbname;param1=value..."
 msgstr ""
 "Format: dbi://utilisateur:mot_de_passe@hôte:porte/nom_bd;param1=valeur..."
 
-#: src/zope/app/rdb/browser/rdbconnection.pt:31
+#: src/zope/app/rdb/browser/rdbconnection.pt:25
+msgid "Encoding"
+msgstr ""
+
+#: src/zope/app/rdb/browser/rdbconnection.pt:36
 msgid "connect-button"
 msgstr "Connexion"
 
-#: src/zope/app/rdb/browser/rdbconnection.pt:34
+#: src/zope/app/rdb/browser/rdbconnection.pt:39
 msgid "disconnect-button"
 msgstr "Déconnexion"
 
@@ -4913,11 +4904,11 @@ msgstr ""
 msgid "Gadfly Database Adapter"
 msgstr "Adaptateur De Base De Données Gadfly"
 
-#: src/zope/app/rdb/interfaces.py:376
+#: src/zope/app/rdb/interfaces.py:389
 msgid "DSN"
 msgstr "DSN"
 
-#: src/zope/app/rdb/interfaces.py:377
+#: src/zope/app/rdb/interfaces.py:390
 #, fuzzy
 msgid ""
 "Specify the DSN (Data Source Name) of the database. Examples include:\n"
@@ -4940,6 +4931,15 @@ msgstr ""
 "ibd://utilisateur:motdepasse/nombd;param1=valeur...\n"
 "ibd://utilisateur:motdepasse@hôte:porte/nombd\n"
 "ibd://utilisateur:motdepasse@hôte:porte/nombd;param1=valeur...\n"
+
+#: src/zope/app/rdb/interfaces.py:62
+#, fuzzy
+msgid "Database encoding"
+msgstr "Générations de Base De Données"
+
+#: src/zope/app/rdb/interfaces.py:63
+msgid "Encoding of the database content"
+msgstr ""
 
 #: src/zope/app/recorder/browser.py:40
 msgid "URLs to ignore"
@@ -5634,11 +5634,11 @@ msgstr "Utilisateur"
 msgid "Deny"
 msgstr ""
 
-#: src/zope/app/securitypolicy/browser/manage_access.pt:33
+#: src/zope/app/securitypolicy/browser/manage_access.pt:28
 msgid "Roles"
 msgstr "Rôles"
 
-#: src/zope/app/securitypolicy/browser/manage_access.pt:89
+#: src/zope/app/securitypolicy/browser/manage_access.pt:84
 #, fuzzy
 msgid "Save Changes"
 msgstr "Changements enregistrés."
@@ -5663,22 +5663,37 @@ msgid ""
 "both lists though."
 msgstr ""
 
-#: src/zope/app/securitypolicy/browser/rolepermissionview.py:155
+#: src/zope/app/securitypolicy/browser/rolepermissionview.py:146
+msgid ""
+"You choose both allow and deny for permission \"${permission}\". This is not "
+"allowed."
+msgstr ""
+
+#: src/zope/app/securitypolicy/browser/rolepermissionview.py:162
 msgid "Settings changed at ${date_time}"
 msgstr "Paramétrages modifié le ${date_time}"
 
+#: src/zope/app/securitypolicy/browser/rolepermissionview.py:32
+msgid ""
+"For each permission you want to grant (or deny) to a role,\n"
+"        set the entry for that permission and role to a '+' (or '-').\n"
+"        Permissions are shown on the left side, going down.\n"
+"        Roles are shown accross the top.\n"
+"        "
+msgstr ""
+
 # Default: "Acquire"
-#: src/zope/app/securitypolicy/browser/rolepermissionview.py:59
+#: src/zope/app/securitypolicy/browser/rolepermissionview.py:66
 msgid "permission-acquire"
 msgstr "Acquérir"
 
 # Default: "Allow"
-#: src/zope/app/securitypolicy/browser/rolepermissionview.py:61
+#: src/zope/app/securitypolicy/browser/rolepermissionview.py:68
 msgid "permission-allow"
 msgstr "Permettre"
 
 # Default: "Deny"
-#: src/zope/app/securitypolicy/browser/rolepermissionview.py:63
+#: src/zope/app/securitypolicy/browser/rolepermissionview.py:70
 msgid "permission-deny"
 msgstr "Refuser"
 
@@ -5813,6 +5828,10 @@ msgstr "0 KB"
 #: src/zope/app/size/__init__.py:48
 msgid "1 KB"
 msgstr "1 KB"
+
+#: src/zope/app/size/__init__.py:50
+msgid "${size} MB"
+msgstr "${size} MB"
 
 #: src/zope/app/size/__init__.py:53
 msgid "${size} KB"
@@ -6839,6 +6858,12 @@ msgstr ""
 #: src/zope/security/interfaces.py:295
 msgid "Id as which this permission will be known and used."
 msgstr "Identificateur de la permission."
+
+#~ msgid "${size} kB"
+#~ msgstr "${size} kB"
+
+#~ msgid "${size} Bytes"
+#~ msgstr "${size} Octets"
 
 #, fuzzy
 #~ msgid "Object Locking"
