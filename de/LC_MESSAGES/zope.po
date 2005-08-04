@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zope\n"
 "POT-Creation-Date: Thu Jul 28 10:52:20 2005\n"
-"PO-Revision-Date: 2005-08-03 16:54+0100\n"
+"PO-Revision-Date: 2005-08-05 00:32+0100\n"
 "Last-Translator: Egon Frerich <e.frerich@nord-com.net>\n"
 "Language-Team: German <<zope3-dev@zope.org>>\n"
 "MIME-Version: 1.0\n"
@@ -509,7 +509,7 @@ msgstr "Keine Schnittstelle notwendig."
 #: src/zope/app/apidoc/ifacemodule/component_macros.pt:55
 #: src/zope/app/apidoc/ifacemodule/presentation_macros.pt:41
 msgid "provides:"
-msgstr "liefert:"
+msgstr "stellt bereit:"
 
 #: src/zope/app/apidoc/ifacemodule/component_macros.pt:62
 msgid "No interface provided."
@@ -604,7 +604,7 @@ msgstr "Es sind keine generischen Adapter für diese Schnittstelle registriert."
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:149
 msgid "Adapters that provide this interface:"
-msgstr "Adapter, die diese Schnittstelle liefern:"
+msgstr "Adapter, die diese Schnittstelle bereitstellen:"
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:161
 msgid "There are no adapters registered for this interface."
@@ -633,7 +633,7 @@ msgstr "Klassen"
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:312
 msgid "A list of classes that implement this interface. This might duplicate the entries in Utilities."
-msgstr "Eine Liste von Klassen, die diese Schnittstelle implementieren. Dies dupliziert wahrscheinlich Einträge unter den Utilities."
+msgstr "Eine Liste der Klassen, die diese Schnittstelle implementieren. Dies dupliziert wahrscheinlich Einträge unter den Utilities."
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:44
 msgid "There are no base interfaces."
@@ -1228,7 +1228,7 @@ msgstr "Plugin für HTTP Basis-Authentifizierung"
 
 #: src/zope/app/authentication/browser/loginform.pt:11
 msgid "You are not authorized to perform this action. However, you may login as a different user who is authorized."
-msgstr "Sie haben keine Berechtigung für diese Aktion. Sie können sich jedoch möglicherweise als anderer Nutzer einloggen, der berechtigt ist."
+msgstr "Sie haben keine Berechtigung für diese Aktion. Sie können sich jedoch möglicherweise als anderer Nutzer anmelden, der berechtigt ist."
 
 #: src/zope/app/authentication/browser/loginform.pt:20
 msgid "User Name"
@@ -1236,7 +1236,7 @@ msgstr "Benutzername"
 
 #: src/zope/app/authentication/browser/loginform.pt:34
 msgid "login-button"
-msgstr "Einloggen"
+msgstr "Anmelden"
 
 #: src/zope/app/authentication/browser/loginform.pt:4
 msgid "Sign in"
@@ -1383,7 +1383,7 @@ msgstr "Ein Anmelde-/Benutzername für den Nutzungsberechtigten. Dieser Wert kan
 #: src/zope/app/i18n/browser/synchronize.pt:37
 #: src/zope/app/authentication/browser/loginform.pt:27
 msgid "Password"
-msgstr "Passwort"
+msgstr "Paßwort"
 
 #: src/zope/app/authentication/principalfolder.py:47
 msgid "The password for the principal."
@@ -1395,7 +1395,7 @@ msgstr "Stellt den Titel des Nutzungsberechtigten bereit."
 
 #: src/zope/app/authentication/principalfolder.py:55
 msgid "Provides a description for the principal."
-msgstr "Stellt eine detailierte Beschreibung des Nutzungsberechtigten bereit."
+msgstr "Stellt eine Beschreibung des Nutzungsberechtigten bereit."
 
 #: src/zope/app/authentication/principalfolder.py:66
 msgid "Prefix to be added to all principal ids to assure that all ids are unique within the authentication service"
@@ -1473,7 +1473,7 @@ msgstr "Statistiken"
 
 #: src/zope/app/cache/browser/configure.zcml:6
 msgid "Caches can be used to make your site run faster."
-msgstr "Caches können dazu benutzt werden, Ihren Webplatz schneller laufen zu lassen."
+msgstr "Caches können Sie dazu benutzen, Ihren Webplatz schneller laufen zu lassen."
 
 #: src/zope/app/cache/browser/configure.zcml:6
 msgid "Caches"
@@ -1568,7 +1568,7 @@ msgstr "Konfiguration"
 
 #: src/zope/app/catalog/browser/configure.zcml:7
 msgid "Objects that support indexed searching"
-msgstr "Objekte, die indiziertes Suchen unterstützen"
+msgstr "Mittel, das indiziertes Suchen unterstützen"
 
 #: src/zope/app/catalog/browser/configure.zcml:7
 #: src/zope/app/catalog/browser/configure.zcml:14
@@ -1835,23 +1835,23 @@ msgstr "<i>Von diesem Utility sind keine Instanzen vorhanden.</i>"
 
 #: src/zope/app/component/browser/tools.py:104
 msgid "Tools successfully renamed."
-msgstr "Werkzeuge erfolgreich umbenannt."
+msgstr "Werkzeug erfolgreich umbenannt."
 
 #: src/zope/app/component/browser/tools.py:80
 msgid "Tools successufully installed."
-msgstr "Werkzeuge erfolgreich installiert."
+msgstr "Werkzeug erfolgreich installiert."
 
 #: src/zope/app/component/browser/tools.py:83
 msgid "Tools successufully uninstalled."
-msgstr "Werkzeuge erfolgreich deinstalliert."
+msgstr "Werkzeug erfolgreich deinstalliert."
 
 #: src/zope/app/component/browser/tools.py:91
 msgid "Tools successfully activated."
-msgstr "Werkzeuge erfolgreich aktiviert."
+msgstr "Werkzeug erfolgreich aktiviert."
 
 #: src/zope/app/component/browser/tools.py:94
 msgid "Tools successfully deactivated."
-msgstr "Werkzeuge erfolgreich deaktiviert."
+msgstr "Werkzeug erfolgreich deaktiviert."
 
 #: src/zope/app/component/browser/utilreg_details.pt:11
 msgid "component:"
@@ -3445,20 +3445,20 @@ msgstr "Änderungen gespeichert"
 
 #: src/zope/app/form/browser/itemswidgets.py:226
 msgid "item-missing-single-value-for-display"
-msgstr "Einfacher Wert fehlt."
+msgstr "Wert fehlt."
 
 #: src/zope/app/form/browser/itemswidgets.py:246
 msgid "vocabulary-missing-multiple-value-for-display"
-msgstr "Mehrere Werte fehlen"
+msgstr "Vokabular mit mehreren Werten fehlt"
 
 #: src/zope/app/form/browser/itemswidgets.py:395
 #: src/zope/app/form/browser/itemswidgets.py:439
 msgid "vocabulary-missing-single-value-for-edit"
-msgstr "Einfacher Wert fehlt"
+msgstr "Vokabular mit einem Wert fehlt"
 
 #: src/zope/app/form/browser/itemswidgets.py:513
 msgid "vocabulary-missing-multiple-value-for-edit"
-msgstr "Mehrere Werte fehlen"
+msgstr "Vokabular mit mehreren Werten fehlt"
 
 #: src/zope/app/form/browser/metaconfigure.py:292
 #: src/zope/app/security/browser/configure.zcml:84
@@ -3500,12 +3500,12 @@ msgstr "Bearbeiten"
 
 #: src/zope/app/form/browser/sequencewidget.py:241
 msgid "sequence-value-not-provided"
-msgstr "Folgewert nicht bereitgestellt."
+msgstr "Keine Werte für Folge bereitgestellt."
 
 # Default: "(no values)"
 #: src/zope/app/form/browser/sequencewidget.py:244
 msgid "sequence-value-is-empty"
-msgstr "Folgewert ist leer"
+msgstr "Folge ist leer"
 
 # Default: "Remove selected items"
 #: src/zope/app/form/browser/sequencewidget.py:77
@@ -3520,12 +3520,12 @@ msgstr "%s hinzufügen"
 #: src/zope/app/form/browser/source.py:197
 #: src/zope/app/form/browser/source.py:220
 msgid "SourceDisplayWidget-label"
-msgstr "Name des Quelltextanzeige-Widgets"
+msgstr "Ausgewählt"
 
 # Default: "Invalid value"
 #: src/zope/app/form/browser/source.py:259
 msgid "SourceInputWidget-apply"
-msgstr "SourceInputWidget anwenden"
+msgstr "Anwenden"
 
 # Default: "Remove"
 #: src/zope/app/form/browser/source.py:433
@@ -3535,7 +3535,7 @@ msgstr "Löschen"
 # Default: "Invalid value"
 #: src/zope/app/form/browser/source.py:462
 msgid "SourceListInputWidget-apply"
-msgstr "SourceListInputWidget anwenden"
+msgstr "Anwenden"
 
 # Default: "Nothing"
 #: src/zope/app/form/browser/source.py:56
@@ -4020,7 +4020,7 @@ msgstr "Zeitangabe für die Zeitüberschreitung einer Sperre nach ihrer Erzeugun
 
 #: src/zope/app/mail/configure.zcml:7
 msgid "send-mail-permission"
-msgstr "Emails versenden"
+msgstr "E-Mails versenden"
 
 #: src/zope/app/mail/interfaces.py:108
 msgid "Queue path"
@@ -4294,7 +4294,7 @@ msgstr "Nutzer-Informationen bearbeiten"
 
 #: src/zope/app/pluggableauth/interfaces.py:33
 msgid "The Login/Username of the user. This value can change."
-msgstr "Eine Anmeldung (Benutzername) fuer den Nutzer. Dieser Wert kann sich ändern."
+msgstr "Eine Anmeldung (Benutzername) für den Nutzer. Dieser Wert kann sich ändern."
 
 #: src/zope/app/pluggableauth/interfaces.py:39
 msgid "The password for the user."
@@ -5133,7 +5133,7 @@ msgstr "Sie sind nun als  ${UserTitle} eingelogged."
 
 #: src/zope/app/security/browser/login.pt:6
 msgid "Login successful!"
-msgstr "Login erfolgreich!"
+msgstr "Anmeldung erfolgreich!"
 
 #: src/zope/app/security/browser/login_failed.pt:11
 msgid "Click here to return."
@@ -5141,11 +5141,11 @@ msgstr "Klicken Sie hier, um zurückzukehren."
 
 #: src/zope/app/security/browser/login_failed.pt:6
 msgid "Login Failed!"
-msgstr "Login fehlgeschlagen!"
+msgstr "Anmeldung fehlgeschlagen!"
 
 #: src/zope/app/security/browser/login_failed.pt:9
 msgid "You cancelled the login procedure."
-msgstr "Sie haben den Loginprozess abgebrochen. "
+msgstr "Sie haben die Anmeldung abgebrochen. "
 
 #: src/zope/app/security/browser/logout.pt:12
 #: src/zope/app/security/browser/login.pt:14
@@ -5265,7 +5265,7 @@ msgstr "Nutzungsberechtigten Berechtigungen gewähren"
 
 #: src/zope/app/securitypolicy/browser/granting.pt:18
 msgid "Grants for the selected principal"
-msgstr "Berechtigungen für ausgewählten Nutzungsberechtigten gewähren"
+msgstr "Berechtigungen für ausgewählten Nutzungsberechtigten"
 
 #: src/zope/app/securitypolicy/browser/granting.pt:19
 #: src/zope/app/securitypolicy/browser/granting.pt:78
