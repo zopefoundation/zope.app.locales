@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zope\n"
 "POT-Creation-Date: Thu Jul 28 10:52:20 2005\n"
-"PO-Revision-Date: 2005-08-05 00:32+0100\n"
+"PO-Revision-Date: 2005-08-05 13:58+0100\n"
 "Last-Translator: Egon Frerich <e.frerich@nord-com.net>\n"
 "Language-Team: German <<zope3-dev@zope.org>>\n"
 "MIME-Version: 1.0\n"
@@ -1084,7 +1084,7 @@ msgstr "Sekunden"
 
 #: src/zope/app/applicationcontrol/browser/server-control.pt:15
 msgid "If you specify a time of 0 seconds, then the server will do a hard shutdown."
-msgstr "Wenn Sie eine Zeit von 0 Sekunden eingeben, dann wird der Server sofort angehalten (hard shutdown)."
+msgstr "Wenn Sie eine Zeit von 0 Sekunden eingeben, wird der Server sofort angehalten (hard shutdown)."
 
 #: src/zope/app/applicationcontrol/browser/server-control.pt:24
 msgid "Restart server"
@@ -3449,16 +3449,16 @@ msgstr "Wert fehlt."
 
 #: src/zope/app/form/browser/itemswidgets.py:246
 msgid "vocabulary-missing-multiple-value-for-display"
-msgstr "Vokabular mit mehreren Werten fehlt"
+msgstr "Wert aus Vokabular mit mehreren Werten fehlt"
 
 #: src/zope/app/form/browser/itemswidgets.py:395
 #: src/zope/app/form/browser/itemswidgets.py:439
 msgid "vocabulary-missing-single-value-for-edit"
-msgstr "Vokabular mit einem Wert fehlt"
+msgstr "Wert aus Vokabular mit einem Wert fehlt"
 
 #: src/zope/app/form/browser/itemswidgets.py:513
 msgid "vocabulary-missing-multiple-value-for-edit"
-msgstr "Vokabular mit mehreren Werten fehlt"
+msgstr "Wert aus Vokabular mit mehreren Werten fehlt"
 
 #: src/zope/app/form/browser/metaconfigure.py:292
 #: src/zope/app/security/browser/configure.zcml:84
@@ -3855,11 +3855,11 @@ msgstr "Nachricht bearbeiten"
 
 #: src/zope/app/i18nfile/browser/configure.zcml:39
 msgid "A file that supports multiple locales."
-msgstr "Eine Datei die mehrere Ländereinstellungen unterstützt."
+msgstr "Eine Datei, deren Inhalt in mehreren Sprachen vorhanden ist."
 
 #: src/zope/app/i18nfile/browser/configure.zcml:81
 msgid "A multi-locale version of an Image."
-msgstr "Eine mehrfach-lokale Version eines Bildes"
+msgstr "Mehrfach-Bild, wobei jede Ausprägung für eine Sprache vorgesehen ist"
 
 #: src/zope/app/i18nfile/browser/file_edit.pt:40
 #: src/zope/app/i18nfile/browser/image_edit.pt:41
@@ -3908,11 +3908,11 @@ msgstr "Bearbeitungsformular"
 
 #: src/zope/app/i18nfile/browser/i18nfile.py:47
 msgid "This edit form allows you to make changes to the properties of this file."
-msgstr "Dieses Bearbeitungsformular erlaubt es Ihnen, Änderungen an den Einstellungen ihrer Datei vorzunehmen."
+msgstr "Dieses Bearbeitungsformular erlaubt es Ihnen, Änderungen an den Einstellungen Ihrer Datei vorzunehmen."
 
 #: src/zope/app/i18nfile/browser/i18nimage.py:33
 msgid "This edit form allows you to make changes to the properties of this image."
-msgstr "Dieses Bearbeitungsformular erlaubt es Ihnen, Änderungen an den Einstellungen ihres Bildes vorzunehmen."
+msgstr "Dieses Bearbeitungsformular erlaubt es Ihnen, Änderungen an den Einstellungen Ihres Bildes vorzunehmen."
 
 #: src/zope/app/i18nfile/browser/image_edit.pt:86
 msgid "Dimensions"
@@ -3920,7 +3920,7 @@ msgstr "Ausmaße"
 
 #: src/zope/app/i18nfile/configure.zcml:22
 msgid "An Internationalized File"
-msgstr "Eine internationalisierte Datei"
+msgstr "Eine Datei in mehreren Sprachen"
 
 #: src/zope/app/i18nfile/configure.zcml:22
 #: src/zope/app/i18nfile/browser/configure.zcml:39
@@ -3929,7 +3929,7 @@ msgstr "I18n Datei"
 
 #: src/zope/app/i18nfile/configure.zcml:49
 msgid "An Internationalized Image"
-msgstr "Ein internationalisiertes Bild"
+msgstr "Ein Bild in mehreren Sprachen"
 
 #: src/zope/app/i18nfile/configure.zcml:49
 #: src/zope/app/i18nfile/browser/configure.zcml:81
@@ -5663,23 +5663,23 @@ msgstr "Rückgängig"
 
 #: src/zope/app/undo/undo_macros.pt:16
 msgid "You are looking at transactions regardless of location."
-msgstr "Sie betrachten gerade Transaktionen aller Orte."
+msgstr "Sie betrachten gerade Transaktionen unabhängig vom Pfad."
 
 #: src/zope/app/undo/undo_macros.pt:17
 msgid "View only transactions in this location"
-msgstr "Betrachte nur Transaktionen dieses Ortes"
+msgstr "Betrachte nur Transaktionen dieser Stelle im Pfad"
 
 #: src/zope/app/undo/undo_macros.pt:24
 msgid "You are looking only at transactions from this location."
-msgstr "Sie betrachten gerade nur Transaktionen dieses Ortes."
+msgstr "Sie betrachten gerade nur Transaktionen dieser Stelle im Pfad."
 
 #: src/zope/app/undo/undo_macros.pt:25
 msgid "View transactions regardless of location"
-msgstr "Betrachte Transaktionen aller Orte"
+msgstr "Betrachte Transaktionen unabhängig vom Pfad"
 
 #: src/zope/app/undo/undo_macros.pt:44
 msgid "heading-location"
-msgstr "Ort"
+msgstr "Pfad"
 
 # Default: "Request info"
 #: src/zope/app/undo/undo_macros.pt:45
