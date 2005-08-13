@@ -14,12 +14,14 @@ you need to re-extract i18n messages from the code.  To do that,
 execute ``i18nextract.py`` from the ``utilities`` directory of your
 Zope 3 checkout:
 
-  $ python utilities/i18nextract.py -p src/zope/app -o locales
+  $ python utilities/i18nextract.py -d zope -p src/zope -o app/locales
 
-This will update the ``zope.pot`` file.  After that, you need to merge
-those changes to all existing translations.  You can do that by
-executing the ``i18nmergeall.py`` script from the ``utilities``
-directory of your Zope 3 checkout:
+This will update the ``zope.pot`` file.  Make sure that the checkout's
+``src`` directory is part of your ``PYTHONPATH`` environment variable.
+
+After that, you need to merge those changes to all existing
+translations.  You can do that by executing the ``i18nmergeall.py``
+script from the ``utilities`` directory of your Zope 3 checkout:
 
   $ python utilities/i18nmergeall.py -l src/zope/app/locales
 
