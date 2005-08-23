@@ -8,14 +8,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: zope\n"
-"POT-Creation-Date: Sat Aug 13 19:24:43 2005\n"
-"PO-Revision-Date: 2005-08-22 22:53+0100\n"
+"POT-Creation-Date: Tue Aug 23 16:44:55 2005\n"
+"PO-Revision-Date: 2005-08-23 17:56+0100\n"
 "Last-Translator: Egon Frerich <e.frerich@nord-com.net>\n"
 "Language-Team: German <<zope3-dev@zope.org>>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Basepath: C:\\ZopeSubversion\\Z3_SSH-2\n"
+"X-Poedit-Basepath: C:\\Zope3\\Arbeitskopie\n"
 
 #: securitypolicy.zcml:11
 msgid "All users have this role implicitly"
@@ -228,6 +228,7 @@ msgstr "Zope 3 API Doku"
 
 #: src/zope/app/apidoc/browser/prefIndex.pt:114
 #: src/zope/app/component/browser/editregistration.pt:48
+#: src/zope/app/demo/widget/browser/Kopie von popup.pt:65
 #: src/zope/app/demo/widget/browser/popup.pt:65
 #: src/zope/app/dublincore/browser/edit.pt:50
 #: src/zope/app/error/browser/error.pt:53
@@ -241,6 +242,7 @@ msgid "refresh-button"
 msgstr "Auffrischen"
 
 #: src/zope/app/apidoc/browser/prefIndex.pt:116
+#: src/zope/app/demo/widget/browser/Kopie von popup.pt:67
 #: src/zope/app/demo/widget/browser/popup.pt:67
 #: src/zope/app/form/browser/addwizard.pt:68
 #: src/zope/app/form/browser/edit.pt:55
@@ -251,6 +253,7 @@ msgid "submit-button"
 msgstr "Abschicken"
 
 #: src/zope/app/apidoc/browser/prefIndex.pt:78
+#: src/zope/app/demo/widget/browser/Kopie von popup.pt:36
 #: src/zope/app/demo/widget/browser/popup.pt:36
 #: src/zope/app/form/browser/add.pt:25
 #: src/zope/app/form/browser/edit.pt:26
@@ -659,7 +662,7 @@ msgid "Base interfaces"
 msgstr "Basis-Schnittstellen"
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:297
-msgid "A list of utilities that are are registered to provide this interface."
+msgid "A list of utilities that are registered to provide this interface."
 msgstr "Eine Liste registrierter Utilities, welche diese Schnittstelle bereitstellen."
 
 # Default: "Bases"
@@ -1936,11 +1939,11 @@ msgid "Tools successfully renamed."
 msgstr "Werkzeug erfolgreich umbenannt."
 
 #: src/zope/app/component/browser/tools.py:80
-msgid "Tools successufully installed."
+msgid "Tools successfully installed."
 msgstr "Werkzeug erfolgreich installiert."
 
 #: src/zope/app/component/browser/tools.py:83
-msgid "Tools successufully uninstalled."
+msgid "Tools successfully uninstalled."
 msgstr "Werkzeug erfolgreich deinstalliert."
 
 #: src/zope/app/component/browser/tools.py:91
@@ -2131,7 +2134,7 @@ msgstr "Schnittstelle, die die Komponente bereitstellt"
 
 #: src/zope/app/component/metadirectives.py:179
 #: src/zope/app/component/metadirectives.py:252
-msgid "This attribute specifes the interface the adapter instance must provide."
+msgid "This attribute specifies the interface the adapter instance must provide."
 msgstr "Dieses Attribut spezifiziert die Schnittstelle, die von der Adapter-Instanz bereitgestellt werden muß"
 
 #: src/zope/app/component/metadirectives.py:185
@@ -2371,7 +2374,7 @@ msgid ""
 "\n"
 "        This argument says that this content class should be configured in the\n"
 "        same way the specified class' security is. If this argument is\n"
-"        specifed, no other argument can be used."
+"        specified, no other argument can be used."
 msgstr ""
 "\n"
 "    Dieses Argument bestimmt, daß diese Inhaltsklasse so konfiguriert \n"
@@ -2633,6 +2636,7 @@ msgid "Contents"
 msgstr "Inhalt"
 
 #: src/zope/app/container/browser/metaconfigure.py:85
+#: src/zope/formlib/form.py:824
 #: src/zope/app/container/browser/configure.zcml:5
 #: src/zope/app/component/browser/configure.zcml:57
 #: src/zope/app/component/browser/configure.zcml:122
@@ -3355,6 +3359,7 @@ msgstr "Bild hinzufügen"
 #: src/zope/app/file/browser/file.py:221
 #: src/zope/app/file/browser/file.py:365
 #: src/zope/app/form/browser/editview.py:116
+#: src/zope/formlib/form.py:780
 msgid "Updated on ${date_time}"
 msgstr "Daten am ${date_time} geändert"
 
@@ -3548,11 +3553,11 @@ msgid "vocabulary-missing-multiple-value-for-display"
 msgstr "Wert aus Vokabular mit mehreren Werten fehlt"
 
 #: src/zope/app/form/browser/itemswidgets.py:395
-#: src/zope/app/form/browser/itemswidgets.py:439
+#: src/zope/app/form/browser/itemswidgets.py:440
 msgid "vocabulary-missing-single-value-for-edit"
 msgstr "Wert aus Vokabular mit einem Wert fehlt"
 
-#: src/zope/app/form/browser/itemswidgets.py:513
+#: src/zope/app/form/browser/itemswidgets.py:514
 msgid "vocabulary-missing-multiple-value-for-edit"
 msgstr "Wert aus Vokabular mit mehreren Werten fehlt"
 
@@ -4311,16 +4316,16 @@ msgid "IPageletSlot interface not provided."
 msgstr "Schnittstelle IPageletSlot ist nicht bereitgestellt"
 
 #: src/zope/app/pagelet/interfaces.py:150
-msgid "Pagelets registred for context, request, view and slot."
+msgid "Pagelets registered for context, request, view and slot."
 msgstr "Seitenteile(= 'pagelets'), die für 'context', 'request', 'view' und 'slot' registriert sind."
 
 #: src/zope/app/pagelet/interfaces.py:169
-msgid "Pagelet registred for context, request, view and slot."
+msgid "Pagelet registered for context, request, view and slot."
 msgstr "Seitenteil(= 'pagelet'), der für 'context', 'request', 'view' und 'slot' registriert ist."
 
 #: src/zope/app/pagelet/interfaces.py:185
-msgid "Page data adapter registred for context, request and view."
-msgstr "Es gibt keinen registrierten Adapter."
+msgid "Page data adapter registered for context, request and view."
+msgstr "Adapter für Seitendaten, der für 'context' (Zusammenhang), 'request' (Anfrage) und 'view' (Ansicht) registriert ist."
 
 #: src/zope/app/pagelet/interfaces.py:58
 msgid "weight"
@@ -4547,8 +4552,8 @@ msgid "Menu Id"
 msgstr "Menü-ID"
 
 #: src/zope/app/publisher/interfaces/browser.py:52
-msgid "The id uniquly identifies this menu."
-msgstr "Die eindeutige Identifikation des Menüs."
+msgid "The id uniquely identifies this menu."
+msgstr "Die Kennung identifiziert eindeutig dieses Menü."
 
 #: src/zope/app/publisher/interfaces/browser.py:57
 msgid "Menu title"
@@ -4728,7 +4733,7 @@ msgid ""
 "dbi://user:passwd@host:port/dbname\n"
 "dbi://user:passwd@host:port/dbname;param1=value...\n"
 "\n"
-"All values should be properlu URL-encoded."
+"All values should be properly URL-encoded."
 msgstr ""
 "Geben Sie die DSN (Data Source Name; Name der Datenquelle) der Datenbank an. Beispiele:\n"
 "\n"
@@ -5130,7 +5135,7 @@ msgid "Create Menu"
 msgstr "Menü erstellen"
 
 #: src/zope/app/schemacontent/interfaces.py:52
-msgid "If set to True, the system will create a local browser menu for you. If this option is set to False, the system will try to find the next site manager that has a menu with the specifed id. If no menu was found or the menu is a global menu, then an error is occurred."
+msgid "If set to True, the system will create a local browser menu for you. If this option is set to False, the system will try to find the next site manager that has a menu with the specified id. If no menu was found or the menu is a global menu, then an error is occurred."
 msgstr "Wenn dies auf True (wahr) gesetzt ist, wird das System einen lokalen Browsermenüeintrag für Sie erstellen. Falls False (falsch, unwahr) angegeben ist, wird das System versuchen, den nächsten Webplatzverwalter mit einem Menü mit der spezifizierten ID zu finden. Falls kein Menü gefunden werden kann oder das Menü global ist, wird ein Fehler erzeugt."
 
 #: src/zope/app/schemacontent/interfaces.py:73
@@ -5233,8 +5238,8 @@ msgid "You are being redirected!"
 msgstr "Sie werden gerade umgeleitet!"
 
 #: src/zope/app/security/browser/redirect.pt:15
-msgid "If you you see this screen for more than 5 seconds, click here."
-msgstr "Wenn sie diesen Bildschirm für mehr als 5 Sekunden sehen, klicken sie bitte hier."
+msgid "If you see this screen for more than 5 seconds, click here."
+msgstr "Wenn Sie diesen Bildschirm für mehr als 5 Sekunden sehen, klicken Sie bitte hier."
 
 # Default: "Manage Services"
 #: src/zope/app/security/configure.zcml:102
@@ -5594,13 +5599,13 @@ msgstr "SQL-Skripte hinzufügen"
 
 #: src/zope/app/sqlscript/configure.zcml:23
 #: src/zope/app/sqlscript/browser/configure.zcml:7
-msgid "A content-based script to execute dyanmic SQL."
-msgstr "Ein inhaltsbasiertes Skript zum Ausführen von dynamischen SQL"
+msgid "SQL Script"
+msgstr "SQL Skript"
 
 #: src/zope/app/sqlscript/configure.zcml:23
 #: src/zope/app/sqlscript/browser/configure.zcml:7
-msgid "SQL Script"
-msgstr "SQL Skript"
+msgid "A content-based script to execute dynamic SQL."
+msgstr "Ein inhaltsbasiertes Skript zum Ausführen von dynamischen SQL"
 
 #: src/zope/app/sqlscript/interfaces.py:30
 msgid "Connection Name"
@@ -5903,7 +5908,7 @@ msgid "Export: <a href=\"@@export.html\">save as file</a>"
 msgstr "Exportieren: <a href=\"@@export.html\">Speichere als Datei</a>"
 
 #: src/zope/app/workflow/browser/importexport_index.pt:7
-msgid "Import was successfull!"
+msgid "Import was successful!"
 msgstr "Import war erfolgreich!"
 
 #: src/zope/app/workflow/browser/instance_index.pt:20
@@ -6168,6 +6173,19 @@ msgstr "1 Zeile"
 #: src/zope/app/zptpage/zptpage.py:110
 msgid "${lines} lines"
 msgstr "${lines} Zeilen"
+
+#: src/zope/formlib/form.py:716
+msgid "There were errors"
+msgstr "Fehler vorhanden"
+
+#: src/zope/formlib/form.py:773
+msgid "Apply"
+msgstr "Anwenden"
+
+#: src/zope/formlib/form.py:791
+#, fuzzy
+msgid "No changes"
+msgstr "Keine Änderungen zu speichern"
 
 #: src/zope/schema/_bootstrapinterfaces.py:43
 msgid "Required input is missing."
