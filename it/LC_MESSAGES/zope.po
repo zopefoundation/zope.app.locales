@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: zope\n"
-"POT-Creation-Date: Sat Aug 13 19:24:43 2005\n"
+"POT-Creation-Date: Tue Aug 23 16:44:55 2005\n"
 "PO-Revision-Date: 2004-07-02 11:20+0200\n"
 "Last-Translator: Fabrizio Reale\n"
 "Language-Team:  <fabrizio.reale@redomino.com>\n"
@@ -256,6 +256,7 @@ msgstr "Dcoumentazione delle API di Zope 3"
 # Default: "Rigenera"
 #: src/zope/app/apidoc/browser/prefIndex.pt:114
 #: src/zope/app/component/browser/editregistration.pt:48
+#: src/zope/app/demo/widget/browser/Kopie von popup.pt:65
 #: src/zope/app/demo/widget/browser/popup.pt:65
 #: src/zope/app/dublincore/browser/edit.pt:50
 #: src/zope/app/error/browser/error.pt:53
@@ -269,6 +270,7 @@ msgstr "Rigenera"
 
 # Default: "Invia"
 #: src/zope/app/apidoc/browser/prefIndex.pt:116
+#: src/zope/app/demo/widget/browser/Kopie von popup.pt:67
 #: src/zope/app/demo/widget/browser/popup.pt:67
 #: src/zope/app/form/browser/addwizard.pt:68
 #: src/zope/app/form/browser/edit.pt:55
@@ -279,6 +281,7 @@ msgid "submit-button"
 msgstr "Invia"
 
 #: src/zope/app/apidoc/browser/prefIndex.pt:78
+#: src/zope/app/demo/widget/browser/Kopie von popup.pt:36
 #: src/zope/app/demo/widget/browser/popup.pt:36
 #: src/zope/app/form/browser/add.pt:25 src/zope/app/form/browser/edit.pt:26
 #: src/zope/app/pythonpage/edit.pt:24
@@ -688,7 +691,8 @@ msgid "Base interfaces"
 msgstr "Interfacce:"
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:297
-msgid "A list of utilities that are are registered to provide this interface."
+#, fuzzy
+msgid "A list of utilities that are registered to provide this interface."
 msgstr ""
 "Lista delle utilità che sono registrate come fornitori di questa interfaccia."
 
@@ -2076,12 +2080,12 @@ msgstr "ZODB correttamente compattato."
 
 #: src/zope/app/component/browser/tools.py:80
 #, fuzzy
-msgid "Tools successufully installed."
+msgid "Tools successfully installed."
 msgstr "ZODB correttamente compattato."
 
 #: src/zope/app/component/browser/tools.py:83
 #, fuzzy
-msgid "Tools successufully uninstalled."
+msgid "Tools successfully uninstalled."
 msgstr "ZODB correttamente compattato."
 
 #: src/zope/app/component/browser/tools.py:91
@@ -2283,9 +2287,10 @@ msgstr "Interfaccia"
 
 #: src/zope/app/component/metadirectives.py:179
 #: src/zope/app/component/metadirectives.py:252
+#, fuzzy
 msgid ""
-"This attribute specifes the interface the adapter instance must provide."
-msgstr ""
+"This attribute specifies the interface the adapter instance must provide."
+msgstr "Specifica l'interfaccia per cui è definito questo elemento del menu."
 
 #: src/zope/app/component/metadirectives.py:185
 msgid "Specifications to be adapted"
@@ -2507,7 +2512,7 @@ msgid ""
 "        This argument says that this content class should be configured in "
 "the\n"
 "        same way the specified class' security is. If this argument is\n"
-"        specifed, no other argument can be used."
+"        specified, no other argument can be used."
 msgstr ""
 
 # Default: "Attributi"
@@ -2760,6 +2765,7 @@ msgid "Contents"
 msgstr "Contenuto"
 
 #: src/zope/app/container/browser/metaconfigure.py:85
+#: src/zope/formlib/form.py:824
 #: src/zope/app/container/browser/configure.zcml:5
 #: src/zope/app/component/browser/configure.zcml:57
 #: src/zope/app/component/browser/configure.zcml:122
@@ -3527,7 +3533,7 @@ msgid "Add an Image"
 msgstr "Aggiungi un immagine"
 
 #: src/zope/app/file/browser/file.py:221 src/zope/app/file/browser/file.py:365
-#: src/zope/app/form/browser/editview.py:116
+#: src/zope/app/form/browser/editview.py:116 src/zope/formlib/form.py:780
 msgid "Updated on ${date_time}"
 msgstr "Aggiornato il ${date_time}"
 
@@ -3731,11 +3737,11 @@ msgid "vocabulary-missing-multiple-value-for-display"
 msgstr ""
 
 #: src/zope/app/form/browser/itemswidgets.py:395
-#: src/zope/app/form/browser/itemswidgets.py:439
+#: src/zope/app/form/browser/itemswidgets.py:440
 msgid "vocabulary-missing-single-value-for-edit"
 msgstr ""
 
-#: src/zope/app/form/browser/itemswidgets.py:513
+#: src/zope/app/form/browser/itemswidgets.py:514
 msgid "vocabulary-missing-multiple-value-for-edit"
 msgstr ""
 
@@ -4566,16 +4572,18 @@ msgid "IPageletSlot interface not provided."
 msgstr "L'interfaccia fornita"
 
 #: src/zope/app/pagelet/interfaces.py:150
-msgid "Pagelets registred for context, request, view and slot."
-msgstr ""
+#, fuzzy
+msgid "Pagelets registered for context, request, view and slot."
+msgstr "Nessun adattatore registrato per questa interfaccia."
 
 #: src/zope/app/pagelet/interfaces.py:169
-msgid "Pagelet registred for context, request, view and slot."
-msgstr ""
+#, fuzzy
+msgid "Pagelet registered for context, request, view and slot."
+msgstr "Nessun adattatore registrato per questa interfaccia."
 
 #: src/zope/app/pagelet/interfaces.py:185
 #, fuzzy
-msgid "Page data adapter registred for context, request and view."
+msgid "Page data adapter registered for context, request and view."
 msgstr "Nessun adattatore registrato per questa interfaccia."
 
 #: src/zope/app/pagelet/interfaces.py:58
@@ -4827,7 +4835,7 @@ msgstr "Id del menu"
 
 #: src/zope/app/publisher/interfaces/browser.py:52
 #, fuzzy
-msgid "The id uniquly identifies this menu."
+msgid "The id uniquely identifies this menu."
 msgstr "L'identificatore univoco dell'utente"
 
 #: src/zope/app/publisher/interfaces/browser.py:57
@@ -5029,7 +5037,7 @@ msgid ""
 "dbi://user:passwd@host:port/dbname\n"
 "dbi://user:passwd@host:port/dbname;param1=value...\n"
 "\n"
-"All values should be properlu URL-encoded."
+"All values should be properly URL-encoded."
 msgstr ""
 "Specifica il DSN (Data Source Name) del database. Esempi inclusi:\n"
 "\n"
@@ -5437,7 +5445,7 @@ msgstr "Crea Menu"
 msgid ""
 "If set to True, the system will create a local browser menu for you. If this "
 "option is set to False, the system will try to find the next site manager "
-"that has a menu with the specifed id. If no menu was found or the menu is a "
+"that has a menu with the specified id. If no menu was found or the menu is a "
 "global menu, then an error is occurred."
 msgstr ""
 "Se impostato a Vero, il sistema creerà un Servizio Locale di consultazione "
@@ -5567,7 +5575,8 @@ msgid "You are being redirected!"
 msgstr "Stai per essere rediretto!"
 
 #: src/zope/app/security/browser/redirect.pt:15
-msgid "If you you see this screen for more than 5 seconds, click here."
+#, fuzzy
+msgid "If you see this screen for more than 5 seconds, click here."
 msgstr "Se vedi questa pagina per più di 5 secondi clicka qui."
 
 # Default: "Manage Services"
@@ -6006,14 +6015,15 @@ msgstr "Aggiungi Script SQL"
 
 #: src/zope/app/sqlscript/configure.zcml:23
 #: src/zope/app/sqlscript/browser/configure.zcml:7
-msgid "A content-based script to execute dyanmic SQL."
-msgstr "Uno script basato sul contenuto per eseguire SQL dinamico."
+#, fuzzy
+msgid "SQL Script"
+msgstr "Aggiungi un SQL Script"
 
 #: src/zope/app/sqlscript/configure.zcml:23
 #: src/zope/app/sqlscript/browser/configure.zcml:7
 #, fuzzy
-msgid "SQL Script"
-msgstr "Aggiungi un SQL Script"
+msgid "A content-based script to execute dynamic SQL."
+msgstr "Uno script basato sul contenuto per eseguire SQL dinamico."
 
 #: src/zope/app/sqlscript/interfaces.py:30
 msgid "Connection Name"
@@ -6362,7 +6372,8 @@ msgid "Export: <a href=\"@@export.html\">save as file</a>"
 msgstr "Esporta: <a href=\"@@export.html\">salva come file</a>"
 
 #: src/zope/app/workflow/browser/importexport_index.pt:7
-msgid "Import was successfull!"
+#, fuzzy
+msgid "Import was successful!"
 msgstr "Importazione avvenuta correttamente!"
 
 #: src/zope/app/workflow/browser/instance_index.pt:20
@@ -6665,6 +6676,19 @@ msgstr "1 linea"
 #: src/zope/app/zptpage/zptpage.py:110
 msgid "${lines} lines"
 msgstr "${lines} linee"
+
+#: src/zope/formlib/form.py:716
+msgid "There were errors"
+msgstr ""
+
+#: src/zope/formlib/form.py:773
+msgid "Apply"
+msgstr ""
+
+#: src/zope/formlib/form.py:791
+#, fuzzy
+msgid "No changes"
+msgstr "Nessuna modifica"
 
 #: src/zope/schema/_bootstrapinterfaces.py:43
 #, fuzzy
@@ -7621,9 +7645,6 @@ msgstr ""
 
 #~ msgid "Invalid service type specified"
 #~ msgstr "Il tipo di servizio specificato non è valido"
-
-#~ msgid "No change"
-#~ msgstr "Nessuna modifica"
 
 #~ msgid "${active_services} activated"
 #~ msgstr "Attivati i servizi: ${active_services}"

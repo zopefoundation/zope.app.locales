@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zope X3 Pre-M4\n"
-"POT-Creation-Date: Sat Aug 13 19:24:43 2005\n"
+"POT-Creation-Date: Tue Aug 23 16:44:55 2005\n"
 "PO-Revision-Date: 2004-06-25 16:00+0100\n"
 "Last-Translator: Thierry Goyvaerts <Thierry.Goyvaerts@skynet.be>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope3.org>\n"
@@ -257,6 +257,7 @@ msgstr "Docs API Zope 3"
 
 #: src/zope/app/apidoc/browser/prefIndex.pt:114
 #: src/zope/app/component/browser/editregistration.pt:48
+#: src/zope/app/demo/widget/browser/Kopie von popup.pt:65
 #: src/zope/app/demo/widget/browser/popup.pt:65
 #: src/zope/app/dublincore/browser/edit.pt:50
 #: src/zope/app/error/browser/error.pt:53
@@ -269,6 +270,7 @@ msgid "refresh-button"
 msgstr "Rafraîchir"
 
 #: src/zope/app/apidoc/browser/prefIndex.pt:116
+#: src/zope/app/demo/widget/browser/Kopie von popup.pt:67
 #: src/zope/app/demo/widget/browser/popup.pt:67
 #: src/zope/app/form/browser/addwizard.pt:68
 #: src/zope/app/form/browser/edit.pt:55
@@ -279,6 +281,7 @@ msgid "submit-button"
 msgstr "Soumettre"
 
 #: src/zope/app/apidoc/browser/prefIndex.pt:78
+#: src/zope/app/demo/widget/browser/Kopie von popup.pt:36
 #: src/zope/app/demo/widget/browser/popup.pt:36
 #: src/zope/app/form/browser/add.pt:25 src/zope/app/form/browser/edit.pt:26
 #: src/zope/app/pythonpage/edit.pt:24
@@ -684,7 +687,8 @@ msgid "Base interfaces"
 msgstr "Interfaces:"
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:297
-msgid "A list of utilities that are are registered to provide this interface."
+#, fuzzy
+msgid "A list of utilities that are registered to provide this interface."
 msgstr "Une liste d'Utilitaires enregistrés pour fournir cette Interface."
 
 # Default: "Bases"
@@ -2053,12 +2057,12 @@ msgstr "Nettoyage de la ZODB réussi."
 
 #: src/zope/app/component/browser/tools.py:80
 #, fuzzy
-msgid "Tools successufully installed."
+msgid "Tools successfully installed."
 msgstr "Nettoyage de la ZODB réussi."
 
 #: src/zope/app/component/browser/tools.py:83
 #, fuzzy
-msgid "Tools successufully uninstalled."
+msgid "Tools successfully uninstalled."
 msgstr "Nettoyage de la ZODB réussi."
 
 #: src/zope/app/component/browser/tools.py:91
@@ -2259,9 +2263,10 @@ msgstr "Interface"
 
 #: src/zope/app/component/metadirectives.py:179
 #: src/zope/app/component/metadirectives.py:252
+#, fuzzy
 msgid ""
-"This attribute specifes the interface the adapter instance must provide."
-msgstr ""
+"This attribute specifies the interface the adapter instance must provide."
+msgstr "Spécifier l'Interface à laquelle est liée cet élément de menu."
 
 #: src/zope/app/component/metadirectives.py:185
 msgid "Specifications to be adapted"
@@ -2483,7 +2488,7 @@ msgid ""
 "        This argument says that this content class should be configured in "
 "the\n"
 "        same way the specified class' security is. If this argument is\n"
-"        specifed, no other argument can be used."
+"        specified, no other argument can be used."
 msgstr ""
 
 # Default: "Attributes"
@@ -2728,6 +2733,7 @@ msgid "Contents"
 msgstr "Contenu"
 
 #: src/zope/app/container/browser/metaconfigure.py:85
+#: src/zope/formlib/form.py:824
 #: src/zope/app/container/browser/configure.zcml:5
 #: src/zope/app/component/browser/configure.zcml:57
 #: src/zope/app/component/browser/configure.zcml:122
@@ -3493,7 +3499,7 @@ msgid "Add an Image"
 msgstr "Ajouter une Image"
 
 #: src/zope/app/file/browser/file.py:221 src/zope/app/file/browser/file.py:365
-#: src/zope/app/form/browser/editview.py:116
+#: src/zope/app/form/browser/editview.py:116 src/zope/formlib/form.py:780
 msgid "Updated on ${date_time}"
 msgstr "Mis à jour le ${date_time}"
 
@@ -3694,11 +3700,11 @@ msgid "vocabulary-missing-multiple-value-for-display"
 msgstr "Valeur multiple manquante pour l'affichage"
 
 #: src/zope/app/form/browser/itemswidgets.py:395
-#: src/zope/app/form/browser/itemswidgets.py:439
+#: src/zope/app/form/browser/itemswidgets.py:440
 msgid "vocabulary-missing-single-value-for-edit"
 msgstr "Valeur simple manquante pour l'édition"
 
-#: src/zope/app/form/browser/itemswidgets.py:513
+#: src/zope/app/form/browser/itemswidgets.py:514
 msgid "vocabulary-missing-multiple-value-for-edit"
 msgstr "Valeur multiple manquante pour l'édition"
 
@@ -4524,16 +4530,18 @@ msgid "IPageletSlot interface not provided."
 msgstr "L'Interface fournie"
 
 #: src/zope/app/pagelet/interfaces.py:150
-msgid "Pagelets registred for context, request, view and slot."
-msgstr ""
+#, fuzzy
+msgid "Pagelets registered for context, request, view and slot."
+msgstr "Il n'y a pas d'Adapteur enregistré pour cette Interface."
 
 #: src/zope/app/pagelet/interfaces.py:169
-msgid "Pagelet registred for context, request, view and slot."
-msgstr ""
+#, fuzzy
+msgid "Pagelet registered for context, request, view and slot."
+msgstr "Il n'y a pas d'Adapteur enregistré pour cette Interface."
 
 #: src/zope/app/pagelet/interfaces.py:185
 #, fuzzy
-msgid "Page data adapter registred for context, request and view."
+msgid "Page data adapter registered for context, request and view."
 msgstr "Il n'y a pas d'Adapteur enregistré pour cette Interface."
 
 #: src/zope/app/pagelet/interfaces.py:58
@@ -4784,7 +4792,7 @@ msgstr "Identificateur De Menu"
 
 #: src/zope/app/publisher/interfaces/browser.py:52
 #, fuzzy
-msgid "The id uniquly identifies this menu."
+msgid "The id uniquely identifies this menu."
 msgstr "L'identifiant unique du Principale."
 
 #: src/zope/app/publisher/interfaces/browser.py:57
@@ -4985,7 +4993,7 @@ msgid ""
 "dbi://user:passwd@host:port/dbname\n"
 "dbi://user:passwd@host:port/dbname;param1=value...\n"
 "\n"
-"All values should be properlu URL-encoded."
+"All values should be properly URL-encoded."
 msgstr ""
 "Specifier le DSN (Nom De La Source De Données) de la base de données. "
 "Exemples:\n"
@@ -5393,7 +5401,7 @@ msgstr "Créer Menu"
 msgid ""
 "If set to True, the system will create a local browser menu for you. If this "
 "option is set to False, the system will try to find the next site manager "
-"that has a menu with the specifed id. If no menu was found or the menu is a "
+"that has a menu with the specified id. If no menu was found or the menu is a "
 "global menu, then an error is occurred."
 msgstr ""
 "Si la valeur est Vraie, le système créera un Service De Menu De Navigateur "
@@ -5523,7 +5531,8 @@ msgid "You are being redirected!"
 msgstr "Vous êtes redirigé !"
 
 #: src/zope/app/security/browser/redirect.pt:15
-msgid "If you you see this screen for more than 5 seconds, click here."
+#, fuzzy
+msgid "If you see this screen for more than 5 seconds, click here."
 msgstr "Si vous visualiser cette écran plus de 5 secondes, appuyez ici."
 
 # Default: "Manage Services"
@@ -5952,13 +5961,14 @@ msgstr "Ajouter des Scripts SQL"
 
 #: src/zope/app/sqlscript/configure.zcml:23
 #: src/zope/app/sqlscript/browser/configure.zcml:7
-msgid "A content-based script to execute dyanmic SQL."
-msgstr "Un Script de contenu afin d'éxecuter du SQL dynamique."
+msgid "SQL Script"
+msgstr "Script SQL"
 
 #: src/zope/app/sqlscript/configure.zcml:23
 #: src/zope/app/sqlscript/browser/configure.zcml:7
-msgid "SQL Script"
-msgstr "Script SQL"
+#, fuzzy
+msgid "A content-based script to execute dynamic SQL."
+msgstr "Un Script de contenu afin d'éxecuter du SQL dynamique."
 
 #: src/zope/app/sqlscript/interfaces.py:30
 msgid "Connection Name"
@@ -6302,7 +6312,8 @@ msgid "Export: <a href=\"@@export.html\">save as file</a>"
 msgstr "Exportation: <a href=\"@@export.html\">sauver le fichier</a>"
 
 #: src/zope/app/workflow/browser/importexport_index.pt:7
-msgid "Import was successfull!"
+#, fuzzy
+msgid "Import was successful!"
 msgstr "Importation réussie!"
 
 #: src/zope/app/workflow/browser/instance_index.pt:20
@@ -6603,6 +6614,19 @@ msgstr "1 ligne"
 #: src/zope/app/zptpage/zptpage.py:110
 msgid "${lines} lines"
 msgstr "${lines} lignes"
+
+#: src/zope/formlib/form.py:716
+msgid "There were errors"
+msgstr ""
+
+#: src/zope/formlib/form.py:773
+msgid "Apply"
+msgstr ""
+
+#: src/zope/formlib/form.py:791
+#, fuzzy
+msgid "No changes"
+msgstr "Pas de modification"
 
 #: src/zope/schema/_bootstrapinterfaces.py:43
 msgid "Required input is missing."
@@ -7555,9 +7579,6 @@ msgstr "Identificateur de la permission."
 
 #~ msgid "Invalid service type specified"
 #~ msgstr "Le type du Service spécifié n'est pas valide"
-
-#~ msgid "No change"
-#~ msgstr "Pas de modification"
 
 #~ msgid "${active_services} activated"
 #~ msgstr "${active_services} activé"
