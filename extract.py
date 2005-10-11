@@ -27,7 +27,12 @@ from pygettext import safe_eval, normalize, make_escapes
 
 from interfaces import IPOTEntry, IPOTMaker, ITokenEater
 from zope.interface import implements
+
+# BBB 2005/10/10
+import zope.deprecation
+zope.deprecation.__show__.off()
 from zope.i18nmessageid import MessageID, Message
+zope.deprecation.__show__.on()
 
 DEFAULT_CHARSET = 'UTF-8'
 DEFAULT_ENCODING = '8bit'
@@ -70,7 +75,7 @@ class POTEntry(object):
 
     Let's create a message entry:
 
-    >>> entry = POTEntry(MessageID("test", default="default"))
+    >>> entry = POTEntry(Message("test", default="default"))
     >>> entry.addComment("# Some comment")
     >>> entry.addLocationComment(os.path.join("path", "file"), 10)
 
@@ -86,7 +91,7 @@ class POTEntry(object):
 
     Multiline default values generate correct comments:
 
-    >>> entry = POTEntry(MessageID("test", default="\nline1\n\tline2"))
+    >>> entry = POTEntry(Message("test", default="\nline1\n\tline2"))
     >>> entry.write(FakeFile())
     # Default: ""
     #  "line1\n"
@@ -192,7 +197,7 @@ class TokenEater(object):
 
     We feed it a (fake) file:
 
-    >>> file = StringIO("_('hello', 'buenos dias')")
+    >>> file = StringIO("_(u'hello', u'buenos dias')")
     >>> tokenize.tokenize(file.readline, eater)
 
     The catalog of collected message ids contains our example
@@ -280,7 +285,7 @@ class TokenEater(object):
             lineno = self.__lineno
 
         if default is not None:
-            msg = MessageID(msg, default=default)
+            msg = Message(msg, default=default)
         entry = (self.__curfile, lineno)
         self.__messages.setdefault(msg, {})[entry] = isdocstring
 
