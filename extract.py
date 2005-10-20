@@ -28,7 +28,7 @@ from pygettext import safe_eval, normalize, make_escapes
 from interfaces import IPOTEntry, IPOTMaker, ITokenEater
 from zope.interface import implements
 
-# BBB 2005/10/10
+# BBB 2005/10/10 -- MessageIDs are to be removed for Zope 3.3
 import zope.deprecation
 zope.deprecation.__show__.off()
 from zope.i18nmessageid import MessageID, Message
