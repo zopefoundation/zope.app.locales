@@ -13,8 +13,8 @@
 ##############################################################################
 msgid ""
 msgstr ""
-"Project-Id-Version: Development/Revision: 39847\n"
-"POT-Creation-Date: Wed Nov  2 16:40:49 2005\n"
+"Project-Id-Version: Development/Revision: 39852\n"
+"POT-Creation-Date: Wed Nov  2 17:11:49 2005\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
@@ -1065,6 +1065,10 @@ msgstr ""
 #: src/zope/app/authentication/principalfolder.py:65
 #: src/zope/app/component/metadirectives.py:328
 #: src/zope/app/component/metadirectives.py:501
+#: src/zope/schema/interfaces.py:101
+#: src/zope/schema/interfaces.py:463
+#: src/zope/security/interfaces.py:264
+#: src/zope/security/interfaces.py:300
 #: src/zope/app/dublincore/browser/edit.pt:17
 #: src/zope/app/schema/browser/schema_edit.pt:39
 #: src/zope/app/container/browser/contents.pt:34
@@ -1073,6 +1077,7 @@ msgid "Title"
 msgstr ""
 
 #: src/zope/app/authentication/groupfolder.py:46
+#: src/zope/security/interfaces.py:301
 msgid "Provides a title for the permission."
 msgstr ""
 
@@ -1080,11 +1085,15 @@ msgstr ""
 #: src/zope/app/authentication/principalfolder.py:69
 #: src/zope/app/component/metadirectives.py:335
 #: src/zope/app/component/metadirectives.py:508
+#: src/zope/schema/interfaces.py:108
+#: src/zope/security/interfaces.py:270
+#: src/zope/security/interfaces.py:305
 #: src/zope/app/dublincore/browser/edit.pt:25
 msgid "Description"
 msgstr ""
 
 #: src/zope/app/authentication/groupfolder.py:51
+#: src/zope/security/interfaces.py:306
 msgid "Provides a description for the permission."
 msgstr ""
 
@@ -2204,6 +2213,7 @@ msgid "Contents"
 msgstr ""
 
 #: src/zope/app/container/browser/metaconfigure.py:85
+#: src/zope/formlib/form.py:828
 #: src/zope/app/container/browser/configure.zcml:5
 #: src/zope/app/component/browser/configure.zcml:57
 #: src/zope/app/component/browser/configure.zcml:122
@@ -2928,6 +2938,7 @@ msgstr ""
 #: src/zope/app/file/browser/file.py:221
 #: src/zope/app/file/browser/file.py:364
 #: src/zope/app/form/browser/editview.py:116
+#: src/zope/formlib/form.py:786
 # Default: "date_time"
 msgid "Updated on ${date_time}"
 msgstr ""
@@ -3946,6 +3957,8 @@ msgid "The Path to the Resource, assumed to be in the same directory as the Help
 msgstr ""
 
 #: src/zope/app/onlinehelp/interfaces.py:53
+#: src/zope/security/interfaces.py:258
+#: src/zope/security/interfaces.py:294
 msgid "Id"
 msgstr ""
 
@@ -4533,10 +4546,6 @@ msgstr ""
 msgid "Content listing"
 msgstr ""
 
-#: src/zope/app/schema/browser/schema_edit.pt:40
-msgid "Required"
-msgstr ""
-
 #: src/zope/app/schema/browser/schema_edit.pt:41
 msgid "Read-Only"
 msgstr ""
@@ -4585,11 +4594,11 @@ msgid "Edit Text Field"
 msgstr ""
 
 #: src/zope/app/schema/fieldforms.zcml:33
-msgid "A TextLine Field"
+msgid "TextLine Field"
 msgstr ""
 
 #: src/zope/app/schema/fieldforms.zcml:33
-msgid "TextLine Field"
+msgid "A TextLine Field"
 msgstr ""
 
 #: src/zope/app/schema/fieldforms.zcml:33
@@ -5860,5 +5869,301 @@ msgstr ""
 #: src/zope/app/zptpage/zptpage.py:110
 # Default: "lines"
 msgid "${lines} lines"
+msgstr ""
+
+#: src/zope/formlib/form.py:717
+msgid "There were errors"
+msgstr ""
+
+#: src/zope/formlib/form.py:773
+msgid "Apply"
+msgstr ""
+
+#: src/zope/formlib/form.py:795
+msgid "No changes"
+msgstr ""
+
+#: src/zope/schema/_bootstrapinterfaces.py:43
+msgid "Required input is missing."
+msgstr ""
+
+#: src/zope/schema/_bootstrapinterfaces.py:46
+msgid "Object is of wrong type."
+msgstr ""
+
+#: src/zope/schema/_bootstrapinterfaces.py:49
+msgid "Value is too big"
+msgstr ""
+
+#: src/zope/schema/_bootstrapinterfaces.py:52
+msgid "Value is too small"
+msgstr ""
+
+#: src/zope/schema/_bootstrapinterfaces.py:55
+msgid "Value is too long"
+msgstr ""
+
+#: src/zope/schema/_bootstrapinterfaces.py:58
+msgid "Value is too short"
+msgstr ""
+
+#: src/zope/schema/_bootstrapinterfaces.py:61
+msgid "Invalid value"
+msgstr ""
+
+#: src/zope/schema/_bootstrapinterfaces.py:64
+msgid "Constraint not satisfied"
+msgstr ""
+
+#: src/zope/schema/_bootstrapinterfaces.py:67
+msgid "Not a container"
+msgstr ""
+
+#: src/zope/schema/_bootstrapinterfaces.py:70
+msgid "Not an iterator"
+msgstr ""
+
+#: src/zope/schema/interfaces.py:102
+msgid "A short summary or label"
+msgstr ""
+
+#: src/zope/schema/interfaces.py:109
+msgid "A description of the field"
+msgstr ""
+
+#: src/zope/schema/interfaces.py:115
+#: src/zope/app/schema/browser/schema_edit.pt:40
+msgid "Required"
+msgstr ""
+
+#: src/zope/schema/interfaces.py:117
+msgid "Tells whether a field requires its value to exist."
+msgstr ""
+
+#: src/zope/schema/interfaces.py:121
+msgid "Read Only"
+msgstr ""
+
+#: src/zope/schema/interfaces.py:122
+msgid "If true, the field's value cannot be changed."
+msgstr ""
+
+#: src/zope/schema/interfaces.py:127
+#: src/zope/schema/interfaces.py:267
+#: src/zope/schema/interfaces.py:319
+msgid "Default Value"
+msgstr ""
+
+#: src/zope/schema/interfaces.py:128
+#: src/zope/schema/interfaces.py:268
+#: src/zope/schema/interfaces.py:320
+msgid ""
+"The field default value may be None or a legal\n"
+"                        field value"
+msgstr ""
+
+#: src/zope/schema/interfaces.py:133
+msgid "Missing Value"
+msgstr ""
+
+#: src/zope/schema/interfaces.py:134
+msgid ""
+"If input for this Field is missing, and that's ok,\n"
+"                          then this is the value to use"
+msgstr ""
+
+#: src/zope/schema/interfaces.py:139
+msgid "Field Order"
+msgstr ""
+
+#: src/zope/schema/interfaces.py:140
+msgid ""
+"\n"
+"        The order attribute can be used to determine the order in\n"
+"        which fields in a schema were defined. If one field is created\n"
+"        after another (in the same thread), its order will be\n"
+"        greater.\n"
+"\n"
+"        (Fields in separate threads could have the same order.)\n"
+"        "
+msgstr ""
+
+#: src/zope/schema/interfaces.py:221
+#: src/zope/schema/interfaces.py:307
+msgid "Start of the range"
+msgstr ""
+
+#: src/zope/schema/interfaces.py:227
+#: src/zope/schema/interfaces.py:313
+msgid "End of the range (excluding the value itself)"
+msgstr ""
+
+#: src/zope/schema/interfaces.py:237
+msgid "Minimum length"
+msgstr ""
+
+#: src/zope/schema/interfaces.py:238
+msgid ""
+"\n"
+"        Value after whitespace processing cannot have less than\n"
+"        `min_length` characters (if a string type) or elements (if\n"
+"        another sequence type). If `min_length` is ``None``, there is\n"
+"        no minimum.\n"
+"        "
+msgstr ""
+
+#: src/zope/schema/interfaces.py:249
+msgid "Maximum length"
+msgstr ""
+
+#: src/zope/schema/interfaces.py:250
+msgid ""
+"\n"
+"        Value after whitespace processing cannot have greater\n"
+"        or equal than `max_length` characters (if a string type) or\n"
+"        elements (if another sequence type). If `max_length` is\n"
+"        ``None``, there is no maximum."
+msgstr ""
+
+#: src/zope/schema/interfaces.py:383
+msgid "Value Type"
+msgstr ""
+
+#: src/zope/schema/interfaces.py:384
+msgid "Field value items must conform to the given type, expressed via a Field."
+msgstr ""
+
+#: src/zope/schema/interfaces.py:388
+msgid "Unique Members"
+msgstr ""
+
+#: src/zope/schema/interfaces.py:389
+msgid "Specifies whether the members of the collection must be unique."
+msgstr ""
+
+#: src/zope/schema/interfaces.py:39
+msgid "Wrong contained type"
+msgstr ""
+
+#: src/zope/schema/interfaces.py:42
+msgid "One or more entries of sequence are not unique."
+msgstr ""
+
+#: src/zope/schema/interfaces.py:421
+msgid "The Interface that defines the Fields comprising the Object."
+msgstr ""
+
+#: src/zope/schema/interfaces.py:431
+msgid ""
+"Field keys must conform to the given type, expressed\n"
+"           via a Field.\n"
+"        "
+msgstr ""
+
+#: src/zope/schema/interfaces.py:436
+msgid ""
+"Field values must conform to the given type, expressed\n"
+"           via a Field.\n"
+"        "
+msgstr ""
+
+#: src/zope/schema/interfaces.py:45
+msgid "Schema not fully implemented"
+msgstr ""
+
+#: src/zope/schema/interfaces.py:48
+msgid "Schema not provided"
+msgstr ""
+
+#: src/zope/schema/interfaces.py:51
+msgid "The specified URI is not valid."
+msgstr ""
+
+#: src/zope/schema/interfaces.py:54
+msgid "The specified id is not valid."
+msgstr ""
+
+#: src/zope/schema/interfaces.py:57
+msgid "The specified dotted name is not valid."
+msgstr ""
+
+#: src/zope/schema/interfaces.py:60
+msgid "The field is not bound."
+msgstr ""
+
+#: src/zope/schema/tests/test_objectfield.py:36
+msgid "Foo"
+msgstr ""
+
+#: src/zope/schema/tests/test_objectfield.py:37
+msgid "Foo description"
+msgstr ""
+
+#: src/zope/schema/tests/test_objectfield.py:42
+msgid "Bar"
+msgstr ""
+
+#: src/zope/schema/tests/test_objectfield.py:43
+msgid "Bar description"
+msgstr ""
+
+#: src/zope/security/interfaces.py:259
+msgid "The unique identification of the principal."
+msgstr ""
+
+#: src/zope/security/interfaces.py:265
+msgid "The title of the principal. This is usually used in the UI."
+msgstr ""
+
+#: src/zope/security/interfaces.py:271
+msgid "A detailed description of the principal."
+msgstr ""
+
+#: src/zope/security/interfaces.py:281
+msgid "Groups"
+msgstr ""
+
+#: src/zope/security/interfaces.py:282
+msgid "List of ids of groups the principal belongs to"
+msgstr ""
+
+#: src/zope/security/interfaces.py:295
+msgid "Id as which this permission will be known and used."
+msgstr ""
+
+#: src/zope/viewlet/metadirectives.py:41
+msgid "The view the content provider is registered for."
+msgstr ""
+
+#: src/zope/viewlet/metadirectives.py:42
+msgid "The view can either be an interface or a class. By default the provider is registered for all views, the most common case."
+msgstr ""
+
+#: src/zope/viewlet/metadirectives.py:49
+msgid "The name of the content provider."
+msgstr ""
+
+#: src/zope/viewlet/metadirectives.py:50
+msgid "The name of the content provider is used in the TALES ``provider`` namespace to look up the content provider."
+msgstr ""
+
+#: src/zope/viewlet/metadirectives.py:61
+msgid "Content-generating template."
+msgstr ""
+
+#: src/zope/viewlet/metadirectives.py:62
+msgid "Refers to a file containing a page template (should end in extension ``.pt`` or ``.html``)."
+msgstr ""
+
+#: src/zope/viewlet/metadirectives.py:77
+msgid "The interface this viewlet manager provides."
+msgstr ""
+
+#: src/zope/viewlet/metadirectives.py:78
+msgid "A viewlet manager can provide an interface, which is used to lookup its contained viewlets."
+msgstr ""
+
+#: src/zope/viewlet/metadirectives.py:99
+msgid "view"
 msgstr ""
 
