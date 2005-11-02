@@ -138,7 +138,7 @@ class POTMaker(object):
     """This class inserts sets of strings into a POT file.
     """
     implements(IPOTMaker)
-    
+
     def __init__ (self, output_fn, path):
         self._output_filename = output_fn
         self.path = path
@@ -179,7 +179,7 @@ class POTMaker(object):
         # Write each entry to the file
         for entry in catalog:
             entry.write(file)
-            
+
         file.close()
 
 class TokenEater(object):
@@ -218,7 +218,7 @@ class TokenEater(object):
     Note that everything gets converted to unicode.
     """
     implements(ITokenEater)
-    
+
     def __init__(self):
         self.__messages = {}
         self.__state = self.__waiting
@@ -262,7 +262,7 @@ class TokenEater(object):
     def __openseen(self, ttype, tstring, lineno):
         if ttype == tokenize.OP and tstring == ')':
             # We've seen the last of the translatable strings.  Record the
-            # line number of the first line of the strings and update the list 
+            # line number of the first line of the strings and update the list
             # of messages seen.  Reset state for the next batch.  If there
             # were no strings inside _(), then just ignore this entry.
             if self.__data or self.__msgid:
@@ -309,7 +309,7 @@ class TokenEater(object):
             rentries.sort()
             for msgid, locations in rentries:
                 catalog[msgid] = []
-                
+
                 locations = locations.keys()
                 locations.sort()
 
@@ -325,7 +325,7 @@ def find_files(dir, pattern, exclude=()):
         files += [os.path.join(dirname, name)
                   for name in fnmatch.filter(names, pattern)
                   if name not in exclude]
-        
+
     os.path.walk(dir, visit, files)
     return files
 
@@ -334,7 +334,7 @@ def py_strings(dir, domain="zope"):
     """
     eater = TokenEater()
     make_escapes(0)
-    for filename in find_files(dir, '*.py', 
+    for filename in find_files(dir, '*.py',
                                exclude=('extract.py', 'pygettext.py')):
         fp = open(filename)
         try:
@@ -345,12 +345,12 @@ def py_strings(dir, domain="zope"):
                 print >> sys.stderr, '%s: %s, line %d, column %d' % (
                     e[0], filename, e[1][0], e[1][1])
         finally:
-            fp.close()            
+            fp.close()
     # One limitation of the Python message extractor is that it cannot
     # determine the domain of the string, since it is not contained anywhere
     # directly. The only way this could be done is by loading the module and
     # inspect the '_' function. For now we simply assume that all the found
-    # strings have the domain the user specified.   
+    # strings have the domain the user specified.
     return eater.getCatalog()
 
 def zcml_strings(dir, domain="zope", site_zcml=None):
