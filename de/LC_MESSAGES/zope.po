@@ -27,11 +27,11 @@ msgstr "Jeder"
 
 #: securitypolicy.zcml:13
 msgid "Site Manager"
-msgstr "Webplatz-Verwalter"
+msgstr "Web-Site-Verwaltung"
 
 #: securitypolicy.zcml:14
 msgid "Site Member"
-msgstr "Webplatz-Mitglied"
+msgstr "Web-Site-Mitglied"
 
 #: src/zope/app/apidoc/bookmodule/book.py:50
 #: src/zope/app/apidoc/bookmodule/book.py:64
@@ -66,11 +66,11 @@ msgstr "Sicherheit"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:121
 msgid "Untrusted Interpreters"
-msgstr "Nicht als vertrauenswürdig eingestufte Interpretierer"
+msgstr "Nicht als vertrauenswürdig eingestufte Interpreter"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:127
 msgid "Untrusted Python Interpreter"
-msgstr "Python-Interpretierer, der nicht als vertrauenswürdig eingestuft ist"
+msgstr "Python-Interpreter, der nicht als vertrauenswürdig eingestuft ist"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:133
 msgid "Restricted Python Code"
@@ -195,7 +195,7 @@ msgstr "Lokales Adapterregister"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:97
 msgid "Local Sites & Site Managers"
-msgstr "Lokaler Webplatz & Webplatz-Verwalter"
+msgstr "Lokale Web-Site & Web-Site-Verwaltung"
 
 #: src/zope/app/apidoc/browser/contents.pt:15
 msgid ""
@@ -616,8 +616,8 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"    Alle benutzten und wichtigen Schnittstellen sind durch den Webplatz-\n"
-"    Verwalter registriert. Zwar könnten alle Schnittstellen auf einmal "
+"    Alle benutzten und wichtigen Schnittstellen sind bei der Web-Site-\n"
+"    Verwaltung registriert. Zwar könnten alle Schnittstellen auf einmal "
 "angezeigt \n"
 "    werden, doch ist es für den Benutzer schwer, in einer solchen "
 "übervollen \n"
@@ -917,8 +917,8 @@ msgstr "Suche nur nach Name"
 msgid ""
 "Note: These are only interfaces that are registered with the site manager."
 msgstr ""
-"Anmerkung: Dies sind nur Schnittstellen, die mit dem "
-"Webplatzverwalterregistriert sind."
+"Anmerkung: Dies sind nur Schnittstellen, die bei der "
+"Web-Site-Verwaltung registriert sind."
 
 #: src/zope/app/apidoc/ifacemodule/menu.pt:8
 msgid "Interface Finder:"
@@ -1003,7 +1003,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"    Utilities werden ebenfalls im Webplatzverwalter registriert, so daß \n"
+"    Utilities werden ebenfalls in der Web-Site-Verwaltung registriert, so daß \n"
 "    es leicht ist, eine Liste der verfügbaren Utilities zu erstellen. Ein \n"
 "    Utility ist identfiziert durch die bereitgestellte Schnittstelle und \n"
 "    einen Namen, der leer sein kann. Das Menü macht eine Liste der \n"
@@ -1238,7 +1238,7 @@ msgstr "Packen"
 
 #: src/zope/app/applicationcontrol/browser/zodbcontrol.pt:4
 msgid "ZODB Controller"
-msgstr "ZODB-Verwalter"
+msgstr "ZODB-Verwaltung"
 
 #: src/zope/app/applicationcontrol/browser/zodbcontrol.py:44
 msgid "ZODB successfully packed."
@@ -1593,7 +1593,7 @@ msgstr "Statistiken"
 #: src/zope/app/cache/browser/configure.zcml:6
 msgid "Caches can be used to make your site run faster."
 msgstr ""
-"Caches können Sie dazu benutzen, Ihren Webplatz schneller laufen zu lassen."
+"Caches können Sie dazu benutzen, Ihre Web-Site schneller laufen zu lassen."
 
 #: src/zope/app/cache/browser/configure.zcml:6
 msgid "Caches"
@@ -1760,15 +1760,15 @@ msgstr "Utility hinzufügen"
 
 #: src/zope/app/component/browser/configure.zcml:100
 msgid "Site-Management Folder"
-msgstr "Webplatzverwaltungsordner"
+msgstr "Web-Site-Verwaltungsordner"
 
 #: src/zope/app/component/browser/configure.zcml:143
 msgid "Make a site"
-msgstr "Webplatz erstellen"
+msgstr "Web-Site erstellen"
 
 #: src/zope/app/component/browser/configure.zcml:152
 msgid "Manage Site"
-msgstr "Webplatz verwalten"
+msgstr "Web-Site verwalten"
 
 #: src/zope/app/component/browser/configure.zcml:166
 msgid "Visit default folder"
@@ -1780,11 +1780,11 @@ msgstr "Software"
 
 #: src/zope/app/component/browser/configure.zcml:181
 msgid "Add Site Management Folder"
-msgstr "Webplatzverwaltungsordner hinzufügen"
+msgstr "Web-Site-Verwaltungsordner hinzufügen"
 
 #: src/zope/app/component/browser/configure.zcml:200
 msgid "Site Management"
-msgstr "Webplatz-Verwaltung"
+msgstr "Web-Site-Verwaltung"
 
 #: src/zope/app/component/browser/configure.zcml:217
 msgid "New Utility Registration"
@@ -1930,7 +1930,7 @@ msgstr "Eindeutige Utilities"
 #: src/zope/app/component/browser/site_management.pt:20
 msgid "Unique utilities can only exist once per site manager and have no name."
 msgstr ""
-"Eindeutige Utilities können pro Webplatz-Verwalter nur einmal vorhanden sein "
+"Eindeutige Utilities können pro Web-Site-Verwaltung nur einmal vorhanden sein "
 "und haben keinen Namen."
 
 # Default: "Install"
@@ -1945,7 +1945,7 @@ msgstr "Deinstallieren"
 
 #: src/zope/app/component/browser/site_management.pt:6
 msgid "<b>Site Management</b>"
-msgstr "<b>Webplatz-Verwalter</b>"
+msgstr "<b>Web-Site-Verwaltung</b>"
 
 #: src/zope/app/component/browser/site_management.pt:67
 msgid "${name} (Active)"
@@ -3318,7 +3318,7 @@ msgstr ""
 msgid ""
 "This page lists the exceptions that have occurred in this site recently."
 msgstr ""
-"Diese Seite listet die Ausnahmen auf, die kürzlich auf diesem Webplatz "
+"Diese Seite listet die Ausnahmen auf, die kürzlich auf dieser Web-Site "
 "aufgetreten sind."
 
 #: src/zope/app/error/browser/error.pt:16
@@ -3881,16 +3881,16 @@ msgstr "Pfad ist nicht richtig!"
 
 #: src/zope/app/homefolder/configure.zcml:32
 msgid "Add Home Folder Manager"
-msgstr "Startordner-Verwalter hinzufügen"
+msgstr "Startordner-Verwaltung hinzufügen"
 
 #: src/zope/app/homefolder/configure.zcml:45
 #: src/zope/app/homefolder/configure.zcml:74
 msgid "Home Folder Manager"
-msgstr "Startordner-Verwalter"
+msgstr "Startordner-Verwaltung"
 
 #: src/zope/app/homefolder/configure.zcml:52
 msgid "Edit Home Folder Manager"
-msgstr "Bearbeiten Startordner-Verwalter"
+msgstr "Bearbeiten Startordner-Verwaltung"
 
 #: src/zope/app/homefolder/configure.zcml:65
 msgid "Assignments"
@@ -3898,7 +3898,7 @@ msgstr "Zuordnungen"
 
 #: src/zope/app/homefolder/configure.zcml:74
 msgid "A Principal Home Folder Manager"
-msgstr "Ein Verwalter für den Startordner eines Nutzungsberechtigten"
+msgstr "Eine Verwaltung für den Startordner eines Nutzungsberechtigten"
 
 #: src/zope/app/homefolder/configure.zcml:86
 msgid "Principal Home Folder"
@@ -4362,7 +4362,7 @@ msgstr ""
 #: src/zope/app/menus.zcml:27
 msgid "Menu of objects to be added to site management folders"
 msgstr ""
-"Menü von Objekten, die Webplatzverwaltungs-Ordnern hinzugefügt werden können"
+"Menü von Objekten, die Web-Site-Verwaltungsordnern hinzugefügt werden können"
 
 #: src/zope/app/menus.zcml:31
 msgid "Menu of database connections to be added"
@@ -4559,7 +4559,7 @@ msgstr ""
 
 #: src/zope/app/pagetemplate/engine.py:131
 msgid "No interpreter named \"${lang_name}\" was found."
-msgstr "Ein Interpretierer mit Namen \"${lang_name}\" wurde nicht gefunden."
+msgstr "Ein Interpreter mit Namen \"${lang_name}\" wurde nicht gefunden."
 
 #: src/zope/app/pluggableauth/browser/configure.zcml:24
 msgid "Add Principal Source"
@@ -5389,7 +5389,7 @@ msgid ""
 msgstr ""
 "Wenn dies auf True (wahr) gesetzt ist, wird das System einen lokalen "
 "Browsermenüeintrag für Sie erstellen. Falls False (falsch, unwahr) angegeben "
-"ist, wird das System versuchen, den nächsten Webplatzverwalter mit einem "
+"ist, wird das System versuchen, die nächste Web-Site-Verwaltung mit einem "
 "Menü mit der spezifizierten ID zu finden. Falls kein Menü gefunden werden "
 "kann oder das Menü global ist, wird ein Fehler erzeugt."
 
@@ -5512,7 +5512,7 @@ msgstr ""
 # Default: "Manage Services"
 #: src/zope/app/security/configure.zcml:102
 msgid "manage-site-permission"
-msgstr "Berechtigungen des Webplatzes verwalten"
+msgstr "Berechtigungen der Web-Sites verwalten"
 
 # Default: "Manage Services"
 #: src/zope/app/security/configure.zcml:107
@@ -5769,7 +5769,7 @@ msgstr "Eigenschaften von Sitzungsdatenbehälter"
 
 #: src/zope/app/session/browser.zcml:8
 msgid "Cookie Client Id Manager"
-msgstr "Verwalter von Kennungen für Cookies"
+msgstr "Verwaltung von Kennungen für Cookies"
 
 #: src/zope/app/session/browser.zcml:8
 msgid ""
@@ -6320,7 +6320,7 @@ msgstr "Zustandsbasierter Übergang"
 
 #: src/zope/app/workflow/stateful/browser/configure.zcml:121
 msgid "Content Workflows Manager"
-msgstr "Verwalter von Inhalte-Arbeitsabläufen"
+msgstr "Verwaltung von Inhalte-Arbeitsabläufen"
 
 #: src/zope/app/workflow/stateful/browser/configure.zcml:121
 msgid "An utility to manage content and workflow interaction."
@@ -6337,7 +6337,7 @@ msgstr "Arbeitsabläufe"
 
 #: src/zope/app/workflow/stateful/browser/configure.zcml:21
 msgid "Relevant Data Schema"
-msgstr "Revelantes Datenschema"
+msgstr "Relevantes Datenschema"
 
 #: src/zope/app/workflow/stateful/browser/configure.zcml:33
 msgid "Manage States"
@@ -6385,7 +6385,7 @@ msgstr "Name des Ursprungsstatus."
 
 #: src/zope/app/workflow/stateful/interfaces.py:105
 msgid "Destination State"
-msgstr "Ziel-Zustand"
+msgstr "Zielzustand"
 
 #: src/zope/app/workflow/stateful/interfaces.py:106
 msgid "Name of the destination state."
