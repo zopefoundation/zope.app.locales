@@ -3309,7 +3309,7 @@ msgstr "Dossier minimum"
 #: src/zope/app/schema/browser/__init__.py:53
 #: src/zope/app/schema/browser/__init__.py:66
 #: src/zope/app/schema/browser/__init__.py:74
-msgid "An error occured."
+msgid "An error occurred."
 msgstr "Une erreur s'est produite."
 
 #: src/zope/app/form/browser/boolwidgets.py:112
@@ -4588,7 +4588,7 @@ msgid "The content type the script outputs."
 msgstr "Le type de contenu généré par le Script."
 
 #: src/zope/app/pythonpage/browser.py:43
-msgid "A syntax error occured."
+msgid "A syntax error occurred."
 msgstr "Il y a une erreur de syntaxe."
 
 #: src/zope/app/pythonpage/configure.zcml:12

@@ -3366,7 +3366,7 @@ msgstr "Minimaler Ordner"
 #: src/zope/app/schema/browser/__init__.py:53
 #: src/zope/app/schema/browser/__init__.py:66
 #: src/zope/app/schema/browser/__init__.py:74
-msgid "An error occured."
+msgid "An error occurred."
 msgstr "Ein Fehler ist aufgetreten."
 
 #: src/zope/app/form/browser/boolwidgets.py:112
@@ -4617,7 +4617,7 @@ msgid "The content type the script outputs."
 msgstr "Der Typ des Inhalts, den das Skript ausgibt."
 
 #: src/zope/app/pythonpage/browser.py:43
-msgid "A syntax error occured."
+msgid "A syntax error occurred."
 msgstr "Ein Syntaxfehler ist aufgetreten."
 
 #: src/zope/app/pythonpage/configure.zcml:12
@@ -6471,6 +6471,7 @@ msgid ""
 "        no minimum.\n"
 "        "
 msgstr ""
+"\n"
 "Der Wert nach der Leerzeichenbearbeitung kann nicht weniger als `min_length` "
 "Zeichen (wenn es eine Zeichenkette ist) oder Elemente (für alel anderen "
 "Folgetypen) haben. Wenn `min_length` ``None ``ist, dann gibt es kein Minimum."
@@ -6487,6 +6488,7 @@ msgid ""
 "        elements (if another sequence type). If `max_length` is\n"
 "        ``None``, there is no maximum."
 msgstr ""
+"\n"
 "Der Wert nach der Leerzeichenbearbeitung darf nicht mehr als `max_length` "
 "Zeichen (wenn es eine Zeichenkette ist) oder Elemente (für alle anderen "
 "Folgetypen) haben. Wenn `max_length` ``None`` ist, dann gibt es kein Maximum."
