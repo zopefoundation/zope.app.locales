@@ -197,23 +197,34 @@ class TokenEater(object):
 
     We feed it a (fake) file:
 
-    >>> file = StringIO("_(u'hello', u'buenos dias')")
+    >>> file = StringIO(
+    ...     "_(u'hello ${name}', u'buenos dias', {'name': 'Bob'}); "
+    ...     "_(u'hi ${name}', mapping={'name': 'Bob'})"
+    ...     )
     >>> tokenize.tokenize(file.readline, eater)
 
     The catalog of collected message ids contains our example
 
     >>> catalog = eater.getCatalog()
-    >>> catalog
-    {u'hello': [(None, 1)]}
+    >>> items = catalog.items()
+    >>> items.sort()
+    >>> items
+    [(u'hello ${name}', [(None, 1)]), (u'hi ${name}', [(None, 1)])]
 
     The key in the catalog is not a unicode string, it's a real
     message id with a default value:
 
-    >>> msgid = catalog.keys()[0]
+    >>> msgid = items.pop(0)[0]
     >>> msgid
-    u'hello'
+    u'hello ${name}'
     >>> msgid.default
     u'buenos dias'
+
+    >>> msgid = items.pop(0)[0]
+    >>> msgid
+    u'hi ${name}'
+    >>> msgid.default
+    u''
 
     Note that everything gets converted to unicode.
     """
@@ -240,7 +251,6 @@ class TokenEater(object):
             self.__state = self.__suitedocstring
 
     def __suitedocstring(self, ttype, tstring, lineno):
-
         # ignore any intervening noise
         if ttype == tokenize.STRING:
             self.__addentry(safe_eval(tstring), lineno, isdocstring=1)
@@ -254,19 +264,24 @@ class TokenEater(object):
         if ttype == tokenize.OP and tstring == '(':
             self.__data = []
             self.__msgid = ''
+            self.__default = ''
             self.__lineno = lineno
             self.__state = self.__openseen
         else:
             self.__state = self.__waiting
 
     def __openseen(self, ttype, tstring, lineno):
-        if ttype == tokenize.OP and tstring == ')':
+        if ((ttype == tokenize.OP and tstring == ')') or
+                (ttype == tokenize.NAME and tstring == 'mapping')):
             # We've seen the last of the translatable strings.  Record the
             # line number of the first line of the strings and update the list
             # of messages seen.  Reset state for the next batch.  If there
             # were no strings inside _(), then just ignore this entry.
             if self.__data or self.__msgid:
-                if self.__msgid:
+                if self.__default:
+                    msgid = self.__msgid
+                    default = self.__default
+                elif self.__msgid:
                     msgid = self.__msgid
                     default = ''.join(self.__data)
                 else:
@@ -275,7 +290,10 @@ class TokenEater(object):
                 self.__addentry(msgid, default)
             self.__state = self.__waiting
         elif ttype == tokenize.OP and tstring == ',':
-            self.__msgid = ''.join(self.__data)
+            if not self.__msgid:
+                self.__msgid = ''.join(self.__data)
+            elif not self.__default:
+                self.__default = ''.join(self.__data)
             self.__data = []
         elif ttype == tokenize.STRING:
             self.__data.append(safe_eval(tstring))
@@ -285,7 +303,8 @@ class TokenEater(object):
             lineno = self.__lineno
 
         if default is not None:
-            msg = Message(msg, default=default)
+            default = unicode(default)
+        msg = Message(msg, default=default)
         entry = (self.__curfile, lineno)
         self.__messages.setdefault(msg, {})[entry] = isdocstring
 
