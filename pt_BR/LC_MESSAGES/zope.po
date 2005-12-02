@@ -5978,11 +5978,11 @@ msgid "The source of the page template."
 msgstr ""
 
 #: src/zope/app/zptpage/interfaces.py:41
-msgid "Expand macros"
+msgid "Expand macros when editing"
 msgstr ""
 
 #: src/zope/app/zptpage/interfaces.py:42
-msgid "Expand Macros so that they all are shown in the code."
+msgid "Expand macros so that they all are shown in the code."
 msgstr ""
 
 #: src/zope/app/zptpage/interfaces.py:48

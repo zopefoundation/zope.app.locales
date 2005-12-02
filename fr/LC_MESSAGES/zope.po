@@ -6291,12 +6291,12 @@ msgid "The source of the page template."
 msgstr "La source de la Page Formatée."
 
 #: src/zope/app/zptpage/interfaces.py:41
-msgid "Expand macros"
+msgid "Expand macros when editing"
 msgstr "Etendre Macros"
 
 #: src/zope/app/zptpage/interfaces.py:42
-msgid "Expand Macros so that they all are shown in the code."
-msgstr "Etendre des Macros afin qu'elles soient toutes affichées dans le code."
+msgid "Expand macros so that they all are shown in the code."
+msgstr "Etendre des macros afin qu'elles soient toutes affichées dans le code."
 
 #: src/zope/app/zptpage/interfaces.py:48
 msgid "Evaluate Inline Code"

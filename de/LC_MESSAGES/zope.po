@@ -6317,12 +6317,12 @@ msgid "The source of the page template."
 msgstr "Der Quelltext der Schablone."
 
 #: src/zope/app/zptpage/interfaces.py:41
-msgid "Expand macros"
+msgid "Expand macros when editing"
 msgstr "Makros anzeigen"
 
 #: src/zope/app/zptpage/interfaces.py:42
-msgid "Expand Macros so that they all are shown in the code."
-msgstr "Makros aufklappen, so dass alle im Code angezeigt werden."
+msgid "Expand macros so that they all are shown in the code."
+msgstr "Makros beim Bearbeiten im Code anzeigen."
 
 #: src/zope/app/zptpage/interfaces.py:48
 msgid "Evaluate Inline Code"

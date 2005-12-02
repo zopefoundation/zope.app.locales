@@ -6238,11 +6238,11 @@ msgid "The source of the page template."
 msgstr "Исходный текст шаблона страницы."
 
 #: src/zope/app/zptpage/interfaces.py:41
-msgid "Expand macros"
+msgid "Expand macros when editing"
 msgstr "Подставлять макро-определения"
 
 #: src/zope/app/zptpage/interfaces.py:42
-msgid "Expand Macros so that they all are shown in the code."
+msgid "Expand macros so that they all are shown in the code."
 msgstr "Подставлять макро-определения показывая их в коде."
 
 #: src/zope/app/zptpage/interfaces.py:48
