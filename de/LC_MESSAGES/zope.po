@@ -39,7 +39,7 @@ msgstr "Web-Site-Mitglied"
 #: src/zope/app/apidoc/bookmodule/book.py:50
 #: src/zope/app/apidoc/bookmodule/book.py:64
 msgid "Book"
-msgstr "Textesammlung"
+msgstr "Textsammlung"
 
 #: src/zope/app/apidoc/bookmodule/book.py:53
 msgid ""
@@ -52,7 +52,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"     Dies ist eine Textesammlung für Entwickler, die aus allen bestehenden\n"
+"     Dies ist eine Textsammlung für Entwickler, die aus allen bestehenden\n"
 "     Dokumentationsdateien zusammengestellt wurde. Sie ist nicht als \n"
 "     vollständige oder zusammenhängende Unterlage gemeint, sondern \n"
 "     jedes Kapitel ist für sich eine kleine Geschichte. Betrachten Sie "
@@ -138,7 +138,7 @@ msgstr "(schreibbar)"
 
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:111
 msgid "There are no attributes in this class."
-msgstr "Es gibt keine Attribute in dieser Klasse."
+msgstr "Diese Klasse hat keine Attribute."
 
 # Default: "Methods"
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:117
@@ -160,7 +160,7 @@ msgstr "(C-basierte Klasse)"
 
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:18
 msgid "Base classes"
-msgstr "Basis-Klassen"
+msgstr "Basisklassen"
 
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:181
 msgid "There are no known subclasses."
@@ -1045,7 +1045,8 @@ msgstr "Aktualisieren"
 msgid ""
 "Message Catalog for ${language} language in ${domain} domain successfully "
 "reloaded."
-msgstr ""
+msgstr "Der Nachrichtenkatalog der Sprache ${language} aus dem Gebiet "
+"${domain} wurde erfolgreich aktualisiert."
 
 #: src/zope/app/applicationcontrol/browser/zodbcontrol.pt:15
 msgid "Name of database"
@@ -1077,15 +1078,15 @@ msgstr "ZODB erfolgreich gepackt."
 
 #: src/zope/app/authentication/browser/configure.zcml:104
 msgid "Authenticator Plugin"
-msgstr "Plugin für Authentifikation"
+msgstr "Plugin für Authentifizierung"
 
 #: src/zope/app/authentication/browser/configure.zcml:24
 msgid "New-style pluggable authentication utility"
-msgstr "Einhängbares Authentifizierungs-Utility neuen Stils"
+msgstr "Austauschbares Authentifizierungs-Utility neuen Stils"
 
 #: src/zope/app/authentication/browser/configure.zcml:24
 msgid "Pluggable Authentication Utility"
-msgstr "Einhängbares Authentifizierungs-Utility"
+msgstr "Austauschbares Authentifizierungs-Utility"
 
 #: src/zope/app/authentication/browser/configure.zcml:32
 msgid "Edit Pluggable Authentication Utility"
@@ -1149,19 +1150,19 @@ msgstr "Gruppeninformationen ändern"
 
 #: src/zope/app/authentication/browser/httpplugins.zcml:13
 msgid "Realm"
-msgstr "Arbeitsgebiet"
+msgstr "Bereich"
 
 #: src/zope/app/authentication/browser/httpplugins.zcml:7
 msgid "HTTP Basic-Auth Plugin"
-msgstr "Plugin für HTTP Basis-Authentifizierung"
+msgstr "Plugin für HTTP-Basic-Authentifizierung"
 
 #: src/zope/app/authentication/browser/loginform.pt:11
 msgid ""
 "You are not authorized to perform this action. However, you may login as a "
 "different user who is authorized."
 msgstr ""
-"Sie haben keine Berechtigung für diese Aktion. Sie können sich jedoch "
-"möglicherweise als anderer Nutzer anmelden, der berechtigt ist."
+"Sie dürfen diese Aktion nicht durchführen, können sich aber möglicherweise"
+" als anderer Nutzer anmelden, der dazu berechtigt ist."
 
 #: src/zope/app/authentication/browser/loginform.pt:20
 msgid "User Name"
@@ -1177,11 +1178,11 @@ msgstr "Anmelden"
 
 #: src/zope/app/authentication/browser/loginform.pt:9
 msgid "Please provide Login Information"
-msgstr "Bitte anmelden"
+msgstr "Bitte melden Sie sich an"
 
 #: src/zope/app/authentication/browser/principalfolder.zcml:14
-msgid "A Pluggable Authentication Persistent Authentication Plugin"
-msgstr "Ein einhängbarer, persistenter Authentifiyierungsmodul"
+msgid "A Pluggable Persistent Authentication Plugin"
+msgstr "Ein austauschbares, persistentes Authentifizierungsmodul"
 
 #: src/zope/app/authentication/browser/principalfolder.zcml:14
 msgid "Principal Folder"
@@ -1214,15 +1215,15 @@ msgstr "Suchen"
 
 #: src/zope/app/authentication/browser/schemasearch.py:31
 msgid "Source path"
-msgstr "Pfad zur Quelle"
+msgstr "Quellpfad"
 
 #: src/zope/app/authentication/browser/schemasearch.py:32
 msgid "Path to the source utility"
-msgstr "Pfad zum Quellentext-Utility"
+msgstr "Pfad zum Quelltext-Utility"
 
 #: src/zope/app/authentication/browser/session.zcml:11
 msgid "Browser Form Challenger"
-msgstr "Browser-Forumlar-Herausforderer"
+msgstr "Browser-Formular-Herausforderer"
 
 #: src/zope/app/authentication/browser/session.zcml:5
 msgid "Session Credentials Plugin"
@@ -1261,7 +1262,7 @@ msgstr "Beschreibung"
 #: src/zope/app/authentication/groupfolder.py:51
 #: src/zope/security/interfaces.py:306
 msgid "Provides a description for the permission."
-msgstr "Eine detaillierte Beschreibung der Berechtigung."
+msgstr "Eine Beschreibung der Berechtigung."
 
 #: src/zope/app/authentication/groupfolder.py:55
 msgid "Principals"
@@ -1273,11 +1274,11 @@ msgstr "Liste der zur Gruppe gehörenden Nutzungsberechtigten"
 
 #: src/zope/app/authentication/groupfolder.py:68
 msgid "Group ID prefix"
-msgstr "Gruppen-Kennung-Präfix"
+msgstr "Präfix für Gruppenkennungen"
 
 #: src/zope/app/authentication/groupfolder.py:69
 msgid "Prefix added to IDs of groups in this folder"
-msgstr "Präfix, der zur Gruppenkennung in diesem Ordner hinzugefügt wird"
+msgstr "Präfix, das zu Gruppenkennungen in diesem Ordner hinzugefügt wird"
 
 #: src/zope/app/authentication/groupfolder.py:88
 msgid "Group Search String"
@@ -1289,7 +1290,8 @@ msgstr "Plugin zum Sich-Ausweisen"
 
 #: src/zope/app/authentication/interfaces.py:44
 msgid "Authenticator Plugins"
-msgstr "Plugin für Authentifikation"
+msgstr "Plugin für Authentifizierung"
+
 
 #: src/zope/app/authentication/interfaces.py:50
 #: src/zope/app/authentication/principalfolder.py:80
@@ -1300,11 +1302,11 @@ msgstr "Präfix"
 #: src/zope/app/authentication/principalfolder.py:101
 #: src/zope/app/security/browser/auth.py:31
 msgid "Search String"
-msgstr "Such-Zeichenkette"
+msgstr "Suchbegriff"
 
 #: src/zope/app/authentication/principalfolder.py:102
 msgid "A Search String"
-msgstr "Eine Such-Zeichenkette"
+msgstr "Ein Suchbegriff"
 
 #: src/zope/app/authentication/principalfolder.py:42
 #: src/zope/app/pluggableauth/interfaces.py:32
@@ -1314,8 +1316,8 @@ msgstr "Anmeldung"
 #: src/zope/app/authentication/principalfolder.py:43
 msgid "The Login/Username of the principal. This value can change."
 msgstr ""
-"Ein Anmelde-/Benutzername für den Nutzungsberechtigten. Dieser Wert kann "
-"sich ändern."
+"Der Benutzer- und Anmeldename des Nutzungsberechtigten. Dieser Wert kann "
+"geändert werden."
 
 #: src/zope/app/authentication/principalfolder.py:50
 #: src/zope/app/mail/interfaces.py:164
@@ -1323,11 +1325,11 @@ msgstr ""
 #: src/zope/app/i18n/browser/synchronize.pt:37
 #: src/zope/app/authentication/browser/loginform.pt:27
 msgid "Password"
-msgstr "Paßwort"
+msgstr "Passwort"
 
 #: src/zope/app/authentication/principalfolder.py:51
 msgid "The password for the principal."
-msgstr "Das Paßwort für den Nutzungsberechtigten."
+msgstr "Das Passwort des Nutzungsberechtigten."
 
 #: src/zope/app/authentication/principalfolder.py:54
 msgid "Password Manager"
@@ -1336,7 +1338,7 @@ msgstr "Passwortverwalter"
 #: src/zope/app/authentication/principalfolder.py:56
 msgid "The password manager will be used for encode/check the password"
 msgstr ""
-"Der Passwortverwalter wird zum verschlüsseln und verifiyieren des Passwortes "
+"Der Passwortverwalter wird zum verschlüsseln und verifizieren des Passwortes "
 "verwendet"
 
 #: src/zope/app/authentication/principalfolder.py:66
@@ -4393,21 +4395,21 @@ msgstr "Ein Passwort für den Nutzer."
 
 #: src/zope/app/preference/browser.py:71
 msgid "${name} Preferences"
-msgstr "${name} Benutzer-Vorlieben"
+msgstr "${name} Benutzervorlieben"
 
 #: src/zope/app/preference/configure.zcml:30
 #: src/zope/app/apidoc/browser/modules.pt:22
 msgid "User Preferences"
-msgstr "Benutzer-Vorlieben"
+msgstr "Benutzervorlieben"
 
 #: src/zope/app/preference/configure.zcml:70
 msgid "A Default User Preferences Provider"
-msgstr "Ein Lieferant für Voreinstellungen von Benutzer-Vorlieben"
+msgstr "Ein Lieferant für Voreinstellungen von Benutzervorlieben"
 
 #: src/zope/app/preference/configure.zcml:70
 #: src/zope/app/preference/configure.zcml:77
 msgid "Default User Preferences Provider"
-msgstr "Lieferant für Voreinstellungen von Benutzer-Vorlieben"
+msgstr "Lieferant für Voreinstellungen von Benutzervorlieben"
 
 #: src/zope/app/preference/configure.zcml:77
 msgid ""
@@ -4415,8 +4417,8 @@ msgid ""
 "preferences. The values of this provider are used, if the           user has "
 "not made a selection yet."
 msgstr ""
-"    Sie können mit dieser Komponente die lokalen Voreinstellungen für Nutzer-"
-"Vorlieben festlegen. Die Angaben dieses Lieferanten werden verwendet, "
+"    Sie können mit dieser Komponente die lokalen Voreinstellungen für Benutzer"
+"vorlieben festlegen. Die Angaben dieses Lieferanten werden verwendet, "
 "solange der Nutzer keine Auswahl getroffen hat."
 
 #: src/zope/app/preference/menu.pt:5
