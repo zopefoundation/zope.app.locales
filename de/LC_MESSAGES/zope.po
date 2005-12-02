@@ -1367,7 +1367,7 @@ msgstr "Standort:&nbsp;"
 
 #: src/zope/app/boston/configure.zcml:60
 msgid "Boston Skin"
-msgstr "Boston Haut"
+msgstr "Oberfläche \"Boston\""
 
 #: src/zope/app/boston/viewlets/addinginfo/browser.py:37
 msgid "Adding info"
@@ -2693,7 +2693,7 @@ msgstr ""
 
 #: src/zope/app/demo/skinpref/configure.zcml:25
 msgid "Skin Selection"
-msgstr "Auswahl der Anzeigeform"
+msgstr "Auswahl der Oberfläche"
 
 #: src/zope/app/demo/widget/browser/boolwidget.zcml:21
 msgid "BoolWidget Index"
@@ -5787,16 +5787,15 @@ msgstr "Dokument-Typ"
 
 #: src/zope/app/styleguide/skin/configure.zcml:7
 msgid "Skin"
-msgstr "Anzeigeform"
+msgstr "Oberfläche"
 
 #: src/zope/app/traversing/browser/absoluteurl.py:28
 msgid ""
 "There isn't enough context to get URL information. This is probably due to a "
 "bug in setting up location information."
 msgstr ""
-"Es gibt nicht genug Kontext, um die URL-Informationen abzurufen. Dies ist "
-"wahrscheinlich auf einen Fehler in der Installation von "
-"Lokalisierungsinformationen zurückzuführen."
+"Es gibt nicht genug Kontext, um die URL-Informationen abzurufen. "
+"Wahrscheinlich ist daran ein Softwarefehler schuld."
 
 #: src/zope/app/tree/browser/navigation_macros.pt:16
 #: src/zope/app/rotterdam/navigation_macros.pt:31
