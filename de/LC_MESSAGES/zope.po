@@ -3854,7 +3854,7 @@ msgstr "Filtern"
 #: src/zope/app/i18n/browser/translatemessage.pt:17
 #: src/zope/app/i18n/browser/synchronize.pt:88
 msgid "Message Id"
-msgstr "Message ID"
+msgstr "Nachrichtenkennung"
 
 #: src/zope/app/i18n/browser/translatemessage.pt:31
 msgid "Edit Message"
@@ -4055,11 +4055,11 @@ msgstr "I18n-Bild"
 
 #: src/zope/app/intid/browser/configure.zcml:12
 msgid "A utility that provides unique ids to objects"
-msgstr "Ein Utility,  welches eindeutige IDs für Objekte erstellt."
+msgstr "Ein Utility,  welches eindeutige Kennungen für Objekte erstellt."
 
 #: src/zope/app/intid/browser/configure.zcml:12
 msgid "Unique Id Utility"
-msgstr "Utility für eindeutige ID"
+msgstr "Utility für eindeutige Kennung"
 
 #: src/zope/app/intid/browser/configure.zcml:19
 msgid "Registered Objects"
@@ -4067,14 +4067,14 @@ msgstr "Registrierte Objekte"
 
 #: src/zope/app/intid/browser/configure.zcml:5
 msgid "Unique Id Tool"
-msgstr "Eindeutige-ID-Werkzeug"
+msgstr "Eindeutige-Kennungen-Werkzeug"
 
 #: src/zope/app/intid/browser/configure.zcml:5
 msgid ""
 "Unique Ids Tools are used to provide system-wide unique ids       for "
 "documents."
 msgstr ""
-"Das Utility 'Eindeutige IDs' stellt systemweit eindeutige IDs für Dokumente "
+"Das Utility 'Eindeutige Kennungen' stellt systemweit eindeutige Kennungen für Dokumente "
 "bereit."
 
 #: src/zope/app/intid/browser/registrations.pt:12
@@ -4304,7 +4304,7 @@ msgstr ""
 #: src/zope/app/onlinehelp/interfaces.py:53
 #: src/zope/security/interfaces.py:258 src/zope/security/interfaces.py:294
 msgid "Id"
-msgstr "ID"
+msgstr "Kennung"
 
 #: src/zope/app/onlinehelp/interfaces.py:54
 msgid "The Id of this Help Topic"
@@ -4575,12 +4575,12 @@ msgstr "URI des Icon zum Darstellen des Menüeintrags"
 
 #: src/zope/app/publisher/interfaces/browser.py:143
 msgid "Sub-Menu Id"
-msgstr "Unter-Menü-ID"
+msgstr "Untermenükennung"
 
 #: src/zope/app/publisher/interfaces/browser.py:144
 msgid "The menu id of the menu that describes the sub-menu below this item."
 msgstr ""
-"Die Menü-ID eines Menüs, das die Untermenüs unter diesem Eintrag beschreibt."
+"Die Menükennung eines Menüs, das die Untermenüs unter diesem Eintrag beschreibt."
 
 #: src/zope/app/publisher/interfaces/browser.py:150
 msgid ""
@@ -4595,7 +4595,7 @@ msgstr ""
 #: src/zope/app/publisher/interfaces/browser.py:51
 #: src/zope/app/schemacontent/interfaces.py:45
 msgid "Menu Id"
-msgstr "Menü-ID"
+msgstr "Menükennung"
 
 #: src/zope/app/publisher/interfaces/browser.py:52
 msgid "The id uniquely identifies this menu."
@@ -5129,11 +5129,11 @@ msgstr "URI-Feld"
 
 #: src/zope/app/schema/fields.zcml:281
 msgid "Id Field"
-msgstr "ID-Feld"
+msgstr "Kennungsfeld"
 
 #: src/zope/app/schema/fields.zcml:293
 msgid "Interface Field"
-msgstr "Schnittstellen-Feld"
+msgstr "Schnittstellenfeld"
 
 #: src/zope/app/schema/fields.zcml:38
 msgid "Container Field"
@@ -5221,7 +5221,7 @@ msgstr ""
 "Wenn dies auf True (wahr) gesetzt ist, wird das System einen lokalen "
 "Browsermenüeintrag für Sie erstellen. Falls False (falsch, unwahr) angegeben "
 "ist, wird das System versuchen, die nächste Web-Site-Verwaltung mit einem "
-"Menü mit der spezifizierten ID zu finden. Falls kein Menü gefunden werden "
+"Menü mit der spezifizierten Kennung zu finden. Falls kein Menü gefunden werden "
 "kann oder das Menü global ist, wird ein Fehler erzeugt."
 
 #: src/zope/app/schemacontent/interfaces.py:73
@@ -5519,7 +5519,7 @@ msgid ""
 "the Allow or Deny lists. Make sure you don't select the same permission in "
 "both lists though."
 msgstr ""
-"Diese Seite zeigt die Berechtigungen, die der Rolle ${role_title} (Id: "
+"Diese Seite zeigt die Berechtigungen, die der Rolle ${role_title} (Kennung: "
 "${role_id}) erlaubt oder verweigert wurden. Um Einstellungen zu ändern, "
 "wählen sie einfach Berechtigungen in den 'Erlauben'- und 'Verweigern'-Liste. "
 "Stellen Sie jedoch sicher, daß sie nicht die gleiche Berechtigung in beiden "
@@ -5938,7 +5938,7 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"    ID des Versionsablauf in Bezug auf die versionsgeführte Ressource.\n"
+"    Kennung des Versionsablauf in Bezug auf die versionsgeführte Ressource.\n"
 "\n"
 "    Wenn sie nicht gesetzt ist (ist `None`), ...\n"
 "    "
