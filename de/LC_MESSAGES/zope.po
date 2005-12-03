@@ -316,7 +316,7 @@ msgstr ""
 
 #: src/zope/app/apidoc/codemodule/codemodule.py:79
 msgid "Zope 3 root."
-msgstr "Zope 3 Wurzel"
+msgstr "Zope-3-Wurzel"
 
 #: src/zope/app/apidoc/codemodule/interfaces.py:185
 msgid "Configuration Filename"
@@ -343,7 +343,7 @@ msgstr ""
 
 #: src/zope/app/apidoc/codemodule/interfaces.py:198
 msgid "XML Root Element"
-msgstr "XML Wurzelelement"
+msgstr "XML-Wurzelelement"
 
 #: src/zope/app/apidoc/codemodule/interfaces.py:199
 msgid "XML element representing the configuration root."
@@ -1491,7 +1491,7 @@ msgstr "Reindizieren"
 
 #: src/zope/app/catalog/browser/advanced.pt:6
 msgid "Catalog statistics"
-msgstr "Katalog Statistiken"
+msgstr "Katalogstatistiken"
 
 #: src/zope/app/catalog/browser/advanced.pt:9
 msgid "Index"
@@ -1499,7 +1499,7 @@ msgstr "Verzeichnis"
 
 #: src/zope/app/catalog/browser/configure.zcml:14
 msgid "A Catalog allows indexing and searching of objects"
-msgstr "Ein Katalog erlaubt das Indizieren und Suchen von Objekten"
+msgstr "Ein Katalog erlaubt das Indizieren von und Suchen nach Objekten"
 
 #: src/zope/app/catalog/browser/configure.zcml:39
 msgid "Advanced"
@@ -1825,7 +1825,7 @@ msgstr "Für Schnittstelle"
 
 #: src/zope/app/component/interfaces/__init__.py:111
 msgid "The interface of the objects being adapted"
-msgstr "Die Schnittstelle des adaptierten Objektes"
+msgstr "Die Schnittstelle des adaptierten Objekts"
 
 #: src/zope/app/component/interfaces/__init__.py:118
 msgid "With interfaces"
@@ -1975,7 +1975,7 @@ msgstr "Schnittstellen-Typ"
 
 #: src/zope/app/component/metadirectives.py:170
 msgid "Adapter factory/factories"
-msgstr "Adapter-Fabrik/Fabriken"
+msgstr "Adapterfabrik(en)"
 
 #: src/zope/app/component/metadirectives.py:171
 msgid ""
@@ -2005,7 +2005,7 @@ msgstr "Spezifikationen, die zu adaptieren sind"
 #: src/zope/app/component/metadirectives.py:186
 #: src/zope/app/component/metadirectives.py:259
 msgid "This should be a list of interfaces or classes"
-msgstr "Die sollte eine Liste von Schnittstellen oder Klassen sein"
+msgstr "Dies sollte eine Liste von Schnittstellen oder Klassen sein"
 
 #: src/zope/app/component/metadirectives.py:195
 msgid "This adapter is only available, if the principal has this permission."
@@ -2085,7 +2085,7 @@ msgstr "Ein aufrufbares Objekt, das Ereignisse bearbeitet."
 
 #: src/zope/app/component/metadirectives.py:258
 msgid "Interfaces or classes that this subscriber depends on"
-msgstr "Schnittstellen oder Klassen, auf die ein Abonnent angewiesen ist"
+msgstr "Schnittstellen oder Klassen, auf die ein Abonnent sich verlässt"
 
 #: src/zope/app/component/metadirectives.py:268
 msgid ""
@@ -2163,7 +2163,7 @@ msgstr "Ausführliche Beschreibung über das, was diese Fabrik tut"
 
 #: src/zope/app/component/metadirectives.py:362
 msgid "The interface this view is the default for."
-msgstr "Die Schnittstelle, die für diese Ansicht voreingestellt ist."
+msgstr "Die Schnittstelle, für welche dies die Standardansicht ist."
 
 #: src/zope/app/component/metadirectives.py:363
 msgid ""
@@ -2207,7 +2207,7 @@ msgstr ""
 
 #: src/zope/app/component/metadirectives.py:410
 msgid "One or more interfaces"
-msgstr "Eine oder mehrere Schnittstelle(n)"
+msgstr "Eine oder mehrere Schnittstellen"
 
 #: src/zope/app/component/metadirectives.py:422
 msgid ""
@@ -2375,8 +2375,7 @@ msgstr ""
 #: src/zope/app/component/metadirectives.py:383
 msgid "Interface that is also allowed if user has permission."
 msgstr ""
-"Schnittstelle, die zusätzlich verfügbar ist, wenn der Benutzer die "
-"Berechtigung hierfür hat."
+"Schnittstelle, die zusätzlich zugelassen ist, wenn der Benutzer dazu berechtigt ist."
 
 #: src/zope/app/component/metadirectives.py:99
 msgid ""
@@ -2391,7 +2390,7 @@ msgid ""
 msgstr ""
 "\n"
 "    Voreingestellt wird die `Berechtigung` nur angewendet für das Ansehen \n"
-"    einer Ansicht und möglicher Unter-Ansichten. Durch Angabe dieses \n"
+"    einer Ansicht und möglicher Unteransichten. Durch Angabe dieses \n"
 "    Attributs kann die Berechtigung auf alles angewendet werden, was in \n"
 "    der gelieferten Schnittstelle beschrieben ist.\n"
 "\n"
@@ -3105,7 +3104,7 @@ msgstr ""
 
 #: src/zope/app/error/browser/error.pt:16
 msgid "No exceptions logged."
-msgstr "Keine Ausnahmen aufgezeichnet."
+msgstr "Keine Ausnahmen protokolliert."
 
 #: src/zope/app/error/browser/error.pt:23
 #: src/zope/app/error/browser/errorentry.pt:26
@@ -3147,7 +3146,7 @@ msgid ""
 "exceptions should be copied to Zope's event log file(s)."
 msgstr ""
 "Sie können einstellen, wie viele Ausnahmen aufbewahrt und ob die Ausnahmen "
-"in Zopes Ereignisprotokoll-Datei(en) kopiert werden sollen."
+"in Zopes Ereignisprotokolldatei(en) kopiert werden sollen."
 
 #: src/zope/app/error/browser/errorentry.pt:10
 msgid "Header"
@@ -4096,7 +4095,7 @@ msgstr ""
 # Default: "Introspect Object Classes and Interfaces"
 #: src/zope/app/introspector/configure.zcml:6
 msgid "zope.app.introspector.Introspect"
-msgstr "Objektklassen und -Schnittstellen introspektieren"
+msgstr "Objektklassen und -schnittstellen introspektieren"
 
 #: src/zope/app/keyreference/interfaces.py:37
 msgid "Key Type Id"
@@ -4382,7 +4381,7 @@ msgstr "Nutzungsberechtigter"
 
 #: src/zope/app/pluggableauth/browser/configure.zcml:56
 msgid "Edit User Information"
-msgstr "Nutzer-Informationen bearbeiten"
+msgstr "Benutzerinformationen bearbeiten"
 
 #: src/zope/app/pluggableauth/interfaces.py:33
 msgid "The Login/Username of the user. This value can change."
@@ -4391,7 +4390,7 @@ msgstr ""
 
 #: src/zope/app/pluggableauth/interfaces.py:39
 msgid "The password for the user."
-msgstr "Ein Passwort für den Nutzer."
+msgstr "Ein Passwort für den Benutzer."
 
 #: src/zope/app/preference/browser.py:71
 msgid "${name} Preferences"
@@ -4491,7 +4490,7 @@ msgstr "Klassenattribut"
 
 #: src/zope/app/presentation/interfaces.py:98
 msgid "The interface of the objects being viewed"
-msgstr "Die Schnittstelle der anzuzeigenden Objekte"
+msgstr "Die Schnittstelle der angezeigten Objekte"
 
 #: src/zope/app/presentation/pagereg_details.pt:12
 #: src/zope/app/apidoc/ifacemodule/presentation_macros.pt:72
@@ -5297,7 +5296,7 @@ msgstr "Bearbeite Berechtigung"
 
 #: src/zope/app/security/browser/login.pt:10
 msgid "You are now logged in as ${UserTitle}."
-msgstr "Sie sind nun als  ${UserTitle} eingelogged."
+msgstr "Sie sind nun als  ${UserTitle} angemeldet."
 
 #: src/zope/app/security/browser/login.pt:6
 msgid "Login successful!"
@@ -5322,11 +5321,11 @@ msgstr "Zurück zur Hauptseite."
 
 #: src/zope/app/security/browser/logout.pt:6
 msgid "Logout successful!"
-msgstr "Ausloggen erfolgreich!"
+msgstr "Abmelden erfolgreich!"
 
 #: src/zope/app/security/browser/logout.pt:8
 msgid "You are now logged out."
-msgstr "Sie sind nun ausgeloggt."
+msgstr "Sie sind nun abgemeldet."
 
 #: src/zope/app/security/browser/redirect.pt:12
 msgid "You are being redirected!"
@@ -6220,7 +6219,7 @@ msgstr "Verarbeitet mit Zope"
 
 #: src/zope/app/zopetop/widget_macros.pt:34
 msgid "Logged in as ${user_title}"
-msgstr "Sie sind nun als  ${user_title} eingelogged."
+msgstr "Sie sind nun als  ${user_title} angemeldet."
 
 #: src/zope/app/zopetop/widget_macros.pt:48
 #: src/zope/app/rotterdam/template.pt:79
