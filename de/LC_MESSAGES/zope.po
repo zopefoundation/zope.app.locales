@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: zope\n"
-"POT-Creation-Date: Thu Dec  1 18:47:15 2005\n"
+"POT-Creation-Date: Mon Dec  5 17:28:09 2005\n"
 "PO-Revision-Date: 2005-11-02 17:55-0500\n"
 "Last-Translator: Stephan Richter <stephan.richter@tufts.edu>\n"
 "Language-Team: German <zope3-dev@zope.org>\n"
@@ -121,35 +121,6 @@ msgstr "Menü"
 msgid "Zope 3 API Docs"
 msgstr "Zope 3 API Doku"
 
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:100
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:146
-msgid "Permissions:"
-msgstr "Berechtigungen:"
-
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:102
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:148
-msgid "(read)"
-msgstr "(lesbar)"
-
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:104
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:150
-msgid "(write)"
-msgstr "(schreibbar)"
-
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:111
-msgid "There are no attributes in this class."
-msgstr "Diese Klasse hat keine Attribute."
-
-# Default: "Methods"
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:117
-#: src/zope/app/apidoc/ifacemodule/iface_macros.pt:42
-msgid "Methods"
-msgstr "Methoden"
-
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:157
-msgid "There are no methods in this class."
-msgstr "Diese Klasse hat keine Methoden."
-
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:162
 msgid "Known Subclasses"
 msgstr "Bekannte Unterklassen"
@@ -166,10 +137,6 @@ msgstr "Basisklassen"
 msgid "There are no known subclasses."
 msgstr "Es gibt keine Unterklassen."
 
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:35
-msgid "There are no base classes."
-msgstr "Es gibt keine Basisklassen."
-
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:40
 msgid "Implemented Interfaces"
 msgstr "Implementierte Schnittstellen"
@@ -177,15 +144,6 @@ msgstr "Implementierte Schnittstellen"
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:58
 msgid "There are no implemented interfaces."
 msgstr "Es gibt keine implementierten Schnittstellen."
-
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:64
-msgid "Attributes/Properties"
-msgstr "Attribute/Eigenschaften"
-
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:88
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:133
-msgid "Interface:"
-msgstr "Schnittstelle:"
 
 #: src/zope/app/apidoc/codemodule/browser/function_index.pt:10
 msgid "Signature"
@@ -197,14 +155,137 @@ msgstr "Dokumentations-String"
 
 #: src/zope/app/apidoc/codemodule/browser/function_index.pt:41
 #: src/zope/app/apidoc/codemodule/browser/function_index.pt:45
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:114
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:228
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:266
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:308
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:77
 msgid "type:"
 msgstr "Typ:"
 
 #: src/zope/app/apidoc/codemodule/browser/function_index.pt:52
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:121
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:84
 msgid "Value:"
 msgstr "Wert:"
+
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:101
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:64
+msgid "Attributes/Properties"
+msgstr "Attribute/Eigenschaften"
+
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:133
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:173
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:88
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:133
+msgid "Interface:"
+msgstr "Schnittstelle:"
+
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:141
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:182
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:100
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:146
+msgid "Permissions:"
+msgstr "Berechtigungen:"
+
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:143
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:184
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:102
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:148
+msgid "(read)"
+msgstr "(lesbar)"
+
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:145
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:186
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:104
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:150
+msgid "(write)"
+msgstr "(schreibbar)"
+
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:152
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:111
+msgid "There are no attributes in this class."
+msgstr "Diese Klasse hat keine Attribute."
+
+# Default: "Methods"
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:157
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:117
+#: src/zope/app/apidoc/ifacemodule/iface_macros.pt:42
+msgid "Methods"
+msgstr "Methoden"
+
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:193
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:157
+msgid "There are no methods in this class."
+msgstr "Diese Klasse hat keine Methoden."
+
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:200
+#, fuzzy
+msgid "Mapping Items"
+msgstr "Zuweisung(en) entfernt."
+
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:206
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:248
+#, fuzzy
+msgid "There are no items."
+msgstr "Es gibt keine Basisschnittstellen."
+
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:21
+msgid "Object Introspector: ${class-name} ( ${object-name} ${object-name} )"
+msgstr ""
+
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:21
+msgid "&lt;no name&gt;"
+msgstr ""
+
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:242
+#, fuzzy
+msgid "Sequence Items"
+msgstr "Zustände"
+
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:280
+#, fuzzy
+msgid "Annotations"
+msgstr "Anmerkungen zum Nutzungsberechtigten"
+
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:286
+msgid "There were no annotations or they were not inspectable."
+msgstr ""
+
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:30
+#, fuzzy
+msgid "Parent: ${parent}"
+msgstr "Elternpfad"
+
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:36
+msgid "&lt;No Name&gt;"
+msgstr ""
+
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:42
+#, fuzzy
+msgid "Directly Provided Interfaces"
+msgstr "Bereitgestellte Schnittstelle"
+
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:56
+#, fuzzy
+msgid "No interfaces are directly provided."
+msgstr "Keine Schnittstelle bereitgestellt"
+
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:62
+#, fuzzy
+msgid "Provided Interfaces"
+msgstr "Bereitgestellte Schnittstelle"
+
+# Default: "Bases"
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:78
+#, fuzzy
+msgid "Bases"
+msgstr "Klassen"
+
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:96
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:35
+msgid "There are no base classes."
+msgstr "Es gibt keine Basisklassen."
 
 #: src/zope/app/apidoc/codemodule/browser/menu.pt:14
 #: src/zope/app/apidoc/codemodule/browser/static_menu.pt:17
@@ -927,19 +1008,19 @@ msgstr ""
 "Namensräume, die nicht als volle URLs angegeben sind, beginnen mit \"http://"
 "namespaces.zope.org\"."
 
-#: src/zope/app/applicationcontrol/browser/configure.zcml:25
+#: src/zope/app/applicationcontrol/browser/configure.zcml:23
 msgid "Runtime Information"
 msgstr "Laufzeit-Informationen"
 
-#: src/zope/app/applicationcontrol/browser/configure.zcml:29
+#: src/zope/app/applicationcontrol/browser/configure.zcml:27
 msgid "Server Control"
 msgstr "Serverkontrolle"
 
-#: src/zope/app/applicationcontrol/browser/configure.zcml:35
+#: src/zope/app/applicationcontrol/browser/configure.zcml:33
 msgid "ZODB Control"
 msgstr "ZODB-Kontrolle"
 
-#: src/zope/app/applicationcontrol/browser/configure.zcml:52
+#: src/zope/app/applicationcontrol/browser/configure.zcml:50
 msgid "Manage Process"
 msgstr "Prozess verwalten"
 
@@ -993,40 +1074,34 @@ msgstr "nicht verfügbar"
 msgid "${days} day(s) ${hours}:${minutes}:${seconds}"
 msgstr ""
 
-#: src/zope/app/applicationcontrol/browser/server-control.pt:10
-msgid "Shutdown time"
-msgstr "Abschalt-Zeit:"
+#: src/zope/app/applicationcontrol/browser/servercontrol.pt:16
+msgid "Countdown until restart or shutdown"
+msgstr ""
 
-#: src/zope/app/applicationcontrol/browser/server-control.pt:14
+#: src/zope/app/applicationcontrol/browser/servercontrol.pt:20
 msgid "seconds"
 msgstr "Sekunden"
 
-#: src/zope/app/applicationcontrol/browser/server-control.pt:15
+#: src/zope/app/applicationcontrol/browser/servercontrol.pt:21
+#, fuzzy
 msgid ""
-"If you specify a time of 0 seconds, then the server will do a hard shutdown."
+"If you specify a time of 0 seconds, then the server will be shutdown or "
+"restarted immediately."
 msgstr ""
 "Wenn Sie eine Zeit von 0 Sekunden eingeben, wird der Server sofort "
 "angehalten (hard shutdown)."
 
-#: src/zope/app/applicationcontrol/browser/server-control.pt:24
-msgid "Restart server"
-msgstr "Server neustarten"
-
-#: src/zope/app/applicationcontrol/browser/server-control.pt:27
-msgid "Shutdown server"
-msgstr "Server herunterfahren"
-
-#: src/zope/app/applicationcontrol/browser/server-control.pt:3
+#: src/zope/app/applicationcontrol/browser/servercontrol.pt:3
 msgid "Zope Stub Server Controller"
 msgstr "Zope Stub Server Controller"
 
-#: src/zope/app/applicationcontrol/browser/servercontrol.py:34
-msgid "You restarted the server."
-msgstr "Sie haben den Server neugestartet."
+#: src/zope/app/applicationcontrol/browser/servercontrol.pt:30
+msgid "Restart server"
+msgstr "Server neustarten"
 
-#: src/zope/app/applicationcontrol/browser/servercontrol.py:37
-msgid "You shut down the server."
-msgstr "Sie haben den Server heruntergefahren."
+#: src/zope/app/applicationcontrol/browser/servercontrol.pt:33
+msgid "Shutdown server"
+msgstr "Server herunterfahren"
 
 #: src/zope/app/applicationcontrol/browser/translationdomaincontrol.pt:16
 msgid "Domain"
@@ -1045,8 +1120,9 @@ msgstr "Aktualisieren"
 msgid ""
 "Message Catalog for ${language} language in ${domain} domain successfully "
 "reloaded."
-msgstr "Der Nachrichtenkatalog der Sprache ${language} aus dem Gebiet "
-"${domain} wurde erfolgreich aktualisiert."
+msgstr ""
+"Der Nachrichtenkatalog der Sprache ${language} aus dem Gebiet ${domain} "
+"wurde erfolgreich aktualisiert."
 
 #: src/zope/app/applicationcontrol/browser/zodbcontrol.pt:15
 msgid "Name of database"
@@ -1161,8 +1237,8 @@ msgid ""
 "You are not authorized to perform this action. However, you may login as a "
 "different user who is authorized."
 msgstr ""
-"Sie dürfen diese Aktion nicht durchführen, können sich aber möglicherweise"
-" als anderer Nutzer anmelden, der dazu berechtigt ist."
+"Sie dürfen diese Aktion nicht durchführen, können sich aber möglicherweise "
+"als anderer Nutzer anmelden, der dazu berechtigt ist."
 
 #: src/zope/app/authentication/browser/loginform.pt:20
 msgid "User Name"
@@ -1291,7 +1367,6 @@ msgstr "Plugin zum Sich-Ausweisen"
 #: src/zope/app/authentication/interfaces.py:44
 msgid "Authenticator Plugins"
 msgstr "Plugin für Authentifizierung"
-
 
 #: src/zope/app/authentication/interfaces.py:50
 #: src/zope/app/authentication/principalfolder.py:80
@@ -2375,7 +2450,8 @@ msgstr ""
 #: src/zope/app/component/metadirectives.py:383
 msgid "Interface that is also allowed if user has permission."
 msgstr ""
-"Schnittstelle, die zusätzlich zugelassen ist, wenn der Benutzer dazu berechtigt ist."
+"Schnittstelle, die zusätzlich zugelassen ist, wenn der Benutzer dazu "
+"berechtigt ist."
 
 #: src/zope/app/component/metadirectives.py:99
 msgid ""
@@ -3536,31 +3612,31 @@ msgstr "Fehlt"
 msgid "SourceDisplayWidget-invalid"
 msgstr "Ungültig"
 
-#: src/zope/app/form/browser/textwidgets.py:154
+#: src/zope/app/form/browser/textwidgets.py:148
 msgid "Invalid text data"
 msgstr "Ungültige Textdaten"
 
-#: src/zope/app/form/browser/textwidgets.py:166
+#: src/zope/app/form/browser/textwidgets.py:160
 msgid "Invalid textual data"
 msgstr "Ungültige Zeichen"
 
-#: src/zope/app/form/browser/textwidgets.py:309
+#: src/zope/app/form/browser/textwidgets.py:303
 msgid "Invalid unicode data"
 msgstr "Ungültige Unicode-Daten"
 
-#: src/zope/app/form/browser/textwidgets.py:439
+#: src/zope/app/form/browser/textwidgets.py:432
 msgid "Form input is not a file object"
 msgstr "Eingabe in der Form ist kein Dateien-Objekt"
 
-#: src/zope/app/form/browser/textwidgets.py:478
+#: src/zope/app/form/browser/textwidgets.py:471
 msgid "Invalid integer data"
 msgstr "Ungültige Ganzzahl"
 
-#: src/zope/app/form/browser/textwidgets.py:492
+#: src/zope/app/form/browser/textwidgets.py:485
 msgid "Invalid floating point data"
 msgstr "Ungültiger Gleitkommawert"
 
-#: src/zope/app/form/browser/textwidgets.py:507
+#: src/zope/app/form/browser/textwidgets.py:500
 msgid "Invalid datetime data"
 msgstr "Ungültige Zeit"
 
@@ -3729,7 +3805,7 @@ msgstr ""
 "einzelner Nachrichten lokal anzupassen."
 
 #: src/zope/app/i18n/browser/configure.zcml:5
-#: src/zope/app/applicationcontrol/browser/configure.zcml:43
+#: src/zope/app/applicationcontrol/browser/configure.zcml:41
 #: src/zope/app/applicationcontrol/browser/translationdomaincontrol.pt:4
 msgid "Translation Domains"
 msgstr "Übersetzungsdomänen"
@@ -3912,6 +3988,10 @@ msgstr "Mehrfach-Bild, wobei jede Ausprägung für eine Sprache vorgesehen ist"
 #: src/zope/app/apidoc/browser/static_contents.pt:29
 #: src/zope/app/apidoc/codemodule/browser/module_index.pt:9
 #: src/zope/app/apidoc/codemodule/browser/module_index.pt:16
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:142
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:144
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:183
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:185
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:11
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:101
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:103
@@ -4073,8 +4153,8 @@ msgid ""
 "Unique Ids Tools are used to provide system-wide unique ids       for "
 "documents."
 msgstr ""
-"Das Utility 'Eindeutige Kennungen' stellt systemweit eindeutige Kennungen für Dokumente "
-"bereit."
+"Das Utility 'Eindeutige Kennungen' stellt systemweit eindeutige Kennungen "
+"für Dokumente bereit."
 
 #: src/zope/app/intid/browser/registrations.pt:12
 msgid "Object"
@@ -4416,9 +4496,9 @@ msgid ""
 "preferences. The values of this provider are used, if the           user has "
 "not made a selection yet."
 msgstr ""
-"    Sie können mit dieser Komponente die lokalen Voreinstellungen für Benutzer"
-"vorlieben festlegen. Die Angaben dieses Lieferanten werden verwendet, "
-"solange der Nutzer keine Auswahl getroffen hat."
+"    Sie können mit dieser Komponente die lokalen Voreinstellungen für "
+"Benutzervorlieben festlegen. Die Angaben dieses Lieferanten werden "
+"verwendet, solange der Nutzer keine Auswahl getroffen hat."
 
 #: src/zope/app/preference/menu.pt:5
 msgid "Preferences"
@@ -4579,7 +4659,8 @@ msgstr "Untermenükennung"
 #: src/zope/app/publisher/interfaces/browser.py:144
 msgid "The menu id of the menu that describes the sub-menu below this item."
 msgstr ""
-"Die Menükennung eines Menüs, das die Untermenüs unter diesem Eintrag beschreibt."
+"Die Menükennung eines Menüs, das die Untermenüs unter diesem Eintrag "
+"beschreibt."
 
 #: src/zope/app/publisher/interfaces/browser.py:150
 msgid ""
@@ -5220,8 +5301,8 @@ msgstr ""
 "Wenn dies auf True (wahr) gesetzt ist, wird das System einen lokalen "
 "Browsermenüeintrag für Sie erstellen. Falls False (falsch, unwahr) angegeben "
 "ist, wird das System versuchen, die nächste Web-Site-Verwaltung mit einem "
-"Menü mit der spezifizierten Kennung zu finden. Falls kein Menü gefunden werden "
-"kann oder das Menü global ist, wird ein Fehler erzeugt."
+"Menü mit der spezifizierten Kennung zu finden. Falls kein Menü gefunden "
+"werden kann oder das Menü global ist, wird ein Fehler erzeugt."
 
 #: src/zope/app/schemacontent/interfaces.py:73
 #: src/zope/app/schemacontent/interfaces.py:105
@@ -6676,6 +6757,15 @@ msgstr ""
 #: src/zope/viewlet/metadirectives.py:99
 msgid "view"
 msgstr "Ansicht"
+
+#~ msgid "Shutdown time"
+#~ msgstr "Abschalt-Zeit:"
+
+#~ msgid "You restarted the server."
+#~ msgstr "Sie haben den Server neugestartet."
+
+#~ msgid "You shut down the server."
+#~ msgstr "Sie haben den Server heruntergefahren."
 
 # Default: "seconds%02d"
 #~ msgid "minutes%02d"
