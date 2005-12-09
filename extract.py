@@ -381,7 +381,7 @@ def zcml_strings(dir, domain="zope", site_zcml=None):
     if site_zcml is None:
         site_zcml = os.path.join(dirname(dirname(dirname(zope.__file__))),
                                  "site.zcml")
-    context = config(site_zcml, execute=False)
+    context = config(site_zcml, features=("devmode",), execute=False)
     return context.i18n_strings.get(domain, {})
 
 def tal_strings(dir, domain="zope", include_default_domain=False):
