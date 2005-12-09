@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: zope\n"
-"POT-Creation-Date: Mon Dec  5 17:28:09 2005\n"
+"POT-Creation-Date: Fri Dec  9 17:05:54 2005\n"
 "PO-Revision-Date: 2005-11-02 17:55-0500\n"
 "Last-Translator: Stephan Richter <stephan.richter@tufts.edu>\n"
 "Language-Team: German <zope3-dev@zope.org>\n"
@@ -21,12 +21,12 @@ msgstr ""
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #: securitypolicy.zcml:11
-msgid "Everybody"
-msgstr "Jeder"
-
-#: securitypolicy.zcml:11
 msgid "All users have this role implicitly"
 msgstr "Alle Benutzer haben diese Rolle impliziterweise"
+
+#: securitypolicy.zcml:11
+msgid "Everybody"
+msgstr "Jeder"
 
 #: securitypolicy.zcml:13
 msgid "Site Manager"
@@ -58,6 +58,196 @@ msgstr ""
 "     jedes Kapitel ist für sich eine kleine Geschichte. Betrachten Sie "
 "die      Sammlung als eine Zusammenstellung von Geschichten.\n"
 "     "
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:107
+#, fuzzy
+msgid "Events"
+msgstr "Einträge"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:116
+#, fuzzy
+msgid "Security"
+msgstr "Skript"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:121
+msgid "Untrusted Interpreters"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:127
+msgid "Untrusted Python Interpreter"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:133
+msgid "Restricted Python Code"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:139
+msgid "Safe Builtins"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:147
+#, fuzzy
+msgid "Global Principals"
+msgstr "Nutzungsberechtigte"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:156
+#, fuzzy
+msgid "Testing"
+msgstr "Einstellung"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:161
+#, fuzzy
+msgid "Functional DocTest"
+msgstr "Funktionalen DocTest erzeugen"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:169
+msgid "FDocTest (How to)"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:17
+#, fuzzy
+msgid "Adapter Registry"
+msgstr "Adapter"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:177
+msgid "Form Parser"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:186
+msgid "I18n and L10n"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:191
+#, fuzzy
+msgid "Messages"
+msgstr "Nachricht"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:201
+msgid "Cached Properties"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:211
+msgid "BForest API"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:220
+msgid "Deprecation API"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:229
+msgid "Persistent Framework"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:23
+msgid "Adapters (light version)"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:238
+#, fuzzy
+msgid "Transactions"
+msgstr "Übergänge"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:243
+#: src/zope/app/apidoc/bookmodule/book.zcml:287
+msgid "Savepoints"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:253
+msgid "Zope Object Database (ZODB)"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:257
+msgid "Multiple Databases"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:263
+#, fuzzy
+msgid "Cross-Database References"
+msgstr "Datenbank-Generationen"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:269
+msgid "Collaboration Diagrams"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:275
+#, fuzzy
+msgid "Connection Management"
+msgstr "Verbindungsname"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:281
+#, fuzzy
+msgid "Persistent Classes"
+msgstr "Persistente lokale Schemas"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:29
+msgid "Food For Thought"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:293
+#, fuzzy
+msgid "Sub-Transactions"
+msgstr "Zustandsbasierter Übergang"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:299
+#, fuzzy
+msgid "Synchronizers"
+msgstr "Synchronisieren"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:309
+#, fuzzy
+msgid "BTree Developer Information"
+msgstr "Zope Entwickler Info"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:37
+#, fuzzy
+msgid "Schemas"
+msgstr "Schema"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:43
+#, fuzzy
+msgid "Schema Fields"
+msgstr "Setfeld"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:52
+#, fuzzy
+msgid "Component Architecture"
+msgstr "Zu benutzende Komponente"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:58
+msgid "Global Component Architecture"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:6
+#, fuzzy
+msgid "Interfaces and Schemas"
+msgstr "Schnittstellen-Finder:"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:64
+msgid "Global CA (Socket Example)"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:70
+#: src/zope/app/apidoc/ifacemodule/index.pt:280
+msgid "Factories"
+msgstr "Fabriken"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:79
+msgid "Local Component Architecture"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:85
+#, fuzzy
+msgid "Registration Framework"
+msgstr "Registrierungsverwalter"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:91
+msgid "Local Adapter Registry"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:97
+#, fuzzy
+msgid "Local Sites & Site Managers"
+msgstr "Web-Site-Verwaltung"
 
 #: src/zope/app/apidoc/browser/contents.pt:15
 #: src/zope/app/apidoc/browser/static_contents.pt:15
@@ -231,11 +421,11 @@ msgid "There are no items."
 msgstr "Es gibt keine Basisschnittstellen."
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:21
-msgid "Object Introspector: ${class-name} ( ${object-name} ${object-name} )"
+msgid "&lt;no name&gt;"
 msgstr ""
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:21
-msgid "&lt;no name&gt;"
+msgid "Object Introspector: ${class-name} ( ${object-name} ${object-name} )"
 msgstr ""
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:242
@@ -286,6 +476,10 @@ msgstr "Klassen"
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:35
 msgid "There are no base classes."
 msgstr "Es gibt keine Basisklassen."
+
+#: src/zope/app/apidoc/codemodule/browser/introspector.zcml:46
+msgid "Introspector"
+msgstr ""
 
 #: src/zope/app/apidoc/codemodule/browser/menu.pt:14
 #: src/zope/app/apidoc/codemodule/browser/static_menu.pt:17
@@ -438,6 +632,47 @@ msgstr "Abonnement"
 msgid "<i>no name</i>"
 msgstr "<i>kein Name</i>"
 
+#: src/zope/app/apidoc/configure.zcml:33
+#, fuzzy
+msgid "Inspection API"
+msgstr "Verbindungen"
+
+#: src/zope/app/apidoc/configure.zcml:43
+#, fuzzy
+msgid "Components"
+msgstr "Komponente:"
+
+#: src/zope/app/apidoc/configure.zcml:49
+#, fuzzy
+msgid "Presentation"
+msgstr "Präsentationstyp:"
+
+#: src/zope/app/apidoc/configure.zcml:55
+msgid "Miscellaneous"
+msgstr ""
+
+# Default: "Bases"
+#: src/zope/app/apidoc/configure.zcml:61
+#, fuzzy
+msgid "Class Registry"
+msgstr "Klassen"
+
+#: src/zope/app/apidoc/configure.zcml:70
+msgid "API Doc Tool"
+msgstr ""
+
+#: src/zope/app/apidoc/configure.zcml:70
+msgid ""
+"          These are all the preferences related to viewing the API          "
+"documentation."
+msgstr ""
+
+# Default: "Use Database Connections"
+#: src/zope/app/apidoc/configure.zcml:8
+#, fuzzy
+msgid "zope.app.apidoc.UseAPIDoc"
+msgstr "Datenbankverbindungen benutzen"
+
 #: src/zope/app/apidoc/ifacemodule/component_macros.pt:13
 msgid "(line ${line})"
 msgstr "(Zeile ${line})"
@@ -474,6 +709,11 @@ msgstr "Keine Schnittstelle bereitgestellt"
 msgid "registration info:"
 msgstr "Registrierungsdaten:"
 
+#: src/zope/app/apidoc/ifacemodule/configure.zcml:81
+#, fuzzy
+msgid "Interface Details"
+msgstr "Schnittstellen-Typen"
+
 #: src/zope/app/apidoc/ifacemodule/iface_macros.pt:108
 msgid "${name} Views"
 msgstr "${name} Ansichten"
@@ -501,6 +741,8 @@ msgstr "Es sind keine Ansichten verfügbar."
 #: src/zope/app/apidoc/ifacemodule/ifacemodule.py:51
 #: src/zope/app/catalog/text.py:35
 #: src/zope/app/component/metadirectives.py:445
+#: src/zope/app/apidoc/configure.zcml:37
+#: src/zope/app/apidoc/bookmodule/book.zcml:11
 msgid "Interfaces"
 msgstr "Schnittstellen"
 
@@ -565,10 +807,6 @@ msgstr "Es gibt keine registrierten Adapter für diese Schnittstelle."
 #: src/zope/app/apidoc/ifacemodule/index.pt:275
 msgid "Other Information"
 msgstr "Weitere Informationen"
-
-#: src/zope/app/apidoc/ifacemodule/index.pt:280
-msgid "Factories"
-msgstr "Fabriken"
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:282
 msgid "A list of factories that create objects implementing this interface."
@@ -1157,12 +1395,12 @@ msgid "Authenticator Plugin"
 msgstr "Plugin für Authentifizierung"
 
 #: src/zope/app/authentication/browser/configure.zcml:24
-msgid "New-style pluggable authentication utility"
-msgstr "Austauschbares Authentifizierungs-Utility neuen Stils"
-
-#: src/zope/app/authentication/browser/configure.zcml:24
 msgid "Pluggable Authentication Utility"
 msgstr "Austauschbares Authentifizierungs-Utility"
+
+#: src/zope/app/authentication/browser/configure.zcml:24
+msgid "New-style pluggable authentication utility"
+msgstr "Austauschbares Authentifizierungs-Utility neuen Stils"
 
 #: src/zope/app/authentication/browser/configure.zcml:32
 msgid "Edit Pluggable Authentication Utility"
@@ -1213,12 +1451,12 @@ msgid "Add group folder"
 msgstr "Hinzufügen Gruppenordner"
 
 #: src/zope/app/authentication/browser/groupfolder.zcml:47
-msgid "Group Folder"
-msgstr "Gruppenordner"
-
-#: src/zope/app/authentication/browser/groupfolder.zcml:47
 msgid "A Group folder"
 msgstr "Ein Gruppenordner"
+
+#: src/zope/app/authentication/browser/groupfolder.zcml:47
+msgid "Group Folder"
+msgstr "Gruppenordner"
 
 #: src/zope/app/authentication/browser/groupfolder.zcml:7
 msgid "Change group information"
@@ -1261,6 +1499,7 @@ msgid "A Pluggable Persistent Authentication Plugin"
 msgstr "Ein austauschbares, persistentes Authentifizierungsmodul"
 
 #: src/zope/app/authentication/browser/principalfolder.zcml:14
+#: src/zope/app/authentication/principalfolder.zcml:45
 msgid "Principal Folder"
 msgstr "Ordner über Nutzungsberechtigten"
 
@@ -1304,6 +1543,11 @@ msgstr "Browser-Formular-Herausforderer"
 #: src/zope/app/authentication/browser/session.zcml:5
 msgid "Session Credentials Plugin"
 msgstr "Sitzungs-Benutzerdaten-Plugin"
+
+#: src/zope/app/authentication/configure.zcml:55
+#, fuzzy
+msgid "Pluggable Authentication"
+msgstr "Einhängbare Authentifizierung hinzufügen"
 
 #: src/zope/app/authentication/groupfolder.py:45
 #: src/zope/app/authentication/principalfolder.py:65
@@ -1359,6 +1603,11 @@ msgstr "Präfix, das zu Gruppenkennungen in diesem Ordner hinzugefügt wird"
 #: src/zope/app/authentication/groupfolder.py:88
 msgid "Group Search String"
 msgstr "Gruppensuch-Zeichenkette"
+
+#: src/zope/app/authentication/groupfolder.zcml:53
+#, fuzzy
+msgid "Group Folders"
+msgstr "Gruppenordner"
 
 #: src/zope/app/authentication/interfaces.py:38
 msgid "Credentials Plugins"
@@ -1487,25 +1736,25 @@ msgstr ""
 "Dieses Formular erlaubt Ihnen, einen Cache für dieses Objekt zu definieren."
 
 #: src/zope/app/cache/browser/configure.zcml:12
-msgid "A RAM cache is a volatile (in memory) cache"
-msgstr "Ein RAM-Cache ist ein unbeständiger Cache (im Arbeitsspeicher)"
-
-#: src/zope/app/cache/browser/configure.zcml:12
 msgid "RAM Cache"
 msgstr "RAM-Cache"
+
+#: src/zope/app/cache/browser/configure.zcml:12
+msgid "A RAM cache is a volatile (in memory) cache"
+msgstr "Ein RAM-Cache ist ein unbeständiger Cache (im Arbeitsspeicher)"
 
 #: src/zope/app/cache/browser/configure.zcml:26
 msgid "Statistics"
 msgstr "Statistiken"
 
 #: src/zope/app/cache/browser/configure.zcml:6
-msgid "Caches"
-msgstr "Caches"
-
-#: src/zope/app/cache/browser/configure.zcml:6
 msgid "Caches can be used to make your site run faster."
 msgstr ""
 "Caches können Sie dazu benutzen, Ihre Web-Site schneller laufen zu lassen."
+
+#: src/zope/app/cache/browser/configure.zcml:6
+msgid "Caches"
+msgstr "Caches"
 
 #: src/zope/app/cache/browser/ramedit.pt:21
 msgid "Maximum cached entries"
@@ -1604,6 +1853,7 @@ msgstr "Mittel, das indiziertes Suchen unterstützen"
 
 #: src/zope/app/catalog/browser/configure.zcml:7
 #: src/zope/app/catalog/browser/configure.zcml:14
+#: src/zope/app/catalog/configure.zcml:87
 msgid "Catalog"
 msgstr "Katalog"
 
@@ -1623,6 +1873,20 @@ msgstr ""
 #: src/zope/app/catalog/browser/configure.zcml:92
 msgid "Text Index"
 msgstr "Text-Index"
+
+#: src/zope/app/catalog/configure.zcml:101
+#, fuzzy
+msgid "Text Indexes"
+msgstr "Text-Index"
+
+#: src/zope/app/catalog/configure.zcml:83
+msgid "Indexes and Catalogs"
+msgstr ""
+
+#: src/zope/app/catalog/configure.zcml:95
+#, fuzzy
+msgid "Field Indexes"
+msgstr "Feld-Index"
 
 #: src/zope/app/catalog/interfaces.py:64 src/zope/app/catalog/text.py:33
 #: src/zope/app/component/metadirectives.py:155
@@ -3065,13 +3329,13 @@ msgstr "TextLine-Feld mit minimaler Länge 5 und maximaler Länge 10"
 
 #: src/zope/app/dtmlpage/configure.zcml:13
 #: src/zope/app/dtmlpage/configure.zcml:81
-msgid "DTML Page"
-msgstr "DTML-Seite"
+msgid "A simple, content-based DTML page"
+msgstr "Eine einfache, auf Inhalt basierte DTML-Seite"
 
 #: src/zope/app/dtmlpage/configure.zcml:13
 #: src/zope/app/dtmlpage/configure.zcml:81
-msgid "A simple, content-based DTML page"
-msgstr "Eine einfache, auf Inhalt basierte DTML-Seite"
+msgid "DTML Page"
+msgstr "DTML-Seite"
 
 #: src/zope/app/dtmlpage/configure.zcml:59
 msgid "Edit a DTML page"
@@ -3154,22 +3418,22 @@ msgid "Configure"
 msgstr "Konfiguration"
 
 #: src/zope/app/error/browser/configure.zcml:35
+msgid "Error Logging Utility"
+msgstr "Fehlermelde-Utility"
+
+#: src/zope/app/error/browser/configure.zcml:35
 msgid "Error Reporting Utility for Logging Errors"
 msgstr "Berichtsutility über Fehler im Ereignisprotokoll"
 
-#: src/zope/app/error/browser/configure.zcml:35
-msgid "Error Logging Utility"
-msgstr "Fehlermelde-Utility"
+#: src/zope/app/error/browser/configure.zcml:41
+msgid "Error Reporting"
+msgstr "Fehlerbericht ansehen"
 
 #: src/zope/app/error/browser/configure.zcml:41
 msgid "Component to record all uncaught errors and exceptions."
 msgstr ""
 "Komponente zum Aufzeichnen aller nicht abgefangenen Fehler und "
 "Ausnahmebedingungen."
-
-#: src/zope/app/error/browser/configure.zcml:41
-msgid "Error Reporting"
-msgstr "Fehlerbericht ansehen"
 
 #: src/zope/app/error/browser/error.pt:11
 msgid ""
@@ -3475,14 +3739,37 @@ msgstr "Falsch"
 #: src/zope/app/form/browser/boolwidgets.py:95
 #: src/zope/app/form/browser/boolwidgets.py:100
 #: src/zope/app/form/browser/boolwidgets.py:107
-msgid "off"
-msgstr "aus"
+msgid "on"
+msgstr "an"
 
 #: src/zope/app/form/browser/boolwidgets.py:95
 #: src/zope/app/form/browser/boolwidgets.py:100
 #: src/zope/app/form/browser/boolwidgets.py:107
-msgid "on"
-msgstr "an"
+msgid "off"
+msgstr "aus"
+
+#: src/zope/app/form/browser/configure.zcml:494
+msgid "Widgets and Forms"
+msgstr ""
+
+#: src/zope/app/form/browser/configure.zcml:498
+#, fuzzy
+msgid "Basic Widgets"
+msgstr "Widgets"
+
+#: src/zope/app/form/browser/configure.zcml:504
+#, fuzzy
+msgid "Source Widgets"
+msgstr "Quelltext"
+
+#: src/zope/app/form/browser/configure.zcml:510
+#, fuzzy
+msgid "Advanced Widgets"
+msgstr "Fortgeschrittene Optionen"
+
+#: src/zope/app/form/browser/configure.zcml:516
+msgid "The browser:form Directive"
+msgstr ""
 
 #: src/zope/app/form/browser/ftests/test_i18n.py:34
 #, fuzzy
@@ -3703,6 +3990,11 @@ msgstr "Nein, aktuell"
 msgid "Database generations"
 msgstr "Datenbank-Generationen"
 
+#: src/zope/app/generations/configure.zcml:28
+#, fuzzy
+msgid "Generations"
+msgstr "Niedrigste Generation"
+
 #: src/zope/app/homefolder/browser.py:40
 msgid "path is not correct !"
 msgstr "Pfad ist nicht richtig!"
@@ -3727,6 +4019,11 @@ msgstr "Zuordnungen"
 #: src/zope/app/homefolder/configure.zcml:74
 msgid "A Principal Home Folder Manager"
 msgstr "Eine Verwaltung für den Startordner eines Nutzungsberechtigten"
+
+#: src/zope/app/homefolder/configure.zcml:86
+#, fuzzy
+msgid "Principal Home Folder"
+msgstr "Ordner über Nutzungsberechtigten"
 
 #: src/zope/app/homefolder/interfaces.py:28
 msgid "Home Folder"
@@ -3811,12 +4108,12 @@ msgid "Translation Domains"
 msgstr "Übersetzungsdomänen"
 
 #: src/zope/app/i18n/browser/configure.zcml:61
-msgid "Translation Domain"
-msgstr "Übersetzungsdomäne"
-
-#: src/zope/app/i18n/browser/configure.zcml:61
 msgid "A Persistent Translation Domain"
 msgstr "Eine persistente Übersetzungsdomäne"
+
+#: src/zope/app/i18n/browser/configure.zcml:61
+msgid "Translation Domain"
+msgstr "Übersetzungsdomäne"
 
 #: src/zope/app/i18n/browser/exportimport.pt:11
 msgid "Import and Export Messages"
@@ -3862,6 +4159,10 @@ msgid "synchronize-button"
 msgstr "Synchronisieren"
 
 #: src/zope/app/i18n/browser/synchronize.py:34
+msgid "Out of Date"
+msgstr "Veraltet"
+
+#: src/zope/app/i18n/browser/synchronize.py:34
 msgid "Up to Date"
 msgstr "Aktuell"
 
@@ -3869,17 +4170,13 @@ msgstr "Aktuell"
 msgid "New Remote"
 msgstr "Neu in Ferndienst"
 
-#: src/zope/app/i18n/browser/synchronize.py:34
-msgid "Out of Date"
-msgstr "Veraltet"
+#: src/zope/app/i18n/browser/synchronize.py:35
+msgid "Newer Local"
+msgstr "Neuere Ländereinstellung"
 
 #: src/zope/app/i18n/browser/synchronize.py:35
 msgid "Does not exist"
 msgstr "Existiert nicht"
-
-#: src/zope/app/i18n/browser/synchronize.py:35
-msgid "Newer Local"
-msgstr "Neuere Ländereinstellung"
 
 #: src/zope/app/i18n/browser/translate.pt:103
 msgid "Add new messages"
@@ -3999,8 +4296,8 @@ msgstr "Mehrfach-Bild, wobei jede Ausprägung für eine Sprache vorgesehen ist"
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:149
 #: src/zope/app/apidoc/ifacemodule/iface_macros.pt:126
 #: src/zope/app/rotterdam/template.pt:112
-#: src/zope/app/rotterdam/template.pt:130
-#: src/zope/app/rotterdam/template.pt:139
+#: src/zope/app/rotterdam/template.pt:131
+#: src/zope/app/rotterdam/template.pt:140
 #: src/zope/app/rotterdam/view_macros.pt:5
 #: src/zope/app/rotterdam/view_macros.pt:24
 #: src/zope/app/rotterdam/template_tablelayout.pt:113
@@ -4164,6 +4461,11 @@ msgstr "Objekt"
 msgid "${count} objects"
 msgstr "${count} Objekte"
 
+# Default: "Introspect Object Classes and Interfaces"
+#: src/zope/app/introspector/configure.zcml:6
+msgid "zope.app.introspector.Introspect"
+msgstr "Objektklassen und -schnittstellen introspektieren"
+
 #: src/zope/app/introspector/configure.zcml:6
 msgid ""
 "       Use the object-introspection facility to discover       and browse "
@@ -4172,10 +4474,10 @@ msgstr ""
 "Nutzen Sie die Objektintrospektion, um Schnittstellen und Klassen zu "
 "erkunden."
 
-# Default: "Introspect Object Classes and Interfaces"
-#: src/zope/app/introspector/configure.zcml:6
-msgid "zope.app.introspector.Introspect"
-msgstr "Objektklassen und -schnittstellen introspektieren"
+#: src/zope/app/keyreference/configure.zcml:26
+#, fuzzy
+msgid "Persistent Key References"
+msgstr "Vorlieben"
 
 #: src/zope/app/keyreference/interfaces.py:37
 msgid "Key Type Id"
@@ -4476,6 +4778,11 @@ msgstr "Ein Passwort für den Benutzer."
 msgid "${name} Preferences"
 msgstr "${name} Benutzervorlieben"
 
+#: src/zope/app/preference/configure.zcml:116
+#, fuzzy
+msgid "User Preferences API"
+msgstr "Benutzervorlieben"
+
 #: src/zope/app/preference/configure.zcml:30
 #: src/zope/app/apidoc/browser/modules.pt:22
 msgid "User Preferences"
@@ -4587,12 +4894,12 @@ msgid "name:"
 msgstr "Name:"
 
 #: src/zope/app/principalannotation/configure.zcml:18
-msgid "Principal Annotation Utility"
-msgstr "Utility für Anmerkungen beim Nutzungsberechtigten"
-
-#: src/zope/app/principalannotation/configure.zcml:18
 msgid "Stores Annotations for Principals"
 msgstr "Speichert Anmerkungen für Nutzungsberechtigte"
+
+#: src/zope/app/principalannotation/configure.zcml:18
+msgid "Principal Annotation Utility"
+msgstr "Utility für Anmerkungen beim Nutzungsberechtigten"
 
 #: src/zope/app/principalannotation/configure.zcml:24
 msgid "Stores annotations for any principal."
@@ -4784,15 +5091,15 @@ msgid "test-page-title"
 msgstr "Test"
 
 #: src/zope/app/rdb/browser/configure.zcml:5
+msgid "Database Adapter"
+msgstr "Datenbankadapter"
+
+#: src/zope/app/rdb/browser/configure.zcml:5
 msgid ""
 "Database Adapters are used to connect to external       relational databases."
 msgstr ""
 "Datenbankadapter werden benutzt, um Verbindungen zu externen relationalen "
 "Datenbanken herzustellen."
-
-#: src/zope/app/rdb/browser/configure.zcml:5
-msgid "Database Adapter"
-msgstr "Datenbankadapter"
 
 #: src/zope/app/rdb/browser/gadflyda.zcml:14
 msgid "Gadfly DA"
@@ -4970,19 +5277,19 @@ msgid "Structured Text (STX) Source"
 msgstr "Quelle für Strukturierten Text (STX)"
 
 #: src/zope/app/renderer/configure.zcml:42
-msgid "ReStructured Text (ReST)"
-msgstr "ReStrukturierter Text (reST)"
-
-#: src/zope/app/renderer/configure.zcml:42
 msgid "ReStructured Text (ReST) Source"
 msgstr "Quelle für ReStrukturierten Text (reST)"
+
+#: src/zope/app/renderer/configure.zcml:42
+msgid "ReStructured Text (ReST)"
+msgstr "ReStrukturierter Text (reST)"
 
 #: src/zope/app/rotterdam/dialog_macros.pt:11
 msgid "Z3 UI"
 msgstr "Z3 Oberfläche"
 
 #: src/zope/app/rotterdam/dialog_macros.pt:138
-#: src/zope/app/rotterdam/template.pt:192
+#: src/zope/app/rotterdam/template.pt:193
 #: src/zope/app/rotterdam/template_tablelayout.pt:185
 msgid "Tip"
 msgstr "Tipp"
@@ -5100,12 +5407,12 @@ msgid "Edit Text Field"
 msgstr "Textfeld bearbeiten"
 
 #: src/zope/app/schema/fieldforms.zcml:33
-msgid "TextLine Field"
-msgstr "Feld für Textzeile"
-
-#: src/zope/app/schema/fieldforms.zcml:33
 msgid "A TextLine Field"
 msgstr "Ein Feld für eine Textzeile"
+
+#: src/zope/app/schema/fieldforms.zcml:33
+msgid "TextLine Field"
+msgstr "Feld für Textzeile"
 
 #: src/zope/app/schema/fieldforms.zcml:33
 msgid "Add TextLine Field"
@@ -5116,12 +5423,12 @@ msgid "Edit TextLine Field"
 msgstr "Feld für Textzeile bearbeiten"
 
 #: src/zope/app/schema/fieldforms.zcml:59
-msgid "Add Boolean Field"
-msgstr "Boolsches Feld hinzufügen"
-
-#: src/zope/app/schema/fieldforms.zcml:59
 msgid "A Boolean Field"
 msgstr "Ein Boolsches Feld"
+
+#: src/zope/app/schema/fieldforms.zcml:59
+msgid "Add Boolean Field"
+msgstr "Boolsches Feld hinzufügen"
 
 #: src/zope/app/schema/fieldforms.zcml:7
 msgid "A Text Field"
@@ -5256,12 +5563,12 @@ msgid "New Content Component Instance"
 msgstr "Neue Instanz einer Inhaltskomponente"
 
 #: src/zope/app/schemacontent/browser/configure.zcml:73
-msgid "Schema-based Content Component Instance"
-msgstr "Schemabasierte Instanz einer Inhaltskomponente"
-
-#: src/zope/app/schemacontent/browser/configure.zcml:73
 msgid "Schema-based Content"
 msgstr "Schemabasierter Inhalt"
+
+#: src/zope/app/schemacontent/browser/configure.zcml:73
+msgid "Schema-based Content Component Instance"
+msgstr "Schemabasierte Instanz einer Inhaltskomponente"
 
 #: src/zope/app/schemacontent/configure.zcml:10
 #: src/zope/app/schemacontent/browser/configure.zcml:15
@@ -5352,12 +5659,12 @@ msgid "[Logout]"
 msgstr "[Abmelden]"
 
 #: src/zope/app/security/browser/configure.zcml:20
-msgid "Authentication"
-msgstr "Legitimierung"
-
-#: src/zope/app/security/browser/configure.zcml:20
 msgid "Authenticates Principals."
 msgstr "Legitimiert Nutzungsberechtigte."
+
+#: src/zope/app/security/browser/configure.zcml:20
+msgid "Authentication"
+msgstr "Legitimierung"
 
 #: src/zope/app/security/browser/configure.zcml:61
 msgid "Security Permission"
@@ -5644,6 +5951,11 @@ msgstr "Erlauben"
 msgid "permission-deny"
 msgstr "Verweigern"
 
+#: src/zope/app/securitypolicy/configure.zcml:96
+#, fuzzy
+msgid "Default Security Policy"
+msgstr "Eine Sicherheits-Rolle"
+
 #: src/zope/app/securitypolicy/role.py:26
 msgid "<role not activated>"
 msgstr "<Rolle nicht aktiviert>"
@@ -5673,6 +5985,10 @@ msgid "Session Data Container Properties"
 msgstr "Eigenschaften von Sitzungsdatenbehälter"
 
 #: src/zope/app/session/browser.zcml:8
+msgid "Cookie Client Id Manager"
+msgstr "Verwaltung von Kennungen für Cookies"
+
+#: src/zope/app/session/browser.zcml:8
 msgid ""
 "Uses a cookie to uniquely identify a client, allowing        state to be "
 "maintained between requests"
@@ -5680,9 +5996,14 @@ msgstr ""
 "Benutzt einen Cookie, um einen Klient eindeutig zu identifzieren, so dass "
 "der Sitzungsstatus zwischen Anfragen behalten werden kann."
 
-#: src/zope/app/session/browser.zcml:8
-msgid "Cookie Client Id Manager"
-msgstr "Verwaltung von Kennungen für Cookies"
+#: src/zope/app/session/configure.zcml:82
+#, fuzzy
+msgid "Sessions"
+msgstr "Berechtigungen:"
+
+#: src/zope/app/session/configure.zcml:87
+msgid "API"
+msgstr ""
 
 #: src/zope/app/session/http.py:48
 msgid "Cookie Name"
@@ -5882,6 +6203,10 @@ msgstr ""
 msgid "Navigation"
 msgstr "Navigation"
 
+#: src/zope/app/tree/configure.zcml:57
+msgid "Zope Tree"
+msgstr ""
+
 #: src/zope/app/undo/configure.zcml:108
 msgid "Redo!"
 msgstr "Wiederherstellen!"
@@ -5895,16 +6220,16 @@ msgid "Undo all"
 msgstr "Alles rückgängig"
 
 #: src/zope/app/undo/configure.zcml:14
-msgid "undo-all-transactions-permission"
-msgstr "Alle Transaktionen rückgängig machen"
-
-#: src/zope/app/undo/configure.zcml:14
 msgid ""
 "With this permission a user may undo all transactions,                    "
 "regardless of who initiated them"
 msgstr ""
 "Mit dieser Berechtigung darf ein Benutzer alle Transaktionen, gleichgültig "
 "wer sie initiiert hat, rückgängig machen."
+
+#: src/zope/app/undo/configure.zcml:14
+msgid "undo-all-transactions-permission"
+msgstr "Alle Transaktionen rückgängig machen"
 
 #: src/zope/app/undo/configure.zcml:7
 msgid ""
@@ -6119,6 +6444,20 @@ msgstr "Zweigkennung"
 msgid "Identifier for the new branch."
 msgstr "Kennung für neuen Zweig"
 
+#: src/zope/app/wfmc/configure.zcml:13
+#, fuzzy
+msgid "WfMC Workflows"
+msgstr "Arbeitsabläufe"
+
+#: src/zope/app/wfmc/configure.zcml:18
+#, fuzzy
+msgid "Workflows using XPDL"
+msgstr "Arbeitsabläufe"
+
+#: src/zope/app/wfmc/configure.zcml:26
+msgid "Registering XPDL using ZCML"
+msgstr ""
+
 #: src/zope/app/workflow/browser/configure.zcml:6
 msgid ""
 "Workflow Process Definitions define a particular workflow       for an "
@@ -6148,12 +6487,12 @@ msgid "Stateful Transition"
 msgstr "Zustandsbasierter Übergang"
 
 #: src/zope/app/workflow/stateful/browser/configure.zcml:121
-msgid "An utility to manage content and workflow interaction."
-msgstr "Ein Utility, um Inhalt und Arbeitsläufe zu verwalten."
-
-#: src/zope/app/workflow/stateful/browser/configure.zcml:121
 msgid "Content Workflows Manager"
 msgstr "Verwaltung von Inhalte-Arbeitsabläufen"
+
+#: src/zope/app/workflow/stateful/browser/configure.zcml:121
+msgid "An utility to manage content and workflow interaction."
+msgstr "Ein Utility, um Inhalt und Arbeitsläufe zu verwalten."
 
 #: src/zope/app/workflow/stateful/browser/configure.zcml:129
 msgid "Content/Process Registry"
@@ -6271,6 +6610,10 @@ msgstr ""
 #: src/zope/app/workflow/stateful/interfaces.py:99
 msgid "Source State"
 msgstr "Ursprungszustand"
+
+#: src/zope/app/zapi/configure.zcml:13
+msgid "ZAPI"
+msgstr ""
 
 #: src/zope/app/zopetop/widget_macros.pt:133
 msgid "Search"
@@ -6423,6 +6766,11 @@ msgstr "1 Zeile"
 #: src/zope/app/zptpage/zptpage.py:110
 msgid "${lines} lines"
 msgstr "${lines} Zeilen"
+
+#: src/zope/contentprovider/configure.zcml:14
+#, fuzzy
+msgid "Content Providers"
+msgstr "Inhalt"
 
 #: src/zope/formlib/form.py:715
 msgid "There were errors"
@@ -6705,6 +7053,14 @@ msgstr ""
 msgid "Id as which this permission will be known and used."
 msgstr ""
 "Kennung, unter der diese Berechtigung bekannt sein und benutzt werden wird."
+
+#: src/zope/viewlet/configure.zcml:13
+msgid "Viewlet-related ZCML Directives"
+msgstr ""
+
+#: src/zope/viewlet/configure.zcml:6
+msgid "Viewlets and Viewlet Managers"
+msgstr ""
 
 #: src/zope/viewlet/metadirectives.py:41
 msgid "The view the content provider is registered for."
