@@ -3163,7 +3163,7 @@ msgstr "zope.schema.Int Datenfeld mit readonly = True."
 #: src/zope/app/demo/widget/interfaces/textareawidget.py:41
 #: src/zope/app/demo/widget/interfaces/textwidget.py:42
 msgid "standard"
-msgstr "standart"
+msgstr "standard"
 
 #: src/zope/app/demo/widget/interfaces/boolwidget.py:43
 msgid "zope.schema.Bool field with only title and description."
