@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Development/Revision: 29457\n"
 "POT-Creation-Date: Fri Dec  9 17:05:54 2005\n"
-"PO-Revision-Date: 2005-12-17 20:49+0300\n"
+"PO-Revision-Date: 2005-12-17 23:22+0300\n"
 "Last-Translator: Dmitry Vasiliev <dima@hlabs.spb.ru>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
 "MIME-Version: 1.0\n"
@@ -363,6 +363,10 @@ msgstr "Данный класс не содержит атрибутов."
 msgid "Methods"
 msgstr "Методы"
 
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:18
+msgid "Object Introspector: ${class-name} ( ${object-name} )"
+msgstr "Объект: ${class-name} ( ${object-name} )"
+
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:193
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:157
 msgid "There are no methods in this class."
@@ -380,10 +384,6 @@ msgstr "Нет элементов"
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:21
 msgid "&lt;no name&gt;"
 msgstr "&lt;без имени&gt;"
-
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:21
-msgid "Object Introspector: ${class-name} ( ${object-name} ${object-name} )"
-msgstr "Объект: ${class-name} ( ${object-name} ${object-name} )"
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:242
 msgid "Sequence Items"
@@ -407,11 +407,11 @@ msgstr "&lt;без имени&gt;"
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:42
 msgid "Directly Provided Interfaces"
-msgstr "Интерфейсы предоставляемые только для данного объекта"
+msgstr "Интерфейсы предоставляемые только данным объектом"
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:56
 msgid "No interfaces are directly provided."
-msgstr "Нет интерфейсов предоставляемых только для данного объекта."
+msgstr "Нет интерфейсов предоставляемых только данным объектом."
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:62
 msgid "Provided Interfaces"
