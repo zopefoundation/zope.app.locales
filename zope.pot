@@ -13,8 +13,8 @@
 ##############################################################################
 msgid ""
 msgstr ""
-"Project-Id-Version: Development/Revision: 40650\n"
-"POT-Creation-Date: Fri Dec  9 17:05:54 2005\n"
+"Project-Id-Version: Development/Revision: 40851\n"
+"POT-Creation-Date: Sat Dec 17 20:47:57 2005\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
@@ -230,9 +230,9 @@ msgid "Modules are usually depending on each other by using links that create re
 msgstr ""
 
 #: src/zope/app/apidoc/browser/contents.pt:5
+#: src/zope/app/apidoc/browser/static_contents.pt:5
 #: src/zope/app/apidoc/browser/index.pt:3
 #: src/zope/app/apidoc/browser/static_index.pt:3
-#: src/zope/app/apidoc/browser/static_contents.pt:5
 msgid "Zope 3 API Documentation"
 msgstr ""
 
@@ -447,9 +447,9 @@ msgstr ""
 #: src/zope/app/apidoc/codemodule/browser/module.py:98
 #: src/zope/app/rotterdam/xmlobject.py:160
 #: src/zope/app/rotterdam/xmlobject.py:163
+#: src/zope/app/boston/browser/template.pt:60
 #: src/zope/app/rotterdam/template.pt:95
 #: src/zope/app/rotterdam/template_tablelayout.pt:74
-#: src/zope/app/boston/browser/template.pt:60
 msgid "[top]"
 msgstr ""
 
@@ -1110,15 +1110,15 @@ msgstr ""
 msgid "${days} day(s) ${hours}:${minutes}:${seconds}"
 msgstr ""
 
-#: src/zope/app/applicationcontrol/browser/servercontrol.pt:16
+#: src/zope/app/applicationcontrol/browser/servercontrol.pt:17
 msgid "Countdown until restart or shutdown"
 msgstr ""
 
-#: src/zope/app/applicationcontrol/browser/servercontrol.pt:20
+#: src/zope/app/applicationcontrol/browser/servercontrol.pt:21
 msgid "seconds"
 msgstr ""
 
-#: src/zope/app/applicationcontrol/browser/servercontrol.pt:21
+#: src/zope/app/applicationcontrol/browser/servercontrol.pt:22
 msgid "If you specify a time of 0 seconds, then the server will be shutdown or restarted immediately."
 msgstr ""
 
@@ -1126,12 +1126,22 @@ msgstr ""
 msgid "Zope Stub Server Controller"
 msgstr ""
 
-#: src/zope/app/applicationcontrol/browser/servercontrol.pt:30
+#: src/zope/app/applicationcontrol/browser/servercontrol.pt:31
 msgid "Restart server"
 msgstr ""
 
-#: src/zope/app/applicationcontrol/browser/servercontrol.pt:33
+#: src/zope/app/applicationcontrol/browser/servercontrol.pt:34
 msgid "Shutdown server"
+msgstr ""
+
+#: src/zope/app/applicationcontrol/browser/servercontrol.py:38
+# Default: ""
+msgid "The server will be restarted in ${number} seconds."
+msgstr ""
+
+#: src/zope/app/applicationcontrol/browser/servercontrol.py:42
+# Default: ""
+msgid "The server will be shutdown in ${number} seconds."
 msgstr ""
 
 #: src/zope/app/applicationcontrol/browser/translationdomaincontrol.pt:16
@@ -1349,8 +1359,8 @@ msgstr ""
 #: src/zope/security/interfaces.py:300
 #: src/zope/app/dublincore/browser/edit.pt:17
 #: src/zope/app/schema/browser/schema_edit.pt:39
-#: src/zope/app/container/browser/contents.pt:34
 #: src/zope/app/container/browser/index.pt:28
+#: src/zope/app/container/browser/contents.pt:34
 msgid "Title"
 msgstr ""
 
@@ -1400,15 +1410,15 @@ msgstr ""
 msgid "Group Folders"
 msgstr ""
 
-#: src/zope/app/authentication/interfaces.py:38
+#: src/zope/app/authentication/interfaces.py:46
 msgid "Credentials Plugins"
 msgstr ""
 
-#: src/zope/app/authentication/interfaces.py:44
+#: src/zope/app/authentication/interfaces.py:52
 msgid "Authenticator Plugins"
 msgstr ""
 
-#: src/zope/app/authentication/interfaces.py:50
+#: src/zope/app/authentication/interfaces.py:58
 #: src/zope/app/authentication/principalfolder.py:80
 #: src/zope/app/authentication/browser/principalfolder.zcml:55
 msgid "Prefix"
@@ -1466,6 +1476,13 @@ msgstr ""
 
 #: src/zope/app/basicskin/view_macros.pt:35
 msgid "User: ${user_title}"
+msgstr ""
+
+#: src/zope/app/boston/browser/template.pt:40
+#: src/zope/app/rotterdam/dialog_macros.pt:54
+#: src/zope/app/rotterdam/template.pt:47
+#: src/zope/app/rotterdam/template_tablelayout.pt:49
+msgid "User:"
 msgstr ""
 
 #: src/zope/app/boston/browser/template.pt:58
@@ -1966,8 +1983,8 @@ msgstr ""
 #: src/zope/app/component/metadirectives.py:201
 #: src/zope/app/component/metadirectives.py:308
 #: src/zope/app/schema/browser/schema_edit.pt:37
-#: src/zope/app/container/browser/contents.pt:33
 #: src/zope/app/container/browser/index.pt:27
+#: src/zope/app/container/browser/contents.pt:33
 msgid "Name"
 msgstr ""
 
@@ -2453,11 +2470,6 @@ msgstr ""
 msgid "container-cancel-button"
 msgstr ""
 
-#: src/zope/app/container/browser/contents.pt:37
-#: src/zope/app/container/browser/index.pt:30
-msgid "Modified"
-msgstr ""
-
 #: src/zope/app/container/browser/contents.py:254
 msgid "You didn't specify any ids to remove."
 msgstr ""
@@ -2496,6 +2508,11 @@ msgstr ""
 
 #: src/zope/app/container/browser/contents.py:69
 msgid "You didn't specify any ids to rename."
+msgstr ""
+
+#: src/zope/app/container/browser/index.pt:30
+#: src/zope/app/container/browser/contents.pt:37
+msgid "Modified"
 msgstr ""
 
 #: src/zope/app/container/browser/metaconfigure.py:58
@@ -3032,8 +3049,8 @@ msgid "Metadata"
 msgstr ""
 
 #: src/zope/app/dublincore/browser/edit.pt:33
-#: src/zope/app/container/browser/contents.pt:36
 #: src/zope/app/container/browser/index.pt:29
+#: src/zope/app/container/browser/contents.pt:36
 msgid "Created"
 msgstr ""
 
@@ -3274,8 +3291,8 @@ msgstr ""
 #: src/zope/app/file/browser/file_add.pt:48
 #: src/zope/app/schema/browser/schema_add.pt:40
 #: src/zope/app/i18n/browser/translate.pt:49
-#: src/zope/app/container/browser/contents.pt:156
 #: src/zope/app/container/browser/add.pt:45
+#: src/zope/app/container/browser/contents.pt:156
 #: src/zope/app/form/browser/add.pt:55
 # Default: "Add"
 msgid "add-button"
@@ -3878,10 +3895,11 @@ msgstr ""
 #: src/zope/app/cache/browser/cacheableedit.pt:53
 #: src/zope/app/cache/browser/ramstats.pt:38
 #: src/zope/app/cache/browser/ramedit.pt:56
-#: src/zope/app/applicationcontrol/browser/runtimeinfo.pt:12
 #: src/zope/app/applicationcontrol/browser/zodbcontrol.pt:11
 #: src/zope/app/applicationcontrol/browser/zodbcontrol.pt:23
+#: src/zope/app/applicationcontrol/browser/runtimeinfo.pt:12
 #: src/zope/app/applicationcontrol/browser/translationdomaincontrol.pt:9
+#: src/zope/app/applicationcontrol/browser/servercontrol.pt:8
 #: src/zope/app/undo/undo_macros.pt:86
 #: src/zope/app/zptpage/browser/inlinecode.pt:13
 #: src/zope/app/zptpage/browser/inlinecode.pt:45
@@ -3898,13 +3916,16 @@ msgstr ""
 #: src/zope/app/zopetop/widget_macros.pt:227
 #: src/zope/app/pythonpage/edit.pt:14
 #: src/zope/app/pythonpage/edit.pt:19
+#: src/zope/app/boston/browser/template.pt:88
 #: src/zope/app/onlinehelp/browser/helptopic.pt:3
 #: src/zope/app/exception/browser/user.pt:7
 #: src/zope/app/apidoc/browser/contents.pt:24
 #: src/zope/app/apidoc/browser/contents.pt:29
+#: src/zope/app/apidoc/browser/modules.pt:14
+#: src/zope/app/apidoc/browser/static_contents.pt:24
+#: src/zope/app/apidoc/browser/static_contents.pt:29
 #: src/zope/app/apidoc/browser/menu_macros.pt:78
 #: src/zope/app/apidoc/browser/menu_macros.pt:84
-#: src/zope/app/apidoc/browser/modules.pt:14
 #: src/zope/app/apidoc/browser/static_modules.pt:14
 #: src/zope/app/apidoc/browser/static_menu_macros.pt:87
 #: src/zope/app/apidoc/browser/static_menu_macros.pt:93
@@ -3914,8 +3935,6 @@ msgstr ""
 #: src/zope/app/apidoc/browser/prefIndex.pt:95
 #: src/zope/app/apidoc/browser/prefIndex.pt:100
 #: src/zope/app/apidoc/browser/prefIndex.pt:103
-#: src/zope/app/apidoc/browser/static_contents.pt:24
-#: src/zope/app/apidoc/browser/static_contents.pt:29
 #: src/zope/app/apidoc/codemodule/browser/module_index.pt:9
 #: src/zope/app/apidoc/codemodule/browser/module_index.pt:16
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:142
@@ -3928,15 +3947,24 @@ msgstr ""
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:147
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:149
 #: src/zope/app/apidoc/ifacemodule/iface_macros.pt:126
+#: src/zope/app/rotterdam/view_macros.pt:5
+#: src/zope/app/rotterdam/view_macros.pt:24
 #: src/zope/app/rotterdam/template.pt:112
 #: src/zope/app/rotterdam/template.pt:131
 #: src/zope/app/rotterdam/template.pt:140
-#: src/zope/app/rotterdam/view_macros.pt:5
-#: src/zope/app/rotterdam/view_macros.pt:24
 #: src/zope/app/rotterdam/template_tablelayout.pt:113
 #: src/zope/app/rotterdam/template_tablelayout.pt:130
 #: src/zope/app/rotterdam/template_tablelayout.pt:137
-#: src/zope/app/boston/browser/template.pt:88
+#: src/zope/app/container/browser/commontasks.pt:11
+#: src/zope/app/container/browser/commontasks.pt:21
+#: src/zope/app/container/browser/commontasks.pt:31
+#: src/zope/app/container/browser/add.pt:10
+#: src/zope/app/container/browser/add.pt:30
+#: src/zope/app/container/browser/add.pt:32
+#: src/zope/app/container/browser/index.pt:45
+#: src/zope/app/container/browser/index.pt:52
+#: src/zope/app/container/browser/index.pt:54
+#: src/zope/app/container/browser/index.pt:56
 #: src/zope/app/container/browser/contents.pt:20
 #: src/zope/app/container/browser/contents.pt:78
 #: src/zope/app/container/browser/contents.pt:96
@@ -3944,28 +3972,18 @@ msgstr ""
 #: src/zope/app/container/browser/contents.pt:110
 #: src/zope/app/container/browser/contents.pt:113
 #: src/zope/app/container/browser/contents.pt:116
-#: src/zope/app/container/browser/commontasks.pt:11
-#: src/zope/app/container/browser/commontasks.pt:21
-#: src/zope/app/container/browser/commontasks.pt:31
-#: src/zope/app/container/browser/index.pt:45
-#: src/zope/app/container/browser/index.pt:52
-#: src/zope/app/container/browser/index.pt:54
-#: src/zope/app/container/browser/index.pt:56
-#: src/zope/app/container/browser/add.pt:10
-#: src/zope/app/container/browser/add.pt:30
-#: src/zope/app/container/browser/add.pt:32
 #: src/zope/app/securitypolicy/browser/manage_roleform.pt:6
 #: src/zope/app/securitypolicy/browser/manage_roleform.pt:16
 #: src/zope/app/securitypolicy/browser/manage_roleform.pt:40
 #: src/zope/app/securitypolicy/browser/manage_roleform.pt:53
 #: src/zope/app/securitypolicy/browser/manage_permissionform.pt:34
 #: src/zope/app/securitypolicy/browser/manage_permissionform.pt:74
-#: src/zope/app/securitypolicy/browser/manage_access.pt:11
-#: src/zope/app/securitypolicy/browser/manage_access.pt:37
-#: src/zope/app/securitypolicy/browser/manage_access.pt:56
 #: src/zope/app/securitypolicy/browser/granting.pt:6
 #: src/zope/app/securitypolicy/browser/granting.pt:35
 #: src/zope/app/securitypolicy/browser/granting.pt:61
+#: src/zope/app/securitypolicy/browser/manage_access.pt:11
+#: src/zope/app/securitypolicy/browser/manage_access.pt:37
+#: src/zope/app/securitypolicy/browser/manage_access.pt:56
 #: src/zope/app/component/browser/utilreg_details.pt:8
 #: src/zope/app/component/browser/utilreg_details.pt:12
 #: src/zope/app/component/browser/site_management.pt:10
@@ -4701,11 +4719,6 @@ msgstr ""
 msgid "Executed Query:"
 msgstr ""
 
-#: src/zope/app/rdb/browser/rdbtestresults.pt:4
-#: src/zope/app/rdb/browser/rdbtestsql.pt:4
-msgid "Database Adapter - Test Connection"
-msgstr ""
-
 #: src/zope/app/rdb/browser/rdbtestsql.pt:14
 msgid "Here you can enter an SQL statement, so you can test the connection."
 msgstr ""
@@ -4717,6 +4730,11 @@ msgstr ""
 #: src/zope/app/rdb/browser/rdbtestsql.pt:28
 # Default: "Execute"
 msgid "execute-button"
+msgstr ""
+
+#: src/zope/app/rdb/browser/rdbtestsql.pt:4
+#: src/zope/app/rdb/browser/rdbtestresults.pt:4
+msgid "Database Adapter - Test Connection"
 msgstr ""
 
 #: src/zope/app/rdb/configure.zcml:6
@@ -4839,13 +4857,6 @@ msgstr ""
 msgid "Tip"
 msgstr ""
 
-#: src/zope/app/rotterdam/dialog_macros.pt:54
-#: src/zope/app/rotterdam/template.pt:47
-#: src/zope/app/rotterdam/template_tablelayout.pt:49
-#: src/zope/app/boston/browser/template.pt:40
-msgid "User:"
-msgstr ""
-
 #: src/zope/app/rotterdam/view_macros.pt:36
 msgid "User: ${user}"
 msgstr ""
@@ -4896,8 +4907,8 @@ msgid "Schema Name: ${schema_name}"
 msgstr ""
 
 #: src/zope/app/schema/browser/schema_edit.pt:31
-#: src/zope/app/container/browser/contents.pt:27
 #: src/zope/app/container/browser/index.pt:19
+#: src/zope/app/container/browser/contents.pt:27
 #: src/zope/app/intid/browser/registrations.pt:9
 msgid "Content listing"
 msgstr ""
@@ -5234,6 +5245,11 @@ msgstr ""
 msgid "You are now logged in as ${UserTitle}."
 msgstr ""
 
+#: src/zope/app/security/browser/login.pt:14
+#: src/zope/app/security/browser/logout.pt:12
+msgid "Back to the main page."
+msgstr ""
+
 #: src/zope/app/security/browser/login.pt:6
 msgid "Login successful!"
 msgstr ""
@@ -5248,11 +5264,6 @@ msgstr ""
 
 #: src/zope/app/security/browser/login_failed.pt:9
 msgid "You cancelled the login procedure."
-msgstr ""
-
-#: src/zope/app/security/browser/logout.pt:12
-#: src/zope/app/security/browser/login.pt:14
-msgid "Back to the main page."
 msgstr ""
 
 #: src/zope/app/security/browser/logout.pt:6
