@@ -13,8 +13,8 @@
 ##############################################################################
 msgid ""
 msgstr ""
-"Project-Id-Version: Development/Revision: 40840/Branch: 3.2\n"
-"POT-Creation-Date: Sat Dec 17 14:00:52 2005\n"
+"Project-Id-Version: Development/Revision: 40851/Branch: 3.2\n"
+"POT-Creation-Date: Sat Dec 17 22:18:38 2005\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
@@ -262,6 +262,43 @@ msgstr ""
 msgid "Zope 3 API Docs"
 msgstr ""
 
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:100
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:146
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:141
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:182
+msgid "Permissions:"
+msgstr ""
+
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:102
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:148
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:143
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:184
+msgid "(read)"
+msgstr ""
+
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:104
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:150
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:145
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:186
+msgid "(write)"
+msgstr ""
+
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:111
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:152
+msgid "There are no attributes in this class."
+msgstr ""
+
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:117
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:157
+#: src/zope/app/apidoc/ifacemodule/iface_macros.pt:42
+msgid "Methods"
+msgstr ""
+
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:157
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:193
+msgid "There are no methods in this class."
+msgstr ""
+
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:162
 msgid "Known Subclasses"
 msgstr ""
@@ -278,12 +315,29 @@ msgstr ""
 msgid "There are no known subclasses."
 msgstr ""
 
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:35
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:96
+msgid "There are no base classes."
+msgstr ""
+
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:40
 msgid "Implemented Interfaces"
 msgstr ""
 
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:58
 msgid "There are no implemented interfaces."
+msgstr ""
+
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:64
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:101
+msgid "Attributes/Properties"
+msgstr ""
+
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:88
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:133
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:133
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:173
+msgid "Interface:"
 msgstr ""
 
 #: src/zope/app/apidoc/codemodule/browser/function_index.pt:10
@@ -296,67 +350,22 @@ msgstr ""
 
 #: src/zope/app/apidoc/codemodule/browser/function_index.pt:41
 #: src/zope/app/apidoc/codemodule/browser/function_index.pt:45
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:77
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:114
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:228
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:266
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:308
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:77
 msgid "type:"
 msgstr ""
 
 #: src/zope/app/apidoc/codemodule/browser/function_index.pt:52
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:121
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:84
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:121
 msgid "Value:"
 msgstr ""
 
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:101
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:64
-msgid "Attributes/Properties"
-msgstr ""
-
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:133
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:173
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:88
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:133
-msgid "Interface:"
-msgstr ""
-
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:141
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:182
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:100
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:146
-msgid "Permissions:"
-msgstr ""
-
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:143
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:184
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:102
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:148
-msgid "(read)"
-msgstr ""
-
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:145
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:186
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:104
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:150
-msgid "(write)"
-msgstr ""
-
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:152
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:111
-msgid "There are no attributes in this class."
-msgstr ""
-
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:157
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:117
-#: src/zope/app/apidoc/ifacemodule/iface_macros.pt:42
-msgid "Methods"
-msgstr ""
-
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:193
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:157
-msgid "There are no methods in this class."
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:18
+msgid "Object Introspector: ${class-name} ( ${object-name} )"
 msgstr ""
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:200
@@ -370,10 +379,6 @@ msgstr ""
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:21
 msgid "&lt;no name&gt;"
-msgstr ""
-
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:21
-msgid "Object Introspector: ${class-name} ( ${object-name} ${object-name} )"
 msgstr ""
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:242
@@ -410,11 +415,6 @@ msgstr ""
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:78
 msgid "Bases"
-msgstr ""
-
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:96
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:35
-msgid "There are no base classes."
 msgstr ""
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.zcml:46
@@ -1110,15 +1110,15 @@ msgstr ""
 msgid "${days} day(s) ${hours}:${minutes}:${seconds}"
 msgstr ""
 
-#: src/zope/app/applicationcontrol/browser/servercontrol.pt:16
+#: src/zope/app/applicationcontrol/browser/servercontrol.pt:17
 msgid "Countdown until restart or shutdown"
 msgstr ""
 
-#: src/zope/app/applicationcontrol/browser/servercontrol.pt:20
+#: src/zope/app/applicationcontrol/browser/servercontrol.pt:21
 msgid "seconds"
 msgstr ""
 
-#: src/zope/app/applicationcontrol/browser/servercontrol.pt:21
+#: src/zope/app/applicationcontrol/browser/servercontrol.pt:22
 msgid "If you specify a time of 0 seconds, then the server will be shutdown or restarted immediately."
 msgstr ""
 
@@ -1126,11 +1126,11 @@ msgstr ""
 msgid "Zope Stub Server Controller"
 msgstr ""
 
-#: src/zope/app/applicationcontrol/browser/servercontrol.pt:30
+#: src/zope/app/applicationcontrol/browser/servercontrol.pt:31
 msgid "Restart server"
 msgstr ""
 
-#: src/zope/app/applicationcontrol/browser/servercontrol.pt:33
+#: src/zope/app/applicationcontrol/browser/servercontrol.pt:34
 msgid "Shutdown server"
 msgstr ""
 
@@ -3892,6 +3892,7 @@ msgstr ""
 #: src/zope/app/applicationcontrol/browser/zodbcontrol.pt:23
 #: src/zope/app/applicationcontrol/browser/runtimeinfo.pt:12
 #: src/zope/app/applicationcontrol/browser/translationdomaincontrol.pt:9
+#: src/zope/app/applicationcontrol/browser/servercontrol.pt:8
 #: src/zope/app/undo/undo_macros.pt:86
 #: src/zope/app/zptpage/browser/inlinecode.pt:13
 #: src/zope/app/zptpage/browser/inlinecode.pt:45
@@ -3928,15 +3929,15 @@ msgstr ""
 #: src/zope/app/apidoc/browser/prefIndex.pt:103
 #: src/zope/app/apidoc/codemodule/browser/module_index.pt:9
 #: src/zope/app/apidoc/codemodule/browser/module_index.pt:16
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:142
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:144
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:183
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:185
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:11
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:101
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:103
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:147
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:149
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:142
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:144
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:183
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:185
 #: src/zope/app/apidoc/ifacemodule/iface_macros.pt:126
 #: src/zope/app/rotterdam/template.pt:112
 #: src/zope/app/rotterdam/template.pt:131
