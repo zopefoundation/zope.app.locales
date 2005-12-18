@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Development/Revision: 29457\n"
 "POT-Creation-Date: Mon Dec  5 17:28:09 2005\n"
-"PO-Revision-Date: 2005-12-17 22:27+0300\n"
+"PO-Revision-Date: 2005-12-18 15:59+0300\n"
 "Last-Translator: Dmitry Vasiliev <dima@hlabs.spb.ru>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
 "MIME-Version: 1.0\n"
@@ -71,19 +71,19 @@ msgstr "Безопасность"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:121
 msgid "Untrusted Interpreters"
-msgstr ""
+msgstr "Недоверенные интерпретаторы"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:127
 msgid "Untrusted Python Interpreter"
-msgstr ""
+msgstr "Недоверенный интерпретатор Python"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:133
 msgid "Restricted Python Code"
-msgstr ""
+msgstr "Ограниченный код Python"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:139
 msgid "Safe Builtins"
-msgstr ""
+msgstr "Безопасные встроенные объекты"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:147
 msgid "Global Principals"
@@ -99,7 +99,7 @@ msgstr "Функциональный тест-документация"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:169
 msgid "FDocTest (How to)"
-msgstr ""
+msgstr "Функциональные тесты-документация (как сделать)"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:17
 msgid "Adapter Registry"
@@ -107,7 +107,7 @@ msgstr "Реестр адаптеров"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:177
 msgid "Form Parser"
-msgstr ""
+msgstr "Обработчик форм"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:186
 msgid "I18n and L10n"
@@ -119,19 +119,19 @@ msgstr "Сообщения"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:201
 msgid "Cached Properties"
-msgstr ""
+msgstr "Кешируемые свойства"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:211
 msgid "BForest API"
-msgstr ""
+msgstr "BForest API"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:220
 msgid "Deprecation API"
-msgstr ""
+msgstr "API устаревания"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:229
 msgid "Persistent Framework"
-msgstr ""
+msgstr "Каркас сохраняемости"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:23
 msgid "Adapters (light version)"
@@ -144,7 +144,7 @@ msgstr "Транзакции"
 #: src/zope/app/apidoc/bookmodule/book.zcml:243
 #: src/zope/app/apidoc/bookmodule/book.zcml:287
 msgid "Savepoints"
-msgstr ""
+msgstr "Точки сохранения"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:253
 msgid "Zope Object Database (ZODB)"
@@ -152,7 +152,7 @@ msgstr "Объектная база данных Zope (ZODB)"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:257
 msgid "Multiple Databases"
-msgstr ""
+msgstr "Составные базы данных"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:263
 msgid "Cross-Database References"
@@ -160,7 +160,7 @@ msgstr "Ссылки между базами данных"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:269
 msgid "Collaboration Diagrams"
-msgstr ""
+msgstr "Диаграммы сотрудничества"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:275
 msgid "Connection Management"
@@ -172,11 +172,11 @@ msgstr "Хранимые классы"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:29
 msgid "Food For Thought"
-msgstr ""
+msgstr "Пища для размышлений"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:293
 msgid "Sub-Transactions"
-msgstr ""
+msgstr "Вложенные транзакции"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:299
 msgid "Synchronizers"
@@ -221,7 +221,7 @@ msgstr "Локальная компонентная архитектура"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:85
 msgid "Registration Framework"
-msgstr ""
+msgstr "Каркас регистрации"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:91
 msgid "Local Adapter Registry"
@@ -556,11 +556,11 @@ msgstr "Компоненты"
 
 #: src/zope/app/apidoc/configure.zcml:49
 msgid "Presentation"
-msgstr ""
+msgstr "Представления"
 
 #: src/zope/app/apidoc/configure.zcml:55
 msgid "Miscellaneous"
-msgstr "Различное"
+msgstr "Разное"
 
 #: src/zope/app/apidoc/configure.zcml:61
 msgid "Class Registry"
@@ -3431,7 +3431,7 @@ msgstr "Основные элементы интерфейса"
 
 #: src/zope/app/form/browser/configure.zcml:504
 msgid "Source Widgets"
-msgstr "Элементы интерфейса для исходного текста"
+msgstr "Элементы интерфейса для наборов значений"
 
 #: src/zope/app/form/browser/configure.zcml:510
 msgid "Advanced Widgets"
@@ -3982,7 +3982,7 @@ msgstr "Изображение содержащее изображения дл�
 #: src/zope/app/form/browser/edit.pt:14
 #: src/zope/app/form/browser/edit.pt:20
 msgid "${DYNAMIC_CONTENT}"
-msgstr ""
+msgstr "${DYNAMIC_CONTENT}"
 
 #: src/zope/app/i18nfile/browser/file_edit.pt:40
 #: src/zope/app/i18nfile/browser/image_edit.pt:41
@@ -4097,7 +4097,7 @@ msgstr "       Использование возможности просмот�
 
 #: src/zope/app/keyreference/configure.zcml:26
 msgid "Persistent Key References"
-msgstr ""
+msgstr "Сохраняемые ссылки-ключи"
 
 #: src/zope/app/keyreference/interfaces.py:37
 msgid "Key Type Id"
@@ -4105,7 +4105,7 @@ msgstr "Id типа ключа"
 
 #: src/zope/app/keyreference/interfaces.py:38
 msgid "Key references should sort first on their key type and second on any type-specific information."
-msgstr "Ключевые ссылки должны быть вначале отсортированы по типу ключа и затем по любой специфичной для типа информации."
+msgstr "Ссылки-ключи должны быть вначале отсортированы по типу ключа и затем по любой специфичной для типа информации."
 
 #: src/zope/app/locking/adapter.py:62
 msgid "Multiple principals found"
@@ -5405,7 +5405,7 @@ msgstr "Сохранить изменения"
 
 #: src/zope/app/securitypolicy/browser/manage_permissionform.pt:25
 msgid "Helpful message."
-msgstr ""
+msgstr "Полезное сообщение."
 
 #: src/zope/app/securitypolicy/browser/manage_permissionform.pt:36
 msgid "Roles assigned to the permission ${perm_title} (id: ${perm_id})"
@@ -5664,7 +5664,7 @@ msgstr "Навигация"
 
 #: src/zope/app/tree/configure.zcml:57
 msgid "Zope Tree"
-msgstr ""
+msgstr "Дерево Zope"
 
 #: src/zope/app/undo/configure.zcml:108
 msgid "Redo!"
@@ -5874,15 +5874,15 @@ msgstr "Идентификатор для новой ветви."
 
 #: src/zope/app/wfmc/configure.zcml:13
 msgid "WfMC Workflows"
-msgstr ""
+msgstr "Рабочие циклы WfMC"
 
 #: src/zope/app/wfmc/configure.zcml:18
 msgid "Workflows using XPDL"
-msgstr ""
+msgstr "Рабочие циклы использующие XPDL"
 
 #: src/zope/app/wfmc/configure.zcml:26
 msgid "Registering XPDL using ZCML"
-msgstr ""
+msgstr "Регистрация XPDL с использованием ZCML"
 
 #: src/zope/app/workflow/browser/configure.zcml:6
 msgid "Workflow Process Definitions define a particular workflow       for an object."
@@ -6165,7 +6165,7 @@ msgstr "${lines} строк(и)"
 
 #: src/zope/contentprovider/configure.zcml:14
 msgid "Content Providers"
-msgstr ""
+msgstr "Поставщики конента"
 
 #: src/zope/formlib/form.py:715
 msgid "There were errors"
@@ -6458,43 +6458,43 @@ msgstr "Идентификатор под которым данное право
 
 #: src/zope/viewlet/configure.zcml:13
 msgid "Viewlet-related ZCML Directives"
-msgstr ""
+msgstr "Директивы ZCML для мини-представлений"
 
 #: src/zope/viewlet/configure.zcml:6
 msgid "Viewlets and Viewlet Managers"
-msgstr ""
+msgstr "Мини-представления и менеджеры мини-представлений"
 
 #: src/zope/viewlet/metadirectives.py:41
 msgid "The view the content provider is registered for."
-msgstr ""
+msgstr "Представление для которого зарегистрирован поставщик контента."
 
 #: src/zope/viewlet/metadirectives.py:42
 msgid "The view can either be an interface or a class. By default the provider is registered for all views, the most common case."
-msgstr ""
+msgstr "Представление может быть интерфейсом или классом. По умолчанию поставщик зарегистрирован для всех представлений."
 
 #: src/zope/viewlet/metadirectives.py:49
 msgid "The name of the content provider."
-msgstr ""
+msgstr "Имя поставщика контента."
 
 #: src/zope/viewlet/metadirectives.py:50
 msgid "The name of the content provider is used in the TALES ``provider`` namespace to look up the content provider."
-msgstr ""
+msgstr "Имя поставщика контента используется в пространстве имен TALES ``provider`` для запроса поставщика."
 
 #: src/zope/viewlet/metadirectives.py:61
 msgid "Content-generating template."
-msgstr ""
+msgstr "Шаблон для генерации контента."
 
 #: src/zope/viewlet/metadirectives.py:62
 msgid "Refers to a file containing a page template (should end in extension ``.pt`` or ``.html``)."
-msgstr ""
+msgstr "Ссылается на файл содержащий шаблон страницы (должно быть расширение ``.pt``, или ``.html``)."
 
 #: src/zope/viewlet/metadirectives.py:77
 msgid "The interface this viewlet manager provides."
-msgstr ""
+msgstr "Интерфейс предоставляемый данным менеджером мини-представлений."
 
 #: src/zope/viewlet/metadirectives.py:78
 msgid "A viewlet manager can provide an interface, which is used to lookup its contained viewlets."
-msgstr ""
+msgstr "Менеджер мини-представлений может предоставлять интерфейс который используется для поиска содержащихся в менеджере мини-представлений."
 
 #: src/zope/viewlet/metadirectives.py:99
 msgid "view"
