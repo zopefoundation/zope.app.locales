@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Development/Revision: 29457\n"
 "POT-Creation-Date: Mon Dec  5 17:28:09 2005\n"
-"PO-Revision-Date: 2005-12-18 15:59+0300\n"
+"PO-Revision-Date: 2005-12-19 14:47+0300\n"
 "Last-Translator: Dmitry Vasiliev <dima@hlabs.spb.ru>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
 "MIME-Version: 1.0\n"
@@ -329,7 +329,7 @@ msgstr "Данный класс не имеет базовых классов."
 
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:40
 msgid "Implemented Interfaces"
-msgstr "Реализуемые интерфейсы"
+msgstr "Реализованные интерфейсы"
 
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:58
 msgid "There are no implemented interfaces."
@@ -503,7 +503,7 @@ msgstr ""
 "\n"
 "    Второй способ - нажать на ссылку \"Просмотр исходного кода Zope 3\" и в основном окне будут показаны модули верхнего уровня Zope 3. Далее можно выбирать модули для просмотра их содержимого, если будут найдены классы они будут выделены жирным шрифтом.\n"
 "\n"
-"    Документация по классам предоставляет огромное количество информации. Не только базовые классы, реализуемые интерфейсы, атрибуты и методы, но также и интерфейс требующий реализации того или иного метода или атрибута и права необходимые для доступа к методам и атрибутам.\n"
+"    Документация по классам предоставляет огромное количество информации. Не только базовые классы, реализованные интерфейсы, атрибуты и методы, но также и интерфейс требующий реализации того или иного метода или атрибута и права необходимые для доступа к методам и атрибутам.\n"
 "    "
 
 #: src/zope/app/apidoc/codemodule/codemodule.py:79
@@ -616,7 +616,7 @@ msgstr "регистрация:"
 
 #: src/zope/app/apidoc/ifacemodule/configure.zcml:81
 msgid "Interface Details"
-msgstr "Детали интерфейса"
+msgstr "Детальная информация по интерфейсам"
 
 #: src/zope/app/apidoc/ifacemodule/iface_macros.pt:108
 msgid "${name} Views"
@@ -672,11 +672,11 @@ msgstr ""
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:101
 msgid "Extended Adapters"
-msgstr "Расширенные адаптеры"
+msgstr "Наследованные адаптеры"
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:112
 msgid "There are no extended adapters registered for this interface."
-msgstr "Для данного интерфейса расширенные адаптеры не зарегистрированны."
+msgstr "Для данного интерфейса нет зарегистрированных наследованных адаптеров."
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:125
 msgid "Generic Adapters"
@@ -684,7 +684,7 @@ msgstr "Общие адаптеры"
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:136
 msgid "There are no generic adapters registered."
-msgstr "Общие адаптеры не зарегистрированны."
+msgstr "Нет зарегистрированных общих адаптеров."
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:149
 msgid "Adapters that provide this interface:"
@@ -732,11 +732,11 @@ msgstr "Адаптеры требующие данный интерфейс:"
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:77
 msgid "Specific Adapters"
-msgstr "Конкретные адаптеры"
+msgstr "Адаптеры специфичные для данного интерфейса"
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:88
 msgid "There are no specific adapters registered for this interface."
-msgstr "Для данного интерфейса конкретные адаптеры не зарегистрированны."
+msgstr "Нет зарегистрированных адаптеров специфичных для данного интерфейса."
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:103
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:121
@@ -750,19 +750,19 @@ msgstr "Показывать общие HTTP представления"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:109
 msgid "Specific HTTP Views"
-msgstr "Конкретные HTTP представления"
+msgstr "HTTP представления специфичные для данного интерфейса"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:110
 msgid "Show specific HTTP views"
-msgstr "Показывать конкретные HTTP представления"
+msgstr "Показывать HTTP представления специфичные для данного интерфейса"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:115
 msgid "Extended HTTP Views"
-msgstr "Расширенные HTTP представления"
+msgstr "Наследованные HTTP представления"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:116
 msgid "Show extended HTTP views"
-msgstr "Показывать расширенные HTTP представления"
+msgstr "Показывать наследованные HTTP представления"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:127
 msgid "FTP Views"
@@ -774,19 +774,19 @@ msgstr "Показывать FTP представления"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:133
 msgid "Specific FTP Views"
-msgstr "Конкретные FTP представления"
+msgstr "FTP представления специфичные для данного интерфейса"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:134
 msgid "Show specific FTP views"
-msgstr "Показывать конкретные FTP представления"
+msgstr "Показывать FTP представления специфичные для данного интерфейса"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:139
 msgid "Extended FTP Views"
-msgstr "Расширенные FTP представления"
+msgstr "Наследованные FTP представления"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:140
 msgid "Show extended FTP views"
-msgstr "Показывать расширенные FTP представления"
+msgstr "Показывать наследованные FTP представления"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:145
 msgid "Generic FTP Views"
@@ -802,23 +802,23 @@ msgstr "Другие представления"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:152
 msgid "Show other (unidentified) views"
-msgstr "Показывать другие (неопределенные) представления"
+msgstr "Показывать другие (неидентифицируемые) представления"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:157
 msgid "Specific Other Views"
-msgstr "Другие конкретные представления"
+msgstr "Другие представления специфичные для данного интерфейса"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:158
 msgid "Show specific other views"
-msgstr "Показывать другие конкретные представления"
+msgstr "Показывать другие представления специфичные для данного интерфейса"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:163
 msgid "Extended Other Views"
-msgstr "Другие расширенные представления"
+msgstr "Другие наследованные представления"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:164
 msgid "Show extended other views"
-msgstr "Показывать другие расширенные представления"
+msgstr "Показывать другие наследованные представления"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:169
 msgid "Generic Other Views"
@@ -839,34 +839,34 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"    Настройки для показа деталей интерфейса в документации по Zope 3 API\n"
+"    Настройки для показа детальной информации по интерфейсам в документации Zope 3 API\n"
 "\n"
-"Экран деталей интерфейса имеет возможность скрывать или показывать различные секции. Данные настройки позволяют выбрать секции которые по умолчанию будут показаны.\n"
+"Страница детальной информации по интерфейсам имеет возможность скрывать или показывать различные секции. Данные настройки позволяют выбрать секции которые будут показаны по умолчанию.\n"
 "    "
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:37
 msgid "Specific Required Interface Adapters"
-msgstr "Конкретные требуемые адаптеры интерфейсов"
+msgstr "Необходимые адаптеры специфичные для данного интерфейса"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:38
 msgid "Show specific required interface adapters"
-msgstr "Показывать конкретные требуемые адаптеры интерфейсов"
+msgstr "Показывать необходимые адаптеры специфичные для данного интерфейса"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:43
 msgid "Extended Required Interface Adapters"
-msgstr "Расширенные требуемые адаптеры интерфейсов"
+msgstr "Наследованные адаптеры необходимые для данного интерфейса"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:44
 msgid "Show extended required interface adapters"
-msgstr "Показывать расширенные требуемые адаптеры интерфейсов"
+msgstr "Показывать наследованные адаптеры необходимые для данного инетрфейса"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:49
 msgid "Generic Required Interface Adapters"
-msgstr "Общие требуемые адаптеры интерфейсов"
+msgstr "Общие адаптеры необходимые для данного интерфейса"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:50
 msgid "Show generic required interface adapters"
-msgstr "Показывать общие требуемые адаптеры интерфейсов"
+msgstr "Показывать общие адаптеры необходимые для данного интерфейса"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:55
 msgid "Browser Views"
@@ -878,19 +878,19 @@ msgstr "Показывать представления для браузера"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:61
 msgid "Specific Browser Views"
-msgstr "Кокретные представления для браузера"
+msgstr "Представления для браузера специфичные для данного интерфейса"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:62
 msgid "Show specific browser views"
-msgstr "Показывать конкретные представления для браузера"
+msgstr "Показывать представления для браузера специфичные для данного интерфейса"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:67
 msgid "Extended Browser Views"
-msgstr "Расширенные представления для браузера"
+msgstr "Наследованные представления для браузера"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:68
 msgid "Show extended browser views"
-msgstr "Показывать расширенные представления для браузера"
+msgstr "Показывать наследованные представления для браузера"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:73
 msgid "Generic Browser Views"
@@ -910,19 +910,19 @@ msgstr "Показывать XML-RPC представления"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:85
 msgid "Specific XML-RPC Views"
-msgstr "Конкретные XML-RPC представления"
+msgstr "XML-RPC представления специфичные для данного интерфейса"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:86
 msgid "Show specific XML-RPC views"
-msgstr "Показывать конкретные XML-RPC представления"
+msgstr "Показывать XML-RPC представления специфичные для данного интерфейса"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:91
 msgid "Extended XML-RPC Views"
-msgstr "Расширенные XML-RPC представления"
+msgstr "Наследованные XML-RPC представления"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:92
 msgid "Show extended XML-RPC views"
-msgstr "Показывать расширенные XML-RPC представления"
+msgstr "Показывать наследованные XML-RPC представления"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:97
 msgid "Generic XML-RPC Views"
@@ -1046,7 +1046,7 @@ msgstr ""
 "\n"
 "    Данный модуль представляет полный список директив ZCML и может быть использован как справочный материал. В меню показано дерево организующее директивы по пространствам имен.\n"
 "\n"
-"    Для каждой директивы указаны все доступные атрибуты и их семантика. Также указана ссылка на интерфейс который данная директива поддерживает. Если доступна, будет указана информация о файле в котором определена директива. Ниже указан список доступных поддиректив также указывающий реализуемые интерфейсы и доступные атрибуты.\n"
+"    Для каждой директивы указаны все доступные атрибуты и их семантика. Также указана ссылка на интерфейс который данная директива поддерживает. Если доступна, будет указана информация о файле в котором определена директива. Ниже указан список доступных поддиректив также указывающий реализованные интерфейсы и доступные атрибуты.\n"
 "    "
 
 #: src/zope/app/apidoc/zcmlmodule/index.pt:22
