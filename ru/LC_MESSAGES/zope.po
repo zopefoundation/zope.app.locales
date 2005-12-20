@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Development/Revision: 29457\n"
 "POT-Creation-Date: Mon Dec  5 17:28:09 2005\n"
-"PO-Revision-Date: 2005-12-19 14:47+0300\n"
+"PO-Revision-Date: 2005-12-20 16:08+0300\n"
 "Last-Translator: Dmitry Vasiliev <dima@hlabs.spb.ru>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
 "MIME-Version: 1.0\n"
@@ -211,7 +211,7 @@ msgid "Global CA (Socket Example)"
 msgstr "Глобальная КА (пример с розетками)"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:70
-#: src/zope/app/apidoc/ifacemodule/index.pt:280
+#: src/zope/app/apidoc/ifacemodule/index.pt:286
 msgid "Factories"
 msgstr "Фабрики"
 
@@ -578,6 +578,38 @@ msgstr "Все настройки относящиеся к просмотру �
 msgid "zope.app.apidoc.UseAPIDoc"
 msgstr "Использование документации по API"
 
+#: src/zope/app/apidoc/ifacemodule/browser.py:267
+msgid "Specific views"
+msgstr "Представления специфичные для данного интерфейса"
+
+#: src/zope/app/apidoc/ifacemodule/browser.py:268
+msgid "Extended views"
+msgstr "Наследованные представления"
+
+#: src/zope/app/apidoc/ifacemodule/browser.py:269
+msgid "Generic views"
+msgstr "Общие представления"
+
+#: src/zope/app/apidoc/ifacemodule/browser.py:274
+msgid "Browser"
+msgstr "Браузер"
+
+#: src/zope/app/apidoc/ifacemodule/browser.py:275
+msgid "XML-RPC"
+msgstr "XML-RPC"
+
+#: src/zope/app/apidoc/ifacemodule/browser.py:276
+msgid "HTTP"
+msgstr "HTTP"
+
+#: src/zope/app/apidoc/ifacemodule/browser.py:277
+msgid "FTP"
+msgstr "FTP"
+
+#: src/zope/app/apidoc/ifacemodule/browser.py:278
+msgid "Other"
+msgstr "Другие"
+
 #: src/zope/app/apidoc/ifacemodule/component_macros.pt:13
 msgid "(line ${line})"
 msgstr "(строка ${line})"
@@ -617,10 +649,6 @@ msgstr "регистрация:"
 #: src/zope/app/apidoc/ifacemodule/configure.zcml:81
 msgid "Interface Details"
 msgstr "Детальная информация по интерфейсам"
-
-#: src/zope/app/apidoc/ifacemodule/iface_macros.pt:108
-msgid "${name} Views"
-msgstr "${name} представления"
 
 #: src/zope/app/apidoc/ifacemodule/iface_macros.pt:3
 msgid "(Attribute)"
@@ -694,11 +722,11 @@ msgstr "Адаптеры предоставляющие данный интер�
 msgid "There are no adapters registered for this interface."
 msgstr "Нет адаптеров зарегистрированных для данного интерфейса."
 
-#: src/zope/app/apidoc/ifacemodule/index.pt:275
+#: src/zope/app/apidoc/ifacemodule/index.pt:281
 msgid "Other Information"
 msgstr "Дополнительная информация"
 
-#: src/zope/app/apidoc/ifacemodule/index.pt:282
+#: src/zope/app/apidoc/ifacemodule/index.pt:288
 msgid "A list of factories that create objects implementing this interface."
 msgstr "Список фабрик создающих объекты реализующие данный интерфейс."
 
@@ -706,15 +734,15 @@ msgstr "Список фабрик создающих объекты реализ
 msgid "Base interfaces"
 msgstr "Базовые интерфейсы"
 
-#: src/zope/app/apidoc/ifacemodule/index.pt:297
+#: src/zope/app/apidoc/ifacemodule/index.pt:303
 msgid "A list of utilities that are registered to provide this interface."
 msgstr "Список утилит зарегистрированых для предоставления данного интерфейса."
 
-#: src/zope/app/apidoc/ifacemodule/index.pt:310
+#: src/zope/app/apidoc/ifacemodule/index.pt:316
 msgid "Classes"
 msgstr "Классы"
 
-#: src/zope/app/apidoc/ifacemodule/index.pt:312
+#: src/zope/app/apidoc/ifacemodule/index.pt:318
 msgid "A list of classes that implement this interface. This might duplicate the entries in Utilities."
 msgstr "Список классов реализующих данный интерфейс. Классы из данного списка могут также повторяться в списке утилит."
 
@@ -1001,7 +1029,7 @@ msgid "Component:"
 msgstr "Компонент:"
 
 #: src/zope/app/apidoc/utilitymodule/utilitymodule.py:101
-#: src/zope/app/apidoc/ifacemodule/index.pt:295
+#: src/zope/app/apidoc/ifacemodule/index.pt:301
 msgid "Utilities"
 msgstr "Утилиты"
 
@@ -1442,6 +1470,14 @@ msgstr "Строка для поиска группы"
 #: src/zope/app/authentication/groupfolder.zcml:53
 msgid "Group Folders"
 msgstr "Папки групп"
+
+#: src/zope/app/authentication/idpicker.py:101
+msgid "Ids must contain only printable 7-bit non-space ASCII characters"
+msgstr "Идентификаторы должны содержать только видимые 7-и битные ASCII символы исключая пробельные"
+
+#: src/zope/app/authentication/idpicker.py:106
+msgid "Ids can't be more than 100 characters long."
+msgstr "Идентификаторы не могут содержать больше 100 символов."
 
 #: src/zope/app/authentication/interfaces.py:38
 msgid "Credentials Plugins"
@@ -3928,7 +3964,8 @@ msgstr "Изображение содержащее изображения дл�
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:144
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:183
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:185
-#: src/zope/app/apidoc/ifacemodule/iface_macros.pt:126
+#: src/zope/app/apidoc/ifacemodule/iface_macros.pt:108
+#: src/zope/app/apidoc/ifacemodule/iface_macros.pt:125
 #: src/zope/app/rotterdam/template.pt:112
 #: src/zope/app/rotterdam/template.pt:131
 #: src/zope/app/rotterdam/template.pt:140
@@ -5876,11 +5913,11 @@ msgstr "Идентификатор для новой ветви."
 msgid "WfMC Workflows"
 msgstr "Рабочие циклы WfMC"
 
-#: src/zope/app/wfmc/configure.zcml:18
+#: src/zope/app/wfmc/configure.zcml:17
 msgid "Workflows using XPDL"
 msgstr "Рабочие циклы использующие XPDL"
 
-#: src/zope/app/wfmc/configure.zcml:26
+#: src/zope/app/wfmc/configure.zcml:25
 msgid "Registering XPDL using ZCML"
 msgstr "Регистрация XPDL с использованием ZCML"
 
