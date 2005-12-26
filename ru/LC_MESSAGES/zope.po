@@ -17,7 +17,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Development/Revision: 29457\n"
 "POT-Creation-Date: Mon Dec  5 17:28:09 2005\n"
+<<<<<<< .mine
+"PO-Revision-Date: 2005-12-20 17:35+0300\n"
+=======
 "PO-Revision-Date: 2005-12-20 16:08+0300\n"
+>>>>>>> .r41038
 "Last-Translator: Dmitry Vasiliev <dima@hlabs.spb.ru>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
 "MIME-Version: 1.0\n"
@@ -453,9 +457,9 @@ msgstr "(Введите путь Python)"
 #: src/zope/app/apidoc/codemodule/browser/module.py:98
 #: src/zope/app/rotterdam/xmlobject.py:160
 #: src/zope/app/rotterdam/xmlobject.py:163
+#: src/zope/app/boston/browser/template.pt:60
 #: src/zope/app/rotterdam/template.pt:95
 #: src/zope/app/rotterdam/template_tablelayout.pt:74
-#: src/zope/app/boston/browser/template.pt:60
 msgid "[top]"
 msgstr "[основная]"
 
@@ -1420,8 +1424,8 @@ msgstr "Подключаемая аутентификация"
 #: src/zope/security/interfaces.py:300
 #: src/zope/app/dublincore/browser/edit.pt:17
 #: src/zope/app/schema/browser/schema_edit.pt:39
-#: src/zope/app/container/browser/contents.pt:34
 #: src/zope/app/container/browser/index.pt:28
+#: src/zope/app/container/browser/contents.pt:34
 msgid "Title"
 msgstr "Заголовок"
 
@@ -1471,6 +1475,9 @@ msgstr "Строка для поиска группы"
 msgid "Group Folders"
 msgstr "Папки групп"
 
+<<<<<<< .mine
+#: src/zope/app/authentication/interfaces.py:46
+=======
 #: src/zope/app/authentication/idpicker.py:101
 msgid "Ids must contain only printable 7-bit non-space ASCII characters"
 msgstr "Идентификаторы должны содержать только видимые 7-и битные ASCII символы исключая пробельные"
@@ -1480,14 +1487,15 @@ msgid "Ids can't be more than 100 characters long."
 msgstr "Идентификаторы не могут содержать больше 100 символов."
 
 #: src/zope/app/authentication/interfaces.py:38
+>>>>>>> .r41038
 msgid "Credentials Plugins"
 msgstr "Подключаемые модули удостоверений"
 
-#: src/zope/app/authentication/interfaces.py:44
+#: src/zope/app/authentication/interfaces.py:52
 msgid "Authenticator Plugins"
 msgstr "Подключаемые модули аутентификации"
 
-#: src/zope/app/authentication/interfaces.py:50
+#: src/zope/app/authentication/interfaces.py:58
 #: src/zope/app/authentication/principalfolder.py:80
 #: src/zope/app/authentication/browser/principalfolder.zcml:55
 msgid "Prefix"
@@ -1514,8 +1522,8 @@ msgstr "Идентификатор/имя пользователя. Данное
 #: src/zope/app/authentication/principalfolder.py:50
 #: src/zope/app/mail/interfaces.py:164
 #: src/zope/app/pluggableauth/interfaces.py:38
-#: src/zope/app/authentication/browser/loginform.pt:27
 #: src/zope/app/i18n/browser/synchronize.pt:37
+#: src/zope/app/authentication/browser/loginform.pt:27
 msgid "Password"
 msgstr "Пароль"
 
@@ -1546,6 +1554,13 @@ msgstr "Префикс который будет добавлен всем ид�
 #: src/zope/app/basicskin/view_macros.pt:35
 msgid "User: ${user_title}"
 msgstr "Пользователь: ${user_title}"
+
+#: src/zope/app/boston/browser/template.pt:40
+#: src/zope/app/rotterdam/dialog_macros.pt:54
+#: src/zope/app/rotterdam/template.pt:47
+#: src/zope/app/rotterdam/template_tablelayout.pt:49
+msgid "User:"
+msgstr "Пользователь:"
 
 #: src/zope/app/boston/browser/template.pt:58
 msgid "Location:&nbsp;"
@@ -2027,8 +2042,8 @@ msgstr "Предоставляемый интерфейс"
 #: src/zope/app/component/metadirectives.py:201
 #: src/zope/app/component/metadirectives.py:308
 #: src/zope/app/schema/browser/schema_edit.pt:37
-#: src/zope/app/container/browser/contents.pt:33
 #: src/zope/app/container/browser/index.pt:27
+#: src/zope/app/container/browser/contents.pt:33
 msgid "Name"
 msgstr "Название"
 
@@ -2532,11 +2547,6 @@ msgstr "Применить"
 msgid "container-cancel-button"
 msgstr "Отказаться"
 
-#: src/zope/app/container/browser/contents.pt:37
-#: src/zope/app/container/browser/index.pt:30
-msgid "Modified"
-msgstr "Изменен"
-
 #: src/zope/app/container/browser/contents.py:254
 msgid "You didn't specify any ids to remove."
 msgstr "Вы не выбрали элементы для удаления."
@@ -2572,6 +2582,11 @@ msgstr "Данные имена (имя) %s уже используются"
 #: src/zope/app/container/browser/contents.py:69
 msgid "You didn't specify any ids to rename."
 msgstr "Вы не выбрали элементы для переименования."
+
+#: src/zope/app/container/browser/index.pt:30
+#: src/zope/app/container/browser/contents.pt:37
+msgid "Modified"
+msgstr "Изменен"
 
 #: src/zope/app/container/browser/metaconfigure.py:58
 msgid ""
@@ -3105,8 +3120,8 @@ msgid "Metadata"
 msgstr "Мета-данные"
 
 #: src/zope/app/dublincore/browser/edit.pt:33
-#: src/zope/app/container/browser/contents.pt:36
 #: src/zope/app/container/browser/index.pt:29
+#: src/zope/app/container/browser/contents.pt:36
 msgid "Created"
 msgstr "Создан"
 
@@ -3338,8 +3353,8 @@ msgstr "Указанная кодировка ($charset) не поддержив
 #: src/zope/app/file/browser/file_add.pt:48
 #: src/zope/app/schema/browser/schema_add.pt:40
 #: src/zope/app/i18n/browser/translate.pt:49
-#: src/zope/app/container/browser/contents.pt:156
 #: src/zope/app/container/browser/add.pt:45
+#: src/zope/app/container/browser/contents.pt:156
 #: src/zope/app/form/browser/add.pt:55
 msgid "add-button"
 msgstr "Добавить"
@@ -3924,8 +3939,8 @@ msgstr "Изображение содержащее изображения дл�
 #: src/zope/app/zptpage/browser/inlinecode.pt:45
 #: src/zope/app/zptpage/browser/inlinecode.pt:55
 #: src/zope/app/file/browser/file_upload.pt:11
-#: src/zope/app/file/browser/file_add.pt:11
 #: src/zope/app/file/browser/image_edit.pt:13
+#: src/zope/app/file/browser/file_add.pt:11
 #: src/zope/app/dublincore/browser/edit.pt:12
 #: src/zope/app/zopetop/widget_macros.pt:15
 #: src/zope/app/zopetop/widget_macros.pt:23
@@ -3935,18 +3950,19 @@ msgstr "Изображение содержащее изображения дл�
 #: src/zope/app/zopetop/widget_macros.pt:227
 #: src/zope/app/pythonpage/edit.pt:14
 #: src/zope/app/pythonpage/edit.pt:19
+#: src/zope/app/boston/browser/template.pt:88
 #: src/zope/app/onlinehelp/browser/helptopic.pt:3
 #: src/zope/app/exception/browser/user.pt:7
 #: src/zope/app/apidoc/browser/contents.pt:24
 #: src/zope/app/apidoc/browser/contents.pt:29
+#: src/zope/app/apidoc/browser/modules.pt:14
 #: src/zope/app/apidoc/browser/static_contents.pt:24
 #: src/zope/app/apidoc/browser/static_contents.pt:29
 #: src/zope/app/apidoc/browser/menu_macros.pt:78
 #: src/zope/app/apidoc/browser/menu_macros.pt:84
-#: src/zope/app/apidoc/browser/modules.pt:14
+#: src/zope/app/apidoc/browser/static_modules.pt:14
 #: src/zope/app/apidoc/browser/static_menu_macros.pt:87
 #: src/zope/app/apidoc/browser/static_menu_macros.pt:93
-#: src/zope/app/apidoc/browser/static_modules.pt:14
 #: src/zope/app/apidoc/browser/prefIndex.pt:66
 #: src/zope/app/apidoc/browser/prefIndex.pt:68
 #: src/zope/app/apidoc/browser/prefIndex.pt:73
@@ -3964,17 +3980,31 @@ msgstr "Изображение содержащее изображения дл�
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:144
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:183
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:185
+<<<<<<< .mine
 #: src/zope/app/apidoc/ifacemodule/iface_macros.pt:108
 #: src/zope/app/apidoc/ifacemodule/iface_macros.pt:125
+#: src/zope/app/rotterdam/view_macros.pt:5
+#: src/zope/app/rotterdam/view_macros.pt:24
+=======
+#: src/zope/app/apidoc/ifacemodule/iface_macros.pt:108
+#: src/zope/app/apidoc/ifacemodule/iface_macros.pt:125
+>>>>>>> .r41038
 #: src/zope/app/rotterdam/template.pt:112
 #: src/zope/app/rotterdam/template.pt:131
 #: src/zope/app/rotterdam/template.pt:140
-#: src/zope/app/rotterdam/view_macros.pt:5
-#: src/zope/app/rotterdam/view_macros.pt:24
 #: src/zope/app/rotterdam/template_tablelayout.pt:113
 #: src/zope/app/rotterdam/template_tablelayout.pt:130
 #: src/zope/app/rotterdam/template_tablelayout.pt:137
-#: src/zope/app/boston/browser/template.pt:88
+#: src/zope/app/container/browser/commontasks.pt:11
+#: src/zope/app/container/browser/commontasks.pt:21
+#: src/zope/app/container/browser/commontasks.pt:31
+#: src/zope/app/container/browser/add.pt:10
+#: src/zope/app/container/browser/add.pt:30
+#: src/zope/app/container/browser/add.pt:32
+#: src/zope/app/container/browser/index.pt:45
+#: src/zope/app/container/browser/index.pt:52
+#: src/zope/app/container/browser/index.pt:54
+#: src/zope/app/container/browser/index.pt:56
 #: src/zope/app/container/browser/contents.pt:20
 #: src/zope/app/container/browser/contents.pt:78
 #: src/zope/app/container/browser/contents.pt:96
@@ -3982,28 +4012,20 @@ msgstr "Изображение содержащее изображения дл�
 #: src/zope/app/container/browser/contents.pt:110
 #: src/zope/app/container/browser/contents.pt:113
 #: src/zope/app/container/browser/contents.pt:116
-#: src/zope/app/container/browser/commontasks.pt:11
-#: src/zope/app/container/browser/commontasks.pt:21
-#: src/zope/app/container/browser/commontasks.pt:31
-#: src/zope/app/container/browser/index.pt:45
-#: src/zope/app/container/browser/index.pt:52
-#: src/zope/app/container/browser/index.pt:54
-#: src/zope/app/container/browser/index.pt:56
-#: src/zope/app/container/browser/add.pt:10
-#: src/zope/app/container/browser/add.pt:30
-#: src/zope/app/container/browser/add.pt:32
 #: src/zope/app/securitypolicy/browser/manage_roleform.pt:6
 #: src/zope/app/securitypolicy/browser/manage_roleform.pt:16
 #: src/zope/app/securitypolicy/browser/manage_roleform.pt:40
 #: src/zope/app/securitypolicy/browser/manage_roleform.pt:53
 #: src/zope/app/securitypolicy/browser/manage_permissionform.pt:34
 #: src/zope/app/securitypolicy/browser/manage_permissionform.pt:74
-#: src/zope/app/securitypolicy/browser/manage_access.pt:11
-#: src/zope/app/securitypolicy/browser/manage_access.pt:37
-#: src/zope/app/securitypolicy/browser/manage_access.pt:56
 #: src/zope/app/securitypolicy/browser/granting.pt:6
 #: src/zope/app/securitypolicy/browser/granting.pt:35
 #: src/zope/app/securitypolicy/browser/granting.pt:61
+#: src/zope/app/securitypolicy/browser/manage_access.pt:11
+#: src/zope/app/securitypolicy/browser/manage_access.pt:37
+#: src/zope/app/securitypolicy/browser/manage_access.pt:56
+#: src/zope/app/component/browser/utilreg_details.pt:8
+#: src/zope/app/component/browser/utilreg_details.pt:12
 #: src/zope/app/component/browser/site_management.pt:10
 #: src/zope/app/component/browser/site_management.pt:28
 #: src/zope/app/component/browser/site_management.pt:33
@@ -4011,8 +4033,6 @@ msgstr "Изображение содержащее изображения дл�
 #: src/zope/app/component/browser/site_management.pt:55
 #: src/zope/app/component/browser/site_management.pt:59
 #: src/zope/app/component/browser/site_management.pt:113
-#: src/zope/app/component/browser/utilreg_details.pt:8
-#: src/zope/app/component/browser/utilreg_details.pt:12
 #: src/zope/app/form/browser/display.pt:9
 #: src/zope/app/form/browser/add.pt:13
 #: src/zope/app/form/browser/add.pt:19
@@ -4887,13 +4907,6 @@ msgstr "Интерфейс пользователя Zope 3"
 msgid "Tip"
 msgstr "Подсказка"
 
-#: src/zope/app/rotterdam/dialog_macros.pt:54
-#: src/zope/app/rotterdam/template.pt:47
-#: src/zope/app/rotterdam/template_tablelayout.pt:49
-#: src/zope/app/boston/browser/template.pt:40
-msgid "User:"
-msgstr "Пользователь:"
-
 #: src/zope/app/rotterdam/view_macros.pt:36
 msgid "User: ${user}"
 msgstr "Пользователь: ${user}"
@@ -4944,8 +4957,8 @@ msgid "Schema Name: ${schema_name}"
 msgstr "Название схемы: ${schema_name}"
 
 #: src/zope/app/schema/browser/schema_edit.pt:31
-#: src/zope/app/container/browser/contents.pt:27
 #: src/zope/app/container/browser/index.pt:19
+#: src/zope/app/container/browser/contents.pt:27
 #: src/zope/app/intid/browser/registrations.pt:9
 msgid "Content listing"
 msgstr "Контент"
