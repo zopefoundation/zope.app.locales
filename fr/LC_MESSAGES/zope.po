@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: zope\n"
-"POT-Creation-Date: Sat Dec 17 23:03:14 2005\n"
-"PO-Revision-Date: 2005-12-20 18:22+0100\n"
+"POT-Creation-Date: Tue Dec 20 17:32:20 2005\n"
+"PO-Revision-Date: 2005-12-27 01:18+0100\n"
 "Last-Translator: Sebastien Douche <sdouche@gmail.com>\n"
 "Language-Team: French Zope 3 Team <zope3-dev@zope3.org>\n"
 "MIME-Version: 1.0\n"
@@ -201,7 +201,7 @@ msgid "Global CA (Socket Example)"
 msgstr "AC globaux (Exemple d'une socket)"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:70
-#: src/zope/app/apidoc/ifacemodule/index.pt:280
+#: src/zope/app/apidoc/ifacemodule/index.pt:286
 msgid "Factories"
 msgstr "Producteurs"
 
@@ -280,6 +280,43 @@ msgstr "Menu"
 msgid "Zope 3 API Docs"
 msgstr "Docs de l'API de Zope 3"
 
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:100
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:146
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:141
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:182
+msgid "Permissions:"
+msgstr "Permissions :"
+
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:102
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:148
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:143
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:184
+msgid "(read)"
+msgstr "(lecture)"
+
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:104
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:150
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:145
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:186
+msgid "(write)"
+msgstr "(écriture)"
+
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:111
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:152
+msgid "There are no attributes in this class."
+msgstr "Il n'y a pas d'attribut dans cette classe."
+
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:117
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:157
+#: src/zope/app/apidoc/ifacemodule/iface_macros.pt:42
+msgid "Methods"
+msgstr "Méthodes"
+
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:157
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:193
+msgid "There are no methods in this class."
+msgstr "Il n'y a pas de méthodes dans cette classe."
+
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:162
 msgid "Known Subclasses"
 msgstr "Sous classes connues"
@@ -296,6 +333,11 @@ msgstr "Classes de base"
 msgid "There are no known subclasses."
 msgstr "Il n'y a pas de sous classe connue."
 
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:35
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:96
+msgid "There are no base classes."
+msgstr "Il n'y a pas de classe de base."
+
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:40
 msgid "Implemented Interfaces"
 msgstr "Interfaces implémentées"
@@ -303,6 +345,18 @@ msgstr "Interfaces implémentées"
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:58
 msgid "There are no implemented interfaces."
 msgstr "Il n'y a pas d'interface implémentée."
+
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:64
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:101
+msgid "Attributes/Properties"
+msgstr "Attributs/Propriétés"
+
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:88
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:133
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:133
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:173
+msgid "Interface:"
+msgstr "Interface :"
 
 #: src/zope/app/apidoc/codemodule/browser/function_index.pt:10
 msgid "Signature"
@@ -314,72 +368,23 @@ msgstr "Chaîne de documentation"
 
 #: src/zope/app/apidoc/codemodule/browser/function_index.pt:41
 #: src/zope/app/apidoc/codemodule/browser/function_index.pt:45
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:77
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:114
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:228
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:266
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:308
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:77
 msgid "type:"
 msgstr "type :"
 
 #: src/zope/app/apidoc/codemodule/browser/function_index.pt:52
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:121
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:84
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:121
 msgid "Value:"
 msgstr "Valeur :"
-
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:101
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:64
-msgid "Attributes/Properties"
-msgstr "Attributs/Propriétés"
-
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:133
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:173
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:88
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:133
-msgid "Interface:"
-msgstr "Interface :"
-
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:141
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:182
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:100
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:146
-msgid "Permissions:"
-msgstr "Permissions :"
-
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:143
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:184
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:102
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:148
-msgid "(read)"
-msgstr "(lecture)"
-
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:145
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:186
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:104
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:150
-msgid "(write)"
-msgstr "(écriture)"
-
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:152
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:111
-msgid "There are no attributes in this class."
-msgstr "Il n'y a pas d'attribut dans cette classe."
-
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:157
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:117
-#: src/zope/app/apidoc/ifacemodule/iface_macros.pt:42
-msgid "Methods"
-msgstr "Méthodes"
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:18
 msgid "Object Introspector: ${class-name} ( ${object-name} )"
 msgstr "Introspecteur d'objet: ${class-name} ( ${object-name} )"
-
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:193
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:157
-msgid "There are no methods in this class."
-msgstr "Il n'y a pas de méthodes dans cette classe."
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:200
 msgid "Mapping Items"
@@ -429,11 +434,6 @@ msgstr "Interfaces fournies"
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:78
 msgid "Bases"
 msgstr "Bases"
-
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:96
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:35
-msgid "There are no base classes."
-msgstr "Il n'y a pas de classe de base."
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.zcml:46
 msgid "Introspector"
@@ -614,6 +614,38 @@ msgstr ""
 msgid "zope.app.apidoc.UseAPIDoc"
 msgstr "[zope.app.apidoc.UseAPIDoc] Accès à la documentation API en ligne"
 
+#: src/zope/app/apidoc/ifacemodule/browser.py:267
+msgid "Specific views"
+msgstr "Vues spécifiques"
+
+#: src/zope/app/apidoc/ifacemodule/browser.py:268
+msgid "Extended views"
+msgstr "Vues étendues"
+
+#: src/zope/app/apidoc/ifacemodule/browser.py:269
+msgid "Generic views"
+msgstr "Vues génériques"
+
+#: src/zope/app/apidoc/ifacemodule/browser.py:274
+msgid "Browser"
+msgstr "Navigateur"
+
+#: src/zope/app/apidoc/ifacemodule/browser.py:275
+msgid "XML-RPC"
+msgstr "XML-RPC"
+
+#: src/zope/app/apidoc/ifacemodule/browser.py:276
+msgid "HTTP"
+msgstr "HTTP"
+
+#: src/zope/app/apidoc/ifacemodule/browser.py:277
+msgid "FTP"
+msgstr "FTP"
+
+#: src/zope/app/apidoc/ifacemodule/browser.py:278
+msgid "Other"
+msgstr "Autres"
+
 #: src/zope/app/apidoc/ifacemodule/component_macros.pt:13
 msgid "(line ${line})"
 msgstr "(ligne ${line})"
@@ -653,10 +685,6 @@ msgstr "Information sur l'enregistrement :"
 #: src/zope/app/apidoc/ifacemodule/configure.zcml:81
 msgid "Interface Details"
 msgstr "Détails de l'interface"
-
-#: src/zope/app/apidoc/ifacemodule/iface_macros.pt:108
-msgid "${name} Views"
-msgstr "Vues ${name}"
 
 #: src/zope/app/apidoc/ifacemodule/iface_macros.pt:3
 msgid "(Attribute)"
@@ -736,11 +764,11 @@ msgstr "Les adaptateurs qui fournissent cette interface :"
 msgid "There are no adapters registered for this interface."
 msgstr "Il n'y a pas d'adaptateur enregistré pour cette interface."
 
-#: src/zope/app/apidoc/ifacemodule/index.pt:275
+#: src/zope/app/apidoc/ifacemodule/index.pt:281
 msgid "Other Information"
 msgstr "Autre information"
 
-#: src/zope/app/apidoc/ifacemodule/index.pt:282
+#: src/zope/app/apidoc/ifacemodule/index.pt:288
 msgid "A list of factories that create objects implementing this interface."
 msgstr ""
 "Une liste de producteurs qui créent des objets implémentant cette interface."
@@ -749,16 +777,16 @@ msgstr ""
 msgid "Base interfaces"
 msgstr "Interfaces de bases"
 
-#: src/zope/app/apidoc/ifacemodule/index.pt:297
+#: src/zope/app/apidoc/ifacemodule/index.pt:303
 msgid "A list of utilities that are registered to provide this interface."
 msgstr ""
 "Une liste d'utilitaires qui sont enregistrés pour fournir cette interface."
 
-#: src/zope/app/apidoc/ifacemodule/index.pt:310
+#: src/zope/app/apidoc/ifacemodule/index.pt:316
 msgid "Classes"
 msgstr "Classes"
 
-#: src/zope/app/apidoc/ifacemodule/index.pt:312
+#: src/zope/app/apidoc/ifacemodule/index.pt:318
 msgid ""
 "A list of classes that implement this interface. This might duplicate the "
 "entries in Utilities."
@@ -1062,7 +1090,7 @@ msgid "Component:"
 msgstr "Composant :"
 
 #: src/zope/app/apidoc/utilitymodule/utilitymodule.py:101
-#: src/zope/app/apidoc/ifacemodule/index.pt:295
+#: src/zope/app/apidoc/ifacemodule/index.pt:301
 msgid "Utilities"
 msgstr "Utilitaires"
 
@@ -3768,30 +3796,30 @@ msgstr "Ajouter %s"
 #: src/zope/app/form/browser/source.py:197
 #: src/zope/app/form/browser/source.py:220
 msgid "SourceDisplayWidget-label"
-msgstr "SourceDisplayWidget-label"
+msgstr "label"
 
 #: src/zope/app/form/browser/source.py:259
 msgid "SourceInputWidget-apply"
-msgstr "SourceInputWidget-appliquer"
+msgstr "appliquer"
 
 #: src/zope/app/form/browser/source.py:430
 msgid "MultipleSourceInputWidget-remove"
-msgstr "MultipleSourceInputWidget-enlever"
+msgstr "enlever"
 
 #: src/zope/app/form/browser/source.py:459
 msgid "SourceListInputWidget-apply"
-msgstr "SourceListInputWidget-appliquer"
+msgstr "appliquer"
 
 #: src/zope/app/form/browser/source.py:56
 #: src/zope/app/form/browser/source.py:203
 #: src/zope/app/form/browser/source.py:213
 msgid "SourceDisplayWidget-missing"
-msgstr "SourceDisplayWidget-manquante"
+msgstr "manquante"
 
 #: src/zope/app/form/browser/source.py:67
 #: src/zope/app/form/browser/source.py:98
 msgid "SourceDisplayWidget-invalid"
-msgstr "SourceDisplayWidget-invalide"
+msgstr "invalide"
 
 #: src/zope/app/form/browser/textwidgets.py:148
 msgid "Invalid text data"
@@ -4180,16 +4208,17 @@ msgstr "Une version d'une locale multiple d'une image."
 #: src/zope/app/apidoc/browser/prefIndex.pt:103
 #: src/zope/app/apidoc/codemodule/browser/module_index.pt:9
 #: src/zope/app/apidoc/codemodule/browser/module_index.pt:16
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:142
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:144
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:183
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:185
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:11
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:101
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:103
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:147
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:149
-#: src/zope/app/apidoc/ifacemodule/iface_macros.pt:126
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:142
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:144
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:183
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:185
+#: src/zope/app/apidoc/ifacemodule/iface_macros.pt:108
+#: src/zope/app/apidoc/ifacemodule/iface_macros.pt:125
 #: src/zope/app/rotterdam/view_macros.pt:5
 #: src/zope/app/rotterdam/view_macros.pt:24
 #: src/zope/app/rotterdam/template.pt:112
@@ -6343,11 +6372,11 @@ msgstr "identifiant pour la nouvelle branche."
 msgid "WfMC Workflows"
 msgstr "Workflows WfMC"
 
-#: src/zope/app/wfmc/configure.zcml:18
+#: src/zope/app/wfmc/configure.zcml:17
 msgid "Workflows using XPDL"
 msgstr "Workflows utilisant XPDL"
 
-#: src/zope/app/wfmc/configure.zcml:26
+#: src/zope/app/wfmc/configure.zcml:25
 msgid "Registering XPDL using ZCML"
 msgstr "Enregistré XPDL utilisant ZCML"
 
