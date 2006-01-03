@@ -13,8 +13,8 @@
 ##############################################################################
 msgid ""
 msgstr ""
-"Project-Id-Version: Development/Revision: 40897/Branch: 3.2\n"
-"POT-Creation-Date: Tue Dec 20 16:01:11 2005\n"
+"Project-Id-Version: Development/Revision: 41088/Branch: 3.2\n"
+"POT-Creation-Date: Tue Jan 03 14:36:23 2006\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
@@ -522,12 +522,12 @@ msgstr ""
 msgid "XML element representing the configuration root."
 msgstr ""
 
-#: src/zope/app/apidoc/component.py:192
+#: src/zope/app/apidoc/component.py:196
 msgid "<subscription>"
 msgstr ""
 
-#: src/zope/app/apidoc/component.py:212
-#: src/zope/app/apidoc/component.py:245
+#: src/zope/app/apidoc/component.py:216
+#: src/zope/app/apidoc/component.py:249
 msgid "<i>no name</i>"
 msgstr ""
 
@@ -4554,6 +4554,10 @@ msgstr ""
 
 #: src/zope/app/principalannotation/configure.zcml:24
 msgid "Principal Annotations"
+msgstr ""
+
+#: src/zope/app/publisher/configure.zcml:18
+msgid "Creating HTTP Results"
 msgstr ""
 
 #: src/zope/app/publisher/interfaces/browser.py:106
