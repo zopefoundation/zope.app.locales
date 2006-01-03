@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Development/Revision: 29457\n"
 "POT-Creation-Date: Mon Dec  5 17:28:09 2005\n"
-"PO-Revision-Date: 2006-01-03 14:42+0300\n"
+"PO-Revision-Date: 2006-01-03 16:09+0300\n"
 "Last-Translator: Dmitry Vasiliev <dima@hlabs.spb.ru>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
 "MIME-Version: 1.0\n"
@@ -4542,7 +4542,7 @@ msgstr "Аннотации пользователя"
 
 #: src/zope/app/publisher/configure.zcml:18
 msgid "Creating HTTP Results"
-msgstr "Создание HTTP результата"
+msgstr "Создание HTTP ответов"
 
 #: src/zope/app/publisher/interfaces/browser.py:106
 msgid "Menu item ordering hint"
