@@ -84,7 +84,7 @@ class POTEntry(object):
     >>> entry.write(FakeFile())
     # Some comment
     #: path/file:10
-    # Default: "default"
+    #. Default: "default"
     msgid "test"
     msgstr ""
     <BLANKLINE>
@@ -93,9 +93,9 @@ class POTEntry(object):
 
     >>> entry = POTEntry(Message("test", default="\nline1\n\tline2"))
     >>> entry.write(FakeFile())
-    # Default: ""
-    #  "line1\n"
-    #  "\tline2"
+    #. Default: ""
+    #.  "line1\n"
+    #.  "\tline2"
     msgid "test"
     msgstr ""
     <BLANKLINE>
@@ -123,9 +123,9 @@ class POTEntry(object):
                self.msgid.default is not None):
             default = self.msgid.default.strip()
             lines = normalize(default).split("\n")
-            lines[0] = "# Default: %s\n" % lines[0]
+            lines[0] = "#. Default: %s\n" % lines[0]
             for i in range(1, len(lines)):
-                lines[i] = "#  %s\n" % lines[i]
+                lines[i] = "#.  %s\n" % lines[i]
             file.write("".join(lines))
         file.write('msgid %s\n' % normalize(self.msgid))
         file.write('msgstr ""\n')
@@ -341,6 +341,7 @@ def find_files(dir, pattern, exclude=()):
     files = []
 
     def visit(files, dirname, names):
+        names[:] = filter(lambda x:x not in exclude, names)
         files += [os.path.join(dirname, name)
                   for name in fnmatch.filter(names, pattern)
                   if name not in exclude]
@@ -348,13 +349,13 @@ def find_files(dir, pattern, exclude=()):
     os.path.walk(dir, visit, files)
     return files
 
-def py_strings(dir, domain="zope"):
+def py_strings(dir, domain="zope", exclude=()):
     """Retrieve all Python messages from `dir` that are in the `domain`.
     """
     eater = TokenEater()
     make_escapes(0)
-    for filename in find_files(dir, '*.py',
-                               exclude=('extract.py', 'pygettext.py')):
+    for filename in find_files(
+            dir, '*.py', exclude=('extract.py', 'pygettext.py')+tuple(exclude)):
         fp = open(filename)
         try:
             eater.set_filename(filename)
@@ -384,7 +385,7 @@ def zcml_strings(dir, domain="zope", site_zcml=None):
     context = config(site_zcml, features=("devmode",), execute=False)
     return context.i18n_strings.get(domain, {})
 
-def tal_strings(dir, domain="zope", include_default_domain=False):
+def tal_strings(dir, domain="zope", include_default_domain=False, exclude=()):
     """Retrieve all TAL messages from `dir` that are in the `domain`.
     """
     # We import zope.tal.talgettext here because we can't rely on the
@@ -397,7 +398,7 @@ def tal_strings(dir, domain="zope", include_default_domain=False):
         def write(self, s):
             pass
 
-    for filename in find_files(dir, '*.pt'):
+    for filename in find_files(dir, '*.pt', exclude=tuple(exclude)):
         try:
             engine.file = filename
             p = HTMLTALParser()
