@@ -13,8 +13,8 @@
 ##############################################################################
 msgid ""
 msgstr ""
-"Project-Id-Version: Development/Revision: 41088/Branch: 3.2\n"
-"POT-Creation-Date: Tue Jan 03 14:36:23 2006\n"
+"Project-Id-Version: Development/Revision: 41526/Branch: 3.2\n"
+"POT-Creation-Date: Wed Feb  1 15:36:55 2006\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
@@ -87,95 +87,103 @@ msgid "Testing"
 msgstr ""
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:161
-msgid "Functional DocTest"
+msgid "The Test Browser"
 msgstr ""
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:169
-msgid "FDocTest (How to)"
+#: src/zope/app/apidoc/bookmodule/book.zcml:167
+msgid "Using testbrowser On the Internet"
 msgstr ""
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:17
 msgid "Adapter Registry"
 msgstr ""
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:177
-msgid "Form Parser"
+#: src/zope/app/apidoc/bookmodule/book.zcml:175
+msgid "Functional DocTest"
 msgstr ""
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:186
-msgid "I18n and L10n"
+#: src/zope/app/apidoc/bookmodule/book.zcml:183
+msgid "FDocTest (How to)"
 msgstr ""
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:191
+msgid "Form Parser"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:200
+msgid "I18n and L10n"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:205
 msgid "Messages"
 msgstr ""
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:201
+#: src/zope/app/apidoc/bookmodule/book.zcml:215
 msgid "Cached Properties"
 msgstr ""
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:211
+#: src/zope/app/apidoc/bookmodule/book.zcml:225
 msgid "BForest API"
-msgstr ""
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:220
-msgid "Deprecation API"
-msgstr ""
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:229
-msgid "Persistent Framework"
 msgstr ""
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:23
 msgid "Adapters (light version)"
 msgstr ""
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:238
-msgid "Transactions"
+#: src/zope/app/apidoc/bookmodule/book.zcml:234
+msgid "Deprecation API"
 msgstr ""
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:243
-#: src/zope/app/apidoc/bookmodule/book.zcml:287
-msgid "Savepoints"
+msgid "Persistent Framework"
 msgstr ""
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:253
-msgid "Zope Object Database (ZODB)"
+#: src/zope/app/apidoc/bookmodule/book.zcml:252
+msgid "Transactions"
 msgstr ""
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:257
+#: src/zope/app/apidoc/bookmodule/book.zcml:301
+msgid "Savepoints"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:267
+msgid "Zope Object Database (ZODB)"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:271
 msgid "Multiple Databases"
 msgstr ""
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:263
+#: src/zope/app/apidoc/bookmodule/book.zcml:277
 msgid "Cross-Database References"
 msgstr ""
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:269
+#: src/zope/app/apidoc/bookmodule/book.zcml:283
 msgid "Collaboration Diagrams"
 msgstr ""
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:275
+#: src/zope/app/apidoc/bookmodule/book.zcml:289
 msgid "Connection Management"
-msgstr ""
-
-#: src/zope/app/apidoc/bookmodule/book.zcml:281
-msgid "Persistent Classes"
 msgstr ""
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:29
 msgid "Food For Thought"
 msgstr ""
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:293
+#: src/zope/app/apidoc/bookmodule/book.zcml:295
+msgid "Persistent Classes"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:307
 msgid "Sub-Transactions"
 msgstr ""
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:299
+#: src/zope/app/apidoc/bookmodule/book.zcml:313
 msgid "Synchronizers"
 msgstr ""
 
-#: src/zope/app/apidoc/bookmodule/book.zcml:309
+#: src/zope/app/apidoc/bookmodule/book.zcml:323
 msgid "BTree Developer Information"
 msgstr ""
 
@@ -262,43 +270,6 @@ msgstr ""
 msgid "Zope 3 API Docs"
 msgstr ""
 
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:100
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:146
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:141
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:182
-msgid "Permissions:"
-msgstr ""
-
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:102
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:148
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:143
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:184
-msgid "(read)"
-msgstr ""
-
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:104
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:150
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:145
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:186
-msgid "(write)"
-msgstr ""
-
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:111
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:152
-msgid "There are no attributes in this class."
-msgstr ""
-
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:117
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:157
-#: src/zope/app/apidoc/ifacemodule/iface_macros.pt:42
-msgid "Methods"
-msgstr ""
-
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:157
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:193
-msgid "There are no methods in this class."
-msgstr ""
-
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:162
 msgid "Known Subclasses"
 msgstr ""
@@ -315,29 +286,12 @@ msgstr ""
 msgid "There are no known subclasses."
 msgstr ""
 
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:35
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:96
-msgid "There are no base classes."
-msgstr ""
-
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:40
 msgid "Implemented Interfaces"
 msgstr ""
 
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:58
 msgid "There are no implemented interfaces."
-msgstr ""
-
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:64
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:101
-msgid "Attributes/Properties"
-msgstr ""
-
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:88
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:133
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:133
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:173
-msgid "Interface:"
 msgstr ""
 
 #: src/zope/app/apidoc/codemodule/browser/function_index.pt:10
@@ -350,22 +304,71 @@ msgstr ""
 
 #: src/zope/app/apidoc/codemodule/browser/function_index.pt:41
 #: src/zope/app/apidoc/codemodule/browser/function_index.pt:45
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:77
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:114
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:228
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:266
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:308
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:77
 msgid "type:"
 msgstr ""
 
 #: src/zope/app/apidoc/codemodule/browser/function_index.pt:52
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:84
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:121
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:84
 msgid "Value:"
+msgstr ""
+
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:101
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:64
+msgid "Attributes/Properties"
+msgstr ""
+
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:133
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:173
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:88
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:133
+msgid "Interface:"
+msgstr ""
+
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:141
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:182
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:100
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:146
+msgid "Permissions:"
+msgstr ""
+
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:143
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:184
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:102
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:148
+msgid "(read)"
+msgstr ""
+
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:145
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:186
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:104
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:150
+msgid "(write)"
+msgstr ""
+
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:152
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:111
+msgid "There are no attributes in this class."
+msgstr ""
+
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:157
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:117
+#: src/zope/app/apidoc/ifacemodule/iface_macros.pt:42
+msgid "Methods"
 msgstr ""
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:18
 msgid "Object Introspector: ${class-name} ( ${object-name} )"
+msgstr ""
+
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:193
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:157
+msgid "There are no methods in this class."
 msgstr ""
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:200
@@ -415,6 +418,11 @@ msgstr ""
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:78
 msgid "Bases"
+msgstr ""
+
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:96
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:35
+msgid "There are no base classes."
 msgstr ""
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.zcml:46
@@ -1067,8 +1075,8 @@ msgstr ""
 msgid "Subdirectives"
 msgstr ""
 
-#: src/zope/app/apidoc/zcmlmodule/menu.pt:5
 #: src/zope/app/apidoc/zcmlmodule/static_menu.pt:5
+#: src/zope/app/apidoc/zcmlmodule/menu.pt:5
 msgid "Namespaces that are not full URLs start with \"http://namespaces.zope.org/\"."
 msgstr ""
 
@@ -1481,8 +1489,8 @@ msgstr ""
 #: src/zope/app/authentication/principalfolder.py:50
 #: src/zope/app/mail/interfaces.py:164
 #: src/zope/app/pluggableauth/interfaces.py:38
-#: src/zope/app/authentication/browser/loginform.pt:27
 #: src/zope/app/i18n/browser/synchronize.pt:37
+#: src/zope/app/authentication/browser/loginform.pt:27
 msgid "Password"
 msgstr ""
 
@@ -3924,11 +3932,11 @@ msgstr ""
 #: src/zope/app/cache/browser/cacheableedit.pt:53
 #: src/zope/app/cache/browser/ramstats.pt:38
 #: src/zope/app/cache/browser/ramedit.pt:56
+#: src/zope/app/applicationcontrol/browser/runtimeinfo.pt:12
 #: src/zope/app/applicationcontrol/browser/zodbcontrol.pt:11
 #: src/zope/app/applicationcontrol/browser/zodbcontrol.pt:23
-#: src/zope/app/applicationcontrol/browser/runtimeinfo.pt:12
-#: src/zope/app/applicationcontrol/browser/translationdomaincontrol.pt:9
 #: src/zope/app/applicationcontrol/browser/servercontrol.pt:8
+#: src/zope/app/applicationcontrol/browser/translationdomaincontrol.pt:9
 #: src/zope/app/undo/undo_macros.pt:86
 #: src/zope/app/zptpage/browser/inlinecode.pt:13
 #: src/zope/app/zptpage/browser/inlinecode.pt:45
@@ -3949,14 +3957,14 @@ msgstr ""
 #: src/zope/app/exception/browser/user.pt:7
 #: src/zope/app/apidoc/browser/contents.pt:24
 #: src/zope/app/apidoc/browser/contents.pt:29
-#: src/zope/app/apidoc/browser/static_contents.pt:24
-#: src/zope/app/apidoc/browser/static_contents.pt:29
 #: src/zope/app/apidoc/browser/menu_macros.pt:78
 #: src/zope/app/apidoc/browser/menu_macros.pt:84
+#: src/zope/app/apidoc/browser/static_contents.pt:24
+#: src/zope/app/apidoc/browser/static_contents.pt:29
 #: src/zope/app/apidoc/browser/modules.pt:14
+#: src/zope/app/apidoc/browser/static_modules.pt:14
 #: src/zope/app/apidoc/browser/static_menu_macros.pt:87
 #: src/zope/app/apidoc/browser/static_menu_macros.pt:93
-#: src/zope/app/apidoc/browser/static_modules.pt:14
 #: src/zope/app/apidoc/browser/prefIndex.pt:66
 #: src/zope/app/apidoc/browser/prefIndex.pt:68
 #: src/zope/app/apidoc/browser/prefIndex.pt:73
@@ -3965,15 +3973,15 @@ msgstr ""
 #: src/zope/app/apidoc/browser/prefIndex.pt:103
 #: src/zope/app/apidoc/codemodule/browser/module_index.pt:9
 #: src/zope/app/apidoc/codemodule/browser/module_index.pt:16
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:142
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:144
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:183
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:185
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:11
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:101
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:103
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:147
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:149
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:142
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:144
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:183
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:185
 #: src/zope/app/apidoc/ifacemodule/iface_macros.pt:108
 #: src/zope/app/apidoc/ifacemodule/iface_macros.pt:125
 #: src/zope/app/rotterdam/template.pt:112
@@ -4006,11 +4014,11 @@ msgstr ""
 #: src/zope/app/securitypolicy/browser/manage_roleform.pt:16
 #: src/zope/app/securitypolicy/browser/manage_roleform.pt:40
 #: src/zope/app/securitypolicy/browser/manage_roleform.pt:53
-#: src/zope/app/securitypolicy/browser/manage_permissionform.pt:34
-#: src/zope/app/securitypolicy/browser/manage_permissionform.pt:74
 #: src/zope/app/securitypolicy/browser/manage_access.pt:11
 #: src/zope/app/securitypolicy/browser/manage_access.pt:37
 #: src/zope/app/securitypolicy/browser/manage_access.pt:56
+#: src/zope/app/securitypolicy/browser/manage_permissionform.pt:34
+#: src/zope/app/securitypolicy/browser/manage_permissionform.pt:74
 #: src/zope/app/securitypolicy/browser/granting.pt:6
 #: src/zope/app/securitypolicy/browser/granting.pt:35
 #: src/zope/app/securitypolicy/browser/granting.pt:61
@@ -4753,6 +4761,11 @@ msgstr ""
 msgid "Executed Query:"
 msgstr ""
 
+#: src/zope/app/rdb/browser/rdbtestresults.pt:4
+#: src/zope/app/rdb/browser/rdbtestsql.pt:4
+msgid "Database Adapter - Test Connection"
+msgstr ""
+
 #: src/zope/app/rdb/browser/rdbtestsql.pt:14
 msgid "Here you can enter an SQL statement, so you can test the connection."
 msgstr ""
@@ -4764,11 +4777,6 @@ msgstr ""
 #: src/zope/app/rdb/browser/rdbtestsql.pt:28
 # Default: "Execute"
 msgid "execute-button"
-msgstr ""
-
-#: src/zope/app/rdb/browser/rdbtestsql.pt:4
-#: src/zope/app/rdb/browser/rdbtestresults.pt:4
-msgid "Database Adapter - Test Connection"
 msgstr ""
 
 #: src/zope/app/rdb/configure.zcml:6
@@ -5286,11 +5294,6 @@ msgstr ""
 msgid "You are now logged in as ${UserTitle}."
 msgstr ""
 
-#: src/zope/app/security/browser/login.pt:14
-#: src/zope/app/security/browser/logout.pt:12
-msgid "Back to the main page."
-msgstr ""
-
 #: src/zope/app/security/browser/login.pt:6
 msgid "Login successful!"
 msgstr ""
@@ -5305,6 +5308,11 @@ msgstr ""
 
 #: src/zope/app/security/browser/login_failed.pt:9
 msgid "You cancelled the login procedure."
+msgstr ""
+
+#: src/zope/app/security/browser/logout.pt:12
+#: src/zope/app/security/browser/login.pt:14
+msgid "Back to the main page."
 msgstr ""
 
 #: src/zope/app/security/browser/logout.pt:6
