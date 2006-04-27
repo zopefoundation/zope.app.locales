@@ -25,14 +25,9 @@ import tokenize
 import traceback
 from pygettext import safe_eval, normalize, make_escapes
 
-from interfaces import IPOTEntry, IPOTMaker, ITokenEater
 from zope.interface import implements
-
-# BBB 2005/10/10 -- MessageIDs are to be removed for Zope 3.3
-import zope.deprecation
-zope.deprecation.__show__.off()
-from zope.i18nmessageid import MessageID, Message
-zope.deprecation.__show__.on()
+from zope.i18nmessageid import Message
+from zope.app.locales.interfaces import IPOTEntry, IPOTMaker, ITokenEater
 
 DEFAULT_CHARSET = 'UTF-8'
 DEFAULT_ENCODING = '8bit'
@@ -117,10 +112,8 @@ class POTEntry(object):
     def write(self, file):
         if self.comments:
             file.write(self.comments)
-        if (isinstance(self.msgid, MessageID) and
-               self.msgid != self.msgid.default) or (
-           isinstance(self.msgid, Message) and
-               self.msgid.default is not None):
+        if (isinstance(self.msgid, Message) and
+            self.msgid.default is not None):
             default = self.msgid.default.strip()
             lines = normalize(default).split("\n")
             lines[0] = "#. Default: %s\n" % lines[0]
