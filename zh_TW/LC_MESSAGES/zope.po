@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: zope\n"
-"POT-Creation-Date: Mon Dec  5 17:28:09 2005\n"
+"POT-Creation-Date: Fri Apr 28 15:36:38 2006\n"
 "PO-Revision-Date: 2005-12-11 15:52+0800\n"
 "Last-Translator: Joe Y.S. Jaw <joeysj@ms3.hinet.net>\n"
 "Language-Team: Chinese (Taiwan) <zh_TW@li.org>\n"
@@ -48,8 +48,199 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"    這是一本匯集現有文件檔案而成的開發者線上手冊，本手冊並不意圖成為一本完整或一致的書籍，但是其中每一章都自成一篇小故事，就像這是一本童話故事集。\n"
+"    這是一本匯集現有文件檔案而成的開發者線上手冊，本手冊並不意圖成為一本完整"
+"或一致的書籍，但是其中每一章都自成一篇小故事，就像這是一本童話故事集。\n"
 "    "
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:104
+#, fuzzy
+msgid "Security"
+msgstr "腳本"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:109
+msgid "Untrusted Interpreters"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:115
+msgid "Untrusted Python Interpreter"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:121
+msgid "Restricted Python Code"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:127
+msgid "Safe Builtins"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:135
+#, fuzzy
+msgid "Global Principals"
+msgstr "主體"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:144
+#, fuzzy
+msgid "Testing"
+msgstr "設定"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:149
+#, fuzzy
+msgid "The Test Browser"
+msgstr "源碼瀏覽器"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:155
+msgid "Using testbrowser On the Internet"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:163
+#, fuzzy
+msgid "Functional DocTest"
+msgstr "建立功能文件測試"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:17
+#, fuzzy
+msgid "Adapter Registry"
+msgstr "轉接器"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:171
+msgid "FDocTest (How to)"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:179
+msgid "Form Parser"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:188
+msgid "I18n and L10n"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:193
+#, fuzzy
+msgid "Messages"
+msgstr "訊息"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:203
+msgid "Cached Properties"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:213
+msgid "BForest API"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:222
+msgid "Deprecation API"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:23
+msgid "Adapters (light version)"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:231
+msgid "Persistent Framework"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:240
+#, fuzzy
+msgid "Transactions"
+msgstr "轉移項目"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:245
+#: src/zope/app/apidoc/bookmodule/book.zcml:289
+msgid "Savepoints"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:255
+msgid "Zope Object Database (ZODB)"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:259
+msgid "Multiple Databases"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:265
+#, fuzzy
+msgid "Cross-Database References"
+msgstr "資料庫世代"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:271
+msgid "Collaboration Diagrams"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:277
+#, fuzzy
+msgid "Connection Management"
+msgstr "連線名稱"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:283
+#, fuzzy
+msgid "Persistent Classes"
+msgstr "永續的區域性綱目"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:29
+msgid "Food For Thought"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:295
+#, fuzzy
+msgid "Sub-Transactions"
+msgstr "具狀態的轉移"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:301
+#, fuzzy
+msgid "Synchronizers"
+msgstr "同步化"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:311
+#, fuzzy
+msgid "BTree Developer Information"
+msgstr "Zope 開發者資訊"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:37
+#, fuzzy
+msgid "Schemas"
+msgstr "綱目"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:43
+#, fuzzy
+msgid "Schema Fields"
+msgstr "集合欄位"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:52
+#, fuzzy
+msgid "Component Architecture"
+msgstr "要使用的元件"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:58
+msgid "Global Component Architecture"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:6
+#, fuzzy
+msgid "Interfaces and Schemas"
+msgstr "尋找介面："
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:64
+msgid "Global CA (Socket Example)"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:70
+#: src/zope/app/apidoc/ifacemodule/index.pt:286
+msgid "Factories"
+msgstr "工廠"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:79
+msgid "Local Component Architecture"
+msgstr ""
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:85
+#, fuzzy
+msgid "Local Sites & Site Managers"
+msgstr "網站管理器"
+
+#: src/zope/app/apidoc/bookmodule/book.zcml:95
+#, fuzzy
+msgid "Events"
+msgstr "項目"
 
 #: src/zope/app/apidoc/browser/contents.pt:15
 #: src/zope/app/apidoc/browser/static_contents.pt:15
@@ -59,12 +250,115 @@ msgid ""
 "which was designed to aid the developer directly to the desired information. "
 "Below you see a short description of every module."
 msgstr ""
-"模組通常彼此依賴，這些依賴關係是因互相參考而產生。每個模組都有一個“主題”，協助引導開發者獲得相關資訊。在下面你可以看到每個模組的簡短描述。"
+"模組通常彼此依賴，這些依賴關係是因互相參考而產生。每個模組都有一個“主題”，協"
+"助引導開發者獲得相關資訊。在下面你可以看到每個模組的簡短描述。"
+
+#: src/zope/app/apidoc/browser/contents.pt:24
+#: src/zope/app/apidoc/browser/contents.pt:29
+#: src/zope/app/apidoc/browser/menu_macros.pt:78
+#: src/zope/app/apidoc/browser/menu_macros.pt:84
+#: src/zope/app/apidoc/browser/modules.pt:14
+#: src/zope/app/apidoc/browser/prefIndex.pt:66
+#: src/zope/app/apidoc/browser/prefIndex.pt:68
+#: src/zope/app/apidoc/browser/prefIndex.pt:73
+#: src/zope/app/apidoc/browser/prefIndex.pt:95
+#: src/zope/app/apidoc/browser/prefIndex.pt:100
+#: src/zope/app/apidoc/browser/prefIndex.pt:103
+#: src/zope/app/apidoc/browser/static_contents.pt:24
+#: src/zope/app/apidoc/browser/static_contents.pt:29
+#: src/zope/app/apidoc/browser/static_menu_macros.pt:87
+#: src/zope/app/apidoc/browser/static_menu_macros.pt:93
+#: src/zope/app/apidoc/browser/static_modules.pt:14
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:11
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:101
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:103
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:147
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:149
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:142
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:144
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:183
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:185
+#: src/zope/app/apidoc/codemodule/browser/module_index.pt:9
+#: src/zope/app/apidoc/codemodule/browser/module_index.pt:16
+#: src/zope/app/apidoc/ifacemodule/iface_macros.pt:108
+#: src/zope/app/apidoc/ifacemodule/iface_macros.pt:125
+#: src/zope/app/applicationcontrol/browser/runtimeinfo.pt:12
+#: src/zope/app/applicationcontrol/browser/servercontrol.pt:8
+#: src/zope/app/applicationcontrol/browser/translationdomaincontrol.pt:9
+#: src/zope/app/applicationcontrol/browser/zodbcontrol.pt:11
+#: src/zope/app/applicationcontrol/browser/zodbcontrol.pt:23
+#: src/zope/app/basicskin/view_macros.pt:23
+#: src/zope/app/boston/browser/template.pt:88
+#: src/zope/app/cache/browser/cacheableedit.pt:53
+#: src/zope/app/cache/browser/ramedit.pt:56
+#: src/zope/app/cache/browser/ramstats.pt:38
+#: src/zope/app/container/browser/add.pt:10
+#: src/zope/app/container/browser/add.pt:30
+#: src/zope/app/container/browser/add.pt:32
+#: src/zope/app/container/browser/commontasks.pt:11
+#: src/zope/app/container/browser/commontasks.pt:21
+#: src/zope/app/container/browser/commontasks.pt:31
+#: src/zope/app/container/browser/contents.pt:20
+#: src/zope/app/container/browser/contents.pt:78
+#: src/zope/app/container/browser/contents.pt:96
+#: src/zope/app/container/browser/contents.pt:103
+#: src/zope/app/container/browser/contents.pt:110
+#: src/zope/app/container/browser/contents.pt:113
+#: src/zope/app/container/browser/contents.pt:116
+#: src/zope/app/container/browser/index.pt:45
+#: src/zope/app/container/browser/index.pt:52
+#: src/zope/app/container/browser/index.pt:54
+#: src/zope/app/container/browser/index.pt:56
+#: src/zope/app/exception/browser/user.pt:7
+#: src/zope/app/file/browser/file_add.pt:11
+#: src/zope/app/file/browser/file_upload.pt:11
+#: src/zope/app/file/browser/image_edit.pt:13
+#: src/zope/app/form/browser/add.pt:13 src/zope/app/form/browser/add.pt:19
+#: src/zope/app/form/browser/display.pt:9 src/zope/app/form/browser/edit.pt:14
+#: src/zope/app/form/browser/edit.pt:20
+#: src/zope/app/i18nfile/browser/file_edit.pt:25
+#: src/zope/app/i18nfile/browser/image_edit.pt:25
+#: src/zope/app/i18nfile/browser/image_edit.pt:87
+#: src/zope/app/onlinehelp/browser/helptopic.pt:3
+#: src/zope/app/pythonpage/edit.pt:14 src/zope/app/pythonpage/edit.pt:19
+#: src/zope/app/rotterdam/template.pt:112
+#: src/zope/app/rotterdam/template.pt:131
+#: src/zope/app/rotterdam/template.pt:140
+#: src/zope/app/rotterdam/template_tablelayout.pt:113
+#: src/zope/app/rotterdam/template_tablelayout.pt:130
+#: src/zope/app/rotterdam/template_tablelayout.pt:137
+#: src/zope/app/rotterdam/view_macros.pt:5
+#: src/zope/app/rotterdam/view_macros.pt:24
+#: src/zope/app/securitypolicy/browser/granting.pt:6
+#: src/zope/app/securitypolicy/browser/granting.pt:35
+#: src/zope/app/securitypolicy/browser/granting.pt:61
+#: src/zope/app/securitypolicy/browser/manage_access.pt:11
+#: src/zope/app/securitypolicy/browser/manage_access.pt:37
+#: src/zope/app/securitypolicy/browser/manage_access.pt:56
+#: src/zope/app/securitypolicy/browser/manage_permissionform.pt:34
+#: src/zope/app/securitypolicy/browser/manage_permissionform.pt:74
+#: src/zope/app/securitypolicy/browser/manage_roleform.pt:6
+#: src/zope/app/securitypolicy/browser/manage_roleform.pt:16
+#: src/zope/app/securitypolicy/browser/manage_roleform.pt:40
+#: src/zope/app/securitypolicy/browser/manage_roleform.pt:53
+#: src/zope/app/undo/undo_macros.pt:86
+#: src/zope/app/zopetop/widget_macros.pt:15
+#: src/zope/app/zopetop/widget_macros.pt:23
+#: src/zope/app/zopetop/widget_macros.pt:158
+#: src/zope/app/zopetop/widget_macros.pt:175
+#: src/zope/app/zopetop/widget_macros.pt:212
+#: src/zope/app/zopetop/widget_macros.pt:227
+#: src/zope/app/zptpage/browser/inlinecode.pt:13
+#: src/zope/app/zptpage/browser/inlinecode.pt:45
+#: src/zope/app/zptpage/browser/inlinecode.pt:55
+#: src/zope/dublincore/browser/edit.pt:12
+msgid "${DYNAMIC_CONTENT}"
+msgstr "${DYNAMIC_CONTENT}"
 
 #: src/zope/app/apidoc/browser/contents.pt:5
 #: src/zope/app/apidoc/browser/index.pt:3
-#: src/zope/app/apidoc/browser/static_index.pt:3
 #: src/zope/app/apidoc/browser/static_contents.pt:5
+#: src/zope/app/apidoc/browser/static_index.pt:3
 msgid "Zope 3 API Documentation"
 msgstr "Zope 3 API 文件"
 
@@ -77,8 +371,15 @@ msgid ""
 "on a module, the module's menu will appear below. In the menu you have then "
 "navigational means to access the documentation content of the module."
 msgstr ""
-"歡迎來到 Zope 3 API "
-"文件工具。這裡提供的文件是由好幾個文件模組所構成，你可以在視窗左上方框框中看到這些模組的清單，當你點選其中一個模組，該模組的選單將會出現在左下方框框中。"
+"歡迎來到 Zope 3 API 文件工具。這裡提供的文件是由好幾個文件模組所構成，你可以"
+"在視窗左上方框框中看到這些模組的清單，當你點選其中一個模組，該模組的選單將會"
+"出現在左下方框框中。"
+
+#: src/zope/app/apidoc/browser/details_macros.pt:10
+#: src/zope/app/apidoc/browser/menu_macros.pt:10
+#: src/zope/app/apidoc/browser/static_menu_macros.pt:10
+msgid "Zope 3 apidoc"
+msgstr "Zope 3 API 文件"
 
 #: src/zope/app/apidoc/browser/menu.pt:6
 #: src/zope/app/apidoc/browser/static_menu.pt:6
@@ -86,12 +387,6 @@ msgid ""
 "Click on one of the Documentation Modules above and a menu for this module "
 "will appear."
 msgstr "點選上方框框中的任何一個文件模組，該模組的選單將會顯示在此框中。"
-
-#: src/zope/app/apidoc/browser/menu_macros.pt:10
-#: src/zope/app/apidoc/browser/static_menu_macros.pt:10
-#: src/zope/app/apidoc/browser/details_macros.pt:10
-msgid "Zope 3 apidoc"
-msgstr "Zope 3 API 文件"
 
 #: src/zope/app/apidoc/browser/menu_macros.pt:28
 #: src/zope/app/apidoc/browser/static_menu_macros.pt:31
@@ -102,6 +397,76 @@ msgstr "選單"
 #: src/zope/app/apidoc/browser/static_modules.pt:7
 msgid "Zope 3 API Docs"
 msgstr "Zope 3 API 文件"
+
+#. Default: "Refresh"
+#: src/zope/app/apidoc/browser/prefIndex.pt:118
+#: src/zope/app/demo/widget/browser/Kopie von popup.pt:65
+#: src/zope/app/demo/widget/browser/popup.pt:65
+#: src/zope/app/error/browser/error.pt:53
+#: src/zope/app/file/browser/file_add.pt:46
+#: src/zope/app/file/browser/file_upload.pt:48
+#: src/zope/app/form/browser/add.pt:53 src/zope/app/form/browser/edit.pt:53
+#: src/zope/app/pythonpage/edit.pt:70
+#: src/zope/app/zptpage/browser/inlinecode.pt:64
+#: src/zope/dublincore/browser/edit.pt:50
+msgid "refresh-button"
+msgstr "更新"
+
+#. Default: "Change"
+#: src/zope/app/apidoc/browser/prefIndex.pt:120
+#: src/zope/app/demo/widget/browser/Kopie von popup.pt:67
+#: src/zope/app/demo/widget/browser/popup.pt:67
+#: src/zope/app/form/browser/edit.pt:55 src/zope/app/pythonpage/edit.pt:72
+#: src/zope/app/zptpage/browser/inlinecode.pt:66
+msgid "submit-button"
+msgstr "提交"
+
+#: src/zope/app/apidoc/browser/prefIndex.pt:78
+#: src/zope/app/demo/widget/browser/Kopie von popup.pt:36
+#: src/zope/app/demo/widget/browser/popup.pt:36
+#: src/zope/app/form/browser/add.pt:25 src/zope/app/form/browser/edit.pt:26
+#: src/zope/app/pythonpage/edit.pt:24
+#: src/zope/app/schema/browser/schema_edit.pt:21
+#: src/zope/app/zptpage/browser/inlinecode.pt:50
+msgid "There are ${num_errors} input errors."
+msgstr "共有 ${num_errors} 個輸入錯誤。"
+
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:100
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:146
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:141
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:182
+msgid "Permissions:"
+msgstr "權限："
+
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:102
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:148
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:143
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:184
+msgid "(read)"
+msgstr "（讀）"
+
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:104
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:150
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:145
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:186
+msgid "(write)"
+msgstr "（寫）"
+
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:111
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:152
+msgid "There are no attributes in this class."
+msgstr "此類別沒有屬性。"
+
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:117
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:157
+#: src/zope/app/apidoc/ifacemodule/iface_macros.pt:42
+msgid "Methods"
+msgstr "方法"
+
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:157
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:193
+msgid "There are no methods in this class."
+msgstr "此類別沒有方法。"
 
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:162
 msgid "Known Subclasses"
@@ -119,6 +484,11 @@ msgstr "基礎類別"
 msgid "There are no known subclasses."
 msgstr "沒有已知的子類別。"
 
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:35
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:96
+msgid "There are no base classes."
+msgstr "沒有基礎類別。"
+
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:40
 msgid "Implemented Interfaces"
 msgstr "實作介面"
@@ -126,6 +496,34 @@ msgstr "實作介面"
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:58
 msgid "There are no implemented interfaces."
 msgstr "沒有實作介面。"
+
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:64
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:101
+msgid "Attributes/Properties"
+msgstr "屬性/性質"
+
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:77
+#: src/zope/app/apidoc/codemodule/browser/function_index.pt:41
+#: src/zope/app/apidoc/codemodule/browser/function_index.pt:45
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:114
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:228
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:266
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:308
+msgid "type:"
+msgstr "型態："
+
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:84
+#: src/zope/app/apidoc/codemodule/browser/function_index.pt:52
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:121
+msgid "Value:"
+msgstr "值："
+
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:88
+#: src/zope/app/apidoc/codemodule/browser/class_index.pt:133
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:133
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:173
+msgid "Interface:"
+msgstr "介面："
 
 #: src/zope/app/apidoc/codemodule/browser/function_index.pt:10
 msgid "Signature"
@@ -135,70 +533,10 @@ msgstr "簽名"
 msgid "Documentation String"
 msgstr "文件字串"
 
-#: src/zope/app/apidoc/codemodule/browser/function_index.pt:41
-#: src/zope/app/apidoc/codemodule/browser/function_index.pt:45
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:114
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:228
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:266
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:308
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:77
-msgid "type:"
-msgstr "型態："
-
-#: src/zope/app/apidoc/codemodule/browser/function_index.pt:52
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:121
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:84
-msgid "Value:"
-msgstr "值："
-
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:101
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:64
-msgid "Attributes/Properties"
-msgstr "屬性/性質"
-
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:133
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:173
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:88
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:133
-msgid "Interface:"
-msgstr "介面："
-
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:141
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:182
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:100
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:146
-msgid "Permissions:"
-msgstr "權限："
-
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:143
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:184
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:102
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:148
-msgid "(read)"
-msgstr "（讀）"
-
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:145
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:186
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:104
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:150
-msgid "(write)"
-msgstr "（寫）"
-
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:152
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:111
-msgid "There are no attributes in this class."
-msgstr "此類別沒有屬性。"
-
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:157
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:117
-#: src/zope/app/apidoc/ifacemodule/iface_macros.pt:42
-msgid "Methods"
-msgstr "方法"
-
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:193
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:157
-msgid "There are no methods in this class."
-msgstr "此類別沒有方法。"
+#: src/zope/app/apidoc/codemodule/browser/introspector.pt:18
+#, fuzzy
+msgid "Object Introspector: ${class-name} ( ${object-name} )"
+msgstr "物件內部分析器：${class-name} ( ${object-name} ${object-name} )"
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:200
 msgid "Mapping Items"
@@ -208,10 +546,6 @@ msgstr "映射項目"
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:248
 msgid "There are no items."
 msgstr "沒有項目。"
-
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:21
-msgid "Object Introspector: ${class-name} ( ${object-name} ${object-name} )"
-msgstr "物件內部分析器：${class-name} ( ${object-name} ${object-name} )"
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:21
 msgid "&lt;no name&gt;"
@@ -253,11 +587,11 @@ msgstr "提供介面"
 msgid "Bases"
 msgstr "基底"
 
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:96
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:35
-msgid "There are no base classes."
-msgstr "沒有基礎類別。"
+#: src/zope/app/apidoc/codemodule/browser/introspector.zcml:46
+msgid "Introspector"
+msgstr ""
 
+#. Default: "Find"
 #: src/zope/app/apidoc/codemodule/browser/menu.pt:14
 #: src/zope/app/apidoc/codemodule/browser/static_menu.pt:17
 #: src/zope/app/apidoc/ifacemodule/menu.pt:18
@@ -281,11 +615,11 @@ msgid "(Enter partial Python path)"
 msgstr "（輸入部份 Python 路徑）"
 
 #: src/zope/app/apidoc/codemodule/browser/module.py:98
-#: src/zope/app/rotterdam/xmlobject.py:160
-#: src/zope/app/rotterdam/xmlobject.py:163
+#: src/zope/app/rotterdam/xmlobject.py:158
+#: src/zope/app/rotterdam/xmlobject.py:161
+#: src/zope/app/boston/browser/template.pt:60
 #: src/zope/app/rotterdam/template.pt:95
 #: src/zope/app/rotterdam/template_tablelayout.pt:74
-#: src/zope/app/boston/browser/template.pt:60
 msgid "[top]"
 msgstr "[頂部]"
 
@@ -298,11 +632,11 @@ msgstr "Zope 3 源碼瀏覽器"
 msgid "Search results:"
 msgstr "搜尋結果："
 
-#: src/zope/app/apidoc/codemodule/codemodule.py:38
+#: src/zope/app/apidoc/codemodule/codemodule.py:39
 msgid "Code Browser"
 msgstr "源碼瀏覽器"
 
-#: src/zope/app/apidoc/codemodule/codemodule.py:41
+#: src/zope/app/apidoc/codemodule/codemodule.py:42
 msgid ""
 "\n"
 "    This module allows you to get an overview of the modules and classes\n"
@@ -332,17 +666,21 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"    此模組為你提供一個關於 Zope 3 框架及其支援套件中定義的模組與類別的概觀，你有兩種方式在模組之間遊走尋找你感興趣的類別。\n"
+"    此模組為你提供一個關於 Zope 3 框架及其支援套件中定義的模組與類別的概觀，"
+"你有兩種方式在模組之間遊走尋找你感興趣的類別。\n"
 "\n"
-"    第一種方式，輸入類別的 Python 路徑片段，本模組會在類別登錄表中尋找符合者，結果將會被傳回給選單。\n"
+"    第一種方式，輸入類別的 Python 路徑片段，本模組會在類別登錄表中尋找符合"
+"者，結果將會被傳回給選單。\n"
 "\n"
-"    第二種方式，點一下 \"瀏覽 Zope 源碼\" 連結，在右方的主視窗中你將看到 Zope 3 "
-"根目錄的目錄清單，你可以點選模組名稱來檢視其內容。被找到的類別將以粗體字顯示。\n"
+"    第二種方式，點一下 \"瀏覽 Zope 源碼\" 連結，在右方的主視窗中你將看到 "
+"Zope 3 根目錄的目錄清單，你可以點選模組名稱來檢視其內容。被找到的類別將以粗體"
+"字顯示。\n"
 "\n"
-"    類別的文件內容提供的資訊量相當驚人，不但顯示出基礎類別、實作介面、屬性與方法，也會列出需要被實作的方法或屬性所屬的介面，以及需要的存取權限。\n"
+"    類別的文件內容提供的資訊量相當驚人，不但顯示出基礎類別、實作介面、屬性與"
+"方法，也會列出需要被實作的方法或屬性所屬的介面，以及需要的存取權限。\n"
 "    "
 
-#: src/zope/app/apidoc/codemodule/codemodule.py:79
+#: src/zope/app/apidoc/codemodule/codemodule.py:80
 msgid "Zope 3 root."
 msgstr "Zope 3 根目錄。"
 
@@ -365,7 +703,8 @@ msgid ""
 "        cannot be fully validated and improper ZCML files might be written."
 msgstr ""
 "指定一個套件，該套件的組態設定檔才會被執行。\n"
-"        若不指定套件，則其組態設定檔不會被完整地驗證，以致無法得知 ZCML 檔是否正確。"
+"        若不指定套件，則其組態設定檔不會被完整地驗證，以致無法得知 ZCML 檔是"
+"否正確。"
 
 #: src/zope/app/apidoc/codemodule/interfaces.py:198
 msgid "XML Root Element"
@@ -375,14 +714,87 @@ msgstr "XML 根元素"
 msgid "XML element representing the configuration root."
 msgstr "代表配置設定根部的 XML 元素。"
 
-#: src/zope/app/apidoc/component.py:192
-msgid "<subscription>"
-msgstr "<訂閱>"
-
-#: src/zope/app/apidoc/component.py:212
-#: src/zope/app/apidoc/component.py:245
+#: src/zope/app/apidoc/component.py:222 src/zope/app/apidoc/component.py:255
 msgid "<i>no name</i>"
 msgstr "<i>沒有名稱</i>"
+
+#: src/zope/app/apidoc/configure.zcml:33
+#, fuzzy
+msgid "Inspection API"
+msgstr "連線 URI："
+
+#: src/zope/app/apidoc/configure.zcml:43
+#, fuzzy
+msgid "Components"
+msgstr "元件："
+
+#: src/zope/app/apidoc/configure.zcml:49
+#, fuzzy
+msgid "Presentation"
+msgstr "表現型態："
+
+#: src/zope/app/apidoc/configure.zcml:55
+msgid "Miscellaneous"
+msgstr ""
+
+#: src/zope/app/apidoc/configure.zcml:61
+#, fuzzy
+msgid "Class Registry"
+msgstr "類別"
+
+#: src/zope/app/apidoc/configure.zcml:70
+msgid "API Doc Tool"
+msgstr ""
+
+#: src/zope/app/apidoc/configure.zcml:70
+msgid ""
+"          These are all the preferences related to viewing the API          "
+"documentation."
+msgstr ""
+
+#. Default: "Access Online API documentation"
+#: src/zope/app/apidoc/configure.zcml:8
+#, fuzzy
+msgid "zope.app.apidoc.UseAPIDoc"
+msgstr "使用資料庫連線"
+
+#: src/zope/app/apidoc/ifacemodule/browser.py:266
+#, fuzzy
+msgid "Specific views"
+msgstr "特定 FTP 視圖"
+
+#: src/zope/app/apidoc/ifacemodule/browser.py:267
+#, fuzzy
+msgid "Extended views"
+msgstr "擴充 FTP 視圖"
+
+#: src/zope/app/apidoc/ifacemodule/browser.py:268
+#, fuzzy
+msgid "Generic views"
+msgstr "通用 FTP 視圖"
+
+#: src/zope/app/apidoc/ifacemodule/browser.py:273
+#, fuzzy
+msgid "Browser"
+msgstr "源碼瀏覽器"
+
+#: src/zope/app/apidoc/ifacemodule/browser.py:274
+#, fuzzy
+msgid "XML-RPC"
+msgstr "XML-RPC 視圖"
+
+#: src/zope/app/apidoc/ifacemodule/browser.py:275
+msgid "HTTP"
+msgstr ""
+
+#: src/zope/app/apidoc/ifacemodule/browser.py:276
+msgid "FTP"
+msgstr ""
+
+#: src/zope/app/apidoc/ifacemodule/browser.py:277
+#, fuzzy
+msgid "Other"
+msgstr "其他視圖"
 
 #: src/zope/app/apidoc/ifacemodule/component_macros.pt:13
 msgid "(line ${line})"
@@ -420,9 +832,15 @@ msgstr "未提供介面。"
 msgid "registration info:"
 msgstr "登錄資訊："
 
-#: src/zope/app/apidoc/ifacemodule/iface_macros.pt:108
-msgid "${name} Views"
-msgstr "${name} 視圖"
+#: src/zope/app/apidoc/ifacemodule/component_macros.pt:90
+#: src/zope/app/apidoc/utilitymodule/index.pt:20
+msgid "Component:"
+msgstr "元件："
+
+#: src/zope/app/apidoc/ifacemodule/configure.zcml:81
+#, fuzzy
+msgid "Interface Details"
+msgstr "介面型態"
 
 #: src/zope/app/apidoc/ifacemodule/iface_macros.pt:3
 msgid "(Attribute)"
@@ -444,13 +862,15 @@ msgstr "沒有指定屬性或欄位。"
 msgid "There are no views available."
 msgstr "沒有視圖可用。"
 
-#: src/zope/app/apidoc/ifacemodule/ifacemodule.py:51
+#: src/zope/app/apidoc/ifacemodule/ifacemodule.py:52
 #: src/zope/app/catalog/text.py:35
-#: src/zope/app/component/metadirectives.py:445
+#: src/zope/app/component/metadirectives.py:259
+#: src/zope/app/apidoc/configure.zcml:37
+#: src/zope/app/apidoc/bookmodule/book.zcml:11
 msgid "Interfaces"
 msgstr "介面"
 
-#: src/zope/app/apidoc/ifacemodule/ifacemodule.py:54
+#: src/zope/app/apidoc/ifacemodule/ifacemodule.py:55
 msgid ""
 "\n"
 "    All used and important interfaces are registered through the site\n"
@@ -466,11 +886,12 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"    "
-"所有被使用的重要介面都是透過網站管理器來登錄。雖然我們可以列出全部屬性，但是過長的清單會造成使用者閱讀困難；於是我們把具有共同模組路徑的介面放在一起"
+"    所有被使用的重要介面都是透過網站管理器來登錄。雖然我們可以列出全部屬性，"
+"但是過長的清單會造成使用者閱讀困難；於是我們把具有共同模組路徑的介面放在一起"
 "顯示。\n"
 "\n"
-"    介面文件也提供了許多種資訊，當然包括宣告的屬性/欄位與方法，還有可用的轉接器以及此介面提供的公用工具。\n"
+"    介面文件也提供了許多種資訊，當然包括宣告的屬性/欄位與方法，還有可用的轉接"
+"器以及此介面提供的公用工具。\n"
 "    "
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:101
@@ -497,15 +918,11 @@ msgstr "提供此介面的轉接器:"
 msgid "There are no adapters registered for this interface."
 msgstr "沒有轉接器登錄此介面。"
 
-#: src/zope/app/apidoc/ifacemodule/index.pt:275
+#: src/zope/app/apidoc/ifacemodule/index.pt:281
 msgid "Other Information"
 msgstr "其他資訊"
 
-#: src/zope/app/apidoc/ifacemodule/index.pt:280
-msgid "Factories"
-msgstr "工廠"
-
-#: src/zope/app/apidoc/ifacemodule/index.pt:282
+#: src/zope/app/apidoc/ifacemodule/index.pt:288
 msgid "A list of factories that create objects implementing this interface."
 msgstr "一份用來建立 \"實作此介面的物件\" 的工廠清單。"
 
@@ -513,15 +930,15 @@ msgstr "一份用來建立 \"實作此介面的物件\" 的工廠清單。"
 msgid "Base interfaces"
 msgstr "基礎介面"
 
-#: src/zope/app/apidoc/ifacemodule/index.pt:297
+#: src/zope/app/apidoc/ifacemodule/index.pt:303
 msgid "A list of utilities that are registered to provide this interface."
 msgstr "一份登錄要提供此介面的公用工具清單。"
 
-#: src/zope/app/apidoc/ifacemodule/index.pt:310
+#: src/zope/app/apidoc/ifacemodule/index.pt:316
 msgid "Classes"
 msgstr "類別"
 
-#: src/zope/app/apidoc/ifacemodule/index.pt:312
+#: src/zope/app/apidoc/ifacemodule/index.pt:318
 msgid ""
 "A list of classes that implement this interface. This might duplicate the "
 "entries in Utilities."
@@ -652,7 +1069,8 @@ msgstr ""
 "\n"
 "    API 文件「介面詳細內容畫面」的偏好設定\n"
 "\n"
-"    你可以選擇要出現在介面詳細內容畫面中的項目類型。下列的偏好設定讓你選擇預設顯示的項目類型。\n"
+"    你可以選擇要出現在介面詳細內容畫面中的項目類型。下列的偏好設定讓你選擇預"
+"設顯示的項目類型。\n"
 "    "
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:37
@@ -762,19 +1180,19 @@ msgstr "尋找介面："
 msgid "presentation type:"
 msgstr "表現型態："
 
-#: src/zope/app/apidoc/ifacemodule/presentation_macros.pt:51
-msgid "layer:"
-msgstr "顯示層："
-
-#: src/zope/app/apidoc/ifacemodule/presentation_macros.pt:60
+#: src/zope/app/apidoc/ifacemodule/presentation_macros.pt:50
 msgid "factory path:"
 msgstr "工廠路徑："
 
-#: src/zope/app/apidoc/ifacemodule/presentation_macros.pt:77
+#: src/zope/app/apidoc/ifacemodule/presentation_macros.pt:62
+msgid "template:"
+msgstr "模板："
+
+#: src/zope/app/apidoc/ifacemodule/presentation_macros.pt:67
 msgid "resource:"
 msgstr "資源："
 
-#: src/zope/app/apidoc/ifacemodule/presentation_macros.pt:84
+#: src/zope/app/apidoc/ifacemodule/presentation_macros.pt:74
 msgid "Permission:"
 msgstr "權限："
 
@@ -794,11 +1212,11 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"    你可以在這裡看到所有登錄的介面型態。當你打開特定介面型態的子樹，可見到所有提供此型態的介面。當你想要決定全部內容型態介面，這將非常有用。\n"
+"    你可以在這裡看到所有登錄的介面型態。當你打開特定介面型態的子樹，可見到所"
+"有提供此型態的介面。當你想要決定全部內容型態介面，這將非常有用。\n"
 "    "
 
-#: src/zope/app/apidoc/utilities.py:172
-#: src/zope/app/apidoc/utilities.py:174
+#: src/zope/app/apidoc/utilities.py:172 src/zope/app/apidoc/utilities.py:174
 msgid "n/a"
 msgstr "n/a"
 
@@ -806,17 +1224,7 @@ msgstr "n/a"
 msgid "(Name: \"${name}\")"
 msgstr "（名稱：\"${name}\"）"
 
-#: src/zope/app/apidoc/utilitymodule/index.pt:20
-#: src/zope/app/apidoc/ifacemodule/component_macros.pt:90
-msgid "Component:"
-msgstr "元件："
-
-#: src/zope/app/apidoc/utilitymodule/utilitymodule.py:101
-#: src/zope/app/apidoc/ifacemodule/index.pt:295
-msgid "Utilities"
-msgstr "公用工具"
-
-#: src/zope/app/apidoc/utilitymodule/utilitymodule.py:104
+#: src/zope/app/apidoc/utilitymodule/utilitymodule.py:102
 msgid ""
 "\n"
 "    Utilities are also nicely registered in a site manager, so that it is "
@@ -834,12 +1242,18 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"    "
-"公用工具也是在網站管理器中登錄的項目，所以網站管理器可以很容易建立一份可用公用工具的清單。公用工具以其提供的介面與名稱來識別，其名稱可以是空白的。此"
+"    公用工具也是在網站管理器中登錄的項目，所以網站管理器可以很容易建立一份可"
+"用公用工具的清單。公用工具以其提供的介面與名稱來識別，其名稱可以是空白的。此"
 "選單提供了一份公用程式提供的介面清單，而各種不同實作就成為子項目。\n"
 "\n"
-"    再次強調，公用工具文件列出了公用工具提供的所有屬性/欄位與方法，也提供了指向實作的連結。\n"
+"    再次強調，公用工具文件列出了公用工具提供的所有屬性/欄位與方法，也提供了指"
+"向實作的連結。\n"
 "    "
+
+#: src/zope/app/apidoc/utilitymodule/utilitymodule.py:99
+#: src/zope/app/apidoc/ifacemodule/index.pt:301
+msgid "Utilities"
+msgstr "公用工具"
 
 #: src/zope/app/apidoc/zcmlmodule/__init__.py:120
 msgid "ZCML Reference"
@@ -864,10 +1278,11 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"    此模組顯示出一份完整的 ZCML 宣告清單，所以足以做為參考文件；而且利用宣告的名稱空間來組織成一個樹狀圖。\n"
+"    此模組顯示出一份完整的 ZCML 宣告清單，所以足以做為參考文件；而且利用宣告"
+"的名稱空間來組織成一個樹狀圖。\n"
 "\n"
-"    "
-"每項宣告的文件內容，將說明所有可用的屬性及其意義，同時也提供指向宣告認可的介面的連結。可能的話，甚至會告訴你該宣告是在哪個檔案中宣告的。最後，還會列"
+"    每項宣告的文件內容，將說明所有可用的屬性及其意義，同時也提供指向宣告認可"
+"的介面的連結。可能的話，甚至會告訴你該宣告是在哪個檔案中宣告的。最後，還會列"
 "出一份可用子宣告清單，並列出被實作的介面和可用的屬性。\n"
 "    "
 
@@ -880,7 +1295,8 @@ msgid ""
 "from (line ${beginline}, column ${begincolumn}) to (line ${endline}, column "
 "${endcolumn})"
 msgstr ""
-"從（第 ${beginline} 列第 ${begincolumn} 欄）到（第 ${endline} 列第 ${endcolumn} 欄）"
+"從（第 ${beginline} 列第 ${begincolumn} 欄）到（第 ${endline} 列第 "
+"${endcolumn} 欄）"
 
 #: src/zope/app/apidoc/zcmlmodule/index.pt:33
 msgid "Info:"
@@ -908,7 +1324,9 @@ msgstr "子宣告"
 #: src/zope/app/apidoc/zcmlmodule/static_menu.pt:5
 msgid ""
 "Namespaces that are not full URLs start with \"http://namespaces.zope.org/\"."
-msgstr "以 \"http://namespaces.zope.org/\" 開頭的不完整 URL 形式來表示的 ZCML 名稱空間。"
+msgstr ""
+"以 \"http://namespaces.zope.org/\" 開頭的不完整 URL 形式來表示的 ZCML 名稱空"
+"間。"
 
 #: src/zope/app/applicationcontrol/browser/configure.zcml:23
 msgid "Runtime Information"
@@ -921,6 +1339,11 @@ msgstr "伺服器控制"
 #: src/zope/app/applicationcontrol/browser/configure.zcml:33
 msgid "ZODB Control"
 msgstr "ZODB 控制"
+
+#: src/zope/app/applicationcontrol/browser/configure.zcml:41
+#: src/zope/app/applicationcontrol/browser/translationdomaincontrol.pt:4
+msgid "Translation Domains"
+msgstr "翻譯領域"
 
 #: src/zope/app/applicationcontrol/browser/configure.zcml:50
 msgid "Manage Process"
@@ -971,19 +1394,20 @@ msgstr "Python 路徑"
 msgid "Unavailable"
 msgstr "不可用"
 
+#. Default: ""
 #: src/zope/app/applicationcontrol/browser/runtimeinfo.py:67
 msgid "${days} day(s) ${hours}:${minutes}:${seconds}"
 msgstr "${days} 天 ${hours} 小時 ${minutes} 分 ${seconds} 秒"
 
-#: src/zope/app/applicationcontrol/browser/servercontrol.pt:16
+#: src/zope/app/applicationcontrol/browser/servercontrol.pt:17
 msgid "Countdown until restart or shutdown"
 msgstr "重新啟動或關閉倒數計時"
 
-#: src/zope/app/applicationcontrol/browser/servercontrol.pt:20
+#: src/zope/app/applicationcontrol/browser/servercontrol.pt:21
 msgid "seconds"
 msgstr "秒"
 
-#: src/zope/app/applicationcontrol/browser/servercontrol.pt:21
+#: src/zope/app/applicationcontrol/browser/servercontrol.pt:22
 msgid ""
 "If you specify a time of 0 seconds, then the server will be shutdown or "
 "restarted immediately."
@@ -993,31 +1417,51 @@ msgstr "若你設定 0 秒，則伺服器將立刻關閉或重新啟動。"
 msgid "Zope Stub Server Controller"
 msgstr "Zope 化身伺服器控制器"
 
-#: src/zope/app/applicationcontrol/browser/servercontrol.pt:30
+#: src/zope/app/applicationcontrol/browser/servercontrol.pt:31
 msgid "Restart server"
 msgstr "重新啟動伺服器"
 
-#: src/zope/app/applicationcontrol/browser/servercontrol.pt:33
+#: src/zope/app/applicationcontrol/browser/servercontrol.pt:34
 msgid "Shutdown server"
 msgstr "關閉伺服器"
+
+#. Default: ""
+#: src/zope/app/applicationcontrol/browser/servercontrol.py:38
+msgid "The server will be restarted in ${number} seconds."
+msgstr ""
+
+#. Default: ""
+#: src/zope/app/applicationcontrol/browser/servercontrol.py:42
+msgid "The server will be shutdown in ${number} seconds."
+msgstr ""
 
 #: src/zope/app/applicationcontrol/browser/translationdomaincontrol.pt:16
 msgid "Domain"
 msgstr "領域"
 
+#: src/zope/app/applicationcontrol/browser/translationdomaincontrol.pt:24
+#: src/zope/app/i18n/browser/synchronize.pt:89
+#: src/zope/app/i18nfile/browser/file_edit.pt:55
+#: src/zope/app/i18nfile/browser/image_edit.pt:56
+msgid "Language"
+msgstr "語言"
+
 #: src/zope/app/applicationcontrol/browser/translationdomaincontrol.pt:25
 msgid "Files"
 msgstr "檔案"
 
+#. Default: "Reload"
 #: src/zope/app/applicationcontrol/browser/translationdomaincontrol.pt:37
 msgid "reload-button"
 msgstr "重新載入"
 
+#. Default: ""
 #: src/zope/app/applicationcontrol/browser/translationdomaincontrol.py:52
 msgid ""
 "Message Catalog for ${language} language in ${domain} domain successfully "
 "reloaded."
-msgstr "在領域 ${domain} 的 ${language} 訊息總目（Message Catalog）已成功重新載入。"
+msgstr ""
+"在領域 ${domain} 的 ${language} 訊息總目（Message Catalog）已成功重新載入。"
 
 #: src/zope/app/applicationcontrol/browser/zodbcontrol.pt:15
 msgid "Name of database"
@@ -1035,6 +1479,7 @@ msgstr "保存"
 msgid "days"
 msgstr "天"
 
+#. Default: "Pack"
 #: src/zope/app/applicationcontrol/browser/zodbcontrol.pt:38
 msgid "pack-button"
 msgstr "清理 (Pack)"
@@ -1047,10 +1492,6 @@ msgstr "ZODB 控制器"
 msgid "ZODB successfully packed."
 msgstr "ZODB 清理成功。"
 
-#: src/zope/app/authentication/browser/configure.zcml:104
-msgid "Authenticator Plugin"
-msgstr "身分驗證插件"
-
 #: src/zope/app/authentication/browser/configure.zcml:24
 msgid "New-style pluggable authentication utility"
 msgstr "新型態的即插即用身分驗證公用工具"
@@ -1059,33 +1500,17 @@ msgstr "新型態的即插即用身分驗證公用工具"
 msgid "Pluggable Authentication Utility"
 msgstr "即插即用身分驗證公用工具"
 
-#: src/zope/app/authentication/browser/configure.zcml:32
+#: src/zope/app/authentication/browser/configure.zcml:39
 msgid "Edit Pluggable Authentication Utility"
 msgstr "編輯即插即用身分驗證公用工具"
 
-#: src/zope/app/authentication/browser/configure.zcml:40
+#: src/zope/app/authentication/browser/configure.zcml:47
 msgid "Plugins"
 msgstr "插件"
-
-#: src/zope/app/authentication/browser/configure.zcml:56
-msgid "New Pluggable Authentication Utility Registration"
-msgstr "新的即插即用身分驗證公用工具登錄"
 
 #: src/zope/app/authentication/browser/configure.zcml:6
 msgid "Add Pluggable Authentication"
 msgstr "新增即插即用身分驗證"
-
-#: src/zope/app/authentication/browser/configure.zcml:68
-msgid "New Credentials Plugin Registration"
-msgstr "新的憑證插件登錄"
-
-#: src/zope/app/authentication/browser/configure.zcml:80
-msgid "New Authenticator Plugin Registration"
-msgstr "新的身分驗證器插件登錄"
-
-#: src/zope/app/authentication/browser/configure.zcml:99
-msgid "Credentials Plugin"
-msgstr "憑證插件"
 
 #: src/zope/app/authentication/browser/groupfolder.zcml:15
 msgid "Add group information"
@@ -1100,19 +1525,14 @@ msgid "A principals group"
 msgstr "主體群組"
 
 #: src/zope/app/authentication/browser/groupfolder.zcml:32
-#: src/zope/app/authentication/browser/groupfolder.zcml:32
-msgid "Groups Folder"
-msgstr "群組資料夾"
-
-#: src/zope/app/authentication/browser/groupfolder.zcml:38
 msgid "Add group folder"
 msgstr "新增群組資料夾"
 
-#: src/zope/app/authentication/browser/groupfolder.zcml:47
+#: src/zope/app/authentication/browser/groupfolder.zcml:41
 msgid "Group Folder"
 msgstr "群組資料夾"
 
-#: src/zope/app/authentication/browser/groupfolder.zcml:47
+#: src/zope/app/authentication/browser/groupfolder.zcml:41
 msgid "A Group folder"
 msgstr "一個群組資料夾"
 
@@ -1132,12 +1552,14 @@ msgstr "HTTP 基本身分驗證插件"
 msgid ""
 "You are not authorized to perform this action. However, you may login as a "
 "different user who is authorized."
-msgstr "你的授權不足以執行此動作，但是你可以用其他具有足夠權限的使用者身分來登入。"
+msgstr ""
+"你的授權不足以執行此動作，但是你可以用其他具有足夠權限的使用者身分來登入。"
 
 #: src/zope/app/authentication/browser/loginform.pt:20
 msgid "User Name"
 msgstr "使用者名稱"
 
+#. Default: "Log in"
 #: src/zope/app/authentication/browser/loginform.pt:34
 msgid "login-button"
 msgstr "登入"
@@ -1155,6 +1577,7 @@ msgid "A Pluggable Persistent Authentication Plugin"
 msgstr "即插即用的永續身分驗證插件"
 
 #: src/zope/app/authentication/browser/principalfolder.zcml:14
+#: src/zope/app/authentication/principalfolder.zcml:45
 msgid "Principal Folder"
 msgstr "主體資料夾"
 
@@ -1178,6 +1601,12 @@ msgstr "新增主體資料夾"
 msgid "Principal Folder Prefix"
 msgstr "主體資料夾前綴"
 
+#: src/zope/app/authentication/browser/register.py:28
+#, fuzzy
+msgid "Register a pluggable authentication utility"
+msgstr "新型態的即插即用身分驗證公用工具"
+
+#. Default: "Search"
 #: src/zope/app/authentication/browser/schemasearch.py:30
 #: src/zope/app/security/browser/auth.py:30
 msgid "search-button"
@@ -1199,73 +1628,125 @@ msgstr "瀏覽器登入表單"
 msgid "Session Credentials Plugin"
 msgstr "連線期憑證插件"
 
-#: src/zope/app/authentication/groupfolder.py:45
+#: src/zope/app/authentication/configure.zcml:47
+#, fuzzy
+msgid "Pluggable Authentication"
+msgstr "新增即插即用身分驗證"
+
+#: src/zope/app/authentication/groupfolder.py:40
 #: src/zope/app/authentication/principalfolder.py:65
-#: src/zope/app/component/metadirectives.py:328
-#: src/zope/app/component/metadirectives.py:501
+#: src/zope/app/component/metadirectives.py:139
+#: src/zope/app/component/metadirectives.py:315
 #: src/zope/app/form/browser/ftests/test_i18n.py:33
-#: src/zope/schema/interfaces.py:101
-#: src/zope/schema/interfaces.py:463
-#: src/zope/security/interfaces.py:264
-#: src/zope/security/interfaces.py:300
-#: src/zope/app/dublincore/browser/edit.pt:17
-#: src/zope/app/schema/browser/schema_edit.pt:39
+#: src/zope/schema/interfaces.py:101 src/zope/schema/interfaces.py:476
+#: src/zope/security/interfaces.py:264 src/zope/security/interfaces.py:314
 #: src/zope/app/container/browser/contents.pt:34
 #: src/zope/app/container/browser/index.pt:28
+#: src/zope/app/schema/browser/schema_edit.pt:39
+#: src/zope/dublincore/browser/edit.pt:17
 msgid "Title"
 msgstr "標題"
 
-#: src/zope/app/authentication/groupfolder.py:46
-#: src/zope/security/interfaces.py:301
+#: src/zope/app/authentication/groupfolder.py:41
+#: src/zope/security/interfaces.py:315
 msgid "Provides a title for the permission."
 msgstr "給權限一個標題。"
 
-#: src/zope/app/authentication/groupfolder.py:50
+#: src/zope/app/authentication/groupfolder.py:45
 #: src/zope/app/authentication/principalfolder.py:69
-#: src/zope/app/component/metadirectives.py:335
-#: src/zope/app/component/metadirectives.py:508
+#: src/zope/app/component/metadirectives.py:146
+#: src/zope/app/component/metadirectives.py:322
 #: src/zope/app/form/browser/ftests/test_i18n.py:40
-#: src/zope/schema/interfaces.py:108
-#: src/zope/security/interfaces.py:270
-#: src/zope/security/interfaces.py:305
-#: src/zope/app/dublincore/browser/edit.pt:25
+#: src/zope/schema/interfaces.py:108 src/zope/security/interfaces.py:270
+#: src/zope/security/interfaces.py:319 src/zope/dublincore/browser/edit.pt:25
 msgid "Description"
 msgstr "描述"
 
-#: src/zope/app/authentication/groupfolder.py:51
-#: src/zope/security/interfaces.py:306
+#: src/zope/app/authentication/groupfolder.py:46
+#: src/zope/security/interfaces.py:320
 msgid "Provides a description for the permission."
 msgstr "給權限一個描述。"
 
-#: src/zope/app/authentication/groupfolder.py:55
+#: src/zope/app/authentication/groupfolder.py:50
 msgid "Principals"
 msgstr "主體"
 
-#: src/zope/app/authentication/groupfolder.py:58
+#: src/zope/app/authentication/groupfolder.py:53
 msgid "List of ids of principals which belong to the group"
 msgstr "屬於此群組的主體 ID 清單"
 
-#: src/zope/app/authentication/groupfolder.py:68
+#: src/zope/app/authentication/groupfolder.py:63
 msgid "Group ID prefix"
 msgstr "群組 ID 前綴"
 
-#: src/zope/app/authentication/groupfolder.py:69
+#: src/zope/app/authentication/groupfolder.py:64
 msgid "Prefix added to IDs of groups in this folder"
 msgstr "此資料夾中群組 ID 的前綴字"
 
-#: src/zope/app/authentication/groupfolder.py:88
+#: src/zope/app/authentication/groupfolder.py:82
 msgid "Group Search String"
 msgstr "群組搜尋字串"
 
-#: src/zope/app/authentication/interfaces.py:38
+#: src/zope/app/authentication/groupfolder.zcml:55
+#, fuzzy
+msgid "Group Folders"
+msgstr "群組資料夾"
+
+#: src/zope/app/authentication/idpicker.py:100
+msgid "Ids must contain only printable 7-bit non-space ASCII characters"
+msgstr ""
+
+#: src/zope/app/authentication/idpicker.py:105
+msgid "Ids can't be more than 100 characters long."
+msgstr ""
+
+#: src/zope/app/authentication/interfaces.py:183
+msgid "Groups"
+msgstr "群組"
+
+#: src/zope/app/authentication/interfaces.py:184
+msgid ""
+"ids of groups to which the principal directly belongs.\n"
+"\n"
+"            Plugins may append to this list.  Mutating the list only "
+"affects\n"
+"            the life of the principal object, and does not persist (so\n"
+"            persistently adding groups to a principal should be done by "
+"working\n"
+"            with a plugin that mutates this list every time the principal "
+"is\n"
+"            created, like the group folder in this package.)\n"
+"            "
+msgstr ""
+
+#: src/zope/app/authentication/interfaces.py:47
 msgid "Credentials Plugins"
 msgstr "憑證插件"
 
-#: src/zope/app/authentication/interfaces.py:44
+#: src/zope/app/authentication/interfaces.py:48
+msgid ""
+"Used for extracting credentials.\n"
+"        Names may be of ids of non-utility ICredentialsPlugins contained in\n"
+"        the IPluggableAuthentication, or names of registered\n"
+"        ICredentialsPlugins utilities.  Contained non-utility ids mask \n"
+"        utility names."
+msgstr ""
+
+#: src/zope/app/authentication/interfaces.py:58
 msgid "Authenticator Plugins"
 msgstr "身分驗證器插件"
 
-#: src/zope/app/authentication/interfaces.py:50
+#: src/zope/app/authentication/interfaces.py:59
+msgid ""
+"Used for converting credentials to principals.\n"
+"        Names may be of ids of non-utility IAuthenticatorPlugins contained "
+"in\n"
+"        the IPluggableAuthentication, or names of registered\n"
+"        IAuthenticatorPlugins utilities.  Contained non-utility ids mask \n"
+"        utility names."
+msgstr ""
+
+#: src/zope/app/authentication/interfaces.py:81
 #: src/zope/app/authentication/principalfolder.py:80
 #: src/zope/app/authentication/browser/principalfolder.zcml:55
 msgid "Prefix"
@@ -1290,10 +1771,10 @@ msgid "The Login/Username of the principal. This value can change."
 msgstr "主體的登入/使用者名稱。此值可以改變。"
 
 #: src/zope/app/authentication/principalfolder.py:50
-#: src/zope/app/mail/interfaces.py:164
 #: src/zope/app/pluggableauth/interfaces.py:38
-#: src/zope/app/i18n/browser/synchronize.pt:37
+#: src/zope/sendmail/interfaces.py:165
 #: src/zope/app/authentication/browser/loginform.pt:27
+#: src/zope/app/i18n/browser/synchronize.pt:37
 msgid "Password"
 msgstr "密碼"
 
@@ -1321,17 +1802,47 @@ msgstr "給主體一個描述。"
 msgid ""
 "Prefix to be added to all principal ids to assure that all ids are unique "
 "within the authentication service"
-msgstr "加在所有主體 ID 之前的前綴字，以確保使用認證服務時，全部 ID 都是唯一的。"
+msgstr ""
+"加在所有主體 ID 之前的前綴字，以確保使用認證服務時，全部 ID 都是唯一的。"
 
-#: src/zope/app/basicskin/view_macros.pt:35
+#. Default: "${name} (a utility)"
+#: src/zope/app/authentication/vocabulary.py:32
+msgid "zope.app.authentication.vocabulary-utility-plugin-title"
+msgstr ""
+
+#. Default: "${name} (in contents)"
+#: src/zope/app/authentication/vocabulary.py:35
+msgid "zope.app.authentication.vocabulary-contained-plugin-title"
+msgstr ""
+
+#. Default: "${name} (not found; deselecting will remove)"
+#: src/zope/app/authentication/vocabulary.py:38
+msgid "zope.app.authentication.vocabulary-missing-plugin-title"
+msgstr ""
+
+#: src/zope/app/basicskin/view_macros.pt:37
 msgid "User: ${user_title}"
 msgstr "使用者：${user_title}"
+
+#: src/zope/app/basicskin/view_macros.pt:43
+#: src/zope/app/rotterdam/dialog_macros.pt:161
+#: src/zope/app/rotterdam/view_macros.pt:41
+#: src/zope/app/zopetop/widget_macros.pt:251
+msgid "Powered by Zope"
+msgstr "以 Zope 製作"
+
+#: src/zope/app/boston/browser/template.pt:40
+#: src/zope/app/rotterdam/dialog_macros.pt:54
+#: src/zope/app/rotterdam/template.pt:47
+#: src/zope/app/rotterdam/template_tablelayout.pt:49
+msgid "User:"
+msgstr "使用者："
 
 #: src/zope/app/boston/browser/template.pt:58
 msgid "Location:&nbsp;"
 msgstr "位置："
 
-#: src/zope/app/boston/configure.zcml:60
+#: src/zope/app/boston/configure.zcml:63
 msgid "Boston Skin"
 msgstr "波士頓外觀風格"
 
@@ -1339,19 +1850,31 @@ msgstr "波士頓外觀風格"
 msgid "Adding info"
 msgstr "新增資訊"
 
+#: src/zope/app/broken/broken.pt:12
+msgid ""
+"This is probably because the module of the class, ${module}, can't be found "
+"or because the name, ${name}, is no longer defined by the module."
+msgstr ""
+
+#: src/zope/app/broken/broken.pt:6
+msgid "This object is broken because its class can not be found."
+msgstr ""
+
 #: src/zope/app/broken/browser.zcml:5
 msgid "Broken object"
 msgstr "破損的物件"
 
-#: src/zope/app/cache/browser/cacheable.py:64
+#. Default: "Invalidated."
+#: src/zope/app/cache/browser/cacheable.py:65
 msgid "cache-invalidated"
 msgstr "快取無效"
 
-#: src/zope/app/cache/browser/cacheable.py:66
+#. Default: "No cache associated with object."
+#: src/zope/app/cache/browser/cacheable.py:67
 msgid "no-cache-associated"
 msgstr "物件未使用快取。"
 
-#: src/zope/app/cache/browser/cacheable.py:78
+#: src/zope/app/cache/browser/cacheable.py:79
 msgid "Saved changes."
 msgstr "儲存變更。"
 
@@ -1367,6 +1890,20 @@ msgstr "此物件目前使用 ${cache_id_or_url}。"
 msgid "Cache name"
 msgstr "快取名稱"
 
+#. Default: "Save Changes"
+#: src/zope/app/cache/browser/cacheableedit.pt:46
+#: src/zope/app/cache/browser/ramedit.pt:52
+#: src/zope/app/error/browser/error_config.pt:47
+#: src/zope/app/i18nfile/browser/file_edit.pt:88
+#: src/zope/app/i18nfile/browser/image_edit.pt:94
+#: src/zope/app/securitypolicy/browser/manage_permissionform.pt:88
+#: src/zope/app/securitypolicy/browser/manage_roleform.pt:67
+#: src/zope/dublincore/browser/edit.pt:52
+#: src/zope/rdb/browser/rdbconnection.pt:34
+msgid "save-changes-button"
+msgstr "儲存變更"
+
+#. Default: "Invalidate Cached Value"
 #: src/zope/app/cache/browser/cacheableedit.pt:48
 msgid "invalidate-cache-button"
 msgstr "清除快取資料"
@@ -1375,25 +1912,17 @@ msgstr "清除快取資料"
 msgid "This edit form allows you to associate a cache with this object."
 msgstr "這個編輯表單讓你為此物件指定一個快取。"
 
-#: src/zope/app/cache/browser/configure.zcml:12
-msgid "A RAM cache is a volatile (in memory) cache"
-msgstr "記憶體快取是一種揮發性（存於記憶體）的快取"
-
-#: src/zope/app/cache/browser/configure.zcml:12
-msgid "RAM Cache"
-msgstr "記憶體快取"
-
-#: src/zope/app/cache/browser/configure.zcml:26
+#: src/zope/app/cache/browser/configure.zcml:20
 msgid "Statistics"
 msgstr "統計"
 
 #: src/zope/app/cache/browser/configure.zcml:6
-msgid "Caches"
-msgstr "快取"
+msgid "A RAM cache is a volatile (in memory) cache"
+msgstr "記憶體快取是一種揮發性（存於記憶體）的快取"
 
 #: src/zope/app/cache/browser/configure.zcml:6
-msgid "Caches can be used to make your site run faster."
-msgstr "使用快取可以讓你的網站跑的更快。"
+msgid "RAM Cache"
+msgstr "記憶體快取"
 
 #: src/zope/app/cache/browser/ramedit.pt:21
 msgid "Maximum cached entries"
@@ -1407,6 +1936,7 @@ msgstr "快取項目的最大壽命"
 msgid "Time between cache cleanups"
 msgstr "清空快取的時間間隔"
 
+#. Default: "Reset"
 #: src/zope/app/cache/browser/ramedit.pt:54
 msgid "reset-button"
 msgstr "重設"
@@ -1448,6 +1978,7 @@ msgstr "文件計數"
 msgid "Word Count"
 msgstr "字數"
 
+#. Default: "Reindex"
 #: src/zope/app/catalog/browser/advanced.pt:22
 msgid "reindex-button"
 msgstr "重建索引"
@@ -1460,443 +1991,280 @@ msgstr "總目統計"
 msgid "Index"
 msgstr "索引"
 
-#: src/zope/app/catalog/browser/configure.zcml:14
-msgid "A Catalog allows indexing and searching of objects"
-msgstr "一個用於物件索引製作與搜尋的總目"
-
-#: src/zope/app/catalog/browser/configure.zcml:39
+#: src/zope/app/catalog/browser/configure.zcml:33
 msgid "Advanced"
 msgstr "進階"
 
-#: src/zope/app/catalog/browser/configure.zcml:46
+#: src/zope/app/catalog/browser/configure.zcml:40
 msgid "Add a field index"
 msgstr "新增欄位索引"
 
-#: src/zope/app/catalog/browser/configure.zcml:56
+#: src/zope/app/catalog/browser/configure.zcml:50
 msgid "Index items based on an orderable field value"
 msgstr "基於可排序欄位值的索引項目"
 
-#: src/zope/app/catalog/browser/configure.zcml:56
-#: src/zope/app/catalog/browser/configure.zcml:64
+#: src/zope/app/catalog/browser/configure.zcml:50
+#: src/zope/app/catalog/browser/configure.zcml:58
 msgid "Field Index"
 msgstr "欄位索引"
 
-#: src/zope/app/catalog/browser/configure.zcml:64
-#: src/zope/app/catalog/browser/configure.zcml:92
+#: src/zope/app/catalog/browser/configure.zcml:58
+#: src/zope/app/catalog/browser/configure.zcml:86
 msgid "Configuration"
 msgstr "配置設定"
 
-#: src/zope/app/catalog/browser/configure.zcml:7
-msgid "Objects that support indexed searching"
-msgstr "支援索引搜尋的物件"
-
-#: src/zope/app/catalog/browser/configure.zcml:7
-#: src/zope/app/catalog/browser/configure.zcml:14
-msgid "Catalog"
-msgstr "總目"
-
-#: src/zope/app/catalog/browser/configure.zcml:73
+#: src/zope/app/catalog/browser/configure.zcml:67
 msgid "Add a text index"
 msgstr "新增文字索引"
 
-#: src/zope/app/catalog/browser/configure.zcml:83
+#: src/zope/app/catalog/browser/configure.zcml:77
 msgid ""
 "Index items based on multi-value fields with                  orderable "
 "values"
 msgstr "基於具有可排序值的多值欄位的索引項目"
 
-#: src/zope/app/catalog/browser/configure.zcml:83
-#: src/zope/app/catalog/browser/configure.zcml:92
+#: src/zope/app/catalog/browser/configure.zcml:77
+#: src/zope/app/catalog/browser/configure.zcml:86
 msgid "Text Index"
 msgstr "文字索引"
 
-#: src/zope/app/catalog/interfaces.py:64
-#: src/zope/app/catalog/text.py:33
-#: src/zope/app/component/metadirectives.py:155
-#: src/zope/app/component/metadirectives.py:483
+#: src/zope/app/catalog/browser/configure.zcml:8
+msgid "A Catalog allows indexing and searching of objects"
+msgstr "一個用於物件索引製作與搜尋的總目"
+
+#: src/zope/app/catalog/browser/configure.zcml:8
+#: src/zope/app/catalog/configure.zcml:87
+msgid "Catalog"
+msgstr "總目"
+
+#: src/zope/app/catalog/configure.zcml:101
+#, fuzzy
+msgid "Text Indexes"
+msgstr "文字索引"
+
+#: src/zope/app/catalog/configure.zcml:83
+msgid "Indexes and Catalogs"
+msgstr ""
+
+#: src/zope/app/catalog/configure.zcml:95
+#, fuzzy
+msgid "Field Indexes"
+msgstr "欄位索引"
+
+#: src/zope/app/catalog/interfaces.py:64 src/zope/app/catalog/text.py:33
+#: src/zope/app/component/metadirectives.py:297 src/zope/component/zcml.py:439
 msgid "Interface"
 msgstr "介面"
 
-#: src/zope/app/catalog/interfaces.py:65
-#: src/zope/app/catalog/text.py:34
+#: src/zope/app/catalog/interfaces.py:65 src/zope/app/catalog/text.py:34
 msgid "Objects will be adapted to this interface"
 msgstr "物件將被轉接到這個介面"
 
-#: src/zope/app/catalog/interfaces.py:71
-#: src/zope/app/catalog/text.py:41
+#: src/zope/app/catalog/interfaces.py:71 src/zope/app/catalog/text.py:41
 msgid "Field Name"
 msgstr "欄位名稱"
 
-#: src/zope/app/catalog/interfaces.py:72
-#: src/zope/app/catalog/text.py:42
+#: src/zope/app/catalog/interfaces.py:72 src/zope/app/catalog/text.py:42
 msgid "Name of the field to index"
 msgstr "被編入索引的欄位名稱"
 
-#: src/zope/app/catalog/interfaces.py:76
-#: src/zope/app/catalog/text.py:47
+#: src/zope/app/catalog/interfaces.py:76 src/zope/app/catalog/text.py:47
 msgid "Field Callable"
 msgstr "可叫用欄位"
 
-#: src/zope/app/catalog/interfaces.py:77
-#: src/zope/app/catalog/text.py:48
-msgid ""
-"If true, then the field should be called to get the value to be indexed"
+#: src/zope/app/catalog/interfaces.py:77 src/zope/app/catalog/text.py:48
+msgid "If true, then the field should be called to get the value to be indexed"
 msgstr "若為真值，則此欄位會被呼叫以取得要被編入索引的值。"
 
-#: src/zope/app/component/browser/__init__.py:104
+#: src/zope/app/component/back35.py:100
+msgid "Component Interface"
+msgstr "元件介面"
+
+#: src/zope/app/component/back35.py:101
+msgid "The interface the component provides through this registration."
+msgstr "元件透過此登錄所提供的介面。"
+
+#: src/zope/app/component/back35.py:107
+msgid "The permission needed to use the component"
+msgstr "使用元件所需的權限"
+
+#: src/zope/app/component/back35.py:220
+msgid "Registration Manager"
+msgstr "登錄管理器"
+
+#: src/zope/app/component/back35.py:221
+msgid "The registration manager keeps track of all component registrations."
+msgstr "登錄管理器會持續追蹤全部元件的註冊資訊。"
+
+#: src/zope/app/component/back35.py:279
+msgid "For interface"
+msgstr "被轉接介面"
+
+#: src/zope/app/component/back35.py:280
+msgid "The interface of the objects being adapted"
+msgstr "被轉接物件的介面"
+
+#: src/zope/app/component/back35.py:287
+msgid "With interfaces"
+msgstr "需要介面"
+
+#: src/zope/app/component/back35.py:288
+msgid "Additionally required interfaces"
+msgstr "額外需求的介面"
+
+#: src/zope/app/component/back35.py:295 src/zope/app/component/back35.py:340
+#: src/zope/app/component/browser/registration.py:196
+#: src/zope/component/zcml.py:371
+msgid "Provided interface"
+msgstr "提供介面"
+
+#: src/zope/app/component/back35.py:296
+msgid "The interface provided"
+msgstr "提供的介面"
+
+#: src/zope/app/component/back35.py:302 src/zope/component/zcml.py:104
+#: src/zope/component/zcml.py:377 src/zope/component/zcml.py:449
+#: src/zope/app/container/browser/contents.pt:33
+#: src/zope/app/container/browser/index.pt:27
+#: src/zope/app/schema/browser/schema_edit.pt:37
+msgid "Name"
+msgstr "名稱"
+
+#: src/zope/app/component/back35.py:309
+msgid "The permission required for use"
+msgstr "權限"
+
+#: src/zope/app/component/back35.py:317
+msgid "Factory Name"
+msgstr "工廠名稱"
+
+#: src/zope/app/component/back35.py:332
+#: src/zope/app/component/browser/registration.py:203
+msgid "Register As"
+msgstr "登錄為"
+
+#: src/zope/app/component/back35.py:333
+#: src/zope/app/component/browser/registration.py:204
+msgid "The name under which the utility will be known."
+msgstr "公用工具名稱"
+
+#: src/zope/app/component/back35.py:341
+#: src/zope/app/component/browser/registration.py:197
+msgid "The interface provided by the utility"
+msgstr "公用工具提供的介面"
+
+#: src/zope/app/component/back35.py:57
+msgid "Inactive"
+msgstr "停用"
+
+#: src/zope/app/component/back35.py:58
+msgid "Active"
+msgstr "啟用"
+
+#: src/zope/app/component/back35.py:75
+msgid "Registration status"
+msgstr "登錄狀態"
+
+#: src/zope/app/component/back35.py:95
+msgid "Registration Component"
+msgstr "登錄元件"
+
+#: src/zope/app/component/back35.py:96
+msgid "The component the registration is for."
+msgstr "此登錄項目的元件。"
+
+#: src/zope/app/component/browser/__init__.py:101
 #: src/zope/app/schema/browser/schema_add.pt:9
 msgid "Add Utility"
 msgstr "新增公用工具"
 
-#: src/zope/app/component/browser/configure.zcml:100
-msgid "Site-Management Folder"
-msgstr "網站管理資料夾"
-
-#: src/zope/app/component/browser/configure.zcml:143
-msgid "Make a site"
-msgstr "升級為網站"
-
-#: src/zope/app/component/browser/configure.zcml:152
-msgid "Manage Site"
-msgstr "管理網站"
-
-#: src/zope/app/component/browser/configure.zcml:166
-msgid "Visit default folder"
-msgstr "造訪預設資料夾"
-
-#: src/zope/app/component/browser/configure.zcml:173
-msgid "Software"
-msgstr "軟體"
-
-#: src/zope/app/component/browser/configure.zcml:181
+#: src/zope/app/component/browser/configure.zcml:104
 msgid "Add Site Management Folder"
 msgstr "新增網站管理資料夾"
 
-#: src/zope/app/component/browser/configure.zcml:200
-msgid "Site Management"
-msgstr "網站管理"
-
-#: src/zope/app/component/browser/configure.zcml:217
-msgid "New Utility Registration"
-msgstr "新的公用工具登錄"
-
-#: src/zope/app/component/browser/configure.zcml:240
-msgid "Edit Utility Registration"
-msgstr "編輯公用工具登錄"
-
-#: src/zope/app/component/browser/configure.zcml:278
-msgid "Change adapter"
-msgstr "更換轉接器"
-
-#: src/zope/app/component/browser/configure.zcml:46
-#: src/zope/app/component/browser/configure.zcml:81
-msgid "Registration"
-msgstr "登錄"
-
-#: src/zope/app/component/browser/configure.zcml:90
+#: src/zope/app/component/browser/configure.zcml:123
 msgid "Registrations"
 msgstr "登錄"
 
-#: src/zope/app/component/browser/editregistration.pt:23
-msgid "Summary"
-msgstr "概要"
-
-#: src/zope/app/component/browser/editregistration.pt:34
-msgid "Config item ${name}"
-msgstr "組態項目 ${name}"
-
-#: src/zope/app/component/browser/editregistration.pt:36
-msgid "(disabled)"
-msgstr "（未啟用）"
-
-#: src/zope/app/component/browser/registered.pt:19
-msgid "Add a registration for this object"
-msgstr "為此物件新增一項登錄"
-
-#: src/zope/app/component/browser/registered.pt:6
-msgid "Registrations for this object:"
-msgstr "此物件的登錄內容："
-
-#: src/zope/app/component/browser/registration.pt:11
-msgid "This object is registered as:"
-msgstr "此物件登錄為："
-
-#: src/zope/app/component/browser/registration.pt:18
-msgid "(modify)"
-msgstr "（修改）"
-
-#: src/zope/app/component/browser/registration.pt:24
-msgid "This object is currently active."
-msgstr "此物件已啟用。"
-
-#: src/zope/app/component/browser/registration.pt:25
-msgid "deactivate-button"
-msgstr "停用"
-
-#: src/zope/app/component/browser/registration.pt:29
-msgid "This object is currently inactive."
-msgstr "此物件目前已停用。"
-
-#: src/zope/app/component/browser/registration.pt:30
-msgid "activate-button"
-msgstr "啟用"
-
-#: src/zope/app/component/browser/registration.pt:36
-msgid "Advanced Options"
-msgstr "進階選項"
-
-#: src/zope/app/component/browser/registration.pt:43
-msgid "This object is not currently active."
-msgstr "此物件目前未啟用。"
-
-#: src/zope/app/component/browser/registration.pt:45
-msgid ""
-"This object won't actually be used unless it is registered to perform a "
-"specific function and is activated."
-msgstr "你必須為此物件登錄特定的功能並啟用之，否則此物件不能被使用。"
-
-#: src/zope/app/component/browser/registration.pt:50
-msgid "register-button"
+#: src/zope/app/component/browser/configure.zcml:14
+#: src/zope/app/component/browser/configure.zcml:131
+msgid "Registration"
 msgstr "登錄"
 
-#: src/zope/app/component/browser/site.py:33
-msgid "<no name>"
-msgstr "<沒有名稱>"
+#: src/zope/app/component/browser/configure.zcml:34
+msgid "Site-Management Folder"
+msgstr "網站管理資料夾"
 
-#: src/zope/app/component/browser/site_management.pt:102
-msgid "<i>No instances of this utility are available yet.</i>"
-msgstr "<i>此公用工具尚無實體可用。</i>"
+#: src/zope/app/component/browser/configure.zcml:6
+#, fuzzy
+msgid "Sample"
+msgstr "範例"
 
-#: src/zope/app/component/browser/site_management.pt:118
-msgid "ADD-TOOL-SUBMIT"
-msgstr "新增"
+#: src/zope/app/component/browser/configure.zcml:77
+msgid "Make a site"
+msgstr "升級為網站"
 
-#: src/zope/app/component/browser/site_management.pt:120
-msgid "CANCEL-ADD-TOOL-SUBMIT"
-msgstr "取消"
+#: src/zope/app/component/browser/configure.zcml:86
+msgid "Manage Site"
+msgstr "管理網站"
 
-#: src/zope/app/component/browser/site_management.pt:126
-msgid "ACTIVATE-SUBMIT"
-msgstr "啟用"
-
-#: src/zope/app/component/browser/site_management.pt:129
-msgid "DEACTIVATE-SUBMIT"
-msgstr "停用"
-
-#: src/zope/app/component/browser/site_management.pt:133
-msgid "ADD-SUBMIT"
-msgstr "新增"
-
-#: src/zope/app/component/browser/site_management.pt:136
-msgid "DELETE-SUBMIT"
-msgstr "刪除"
-
-#: src/zope/app/component/browser/site_management.pt:139
-msgid "RENAME-SUBMIT"
-msgstr "改名"
-
-#: src/zope/app/component/browser/site_management.pt:141
-msgid "RENAME-CANCEL-SUBMIT"
-msgstr "取消"
-
-#: src/zope/app/component/browser/site_management.pt:18
-msgid "Unique Utilities"
-msgstr "唯一性公用工具"
-
-#: src/zope/app/component/browser/site_management.pt:20
+#: src/zope/app/component/browser/registration.pt:10
 msgid ""
-"Unique utilities can only exist once per site manager and have no name."
-msgstr "每個網站管理器只能有一個而且沒有名稱的唯一性公用工具。"
+"This object isn't yet registered. Click <a href=\"@@addRegistration.html"
+"\">here</a> to register the object."
+msgstr ""
 
-#: src/zope/app/component/browser/site_management.pt:40
-msgid "INSTALL-SUBMIT"
-msgstr "安裝"
+#: src/zope/app/component/browser/registration.pt:17
+#, fuzzy
+msgid "This object is registered:"
+msgstr "此物件登錄為："
 
-#: src/zope/app/component/browser/site_management.pt:42
-msgid "UNINSTALL-SUBMIT"
-msgstr "解除安裝"
+#. Default: "Unregister"
+#: src/zope/app/component/browser/registration.pt:38
+#: src/zope/app/component/browser/siteregistration.pt:34
+#, fuzzy
+msgid "unregister-button"
+msgstr "登錄"
 
-#: src/zope/app/component/browser/site_management.pt:6
-msgid "<b>Site Management</b>"
-msgstr "<b>網站管理</b>"
-
-#: src/zope/app/component/browser/site_management.pt:74
-msgid "${name} (Active)"
-msgstr "${name}（啟用中）"
-
-#: src/zope/app/component/browser/site_management.pt:82
-msgid "${name} (Inactive)"
-msgstr "${name}（未啟用）"
-
-#: src/zope/app/component/browser/tools.py:101
-msgid "Tools successfully activated."
-msgstr "工具啟用成功。"
-
-#: src/zope/app/component/browser/tools.py:104
-msgid "Tools successfully deactivated."
-msgstr "工具停用成功。"
-
-#: src/zope/app/component/browser/tools.py:110
-msgid "Tools successfully deleted."
-msgstr "工具刪除成功。"
-
-#: src/zope/app/component/browser/tools.py:112
-msgid "No tools selected."
-msgstr "未選擇工具。"
-
-#: src/zope/app/component/browser/tools.py:124
-msgid "Tools successfully renamed."
-msgstr "工具改名成功。"
-
-#: src/zope/app/component/browser/tools.py:243
-#: src/zope/app/component/browser/tools.py:262
-msgid "The given tool name is already being used."
-msgstr "指定的名稱已經被使用了。"
-
-#: src/zope/app/component/browser/tools.py:85
-msgid "Tools successfully installed."
-msgstr "工具安裝成功。"
-
-#: src/zope/app/component/browser/tools.py:88
-msgid "Tools successfully uninstalled."
-msgstr "工具解除安裝成功。"
-
-#: src/zope/app/component/browser/utilreg_details.pt:11
-msgid "component:"
+#: src/zope/app/component/browser/registration.py:211
+#, fuzzy
+msgid "Comment"
 msgstr "元件："
 
-#: src/zope/app/component/browser/utilreg_details.pt:3
-msgid "provided:"
-msgstr "提供："
-
-#: src/zope/app/component/interfaces/__init__.py:110
-#: src/zope/app/presentation/interfaces.py:97
-msgid "For interface"
-msgstr "被轉接介面"
-
-#: src/zope/app/component/interfaces/__init__.py:111
-msgid "The interface of the objects being adapted"
-msgstr "被轉接物件的介面"
-
-#: src/zope/app/component/interfaces/__init__.py:118
-msgid "With interfaces"
-msgstr "需要介面"
-
-#: src/zope/app/component/interfaces/__init__.py:119
-msgid "Additionally required interfaces"
-msgstr "額外需求的介面"
-
-#: src/zope/app/component/interfaces/__init__.py:126
-#: src/zope/app/component/interfaces/__init__.py:172
-#: src/zope/app/component/metadirectives.py:302
-msgid "Provided interface"
-msgstr "提供介面"
-
-#: src/zope/app/component/interfaces/__init__.py:127
-msgid "The interface provided"
-msgstr "提供的介面"
-
-#: src/zope/app/component/interfaces/__init__.py:133
-#: src/zope/app/component/metadirectives.py:201
-#: src/zope/app/component/metadirectives.py:308
-#: src/zope/app/schema/browser/schema_edit.pt:37
-#: src/zope/app/container/browser/contents.pt:33
-#: src/zope/app/container/browser/index.pt:27
-msgid "Name"
-msgstr "名稱"
-
-#: src/zope/app/component/interfaces/__init__.py:140
-msgid "The permission required for use"
-msgstr "權限"
-
-#: src/zope/app/component/interfaces/__init__.py:148
-msgid "Factory Name"
-msgstr "工廠名稱"
-
-#: src/zope/app/component/interfaces/__init__.py:164
-msgid "Register As"
-msgstr "登錄為"
-
-#: src/zope/app/component/interfaces/__init__.py:165
-msgid "The name under which the utility will be known."
-msgstr "公用工具名稱"
-
-#: src/zope/app/component/interfaces/__init__.py:173
-msgid "The interface provided by the utility"
-msgstr "公用工具提供的介面"
-
-#: src/zope/app/component/interfaces/registration.py:100
-msgid "The interface the component provides through this registration."
-msgstr "元件透過此登錄所提供的介面。"
-
-#: src/zope/app/component/interfaces/registration.py:106
-msgid "The permission needed to use the component"
-msgstr "使用元件所需的權限"
-
-#: src/zope/app/component/interfaces/registration.py:214
-#: src/zope/app/component/configure.zcml:9
-#: src/zope/app/component/browser/editregistration.pt:4
-#: src/zope/app/component/browser/editregistration.pt:11
-msgid "Registration Manager"
+#. Default: ""
+#: src/zope/app/component/browser/registration.py:241
+#, fuzzy
+msgid "Register a $classname"
 msgstr "登錄管理器"
 
-#: src/zope/app/component/interfaces/registration.py:215
-msgid "The registration manager keeps track of all component registrations."
-msgstr "登錄管理器會持續追蹤全部元件的註冊資訊。"
+#: src/zope/app/component/browser/registration.py:245
+#, fuzzy
+msgid "Register"
+msgstr "登錄為"
 
-#: src/zope/app/component/interfaces/registration.py:32
-msgid "Inactive"
-msgstr "停用"
+#: src/zope/app/component/browser/siteregistration.pt:12
+#, fuzzy
+msgid "Registrations for this site:"
+msgstr "此物件的登錄內容："
 
-#: src/zope/app/component/interfaces/registration.py:33
-msgid "Active"
-msgstr "啟用"
+#: src/zope/app/component/browser/siteregistration.pt:9
+#, fuzzy
+msgid "Nothing is registered for this site."
+msgstr "沒有轉接器登錄此介面。"
 
-#: src/zope/app/component/interfaces/registration.py:61
-msgid "Registration status"
-msgstr "登錄狀態"
-
-#: src/zope/app/component/interfaces/registration.py:94
-msgid "Registration Component"
-msgstr "登錄元件"
-
-#: src/zope/app/component/interfaces/registration.py:95
-msgid "The component the registration is for."
-msgstr "此登錄項目的元件。"
-
-#: src/zope/app/component/interfaces/registration.py:99
-msgid "Component Interface"
-msgstr "元件介面"
-
-#: src/zope/app/component/metadirectives.py:112
-msgid "View attributes that are also allowed if the user has permission."
-msgstr "如果使用者有權限，就可以檢視相關屬性。"
-
-#: src/zope/app/component/metadirectives.py:114
-msgid ""
-"\n"
-"        By default, 'permission' only applies to viewing the view and\n"
-"        any possible sub views. By specifying 'allowed_attributes',\n"
-"        you can make the permission also apply to the extra attributes\n"
-"        on the view object."
-msgstr ""
-"\n"
-"        預設情況下，'權限' 只使用在檢視視圖與任何可能的子視圖。藉由指定 '允許的屬性' "
-"('allowed_attributes')，你也可使權限指派給在視圖物件上的額外屬性。"
-
-#: src/zope/app/component/metadirectives.py:129
+#: src/zope/app/component/metadirectives.py:103
 msgid "The name of the resource."
 msgstr "資源的名稱。"
 
-#: src/zope/app/component/metadirectives.py:130
+#: src/zope/app/component/metadirectives.py:104
 msgid "The name shows up in URLs/paths. For example 'foo'."
 msgstr "出現在 URL/路徑 中的名稱。例如 'foo'。"
 
-#: src/zope/app/component/metadirectives.py:136
+#: src/zope/app/component/metadirectives.py:110
 msgid "The interface this component provides."
 msgstr "此元件提供的介面。"
 
-#: src/zope/app/component/metadirectives.py:137
+#: src/zope/app/component/metadirectives.py:111
 msgid ""
 "\n"
 "        A view can provide an interface.  This would be used for\n"
@@ -1905,193 +2273,41 @@ msgstr ""
 "\n"
 "        視圖也可以提供介面，這將用於支援其他視圖的視圖。"
 
-#: src/zope/app/component/metadirectives.py:145
-#: src/zope/app/component/metadirectives.py:518
-#: src/zope/app/presentation/interfaces.py:31
+#: src/zope/app/component/metadirectives.py:119
+#: src/zope/app/component/metadirectives.py:335
 msgid "Request type"
 msgstr "請求型態"
 
-#: src/zope/app/component/metadirectives.py:160
-msgid "Interface type"
-msgstr "介面型態"
-
-#: src/zope/app/component/metadirectives.py:170
-msgid "Adapter factory/factories"
-msgstr "轉接器工廠"
-
-#: src/zope/app/component/metadirectives.py:171
-msgid ""
-"A list of factories (usually just one) that create the adapter instance."
-msgstr "一份產生轉接器實體的工廠清單（通常只含有一個工廠）。"
-
-#: src/zope/app/component/metadirectives.py:178
-#: src/zope/app/component/metadirectives.py:251
-msgid "Interface the component provides"
-msgstr "元件提供的介面"
-
-#: src/zope/app/component/metadirectives.py:179
-#: src/zope/app/component/metadirectives.py:252
-msgid ""
-"This attribute specifies the interface the adapter instance must provide."
-msgstr "此屬性指定轉接器實體必須提供的介面。"
-
-#: src/zope/app/component/metadirectives.py:185
-msgid "Specifications to be adapted"
-msgstr "被轉接規格"
-
-#: src/zope/app/component/metadirectives.py:186
-#: src/zope/app/component/metadirectives.py:259
-msgid "This should be a list of interfaces or classes"
-msgstr "這應該是一份介面或類別的清單"
-
-#: src/zope/app/component/metadirectives.py:195
-msgid "This adapter is only available, if the principal has this permission."
-msgstr "只有當主體擁有此權限時，才可以使用此轉接器。"
-
-#: src/zope/app/component/metadirectives.py:202
-msgid ""
-"Adapters can have names.\n"
-"\n"
-"This attribute allows you to specify the name for this adapter."
-msgstr ""
-"轉接器可以有名稱。\n"
-"\n"
-"此屬性讓你指定此轉接器的名稱。"
-
-#: src/zope/app/component/metadirectives.py:209
-#: src/zope/app/component/metadirectives.py:274
-msgid "Trusted"
-msgstr "可信任的"
-
-#: src/zope/app/component/metadirectives.py:210
-msgid ""
-"Make the adapter a trusted adapter\n"
-"\n"
-"        Trusted adapters have unfettered access to the objects they\n"
-"        adapt.  If asked to adapt security-proxied objects, then,\n"
-"        rather than getting an unproxied adapter of security-proxied\n"
-"        objects, you get a security-proxied adapter of unproxied\n"
-"        objects.\n"
-"        "
-msgstr ""
-"使轉接器成為可信任的轉接器 (trusted adapter)\n"
-"\n"
-"        可信任的轉接器可以自由存取被轉接的物件。如果要轉接安全代理物件 (security-proxied "
-"object)，你得到的是一個未被代理物件 (unproxied object) 的安全代理轉接器 (security-proxied "
-"adapter)，而不是安全代理物件 (security-proxied object) 的未被代理轉接器 (unproxied adapter)。\n"
-"        "
-
-#: src/zope/app/component/metadirectives.py:223
-#: src/zope/app/component/metadirectives.py:288
-msgid "Locate"
-msgstr "定位"
-
-#: src/zope/app/component/metadirectives.py:224
-msgid ""
-"Make the adapter a locatable adapter\n"
-"\n"
-"        Located adapter should be used if a non-public permission\n"
-"        is used.\n"
-"        "
-msgstr ""
-"使轉接器成為可定位轉接器 (locatable adapter)\n"
-"\n"
-"        被定位的轉接器應該在使用非公共權限的時候使用。\n"
-"        "
-
-#: src/zope/app/component/metadirectives.py:239
-msgid "Subscriber factory"
-msgstr "訂閱器工廠"
-
-#: src/zope/app/component/metadirectives.py:240
-msgid "A factory used to create the subscriber instance."
-msgstr "一個用來產生訂閱器實體的工廠。"
-
-#: src/zope/app/component/metadirectives.py:245
-msgid "Handler"
-msgstr "處理器"
-
-#: src/zope/app/component/metadirectives.py:246
-msgid "A callable object that handles events."
-msgstr "一個用來處理事件的可呼叫物件。"
-
-#: src/zope/app/component/metadirectives.py:258
-msgid "Interfaces or classes that this subscriber depends on"
-msgstr "此訂閱器依賴的介面或類別"
-
-#: src/zope/app/component/metadirectives.py:268
-msgid ""
-"This subscriber is only available, if the principal has this permission."
-msgstr "只有當主體擁有此權限時，才能使用此訂閱器。"
-
-#: src/zope/app/component/metadirectives.py:275
-msgid ""
-"Make the subscriber a trusted subscriber\n"
-"\n"
-"        Trusted subscribers have unfettered access to the objects they\n"
-"        adapt.  If asked to adapt security-proxied objects, then,\n"
-"        rather than getting an unproxied subscriber of security-proxied\n"
-"        objects, you get a security-proxied subscriber of unproxied\n"
-"        objects.\n"
-"        "
-msgstr ""
-"使訂閱器成為可信任的訂閱器 (trusted subscriber)\n"
-"\n"
-"        可信任的訂閱器可以自由存取被轉接的物件。如果要轉接安全代理物件 (security-proxied "
-"object)，你得到的是一個未被代理物件 (unproxied object) 的安全代理訂閱器 (security-proxied "
-"subscriber)，而不是安全代理物件 (security-proxied object) 的未被代理訂閱器 (unproxied "
-"subscriber)。\n"
-"        "
-
-#: src/zope/app/component/metadirectives.py:289
-msgid ""
-"Make the subscriber a locatable subscriber\n"
-"\n"
-"        Located subscribers should be used if a non-public permission\n"
-"        is used.\n"
-"        "
-msgstr ""
-"使訂閱器成為可定位訂閱器 (locatable subscriber)\n"
-"\n"
-"        被定位的訂閱器應該在使用非公共權限的時候使用。\n"
-"        "
-
-#: src/zope/app/component/metadirectives.py:303
-msgid "Interface provided by the utility."
-msgstr "公用工具提供的介面。"
-
-#: src/zope/app/component/metadirectives.py:309
-msgid ""
-"Name of the registration.  This is used by application code when locating a "
-"utility."
-msgstr "登錄的名稱。應用程式程式碼用它來找尋公用工具。"
-
-#: src/zope/app/component/metadirectives.py:318
+#: src/zope/app/component/metadirectives.py:129
 msgid "Component to be used"
 msgstr "將被使用的元件"
 
-#: src/zope/app/component/metadirectives.py:323
-#: src/zope/app/component/metadirectives.py:492
+#: src/zope/app/component/metadirectives.py:134
+#: src/zope/app/component/metadirectives.py:306
 #: src/zope/app/intid/browser/registrations.pt:12
 msgid "ID"
 msgstr "ID"
 
-#: src/zope/app/component/metadirectives.py:329
-#: src/zope/app/component/metadirectives.py:502
+#: src/zope/app/component/metadirectives.py:140
+#: src/zope/app/component/metadirectives.py:316
 msgid ""
 "Text suitable for use in the 'add content' menu of a management interface"
 msgstr "適合用在管理介面 '新增內容' 選單中的文字"
 
-#: src/zope/app/component/metadirectives.py:336
-#: src/zope/app/component/metadirectives.py:509
+#: src/zope/app/component/metadirectives.py:147
+#: src/zope/app/component/metadirectives.py:323
 msgid "Longer narrative description of what this factory does"
 msgstr "關於此工廠功能的詳細描述"
 
-#: src/zope/app/component/metadirectives.py:362
+#: src/zope/app/component/metadirectives.py:157 src/zope/component/zcml.py:58
+msgid "Factory"
+msgstr "工廠"
+
+#: src/zope/app/component/metadirectives.py:173
 msgid "The interface this view is the default for."
 msgstr "此視圖預設的介面。"
 
-#: src/zope/app/component/metadirectives.py:363
+#: src/zope/app/component/metadirectives.py:174
 msgid ""
 "\n"
 "        Specifies the interface for which the default view is declared. All\n"
@@ -2101,33 +2317,24 @@ msgid ""
 "        for all objects."
 msgstr ""
 "\n"
-"        指定預設視圖的介面。所有實作此介面的物件都會用到這個預設設定。如果未設定此屬性，則所有物件都可用預設值。"
+"        指定預設視圖的介面。所有實作此介面的物件都會用到這個預設設定。如果未"
+"設定此屬性，則所有物件都可用預設值。"
 
-#: src/zope/app/component/metadirectives.py:378
-msgid "The layer the resource is in."
-msgstr "資源所在的顯示層。"
+#: src/zope/app/component/metadirectives.py:190
+msgid ""
+"The layer the resource is in.  This argument has been deprecated and will be "
+"removed in Zope 3.5.  Use the 'type' argument instead."
+msgstr ""
 
-#: src/zope/app/component/metadirectives.py:389
+#: src/zope/app/component/metadirectives.py:203
 msgid "View attributes that are also allowed if user has permission."
 msgstr "如果使用者擁有權限，檢視那些也被允許的屬性。"
 
-#: src/zope/app/component/metadirectives.py:39
-msgid "Component to use"
-msgstr "要使用的元件"
-
-#: src/zope/app/component/metadirectives.py:40
-msgid ""
-"Python name of the implementation object.  This must identify an object in a "
-"module using the full dotted name.  If specified, the ``factory`` field must "
-"be left blank."
-msgstr ""
-"實作物件的 Python 名稱。這必須是一個以點號連接的完整名稱，以便能夠辨識出某模組中的某物件。若指定此名，則 ``工廠`` 欄位必須是空白的。"
-
-#: src/zope/app/component/metadirectives.py:410
+#: src/zope/app/component/metadirectives.py:224
 msgid "One or more interfaces"
 msgstr "一個或多個介面"
 
-#: src/zope/app/component/metadirectives.py:422
+#: src/zope/app/component/metadirectives.py:236
 msgid ""
 "\n"
 "        Specifies the permission by id that will be required to\n"
@@ -2136,39 +2343,39 @@ msgstr ""
 "\n"
 "        以 ID 名稱來設定權限，以符合取用或改變相關屬性和方法的需要。"
 
-#: src/zope/app/component/metadirectives.py:429
+#: src/zope/app/component/metadirectives.py:243
 msgid "Attributes and methods"
 msgstr "屬性與方法"
 
-#: src/zope/app/component/metadirectives.py:430
+#: src/zope/app/component/metadirectives.py:244
 msgid "This is a list of attributes and methods that can be accessed."
 msgstr "這是一份可存取的屬性與方法的清單。"
 
-#: src/zope/app/component/metadirectives.py:437
+#: src/zope/app/component/metadirectives.py:251
 msgid "Attributes that can be set"
 msgstr "可以設定的屬性"
 
-#: src/zope/app/component/metadirectives.py:438
+#: src/zope/app/component/metadirectives.py:252
 msgid "This is a list of attributes that can be modified/mutated."
 msgstr "這是一份可修改屬性的清單。"
 
-#: src/zope/app/component/metadirectives.py:446
+#: src/zope/app/component/metadirectives.py:260
 msgid "The listed interfaces' methods and attributes can be accessed."
 msgstr "清單中的介面屬性與方法都可以被存取。"
 
-#: src/zope/app/component/metadirectives.py:453
+#: src/zope/app/component/metadirectives.py:267
 msgid "The attributes specified by the schema can be set"
 msgstr "綱目所指定的屬性可以被設定"
 
-#: src/zope/app/component/metadirectives.py:454
+#: src/zope/app/component/metadirectives.py:268
 msgid "The listed schemas' properties can be modified/mutated."
 msgstr "清單中的綱目性質都可以被修改/變更。"
 
-#: src/zope/app/component/metadirectives.py:461
+#: src/zope/app/component/metadirectives.py:275
 msgid "Configure like this class"
 msgstr "像此類別一樣地設定"
 
-#: src/zope/app/component/metadirectives.py:462
+#: src/zope/app/component/metadirectives.py:276
 msgid ""
 "\n"
 "        This argument says that this content class should be configured in "
@@ -2177,30 +2384,15 @@ msgid ""
 "        specified, no other argument can be used."
 msgstr ""
 "\n"
-"        此參數告訴我們，此內容類別的設定方式，應該與指定類別的安全權限的方式相同。如果沒有指定這個參數，則其它參數也不能使用。"
+"        此參數告訴我們，此內容類別的設定方式，應該與指定類別的安全權限的方式"
+"相同。如果沒有指定這個參數，則其它參數也不能使用。"
 
-#: src/zope/app/component/metadirectives.py:477
+#: src/zope/app/component/metadirectives.py:291
 #: src/zope/app/apidoc/codemodule/browser/function_index.pt:32
 msgid "Attributes"
 msgstr "屬性"
 
-#: src/zope/app/component/metadirectives.py:48
-#: src/zope/app/component/metadirectives.py:77
-#: src/zope/app/component/metadirectives.py:194
-#: src/zope/app/component/metadirectives.py:267
-#: src/zope/app/component/metadirectives.py:421
-#: src/zope/app/presentation/interfaces.py:108
-#: src/zope/app/security/browser/configure.zcml:61
-#: src/zope/app/security/browser/configure.zcml:76
-#: src/zope/app/securitypolicy/browser/manage_access.pt:23
-msgid "Permission"
-msgstr "權限"
-
-#: src/zope/app/component/metadirectives.py:49
-msgid "Permission required to use this component."
-msgstr "使用此元件所需的權限。"
-
-#: src/zope/app/component/metadirectives.py:493
+#: src/zope/app/component/metadirectives.py:307
 msgid ""
 "\n"
 "        the identifier for this factory in the ZMI factory\n"
@@ -2208,31 +2400,18 @@ msgid ""
 "        string given as the content directive's 'class' attribute."
 msgstr ""
 "\n"
-"        此工廠在 ZMI 工廠識別綱目中的識別名稱。如果沒有的話，預設是內容宣告的 '類別 (class)' 屬性所設定的文字字串。"
+"        此工廠在 ZMI 工廠識別綱目中的識別名稱。如果沒有的話，預設是內容宣告"
+"的 '類別 (class)' 屬性所設定的文字字串。"
 
-#: src/zope/app/component/metadirectives.py:523
+#: src/zope/app/component/metadirectives.py:340
 msgid "Layer"
 msgstr "顯示層"
 
-#: src/zope/app/component/metadirectives.py:54
-#: src/zope/app/component/metadirectives.py:346
-msgid "Factory"
-msgstr "工廠"
-
-#: src/zope/app/component/metadirectives.py:55
-msgid ""
-"Python name of a factory which can create the implementation object.  This "
-"must identify an object in a module using the full dotted name. If "
-"specified, the ``component`` field must be left blank."
-msgstr ""
-"產生實作物件的工廠的 Python 名稱。這必須是一個以點號連接的完整名稱，以便能夠辨識出某模組中的某物件。若指定此名，則 ``component`` "
-"欄位必須是空白。"
-
-#: src/zope/app/component/metadirectives.py:67
+#: src/zope/app/component/metadirectives.py:40
 msgid "Specifications of the objects to be viewed"
 msgstr "被檢視物件的規範"
 
-#: src/zope/app/component/metadirectives.py:68
+#: src/zope/app/component/metadirectives.py:41
 msgid ""
 "This should be a list of interfaces or classes\n"
 "        "
@@ -2240,25 +2419,33 @@ msgstr ""
 "這應該是一份介面或類別的清單\n"
 "        "
 
-#: src/zope/app/component/metadirectives.py:78
+#: src/zope/app/component/metadirectives.py:50
+#: src/zope/app/component/metadirectives.py:235 src/zope/component/zcml.py:52
+#: src/zope/component/zcml.py:97 src/zope/component/zcml.py:264
+#: src/zope/app/security/browser/configure.zcml:63
+#: src/zope/app/securitypolicy/browser/manage_access.pt:23
+msgid "Permission"
+msgstr "權限"
+
+#: src/zope/app/component/metadirectives.py:51
 msgid "The permission needed to use the view."
 msgstr "檢視視圖所需的權限。"
 
-#: src/zope/app/component/metadirectives.py:83
-#: src/zope/app/component/metadirectives.py:400
+#: src/zope/app/component/metadirectives.py:56
+#: src/zope/app/component/metadirectives.py:214
 msgid "Class"
 msgstr "類別"
 
-#: src/zope/app/component/metadirectives.py:84
+#: src/zope/app/component/metadirectives.py:57
 msgid "A class that provides attributes used by the view."
 msgstr "一個類別，其所提供的屬性會被視圖使用。"
 
-#: src/zope/app/component/metadirectives.py:89
+#: src/zope/app/component/metadirectives.py:63
 #: src/zope/app/container/browser/metaconfigure.py:57
 msgid "The layer the view is in."
 msgstr "視圖所在的顯示層。"
 
-#: src/zope/app/component/metadirectives.py:90
+#: src/zope/app/component/metadirectives.py:64
 msgid ""
 "\n"
 "        A skin is composed of layers. It is common to put skin\n"
@@ -2269,12 +2456,12 @@ msgstr ""
 "        外觀 (skin) 由顯示層 (layers) 組成。我們通常將外觀相關的視圖 (viwes) "
 "放在一個與外觀同名的顯示層中。如果沒有提供 'layer' 屬性，則預設為 'default'。"
 
-#: src/zope/app/component/metadirectives.py:98
-#: src/zope/app/component/metadirectives.py:383
+#: src/zope/app/component/metadirectives.py:72
+#: src/zope/app/component/metadirectives.py:197
 msgid "Interface that is also allowed if user has permission."
 msgstr "如果使用者有權限，就可以使用該介面。"
 
-#: src/zope/app/component/metadirectives.py:99
+#: src/zope/app/component/metadirectives.py:73
 msgid ""
 "\n"
 "        By default, 'permission' only applies to viewing the view and\n"
@@ -2286,19 +2473,28 @@ msgid ""
 "        whitespace."
 msgstr ""
 "\n"
-"        預設上，'權限' 只用於視圖和任何可能的子視圖。藉由指定此屬性，權限也可用於被提供介面所描述的任何物件。\n"
+"        預設上，'權限' 只用於視圖和任何可能的子視圖。藉由指定此屬性，權限也可"
+"用於被提供介面所描述的任何物件。\n"
 "\n"
 "        可以提供多重介面，請以空白分隔。"
 
-#: src/zope/app/component/registration.py:151
-msgid "Can't delete active registration (${path})"
-msgstr "無法刪除啟用中的登錄 (${path})"
+#: src/zope/app/component/metadirectives.py:86
+msgid "View attributes that are also allowed if the user has permission."
+msgstr "如果使用者有權限，就可以檢視相關屬性。"
 
-#: src/zope/app/component/registration.py:191
-msgid "Can't move a registered component from its container."
-msgstr "無法將登錄的元件從它的容器移出。"
+#: src/zope/app/component/metadirectives.py:88
+msgid ""
+"\n"
+"        By default, 'permission' only applies to viewing the view and\n"
+"        any possible sub views. By specifying 'allowed_attributes',\n"
+"        you can make the permission also apply to the extra attributes\n"
+"        on the view object."
+msgstr ""
+"\n"
+"        預設情況下，'權限' 只使用在檢視視圖與任何可能的子視圖。藉由指定 '允許"
+"的屬性' ('allowed_attributes')，你也可使權限指派給在視圖物件上的額外屬性。"
 
-#: src/zope/app/component/vocabulary.py:276
+#: src/zope/app/component/vocabulary.py:290
 msgid "(unnamed utility)"
 msgstr "（無名的公用工具）"
 
@@ -2306,80 +2502,119 @@ msgstr "（無名的公用工具）"
 msgid "Add Content"
 msgstr "新增內容"
 
-#: src/zope/app/container/browser/adding.py:117
+#. Default: "Add"
+#: src/zope/app/container/browser/add.pt:45
+#: src/zope/app/container/browser/contents.pt:156
+#: src/zope/app/file/browser/file_add.pt:48
+#: src/zope/app/form/browser/add.pt:55
+#: src/zope/app/i18n/browser/translate.pt:49
+#: src/zope/app/schema/browser/schema_add.pt:40
+msgid "add-button"
+msgstr "新增"
+
+#: src/zope/app/container/browser/adding.py:113
 msgid "You must select the type of object to add."
 msgstr "你必須選擇想要加入的物件型態。"
 
-#: src/zope/app/container/browser/configure.zcml:18
+#: src/zope/app/container/browser/configure.zcml:5
 msgid "Find"
 msgstr "尋找"
 
+#. Default: "Rename"
 #: src/zope/app/container/browser/contents.pt:127
 msgid "container-rename-button"
 msgstr "改名"
 
+#. Default: "Cut"
 #: src/zope/app/container/browser/contents.pt:131
 msgid "container-cut-button"
 msgstr "剪下"
 
+#. Default: "Copy"
 #: src/zope/app/container/browser/contents.pt:135
 msgid "container-copy-button"
 msgstr "複製"
 
+#. Default: "Paste"
 #: src/zope/app/container/browser/contents.pt:139
 msgid "container-paste-button"
 msgstr "貼上"
 
+#. Default: "Delete"
 #: src/zope/app/container/browser/contents.pt:143
 msgid "container-delete-button"
 msgstr "刪除"
 
+#. Default: "Apply"
 #: src/zope/app/container/browser/contents.pt:174
 msgid "container-apply-button"
 msgstr "套用"
 
+#. Default: "Cancel"
 #: src/zope/app/container/browser/contents.pt:177
 msgid "container-cancel-button"
 msgstr "取消"
+
+#: src/zope/app/container/browser/contents.pt:27
+#: src/zope/app/container/browser/index.pt:19
+#: src/zope/app/intid/browser/registrations.pt:9
+#: src/zope/app/schema/browser/schema_edit.pt:31
+msgid "Content listing"
+msgstr "內容清單"
+
+#: src/zope/app/container/browser/contents.pt:35
+#: src/zope/app/file/browser/image_edit.pt:12
+msgid "Size"
+msgstr "大小"
+
+#: src/zope/app/container/browser/contents.pt:36
+#: src/zope/app/container/browser/index.pt:29
+#: src/zope/dublincore/browser/edit.pt:33
+msgid "Created"
+msgstr "建立時間"
 
 #: src/zope/app/container/browser/contents.pt:37
 #: src/zope/app/container/browser/index.pt:30
 msgid "Modified"
 msgstr "修改時間"
 
-#: src/zope/app/container/browser/contents.py:254
+#: src/zope/app/container/browser/contents.py:252
 msgid "You didn't specify any ids to remove."
 msgstr "你沒有指定要移除的物件 ID。"
 
-#: src/zope/app/container/browser/contents.py:266
+#: src/zope/app/container/browser/contents.py:264
 msgid "You didn't specify any ids to copy."
 msgstr "你沒有指定要複製的物件 ID。"
 
-#: src/zope/app/container/browser/contents.py:284
+#. Default: ""
+#: src/zope/app/container/browser/contents.py:282
 msgid "Object '${name}' (${title}) cannot be copied"
 msgstr "物件 '${name}'（${title}）無法被複製"
 
-#: src/zope/app/container/browser/contents.py:288
+#. Default: ""
+#: src/zope/app/container/browser/contents.py:286
 msgid "Object '${name}' cannot be copied"
 msgstr "物件 '${name}' 無法被複製"
 
-#: src/zope/app/container/browser/contents.py:303
+#: src/zope/app/container/browser/contents.py:301
 msgid "You didn't specify any ids to cut."
 msgstr "你沒有指定要剪下的物件 ID。"
 
-#: src/zope/app/container/browser/contents.py:321
+#. Default: ""
+#: src/zope/app/container/browser/contents.py:319
 msgid "Object '${name}' (${title}) cannot be moved"
 msgstr "物件 '${name}'（${title}）無法被搬移"
 
-#: src/zope/app/container/browser/contents.py:325
+#. Default: ""
+#: src/zope/app/container/browser/contents.py:323
 msgid "Object '${name}' cannot be moved"
 msgstr "物件 '${name}' 無法被搬移"
 
-#: src/zope/app/container/browser/contents.py:408
+#: src/zope/app/container/browser/contents.py:406
 msgid "The given name(s) %s is / are already being used"
 msgstr "指定的名稱 %s 已經被使用了"
 
-#: src/zope/app/container/browser/contents.py:69
+#: src/zope/app/container/browser/contents.py:67
 msgid "You didn't specify any ids to rename."
 msgstr "你沒有指定要改名的物件 ID。"
 
@@ -2389,24 +2624,24 @@ msgid ""
 "        skin specific views in a layer named after the skin. If the 'layer'\n"
 "        attribute is not supplied, it defaults to 'default'."
 msgstr ""
-"外觀 (skin) 由顯示層 (layers) 組成。我們通常將外觀相關的視圖 (viwes) 放在一個與外觀同名的顯示層中。如果沒有提供 '顯示層' "
-"屬性，則預設為 'default'。"
+"外觀 (skin) 由顯示層 (layers) 組成。我們通常將外觀相關的視圖 (viwes) 放在一個"
+"與外觀同名的顯示層中。如果沒有提供 '顯示層' 屬性，則預設為 'default'。"
 
 #: src/zope/app/container/browser/metaconfigure.py:76
-#: src/zope/app/component/browser/configure.zcml:113
-#: src/zope/app/workflow/browser/configure.zcml:35
-#: src/zope/app/authentication/browser/configure.zcml:49
+#: src/zope/app/component/browser/configure.zcml:47
+#: src/zope/app/component/browser/configure.zcml:96
+#: src/zope/app/workflow/browser/configure.zcml:28
+#: src/zope/app/authentication/browser/configure.zcml:67
 msgid "Contents"
 msgstr "內容"
 
 #: src/zope/app/container/browser/metaconfigure.py:85
-#: src/zope/formlib/form.py:826
-#: src/zope/app/container/browser/configure.zcml:5
-#: src/zope/app/component/browser/configure.zcml:57
-#: src/zope/app/component/browser/configure.zcml:122
+#: src/zope/formlib/form.py:835 src/zope/app/menus.zcml:17
+#: src/zope/app/menus.zcml:25 src/zope/app/component/browser/configure.zcml:56
 #: src/zope/app/workflow/stateful/browser/configure.zcml:48
 #: src/zope/app/workflow/stateful/browser/configure.zcml:85
-#: src/zope/app/schema/browser/configure.zcml:15
+#: src/zope/app/authentication/browser/configure.zcml:56
+#: src/zope/app/schema/browser/configure.zcml:9
 msgid "Add"
 msgstr "新增"
 
@@ -2414,15 +2649,15 @@ msgstr "新增"
 msgid "Container is not a valid Zope container."
 msgstr "該容器不是有效的 Zope 容器。"
 
-#: src/zope/app/container/contained.py:716
+#: src/zope/app/container/contained.py:714
 msgid "An empty name was provided. Names cannot be empty."
 msgstr "名稱不能是空的。"
 
-#: src/zope/app/container/contained.py:726
+#: src/zope/app/container/contained.py:724
 msgid "Names cannot begin with '+' or '@' or contain '/'"
 msgstr "名稱不能以 '+' 或 '@' 開頭，也不能包含 '/'"
 
-#: src/zope/app/container/contained.py:731
+#: src/zope/app/container/contained.py:729
 msgid "The given name is already being used"
 msgstr "指定的名稱已經被使用了"
 
@@ -2439,17 +2674,17 @@ msgstr ""
 "\n"
 "你必須先停用此物件，然後才能將它刪除。\n"
 
-#: src/zope/app/container/size.py:40
-#: src/zope/app/locking/storage.py:155
+#: src/zope/app/container/size.py:40 src/zope/app/locking/storage.py:157
 msgid "1 item"
 msgstr "1 個項目"
 
-#: src/zope/app/container/size.py:41
-#: src/zope/app/locking/storage.py:156
+#. Default: ""
+#: src/zope/app/container/size.py:41 src/zope/app/locking/storage.py:158
 msgid "${items} items"
 msgstr "${items} 個項目"
 
-#: src/zope/app/dav/tests/test_adapter.py:56
+#. Default: ""
+#: src/zope/app/dav/tests/test_adapter.py:54
 msgid "${num} robot unit"
 msgstr "${num} 個機器人單元"
 
@@ -2462,7 +2697,7 @@ msgid "Error type: ${error_type}"
 msgstr "錯誤型態：${error_type}"
 
 #: src/zope/app/debugskin/unauthorized.pt:8
-#: src/zope/app/exception/browser/unauthorized.pt:9
+#: src/zope/app/exception/browser/unauthorized.pt:7
 msgid "Unauthorized"
 msgstr "未授權"
 
@@ -2470,11 +2705,13 @@ msgstr "未授權"
 msgid "You're not allowed in here."
 msgstr "你未被允許進入這裡。"
 
-#: src/zope/app/demo/insensitivefolder/configure.zcml:30
+#: src/zope/app/demo/insensitivefolder/__init__.py:67
+#: src/zope/app/demo/insensitivefolder/configure.zcml:31
 msgid "Case insensitive Folder"
 msgstr "名稱大小寫視為相同的資料夾"
 
-#: src/zope/app/demo/insensitivefolder/configure.zcml:30
+#: src/zope/app/demo/insensitivefolder/__init__.py:68
+#: src/zope/app/demo/insensitivefolder/configure.zcml:31
 msgid "A simple case insensitive Folder."
 msgstr "一個簡單的名稱大小寫視為相同的資料夾"
 
@@ -2566,19 +2803,19 @@ msgstr "檔案名稱"
 msgid "File name of the data file."
 msgstr "資料檔檔案名稱"
 
-#: src/zope/app/demo/skinpref/configure.zcml:15
+#: src/zope/app/demo/skinpref/configure.zcml:10
 msgid "ZMI Settings"
 msgstr "ZMI 設定"
 
-#: src/zope/app/demo/skinpref/configure.zcml:15
+#: src/zope/app/demo/skinpref/configure.zcml:10
 msgid ""
-"         In this category you will find all preferences related to the Zope  "
-"       Management Interface (ZMI).         "
+"         In this category you will find all preferences related to the "
+"Zope         Management Interface (ZMI).         "
 msgstr ""
-"         在這分類下，你將可找到所有和 Zope 管理介面 (Zope Management Interface，ZMI) 相關的偏好設定。   "
-"      "
+"         在這分類下，你將可找到所有和 Zope 管理介面 (Zope Management "
+"Interface，ZMI) 相關的偏好設定。         "
 
-#: src/zope/app/demo/skinpref/configure.zcml:25
+#: src/zope/app/demo/skinpref/configure.zcml:20
 msgid "Skin Selection"
 msgstr "外觀選擇"
 
@@ -2629,49 +2866,17 @@ msgstr "新增一個示範整數部件"
 msgid "IntWidget"
 msgstr "整數部件"
 
-#: src/zope/app/demo/widget/browser/popup.pt:36
-#: src/zope/app/zptpage/browser/inlinecode.pt:50
-#: src/zope/app/schema/browser/schema_edit.pt:21
-#: src/zope/app/pythonpage/edit.pt:24
-#: src/zope/app/apidoc/browser/prefIndex.pt:78
-#: src/zope/app/form/browser/add.pt:25
-#: src/zope/app/form/browser/edit.pt:26
-msgid "There are ${num_errors} input errors."
-msgstr "共有 ${num_errors} 個輸入錯誤。"
-
-#: src/zope/app/demo/widget/browser/popup.pt:65
-#: src/zope/app/zptpage/browser/inlinecode.pt:64
-#: src/zope/app/file/browser/file_upload.pt:48
-#: src/zope/app/file/browser/file_add.pt:46
-#: src/zope/app/dublincore/browser/edit.pt:50
-#: src/zope/app/pythonpage/edit.pt:70
-#: src/zope/app/error/browser/error.pt:53
-#: src/zope/app/apidoc/browser/prefIndex.pt:118
-#: src/zope/app/component/browser/editregistration.pt:48
-#: src/zope/app/form/browser/add.pt:53
-#: src/zope/app/form/browser/edit.pt:53
-msgid "refresh-button"
-msgstr "更新"
-
-#: src/zope/app/demo/widget/browser/popup.pt:67
-#: src/zope/app/zptpage/browser/inlinecode.pt:66
-#: src/zope/app/pythonpage/edit.pt:72
-#: src/zope/app/apidoc/browser/prefIndex.pt:120
-#: src/zope/app/form/browser/edit.pt:55
-msgid "submit-button"
-msgstr "提交"
-
 #: src/zope/app/demo/widget/browser/textareawidget.zcml:21
 msgid "TextAreaWidget Index"
 msgstr "文字區塊部件索引"
 
 #: src/zope/app/demo/widget/browser/textareawidget.zcml:5
-msgid "Add a Demo TextAreaWidget"
-msgstr "新增一個示範文字區塊部件"
-
-#: src/zope/app/demo/widget/browser/textareawidget.zcml:5
 msgid "TextAreaWidget"
 msgstr "文字區塊部件"
+
+#: src/zope/app/demo/widget/browser/textareawidget.zcml:5
+msgid "Add a Demo TextAreaWidget"
+msgstr "新增一個示範文字區塊部件"
 
 #: src/zope/app/demo/widget/browser/textwidget.zcml:21
 msgid "TextWidget Index"
@@ -2724,8 +2929,8 @@ msgstr "只有標題與描述的 zope.schema.Bool 欄位"
 #: src/zope/app/demo/widget/interfaces/intwidget.py:47
 #: src/zope/app/demo/widget/interfaces/textareawidget.py:46
 #: src/zope/app/demo/widget/interfaces/textwidget.py:47
-#: src/zope/app/apidoc/zcmlmodule/index.pt:137
 #: src/zope/app/apidoc/ifacemodule/iface_macros.pt:82
+#: src/zope/app/apidoc/zcmlmodule/index.pt:137
 msgid "required"
 msgstr "必要項"
 
@@ -2742,7 +2947,8 @@ msgstr "限制"
 
 #: src/zope/app/demo/widget/interfaces/boolwidget.py:53
 msgid "zope.schema.Bool field with constraint lambda x: x == True."
-msgstr "限制為真值 (\"constraint = lambda x: x == True\") 的 zope.schema.Bool 欄位。"
+msgstr ""
+"限制為真值 (\"constraint = lambda x: x == True\") 的 zope.schema.Bool 欄位。"
 
 #: src/zope/app/demo/widget/interfaces/boolwidget.py:58
 #: src/zope/app/demo/widget/interfaces/intwidget.py:58
@@ -2766,7 +2972,8 @@ msgstr "必要 (\"required = True\") 的 zope.schema.Int 欄位。"
 
 #: src/zope/app/demo/widget/interfaces/intwidget.py:53
 msgid "zope.schema.Int field with constraint lambda x: x == 42."
-msgstr "限制等於 42 (\"constraint = lambda x: x == 42\") 的 zope.schema.Int 欄位。"
+msgstr ""
+"限制等於 42 (\"constraint = lambda x: x == 42\") 的 zope.schema.Int 欄位。"
 
 #: src/zope/app/demo/widget/interfaces/intwidget.py:59
 msgid "zope.schema.Int field with default = u'default'."
@@ -2796,7 +3003,8 @@ msgstr "最小與最大"
 
 #: src/zope/app/demo/widget/interfaces/intwidget.py:75
 msgid "zope.schema.Int field with min = 5 and max = 10"
-msgstr "最小是 5 而且最大是 10 (\"min = 5 and max = 10\") 的 zope.schema.Int 欄位。"
+msgstr ""
+"最小是 5 而且最大是 10 (\"min = 5 and max = 10\") 的 zope.schema.Int 欄位。"
 
 #: src/zope/app/demo/widget/interfaces/textareawidget.py:32
 msgid "zope.schema.Text field with readonly = True."
@@ -2811,15 +3019,15 @@ msgid "zope.schema.Text field with required = True."
 msgstr "必要 (\"required = True\") 的 zope.schema.Text 欄位。"
 
 #: src/zope/app/demo/widget/interfaces/textareawidget.py:52
-msgid ""
-"zope.schema.Text field with constraint = lambda x: x == u'constraint'."
+msgid "zope.schema.Text field with constraint = lambda x: x == u'constraint'."
 msgstr ""
 "限制等於 u'constraint' (\"constraint = lambda x: x == u'constraint'\") 的 "
 "zope.schema.Text 欄位。"
 
 #: src/zope/app/demo/widget/interfaces/textareawidget.py:58
 msgid "zope.schema.Text field with default = u'default'."
-msgstr "預設是 u'default' (\"default = u'default'\") 的 zope.schema.Text 欄位。"
+msgstr ""
+"預設是 u'default' (\"default = u'default'\") 的 zope.schema.Text 欄位。"
 
 #: src/zope/app/demo/widget/interfaces/textareawidget.py:63
 #: src/zope/app/demo/widget/interfaces/textwidget.py:64
@@ -2866,7 +3074,8 @@ msgstr ""
 
 #: src/zope/app/demo/widget/interfaces/textwidget.py:59
 msgid "zope.schema.TextLine field with default = u'default'."
-msgstr "預設是 u'default' (\"default = u'default'\") 的 zope.schema.TextLine 欄位。"
+msgstr ""
+"預設是 u'default' (\"default = u'default'\") 的 zope.schema.TextLine 欄位。"
 
 #: src/zope/app/demo/widget/interfaces/textwidget.py:65
 msgid "zope.schema.TextLine field with min_length = 5."
@@ -2911,63 +3120,16 @@ msgstr "源碼"
 msgid "The source of the dtml page."
 msgstr "DTML 頁面的源碼。"
 
-#: src/zope/app/dublincore/browser/box.pt:10
-msgid "Description:"
-msgstr "描述："
-
-#: src/zope/app/dublincore/browser/box.pt:14
-msgid "Created:"
-msgstr "建立時間："
-
-#: src/zope/app/dublincore/browser/box.pt:19
-msgid "Modified:"
-msgstr "修改時間："
-
-#: src/zope/app/dublincore/browser/box.pt:5
-msgid "Title:"
-msgstr "標題："
-
-#: src/zope/app/dublincore/browser/configure.zcml:10
-#: src/zope/app/zopetop/widget_macros.pt:188
-msgid "Metadata"
-msgstr "元資料"
-
-#: src/zope/app/dublincore/browser/edit.pt:33
-#: src/zope/app/container/browser/contents.pt:36
-#: src/zope/app/container/browser/index.pt:29
-msgid "Created"
-msgstr "建立時間"
-
-#: src/zope/app/dublincore/browser/edit.pt:37
-msgid "Content Last Modified"
-msgstr "內容最近修改時間"
-
-#: src/zope/app/dublincore/browser/edit.pt:41
-msgid "Creator"
-msgstr "建立者"
-
-#: src/zope/app/dublincore/browser/metadataedit.py:42
-msgid "Changed data ${datetime}"
-msgstr "變更資料 ${datetime}"
-
-#: src/zope/app/dublincore/configure.zcml:3
-msgid "zope.app.dublincore.view-permission"
-msgstr "檢視都柏林核心元資料"
-
-#: src/zope/app/dublincore/configure.zcml:9
-msgid "zope.app.dublincore.change-permission"
-msgstr "變更都柏林核心元資料"
-
 #: src/zope/app/error/browser/configure.zcml:13
 #: src/zope/app/error/browser/configure.zcml:26
 #: src/zope/app/cache/browser/cacheableedit.pt:24
-#: src/zope/app/cache/browser/ramstats.pt:11
 #: src/zope/app/cache/browser/ramedit.pt:10
+#: src/zope/app/cache/browser/ramstats.pt:11
 msgid "Errors"
 msgstr "錯誤"
 
 #: src/zope/app/error/browser/configure.zcml:28
-#: src/zope/app/authentication/browser/configure.zcml:32
+#: src/zope/app/authentication/browser/configure.zcml:39
 msgid "Configure"
 msgstr "組態"
 
@@ -2979,14 +3141,6 @@ msgstr "用來記錄錯誤的錯誤報告公用工具"
 msgid "Error Logging Utility"
 msgstr "錯誤記錄公用工具"
 
-#: src/zope/app/error/browser/configure.zcml:41
-msgid "Component to record all uncaught errors and exceptions."
-msgstr "用來記錄所有未被捕捉的錯誤與異常的元件。"
-
-#: src/zope/app/error/browser/configure.zcml:41
-msgid "Error Reporting"
-msgstr "錯誤報告"
-
 #: src/zope/app/error/browser/error.pt:11
 msgid ""
 "This page lists the exceptions that have occurred in this site recently."
@@ -2995,6 +3149,12 @@ msgstr "此頁面列出此網站最近發生的異常。"
 #: src/zope/app/error/browser/error.pt:16
 msgid "No exceptions logged."
 msgstr "沒有異常記錄。"
+
+#: src/zope/app/error/browser/error.pt:22
+#: src/zope/app/error/browser/errorentry.pt:21
+#: src/zope/app/recorder/sessions.pt:15
+msgid "Time"
+msgstr "時間"
 
 #: src/zope/app/error/browser/error.pt:23
 #: src/zope/app/error/browser/errorentry.pt:26
@@ -3072,6 +3232,7 @@ msgstr "以純文字格式顯示回溯"
 msgid "REQUEST"
 msgstr "請求"
 
+#. Default: "Return to log"
 #: src/zope/app/error/browser/errorentry.pt:79
 msgid "return-to-log-button"
 msgstr "回到記錄"
@@ -3100,7 +3261,7 @@ msgstr "系統錯誤"
 msgid "A system error occurred."
 msgstr "發生了一個系統錯誤。"
 
-#: src/zope/app/exception/browser/unauthorized.pt:11
+#: src/zope/app/exception/browser/unauthorized.pt:9
 msgid "You are not authorized"
 msgstr "你未獲得授權"
 
@@ -3127,58 +3288,50 @@ msgstr "變更檔案"
 msgid "Add an Image"
 msgstr "新增圖片"
 
-#: src/zope/app/file/browser/file.py:221
-#: src/zope/app/file/browser/file.py:364
-#: src/zope/app/form/browser/editview.py:116
-#: src/zope/formlib/form.py:784
+#. Default: ""
+#: src/zope/app/file/browser/file.py:222 src/zope/app/file/browser/file.py:364
+#: src/zope/app/form/browser/editview.py:114 src/zope/formlib/form.py:793
 msgid "Updated on ${date_time}"
 msgstr "於 ${date_time} 更新"
 
-#: src/zope/app/file/browser/file.py:232
-#: src/zope/app/file/interfaces.py:44
+#: src/zope/app/file/browser/file.py:233 src/zope/app/file/interfaces.py:44
+#: src/zope/app/file/browser/file_add.pt:31
+#: src/zope/app/file/browser/file_upload.pt:33
 #: src/zope/app/i18nfile/browser/file_edit.pt:79
 #: src/zope/app/i18nfile/browser/image_edit.pt:80
-#: src/zope/app/file/browser/file_upload.pt:33
-#: src/zope/app/file/browser/file_add.pt:31
 msgid "Data"
 msgstr "資料"
 
-#: src/zope/app/file/browser/file.py:233
-#: src/zope/app/file/interfaces.py:45
-#: src/zope/app/file/browser/file_upload.pt:33
+#: src/zope/app/file/browser/file.py:234 src/zope/app/file/interfaces.py:45
 #: src/zope/app/file/browser/file_add.pt:31
+#: src/zope/app/file/browser/file_upload.pt:33
 msgid "The actual content of the object."
 msgstr "物件的真正內容。"
 
+#. Default: ""
 #: src/zope/app/file/browser/file.py:343
 msgid ""
 "The character set specified in the content type ($charset) is not supported."
 msgstr "內容型態所指定的字元集 ($charset) 不被支援。"
 
+#. Default: ""
 #: src/zope/app/file/browser/file.py:348
 msgid ""
 "The character set specified in the content type ($charset) does not match "
 "file content."
 msgstr "內容型態所指定的字元集 ($charset) 與檔案內容不符。"
 
+#. Default: ""
 #: src/zope/app/file/browser/file.py:371
 msgid ""
 "The character set you specified ($charset) cannot encode all characters in "
 "text."
 msgstr "你指定的字元集 ($charset) 無法將文字中的全部字元編碼。"
 
+#. Default: ""
 #: src/zope/app/file/browser/file.py:376
 msgid "The character set you specified ($charset) is not supported."
 msgstr "你指定的字元集 ($charset) 不被支援。"
-
-#: src/zope/app/file/browser/file_add.pt:48
-#: src/zope/app/schema/browser/schema_add.pt:40
-#: src/zope/app/i18n/browser/translate.pt:49
-#: src/zope/app/container/browser/contents.pt:156
-#: src/zope/app/container/browser/add.pt:45
-#: src/zope/app/form/browser/add.pt:55
-msgid "add-button"
-msgstr "新增"
 
 #: src/zope/app/file/browser/file_add.pt:51
 #: src/zope/app/form/browser/add.pt:58
@@ -3189,6 +3342,7 @@ msgstr "物件名稱"
 msgid "Add a File"
 msgstr "新增檔案"
 
+#. Default: "Update"
 #: src/zope/app/file/browser/file_upload.pt:50
 #: src/zope/app/i18n/browser/synchronize.pt:118
 msgid "update-button"
@@ -3198,11 +3352,7 @@ msgstr "更新"
 msgid "Upload a file"
 msgstr "上傳檔案"
 
-#: src/zope/app/file/browser/image_edit.pt:12
-#: src/zope/app/container/browser/contents.pt:35
-msgid "Size"
-msgstr "大小"
-
+#. Default: "Add Images"
 #: src/zope/app/file/configure.zcml:19
 msgid "add-images-permission"
 msgstr "新增圖片"
@@ -3229,28 +3379,27 @@ msgstr "圖形、影像。"
 msgid "Image"
 msgstr "圖片"
 
-#: src/zope/app/file/image.py:79
+#. Default: ""
+#: src/zope/app/file/image.py:78
 msgid " ${width}x${height}"
 msgstr " ${width}x${height}"
 
-#: src/zope/app/file/interfaces.py:36
-#: src/zope/app/pythonpage/__init__.py:46
+#: src/zope/app/file/interfaces.py:36 src/zope/app/pythonpage/__init__.py:46
+#: src/zope/app/file/browser/file_add.pt:16
+#: src/zope/app/file/browser/file_upload.pt:16
 #: src/zope/app/i18nfile/browser/file_edit.pt:32
 #: src/zope/app/i18nfile/browser/image_edit.pt:33
-#: src/zope/app/file/browser/file_upload.pt:16
-#: src/zope/app/file/browser/file_add.pt:16
 msgid "Content Type"
 msgstr "內容類型"
 
-#: src/zope/app/file/interfaces.py:37
+#: src/zope/app/file/interfaces.py:37 src/zope/app/file/browser/file_add.pt:16
 #: src/zope/app/file/browser/file_upload.pt:16
-#: src/zope/app/file/browser/file_add.pt:16
 msgid "The content type identifies the type of data."
 msgstr "內容類型代表資料的型態。"
 
 #: src/zope/app/folder/browser/configure.zcml:30
-#: src/zope/app/file/browser/configure.zcml:112
-#: src/zope/app/file/browser/configure.zcml:120
+#: src/zope/app/file/browser/configure.zcml:113
+#: src/zope/app/file/browser/configure.zcml:121
 #: src/zope/app/pythonpage/configure.zcml:72
 #: src/zope/app/dtmlpage/configure.zcml:93
 #: src/zope/app/zptpage/browser/configure.zcml:70
@@ -3267,8 +3416,8 @@ msgstr "資料夾"
 msgid "Minimal folder"
 msgstr "最簡單的資料夾。"
 
-#: src/zope/app/form/browser/add.py:65
-#: src/zope/app/form/browser/editview.py:106
+#: src/zope/app/form/browser/add.py:64
+#: src/zope/app/form/browser/editview.py:104
 #: src/zope/app/form/browser/formview.py:78
 msgid "An error occurred."
 msgstr "發生了一個錯誤。"
@@ -3293,6 +3442,29 @@ msgstr "關"
 msgid "on"
 msgstr "開"
 
+#: src/zope/app/form/browser/configure.zcml:494
+msgid "Widgets and Forms"
+msgstr ""
+
+#: src/zope/app/form/browser/configure.zcml:498
+#, fuzzy
+msgid "Basic Widgets"
+msgstr "部件"
+
+#: src/zope/app/form/browser/configure.zcml:504
+#, fuzzy
+msgid "Source Widgets"
+msgstr "內文文字"
+
+#: src/zope/app/form/browser/configure.zcml:510
+#, fuzzy
+msgid "Advanced Widgets"
+msgstr "進階選項"
+
+#: src/zope/app/form/browser/configure.zcml:516
+msgid "The browser:form Directive"
+msgstr ""
+
 #: src/zope/app/form/browser/ftests/test_i18n.py:34
 msgid "A short description of the event."
 msgstr "事件的簡短描述。"
@@ -3313,34 +3485,37 @@ msgstr "某串列"
 msgid "Some item"
 msgstr "某項目"
 
-#: src/zope/app/form/browser/itemswidgets.py:219
+#. Default: ""
+#: src/zope/app/form/browser/itemswidgets.py:231
 msgid "item-missing-single-value-for-display"
 msgstr "遺漏了（單值的）項目資料"
 
-#: src/zope/app/form/browser/itemswidgets.py:238
+#. Default: ""
+#: src/zope/app/form/browser/itemswidgets.py:250
 msgid "vocabulary-missing-multiple-value-for-display"
 msgstr "遺漏了（多值的）詞彙資料"
 
-#: src/zope/app/form/browser/itemswidgets.py:387
-#: src/zope/app/form/browser/itemswidgets.py:432
+#. Default: "(no value)"
+#: src/zope/app/form/browser/itemswidgets.py:399
+#: src/zope/app/form/browser/itemswidgets.py:444
 msgid "vocabulary-missing-single-value-for-edit"
 msgstr "遺漏了（單值的）詞彙資料"
 
-#: src/zope/app/form/browser/itemswidgets.py:505
+#. Default: "(no values)"
+#: src/zope/app/form/browser/itemswidgets.py:517
 msgid "vocabulary-missing-multiple-value-for-edit"
 msgstr "遺漏了（多值的）詞彙資料"
 
 #: src/zope/app/form/browser/metaconfigure.py:261
-#: src/zope/app/security/browser/configure.zcml:84
-#: src/zope/app/component/browser/configure.zcml:240
-#: src/zope/app/cache/browser/configure.zcml:24
+#: src/zope/app/security/browser/configure.zcml:71
+#: src/zope/app/cache/browser/configure.zcml:18
 #: src/zope/app/file/browser/configure.zcml:19
 #: src/zope/app/i18nfile/browser/configure.zcml:31
 #: src/zope/app/i18nfile/browser/configure.zcml:73
 #: src/zope/app/pythonpage/configure.zcml:57
-#: src/zope/app/rdb/browser/configure.zcml:27
-#: src/zope/app/schemacontent/browser/configure.zcml:22
-#: src/zope/app/schemacontent/browser/configure.zcml:55
+#: src/zope/rdb/browser/configure.zcml:20
+#: src/zope/app/schemacontent/browser/configure.zcml:15
+#: src/zope/app/schemacontent/browser/configure.zcml:48
 #: src/zope/app/authentication/browser/session.zcml:11
 #: src/zope/app/authentication/browser/httpplugins.zcml:13
 #: src/zope/app/authentication/browser/principalfolder.zcml:40
@@ -3348,14 +3523,10 @@ msgstr "遺漏了（多值的）詞彙資料"
 #: src/zope/app/demo/menu/configure.zcml:188
 #: src/zope/app/demo/menu/configure.zcml:272
 #: src/zope/app/demo/widget/browser/boolwidget.zcml:29
-#: src/zope/app/demo/widget/browser/boolwidget.zcml:29
-#: src/zope/app/demo/widget/browser/intwidget.zcml:29
 #: src/zope/app/demo/widget/browser/intwidget.zcml:29
 #: src/zope/app/demo/widget/browser/textwidget.zcml:29
-#: src/zope/app/demo/widget/browser/textwidget.zcml:29
 #: src/zope/app/demo/widget/browser/textareawidget.zcml:29
-#: src/zope/app/demo/widget/browser/textareawidget.zcml:29
-#: src/zope/app/homefolder/configure.zcml:52
+#: src/zope/app/homefolder/configure.zcml:56
 #: src/zope/app/pluggableauth/browser/configure.zcml:56
 #: src/zope/app/schema/fieldforms.zcml:21
 #: src/zope/app/schema/fieldforms.zcml:47
@@ -3363,52 +3534,55 @@ msgstr "遺漏了（多值的）詞彙資料"
 #: src/zope/app/schema/fieldforms.zcml:99
 #: src/zope/app/schema/fieldforms.zcml:125
 #: src/zope/app/schema/fieldforms.zcml:151
-#: src/zope/app/session/browser.zcml:15
-#: src/zope/app/session/browser.zcml:38
+#: src/zope/app/session/browser.zcml:15 src/zope/app/session/browser.zcml:38
 #: src/zope/app/zptpage/browser/configure.zcml:39
-#: src/zope/app/securitypolicy/browser/configure.zcml:35
+#: src/zope/app/securitypolicy/browser/configure.zcml:28
 msgid "Edit"
 msgstr "編輯"
 
-#: src/zope/app/form/browser/sequencewidget.py:241
+#. Default: "(no value available)"
+#: src/zope/app/form/browser/sequencewidget.py:254
 msgid "sequence-value-not-provided"
 msgstr "（未提供序列值）"
 
-#: src/zope/app/form/browser/sequencewidget.py:244
+#. Default: "(no values)"
+#: src/zope/app/form/browser/sequencewidget.py:257
 msgid "sequence-value-is-empty"
 msgstr "（空的序列值）"
 
-#: src/zope/app/form/browser/sequencewidget.py:77
-msgid "remove-selected-items"
-msgstr "移除被選擇的項目"
-
-#: src/zope/app/form/browser/sequencewidget.py:84
+#: src/zope/app/form/browser/sequencewidget.py:80
 msgid "Add %s"
 msgstr "新增 %s"
 
+#. Default: "Selected"
 #: src/zope/app/form/browser/source.py:197
 #: src/zope/app/form/browser/source.py:220
 msgid "SourceDisplayWidget-label"
 msgstr "已選"
 
+#. Default: "Apply"
 #: src/zope/app/form/browser/source.py:259
 msgid "SourceInputWidget-apply"
 msgstr "套用"
 
+#. Default: "Remove"
 #: src/zope/app/form/browser/source.py:430
 msgid "MultipleSourceInputWidget-remove"
 msgstr "移除"
 
+#. Default: "Apply"
 #: src/zope/app/form/browser/source.py:459
 msgid "SourceListInputWidget-apply"
 msgstr "套用"
 
+#. Default: "Nothing"
 #: src/zope/app/form/browser/source.py:56
 #: src/zope/app/form/browser/source.py:203
 #: src/zope/app/form/browser/source.py:213
 msgid "SourceDisplayWidget-missing"
 msgstr "遺漏"
 
+#. Default: "Invalid value"
 #: src/zope/app/form/browser/source.py:67
 #: src/zope/app/form/browser/source.py:98
 msgid "SourceDisplayWidget-invalid"
@@ -3442,15 +3616,15 @@ msgstr "無效的浮點數資料"
 msgid "Invalid datetime data"
 msgstr "無效的日期時間資料"
 
-#: src/zope/app/fssync/browser/__init__.py:157
+#: src/zope/app/fssync/browser/__init__.py:156
 msgid "required argument 'name' missing"
 msgstr "缺少必要的參數  'name'"
 
-#: src/zope/app/fssync/browser/__init__.py:216
+#: src/zope/app/fssync/browser/__init__.py:215
 msgid "Up-to-date check failed:"
 msgstr "更新資料檢查失敗："
 
-#: src/zope/app/fssync/browser/__init__.py:92
+#: src/zope/app/fssync/browser/__init__.py:91
 msgid "Content-Type is not application/x-snarf"
 msgstr "內容型態不是 application/x-snarf"
 
@@ -3503,30 +3677,40 @@ msgstr "不，保持最新的。"
 msgid "Database generations"
 msgstr "資料庫世代"
 
-#: src/zope/app/homefolder/browser.py:40
+#: src/zope/app/generations/configure.zcml:28
+#, fuzzy
+msgid "Generations"
+msgstr "最小世代"
+
+#: src/zope/app/homefolder/browser.py:41
 msgid "path is not correct !"
+msgstr "路徑不對！"
+
+#: src/zope/app/homefolder/browser.py:56
+#, fuzzy
+msgid "dotted name is not correct !"
 msgstr "路徑不對！"
 
 #: src/zope/app/homefolder/configure.zcml:32
 msgid "Add Home Folder Manager"
 msgstr "新增家目錄管理器"
 
-#: src/zope/app/homefolder/configure.zcml:45
-#: src/zope/app/homefolder/configure.zcml:74
+#: src/zope/app/homefolder/configure.zcml:49
 msgid "Home Folder Manager"
 msgstr "家目錄管理器"
 
-#: src/zope/app/homefolder/configure.zcml:52
+#: src/zope/app/homefolder/configure.zcml:56
 msgid "Edit Home Folder Manager"
 msgstr "編輯家目錄管理器"
 
-#: src/zope/app/homefolder/configure.zcml:65
+#: src/zope/app/homefolder/configure.zcml:74
 msgid "Assignments"
 msgstr "指派"
 
-#: src/zope/app/homefolder/configure.zcml:74
-msgid "A Principal Home Folder Manager"
-msgstr "主體家目錄管理器"
+#: src/zope/app/homefolder/configure.zcml:89
+#, fuzzy
+msgid "Principal Home Folder"
+msgstr "主體資料夾"
 
 #: src/zope/app/homefolder/interfaces.py:28
 msgid "Home Folder"
@@ -3573,38 +3757,37 @@ msgstr "家目錄區域角色"
 msgid ""
 "The local role that the user will have in its home folder. This role is only "
 "set on folders that are created by the manager."
-msgstr "使用者在自己的家目錄中擁有的區域角色。只有管理者建立的資料夾才會設定此角色。"
+msgstr ""
+"使用者在自己的家目錄中擁有的區域角色。只有管理者建立的資料夾才會設定此角色。"
 
-#: src/zope/app/i18n/browser/configure.zcml:17
+#: src/zope/app/homefolder/interfaces.py:68
+msgid "Container Type to create"
+msgstr ""
+
+#: src/zope/app/homefolder/interfaces.py:69
+msgid ""
+"The container type that will be created upon first call of getHomeFolder (if "
+"autoCreate is on)"
+msgstr ""
+
+#: src/zope/app/i18n/browser/configure.zcml:10
 msgid "Translate"
 msgstr "翻譯"
 
-#: src/zope/app/i18n/browser/configure.zcml:35
-#: src/zope/app/workflow/browser/configure.zcml:15
+#: src/zope/app/i18n/browser/configure.zcml:28
+#: src/zope/app/workflow/browser/configure.zcml:8
 msgid "Import/Export"
 msgstr "匯入/匯出"
 
-#: src/zope/app/i18n/browser/configure.zcml:48
+#: src/zope/app/i18n/browser/configure.zcml:41
 msgid "Synchronize"
 msgstr "同步化"
 
-#: src/zope/app/i18n/browser/configure.zcml:5
-msgid ""
-"Translation Domains allow you to localize your software by       providing "
-"message translations."
-msgstr "翻譯領域讓你使用訊息翻譯來將你的軟體本地化。"
-
-#: src/zope/app/i18n/browser/configure.zcml:5
-#: src/zope/app/applicationcontrol/browser/configure.zcml:41
-#: src/zope/app/applicationcontrol/browser/translationdomaincontrol.pt:4
-msgid "Translation Domains"
-msgstr "翻譯領域"
-
-#: src/zope/app/i18n/browser/configure.zcml:61
+#: src/zope/app/i18n/browser/configure.zcml:54
 msgid "Translation Domain"
 msgstr "翻譯領域"
 
-#: src/zope/app/i18n/browser/configure.zcml:61
+#: src/zope/app/i18n/browser/configure.zcml:54
 msgid "A Persistent Translation Domain"
 msgstr "永續的翻譯領域"
 
@@ -3616,14 +3799,28 @@ msgstr "匯入與匯出訊息"
 msgid "Here you can export and import messages from your Translation Domain."
 msgstr "在此處你可以從你的翻譯領域匯出與匯入訊息。"
 
+#: src/zope/app/i18n/browser/exportimport.pt:21
+#: src/zope/app/i18n/browser/synchronize.pt:44
+#: src/zope/app/i18n/browser/translate.pt:16
+msgid "Select Languages:"
+msgstr "選擇語言："
+
 #: src/zope/app/i18n/browser/exportimport.pt:33
 msgid "Import File Name:"
 msgstr "匯入檔案名稱："
 
+#. Default: "Import"
 #: src/zope/app/i18n/browser/exportimport.pt:38
 msgid "import-button"
 msgstr "匯入"
 
+#: src/zope/app/i18n/browser/exportimport.pt:4
+#: src/zope/app/i18n/browser/translate.pt:4
+#: src/zope/app/i18n/browser/translatemessage.pt:4
+msgid "Translation Domain - Translate"
+msgstr "翻譯領域 - 翻譯"
+
+#. Default: "Export"
 #: src/zope/app/i18n/browser/exportimport.pt:40
 msgid "export-button"
 msgstr "匯出"
@@ -3640,13 +3837,26 @@ msgstr "伺服器 URL"
 msgid "Translation Domain - Synchronize"
 msgstr "翻譯領域 - 同步化"
 
+#. Default: "Save Settings"
 #: src/zope/app/i18n/browser/synchronize.pt:66
 msgid "save-settings-button"
 msgstr "儲存設定"
 
+#. Default: "Synchronize"
 #: src/zope/app/i18n/browser/synchronize.pt:71
 msgid "synchronize-button"
 msgstr "同步化"
+
+#: src/zope/app/i18n/browser/synchronize.pt:88
+#: src/zope/app/i18n/browser/translate.pt:77
+#: src/zope/app/i18n/browser/translatemessage.pt:17
+msgid "Message Id"
+msgstr "訊息 ID"
+
+#: src/zope/app/i18n/browser/synchronize.pt:90
+#: src/zope/app/recorder/sessions.pt:18
+msgid "Status"
+msgstr "狀態"
 
 #: src/zope/app/i18n/browser/synchronize.py:34
 msgid "Up to Date"
@@ -3680,25 +3890,15 @@ msgstr "編輯訊息"
 msgid "Delete Messages"
 msgstr "刪除訊息"
 
-#: src/zope/app/i18n/browser/translate.pt:16
-#: src/zope/app/i18n/browser/synchronize.pt:44
-#: src/zope/app/i18n/browser/exportimport.pt:21
-msgid "Select Languages:"
-msgstr "選擇語言："
-
+#. Default: "Edit"
 #: src/zope/app/i18n/browser/translate.pt:35
 msgid "edit-button"
 msgstr "編輯"
 
+#. Default: "Delete"
 #: src/zope/app/i18n/browser/translate.pt:38
 msgid "delete-button"
 msgstr "刪除"
-
-#: src/zope/app/i18n/browser/translate.pt:4
-#: src/zope/app/i18n/browser/translatemessage.pt:4
-#: src/zope/app/i18n/browser/exportimport.pt:4
-msgid "Translation Domain - Translate"
-msgstr "翻譯領域 - 翻譯"
 
 #: src/zope/app/i18n/browser/translate.pt:46
 msgid "New Language:"
@@ -3708,15 +3908,10 @@ msgstr "新語言："
 msgid "Filter (% - wildcard):"
 msgstr "過濾器（% - 萬用字元）："
 
+#. Default: "Filter"
 #: src/zope/app/i18n/browser/translate.pt:63
 msgid "filter-button"
 msgstr "過濾器"
-
-#: src/zope/app/i18n/browser/translate.pt:77
-#: src/zope/app/i18n/browser/translatemessage.pt:17
-#: src/zope/app/i18n/browser/synchronize.pt:88
-msgid "Message Id"
-msgstr "訊息 ID"
 
 #: src/zope/app/i18n/browser/translatemessage.pt:31
 msgid "Edit Message"
@@ -3730,137 +3925,20 @@ msgstr "一個支援多地區設定 (locale) 的檔案。"
 msgid "A multi-locale version of an Image."
 msgstr "一個多地區設定版本的圖片。"
 
-#: src/zope/app/i18nfile/browser/file_edit.pt:25
-#: src/zope/app/i18nfile/browser/image_edit.pt:25
-#: src/zope/app/i18nfile/browser/image_edit.pt:87
-#: src/zope/app/cache/browser/cacheableedit.pt:53
-#: src/zope/app/cache/browser/ramstats.pt:38
-#: src/zope/app/cache/browser/ramedit.pt:56
-#: src/zope/app/applicationcontrol/browser/runtimeinfo.pt:12
-#: src/zope/app/applicationcontrol/browser/zodbcontrol.pt:11
-#: src/zope/app/applicationcontrol/browser/zodbcontrol.pt:23
-#: src/zope/app/applicationcontrol/browser/translationdomaincontrol.pt:9
-#: src/zope/app/undo/undo_macros.pt:86
-#: src/zope/app/zptpage/browser/inlinecode.pt:13
-#: src/zope/app/zptpage/browser/inlinecode.pt:45
-#: src/zope/app/zptpage/browser/inlinecode.pt:55
-#: src/zope/app/file/browser/file_upload.pt:11
-#: src/zope/app/file/browser/image_edit.pt:13
-#: src/zope/app/file/browser/file_add.pt:11
-#: src/zope/app/dublincore/browser/edit.pt:12
-#: src/zope/app/zopetop/widget_macros.pt:15
-#: src/zope/app/zopetop/widget_macros.pt:23
-#: src/zope/app/zopetop/widget_macros.pt:158
-#: src/zope/app/zopetop/widget_macros.pt:175
-#: src/zope/app/zopetop/widget_macros.pt:212
-#: src/zope/app/zopetop/widget_macros.pt:227
-#: src/zope/app/pythonpage/edit.pt:14
-#: src/zope/app/pythonpage/edit.pt:19
-#: src/zope/app/onlinehelp/browser/helptopic.pt:3
-#: src/zope/app/exception/browser/user.pt:7
-#: src/zope/app/apidoc/browser/contents.pt:24
-#: src/zope/app/apidoc/browser/contents.pt:29
-#: src/zope/app/apidoc/browser/menu_macros.pt:78
-#: src/zope/app/apidoc/browser/menu_macros.pt:84
-#: src/zope/app/apidoc/browser/modules.pt:14
-#: src/zope/app/apidoc/browser/static_modules.pt:14
-#: src/zope/app/apidoc/browser/static_menu_macros.pt:87
-#: src/zope/app/apidoc/browser/static_menu_macros.pt:93
-#: src/zope/app/apidoc/browser/prefIndex.pt:66
-#: src/zope/app/apidoc/browser/prefIndex.pt:68
-#: src/zope/app/apidoc/browser/prefIndex.pt:73
-#: src/zope/app/apidoc/browser/prefIndex.pt:95
-#: src/zope/app/apidoc/browser/prefIndex.pt:100
-#: src/zope/app/apidoc/browser/prefIndex.pt:103
-#: src/zope/app/apidoc/browser/static_contents.pt:24
-#: src/zope/app/apidoc/browser/static_contents.pt:29
-#: src/zope/app/apidoc/codemodule/browser/module_index.pt:9
-#: src/zope/app/apidoc/codemodule/browser/module_index.pt:16
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:142
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:144
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:183
-#: src/zope/app/apidoc/codemodule/browser/introspector.pt:185
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:11
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:101
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:103
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:147
-#: src/zope/app/apidoc/codemodule/browser/class_index.pt:149
-#: src/zope/app/apidoc/ifacemodule/iface_macros.pt:126
-#: src/zope/app/rotterdam/template.pt:112
-#: src/zope/app/rotterdam/template.pt:130
-#: src/zope/app/rotterdam/template.pt:139
-#: src/zope/app/rotterdam/view_macros.pt:5
-#: src/zope/app/rotterdam/view_macros.pt:24
-#: src/zope/app/rotterdam/template_tablelayout.pt:113
-#: src/zope/app/rotterdam/template_tablelayout.pt:130
-#: src/zope/app/rotterdam/template_tablelayout.pt:137
-#: src/zope/app/boston/browser/template.pt:88
-#: src/zope/app/container/browser/contents.pt:20
-#: src/zope/app/container/browser/contents.pt:78
-#: src/zope/app/container/browser/contents.pt:96
-#: src/zope/app/container/browser/contents.pt:103
-#: src/zope/app/container/browser/contents.pt:110
-#: src/zope/app/container/browser/contents.pt:113
-#: src/zope/app/container/browser/contents.pt:116
-#: src/zope/app/container/browser/commontasks.pt:11
-#: src/zope/app/container/browser/commontasks.pt:21
-#: src/zope/app/container/browser/commontasks.pt:31
-#: src/zope/app/container/browser/index.pt:45
-#: src/zope/app/container/browser/index.pt:52
-#: src/zope/app/container/browser/index.pt:54
-#: src/zope/app/container/browser/index.pt:56
-#: src/zope/app/container/browser/add.pt:10
-#: src/zope/app/container/browser/add.pt:30
-#: src/zope/app/container/browser/add.pt:32
-#: src/zope/app/securitypolicy/browser/manage_roleform.pt:6
-#: src/zope/app/securitypolicy/browser/manage_roleform.pt:16
-#: src/zope/app/securitypolicy/browser/manage_roleform.pt:40
-#: src/zope/app/securitypolicy/browser/manage_roleform.pt:53
-#: src/zope/app/securitypolicy/browser/manage_permissionform.pt:34
-#: src/zope/app/securitypolicy/browser/manage_permissionform.pt:74
-#: src/zope/app/securitypolicy/browser/manage_access.pt:11
-#: src/zope/app/securitypolicy/browser/manage_access.pt:37
-#: src/zope/app/securitypolicy/browser/manage_access.pt:56
-#: src/zope/app/securitypolicy/browser/granting.pt:6
-#: src/zope/app/securitypolicy/browser/granting.pt:35
-#: src/zope/app/securitypolicy/browser/granting.pt:61
-#: src/zope/app/component/browser/utilreg_details.pt:8
-#: src/zope/app/component/browser/utilreg_details.pt:12
-#: src/zope/app/component/browser/site_management.pt:10
-#: src/zope/app/component/browser/site_management.pt:28
-#: src/zope/app/component/browser/site_management.pt:33
-#: src/zope/app/component/browser/site_management.pt:53
-#: src/zope/app/component/browser/site_management.pt:55
-#: src/zope/app/component/browser/site_management.pt:59
-#: src/zope/app/component/browser/site_management.pt:113
-#: src/zope/app/form/browser/display.pt:9
-#: src/zope/app/form/browser/add.pt:13
-#: src/zope/app/form/browser/add.pt:19
-#: src/zope/app/form/browser/edit.pt:14
-#: src/zope/app/form/browser/edit.pt:20
-msgid "${DYNAMIC_CONTENT}"
-msgstr "${DYNAMIC_CONTENT}"
-
 #: src/zope/app/i18nfile/browser/file_edit.pt:40
 #: src/zope/app/i18nfile/browser/image_edit.pt:41
 msgid "Default Language"
 msgstr "預設語言"
 
-#: src/zope/app/i18nfile/browser/file_edit.pt:55
-#: src/zope/app/i18nfile/browser/image_edit.pt:56
-#: src/zope/app/applicationcontrol/browser/translationdomaincontrol.pt:24
-#: src/zope/app/i18n/browser/synchronize.pt:89
-msgid "Language"
-msgstr "語言"
-
+#. Default: "Show"
 #: src/zope/app/i18nfile/browser/file_edit.pt:67
 #: src/zope/app/i18nfile/browser/image_edit.pt:68
 msgid "show-button"
 msgstr "顯示"
 
+#. Default: "Remove"
 #: src/zope/app/i18nfile/browser/file_edit.pt:69
 #: src/zope/app/i18nfile/browser/image_edit.pt:70
-#: src/zope/app/component/browser/editregistration.pt:50
 msgid "remove-button"
 msgstr "移除"
 
@@ -3868,18 +3946,6 @@ msgstr "移除"
 #: src/zope/app/i18nfile/browser/image_edit.pt:73
 msgid "Add new language"
 msgstr "新增語言"
-
-#: src/zope/app/i18nfile/browser/file_edit.pt:88
-#: src/zope/app/i18nfile/browser/image_edit.pt:94
-#: src/zope/app/cache/browser/cacheableedit.pt:46
-#: src/zope/app/cache/browser/ramedit.pt:52
-#: src/zope/app/dublincore/browser/edit.pt:52
-#: src/zope/app/rdb/browser/rdbconnection.pt:34
-#: src/zope/app/error/browser/error_config.pt:47
-#: src/zope/app/securitypolicy/browser/manage_roleform.pt:67
-#: src/zope/app/securitypolicy/browser/manage_permissionform.pt:88
-msgid "save-changes-button"
-msgstr "儲存變更"
 
 #: src/zope/app/i18nfile/browser/i18nfile.py:46
 #: src/zope/app/i18nfile/browser/i18nimage.py:32
@@ -3919,26 +3985,16 @@ msgid "I18n Image"
 msgstr "I18n 圖片"
 
 #: src/zope/app/intid/browser/configure.zcml:12
-msgid "A utility that provides unique ids to objects"
-msgstr "提供唯一物件 ID 的公用工具"
-
-#: src/zope/app/intid/browser/configure.zcml:12
-msgid "Unique Id Utility"
-msgstr "唯一 ID 公用工具"
-
-#: src/zope/app/intid/browser/configure.zcml:19
 msgid "Registered Objects"
 msgstr "已登錄物件"
 
 #: src/zope/app/intid/browser/configure.zcml:5
-msgid "Unique Id Tool"
-msgstr "唯一 ID 工具"
+msgid "A utility that provides unique ids to objects"
+msgstr "提供唯一物件 ID 的公用工具"
 
 #: src/zope/app/intid/browser/configure.zcml:5
-msgid ""
-"Unique Ids Tools are used to provide system-wide unique ids       for "
-"documents."
-msgstr "唯一 ID 工具被用來為每個物件提供全系統唯一的 ID。"
+msgid "Unique Id Utility"
+msgstr "唯一 ID 公用工具"
 
 #: src/zope/app/intid/browser/registrations.pt:12
 msgid "Object"
@@ -3954,15 +4010,21 @@ msgid ""
 "interfaces and classes.       "
 msgstr "       使用物件內部分析機制來發掘與瀏覽介面及類別。       "
 
+#. Default: "Introspect Object Classes and Interfaces"
 #: src/zope/app/introspector/configure.zcml:6
 msgid "zope.app.introspector.Introspect"
 msgstr "物件類別與介面內部分析"
 
-#: src/zope/app/keyreference/interfaces.py:37
+#: src/zope/app/keyreference/configure.zcml:26
+#, fuzzy
+msgid "Persistent Key References"
+msgstr "偏好設定"
+
+#: src/zope/app/keyreference/interfaces.py:38
 msgid "Key Type Id"
 msgstr "鍵型態 ID"
 
-#: src/zope/app/keyreference/interfaces.py:38
+#: src/zope/app/keyreference/interfaces.py:39
 msgid ""
 "Key references should sort first on their key type and second on any type-"
 "specific information."
@@ -3980,8 +4042,7 @@ msgstr "找不到主體"
 msgid "Object is already locked"
 msgstr "物件已被鎖定"
 
-#: src/zope/app/locking/adapter.py:82
-#: src/zope/app/locking/adapter.py:92
+#: src/zope/app/locking/adapter.py:82 src/zope/app/locking/adapter.py:92
 msgid "Object is not locked"
 msgstr "物件未被鎖定"
 
@@ -3989,103 +4050,54 @@ msgstr "物件未被鎖定"
 msgid "Principal is not lock owner"
 msgstr "主體並非鎖定擁有人"
 
-#: src/zope/app/locking/interfaces.py:105
+#: src/zope/app/locking/interfaces.py:104
 msgid "id of the principal owning the lock"
 msgstr "擁有鎖定的主體的 ID"
 
-#: src/zope/app/locking/interfaces.py:109
+#: src/zope/app/locking/interfaces.py:108
 msgid "time value indicating the creation time"
 msgstr "表示建立時間的時間值"
 
-#: src/zope/app/locking/interfaces.py:114
+#: src/zope/app/locking/interfaces.py:113
 msgid "time value indicating the lock timeout from creation"
 msgstr "表示從建立時間起算的的鎖定逾期時間值"
 
-#: src/zope/app/mail/configure.zcml:7
-msgid "send-mail-permission"
-msgstr "寄信權限"
-
-#: src/zope/app/mail/interfaces.py:105
-msgid "Queue path"
-msgstr "佇列路徑"
-
-#: src/zope/app/mail/interfaces.py:106
-#: src/zope/app/mail/interfaces.py:115
-msgid "Pathname of the directory used to queue mail."
-msgstr "郵件佇列目錄的路徑名稱。"
-
-#: src/zope/app/mail/interfaces.py:114
-msgid "Queue Path"
-msgstr "佇列路徑"
-
-#: src/zope/app/mail/interfaces.py:118
-msgid "Polling Interval"
-msgstr "輪詢間隔"
-
-#: src/zope/app/mail/interfaces.py:119
-msgid "How often the queue is checked for new messages (in milliseconds)"
-msgstr "每隔多久檢查佇列是否有新訊息（以毫秒為單位）"
-
-#: src/zope/app/mail/interfaces.py:151
-msgid "Hostname"
-msgstr "主機名稱"
-
-#: src/zope/app/mail/interfaces.py:152
-msgid "Name of server to be used as SMTP server."
-msgstr "SMTP 伺服器名稱。"
-
-#: src/zope/app/mail/interfaces.py:155
-msgid "Port"
-msgstr "埠號"
-
-#: src/zope/app/mail/interfaces.py:156
-msgid "Port of SMTP service"
-msgstr "SMTP 服務埠號"
-
-#: src/zope/app/mail/interfaces.py:160
-#: src/zope/app/i18n/browser/synchronize.pt:32
-msgid "Username"
-msgstr "使用者名稱"
-
-#: src/zope/app/mail/interfaces.py:161
-msgid "Username used for optional SMTP authentication."
-msgstr "用於（選擇性的）SMTP 身分驗證的使用者名稱。"
-
-#: src/zope/app/mail/interfaces.py:165
-msgid "Password used for optional SMTP authentication."
-msgstr "用於（選擇性的）SMTP 身分驗證的密碼。"
-
-#: src/zope/app/menus.zcml:10
+#: src/zope/app/menus.zcml:11
 msgid "Menu for displaying actions to be performed"
 msgstr "顯示可執行動作的選單"
 
-#: src/zope/app/menus.zcml:14
-msgid "Menu of caches to be added"
-msgstr "快取選單"
+#: src/zope/app/menus.zcml:11 src/zope/app/zopetop/widget_macros.pt:171
+msgid "Actions"
+msgstr "動作"
 
-#: src/zope/app/menus.zcml:18
-msgid "Menu of objects to be added to content folders"
-msgstr "可加到內容資料夾中的物件的選單"
-
-#: src/zope/app/menus.zcml:22
-msgid "Menu for objects to be added according to containment constraints"
+#: src/zope/app/menus.zcml:17
+#, fuzzy
+msgid ""
+"Menu for objects to be added according to                    containment "
+"constraints"
 msgstr "符合包含限制的物件的選單"
 
-#: src/zope/app/menus.zcml:28
+#: src/zope/app/menus.zcml:25
 msgid "Menu of objects to be added to site management folders"
 msgstr "可加到網站管理資料夾中的物件的選單"
 
-#: src/zope/app/menus.zcml:32
-msgid "Menu of database connections to be added"
-msgstr "資料庫連線的選單"
-
-#: src/zope/app/menus.zcml:36
+#: src/zope/app/menus.zcml:31
 msgid "Menu of addable configuration objects"
 msgstr "可加入組態物件的選單"
 
-#: src/zope/app/menus.zcml:6
+#: src/zope/app/menus.zcml:31
+#, fuzzy
+msgid "Add Registration"
+msgstr "登錄"
+
+#: src/zope/app/menus.zcml:5
 msgid "Menu for displaying alternate representations of an object"
 msgstr "顯示物件的替代表現的選單"
+
+#: src/zope/app/menus.zcml:5 src/zope/app/apidoc/ifacemodule/index.pt:168
+#: src/zope/app/zopetop/widget_macros.pt:154
+msgid "Views"
+msgstr "視圖"
 
 #: src/zope/app/onlinehelp/browser/configure.zcml:48
 #: src/zope/app/demo/menu/configure.zcml:234
@@ -4153,8 +4165,7 @@ msgid ""
 msgstr "指向資源的路徑，假設與說明主題在同一個目錄"
 
 #: src/zope/app/onlinehelp/interfaces.py:53
-#: src/zope/security/interfaces.py:258
-#: src/zope/security/interfaces.py:294
+#: src/zope/security/interfaces.py:258 src/zope/security/interfaces.py:308
 msgid "Id"
 msgstr "ID"
 
@@ -4206,14 +4217,17 @@ msgstr "視圖名稱"
 msgid "The View Name for which this Help Topic is registered"
 msgstr "此說明主題登錄的視圖名稱"
 
-#: src/zope/app/pagetemplate/engine.py:122
+#: src/zope/app/pagetemplate/engine.py:121
 msgid ""
 "Inline Code Evaluation is deactivated, which means that you cannot have "
 "inline code snippets in your Page Template. Activate Inline Code Evaluation "
 "and try again."
-msgstr "行內程式碼求值已被停用，這表示你不能在頁面模版中插入行內程式碼，請啟用行內程式碼求值，然後再試試看。"
+msgstr ""
+"行內程式碼求值已被停用，這表示你不能在頁面模版中插入行內程式碼，請啟用行內程"
+"式碼求值，然後再試試看。"
 
-#: src/zope/app/pagetemplate/engine.py:131
+#. Default: ""
+#: src/zope/app/pagetemplate/engine.py:130
 msgid "No interpreter named \"${lang_name}\" was found."
 msgstr "找不到名為 \"${lang_name}\" 的解譯器。"
 
@@ -4245,6 +4259,11 @@ msgstr "使用者密碼。"
 msgid "${name} Preferences"
 msgstr "${name} 偏好設定"
 
+#: src/zope/app/preference/configure.zcml:106
+#, fuzzy
+msgid "User Preferences API"
+msgstr "使用者偏好設定"
+
 #: src/zope/app/preference/configure.zcml:30
 #: src/zope/app/apidoc/browser/modules.pt:22
 msgid "User Preferences"
@@ -4255,102 +4274,12 @@ msgid "A Default User Preferences Provider"
 msgstr "預設的使用者偏好設定供應器"
 
 #: src/zope/app/preference/configure.zcml:70
-#: src/zope/app/preference/configure.zcml:77
 msgid "Default User Preferences Provider"
 msgstr "預設的使用者偏好設定供應器"
-
-#: src/zope/app/preference/configure.zcml:77
-msgid ""
-"           This component lets you define the local default user           "
-"preferences. The values of this provider are used, if the           user has "
-"not made a selection yet."
-msgstr "           這個元件讓你定義區域性預設使用者偏好設定。若使用者未作出選擇，則使用提供器的值。"
 
 #: src/zope/app/preference/menu.pt:5
 msgid "Preferences"
 msgstr "偏好設定"
-
-#: src/zope/app/presentation/browser.zcml:15
-msgid "Change page"
-msgstr "變更頁面"
-
-#: src/zope/app/presentation/browser.zcml:33
-msgid "Default Registration"
-msgstr "預設登錄"
-
-#: src/zope/app/presentation/browser.zcml:33
-#: src/zope/app/presentation/browser.zcml:42
-msgid "Default registration parameters"
-msgstr "預設登錄參數"
-
-#: src/zope/app/presentation/browser.zcml:4
-msgid "Register a view page"
-msgstr "登錄一個視圖頁面"
-
-#: src/zope/app/presentation/browser.zcml:50
-msgid "Page Folder"
-msgstr "頁面資料夾"
-
-#: src/zope/app/presentation/browser.zcml:79
-msgid "Register a view ZPT"
-msgstr "登錄一個視圖 ZPT"
-
-#: src/zope/app/presentation/configure.zcml:41
-msgid "View Folder"
-msgstr "視圖資料夾"
-
-#: src/zope/app/presentation/configure.zcml:91
-msgid "Persistent View Page Template"
-msgstr "永續的視圖頁面模板"
-
-#: src/zope/app/presentation/configure.zcml:91
-#: src/zope/app/presentation/browser.zcml:66
-#: src/zope/app/presentation/browser.zcml:74
-msgid "ZPT Template"
-msgstr "ZPT 模板"
-
-#: src/zope/app/presentation/interfaces.py:104
-msgid "The dotted name of a factory for creating the view"
-msgstr "用來產生視圖的工廠的名稱，此名稱必須是以點號連接的名稱"
-
-#: src/zope/app/presentation/interfaces.py:109
-msgid "The permission required to use the view"
-msgstr "使用視圖所需的權限"
-
-#: src/zope/app/presentation/interfaces.py:115
-msgid "Apply changes to existing pages"
-msgstr "套用變更到現有頁面"
-
-#: src/zope/app/presentation/interfaces.py:32
-msgid "The type of requests the view works with"
-msgstr "由視圖來處理的請求型態"
-
-#: src/zope/app/presentation/interfaces.py:39
-#: src/zope/app/styleguide/zpt/configure.zcml:6
-msgid "Page template"
-msgstr "頁面模板"
-
-#: src/zope/app/presentation/interfaces.py:44
-msgid "Class attribute"
-msgstr "類別屬性"
-
-#: src/zope/app/presentation/interfaces.py:98
-msgid "The interface of the objects being viewed"
-msgstr "被檢視物件的介面"
-
-#: src/zope/app/presentation/pagereg_details.pt:12
-#: src/zope/app/apidoc/ifacemodule/presentation_macros.pt:72
-msgid "template:"
-msgstr "模板："
-
-#: src/zope/app/presentation/pagereg_details.pt:4
-msgid "for:"
-msgstr "為："
-
-#: src/zope/app/presentation/pagereg_details.pt:8
-#: src/zope/app/component/browser/utilreg_details.pt:7
-msgid "name:"
-msgstr "名稱："
 
 #: src/zope/app/principalannotation/configure.zcml:18
 msgid "Principal Annotation Utility"
@@ -4360,29 +4289,39 @@ msgstr "主體註文公用工具"
 msgid "Stores Annotations for Principals"
 msgstr "儲存主體註文"
 
-#: src/zope/app/principalannotation/configure.zcml:24
-msgid "Stores annotations for any principal."
-msgstr "儲存任何主體的註解資訊。"
+#: src/zope/app/publisher/configure.zcml:18
+msgid "Creating HTTP Results"
+msgstr ""
 
-#: src/zope/app/principalannotation/configure.zcml:24
-msgid "Principal Annotations"
-msgstr "主體註文"
+#: src/zope/app/publisher/interfaces/browser.py:104
+#: src/zope/app/publisher/interfaces/browser.py:156
+msgid "The URL to display if the item is selected"
+msgstr "如果項目被選擇，將顯示 URL。"
 
-#: src/zope/app/publisher/interfaces/browser.py:106
+#: src/zope/app/publisher/interfaces/browser.py:105
+msgid ""
+"When a user selects a browser menu item, the URLgiven in the action is "
+"displayed. The action is usually given as a relative URL, relative to the "
+"object the menu item is for."
+msgstr ""
+"當使用者選擇瀏覽的選單項目，設定的動作是顯示該 URL。該動作通常是給予一個相對"
+"於該選單項目物件的 URL。"
+
+#: src/zope/app/publisher/interfaces/browser.py:113
 msgid "Menu item ordering hint"
 msgstr "選單項目排序提示"
 
-#: src/zope/app/publisher/interfaces/browser.py:107
+#: src/zope/app/publisher/interfaces/browser.py:114
 msgid ""
 "This attribute provides a hint for menu item ordering.Menu items will "
 "generally be sorted by the `for_`attribute and then by the order."
 msgstr "此屬性為選單項目提供排序提示。選單項目將根據 `for_` 屬性決定排列順序。"
 
-#: src/zope/app/publisher/interfaces/browser.py:113
+#: src/zope/app/publisher/interfaces/browser.py:120
 msgid "A condition for displaying the menu item"
 msgstr "用於顯示選單項目的條件"
 
-#: src/zope/app/publisher/interfaces/browser.py:114
+#: src/zope/app/publisher/interfaces/browser.py:121
 msgid ""
 "The condition is given as a TALES expression. The expression has access to "
 "the variables:\n"
@@ -4406,85 +4345,75 @@ msgstr ""
 "\n"
 "如果過濾器存在且其評估值為假值，選單項目將不會顯示。"
 
-#: src/zope/app/publisher/interfaces/browser.py:129
+#: src/zope/app/publisher/interfaces/browser.py:136
 msgid "Icon URI"
 msgstr "圖示 URI"
 
-#: src/zope/app/publisher/interfaces/browser.py:130
+#: src/zope/app/publisher/interfaces/browser.py:137
 msgid "URI of the icon representing this menu item"
 msgstr "代表選單項目圖示的 URI"
 
-#: src/zope/app/publisher/interfaces/browser.py:143
+#: src/zope/app/publisher/interfaces/browser.py:150
 msgid "Sub-Menu Id"
 msgstr "子選單 ID"
 
-#: src/zope/app/publisher/interfaces/browser.py:144
+#: src/zope/app/publisher/interfaces/browser.py:151
 msgid "The menu id of the menu that describes the sub-menu below this item."
 msgstr "描述此項目及其子選單的選單 ID。"
 
-#: src/zope/app/publisher/interfaces/browser.py:150
+#: src/zope/app/publisher/interfaces/browser.py:157
 msgid ""
 "When a user selects a browser menu item, the URL given in the action is "
 "displayed. The action is usually given as a relative URL, relative to the "
 "object the menu item is for."
-msgstr "當使用者選擇瀏覽的選單項目，設定的動作是顯示該 URL。該動作通常是給予一個相對於該選單項目物件的 URL。"
+msgstr ""
+"當使用者選擇瀏覽的選單項目，設定的動作是顯示該 URL。該動作通常是給予一個相對"
+"於該選單項目物件的 URL。"
 
-#: src/zope/app/publisher/interfaces/browser.py:51
+#: src/zope/app/publisher/interfaces/browser.py:58
 #: src/zope/app/schemacontent/interfaces.py:45
 msgid "Menu Id"
 msgstr "選單 ID"
 
-#: src/zope/app/publisher/interfaces/browser.py:52
+#: src/zope/app/publisher/interfaces/browser.py:59
 msgid "The id uniquely identifies this menu."
 msgstr "用於獨一無二地識別此選單的 ID。"
 
-#: src/zope/app/publisher/interfaces/browser.py:57
+#: src/zope/app/publisher/interfaces/browser.py:64
 msgid "Menu title"
 msgstr "選單標題"
 
-#: src/zope/app/publisher/interfaces/browser.py:58
+#: src/zope/app/publisher/interfaces/browser.py:65
 msgid "The title provides the basic label for the menu."
 msgstr "標題為選單提供基本的標籤。"
 
-#: src/zope/app/publisher/interfaces/browser.py:63
+#: src/zope/app/publisher/interfaces/browser.py:70
 msgid "Menu description"
 msgstr "選單描述"
 
-#: src/zope/app/publisher/interfaces/browser.py:64
+#: src/zope/app/publisher/interfaces/browser.py:71
 msgid ""
 "A description of the menu. This might be shown on menu pages or in pop-up "
 "help for menus."
 msgstr "選單的描述。將出現在選單頁或彈出的選單說明訊息中。"
 
-#: src/zope/app/publisher/interfaces/browser.py:84
+#: src/zope/app/publisher/interfaces/browser.py:91
 msgid "Menu item title"
 msgstr "選單項目標題"
 
-#: src/zope/app/publisher/interfaces/browser.py:85
+#: src/zope/app/publisher/interfaces/browser.py:92
 msgid "The title provides the basic label for the menu item."
 msgstr "標題為選單項目提供基本的標籤。"
 
-#: src/zope/app/publisher/interfaces/browser.py:90
+#: src/zope/app/publisher/interfaces/browser.py:97
 msgid "Menu item description"
 msgstr "選單項目描述"
 
-#: src/zope/app/publisher/interfaces/browser.py:91
+#: src/zope/app/publisher/interfaces/browser.py:98
 msgid ""
 "A description of the menu item. This might be shown on menu pages or in pop-"
 "up help for menu items."
 msgstr "選單項目的描述。將出現在選單頁或彈出的選單項目說明訊息中。"
-
-#: src/zope/app/publisher/interfaces/browser.py:97
-#: src/zope/app/publisher/interfaces/browser.py:149
-msgid "The URL to display if the item is selected"
-msgstr "如果項目被選擇，將顯示 URL。"
-
-#: src/zope/app/publisher/interfaces/browser.py:98
-msgid ""
-"When a user selects a browser menu item, the URLgiven in the action is "
-"displayed. The action is usually given as a relative URL, relative to the "
-"object the menu item is for."
-msgstr "當使用者選擇瀏覽的選單項目，設定的動作是顯示該 URL。該動作通常是給予一個相對於該選單項目物件的 URL。"
 
 #: src/zope/app/pythonpage/__init__.py:42
 msgid "The source of the Python page."
@@ -4527,126 +4456,11 @@ msgstr "語法錯誤：%{msg}"
 msgid "File \"${filename}\", line ${lineno}, offset ${offset}"
 msgstr "檔案 \"${filename}\"，第 ${lineno} 列，第 ${offset} 欄"
 
-#: src/zope/app/rdb/browser/configure.zcml:39
-#: src/zope/app/sqlscript/browser/configure.zcml:41
-msgid "test-page-title"
-msgstr "測試"
-
-#: src/zope/app/rdb/browser/configure.zcml:5
-msgid ""
-"Database Adapters are used to connect to external       relational databases."
-msgstr "資料庫轉接器被用來連接外部關聯式資料庫。"
-
-#: src/zope/app/rdb/browser/configure.zcml:5
-msgid "Database Adapter"
-msgstr "資料庫轉接器"
-
-#: src/zope/app/rdb/browser/gadflyda.zcml:14
-msgid "Gadfly DA"
-msgstr "Gadfly DA"
-
-#: src/zope/app/rdb/browser/gadflyda.zcml:14
-msgid "A DA for the built-in 100% Pure Python Gadfly Database"
-msgstr "一個內建的百分之百純 Python Gadfly 資料庫的 DA"
-
-#: src/zope/app/rdb/browser/gadflyda.zcml:5
-msgid "Add Gadfly Database Adapter"
-msgstr "新增 Gadfly 資料庫轉接器"
-
-#: src/zope/app/rdb/browser/rdbconnection.pt:15
-msgid "Connection URI:"
-msgstr "連線 URI："
-
-#: src/zope/app/rdb/browser/rdbconnection.pt:17
-msgid "Template: dbi://username:password@host:port/dbname;param1=value..."
-msgstr "模板：dbi://username:password@host:port/dbname;param1=value..."
-
-#: src/zope/app/rdb/browser/rdbconnection.pt:25
-msgid "Encoding"
-msgstr "編碼"
-
-#: src/zope/app/rdb/browser/rdbconnection.pt:36
-msgid "connect-button"
-msgstr "連線"
-
-#: src/zope/app/rdb/browser/rdbconnection.pt:39
-msgid "disconnect-button"
-msgstr "切斷連線"
-
-#: src/zope/app/rdb/browser/rdbconnection.pt:4
-msgid "Edit Relational Database Adapter"
-msgstr "編輯關聯式資料庫轉接器"
-
-#: src/zope/app/rdb/browser/rdbtestresults.pt:12
-msgid "Executed Query:"
-msgstr "執行查詢："
-
-#: src/zope/app/rdb/browser/rdbtestresults.pt:4
-#: src/zope/app/rdb/browser/rdbtestsql.pt:4
-msgid "Database Adapter - Test Connection"
-msgstr "資料庫轉接器 - 連線測試"
-
-#: src/zope/app/rdb/browser/rdbtestsql.pt:14
-msgid "Here you can enter an SQL statement, so you can test the connection."
-msgstr "你可在這裡輸入 SQL 語句，以進行連線測試。"
-
-#: src/zope/app/rdb/browser/rdbtestsql.pt:19
-msgid "Query"
-msgstr "查詢"
-
-#: src/zope/app/rdb/browser/rdbtestsql.pt:28
-msgid "execute-button"
-msgstr "執行"
-
-#: src/zope/app/rdb/configure.zcml:6
-msgid "zope.app.rdb.Use"
-msgstr "使用資料庫連線"
-
-#: src/zope/app/rdb/gadflyda.zcml:4
-msgid "Gadfly Database Adapter"
-msgstr "Gadfly 資料庫轉接器"
-
-#: src/zope/app/rdb/interfaces.py:274
-msgid "DSN"
-msgstr "DSN"
-
-#: src/zope/app/rdb/interfaces.py:275
-msgid ""
-"Specify the DSN (Data Source Name) of the database. Examples include:\n"
-"\n"
-"dbi://dbname\n"
-"dbi://dbname;param1=value...\n"
-"dbi://user:passwd/dbname\n"
-"dbi://user:passwd/dbname;param1=value...\n"
-"dbi://user:passwd@host:port/dbname\n"
-"dbi://user:passwd@host:port/dbname;param1=value...\n"
-"\n"
-"All values should be properly URL-encoded."
-msgstr ""
-"指定資料庫的資料來源名稱 (Data Source Name，DSN)。範例如下：\n"
-"\n"
-"dbi://dbname\n"
-"dbi://dbname;param1=value...\n"
-"dbi://user:passwd/dbname\n"
-"dbi://user:passwd/dbname;param1=value...\n"
-"dbi://user:passwd@host:port/dbname\n"
-"dbi://user:passwd@host:port/dbname;param1=value...\n"
-"\n"
-"所有 DSN 應該要經過 URL 編碼處理。"
-
-#: src/zope/app/rdb/interfaces.py:62
-msgid "Database encoding"
-msgstr "資料庫編碼"
-
-#: src/zope/app/rdb/interfaces.py:63
-msgid "Encoding of the database content"
-msgstr "資料庫內容的編碼"
-
-#: src/zope/app/recorder/browser.py:40
+#: src/zope/app/recorder/browser.py:42
 msgid "URLs to ignore"
 msgstr "忽略的 URL"
 
-#: src/zope/app/recorder/browser.py:41
+#: src/zope/app/recorder/browser.py:43
 msgid ""
 "A list of regular expressions.\n"
 "\n"
@@ -4658,7 +4472,7 @@ msgstr ""
 "\n"
 "                     所有其路徑符合這裡列出的表示式的要求，都將不會顯示出來。"
 
-#: src/zope/app/recorder/browser.py:84
+#: src/zope/app/recorder/browser.py:86
 msgid "Invalid regex: %s"
 msgstr "無效的正規表示式：%s"
 
@@ -4666,20 +4480,9 @@ msgstr "無效的正規表示式：%s"
 msgid "Recorded Sessions"
 msgstr "被記錄下來的連線期"
 
-#: src/zope/app/recorder/sessions.pt:15
-#: src/zope/app/error/browser/error.pt:22
-#: src/zope/app/error/browser/errorentry.pt:21
-msgid "Time"
-msgstr "時間"
-
 #: src/zope/app/recorder/sessions.pt:16
 msgid "Method"
 msgstr "方法"
-
-#: src/zope/app/recorder/sessions.pt:18
-#: src/zope/app/i18n/browser/synchronize.pt:90
-msgid "Status"
-msgstr "狀態"
 
 #: src/zope/app/recorder/sessions.pt:36
 msgid "Create Functional Doctest"
@@ -4697,118 +4500,119 @@ msgstr "過濾器"
 msgid "There are no recorded requests that pass your filter."
 msgstr "沒有任何請求記錄通過你的過濾器。"
 
-#: src/zope/app/renderer/configure.zcml:14
+#: src/zope/app/renderer/plaintext.py:31
 msgid "Plain Text Source"
 msgstr "純文本內容"
 
-#: src/zope/app/renderer/configure.zcml:14
+#: src/zope/app/renderer/plaintext.py:31
 msgid "Plain Text"
 msgstr "純文本 (Plain Text)"
 
-#: src/zope/app/renderer/configure.zcml:28
-msgid "Structured Text (STX)"
-msgstr "結構化文本 (Structured Text, STX)"
-
-#: src/zope/app/renderer/configure.zcml:28
-msgid "Structured Text (STX) Source"
-msgstr "結構化文本 (STX) 內容"
-
-#: src/zope/app/renderer/configure.zcml:42
+#: src/zope/app/renderer/rest.py:38
 msgid "ReStructured Text (ReST)"
 msgstr "新結構化文本 (ReStructured Text, ReST)"
 
-#: src/zope/app/renderer/configure.zcml:42
+#: src/zope/app/renderer/rest.py:39
 msgid "ReStructured Text (ReST) Source"
 msgstr "新結構化文本 (ReST) 內容"
+
+#: src/zope/app/renderer/stx.py:36
+msgid "Structured Text (STX)"
+msgstr "結構化文本 (Structured Text, STX)"
+
+#: src/zope/app/renderer/stx.py:37
+msgid "Structured Text (STX) Source"
+msgstr "結構化文本 (STX) 內容"
 
 #: src/zope/app/rotterdam/dialog_macros.pt:11
 msgid "Z3 UI"
 msgstr "Z3 使用者介面"
 
 #: src/zope/app/rotterdam/dialog_macros.pt:138
-#: src/zope/app/rotterdam/template.pt:192
+#: src/zope/app/rotterdam/template.pt:193
 #: src/zope/app/rotterdam/template_tablelayout.pt:185
 msgid "Tip"
 msgstr "提示"
 
-#: src/zope/app/rotterdam/dialog_macros.pt:54
-#: src/zope/app/rotterdam/template.pt:47
-#: src/zope/app/rotterdam/template_tablelayout.pt:49
-#: src/zope/app/boston/browser/template.pt:40
-msgid "User:"
-msgstr "使用者："
+#: src/zope/app/rotterdam/navigation_macros.pt:31
+#: src/zope/app/tree/browser/navigation_macros.pt:16
+msgid "Navigation"
+msgstr "導覽"
+
+#: src/zope/app/rotterdam/template.pt:79
+#: src/zope/app/rotterdam/template_tablelayout.pt:99
+#: src/zope/app/zopetop/widget_macros.pt:48
+msgid "Add:"
+msgstr "新增："
+
+#: src/zope/app/rotterdam/template.pt:93
+#: src/zope/app/rotterdam/template_tablelayout.pt:72
+#: src/zope/app/zopetop/widget_macros.pt:198
+msgid "Location:"
+msgstr "位置："
 
 #: src/zope/app/rotterdam/view_macros.pt:36
 msgid "User: ${user}"
 msgstr "使用者：${user}"
 
-#: src/zope/app/rotterdam/xmlobject.py:34
+#: src/zope/app/rotterdam/xmlobject.py:32
 msgid "Contains $${num} item(s)"
 msgstr "含有 $${num} 個項目"
 
-#: src/zope/app/rotterdam/xmlobject.py:35
+#: src/zope/app/rotterdam/xmlobject.py:33
 #: src/zope/app/rotterdam/navigation_macros.pt:32
 msgid "Loading..."
 msgstr "載入中..."
 
-#: src/zope/app/schema/browser/__init__.py:28
+#: src/zope/app/schema/browser/__init__.py:27
 msgid "An error occurred"
 msgstr "發生了一個錯誤"
 
-#: src/zope/app/schema/browser/__init__.py:55
+#: src/zope/app/schema/browser/__init__.py:54
 msgid "Must select a field to delete"
 msgstr "你必須選擇一個想要刪除的欄位"
 
-#: src/zope/app/schema/browser/__init__.py:68
+#: src/zope/app/schema/browser/__init__.py:67
 msgid "Invalid field name: %s"
 msgstr "無效的欄位名稱：%s"
 
-#: src/zope/app/schema/browser/__init__.py:76
+#: src/zope/app/schema/browser/__init__.py:75
 msgid "Invalid position: %s"
 msgstr "無效的位置：%s"
 
-#: src/zope/app/schema/browser/configure.zcml:11
-msgid "Menu of Fields to be added to a schema."
-msgstr "想要加到綱目的欄位的選單。"
-
-#: src/zope/app/schema/browser/configure.zcml:39
+#: src/zope/app/schema/browser/configure.zcml:33
 msgid "Edit Schema"
 msgstr "編輯綱目"
 
 #: src/zope/app/schema/browser/configure.zcml:5
-msgid "These are schemas that live in the ZODB and are modifiable."
-msgstr "這些是存在 ZODB 裡頭並且可以修改的綱目。"
-
-#: src/zope/app/schema/browser/configure.zcml:5
-msgid "Persistent, Local Schemas"
-msgstr "永續的區域性綱目"
+msgid "Menu of Fields to be added to a schema."
+msgstr "想要加到綱目的欄位的選單。"
 
 #: src/zope/app/schema/browser/schema_edit.pt:10
 msgid "Schema Name: ${schema_name}"
 msgstr "綱目名稱：${schema_name}"
 
-#: src/zope/app/schema/browser/schema_edit.pt:31
-#: src/zope/app/container/browser/contents.pt:27
-#: src/zope/app/container/browser/index.pt:19
-#: src/zope/app/intid/browser/registrations.pt:9
-msgid "Content listing"
-msgstr "內容清單"
+#: src/zope/app/schema/browser/schema_edit.pt:38
+#: src/zope/app/sqlscript/browser/test.pt:16
+msgid "Type"
+msgstr "型態"
 
 #: src/zope/app/schema/browser/schema_edit.pt:41
 msgid "Read-Only"
 msgstr "唯讀"
 
+#. Default: "Delete"
 #: src/zope/app/schema/browser/schema_edit.pt:69
 msgid "delete-field-button"
 msgstr "刪除欄位"
 
 #: src/zope/app/schema/configure.zcml:5
-#: src/zope/app/schema/browser/configure.zcml:28
+#: src/zope/app/schema/browser/configure.zcml:22
 msgid "Mutable Schema"
 msgstr "可變綱目"
 
 #: src/zope/app/schema/configure.zcml:5
-#: src/zope/app/schema/browser/configure.zcml:28
+#: src/zope/app/schema/browser/configure.zcml:22
 msgid "A Persistent Schema that can be edited through the web"
 msgstr "一個可透過瀏覽器修改的永續綱目"
 
@@ -4889,158 +4693,124 @@ msgid "Edit Integer Field"
 msgstr "編輯整數欄位"
 
 #: src/zope/app/schema/fields.zcml:102
-#: src/zope/app/schema/fields.zcml:102
 msgid "BytesLine Field"
 msgstr "位元組列欄位"
 
-#: src/zope/app/schema/fields.zcml:114
-#: src/zope/app/schema/fields.zcml:114
-#: src/zope/app/schema/fieldforms.zcml:7
+#: src/zope/app/schema/fields.zcml:114 src/zope/app/schema/fieldforms.zcml:7
 msgid "Text Field"
 msgstr "文字欄位"
 
 #: src/zope/app/schema/fields.zcml:128
-#: src/zope/app/schema/fields.zcml:128
 msgid "Text Line Field"
 msgstr "文字列欄位"
 
-#: src/zope/app/schema/fields.zcml:140
-#: src/zope/app/schema/fields.zcml:140
-#: src/zope/app/schema/fieldforms.zcml:59
+#: src/zope/app/schema/fields.zcml:140 src/zope/app/schema/fieldforms.zcml:59
 msgid "Boolean Field"
 msgstr "布林欄位"
 
-#: src/zope/app/schema/fields.zcml:151
-#: src/zope/app/schema/fields.zcml:151
-#: src/zope/app/schema/fieldforms.zcml:85
+#: src/zope/app/schema/fields.zcml:151 src/zope/app/schema/fieldforms.zcml:85
 msgid "Integer Field"
 msgstr "整數欄位"
 
-#: src/zope/app/schema/fields.zcml:163
-#: src/zope/app/schema/fields.zcml:163
-#: src/zope/app/schema/fieldforms.zcml:111
+#: src/zope/app/schema/fields.zcml:163 src/zope/app/schema/fieldforms.zcml:111
 msgid "Float Field"
 msgstr "浮點數欄位"
 
-#: src/zope/app/schema/fields.zcml:175
 #: src/zope/app/schema/fields.zcml:175
 msgid "Tuple Field"
 msgstr "Tuple 欄位"
 
 #: src/zope/app/schema/fields.zcml:186
-#: src/zope/app/schema/fields.zcml:186
 msgid "List Field"
 msgstr "串列欄位"
 
-#: src/zope/app/schema/fields.zcml:197
 #: src/zope/app/schema/fields.zcml:197
 msgid "Set Field"
 msgstr "集合欄位"
 
 #: src/zope/app/schema/fields.zcml:208
-#: src/zope/app/schema/fields.zcml:208
 msgid "Password Field"
 msgstr "密碼欄位"
 
 #: src/zope/app/schema/fields.zcml:220
-#: src/zope/app/schema/fields.zcml:220
 msgid "Dict Field"
 msgstr "字典欄位"
 
-#: src/zope/app/schema/fields.zcml:232
-#: src/zope/app/schema/fields.zcml:232
-#: src/zope/app/schema/fieldforms.zcml:137
+#: src/zope/app/schema/fields.zcml:232 src/zope/app/schema/fieldforms.zcml:137
 msgid "Datetime Field"
 msgstr "日期時間欄位"
 
-#: src/zope/app/schema/fields.zcml:244
 #: src/zope/app/schema/fields.zcml:244
 msgid "SourceText Field"
 msgstr "源碼文字欄位"
 
 #: src/zope/app/schema/fields.zcml:256
-#: src/zope/app/schema/fields.zcml:256
 msgid "Object Field"
 msgstr "物件欄位"
 
-#: src/zope/app/schema/fields.zcml:269
 #: src/zope/app/schema/fields.zcml:269
 msgid "URI Field"
 msgstr "URI 欄位"
 
 #: src/zope/app/schema/fields.zcml:281
-#: src/zope/app/schema/fields.zcml:281
 msgid "Id Field"
 msgstr "ID 欄位"
 
-#: src/zope/app/schema/fields.zcml:293
 #: src/zope/app/schema/fields.zcml:293
 msgid "Interface Field"
 msgstr "介面欄位"
 
 #: src/zope/app/schema/fields.zcml:38
-#: src/zope/app/schema/fields.zcml:38
 msgid "Container Field"
 msgstr "容器欄位"
 
-#: src/zope/app/schema/fields.zcml:49
 #: src/zope/app/schema/fields.zcml:49
 msgid "Iterable Field"
 msgstr "Iterable 欄位"
 
 #: src/zope/app/schema/fields.zcml:5
-#: src/zope/app/schema/fields.zcml:5
 msgid "Basic Field"
 msgstr "基本欄位"
 
-#: src/zope/app/schema/fields.zcml:60
 #: src/zope/app/schema/fields.zcml:60
 msgid "Orderable Field"
 msgstr "可排序欄位"
 
 #: src/zope/app/schema/fields.zcml:75
-#: src/zope/app/schema/fields.zcml:75
 msgid "MinMaxLen Field"
 msgstr "限制長度欄位"
 
 #: src/zope/app/schema/fields.zcml:90
-#: src/zope/app/schema/fields.zcml:90
 msgid "Bytes Field"
 msgstr "位元組欄位"
 
-#: src/zope/app/schemacontent/browser/configure.zcml:31
+#: src/zope/app/schemacontent/browser/configure.zcml:24
 msgid "Define Permissions"
 msgstr "定義權限"
 
-#: src/zope/app/schemacontent/browser/configure.zcml:5
-msgid ""
-"Content Component Definitions are used to declare       schema-based content "
-"objects."
-msgstr "內容元件定義是用來宣告基於綱目的內容物件。"
-
-#: src/zope/app/schemacontent/browser/configure.zcml:64
+#: src/zope/app/schemacontent/browser/configure.zcml:57
 msgid "New Content Component Instance"
 msgstr "新的內容元件實體"
 
-#: src/zope/app/schemacontent/browser/configure.zcml:73
+#: src/zope/app/schemacontent/browser/configure.zcml:66
 msgid "Schema-based Content Component Instance"
 msgstr "基於綱目的內容元件實體"
 
-#: src/zope/app/schemacontent/browser/configure.zcml:73
+#: src/zope/app/schemacontent/browser/configure.zcml:66
 msgid "Schema-based Content"
 msgstr "基於綱目的內容"
 
 #: src/zope/app/schemacontent/configure.zcml:10
-#: src/zope/app/schemacontent/browser/configure.zcml:15
+#: src/zope/app/schemacontent/browser/configure.zcml:8
 msgid "A Persistent Content Component Definition"
 msgstr "一個永續的內容元件定義"
 
 #: src/zope/app/schemacontent/configure.zcml:10
-#: src/zope/app/schemacontent/browser/configure.zcml:5
-#: src/zope/app/schemacontent/browser/configure.zcml:15
+#: src/zope/app/schemacontent/browser/configure.zcml:8
 msgid "Content Component Definition"
 msgstr "內容元件定義"
 
+#. Default: "Interface"
 #: src/zope/app/schemacontent/interfaces.py:38
 msgid "interface-component"
 msgstr "介面"
@@ -5064,8 +4834,9 @@ msgid ""
 "that has a menu with the specified id. If no menu was found or the menu is a "
 "global menu, then an error is occurred."
 msgstr ""
-"如果設定真值，系統將為你建立一個區域性瀏覽器選單。如果設定偽值，系統將嘗試找尋下一個其選單有符合的指定 ID "
-"的網站管理器。如果沒找到任何選單，或選單是一個全域性選單，則將會發出錯誤。"
+"如果設定真值，系統將為你建立一個區域性瀏覽器選單。如果設定偽值，系統將嘗試找"
+"尋下一個其選單有符合的指定 ID 的網站管理器。如果沒找到任何選單，或選單是一個"
+"全域性選單，則將會發出錯誤。"
 
 #: src/zope/app/schemacontent/interfaces.py:73
 #: src/zope/app/schemacontent/interfaces.py:105
@@ -5077,6 +4848,7 @@ msgstr "內容元件型態的名稱"
 msgid "This is the name of the document type."
 msgstr "這是文件型態的名稱。"
 
+#. Default: "Schema"
 #: src/zope/app/schemacontent/interfaces.py:78
 #: src/zope/app/schemacontent/interfaces.py:110
 msgid "schema-component"
@@ -5099,9 +4871,9 @@ msgid ""
 "mutable schema evolves. If the value is False, then the Content Component's "
 "can change (which is desirable in some cases - i.e. during development.)"
 msgstr ""
-""
-"如果設定真值，內容元件實體將會使用綱目的拷貝版，其優點是現有內容元件綱目的設定得以保持妥當永不變更，即使可變綱目演變時亦然。如果設定偽值，則內容元件的綱目將"
-"會改變（在某些情況下是必要的 - 例如在開發階段的時候）。"
+"如果設定真值，內容元件實體將會使用綱目的拷貝版，其優點是現有內容元件綱目的設"
+"定得以保持妥當永不變更，即使可變綱目演變時亦然。如果設定偽值，則內容元件的綱"
+"目將會改變（在某些情況下是必要的 - 例如在開發階段的時候）。"
 
 #: src/zope/app/security/browser/auth.py:158
 msgid "[Login]"
@@ -5111,33 +4883,26 @@ msgstr "[登入]"
 msgid "[Logout]"
 msgstr "[登出]"
 
-#: src/zope/app/security/browser/configure.zcml:20
-msgid "Authentication"
-msgstr "身分驗證"
-
-#: src/zope/app/security/browser/configure.zcml:20
-msgid "Authenticates Principals."
-msgstr "驗證主體。"
-
-#: src/zope/app/security/browser/configure.zcml:61
-msgid "Security Permission"
-msgstr "安全性權限"
-
-#: src/zope/app/security/browser/configure.zcml:67
+#: src/zope/app/security/browser/configure.zcml:54
 msgid "Add Permission"
 msgstr "新增權限"
 
-#: src/zope/app/security/browser/configure.zcml:76
+#: src/zope/app/security/browser/configure.zcml:63
 msgid "A Security Permission"
 msgstr "安全性權限"
 
-#: src/zope/app/security/browser/configure.zcml:84
+#: src/zope/app/security/browser/configure.zcml:71
 msgid "Edit Permission"
 msgstr "編輯權限"
 
 #: src/zope/app/security/browser/login.pt:10
 msgid "You are now logged in as ${UserTitle}."
 msgstr "你現在以 ${UserTitle} 名稱登入。"
+
+#: src/zope/app/security/browser/login.pt:14
+#: src/zope/app/security/browser/logout.pt:12
+msgid "Back to the main page."
+msgstr "回到主頁面。"
 
 #: src/zope/app/security/browser/login.pt:6
 msgid "Login successful!"
@@ -5155,11 +4920,6 @@ msgstr "登入失敗！"
 msgid "You cancelled the login procedure."
 msgstr "你取消了登入程序。"
 
-#: src/zope/app/security/browser/logout.pt:12
-#: src/zope/app/security/browser/login.pt:14
-msgid "Back to the main page."
-msgstr "回到主頁面。"
-
 #: src/zope/app/security/browser/logout.pt:6
 msgid "Logout successful!"
 msgstr "登出成功！"
@@ -5176,24 +4936,28 @@ msgstr "重新導向中..."
 msgid "If you see this screen for more than 5 seconds, click here."
 msgstr "如果此畫面出現超過 5 秒，請點一下這裡。"
 
-#: src/zope/app/security/configure.zcml:102
+#. Default: "Manage Site"
+#: src/zope/app/security/configure.zcml:103
 msgid "manage-site-permission"
 msgstr "管理網站"
 
-#: src/zope/app/security/configure.zcml:107
+#. Default: "Manage Principals"
+#: src/zope/app/security/configure.zcml:108
 msgid "manage-principal-permission"
 msgstr "管理主體"
 
-#: src/zope/app/security/configure.zcml:112
+#: src/zope/app/security/configure.zcml:113
 msgid ""
 "Manage the Zope Application, such as Restart/Shutdown or                    "
 "packing the ZODB."
 msgstr "管理 Zope 應用程式，例如，重新啟動/關閉伺服器或是清理 ZODB。"
 
-#: src/zope/app/security/configure.zcml:112
+#. Default: "Manage Application"
+#: src/zope/app/security/configure.zcml:113
 msgid "manage-application-permission"
 msgstr "管理應用程式"
 
+#. Default: "Public"
 #: src/zope/app/security/configure.zcml:6
 msgid "public-permission"
 msgstr "公共"
@@ -5204,63 +4968,62 @@ msgid ""
 "Public resources are always accessible."
 msgstr "代表不限制存取的特殊權限。公共資源永遠可以被存取。"
 
-#: src/zope/app/security/configure.zcml:71
+#. Default: "View"
+#: src/zope/app/security/configure.zcml:72
 msgid "view-permission"
 msgstr "檢視"
 
-#: src/zope/app/security/configure.zcml:76
+#. Default: "Change security settings"
+#: src/zope/app/security/configure.zcml:77
 msgid "change-security-settings-permission"
 msgstr "變更安全設定"
 
-#: src/zope/app/security/configure.zcml:81
+#. Default: "Manage Content"
+#: src/zope/app/security/configure.zcml:82
 msgid "manage-content-permission"
 msgstr "管理內容"
 
-#: src/zope/app/security/configure.zcml:86
+#. Default: "Manage Service Bindings"
+#: src/zope/app/security/configure.zcml:87
 msgid "manage-service-bindings-permission"
 msgstr "管理服務連結"
 
-#: src/zope/app/security/configure.zcml:91
+#: src/zope/app/security/configure.zcml:92
 msgid "Manage executable code, including Python, SQL, ZPT, etc."
 msgstr "管理可執行程式碼，包括 Python、SQL、ZPT 等等。"
 
-#: src/zope/app/security/configure.zcml:91
+#. Default: "Manage Code"
+#: src/zope/app/security/configure.zcml:92
 msgid "manage-code-permission"
 msgstr "管理程式碼"
 
-#: src/zope/app/security/configure.zcml:97
+#. Default: "Manage Services"
+#: src/zope/app/security/configure.zcml:98
 msgid "manage-services-permission"
 msgstr "管理服務"
 
-#: src/zope/app/security/permission.py:27
+#: src/zope/app/security/permission.py:24
 msgid "<permission not activated>"
 msgstr "<權限未啟用>"
 
-#: src/zope/app/securitypolicy/browser/configure.zcml:25
+#: src/zope/app/securitypolicy/browser/configure.zcml:18
 msgid "New Role"
 msgstr "新角色"
 
-#: src/zope/app/securitypolicy/browser/configure.zcml:46
+#: src/zope/app/securitypolicy/browser/configure.zcml:39
 msgid "A Security Role"
 msgstr "安全性角色"
 
-#: src/zope/app/securitypolicy/browser/configure.zcml:6
-msgid ""
-"Roles are used to combine permissions and can be assigned       to "
-"principals."
-msgstr "角色被用來結合權限，並且可以被指派給主體。"
-
-#: src/zope/app/securitypolicy/browser/configure.zcml:6
-#: src/zope/app/securitypolicy/browser/configure.zcml:46
+#: src/zope/app/securitypolicy/browser/configure.zcml:39
 #: src/zope/app/securitypolicy/browser/manage_permissionform.pt:53
 msgid "Role"
 msgstr "角色"
 
-#: src/zope/app/securitypolicy/browser/configure.zcml:63
+#: src/zope/app/securitypolicy/browser/configure.zcml:56
 msgid "Role-Permissions"
 msgstr "角色與權限"
 
-#: src/zope/app/securitypolicy/browser/configure.zcml:93
+#: src/zope/app/securitypolicy/browser/configure.zcml:86
 msgid "Grant"
 msgstr "授權"
 
@@ -5268,6 +5031,7 @@ msgstr "授權"
 msgid "Grants for the selected principal"
 msgstr "授權給已選主體"
 
+#. Default: "Change"
 #: src/zope/app/securitypolicy/browser/granting.pt:19
 #: src/zope/app/securitypolicy/browser/granting.pt:78
 msgid "grant-submit"
@@ -5348,15 +5112,18 @@ msgid ""
 "the Allow or Deny lists. Make sure you don't select the same permission in "
 "both lists though."
 msgstr ""
-"此頁顯示角色 ${role_title} (id: ${role_id}) "
-"所允許或拒絕的權限。若要變更設定，只需在允許或拒絕清單中，選擇不同權限。請確定沒有同時在兩份清單中選擇相同權限。"
+"此頁顯示角色 ${role_title} (id: ${role_id}) 所允許或拒絕的權限。若要變更設"
+"定，只需在允許或拒絕清單中，選擇不同權限。請確定沒有同時在兩份清單中選擇相同"
+"權限。"
 
+#. Default: ""
 #: src/zope/app/securitypolicy/browser/rolepermissionview.py:148
 msgid ""
 "You choose both allow and deny for permission \"${permission}\". This is not "
 "allowed."
 msgstr "你同時選擇了允許與拒絕權限 \"${permission}\"。這是不被允許的。"
 
+#. Default: ""
 #: src/zope/app/securitypolicy/browser/rolepermissionview.py:163
 msgid "Settings changed at ${date_time}"
 msgstr "設定變更於 ${date_time}"
@@ -5369,22 +5136,31 @@ msgid ""
 "        Roles are shown accross the top.\n"
 "        "
 msgstr ""
-"對於單一角色取得（或拒絕）各項權限，可設定對應的權限項目，並給予角色 '+'（或 '-'）。\n"
+"對於單一角色取得（或拒絕）各項權限，可設定對應的權限項目，並給予角色 '+'（或 "
+"'-'）。\n"
 "        權限項目顯示在左方，可往下移動。\n"
 "        角色則橫跨在上方顯示。\n"
 "        "
 
+#. Default: "Acquire"
 #: src/zope/app/securitypolicy/browser/rolepermissionview.py:66
 msgid "permission-acquire"
 msgstr "獲得"
 
+#. Default: "Allow"
 #: src/zope/app/securitypolicy/browser/rolepermissionview.py:68
 msgid "permission-allow"
 msgstr "允許"
 
+#. Default: "Deny"
 #: src/zope/app/securitypolicy/browser/rolepermissionview.py:70
 msgid "permission-deny"
 msgstr "拒絕"
+
+#: src/zope/app/securitypolicy/configure.zcml:97
+#, fuzzy
+msgid "Default Security Policy"
+msgstr "安全性角色"
 
 #: src/zope/app/securitypolicy/role.py:26
 msgid "<role not activated>"
@@ -5424,6 +5200,15 @@ msgstr "使用 cookie 做為用戶端唯一識別，讓狀態能在請求之間�
 msgid "Cookie Client Id Manager"
 msgstr "Cookie 客戶 ID 管理器"
 
+#: src/zope/app/session/configure.zcml:82
+#, fuzzy
+msgid "Sessions"
+msgstr "權限："
+
+#: src/zope/app/session/configure.zcml:87
+msgid "API"
+msgstr ""
+
 #: src/zope/app/session/http.py:48
 msgid "Cookie Name"
 msgstr "Cookie 名稱"
@@ -5432,7 +5217,9 @@ msgstr "Cookie 名稱"
 msgid ""
 "Name of cookie used to maintain state. Must be unique to the site domain "
 "name, and only contain ASCII letters, digits and '_'"
-msgstr "cookie 名稱用於狀態保存。對站台的網域名稱來說，必須是唯一的，並只包含 ASCII 英文字母、數字和 '_'"
+msgstr ""
+"cookie 名稱用於狀態保存。對站台的網域名稱來說，必須是唯一的，並只包含 ASCII "
+"英文字母、數字和 '_'"
 
 #: src/zope/app/session/http.py:61
 msgid "Cookie Lifetime"
@@ -5442,7 +5229,9 @@ msgstr "Cookie 生命期"
 msgid ""
 "Number of seconds until the browser expires the cookie. Leave blank expire "
 "the cookie when the browser is quit. Set to 0 to never expire. "
-msgstr "瀏覽器 cookie 過期的秒數。若保持空白，則 cookie 在瀏覽器結束時過期。設為 0 將永遠不過期。 "
+msgstr ""
+"瀏覽器 cookie 過期的秒數。若保持空白，則 cookie 在瀏覽器結束時過期。設為 0 將"
+"永遠不過期。 "
 
 #: src/zope/app/session/interfaces.py:126
 msgid "Last Access Time"
@@ -5475,29 +5264,11 @@ msgid ""
 "items to time out later than the 'Data object timeout value' by  a factor of "
 "(at most) this many seconds."
 msgstr ""
-"定義項目逾時的解析度。設定高一點，能讓處理機制執行 '寫入' 的次數較少，但使得項目在比 '資料物件逾時值' "
-"多一點的秒數（但不超過一個單位的解析度）之後才會逾時。"
+"定義項目逾時的解析度。設定高一點，能讓處理機制執行 '寫入' 的次數較少，但使得"
+"項目在比 '資料物件逾時值' 多一點的秒數（但不超過一個單位的解析度）之後才會逾"
+"時。"
 
-#: src/zope/app/size/__init__.py:42
-msgid "not-available"
-msgstr "n/a"
-
-#: src/zope/app/size/__init__.py:46
-msgid "0 KB"
-msgstr "0 KB"
-
-#: src/zope/app/size/__init__.py:48
-msgid "1 KB"
-msgstr "1 KB"
-
-#: src/zope/app/size/__init__.py:50
-msgid "${size} MB"
-msgstr "${size} MB"
-
-#: src/zope/app/size/__init__.py:51
-msgid "${size} KB"
-msgstr "${size} KB"
-
+#. Default: "Add and Test"
 #: src/zope/app/sqlscript/browser/add.pt:12
 msgid "add-and-test"
 msgstr "新增+測試"
@@ -5514,6 +5285,7 @@ msgstr "編輯 SQL 腳本"
 msgid "Caching"
 msgstr "快取"
 
+#. Default: "Change and Test"
 #: src/zope/app/sqlscript/browser/edit.pt:12
 msgid "change-and-test"
 msgstr "變更+測試"
@@ -5522,15 +5294,11 @@ msgstr "變更+測試"
 msgid "Argument Name"
 msgstr "參數名稱"
 
-#: src/zope/app/sqlscript/browser/test.pt:16
-#: src/zope/app/schema/browser/schema_edit.pt:38
-msgid "Type"
-msgstr "型態"
-
 #: src/zope/app/sqlscript/browser/test.pt:17
 msgid "Value"
 msgstr "值"
 
+#. Default: "Test"
 #: src/zope/app/sqlscript/browser/test.pt:32
 msgid "test-button"
 msgstr "測試"
@@ -5539,16 +5307,17 @@ msgstr "測試"
 msgid "An Error occurred"
 msgstr "發生了一個錯誤"
 
-#: src/zope/app/sqlscript/configure.zcml:12
+#. Default: "Add SQL Scripts"
+#: src/zope/app/sqlscript/configure.zcml:11
 msgid "add-sql-scripts-permission"
 msgstr "新增 SQL 腳本"
 
-#: src/zope/app/sqlscript/configure.zcml:23
+#: src/zope/app/sqlscript/configure.zcml:22
 #: src/zope/app/sqlscript/browser/configure.zcml:7
 msgid "SQL Script"
 msgstr "SQL 腳本"
 
-#: src/zope/app/sqlscript/configure.zcml:23
+#: src/zope/app/sqlscript/configure.zcml:22
 #: src/zope/app/sqlscript/browser/configure.zcml:7
 msgid "A content-based script to execute dynamic SQL."
 msgstr "基於內容用以執行動態 SOL 的腳本。"
@@ -5595,31 +5364,27 @@ msgstr "文件型態"
 msgid "Skin"
 msgstr "外觀"
 
-#: src/zope/app/traversing/browser/absoluteurl.py:28
-msgid ""
-"There isn't enough context to get URL information. This is probably due to a "
-"bug in setting up location information."
-msgstr "沒有足夠文脈以取得 URL 相關資訊，可能是由於設定位置資訊的臭蟲造成的。"
+#: src/zope/app/styleguide/zpt/configure.zcml:6
+msgid "Page template"
+msgstr "頁面模板"
 
-#: src/zope/app/tree/browser/navigation_macros.pt:16
-#: src/zope/app/rotterdam/navigation_macros.pt:31
-msgid "Navigation"
-msgstr "導覽"
+#: src/zope/app/tree/configure.zcml:57
+msgid "Zope Tree"
+msgstr ""
 
 #: src/zope/app/undo/configure.zcml:108
 msgid "Redo!"
 msgstr "重做！"
 
-#: src/zope/app/undo/configure.zcml:117
-#: src/zope/app/undo/undo_more.pt:6
+#: src/zope/app/undo/configure.zcml:117 src/zope/app/undo/undo_more.pt:6
 msgid "Undo more"
 msgstr "回復更多"
 
-#: src/zope/app/undo/configure.zcml:125
-#: src/zope/app/undo/undo_all.pt:6
+#: src/zope/app/undo/configure.zcml:125 src/zope/app/undo/undo_all.pt:6
 msgid "Undo all"
 msgstr "全部回復"
 
+#. Default: "Undo all transactions"
 #: src/zope/app/undo/configure.zcml:14
 msgid "undo-all-transactions-permission"
 msgstr "回復全部交易"
@@ -5636,6 +5401,7 @@ msgid ""
 "transactions."
 msgstr "依據這項權限，使用者可回復自己本身執行的交易。"
 
+#. Default: "Undo one's one transactions"
 #: src/zope/app/undo/configure.zcml:7
 msgid "undo-own-transaction-permission"
 msgstr "回復自有交易"
@@ -5644,13 +5410,14 @@ msgstr "回復自有交易"
 msgid "Undo!"
 msgstr "回復！"
 
-#: src/zope/app/undo/undo_all.pt:11
-#: src/zope/app/undo/undo_more.pt:11
+#: src/zope/app/undo/undo_all.pt:11 src/zope/app/undo/undo_more.pt:11
 msgid ""
 "Select one or more transactions from the list below and click the button "
 "below. Please be aware that you may only undo a transaction if the object "
 "has not been modified in a later transaction by you or any other user."
-msgstr "從下列清單選擇一個或多個交易，並點選下頭的按鈕。請注意，你只能回復那些在修改之後，沒再被你或者其他人變更的交易。"
+msgstr ""
+"從下列清單選擇一個或多個交易，並點選下頭的按鈕。請注意，你只能回復那些在修改"
+"之後，沒再被你或者其他人變更的交易。"
 
 #: src/zope/app/undo/undo_all.pt:8
 msgid "This form lets you undo all transactions initiated by any user."
@@ -5664,6 +5431,7 @@ msgstr "檢視前 ${number} 筆交易"
 msgid "View ${number} later transactions"
 msgstr "檢視後 ${number} 筆交易"
 
+#. Default: "Undo"
 #: src/zope/app/undo/undo_macros.pt:121
 msgid "undo-button"
 msgstr "回復"
@@ -5684,30 +5452,34 @@ msgstr "你正在審視來自此位置的交易。"
 msgid "View transactions regardless of location"
 msgstr "檢視交易，不管位置"
 
+#. Default: "Location"
 #: src/zope/app/undo/undo_macros.pt:44
 msgid "heading-location"
 msgstr "位置"
 
+#. Default: "Request info"
 #: src/zope/app/undo/undo_macros.pt:45
 msgid "heading-request-info"
 msgstr "請求資訊"
 
+#. Default: "Principal"
 #: src/zope/app/undo/undo_macros.pt:46
 msgid "heading-principal"
 msgstr "主體"
 
+#. Default: "Date"
 #: src/zope/app/undo/undo_macros.pt:47
 msgid "heading-date"
 msgstr "日期"
 
+#. Default: "Description"
 #: src/zope/app/undo/undo_macros.pt:48
 msgid "heading-description"
 msgstr "描述"
 
-#: src/zope/app/undo/undo_macros.pt:62
-#: src/zope/app/undo/undo_macros.pt:69
-#: src/zope/app/undo/undo_macros.pt:76
-#: src/zope/app/undo/undo_macros.pt:88
+#. Default: "not available"
+#: src/zope/app/undo/undo_macros.pt:62 src/zope/app/undo/undo_macros.pt:69
+#: src/zope/app/undo/undo_macros.pt:76 src/zope/app/undo/undo_macros.pt:88
 msgid "label-not-available"
 msgstr "無可用者"
 
@@ -5717,12 +5489,11 @@ msgid ""
 "transactions initiated by you."
 msgstr "此表單讓你回復你的最近交易。只檢視由你自己造成的交易。"
 
-#: src/zope/app/versioncontrol/interfaces.py:189
-msgid ""
-"time value indicating the when the bookkeeping information was created"
+#: src/zope/app/versioncontrol/interfaces.py:185
+msgid "time value indicating the when the bookkeeping information was created"
 msgstr "表示何時日誌資訊被建立的時間值"
 
-#: src/zope/app/versioncontrol/interfaces.py:195
+#: src/zope/app/versioncontrol/interfaces.py:191
 msgid ""
 "\n"
 "        Id of the version history related to the version controlled "
@@ -5737,110 +5508,121 @@ msgstr ""
 "        如果沒有設定（為 None）， \n"
 "        "
 
-#: src/zope/app/versioncontrol/interfaces.py:204
+#: src/zope/app/versioncontrol/interfaces.py:200
 msgid "version id that the version controlled resource is based upon"
 msgstr "做為版本控制資源基礎的版本 ID"
 
-#: src/zope/app/versioncontrol/interfaces.py:208
+#: src/zope/app/versioncontrol/interfaces.py:204
 msgid "status of the version controlled resource"
 msgstr "版本控制資源的狀態"
 
-#: src/zope/app/versioncontrol/interfaces.py:210
+#: src/zope/app/versioncontrol/interfaces.py:206
 msgid "Checked out"
 msgstr "已取出"
 
-#: src/zope/app/versioncontrol/interfaces.py:211
+#: src/zope/app/versioncontrol/interfaces.py:207
 msgid "Checked in"
 msgstr "已存入"
 
-#: src/zope/app/versioncontrol/interfaces.py:218
+#: src/zope/app/versioncontrol/interfaces.py:214
 msgid ""
 "id of the effective user at the time the bookkeeping information was created"
 msgstr "日誌資訊建立時的有效使用者 ID"
 
-#: src/zope/app/versioncontrol/interfaces.py:232
+#: src/zope/app/versioncontrol/interfaces.py:228
 msgid "time that the log entry was created"
 msgstr "日誌記錄項目建立時間"
 
-#: src/zope/app/versioncontrol/interfaces.py:235
+#: src/zope/app/versioncontrol/interfaces.py:231
 msgid "version id of the resource related to the log entry"
 msgstr "關連日誌記錄項目的資源版本 ID"
 
-#: src/zope/app/versioncontrol/interfaces.py:238
+#: src/zope/app/versioncontrol/interfaces.py:234
 msgid "the action that was taken"
 msgstr "採取的動作"
 
-#: src/zope/app/versioncontrol/interfaces.py:240
+#: src/zope/app/versioncontrol/interfaces.py:236
 msgid "Checkout"
 msgstr "取出"
 
-#: src/zope/app/versioncontrol/interfaces.py:241
+#: src/zope/app/versioncontrol/interfaces.py:237
 msgid "Checkin"
 msgstr "存入"
 
-#: src/zope/app/versioncontrol/interfaces.py:242
+#: src/zope/app/versioncontrol/interfaces.py:238
 msgid "Uncheckout"
 msgstr "取消取出"
 
-#: src/zope/app/versioncontrol/interfaces.py:243
+#: src/zope/app/versioncontrol/interfaces.py:239
 msgid "Update"
 msgstr "更新"
 
-#: src/zope/app/versioncontrol/interfaces.py:246
+#: src/zope/app/versioncontrol/interfaces.py:242
 msgid ""
 "Message provided by the user at the time of the action.  This may be empty."
 msgstr "使用者執行動作時提供的訊息。也許是空白的。"
 
-#: src/zope/app/versioncontrol/interfaces.py:250
+#: src/zope/app/versioncontrol/interfaces.py:246
 msgid "id of the user causing the audited action"
 msgstr "產生被稽核動作的使用者 ID"
 
-#: src/zope/app/versioncontrol/interfaces.py:253
+#: src/zope/app/versioncontrol/interfaces.py:249
 msgid "path to the object upon which the action was taken"
 msgstr "動作執行對象的物件路徑"
 
-#: src/zope/app/versioncontrol/interfaces.py:338
+#: src/zope/app/versioncontrol/interfaces.py:334
 msgid "Message"
 msgstr "訊息"
 
-#: src/zope/app/versioncontrol/interfaces.py:339
+#: src/zope/app/versioncontrol/interfaces.py:335
 msgid "Message text passed to applyVersionControl() for the object."
 msgstr "為物件傳送到 applyVersionControl() 的訊息文字。"
 
-#: src/zope/app/versioncontrol/interfaces.py:351
+#: src/zope/app/versioncontrol/interfaces.py:347
 msgid "Checkin Message"
 msgstr "存入訊息"
 
-#: src/zope/app/versioncontrol/interfaces.py:378
+#: src/zope/app/versioncontrol/interfaces.py:374
 msgid "Label"
 msgstr "標籤"
 
-#: src/zope/app/versioncontrol/interfaces.py:379
+#: src/zope/app/versioncontrol/interfaces.py:375
 msgid "Label applied to the version."
 msgstr "版本標籤。"
 
-#: src/zope/app/versioncontrol/interfaces.py:388
+#: src/zope/app/versioncontrol/interfaces.py:384
 msgid "Branch Id"
 msgstr "分支 ID"
 
-#: src/zope/app/versioncontrol/interfaces.py:389
+#: src/zope/app/versioncontrol/interfaces.py:385
 msgid "Identifier for the new branch."
 msgstr "新分支的識別碼"
 
-#: src/zope/app/workflow/browser/configure.zcml:6
-msgid ""
-"Workflow Process Definitions define a particular workflow       for an "
-"object."
-msgstr "工作流程序定義定義一個物件的特定工作流程。"
+#: src/zope/app/wfmc/configure.zcml:13
+#, fuzzy
+msgid "WfMC Workflows"
+msgstr "工作流程"
 
+#: src/zope/app/wfmc/configure.zcml:17
+#, fuzzy
+msgid "Workflows using XPDL"
+msgstr "工作流程"
+
+#: src/zope/app/wfmc/configure.zcml:25
+msgid "Registering XPDL using ZCML"
+msgstr ""
+
+#. Default: "Create Workflow ProcessInstances"
 #: src/zope/app/workflow/configure.zcml:14
 msgid "create-workflow-processinstances-permission"
 msgstr "建立工作流程程序實體"
 
+#. Default: "Use Workflow ProcessInstances"
 #: src/zope/app/workflow/configure.zcml:20
 msgid "use-workflow-processinstances-permission"
 msgstr "使用工作流程程序實體"
 
+#. Default: "Manage Workflow ProcessDefinitions"
 #: src/zope/app/workflow/configure.zcml:8
 msgid "manage-workflow-processdefinitions-permission"
 msgstr "管理工作流程程序定義"
@@ -5866,7 +5648,6 @@ msgid "Content/Process Registry"
 msgstr "內容/程序登錄表"
 
 #: src/zope/app/workflow/stateful/browser/configure.zcml:144
-#: src/zope/app/workflow/browser/configure.zcml:6
 msgid "Workflows"
 msgstr "工作流程"
 
@@ -5902,11 +5683,11 @@ msgstr "具狀態的程序定義"
 msgid "Stateful State"
 msgstr "具狀態的狀態"
 
-#: src/zope/app/workflow/stateful/browser/contentworkflow.py:85
+#: src/zope/app/workflow/stateful/browser/contentworkflow.py:86
 msgid "Mapping(s) added."
 msgstr "已新增對映。"
 
-#: src/zope/app/workflow/stateful/browser/contentworkflow.py:93
+#: src/zope/app/workflow/stateful/browser/contentworkflow.py:94
 msgid "Mapping(s) removed."
 msgstr "已移除對映。"
 
@@ -5972,41 +5753,17 @@ msgstr "指定 `代表一個程序實體的工作流程相關資料` 的綱目�
 msgid "Source State"
 msgstr "來源狀態"
 
+#: src/zope/app/zapi/configure.zcml:13
+msgid "ZAPI"
+msgstr ""
+
 #: src/zope/app/zopetop/widget_macros.pt:133
 msgid "Search"
 msgstr "搜尋"
 
-#: src/zope/app/zopetop/widget_macros.pt:154
-#: src/zope/app/apidoc/ifacemodule/index.pt:168
-msgid "Views"
-msgstr "視圖"
-
-#: src/zope/app/zopetop/widget_macros.pt:171
-msgid "Actions"
-msgstr "動作"
-
-#: src/zope/app/zopetop/widget_macros.pt:198
-#: src/zope/app/rotterdam/template.pt:93
-#: src/zope/app/rotterdam/template_tablelayout.pt:72
-msgid "Location:"
-msgstr "位置："
-
-#: src/zope/app/zopetop/widget_macros.pt:251
-#: src/zope/app/rotterdam/dialog_macros.pt:161
-#: src/zope/app/rotterdam/view_macros.pt:41
-#: src/zope/app/basicskin/view_macros.pt:41
-msgid "Powered by Zope"
-msgstr "以 Zope 製作"
-
 #: src/zope/app/zopetop/widget_macros.pt:34
 msgid "Logged in as ${user_title}"
 msgstr "以 ${user_title} 之名登入"
-
-#: src/zope/app/zopetop/widget_macros.pt:48
-#: src/zope/app/rotterdam/template.pt:79
-#: src/zope/app/rotterdam/template_tablelayout.pt:99
-msgid "Add:"
-msgstr "新增："
 
 #: src/zope/app/zopetop/widget_macros.pt:56
 msgid "Tools"
@@ -6057,7 +5814,6 @@ msgid "Edit a ZPT page"
 msgstr "編輯 ZPT 頁面"
 
 #: src/zope/app/zptpage/browser/configure.zcml:49
-#: src/zope/app/zptpage/browser/configure.zcml:49
 msgid "Inline Code"
 msgstr "行內程式碼"
 
@@ -6065,7 +5821,9 @@ msgstr "行內程式碼"
 msgid ""
 "This screen allows you to activate Inline Code Evaluation. This means that "
 "you can say ${code-example-1} or ${code-example-2}"
-msgstr "此畫面讓你啟動行內程式碼評估處理，這表示你可以使用 ${code-example-1} 或 ${code-example-2}"
+msgstr ""
+"此畫面讓你啟動行內程式碼評估處理，這表示你可以使用 ${code-example-1} 或 "
+"${code-example-2}"
 
 #: src/zope/app/zptpage/browser/inlinecode.pt:35
 msgid ""
@@ -6075,19 +5833,20 @@ msgid ""
 "audience for Zope 3. Scripters are used to inline code from other "
 "technologies like PHP and it fits their brain, which is very important."
 msgstr ""
-"許多 Zope 3 開發者認為行內程式碼區塊不是什麼好東西，因為一般而言它不遵守頁面模板或 Zope 3 的設計。然而，應用程式與應用伺服器的開發者不是 "
-"Zope 3 僅有的參與者。來自其他技術，像 PHP 之類，的腳本程式員 (scripter) "
-"習慣使用內部程式碼，這才能符合他們大腦思考的習慣，這點非常重要。"
-
-#: src/zope/app/zptpage/configure.zcml:12
-#: src/zope/app/zptpage/browser/configure.zcml:23
-msgid "ZPT Page"
-msgstr "ZPT 頁面"
+"許多 Zope 3 開發者認為行內程式碼區塊不是什麼好東西，因為一般而言它不遵守頁面"
+"模板或 Zope 3 的設計。然而，應用程式與應用伺服器的開發者不是 Zope 3 僅有的參"
+"與者。來自其他技術，像 PHP 之類，的腳本程式員 (scripter) 習慣使用內部程式碼，"
+"這才能符合他們大腦思考的習慣，這點非常重要。"
 
 #: src/zope/app/zptpage/configure.zcml:12
 #: src/zope/app/zptpage/browser/configure.zcml:23
 msgid "A simple, content-based Page Template"
 msgstr "一個簡單、基於內容的面模板。"
+
+#: src/zope/app/zptpage/configure.zcml:12
+#: src/zope/app/zptpage/browser/configure.zcml:23
+msgid "ZPT Page"
+msgstr "ZPT 頁面"
 
 #: src/zope/app/zptpage/interfaces.py:37
 msgid "The source of the page template."
@@ -6115,21 +5874,360 @@ msgstr "計算/執行 TAL 中的程式碼。我們通常不鼓勵使用這項功
 msgid "1 line"
 msgstr "1 列"
 
+#. Default: ""
 #: src/zope/app/zptpage/zptpage.py:110
 msgid "${lines} lines"
 msgstr "${lines} 列"
 
-#: src/zope/formlib/form.py:715
+#: src/zope/component/zcml.py:105
+msgid ""
+"Adapters can have names.\n"
+"\n"
+"This attribute allows you to specify the name for this adapter."
+msgstr ""
+"轉接器可以有名稱。\n"
+"\n"
+"此屬性讓你指定此轉接器的名稱。"
+
+#: src/zope/component/zcml.py:112 src/zope/component/zcml.py:271
+msgid "Trusted"
+msgstr "可信任的"
+
+#: src/zope/component/zcml.py:113
+msgid ""
+"Make the adapter a trusted adapter\n"
+"\n"
+"        Trusted adapters have unfettered access to the objects they\n"
+"        adapt.  If asked to adapt security-proxied objects, then,\n"
+"        rather than getting an unproxied adapter of security-proxied\n"
+"        objects, you get a security-proxied adapter of unproxied\n"
+"        objects.\n"
+"        "
+msgstr ""
+"使轉接器成為可信任的轉接器 (trusted adapter)\n"
+"\n"
+"        可信任的轉接器可以自由存取被轉接的物件。如果要轉接安全代理物件 "
+"(security-proxied object)，你得到的是一個未被代理物件 (unproxied object) 的安"
+"全代理轉接器 (security-proxied adapter)，而不是安全代理物件 (security-"
+"proxied object) 的未被代理轉接器 (unproxied adapter)。\n"
+"        "
+
+#: src/zope/component/zcml.py:126 src/zope/component/zcml.py:285
+msgid "Locate"
+msgstr "定位"
+
+#: src/zope/component/zcml.py:127
+msgid ""
+"Make the adapter a locatable adapter\n"
+"\n"
+"        Located adapter should be used if a non-public permission\n"
+"        is used.\n"
+"        "
+msgstr ""
+"使轉接器成為可定位轉接器 (locatable adapter)\n"
+"\n"
+"        被定位的轉接器應該在使用非公共權限的時候使用。\n"
+"        "
+
+#: src/zope/component/zcml.py:236
+msgid "Subscriber factory"
+msgstr "訂閱器工廠"
+
+#: src/zope/component/zcml.py:237
+msgid "A factory used to create the subscriber instance."
+msgstr "一個用來產生訂閱器實體的工廠。"
+
+#: src/zope/component/zcml.py:242
+msgid "Handler"
+msgstr "處理器"
+
+#: src/zope/component/zcml.py:243
+msgid "A callable object that handles events."
+msgstr "一個用來處理事件的可呼叫物件。"
+
+#: src/zope/component/zcml.py:255
+msgid "Interfaces or classes that this subscriber depends on"
+msgstr "此訂閱器依賴的介面或類別"
+
+#: src/zope/component/zcml.py:265
+msgid ""
+"This subscriber is only available, if the principal has this permission."
+msgstr "只有當主體擁有此權限時，才能使用此訂閱器。"
+
+#: src/zope/component/zcml.py:272
+msgid ""
+"Make the subscriber a trusted subscriber\n"
+"\n"
+"        Trusted subscribers have unfettered access to the objects they\n"
+"        adapt.  If asked to adapt security-proxied objects, then,\n"
+"        rather than getting an unproxied subscriber of security-proxied\n"
+"        objects, you get a security-proxied subscriber of unproxied\n"
+"        objects.\n"
+"        "
+msgstr ""
+"使訂閱器成為可信任的訂閱器 (trusted subscriber)\n"
+"\n"
+"        可信任的訂閱器可以自由存取被轉接的物件。如果要轉接安全代理物件 "
+"(security-proxied object)，你得到的是一個未被代理物件 (unproxied object) 的安"
+"全代理訂閱器 (security-proxied subscriber)，而不是安全代理物件 (security-"
+"proxied object) 的未被代理訂閱器 (unproxied subscriber)。\n"
+"        "
+
+#: src/zope/component/zcml.py:286
+msgid ""
+"Make the subscriber a locatable subscriber\n"
+"\n"
+"        Located subscribers should be used if a non-public permission\n"
+"        is used.\n"
+"        "
+msgstr ""
+"使訂閱器成為可定位訂閱器 (locatable subscriber)\n"
+"\n"
+"        被定位的訂閱器應該在使用非公共權限的時候使用。\n"
+"        "
+
+#: src/zope/component/zcml.py:372
+msgid "Interface provided by the utility."
+msgstr "公用工具提供的介面。"
+
+#: src/zope/component/zcml.py:378
+msgid ""
+"Name of the registration.  This is used by application code when locating a "
+"utility."
+msgstr "登錄的名稱。應用程式程式碼用它來找尋公用工具。"
+
+#: src/zope/component/zcml.py:43
+msgid "Component to use"
+msgstr "要使用的元件"
+
+#: src/zope/component/zcml.py:44
+msgid ""
+"Python name of the implementation object.  This must identify an object in a "
+"module using the full dotted name.  If specified, the ``factory`` field must "
+"be left blank."
+msgstr ""
+"實作物件的 Python 名稱。這必須是一個以點號連接的完整名稱，以便能夠辨識出某模"
+"組中的某物件。若指定此名，則 ``工廠`` 欄位必須是空白的。"
+
+#: src/zope/component/zcml.py:444
+msgid "Interface type"
+msgstr "介面型態"
+
+#: src/zope/component/zcml.py:53
+msgid "Permission required to use this component."
+msgstr "使用此元件所需的權限。"
+
+#: src/zope/component/zcml.py:59
+msgid ""
+"Python name of a factory which can create the implementation object.  This "
+"must identify an object in a module using the full dotted name. If "
+"specified, the ``component`` field must be left blank."
+msgstr ""
+"產生實作物件的工廠的 Python 名稱。這必須是一個以點號連接的完整名稱，以便能夠"
+"辨識出某模組中的某物件。若指定此名，則 ``component`` 欄位必須是空白。"
+
+#: src/zope/component/zcml.py:73
+msgid "Adapter factory/factories"
+msgstr "轉接器工廠"
+
+#: src/zope/component/zcml.py:74
+msgid ""
+"A list of factories (usually just one) that create the adapter instance."
+msgstr "一份產生轉接器實體的工廠清單（通常只含有一個工廠）。"
+
+#: src/zope/component/zcml.py:81 src/zope/component/zcml.py:248
+msgid "Interface the component provides"
+msgstr "元件提供的介面"
+
+#: src/zope/component/zcml.py:82 src/zope/component/zcml.py:249
+msgid ""
+"This attribute specifies the interface the adapter instance must provide."
+msgstr "此屬性指定轉接器實體必須提供的介面。"
+
+#: src/zope/component/zcml.py:88
+msgid "Specifications to be adapted"
+msgstr "被轉接規格"
+
+#: src/zope/component/zcml.py:89 src/zope/component/zcml.py:256
+msgid "This should be a list of interfaces or classes"
+msgstr "這應該是一份介面或類別的清單"
+
+#: src/zope/component/zcml.py:98
+msgid "This adapter is only available, if the principal has this permission."
+msgstr "只有當主體擁有此權限時，才可以使用此轉接器。"
+
+#: src/zope/contentprovider/configure.zcml:14
+#, fuzzy
+msgid "Content Providers"
+msgstr "內容"
+
+#: src/zope/dublincore/browser/box.pt:10
+msgid "Description:"
+msgstr "描述："
+
+#: src/zope/dublincore/browser/box.pt:14
+msgid "Created:"
+msgstr "建立時間："
+
+#: src/zope/dublincore/browser/box.pt:19
+msgid "Modified:"
+msgstr "修改時間："
+
+#: src/zope/dublincore/browser/box.pt:5
+msgid "Title:"
+msgstr "標題："
+
+#: src/zope/dublincore/browser/configure.zcml:10
+#: src/zope/app/zopetop/widget_macros.pt:188
+msgid "Metadata"
+msgstr "元資料"
+
+#: src/zope/dublincore/browser/edit.pt:37
+msgid "Content Last Modified"
+msgstr "內容最近修改時間"
+
+#: src/zope/dublincore/browser/edit.pt:41
+msgid "Creator"
+msgstr "建立者"
+
+#. Default: ""
+#: src/zope/dublincore/browser/metadataedit.py:42
+msgid "Changed data ${datetime}"
+msgstr "變更資料 ${datetime}"
+
+#. Default: "View Dublin-Core Meta Data"
+#: src/zope/dublincore/configure.zcml:3
+msgid "zope.app.dublincore.view-permission"
+msgstr "檢視都柏林核心元資料"
+
+#. Default: "Change Dublin-Core Meta Data"
+#: src/zope/dublincore/configure.zcml:9
+msgid "zope.app.dublincore.change-permission"
+msgstr "變更都柏林核心元資料"
+
+#: src/zope/formlib/form.py:723
 msgid "There were errors"
 msgstr "共有 ${num_errors} 個輸入錯誤。"
 
-#: src/zope/formlib/form.py:771
+#: src/zope/formlib/form.py:781
 msgid "Apply"
 msgstr "套用"
 
-#: src/zope/formlib/form.py:793
+#: src/zope/formlib/form.py:802
 msgid "No changes"
 msgstr "沒有變更要儲存"
+
+#. Default: "Test"
+#: src/zope/rdb/browser/configure.zcml:32
+#: src/zope/app/sqlscript/browser/configure.zcml:41
+msgid "test-page-title"
+msgstr "測試"
+
+#: src/zope/rdb/browser/gadflyda.zcml:14
+msgid "Gadfly DA"
+msgstr "Gadfly DA"
+
+#: src/zope/rdb/browser/gadflyda.zcml:14
+msgid "A DA for the built-in 100% Pure Python Gadfly Database"
+msgstr "一個內建的百分之百純 Python Gadfly 資料庫的 DA"
+
+#: src/zope/rdb/browser/gadflyda.zcml:5
+msgid "Add Gadfly Database Adapter"
+msgstr "新增 Gadfly 資料庫轉接器"
+
+#: src/zope/rdb/browser/rdbconnection.pt:15
+msgid "Connection URI:"
+msgstr "連線 URI："
+
+#: src/zope/rdb/browser/rdbconnection.pt:17
+msgid "Template: dbi://username:password@host:port/dbname;param1=value..."
+msgstr "模板：dbi://username:password@host:port/dbname;param1=value..."
+
+#: src/zope/rdb/browser/rdbconnection.pt:25
+msgid "Encoding"
+msgstr "編碼"
+
+#. Default: "Connect"
+#: src/zope/rdb/browser/rdbconnection.pt:36
+msgid "connect-button"
+msgstr "連線"
+
+#. Default: "Disconnect"
+#: src/zope/rdb/browser/rdbconnection.pt:39
+msgid "disconnect-button"
+msgstr "切斷連線"
+
+#: src/zope/rdb/browser/rdbconnection.pt:4
+msgid "Edit Relational Database Adapter"
+msgstr "編輯關聯式資料庫轉接器"
+
+#: src/zope/rdb/browser/rdbtestresults.pt:12
+msgid "Executed Query:"
+msgstr "執行查詢："
+
+#: src/zope/rdb/browser/rdbtestresults.pt:4
+#: src/zope/rdb/browser/rdbtestsql.pt:4
+msgid "Database Adapter - Test Connection"
+msgstr "資料庫轉接器 - 連線測試"
+
+#: src/zope/rdb/browser/rdbtestsql.pt:14
+msgid "Here you can enter an SQL statement, so you can test the connection."
+msgstr "你可在這裡輸入 SQL 語句，以進行連線測試。"
+
+#: src/zope/rdb/browser/rdbtestsql.pt:19
+msgid "Query"
+msgstr "查詢"
+
+#. Default: "Execute"
+#: src/zope/rdb/browser/rdbtestsql.pt:28
+msgid "execute-button"
+msgstr "執行"
+
+#. Default: "Use Database Connections"
+#: src/zope/rdb/configure.zcml:6
+#, fuzzy
+msgid "zope.rdb.Use"
+msgstr "使用資料庫連線"
+
+#: src/zope/rdb/gadflyda.zcml:4
+msgid "Gadfly Database Adapter"
+msgstr "Gadfly 資料庫轉接器"
+
+#: src/zope/rdb/interfaces.py:276
+msgid "DSN"
+msgstr "DSN"
+
+#: src/zope/rdb/interfaces.py:277
+msgid ""
+"Specify the DSN (Data Source Name) of the database. Examples include:\n"
+"\n"
+"dbi://dbname\n"
+"dbi://dbname;param1=value...\n"
+"dbi://user:passwd/dbname\n"
+"dbi://user:passwd/dbname;param1=value...\n"
+"dbi://user:passwd@host:port/dbname\n"
+"dbi://user:passwd@host:port/dbname;param1=value...\n"
+"\n"
+"All values should be properly URL-encoded."
+msgstr ""
+"指定資料庫的資料來源名稱 (Data Source Name，DSN)。範例如下：\n"
+"\n"
+"dbi://dbname\n"
+"dbi://dbname;param1=value...\n"
+"dbi://user:passwd/dbname\n"
+"dbi://user:passwd/dbname;param1=value...\n"
+"dbi://user:passwd@host:port/dbname\n"
+"dbi://user:passwd@host:port/dbname;param1=value...\n"
+"\n"
+"所有 DSN 應該要經過 URL 編碼處理。"
+
+#: src/zope/rdb/interfaces.py:64
+msgid "Database encoding"
+msgstr "資料庫編碼"
+
+#: src/zope/rdb/interfaces.py:65
+msgid "Encoding of the database content"
+msgstr "資料庫內容的編碼"
 
 #: src/zope/schema/_bootstrapinterfaces.py:43
 msgid "Required input is missing."
@@ -6196,14 +6294,12 @@ msgstr "唯讀"
 msgid "If true, the field's value cannot be changed."
 msgstr "若為真值，此欄位值不能變更。"
 
-#: src/zope/schema/interfaces.py:127
-#: src/zope/schema/interfaces.py:267
+#: src/zope/schema/interfaces.py:127 src/zope/schema/interfaces.py:267
 #: src/zope/schema/interfaces.py:319
 msgid "Default Value"
 msgstr "預設值"
 
-#: src/zope/schema/interfaces.py:128
-#: src/zope/schema/interfaces.py:268
+#: src/zope/schema/interfaces.py:128 src/zope/schema/interfaces.py:268
 #: src/zope/schema/interfaces.py:320
 msgid ""
 "The field default value may be None or a legal\n"
@@ -6236,18 +6332,17 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"        順序屬性可以用來決定一個綱目中欄位的順序。在同一執行緒中，較晚產生的欄位有較大的順序值。\n"
+"        順序屬性可以用來決定一個綱目中欄位的順序。在同一執行緒中，較晚產生的"
+"欄位有較大的順序值。\n"
 "\n"
 "        （不同執行緒的欄位可以有相同順序。）\n"
 "        "
 
-#: src/zope/schema/interfaces.py:221
-#: src/zope/schema/interfaces.py:307
+#: src/zope/schema/interfaces.py:221 src/zope/schema/interfaces.py:307
 msgid "Start of the range"
 msgstr "範圍起始值"
 
-#: src/zope/schema/interfaces.py:227
-#: src/zope/schema/interfaces.py:313
+#: src/zope/schema/interfaces.py:227 src/zope/schema/interfaces.py:313
 msgid "End of the range (excluding the value itself)"
 msgstr "範圍結束值（不包含值本身）"
 
@@ -6265,8 +6360,9 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"        經過空白處理 (whitespace processing) "
-"之後的值長度（字串型態的字數，或是其他序列型態的元素個數）不能小於最小長度。如果最小長度設為 None，則沒有最小長度限制。\n"
+"        經過空白處理 (whitespace processing) 之後的值長度（字串型態的字數，或"
+"是其他序列型態的元素個數）不能小於最小長度。如果最小長度設為 None，則沒有最小"
+"長度限制。\n"
 "        "
 
 #: src/zope/schema/interfaces.py:249
@@ -6282,8 +6378,9 @@ msgid ""
 "        ``None``, there is no maximum."
 msgstr ""
 "\n"
-"        經過空白處理 (whitespace processing) "
-"之後的值長度（字串型態的字數，或是其他序列型態的元素個數）不能大於或等於最大長度。如果最大長度設為 None，則沒有最大長度限制。"
+"        經過空白處理 (whitespace processing) 之後的值長度（字串型態的字數，或"
+"是其他序列型態的元素個數）不能大於或等於最大長度。如果最大長度設為 None，則沒"
+"有最大長度限制。"
 
 #: src/zope/schema/interfaces.py:383
 msgid "Value Type"
@@ -6310,11 +6407,11 @@ msgstr "錯誤的被包含型態"
 msgid "One or more entries of sequence are not unique."
 msgstr "序列中有一個或多個項目不是唯一的。"
 
-#: src/zope/schema/interfaces.py:421
+#: src/zope/schema/interfaces.py:434
 msgid "The Interface that defines the Fields comprising the Object."
 msgstr "定義物件構成欄位的類別。"
 
-#: src/zope/schema/interfaces.py:431
+#: src/zope/schema/interfaces.py:444
 msgid ""
 "Field keys must conform to the given type, expressed\n"
 "           via a Field.\n"
@@ -6323,7 +6420,7 @@ msgstr ""
 "欄位鍵必須符合該欄位指定的型態。\n"
 "        "
 
-#: src/zope/schema/interfaces.py:436
+#: src/zope/schema/interfaces.py:449
 msgid ""
 "Field values must conform to the given type, expressed\n"
 "           via a Field.\n"
@@ -6384,17 +6481,100 @@ msgstr "主體的標題，通常用於使用者介面。"
 msgid "A detailed description of the principal."
 msgstr "關於主體的詳細描述。"
 
-#: src/zope/security/interfaces.py:281
-msgid "Groups"
-msgstr "群組"
-
-#: src/zope/security/interfaces.py:282
-msgid "List of ids of groups the principal belongs to"
-msgstr "主體所屬群組 ID 清單"
-
-#: src/zope/security/interfaces.py:295
+#: src/zope/security/interfaces.py:309
 msgid "Id as which this permission will be known and used."
 msgstr "用來辨識與使用此權限的 ID。"
+
+#. Default: "Send out mail with arbitrary from and to addresses"
+#: src/zope/sendmail/configure.zcml:7
+msgid "send-mail-permission"
+msgstr "寄信權限"
+
+#: src/zope/sendmail/interfaces.py:106
+msgid "Queue path"
+msgstr "佇列路徑"
+
+#: src/zope/sendmail/interfaces.py:107 src/zope/sendmail/interfaces.py:116
+msgid "Pathname of the directory used to queue mail."
+msgstr "郵件佇列目錄的路徑名稱。"
+
+#: src/zope/sendmail/interfaces.py:115
+msgid "Queue Path"
+msgstr "佇列路徑"
+
+#: src/zope/sendmail/interfaces.py:119
+msgid "Polling Interval"
+msgstr "輪詢間隔"
+
+#: src/zope/sendmail/interfaces.py:120
+msgid "How often the queue is checked for new messages (in milliseconds)"
+msgstr "每隔多久檢查佇列是否有新訊息（以毫秒為單位）"
+
+#: src/zope/sendmail/interfaces.py:152
+msgid "Hostname"
+msgstr "主機名稱"
+
+#: src/zope/sendmail/interfaces.py:153
+msgid "Name of server to be used as SMTP server."
+msgstr "SMTP 伺服器名稱。"
+
+#: src/zope/sendmail/interfaces.py:156
+msgid "Port"
+msgstr "埠號"
+
+#: src/zope/sendmail/interfaces.py:157
+msgid "Port of SMTP service"
+msgstr "SMTP 服務埠號"
+
+#: src/zope/sendmail/interfaces.py:161
+#: src/zope/app/i18n/browser/synchronize.pt:32
+msgid "Username"
+msgstr "使用者名稱"
+
+#: src/zope/sendmail/interfaces.py:162
+msgid "Username used for optional SMTP authentication."
+msgstr "用於（選擇性的）SMTP 身分驗證的使用者名稱。"
+
+#: src/zope/sendmail/interfaces.py:166
+msgid "Password used for optional SMTP authentication."
+msgstr "用於（選擇性的）SMTP 身分驗證的密碼。"
+
+#. Default: "n/a"
+#: src/zope/size/__init__.py:43
+msgid "not-available"
+msgstr "n/a"
+
+#: src/zope/size/__init__.py:47
+msgid "0 KB"
+msgstr "0 KB"
+
+#: src/zope/size/__init__.py:49
+msgid "1 KB"
+msgstr "1 KB"
+
+#. Default: ""
+#: src/zope/size/__init__.py:51
+msgid "${size} MB"
+msgstr "${size} MB"
+
+#. Default: ""
+#: src/zope/size/__init__.py:52
+msgid "${size} KB"
+msgstr "${size} KB"
+
+#: src/zope/traversing/browser/absoluteurl.py:28
+msgid ""
+"There isn't enough context to get URL information. This is probably due to a "
+"bug in setting up location information."
+msgstr "沒有足夠文脈以取得 URL 相關資訊，可能是由於設定位置資訊的臭蟲造成的。"
+
+#: src/zope/viewlet/configure.zcml:13
+msgid "Viewlet-related ZCML Directives"
+msgstr ""
+
+#: src/zope/viewlet/configure.zcml:6
+msgid "Viewlets and Viewlet Managers"
+msgstr ""
 
 #: src/zope/viewlet/metadirectives.py:41
 msgid "The view the content provider is registered for."
@@ -6404,7 +6584,9 @@ msgstr "內容提供器登錄的視圖。"
 msgid ""
 "The view can either be an interface or a class. By default the provider is "
 "registered for all views, the most common case."
-msgstr "視圖可以是一個介面或是類別。預設情況下，提供器會註冊全部視圖，這也是最常見的情形。"
+msgstr ""
+"視圖可以是一個介面或是類別。預設情況下，提供器會註冊全部視圖，這也是最常見的"
+"情形。"
 
 #: src/zope/viewlet/metadirectives.py:49
 msgid "The name of the content provider."
@@ -6424,7 +6606,8 @@ msgstr "內容模板。"
 msgid ""
 "Refers to a file containing a page template (should end in extension ``.pt`` "
 "or ``.html``)."
-msgstr "係指一個內容含有頁面模板的檔案 (其副檔名必須是  ``.pt`` 或 ``.html``）。"
+msgstr ""
+"係指一個內容含有頁面模板的檔案 (其副檔名必須是  ``.pt`` 或 ``.html``）。"
 
 #: src/zope/viewlet/metadirectives.py:77
 msgid "The interface this viewlet manager provides."
@@ -6439,3 +6622,320 @@ msgstr "Viewlet 管理器可以提供一個介面，用來查找它所包含的 
 #: src/zope/viewlet/metadirectives.py:99
 msgid "view"
 msgstr "視圖"
+
+#~ msgid "<subscription>"
+#~ msgstr "<訂閱>"
+
+#~ msgid "${name} Views"
+#~ msgstr "${name} 視圖"
+
+#~ msgid "layer:"
+#~ msgstr "顯示層："
+
+#~ msgid "Authenticator Plugin"
+#~ msgstr "身分驗證插件"
+
+#~ msgid "New Pluggable Authentication Utility Registration"
+#~ msgstr "新的即插即用身分驗證公用工具登錄"
+
+#~ msgid "New Credentials Plugin Registration"
+#~ msgstr "新的憑證插件登錄"
+
+#~ msgid "New Authenticator Plugin Registration"
+#~ msgstr "新的身分驗證器插件登錄"
+
+#~ msgid "Credentials Plugin"
+#~ msgstr "憑證插件"
+
+#~ msgid "Groups Folder"
+#~ msgstr "群組資料夾"
+
+#~ msgid "Caches"
+#~ msgstr "快取"
+
+#~ msgid "Caches can be used to make your site run faster."
+#~ msgstr "使用快取可以讓你的網站跑的更快。"
+
+#~ msgid "Objects that support indexed searching"
+#~ msgstr "支援索引搜尋的物件"
+
+#~ msgid "Visit default folder"
+#~ msgstr "造訪預設資料夾"
+
+#~ msgid "Software"
+#~ msgstr "軟體"
+
+#~ msgid "Site Management"
+#~ msgstr "網站管理"
+
+#~ msgid "New Utility Registration"
+#~ msgstr "新的公用工具登錄"
+
+#~ msgid "Edit Utility Registration"
+#~ msgstr "編輯公用工具登錄"
+
+#~ msgid "Change adapter"
+#~ msgstr "更換轉接器"
+
+#~ msgid "Summary"
+#~ msgstr "概要"
+
+#~ msgid "Config item ${name}"
+#~ msgstr "組態項目 ${name}"
+
+#~ msgid "(disabled)"
+#~ msgstr "（未啟用）"
+
+#~ msgid "Add a registration for this object"
+#~ msgstr "為此物件新增一項登錄"
+
+#~ msgid "(modify)"
+#~ msgstr "（修改）"
+
+#~ msgid "This object is currently active."
+#~ msgstr "此物件已啟用。"
+
+#~ msgid "deactivate-button"
+#~ msgstr "停用"
+
+#~ msgid "This object is currently inactive."
+#~ msgstr "此物件目前已停用。"
+
+#~ msgid "activate-button"
+#~ msgstr "啟用"
+
+#~ msgid "This object is not currently active."
+#~ msgstr "此物件目前未啟用。"
+
+#~ msgid ""
+#~ "This object won't actually be used unless it is registered to perform a "
+#~ "specific function and is activated."
+#~ msgstr "你必須為此物件登錄特定的功能並啟用之，否則此物件不能被使用。"
+
+#~ msgid "<no name>"
+#~ msgstr "<沒有名稱>"
+
+#~ msgid "<i>No instances of this utility are available yet.</i>"
+#~ msgstr "<i>此公用工具尚無實體可用。</i>"
+
+#~ msgid "ADD-TOOL-SUBMIT"
+#~ msgstr "新增"
+
+#~ msgid "CANCEL-ADD-TOOL-SUBMIT"
+#~ msgstr "取消"
+
+#~ msgid "ACTIVATE-SUBMIT"
+#~ msgstr "啟用"
+
+#~ msgid "DEACTIVATE-SUBMIT"
+#~ msgstr "停用"
+
+#~ msgid "ADD-SUBMIT"
+#~ msgstr "新增"
+
+#~ msgid "DELETE-SUBMIT"
+#~ msgstr "刪除"
+
+#~ msgid "RENAME-SUBMIT"
+#~ msgstr "改名"
+
+#~ msgid "RENAME-CANCEL-SUBMIT"
+#~ msgstr "取消"
+
+#~ msgid "Unique Utilities"
+#~ msgstr "唯一性公用工具"
+
+#~ msgid ""
+#~ "Unique utilities can only exist once per site manager and have no name."
+#~ msgstr "每個網站管理器只能有一個而且沒有名稱的唯一性公用工具。"
+
+#~ msgid "INSTALL-SUBMIT"
+#~ msgstr "安裝"
+
+#~ msgid "UNINSTALL-SUBMIT"
+#~ msgstr "解除安裝"
+
+#~ msgid "<b>Site Management</b>"
+#~ msgstr "<b>網站管理</b>"
+
+#~ msgid "${name} (Active)"
+#~ msgstr "${name}（啟用中）"
+
+#~ msgid "${name} (Inactive)"
+#~ msgstr "${name}（未啟用）"
+
+#~ msgid "Tools successfully activated."
+#~ msgstr "工具啟用成功。"
+
+#~ msgid "Tools successfully deactivated."
+#~ msgstr "工具停用成功。"
+
+#~ msgid "Tools successfully deleted."
+#~ msgstr "工具刪除成功。"
+
+#~ msgid "No tools selected."
+#~ msgstr "未選擇工具。"
+
+#~ msgid "Tools successfully renamed."
+#~ msgstr "工具改名成功。"
+
+#~ msgid "The given tool name is already being used."
+#~ msgstr "指定的名稱已經被使用了。"
+
+#~ msgid "Tools successfully installed."
+#~ msgstr "工具安裝成功。"
+
+#~ msgid "Tools successfully uninstalled."
+#~ msgstr "工具解除安裝成功。"
+
+#~ msgid "component:"
+#~ msgstr "元件："
+
+#~ msgid "provided:"
+#~ msgstr "提供："
+
+#~ msgid "The layer the resource is in."
+#~ msgstr "資源所在的顯示層。"
+
+#~ msgid "Can't delete active registration (${path})"
+#~ msgstr "無法刪除啟用中的登錄 (${path})"
+
+#~ msgid "Can't move a registered component from its container."
+#~ msgstr "無法將登錄的元件從它的容器移出。"
+
+#~ msgid "Component to record all uncaught errors and exceptions."
+#~ msgstr "用來記錄所有未被捕捉的錯誤與異常的元件。"
+
+#~ msgid "Error Reporting"
+#~ msgstr "錯誤報告"
+
+#~ msgid "remove-selected-items"
+#~ msgstr "移除被選擇的項目"
+
+#~ msgid "A Principal Home Folder Manager"
+#~ msgstr "主體家目錄管理器"
+
+#~ msgid ""
+#~ "Translation Domains allow you to localize your software by       "
+#~ "providing message translations."
+#~ msgstr "翻譯領域讓你使用訊息翻譯來將你的軟體本地化。"
+
+#~ msgid "Unique Id Tool"
+#~ msgstr "唯一 ID 工具"
+
+#~ msgid ""
+#~ "Unique Ids Tools are used to provide system-wide unique ids       for "
+#~ "documents."
+#~ msgstr "唯一 ID 工具被用來為每個物件提供全系統唯一的 ID。"
+
+#~ msgid "Menu of caches to be added"
+#~ msgstr "快取選單"
+
+#~ msgid "Menu of objects to be added to content folders"
+#~ msgstr "可加到內容資料夾中的物件的選單"
+
+#~ msgid "Menu of database connections to be added"
+#~ msgstr "資料庫連線的選單"
+
+#~ msgid ""
+#~ "           This component lets you define the local default "
+#~ "user           preferences. The values of this provider are used, if "
+#~ "the           user has not made a selection yet."
+#~ msgstr ""
+#~ "           這個元件讓你定義區域性預設使用者偏好設定。若使用者未作出選擇，"
+#~ "則使用提供器的值。"
+
+#~ msgid "Change page"
+#~ msgstr "變更頁面"
+
+#~ msgid "Default Registration"
+#~ msgstr "預設登錄"
+
+#~ msgid "Default registration parameters"
+#~ msgstr "預設登錄參數"
+
+#~ msgid "Register a view page"
+#~ msgstr "登錄一個視圖頁面"
+
+#~ msgid "Page Folder"
+#~ msgstr "頁面資料夾"
+
+#~ msgid "Register a view ZPT"
+#~ msgstr "登錄一個視圖 ZPT"
+
+#~ msgid "View Folder"
+#~ msgstr "視圖資料夾"
+
+#~ msgid "Persistent View Page Template"
+#~ msgstr "永續的視圖頁面模板"
+
+#~ msgid "ZPT Template"
+#~ msgstr "ZPT 模板"
+
+#~ msgid "The dotted name of a factory for creating the view"
+#~ msgstr "用來產生視圖的工廠的名稱，此名稱必須是以點號連接的名稱"
+
+#~ msgid "The permission required to use the view"
+#~ msgstr "使用視圖所需的權限"
+
+#~ msgid "Apply changes to existing pages"
+#~ msgstr "套用變更到現有頁面"
+
+#~ msgid "The type of requests the view works with"
+#~ msgstr "由視圖來處理的請求型態"
+
+#~ msgid "Class attribute"
+#~ msgstr "類別屬性"
+
+#~ msgid "The interface of the objects being viewed"
+#~ msgstr "被檢視物件的介面"
+
+#~ msgid "for:"
+#~ msgstr "為："
+
+#~ msgid "name:"
+#~ msgstr "名稱："
+
+#~ msgid "Stores annotations for any principal."
+#~ msgstr "儲存任何主體的註解資訊。"
+
+#~ msgid "Principal Annotations"
+#~ msgstr "主體註文"
+
+#~ msgid ""
+#~ "Database Adapters are used to connect to external       relational "
+#~ "databases."
+#~ msgstr "資料庫轉接器被用來連接外部關聯式資料庫。"
+
+#~ msgid "Database Adapter"
+#~ msgstr "資料庫轉接器"
+
+#~ msgid "These are schemas that live in the ZODB and are modifiable."
+#~ msgstr "這些是存在 ZODB 裡頭並且可以修改的綱目。"
+
+#~ msgid ""
+#~ "Content Component Definitions are used to declare       schema-based "
+#~ "content objects."
+#~ msgstr "內容元件定義是用來宣告基於綱目的內容物件。"
+
+#~ msgid "Authentication"
+#~ msgstr "身分驗證"
+
+#~ msgid "Authenticates Principals."
+#~ msgstr "驗證主體。"
+
+#~ msgid "Security Permission"
+#~ msgstr "安全性權限"
+
+#~ msgid ""
+#~ "Roles are used to combine permissions and can be assigned       to "
+#~ "principals."
+#~ msgstr "角色被用來結合權限，並且可以被指派給主體。"
+
+#~ msgid ""
+#~ "Workflow Process Definitions define a particular workflow       for an "
+#~ "object."
+#~ msgstr "工作流程序定義定義一個物件的特定工作流程。"
+
+#~ msgid "List of ids of groups the principal belongs to"
+#~ msgstr "主體所屬群組 ID 清單"
