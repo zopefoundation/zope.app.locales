@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zope\n"
 "POT-Creation-Date: Tue May 02 21:39:45 2006\n"
-"PO-Revision-Date: 2006-05-02 20:38+0100\n"
+"PO-Revision-Date: 2006-05-02 23:07+0100\n"
 "Last-Translator: Egon Frerich <e.frerich@nord-com.net>\n"
 "Language-Team: German <zope3-dev@zope.org>\n"
 "MIME-Version: 1.0\n"
@@ -44,18 +44,13 @@ msgstr "Textsammlung"
 msgid ""
 "\n"
 "    This is a developer's book compiled from all existing documentation\n"
-"    files. It is not meant to be a complete or cohesive work, but each "
-"chapter\n"
+"    files. It is not meant to be a complete or cohesive work, but each chapter\n"
 "    in itself is a little story. Think about it like a collection of fairy\n"
 "    tales.\n"
 "    "
 msgstr ""
 "\n"
-"    Dies ist eine Textsammlung für Entwickler, die aus allen bestehenden  "
-"Dokumentationsdateien zusammengestellt wurde. Sie ist nicht als vollständige "
-"oder zusammenhängende Unterlage gemeint, sondernjedes Kapitel ist für sich "
-"eine kleine Geschichte. Betrachten Sie die Sammlung als eine "
-"Zusammenstellung von Geschichten.    "
+"    Dies ist eine Textsammlung für Entwickler, die aus allen bestehenden  Dokumentationsdateien zusammengestellt wurde. Sie ist nicht als vollständige oder zusammenhängende Unterlage gemeint, sondernjedes Kapitel ist für sich eine kleine Geschichte. Betrachten Sie die Sammlung als eine Zusammenstellung von Geschichten.    "
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:104
 msgid "Security"
@@ -79,7 +74,7 @@ msgstr "Safe Builtins"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:135
 msgid "Global Principals"
-msgstr "Global Principals"
+msgstr "Globale Nutzungsberechtigte"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:144
 msgid "Testing"
@@ -229,17 +224,8 @@ msgstr "Ereignisse"
 
 #: src/zope/app/apidoc/browser/contents.pt:15
 #: src/zope/app/apidoc/browser/static_contents.pt:15
-msgid ""
-"Modules are usually depending on each other by using links that create "
-"references across all modules. Each module has a \"theme\" that it follows, "
-"which was designed to aid the developer directly to the desired information. "
-"Below you see a short description of every module."
-msgstr ""
-"Module sind normalerweise voneinander abhängig, da sie Referenzen zu anderen "
-"Modulen durch Links bereitstellen. Jedes Modul hat ein \"Thema\", dem es "
-"folgt, sodass der Entwickler schneller die gewünschten Informationen finden "
-"kann. In den folgenden Abschnitten finden Sie kurze Beschreibungen für jedes "
-"Modul."
+msgid "Modules are usually depending on each other by using links that create references across all modules. Each module has a \"theme\" that it follows, which was designed to aid the developer directly to the desired information. Below you see a short description of every module."
+msgstr "Module sind normalerweise voneinander abhängig, da sie Referenzen zu anderen Modulen durch Links bereitstellen. Jedes Modul hat ein \"Thema\", dem es folgt, sodass der Entwickler schneller die gewünschten Informationen finden kann. In den folgenden Abschnitten finden Sie kurze Beschreibungen für jedes Modul."
 
 #: src/zope/app/apidoc/browser/contents.pt:24
 #: src/zope/app/apidoc/browser/contents.pt:29
@@ -301,14 +287,17 @@ msgstr ""
 #: src/zope/app/file/browser/file_add.pt:11
 #: src/zope/app/file/browser/file_upload.pt:11
 #: src/zope/app/file/browser/image_edit.pt:13
-#: src/zope/app/form/browser/add.pt:13 src/zope/app/form/browser/add.pt:19
-#: src/zope/app/form/browser/display.pt:9 src/zope/app/form/browser/edit.pt:14
+#: src/zope/app/form/browser/add.pt:13
+#: src/zope/app/form/browser/add.pt:19
+#: src/zope/app/form/browser/display.pt:9
+#: src/zope/app/form/browser/edit.pt:14
 #: src/zope/app/form/browser/edit.pt:20
 #: src/zope/app/i18nfile/browser/file_edit.pt:25
 #: src/zope/app/i18nfile/browser/image_edit.pt:25
 #: src/zope/app/i18nfile/browser/image_edit.pt:87
 #: src/zope/app/onlinehelp/browser/helptopic.pt:3
-#: src/zope/app/pythonpage/edit.pt:14 src/zope/app/pythonpage/edit.pt:19
+#: src/zope/app/pythonpage/edit.pt:14
+#: src/zope/app/pythonpage/edit.pt:19
 #: src/zope/app/rotterdam/template.pt:112
 #: src/zope/app/rotterdam/template.pt:131
 #: src/zope/app/rotterdam/template.pt:140
@@ -352,19 +341,8 @@ msgstr "Zope 3 API Dokumentation"
 
 #: src/zope/app/apidoc/browser/contents.pt:7
 #: src/zope/app/apidoc/browser/static_contents.pt:7
-msgid ""
-"Welcome to the Zope 3 API documentation tool. The documentation provided "
-"here is separated in several discrete documentation modules. You can see the "
-"list of available modules in the top-left box on your screen. When you click "
-"on a module, the module's menu will appear below. In the menu you have then "
-"navigational means to access the documentation content of the module."
-msgstr ""
-"Willkommen zum Zope 3 API Dokumentationstool. Die hier bereitgestellte "
-"Dokumentation ist in diskrete Dokumentationsmodule unterteilt. Sie können "
-"eine Liste aller Module in der links oben platzierten Box auf Ihrem "
-"Bildschirm sehen. Wenn Sie auf ein Modul klicken, dann öffnet sich das "
-"Modulmenü darunter. Das Menü bietet dann Navigationsmöglichkeiten, um auf "
-"den Inhalt der Dokumentation zugreifen zu können."
+msgid "Welcome to the Zope 3 API documentation tool. The documentation provided here is separated in several discrete documentation modules. You can see the list of available modules in the top-left box on your screen. When you click on a module, the module's menu will appear below. In the menu you have then navigational means to access the documentation content of the module."
+msgstr "Willkommen zum Zope 3 API Dokumentationstool. Die hier bereitgestellte Dokumentation ist in diskrete Dokumentationsmodule unterteilt. Sie können eine Liste aller Module in der links oben platzierten Box auf Ihrem Bildschirm sehen. Wenn Sie auf ein Modul klicken, dann öffnet sich das Modulmenü darunter. Das Menü bietet dann Navigationsmöglichkeiten, um auf den Inhalt der Dokumentation zugreifen zu können."
 
 #: src/zope/app/apidoc/browser/details_macros.pt:10
 #: src/zope/app/apidoc/browser/menu_macros.pt:10
@@ -374,12 +352,8 @@ msgstr "Zope 3 apidoku"
 
 #: src/zope/app/apidoc/browser/menu.pt:6
 #: src/zope/app/apidoc/browser/static_menu.pt:6
-msgid ""
-"Click on one of the Documentation Modules above and a menu for this module "
-"will appear."
-msgstr ""
-"Klicken Sie auf ein Dokumentationsmodul, um ein Menü für dieses Modul zu "
-"bekommen."
+msgid "Click on one of the Documentation Modules above and a menu for this module will appear."
+msgstr "Klicken Sie auf ein Dokumentationsmodul, um ein Menü für dieses Modul zu bekommen."
 
 #: src/zope/app/apidoc/browser/menu_macros.pt:28
 #: src/zope/app/apidoc/browser/static_menu_macros.pt:31
@@ -398,7 +372,8 @@ msgstr "Zope 3 API Doku"
 #: src/zope/app/error/browser/error.pt:53
 #: src/zope/app/file/browser/file_add.pt:46
 #: src/zope/app/file/browser/file_upload.pt:48
-#: src/zope/app/form/browser/add.pt:53 src/zope/app/form/browser/edit.pt:53
+#: src/zope/app/form/browser/add.pt:53
+#: src/zope/app/form/browser/edit.pt:53
 #: src/zope/app/pythonpage/edit.pt:70
 #: src/zope/app/zptpage/browser/inlinecode.pt:64
 #: src/zope/dublincore/browser/edit.pt:50
@@ -409,7 +384,8 @@ msgstr "Auffrischen"
 #: src/zope/app/apidoc/browser/prefIndex.pt:120
 #: src/zope/app/demo/widget/browser/Kopie von popup.pt:67
 #: src/zope/app/demo/widget/browser/popup.pt:67
-#: src/zope/app/form/browser/edit.pt:55 src/zope/app/pythonpage/edit.pt:72
+#: src/zope/app/form/browser/edit.pt:55
+#: src/zope/app/pythonpage/edit.pt:72
 #: src/zope/app/zptpage/browser/inlinecode.pt:66
 msgid "submit-button"
 msgstr "Abschicken"
@@ -417,7 +393,8 @@ msgstr "Abschicken"
 #: src/zope/app/apidoc/browser/prefIndex.pt:78
 #: src/zope/app/demo/widget/browser/Kopie von popup.pt:36
 #: src/zope/app/demo/widget/browser/popup.pt:36
-#: src/zope/app/form/browser/add.pt:25 src/zope/app/form/browser/edit.pt:26
+#: src/zope/app/form/browser/add.pt:25
+#: src/zope/app/form/browser/edit.pt:26
 #: src/zope/app/pythonpage/edit.pt:24
 #: src/zope/app/schema/browser/schema_edit.pt:21
 #: src/zope/app/zptpage/browser/inlinecode.pt:50
@@ -636,59 +613,43 @@ msgid ""
 "    two methods to navigate through the modules to find the classes you are\n"
 "    interested in.\n"
 "\n"
-"    The first method is to type in some part of the Python path of the "
-"class\n"
-"    and the module will look in the class registry for matches. The menu "
-"will\n"
+"    The first method is to type in some part of the Python path of the class\n"
+"    and the module will look in the class registry for matches. The menu will\n"
 "    then return with a list of these matches.\n"
 "\n"
-"    The second method is to click on the \"Browse Zope Source\" link. In "
-"the\n"
+"    The second method is to click on the \"Browse Zope Source\" link. In the\n"
 "    main window, you will see a directory listing with the root Zope 3\n"
-"    modules. You can click on the module names to discover their content. If "
-"a\n"
+"    modules. You can click on the module names to discover their content. If a\n"
 "    class is found, it is represented as a bold entry in the list.\n"
 "\n"
 "    The documentation contents of a class provides you with an incredible\n"
-"    amount of information. Not only does it tell you about its base "
-"classes,\n"
+"    amount of information. Not only does it tell you about its base classes,\n"
 "    implemented interfaces, attributes and methods, but it also lists the\n"
 "    interface that requires a method or attribute to be implemented and the\n"
 "    permissions required to access it.\n"
 "    "
 msgstr ""
 "\n"
-"    Mit diesem Modul können Sie einen Überblick über die Module und "
-"Klassen \n"
+"    Mit diesem Modul können Sie einen Überblick über die Module und Klassen \n"
 "    erhalten, die im Zope 3 Framework und ihren unterstützenden Paketen \n"
-"    enthalten sind. Sie können auf zwei Wegen durch die Module navigieren, "
-"um \n"
+"    enthalten sind. Sie können auf zwei Wegen durch die Module navigieren, um \n"
 "    die Sie interessierenden Klassen zu finden.\n"
 "\n"
-"    Die erste Methode besteht darin, einen Teil des Pythonpfades der "
-"Klasse \n"
+"    Die erste Methode besteht darin, einen Teil des Pythonpfades der Klasse \n"
 "    einzugeben. Das Modul sucht im Klassenregister nach Übereinstimmungen. \n"
 "    Das Menü gibt dann eine Liste aller Treffer aus.\n"
 "\n"
 "    Für die zweite Methode klicken Sie einfach auf den \"Zope Quelltext \n"
-"    durchblättern\" Link. In dem Hauptfenster sehen Sie eine "
-"Verzeichnisauflistung \n"
-"    aller Zope 3 Wurzelmodule. Sie können auf diese Module klicken, um "
-"ihren \n"
-"    Inhalt zu erforschen. Wenn eine Klasse gefunden wurde, wird sie als "
-"fetter \n"
+"    durchblättern\" Link. In dem Hauptfenster sehen Sie eine Verzeichnisauflistung \n"
+"    aller Zope 3 Wurzelmodule. Sie können auf diese Module klicken, um ihren \n"
+"    Inhalt zu erforschen. Wenn eine Klasse gefunden wurde, wird sie als fetter \n"
 "    Eintrag in der Liste angezeigt.\n"
 "\n"
-"    Der Dokumentationsinhalt einer Klasse bietet Ihnen eine erstaunliche "
-"Menge \n"
-"    an Informationen. Es werden Ihnen nicht nur die Basisklassen, "
-"implementierte \n"
-"    Schnittstellen, Attribute und Methoden angezeigt, sondern auch, "
-"welches \n"
-"    Attribut (oder welche Methode) bei der Implementierung einer "
-"Schnittstelle \n"
-"    erforderlich ist sowie die notwendige Berechtigung für den Zugriff auf "
-"das \n"
+"    Der Dokumentationsinhalt einer Klasse bietet Ihnen eine erstaunliche Menge \n"
+"    an Informationen. Es werden Ihnen nicht nur die Basisklassen, implementierte \n"
+"    Schnittstellen, Attribute und Methoden angezeigt, sondern auch, welches \n"
+"    Attribut (oder welche Methode) bei der Implementierung einer Schnittstelle \n"
+"    erforderlich ist sowie die notwendige Berechtigung für den Zugriff auf das \n"
 "    Attribut.\n"
 "    "
 
@@ -715,8 +676,7 @@ msgid ""
 "        cannot be fully validated and improper ZCML files might be written."
 msgstr ""
 "Gibt das Paket an, für das die Konfigurationsdatei ausgeführt wird. Wenn \n"
-"     Sie keinen Paketnamen angeben, kann die Konfiguration nicht "
-"vollständig \n"
+"     Sie keinen Paketnamen angeben, kann die Konfiguration nicht vollständig \n"
 "     geprüft werden und können die ZCML-Dateien unrichtig geschrieben werden."
 
 #: src/zope/app/apidoc/codemodule/interfaces.py:198
@@ -727,7 +687,8 @@ msgstr "XML-Wurzelelement"
 msgid "XML element representing the configuration root."
 msgstr "XML-Element, das die Konfigurationswurzel darstellt"
 
-#: src/zope/app/apidoc/component.py:222 src/zope/app/apidoc/component.py:255
+#: src/zope/app/apidoc/component.py:222
+#: src/zope/app/apidoc/component.py:255
 msgid "<i>no name</i>"
 msgstr "<i>kein Name</i>"
 
@@ -756,11 +717,8 @@ msgid "API Doc Tool"
 msgstr "API Doc Tool"
 
 #: src/zope/app/apidoc/configure.zcml:70
-msgid ""
-"          These are all the preferences related to viewing the API          "
-"documentation."
-msgstr ""
-"Alle diese Präferenzen beziehen sich auf das Ansehen der API Dokumentation"
+msgid "          These are all the preferences related to viewing the API          documentation."
+msgstr "Alle diese Präferenzen beziehen sich auf das Ansehen der API Dokumentation"
 
 #. Default: "Access Online API documentation"
 #: src/zope/app/apidoc/configure.zcml:8
@@ -877,8 +835,7 @@ msgid ""
 "\n"
 "    All used and important interfaces are registered through the site\n"
 "    manager. While it would be possible to just list all attributes, it is\n"
-"    hard on the user to read such an overfull list. Therefore, interfaces "
-"that\n"
+"    hard on the user to read such an overfull list. Therefore, interfaces that\n"
 "    have partial common module paths are bound together.\n"
 "\n"
 "    The documentation of an interface also provides a wide variety of\n"
@@ -889,20 +846,14 @@ msgid ""
 msgstr ""
 "\n"
 "    Alle benutzten und wichtigen Schnittstellen sind bei der Web-Auftritt-\n"
-"    Verwaltung registriert. Zwar könnten alle Schnittstellen auf einmal "
-"angezeigt \n"
-"    werden, doch ist es für den Benutzer schwer, in einer solchen "
-"übervollen \n"
-"    Liste den Überblick zu behalten. Daher wurden Schnittstellen mit "
-"gleich \n"
+"    Verwaltung registriert. Zwar könnten alle Schnittstellen auf einmal angezeigt \n"
+"    werden, doch ist es für den Benutzer schwer, in einer solchen übervollen \n"
+"    Liste den Überblick zu behalten. Daher wurden Schnittstellen mit gleich \n"
 "    beginnenden Pfadnamen zusammengefaßt.\n"
 "\n"
-"    Die Dokumentation einer Schnittstelle stellt ebenfalls eine große "
-"Vielfalt \n"
-"    an Informationen bereit, eingeschlossen selbstverständlich die "
-"deklarierten \n"
-"    Attribute/Felder und Methoden, aber auch vorhandene Adapter und "
-"Utilities, \n"
+"    Die Dokumentation einer Schnittstelle stellt ebenfalls eine große Vielfalt \n"
+"    an Informationen bereit, eingeschlossen selbstverständlich die deklarierten \n"
+"    Attribute/Felder und Methoden, aber auch vorhandene Adapter und Utilities, \n"
 "    welche diese Schnittstelle zur Verfügung stellen.\n"
 "    "
 
@@ -936,9 +887,7 @@ msgstr "Weitere Informationen"
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:288
 msgid "A list of factories that create objects implementing this interface."
-msgstr ""
-"Eine Liste von Fabriken, die diejenigen Objekte erstellen, die diese "
-"Schnittstelle implementieren."
+msgstr "Eine Liste von Fabriken, die diejenigen Objekte erstellen, die diese Schnittstelle implementieren."
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:29
 msgid "Base interfaces"
@@ -946,20 +895,15 @@ msgstr "Basis-Schnittstellen"
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:303
 msgid "A list of utilities that are registered to provide this interface."
-msgstr ""
-"Eine Liste registrierter Utilities, welche diese Schnittstelle bereitstellen."
+msgstr "Eine Liste registrierter Utilities, welche diese Schnittstelle bereitstellen."
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:316
 msgid "Classes"
 msgstr "Klassen"
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:318
-msgid ""
-"A list of classes that implement this interface. This might duplicate the "
-"entries in Utilities."
-msgstr ""
-"Eine Liste der Klassen, die diese Schnittstelle implementieren. Dies "
-"dupliziert wahrscheinlich Einträge unter den Utilities."
+msgid "A list of classes that implement this interface. This might duplicate the entries in Utilities."
+msgstr "Eine Liste der Klassen, die diese Schnittstelle implementieren. Dies dupliziert wahrscheinlich Einträge unter den Utilities."
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:44
 msgid "There are no base interfaces."
@@ -1076,20 +1020,15 @@ msgid ""
 "\n"
 "    Preferences for API Docs' Interface Details Screen\n"
 "\n"
-"    It is possible to hide and show various sections of the interface "
-"details'\n"
-"    screen. The following preferences allow you to choose the sections to "
-"be\n"
+"    It is possible to hide and show various sections of the interface details'\n"
+"    screen. The following preferences allow you to choose the sections to be\n"
 "    shown by default.\n"
 "    "
 msgstr ""
 "\n"
-"    Vorlieben für Bildschirmanzeige der Schnittstellen-Einzelheiten in der "
-"API - Dokumentation\n"
+"    Vorlieben für Bildschirmanzeige der Schnittstellen-Einzelheiten in der API - Dokumentation\n"
 "\n"
-"Verschiedene Teile der Schnittstellen-Einzelheiten können versteckt sein "
-"oder angezeigt werden. Die folgenden Vorlieben bewirken die Auswahl der "
-"Teile, die standardmäßig angezeigt werden.\n"
+"Verschiedene Teile der Schnittstellen-Einzelheiten können versteckt sein oder angezeigt werden. Die folgenden Vorlieben bewirken die Auswahl der Teile, die standardmäßig angezeigt werden.\n"
 "    "
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:37
@@ -1186,11 +1125,8 @@ msgstr "Suche nur nach Name"
 
 #: src/zope/app/apidoc/ifacemodule/menu.pt:36
 #: src/zope/app/apidoc/ifacemodule/static_menu.pt:46
-msgid ""
-"Note: These are only interfaces that are registered with the site manager."
-msgstr ""
-"Anmerkung: Dies sind nur Schnittstellen, die bei der Web-Auftritt-Verwaltung "
-"registriert sind."
+msgid "Note: These are only interfaces that are registered with the site manager."
+msgstr "Anmerkung: Dies sind nur Schnittstellen, die bei der Web-Auftritt-Verwaltung registriert sind."
 
 #: src/zope/app/apidoc/ifacemodule/menu.pt:8
 #: src/zope/app/apidoc/ifacemodule/static_menu.pt:9
@@ -1224,25 +1160,21 @@ msgstr "Schnittstellen-Typen"
 #: src/zope/app/apidoc/typemodule/type.py:103
 msgid ""
 "\n"
-"    Here you can see all registered interface types. When you open the "
-"subtree\n"
-"    of a specific interface type, you can see all the interfaces that "
-"provide\n"
+"    Here you can see all registered interface types. When you open the subtree\n"
+"    of a specific interface type, you can see all the interfaces that provide\n"
 "    this type. This can be very useful in cases where you want to determine\n"
 "    all content type interfaces, for example.\n"
 "    "
 msgstr ""
 "\n"
-"    Hier können Sie sich alle registrierten Schnittstellentypen ansehen. "
-"Wenn \n"
-"    Sie den Unterbaum eines bestimmten Schnittstellentyps öffnen, erfahren "
-"Sie \n"
-"    alle Schnittstellen, die diesen Typ bereitstellen. Dies kann in den "
-"Fällen nützlich \n"
+"    Hier können Sie sich alle registrierten Schnittstellentypen ansehen. Wenn \n"
+"    Sie den Unterbaum eines bestimmten Schnittstellentyps öffnen, erfahren Sie \n"
+"    alle Schnittstellen, die diesen Typ bereitstellen. Dies kann in den Fällen nützlich \n"
 "    sein, in denen Sie z.B. alle Inhaltstypen feststellen wollen.\n"
 "    "
 
-#: src/zope/app/apidoc/utilities.py:172 src/zope/app/apidoc/utilities.py:174
+#: src/zope/app/apidoc/utilities.py:172
+#: src/zope/app/apidoc/utilities.py:174
 msgid "n/a"
 msgstr "entfällt"
 
@@ -1253,31 +1185,25 @@ msgstr "(Name der Datenbank: \"${name}\")"
 #: src/zope/app/apidoc/utilitymodule/utilitymodule.py:102
 msgid ""
 "\n"
-"    Utilities are also nicely registered in a site manager, so that it is "
-"easy\n"
-"    to create a listing of available utilities. A utility is identified by "
-"the\n"
-"    providing interface and a name, which can be empty. The menu provides "
-"you\n"
+"    Utilities are also nicely registered in a site manager, so that it is easy\n"
+"    to create a listing of available utilities. A utility is identified by the\n"
+"    providing interface and a name, which can be empty. The menu provides you\n"
 "    with a list of interfaces that utilities provide and as sub-items the\n"
 "    names of the various implementations.\n"
 "\n"
-"    Again, the documentation of a utility lists all the attributes/fields "
-"and\n"
+"    Again, the documentation of a utility lists all the attributes/fields and\n"
 "    methods the utility provides and provides a link to the implementation.\n"
 "    "
 msgstr ""
 "\n"
-"    Utilities werden ebenfalls in der Web-Auftritt-Verwaltung registriert, "
-"so daß \n"
+"    Utilities werden ebenfalls in der Web-Auftritt-Verwaltung registriert, so daß \n"
 "    es leicht ist, eine Liste der verfügbaren Utilities zu erstellen. Ein \n"
 "    Utility ist identfiziert durch die bereitgestellte Schnittstelle und \n"
 "    einen Namen, der leer sein kann. Das Menü macht eine Liste der \n"
 "    Schnittstellen verfügbar, die die Utilities bereitstellen, und als \n"
 "    Unterpunkte die Namen verschiedener Implementationen. \n"
 "\n"
-"    Und wieder listet die Dokumentation für das Utility alle Attribute/"
-"Felder und \n"
+"    Und wieder listet die Dokumentation für das Utility alle Attribute/Felder und \n"
 "    Methoden auf, die das Utility bereitstellt, und stellt einen Link zur \n"
 "    Implementation bereit.\n"
 "    "
@@ -1295,14 +1221,11 @@ msgstr "ZCML-Referenz"
 msgid ""
 "\n"
 "    This module presents you with a complete list of ZCML directives and\n"
-"    serves therefore well as reference. The menu provides you with a tree "
-"that\n"
+"    serves therefore well as reference. The menu provides you with a tree that\n"
 "    organizes the directives by namespaces.\n"
 "\n"
-"    The documentation contents for each directive tells you all the "
-"available\n"
-"    attributes and their semantics. It also provides a link to the "
-"interface\n"
+"    The documentation contents for each directive tells you all the available\n"
+"    attributes and their semantics. It also provides a link to the interface\n"
 "    the directive confirms to. If available, it will even tell you the\n"
 "    file the directive was declared in. At the end a list of available\n"
 "    subdirectives is given, also listing the implemented interface and\n"
@@ -1310,18 +1233,14 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"    Dieses Modul zeigt Ihnen eine komplette Liste der ZCML Direktiven und "
-"ist \n"
+"    Dieses Modul zeigt Ihnen eine komplette Liste der ZCML Direktiven und ist \n"
 "    daher bestens als Referenz zu gebrauchen. Das Menü stellt einen Baum \n"
 "    bereit, der die Direktiven nach Namensräumen organisiert.\n"
 "\n"
-"    Der Dokumentationsinhalt für jede Direktive beschreibt alle Attribute "
-"und \n"
+"    Der Dokumentationsinhalt für jede Direktive beschreibt alle Attribute und \n"
 "    deren Semantik. Es stellt auch einen Link zu der Schnittstelle bereit, \n"
-"    die durch die Direktive erfüllt wird. Wenn verfügbar, wird Ihnen sogar "
-"die \n"
-"    Datei, in der die Direktive deklariert wurde, angezeigt. Am Ende der "
-"Liste \n"
+"    die durch die Direktive erfüllt wird. Wenn verfügbar, wird Ihnen sogar die \n"
+"    Datei, in der die Direktive deklariert wurde, angezeigt. Am Ende der Liste \n"
 "    werden alle vorhandenen Unterdirektiven aufgezeigt, einschließlich der \n"
 "    implementierten Schnittstellen und deren Attribute.\n"
 "    "
@@ -1331,12 +1250,8 @@ msgid "File:"
 msgstr "Datei:"
 
 #: src/zope/app/apidoc/zcmlmodule/index.pt:28
-msgid ""
-"from (line ${beginline}, column ${begincolumn}) to (line ${endline}, column "
-"${endcolumn})"
-msgstr ""
-"von (Zeile ${beginline}, Spalte ${begincolumn}) bis (Zeile ${endline}, "
-"Spalte ${endcolumn})"
+msgid "from (line ${beginline}, column ${begincolumn}) to (line ${endline}, column ${endcolumn})"
+msgstr "von (Zeile ${beginline}, Spalte ${begincolumn}) bis (Zeile ${endline}, Spalte ${endcolumn})"
 
 #: src/zope/app/apidoc/zcmlmodule/index.pt:33
 msgid "Info:"
@@ -1362,11 +1277,8 @@ msgstr "Unterdirektiven"
 
 #: src/zope/app/apidoc/zcmlmodule/menu.pt:5
 #: src/zope/app/apidoc/zcmlmodule/static_menu.pt:5
-msgid ""
-"Namespaces that are not full URLs start with \"http://namespaces.zope.org/\"."
-msgstr ""
-"Namensräume, die nicht als volle URLs angegeben sind, beginnen mit \"http://"
-"namespaces.zope.org\"."
+msgid "Namespaces that are not full URLs start with \"http://namespaces.zope.org/\"."
+msgstr "Namensräume, die nicht als volle URLs angegeben sind, beginnen mit \"http://namespaces.zope.org\"."
 
 #: src/zope/app/applicationcontrol/browser/configure.zcml:23
 msgid "Runtime Information"
@@ -1448,12 +1360,8 @@ msgid "seconds"
 msgstr "Sekunden"
 
 #: src/zope/app/applicationcontrol/browser/servercontrol.pt:22
-msgid ""
-"If you specify a time of 0 seconds, then the server will be shutdown or "
-"restarted immediately."
-msgstr ""
-"Wenn Sie eine Zeit von 0 Sekunden eingeben, wird der Server sofort "
-"angehalten oder neu gestartet."
+msgid "If you specify a time of 0 seconds, then the server will be shutdown or restarted immediately."
+msgstr "Wenn Sie eine Zeit von 0 Sekunden eingeben, wird der Server sofort angehalten oder neu gestartet."
 
 #: src/zope/app/applicationcontrol/browser/servercontrol.pt:3
 msgid "Zope Stub Server Controller"
@@ -1499,12 +1407,8 @@ msgstr "Aktualisieren"
 
 #. Default: ""
 #: src/zope/app/applicationcontrol/browser/translationdomaincontrol.py:52
-msgid ""
-"Message Catalog for ${language} language in ${domain} domain successfully "
-"reloaded."
-msgstr ""
-"Der Nachrichtenkatalog der Sprache '${language}' aus dem Namensbereich "
-"'${domain}' wurde erfolgreich aktualisiert."
+msgid "Message Catalog for ${language} language in ${domain} domain successfully reloaded."
+msgstr "Der Nachrichtenkatalog der Sprache '${language}' aus dem Namensbereich '${domain}' wurde erfolgreich aktualisiert."
 
 #: src/zope/app/applicationcontrol/browser/zodbcontrol.pt:15
 msgid "Name of database"
@@ -1592,12 +1496,8 @@ msgid "HTTP Basic-Auth Plugin"
 msgstr "Plugin für HTTP-Basic-Authentifizierung"
 
 #: src/zope/app/authentication/browser/loginform.pt:11
-msgid ""
-"You are not authorized to perform this action. However, you may login as a "
-"different user who is authorized."
-msgstr ""
-"Sie dürfen diese Aktion nicht durchführen, können sich aber möglicherweise "
-"als anderer Nutzer anmelden, der dazu berechtigt ist."
+msgid "You are not authorized to perform this action. However, you may login as a different user who is authorized."
+msgstr "Sie dürfen diese Aktion nicht durchführen, können sich aber möglicherweise als anderer Nutzer anmelden, der dazu berechtigt ist."
 
 #: src/zope/app/authentication/browser/loginform.pt:20
 msgid "User Name"
@@ -1646,9 +1546,8 @@ msgid "Principal Folder Prefix"
 msgstr "Präfix für Nutzungsberechtigtenordner"
 
 #: src/zope/app/authentication/browser/register.py:28
-#, fuzzy
 msgid "Register a pluggable authentication utility"
-msgstr "Austauschbares Authentifizierungs-Utility neuen Stils"
+msgstr "Austauschbares Authentifizierungs-Utility registrieren"
 
 #. Default: "Search"
 #: src/zope/app/authentication/browser/schemasearch.py:30
@@ -1681,8 +1580,10 @@ msgstr "Pluggable Authentication"
 #: src/zope/app/component/metadirectives.py:139
 #: src/zope/app/component/metadirectives.py:315
 #: src/zope/app/form/browser/ftests/test_i18n.py:33
-#: src/zope/schema/interfaces.py:101 src/zope/schema/interfaces.py:476
-#: src/zope/security/interfaces.py:264 src/zope/security/interfaces.py:314
+#: src/zope/schema/interfaces.py:101
+#: src/zope/schema/interfaces.py:476
+#: src/zope/security/interfaces.py:264
+#: src/zope/security/interfaces.py:314
 #: src/zope/app/container/browser/contents.pt:34
 #: src/zope/app/container/browser/index.pt:28
 #: src/zope/app/schema/browser/schema_edit.pt:39
@@ -1700,8 +1601,10 @@ msgstr "Stellt den Titel der Berechtigung bereit."
 #: src/zope/app/component/metadirectives.py:146
 #: src/zope/app/component/metadirectives.py:322
 #: src/zope/app/form/browser/ftests/test_i18n.py:40
-#: src/zope/schema/interfaces.py:108 src/zope/security/interfaces.py:270
-#: src/zope/security/interfaces.py:319 src/zope/dublincore/browser/edit.pt:25
+#: src/zope/schema/interfaces.py:108
+#: src/zope/security/interfaces.py:270
+#: src/zope/security/interfaces.py:319
+#: src/zope/dublincore/browser/edit.pt:25
 msgid "Description"
 msgstr "Beschreibung"
 
@@ -1736,11 +1639,11 @@ msgstr "Gruppenordner"
 
 #: src/zope/app/authentication/idpicker.py:100
 msgid "Ids must contain only printable 7-bit non-space ASCII characters"
-msgstr ""
+msgstr "IDs dürfen nur aus druckbaren ASCII Zeichen (7-bit) ohneLeerstelle bestehen."
 
 #: src/zope/app/authentication/idpicker.py:105
 msgid "Ids can't be more than 100 characters long."
-msgstr ""
+msgstr "IDs dürfen nicht länger als 100 Zeichen sein."
 
 #: src/zope/app/authentication/interfaces.py:183
 msgid "Groups"
@@ -1750,16 +1653,17 @@ msgstr "Gruppen"
 msgid ""
 "ids of groups to which the principal directly belongs.\n"
 "\n"
-"            Plugins may append to this list.  Mutating the list only "
-"affects\n"
+"            Plugins may append to this list.  Mutating the list only affects\n"
 "            the life of the principal object, and does not persist (so\n"
-"            persistently adding groups to a principal should be done by "
-"working\n"
-"            with a plugin that mutates this list every time the principal "
-"is\n"
+"            persistently adding groups to a principal should be done by working\n"
+"            with a plugin that mutates this list every time the principal is\n"
 "            created, like the group folder in this package.)\n"
 "            "
 msgstr ""
+"IDs der Gruppen, zu denen der Nutzungsberechtigte direktgehört.\n"
+"\n"
+" Einhängbare Module (Plugins) können die Liste erweitern. Eine Veränderung der Liste ist nur während der Objektdauer  des Nutzungsberechtigten gültig und ist nicht persistent.\n"
+"(Sollen Gruppen dauerhaft einem Nutzungsberechtigten zugewiesen werden, ist mit einem einhänbaren Modul zu arbeiten, daß die Liste jedesmal verändert, wenn der Nutzungsberechtigte angelegt wird wie beim Gruppenordner in diesem Paket.)"
 
 #: src/zope/app/authentication/interfaces.py:47
 msgid "Credentials Plugins"
@@ -1773,6 +1677,11 @@ msgid ""
 "        ICredentialsPlugins utilities.  Contained non-utility ids mask \n"
 "        utility names."
 msgstr ""
+"Used for extracting credentials.\n"
+"        Names may be of ids of non-utility ICredentialsPlugins contained in\n"
+"        the IPluggableAuthentication, or names of registered\n"
+"        ICredentialsPlugins utilities.  Contained non-utility ids mask \n"
+"        utility names."
 
 #: src/zope/app/authentication/interfaces.py:58
 msgid "Authenticator Plugins"
@@ -1781,12 +1690,16 @@ msgstr "Plugin für Authentifizierung"
 #: src/zope/app/authentication/interfaces.py:59
 msgid ""
 "Used for converting credentials to principals.\n"
-"        Names may be of ids of non-utility IAuthenticatorPlugins contained "
-"in\n"
+"        Names may be of ids of non-utility IAuthenticatorPlugins contained in\n"
 "        the IPluggableAuthentication, or names of registered\n"
 "        IAuthenticatorPlugins utilities.  Contained non-utility ids mask \n"
 "        utility names."
 msgstr ""
+"Used for converting credentials to principals.\n"
+"        Names may be of ids of non-utility IAuthenticatorPlugins contained in\n"
+"        the IPluggableAuthentication, or names of registered\n"
+"        IAuthenticatorPlugins utilities.  Contained non-utility ids mask \n"
+"        utility names."
 
 #: src/zope/app/authentication/interfaces.py:81
 #: src/zope/app/authentication/principalfolder.py:80
@@ -1810,9 +1723,7 @@ msgstr "Anmeldung"
 
 #: src/zope/app/authentication/principalfolder.py:43
 msgid "The Login/Username of the principal. This value can change."
-msgstr ""
-"Der Benutzer- und Anmeldename des Nutzungsberechtigten. Dieser Wert kann "
-"geändert werden."
+msgstr "Der Benutzer- und Anmeldename des Nutzungsberechtigten. Dieser Wert kann geändert werden."
 
 #: src/zope/app/authentication/principalfolder.py:50
 #: src/zope/app/pluggableauth/interfaces.py:38
@@ -1832,9 +1743,7 @@ msgstr "Passwortverwalter"
 
 #: src/zope/app/authentication/principalfolder.py:56
 msgid "The password manager will be used for encode/check the password"
-msgstr ""
-"Der Passwortverwalter wird zum verschlüsseln und verifizieren des Passwortes "
-"verwendet"
+msgstr "Der Passwortverwalter wird zum verschlüsseln und verifizieren des Passwortes verwendet"
 
 #: src/zope/app/authentication/principalfolder.py:66
 msgid "Provides a title for the principal."
@@ -1845,27 +1754,23 @@ msgid "Provides a description for the principal."
 msgstr "Stellt eine Beschreibung des Nutzungsberechtigten bereit."
 
 #: src/zope/app/authentication/principalfolder.py:81
-msgid ""
-"Prefix to be added to all principal ids to assure that all ids are unique "
-"within the authentication service"
-msgstr ""
-"Präfix, der allen Nutzungsberechtigten hinzugefügt wird, um eindeutige "
-"Identifikationen innerhalb der Legitimationsanwendung sicherzustellen"
+msgid "Prefix to be added to all principal ids to assure that all ids are unique within the authentication service"
+msgstr "Präfix, der allen Nutzungsberechtigten hinzugefügt wird, um eindeutige Identifikationen innerhalb der Legitimationsanwendung sicherzustellen"
 
 #. Default: "${name} (a utility)"
 #: src/zope/app/authentication/vocabulary.py:32
 msgid "zope.app.authentication.vocabulary-utility-plugin-title"
-msgstr ""
+msgstr "zope.app.authentication.vocabulary-utility-plugin-title"
 
 #. Default: "${name} (in contents)"
 #: src/zope/app/authentication/vocabulary.py:35
 msgid "zope.app.authentication.vocabulary-contained-plugin-title"
-msgstr ""
+msgstr "zope.app.authentication.vocabulary-contained-plugin-title"
 
 #. Default: "${name} (not found; deselecting will remove)"
 #: src/zope/app/authentication/vocabulary.py:38
 msgid "zope.app.authentication.vocabulary-missing-plugin-title"
-msgstr ""
+msgstr "zope.app.authentication.vocabulary-missing-plugin-title"
 
 #: src/zope/app/basicskin/view_macros.pt:37
 msgid "User: ${user_title}"
@@ -1898,14 +1803,12 @@ msgid "Adding info"
 msgstr "Hinzufügungsinformation"
 
 #: src/zope/app/broken/broken.pt:12
-msgid ""
-"This is probably because the module of the class, ${module}, can't be found "
-"or because the name, ${name}, is no longer defined by the module."
-msgstr ""
+msgid "This is probably because the module of the class, ${module}, can't be found or because the name, ${name}, is no longer defined by the module."
+msgstr "Wahrscheinlich konnte das Modul mit der Klasse ${module} nicht gefunden werden oder der Name ${name} ist im Modul nicht mehr definiert."
 
 #: src/zope/app/broken/broken.pt:6
 msgid "This object is broken because its class can not be found."
-msgstr ""
+msgstr "Das Objekt kann nicht angesprochen werden, weil die Klasse nicht gefunden wurde."
 
 #: src/zope/app/broken/browser.zcml:5
 msgid "Broken object"
@@ -1957,8 +1860,7 @@ msgstr "Cache ungültig machen"
 
 #: src/zope/app/cache/browser/cacheableedit.pt:6
 msgid "This edit form allows you to associate a cache with this object."
-msgstr ""
-"Dieses Formular erlaubt Ihnen, einen Cache für dieses Objekt zu definieren."
+msgstr "Dieses Formular erlaubt Ihnen, einen Cache für dieses Objekt zu definieren."
 
 #: src/zope/app/cache/browser/configure.zcml:20
 msgid "Statistics"
@@ -2049,7 +1951,7 @@ msgstr "Ein Feld zum Index hinzufügen"
 
 #: src/zope/app/catalog/browser/configure.zcml:50
 msgid "Index items based on an orderable field value"
-msgstr "Indiziere Einträge basierend auf einen sortierbaren Feldwert"
+msgstr "Indiziere Einträge anhand eines sortierbaren Feldwertes"
 
 #: src/zope/app/catalog/browser/configure.zcml:50
 #: src/zope/app/catalog/browser/configure.zcml:58
@@ -2066,12 +1968,8 @@ msgid "Add a text index"
 msgstr "Einen Text-Index hinzufügen"
 
 #: src/zope/app/catalog/browser/configure.zcml:77
-msgid ""
-"Index items based on multi-value fields with                  orderable "
-"values"
-msgstr ""
-"Indexeinträge, die auf mehrfachwerten Feldern mit sortierbaren Werten "
-"basieren"
+msgid "Index items based on multi-value fields with                  orderable values"
+msgstr "Indexeinträge, die auf  Feldern mit mehreren sortierbaren Werten basieren"
 
 #: src/zope/app/catalog/browser/configure.zcml:77
 #: src/zope/app/catalog/browser/configure.zcml:86
@@ -2099,32 +1997,37 @@ msgstr "Indizes und Kataloge"
 msgid "Field Indexes"
 msgstr "Feld-Indizes"
 
-#: src/zope/app/catalog/interfaces.py:64 src/zope/app/catalog/text.py:33
-#: src/zope/app/component/metadirectives.py:297 src/zope/component/zcml.py:439
+#: src/zope/app/catalog/interfaces.py:64
+#: src/zope/app/catalog/text.py:33
+#: src/zope/app/component/metadirectives.py:297
+#: src/zope/component/zcml.py:439
 msgid "Interface"
 msgstr "Schnittstelle"
 
-#: src/zope/app/catalog/interfaces.py:65 src/zope/app/catalog/text.py:34
+#: src/zope/app/catalog/interfaces.py:65
+#: src/zope/app/catalog/text.py:34
 msgid "Objects will be adapted to this interface"
 msgstr "Objekte werden zu dieser Schnittstelle adaptiert"
 
-#: src/zope/app/catalog/interfaces.py:71 src/zope/app/catalog/text.py:41
+#: src/zope/app/catalog/interfaces.py:71
+#: src/zope/app/catalog/text.py:41
 msgid "Field Name"
 msgstr "Feldname"
 
-#: src/zope/app/catalog/interfaces.py:72 src/zope/app/catalog/text.py:42
+#: src/zope/app/catalog/interfaces.py:72
+#: src/zope/app/catalog/text.py:42
 msgid "Name of the field to index"
 msgstr "Name des zu indizierenden Feldes"
 
-#: src/zope/app/catalog/interfaces.py:76 src/zope/app/catalog/text.py:47
+#: src/zope/app/catalog/interfaces.py:76
+#: src/zope/app/catalog/text.py:47
 msgid "Field Callable"
 msgstr "Feld ausführbar"
 
-#: src/zope/app/catalog/interfaces.py:77 src/zope/app/catalog/text.py:48
+#: src/zope/app/catalog/interfaces.py:77
+#: src/zope/app/catalog/text.py:48
 msgid "If true, then the field should be called to get the value to be indexed"
-msgstr ""
-"Wenn wahr, dann sollte das Feld aufgerufen werden um den zu indizierenden "
-"Wert zu bekommen"
+msgstr "Wenn wahr, dann sollte das Feld aufgerufen werden um den zu indizierenden Wert zu bekommen"
 
 #: src/zope/app/component/back35.py:100
 msgid "Component Interface"
@@ -2132,9 +2035,7 @@ msgstr "Komponenten-Schnittstelle"
 
 #: src/zope/app/component/back35.py:101
 msgid "The interface the component provides through this registration."
-msgstr ""
-"Die von dieser Komponente durch die Registrierung bereitgestellte "
-"Schnittstelle"
+msgstr "Die von dieser Komponente durch die Registrierung bereitgestellte Schnittstelle"
 
 #: src/zope/app/component/back35.py:107
 msgid "The permission needed to use the component"
@@ -2146,8 +2047,7 @@ msgstr "Registrierungsverwalter"
 
 #: src/zope/app/component/back35.py:221
 msgid "The registration manager keeps track of all component registrations."
-msgstr ""
-"Der Registrierungsverwalter führt Buch über alle Komponenten-Registrierungen."
+msgstr "Der Registrierungsverwalter führt Buch über alle Komponenten-Registrierungen."
 
 #: src/zope/app/component/back35.py:279
 msgid "For interface"
@@ -2165,7 +2065,8 @@ msgstr "Mit Schnittstellen"
 msgid "Additionally required interfaces"
 msgstr "Zusätzlich notwendige Schnittstellen"
 
-#: src/zope/app/component/back35.py:295 src/zope/app/component/back35.py:340
+#: src/zope/app/component/back35.py:295
+#: src/zope/app/component/back35.py:340
 #: src/zope/app/component/browser/registration.py:199
 #: src/zope/component/zcml.py:371
 msgid "Provided interface"
@@ -2175,8 +2076,10 @@ msgstr "Bereitgestellte Schnittstelle"
 msgid "The interface provided"
 msgstr "Die bereitgestellte Schnittstelle"
 
-#: src/zope/app/component/back35.py:302 src/zope/component/zcml.py:104
-#: src/zope/component/zcml.py:377 src/zope/component/zcml.py:449
+#: src/zope/app/component/back35.py:302
+#: src/zope/component/zcml.py:104
+#: src/zope/component/zcml.py:377
+#: src/zope/component/zcml.py:449
 #: src/zope/app/container/browser/contents.pt:33
 #: src/zope/app/container/browser/index.pt:27
 #: src/zope/app/schema/browser/schema_edit.pt:37
@@ -2261,12 +2164,8 @@ msgid "Manage Site"
 msgstr "Web-Auftritt verwalten"
 
 #: src/zope/app/component/browser/registration.pt:10
-msgid ""
-"This object isn't yet registered. Click <a href=\"@@addRegistration.html"
-"\">here</a> to register the object."
-msgstr ""
-"Dieses Objekt ist noch nicht registriert. Klicken Sie <a href="
-"\"@@addRegistration.html\">hier,</a> um das Objekt zu registrieren."
+msgid "This object isn't yet registered. Click <a href=\"@@addRegistration.html\">here</a> to register the object."
+msgstr "Dieses Objekt ist noch nicht registriert. Klicken Sie <a href=\"@@addRegistration.html\">hier,</a> um das Objekt zu registrieren."
 
 #: src/zope/app/component/browser/registration.pt:17
 msgid "This object is registered:"
@@ -2279,12 +2178,8 @@ msgid "unregister-button"
 msgstr "Registrierung entfernen"
 
 #: src/zope/app/component/browser/registration.pt:50
-msgid ""
-"Click <a href=\"@@addRegistration.html\">here</a> to register the object "
-"again."
-msgstr ""
-"Klicken Sie <a href=\"@@addRegistration.html\">hier.</a> um das Objekt "
-"nochmals zu registrieren."
+msgid "Click <a href=\"@@addRegistration.html\">here</a> to register the object again."
+msgstr "Klicken Sie <a href=\"@@addRegistration.html\">hier.</a> um das Objekt nochmals zu registrieren."
 
 #. Default: ""
 #: src/zope/app/component/browser/registration.py:117
@@ -2294,18 +2189,16 @@ msgstr "Bemerkung: ${comment}"
 #. Default: ""
 #: src/zope/app/component/browser/registration.py:124
 msgid "${provided} utility named '${name}'"
-msgstr ""
+msgstr "${provided} utility genannt '${name}'"
 
 #. Default: ""
 #: src/zope/app/component/browser/registration.py:127
-#, fuzzy
 msgid "${provided} utility"
-msgstr "Die von dem Utility bereitgestellte Schnittstelle"
+msgstr "${provided} utility"
 
 #: src/zope/app/component/browser/registration.py:171
-#, fuzzy
 msgid "(unknown name)"
-msgstr "<kein Name>"
+msgstr "<Name unbekannt>"
 
 #: src/zope/app/component/browser/registration.py:214
 msgid "Comment"
@@ -2326,7 +2219,7 @@ msgstr "Registrierungen für diesen Web-Auftrittt:"
 
 #: src/zope/app/component/browser/siteregistration.pt:32
 msgid "${name} (moved or deleted)"
-msgstr ""
+msgstr "${name} (umgesetzt oder gelöscht)"
 
 #: src/zope/app/component/browser/siteregistration.pt:9
 msgid "Nothing is registered for this site."
@@ -2371,8 +2264,7 @@ msgstr "Kennung"
 
 #: src/zope/app/component/metadirectives.py:140
 #: src/zope/app/component/metadirectives.py:316
-msgid ""
-"Text suitable for use in the 'add content' menu of a management interface"
+msgid "Text suitable for use in the 'add content' menu of a management interface"
 msgstr "Text, der für das 'Hinzufügen'-Menü im ZMI paßt"
 
 #: src/zope/app/component/metadirectives.py:147
@@ -2380,7 +2272,8 @@ msgstr "Text, der für das 'Hinzufügen'-Menü im ZMI paßt"
 msgid "Longer narrative description of what this factory does"
 msgstr "Ausführliche Beschreibung über das, was diese Fabrik tut"
 
-#: src/zope/app/component/metadirectives.py:157 src/zope/component/zcml.py:58
+#: src/zope/app/component/metadirectives.py:157
+#: src/zope/component/zcml.py:58
 msgid "Factory"
 msgstr "Fabrik"
 
@@ -2393,24 +2286,18 @@ msgid ""
 "\n"
 "        Specifies the interface for which the default view is declared. All\n"
 "        objects implementing this interface make use of this default\n"
-"        setting. If this attribute is not specified, the default is "
-"available\n"
+"        setting. If this attribute is not specified, the default is available\n"
 "        for all objects."
 msgstr ""
 "\n"
-"        Gibt die Schnittstelle an, für die die voreingestellte Ansicht "
-"vereinbart ist. Alle \n"
-"     Objekte, die diese Schnittstelle bereitstellen, benutzen die "
-"voreingestellten \n"
-"     Einstellungen. Ist dieses Attribut nicht angegeben, ist die "
-"voreingestellte \n"
+"        Gibt die Schnittstelle an, für die die voreingestellte Ansicht vereinbart ist. Alle \n"
+"     Objekte, die diese Schnittstelle bereitstellen, benutzen die voreingestellten \n"
+"     Einstellungen. Ist dieses Attribut nicht angegeben, ist die voreingestellte \n"
 "     Schnittstelle für alle Objekte verfügbar."
 
 #: src/zope/app/component/metadirectives.py:190
-msgid ""
-"The layer the resource is in.  This argument has been deprecated and will be "
-"removed in Zope 3.5.  Use the 'type' argument instead."
-msgstr ""
+msgid "The layer the resource is in.  This argument has been deprecated and will be removed in Zope 3.5.  Use the 'type' argument instead."
+msgstr "Die Schicht, in der sich die Ressource befindet. Dieses Argument ist veraltet und mitrd in Zope 3.5 entfernt. Stattdessen ist das 'type'-Argument zu benutzen."
 
 #: src/zope/app/component/metadirectives.py:203
 msgid "View attributes that are also allowed if user has permission."
@@ -2427,8 +2314,7 @@ msgid ""
 "        access or mutate the attributes and methods specified."
 msgstr ""
 "\n"
-"        Gibt den Bezeichner der Berechtigung an, die für den Zugriff auf "
-"oder für \n"
+"        Gibt den Bezeichner der Berechtigung an, die für den Zugriff auf oder für \n"
 "    Veränderungen von Attributen und Methoden notwendig ist.\n"
 "."
 
@@ -2438,9 +2324,7 @@ msgstr "Attribute und Methoden"
 
 #: src/zope/app/component/metadirectives.py:244
 msgid "This is a list of attributes and methods that can be accessed."
-msgstr ""
-"Die ist eine Liste der Attribute und Methoden, auf die zugegriffen werden "
-"kann."
+msgstr "Die ist eine Liste der Attribute und Methoden, auf die zugegriffen werden kann."
 
 #: src/zope/app/component/metadirectives.py:251
 msgid "Attributes that can be set"
@@ -2452,9 +2336,7 @@ msgstr "Dies ist eine Liste der Attribute, die verändert werden können."
 
 #: src/zope/app/component/metadirectives.py:260
 msgid "The listed interfaces' methods and attributes can be accessed."
-msgstr ""
-"Auf die Methoden und Attribute der aufgeführten Schnittstellen kann "
-"zugegriffen werden."
+msgstr "Auf die Methoden und Attribute der aufgeführten Schnittstellen kann zugegriffen werden."
 
 #: src/zope/app/component/metadirectives.py:267
 msgid "The attributes specified by the schema can be set"
@@ -2471,8 +2353,7 @@ msgstr "Konfiguration wie diese Klasse"
 #: src/zope/app/component/metadirectives.py:276
 msgid ""
 "\n"
-"        This argument says that this content class should be configured in "
-"the\n"
+"        This argument says that this content class should be configured in the\n"
 "        same way the specified class' security is. If this argument is\n"
 "        specified, no other argument can be used."
 msgstr ""
@@ -2495,8 +2376,7 @@ msgid ""
 "        string given as the content directive's 'class' attribute."
 msgstr ""
 "\n"
-"        Der Bezeichner für diese Fabrik im Identifikationsschema der ZMI-"
-"Fabrik. \n"
+"        Der Bezeichner für diese Fabrik im Identifikationsschema der ZMI-Fabrik. \n"
 "    Wenn er fehlt, wird er aus dem Klassen-Attribut der content-Direktive \n"
 "    gebildet."
 
@@ -2517,8 +2397,10 @@ msgstr ""
 "        "
 
 #: src/zope/app/component/metadirectives.py:50
-#: src/zope/app/component/metadirectives.py:235 src/zope/component/zcml.py:52
-#: src/zope/component/zcml.py:97 src/zope/component/zcml.py:264
+#: src/zope/app/component/metadirectives.py:235
+#: src/zope/component/zcml.py:52
+#: src/zope/component/zcml.py:97
+#: src/zope/component/zcml.py:264
 #: src/zope/app/security/browser/configure.zcml:63
 #: src/zope/app/securitypolicy/browser/manage_access.pt:23
 msgid "Permission"
@@ -2550,20 +2432,15 @@ msgid ""
 "        attribute is not supplied, it defaults to 'default'."
 msgstr ""
 "\n"
-"        Eine Anzeigeform (skin) wird aus Ebenen zusammengesetzt. Es ist "
-"üblich, \n"
-"    die für eine Anzeigeform speziellen Ansichten in einer Ebene "
-"anzuordnen, \n"
-"    die nach der Anzeigeform benannt wird. Ist die Ebene nicht angegeben, "
-"wird \n"
+"        Eine Anzeigeform (skin) wird aus Ebenen zusammengesetzt. Es ist üblich, \n"
+"    die für eine Anzeigeform speziellen Ansichten in einer Ebene anzuordnen, \n"
+"    die nach der Anzeigeform benannt wird. Ist die Ebene nicht angegeben, wird \n"
 "    'default'  voreingestellt."
 
 #: src/zope/app/component/metadirectives.py:72
 #: src/zope/app/component/metadirectives.py:197
 msgid "Interface that is also allowed if user has permission."
-msgstr ""
-"Schnittstelle, die zusätzlich zugelassen ist, wenn der Benutzer dazu "
-"berechtigt ist."
+msgstr "Schnittstelle, die zusätzlich zugelassen ist, wenn der Benutzer dazu berechtigt ist."
 
 #: src/zope/app/component/metadirectives.py:73
 msgid ""
@@ -2577,22 +2454,18 @@ msgid ""
 "        whitespace."
 msgstr ""
 "\n"
-"        Voreingestellt wird die `Berechtigung` nur angewendet für das "
-"Ansehen \n"
+"        Voreingestellt wird die `Berechtigung` nur angewendet für das Ansehen \n"
 "    einer Ansicht und möglicher Unteransichten. Durch Angabe dieses \n"
 "    Attributs kann die Berechtigung auf alles angewendet werden, was in \n"
 "    der gelieferten Schnittstelle beschrieben ist.\n"
 "\n"
-"    Es können mehrere Schnittstellen (getrennt durch Leerstellen) "
-"angegeben \n"
+"    Es können mehrere Schnittstellen (getrennt durch Leerstellen) angegeben \n"
 "    werden.\n"
 "."
 
 #: src/zope/app/component/metadirectives.py:86
 msgid "View attributes that are also allowed if the user has permission."
-msgstr ""
-"Attribute einer Ansicht, die angezeigt werden, wenn der Nutzer hierfür die "
-"Berechtigung hat."
+msgstr "Attribute einer Ansicht, die angezeigt werden, wenn der Nutzer hierfür die Berechtigung hat."
 
 #: src/zope/app/component/metadirectives.py:88
 msgid ""
@@ -2605,8 +2478,7 @@ msgstr ""
 "\n"
 "        'Berechtigung' bezieht sich voreingestellt nur auf das Anzeigen der\n"
 "      Ansicht und mögliche Unteransichten. Durch die Angabe von\n"
-"      'allowed_attributes' kann die Berechtigung auch auf die extra "
-"Attribute\n"
+"      'allowed_attributes' kann die Berechtigung auch auf die extra Attribute\n"
 "      der Ansicht erweitert werden."
 
 #: src/zope/app/component/vocabulary.py:290
@@ -2753,8 +2625,10 @@ msgid "Contents"
 msgstr "Inhalt"
 
 #: src/zope/app/container/browser/metaconfigure.py:85
-#: src/zope/formlib/form.py:835 src/zope/app/menus.zcml:17
-#: src/zope/app/menus.zcml:25 src/zope/app/component/browser/configure.zcml:56
+#: src/zope/formlib/form.py:835
+#: src/zope/app/menus.zcml:17
+#: src/zope/app/menus.zcml:25
+#: src/zope/app/component/browser/configure.zcml:56
 #: src/zope/app/workflow/stateful/browser/configure.zcml:48
 #: src/zope/app/workflow/stateful/browser/configure.zcml:85
 #: src/zope/app/authentication/browser/configure.zcml:56
@@ -2787,18 +2661,18 @@ msgid ""
 "You must deactivate this object before trying to remove it.\n"
 msgstr ""
 "\n"
-"Entfernen eines Objekts (${object}) ist nicht möglich, wenn es Abhängige "
-"(${dependents}) hat!\n"
+"Entfernen eines Objekts (${object}) ist nicht möglich, wenn es Abhängige (${dependents}) hat!\n"
 "\n"
-"Sie müssen das Objekt zuerst deaktivieren, bevor Sie versuchen es zu "
-"entfernen.\n"
+"Sie müssen das Objekt zuerst deaktivieren, bevor Sie versuchen es zu entfernen.\n"
 
-#: src/zope/app/container/size.py:40 src/zope/app/locking/storage.py:157
+#: src/zope/app/container/size.py:40
+#: src/zope/app/locking/storage.py:157
 msgid "1 item"
 msgstr "1 Eintrag"
 
 #. Default: ""
-#: src/zope/app/container/size.py:41 src/zope/app/locking/storage.py:158
+#: src/zope/app/container/size.py:41
+#: src/zope/app/locking/storage.py:158
 msgid "${items} items"
 msgstr "${items} Einträge"
 
@@ -2927,13 +2801,8 @@ msgid "ZMI Settings"
 msgstr "ZMI Einstellungen"
 
 #: src/zope/app/demo/skinpref/configure.zcml:10
-msgid ""
-"         In this category you will find all preferences related to the "
-"Zope         Management Interface (ZMI).         "
-msgstr ""
-"         In dieser Kategorie sind alle Vorlieben für die Zope-"
-"Verwaltungsschnittstelle (Zope Management Interface = ZMI) zu "
-"finden.         "
+msgid "         In this category you will find all preferences related to the Zope         Management Interface (ZMI).         "
+msgstr "         In dieser Kategorie sind alle Vorlieben für die Zope-Verwaltungsschnittstelle (Zope Management Interface = ZMI) zu finden.         "
 
 #: src/zope/app/demo/skinpref/configure.zcml:20
 msgid "Skin Selection"
@@ -3067,9 +2936,7 @@ msgstr "Beschränkung"
 
 #: src/zope/app/demo/widget/interfaces/boolwidget.py:53
 msgid "zope.schema.Bool field with constraint lambda x: x == True."
-msgstr ""
-"Boolsches-Feld, wobei die Daten die Bedingung `lambda x: x == True erfüllen "
-"müssen."
+msgstr "Boolsches-Feld, wobei die Daten die Bedingung `lambda x: x == True erfüllen müssen."
 
 #: src/zope/app/demo/widget/interfaces/boolwidget.py:58
 #: src/zope/app/demo/widget/interfaces/intwidget.py:58
@@ -3139,8 +3006,7 @@ msgstr "zope.schema.Text Datenfeld mit required = True."
 
 #: src/zope/app/demo/widget/interfaces/textareawidget.py:52
 msgid "zope.schema.Text field with constraint = lambda x: x == u'constraint'."
-msgstr ""
-"zope.schema.Text Datenfeld mit constraint = lambda x: x == u'constraint'."
+msgstr "zope.schema.Text Datenfeld mit constraint = lambda x: x == u'constraint'."
 
 #: src/zope/app/demo/widget/interfaces/textareawidget.py:58
 msgid "zope.schema.Text field with default = u'default'."
@@ -3181,11 +3047,8 @@ msgid "zope.schema.TextLine field with required = True."
 msgstr "TextLine-Feld, das vorhanden sein muß (also: `required = True`)"
 
 #: src/zope/app/demo/widget/interfaces/textwidget.py:53
-msgid ""
-"zope.schema.TextLine field with constraint = lambda x: x == u'constraint'."
-msgstr ""
-"TextLine-Feld, wobei die Daten die Bedingung `lambda x: x == u'constraint'` "
-"erfüllen müssen."
+msgid "zope.schema.TextLine field with constraint = lambda x: x == u'constraint'."
+msgstr "TextLine-Feld, wobei die Daten die Bedingung `lambda x: x == u'constraint'` erfüllen müssen."
 
 #: src/zope/app/demo/widget/interfaces/textwidget.py:59
 msgid "zope.schema.TextLine field with default = u'default'."
@@ -3254,11 +3117,8 @@ msgid "Error Logging Utility"
 msgstr "Fehlermelde-Utility"
 
 #: src/zope/app/error/browser/error.pt:11
-msgid ""
-"This page lists the exceptions that have occurred in this site recently."
-msgstr ""
-"Diese Seite listet die Ausnahmen auf, die kürzlich auf diesem Web-Auftritt "
-"aufgetreten sind."
+msgid "This page lists the exceptions that have occurred in this site recently."
+msgstr "Diese Seite listet die Ausnahmen auf, die kürzlich auf diesem Web-Auftritt aufgetreten sind."
 
 #: src/zope/app/error/browser/error.pt:16
 msgid "No exceptions logged."
@@ -3305,12 +3165,8 @@ msgid "Configure Error Log"
 msgstr "Fehlerprotokoll konfigurieren"
 
 #: src/zope/app/error/browser/error_config.pt:9
-msgid ""
-"You can configure how many exceptions should be kept and whether the "
-"exceptions should be copied to Zope's event log file(s)."
-msgstr ""
-"Sie können einstellen, wie viele Ausnahmen aufbewahrt und ob die Ausnahmen "
-"in Zopes Ereignisprotokolldatei(en) kopiert werden sollen."
+msgid "You can configure how many exceptions should be kept and whether the exceptions should be copied to Zope's event log file(s)."
+msgstr "Sie können einstellen, wie viele Ausnahmen aufbewahrt und ob die Ausnahmen in Zopes Ereignisprotokolldatei(en) kopiert werden sollen."
 
 #: src/zope/app/error/browser/errorentry.pt:10
 msgid "Header"
@@ -3322,9 +3178,7 @@ msgstr "Ausnahme-Zurückverfolgung"
 
 #: src/zope/app/error/browser/errorentry.pt:14
 msgid "The specified log entry was not found. It may have expired."
-msgstr ""
-"Der spezifierte Protokolleintrag wurde nicht gefunden. Er kann abgelaufen "
-"sein."
+msgstr "Der spezifierte Protokolleintrag wurde nicht gefunden. Er kann abgelaufen sein."
 
 #: src/zope/app/error/browser/errorentry.pt:31
 msgid "Request URL"
@@ -3407,12 +3261,15 @@ msgid "Add an Image"
 msgstr "Bild hinzufügen"
 
 #. Default: ""
-#: src/zope/app/file/browser/file.py:300 src/zope/app/file/browser/file.py:442
-#: src/zope/app/form/browser/editview.py:114 src/zope/formlib/form.py:793
+#: src/zope/app/file/browser/file.py:300
+#: src/zope/app/file/browser/file.py:442
+#: src/zope/app/form/browser/editview.py:114
+#: src/zope/formlib/form.py:793
 msgid "Updated on ${date_time}"
 msgstr "Daten am ${date_time} geändert"
 
-#: src/zope/app/file/browser/file.py:311 src/zope/app/file/interfaces.py:44
+#: src/zope/app/file/browser/file.py:311
+#: src/zope/app/file/interfaces.py:44
 #: src/zope/app/file/browser/file_add.pt:31
 #: src/zope/app/file/browser/file_upload.pt:33
 #: src/zope/app/i18nfile/browser/file_edit.pt:79
@@ -3420,7 +3277,8 @@ msgstr "Daten am ${date_time} geändert"
 msgid "Data"
 msgstr "Daten"
 
-#: src/zope/app/file/browser/file.py:312 src/zope/app/file/interfaces.py:45
+#: src/zope/app/file/browser/file.py:312
+#: src/zope/app/file/interfaces.py:45
 #: src/zope/app/file/browser/file_add.pt:31
 #: src/zope/app/file/browser/file_upload.pt:33
 msgid "The actual content of the object."
@@ -3428,28 +3286,18 @@ msgstr "Der eigentliche Inhalt des Objekts."
 
 #. Default: ""
 #: src/zope/app/file/browser/file.py:421
-msgid ""
-"The character set specified in the content type ($charset) is not supported."
-msgstr ""
-"Der im Inhaltstyp angegebene Zeichensatz (${charset}) wird nicht unterstützt."
+msgid "The character set specified in the content type ($charset) is not supported."
+msgstr "Der im Inhaltstyp angegebene Zeichensatz (${charset}) wird nicht unterstützt."
 
 #. Default: ""
 #: src/zope/app/file/browser/file.py:426
-msgid ""
-"The character set specified in the content type ($charset) does not match "
-"file content."
-msgstr ""
-"Der im Inhaltstyp angegebene Zeichensatz (${charset}) stimmt nicht mit dem "
-"Dateiinhalt überein."
+msgid "The character set specified in the content type ($charset) does not match file content."
+msgstr "Der im Inhaltstyp angegebene Zeichensatz (${charset}) stimmt nicht mit dem Dateiinhalt überein."
 
 #. Default: ""
 #: src/zope/app/file/browser/file.py:449
-msgid ""
-"The character set you specified ($charset) cannot encode all characters in "
-"text."
-msgstr ""
-"Der angegebene Zeichensatz (${charset}) kann nicht alle Zeichen im Text "
-"verschlüsseln."
+msgid "The character set you specified ($charset) cannot encode all characters in text."
+msgstr "Der angegebene Zeichensatz (${charset}) kann nicht alle Zeichen im Text verschlüsseln."
 
 #. Default: ""
 #: src/zope/app/file/browser/file.py:454
@@ -3507,7 +3355,8 @@ msgstr "Bild"
 msgid " ${width}x${height}"
 msgstr " ${width}x${height}"
 
-#: src/zope/app/file/interfaces.py:36 src/zope/app/pythonpage/__init__.py:46
+#: src/zope/app/file/interfaces.py:36
+#: src/zope/app/pythonpage/__init__.py:46
 #: src/zope/app/file/browser/file_add.pt:16
 #: src/zope/app/file/browser/file_upload.pt:16
 #: src/zope/app/i18nfile/browser/file_edit.pt:32
@@ -3515,7 +3364,8 @@ msgstr " ${width}x${height}"
 msgid "Content Type"
 msgstr "Inhaltstyp"
 
-#: src/zope/app/file/interfaces.py:37 src/zope/app/file/browser/file_add.pt:16
+#: src/zope/app/file/interfaces.py:37
+#: src/zope/app/file/browser/file_add.pt:16
 #: src/zope/app/file/browser/file_upload.pt:16
 msgid "The content type identifies the type of data."
 msgstr "Der Inhaltstyp identifiziert den Typ der Daten."
@@ -3654,7 +3504,8 @@ msgstr "Wert aus Vokabular mit mehreren Werten fehlt"
 #: src/zope/app/schema/fieldforms.zcml:99
 #: src/zope/app/schema/fieldforms.zcml:125
 #: src/zope/app/schema/fieldforms.zcml:151
-#: src/zope/app/session/browser.zcml:15 src/zope/app/session/browser.zcml:38
+#: src/zope/app/session/browser.zcml:15
+#: src/zope/app/session/browser.zcml:38
 #: src/zope/app/zptpage/browser/configure.zcml:39
 #: src/zope/app/securitypolicy/browser/configure.zcml:28
 msgid "Edit"
@@ -3761,11 +3612,8 @@ msgid "${application_id} Application Manager Details"
 msgstr "Einzelheiten zu ${application_id} Anwendungsverwaltung"
 
 #: src/zope/app/generations/browser/managers.pt:18
-msgid ""
-"The database was updated to generation ${generation} for ${application}."
-msgstr ""
-"Die Datenbank wurde auf Generation ${generation} für ${application} "
-"aktualisiert."
+msgid "The database was updated to generation ${generation} for ${application}."
+msgstr "Die Datenbank wurde auf Generation ${generation} für ${application} aktualisiert."
 
 #: src/zope/app/generations/browser/managers.pt:23
 msgid "The database is up to date for ${application}."
@@ -3832,38 +3680,30 @@ msgid "Principal Home Folder"
 msgstr "Startordner des Nutzungsberechtigten"
 
 #: src/zope/app/homefolder/homefolder.pt:12
-#, fuzzy
 msgid "Assign a Principal"
-msgstr "Nutzungsberechtigter"
+msgstr "Nutzungsberechtigten zuordnen"
 
 #. Default: "Assign"
 #: src/zope/app/homefolder/homefolder.pt:24
-#, fuzzy
 msgid "assign-button"
-msgstr "Suchen"
+msgstr "Zuordnen"
 
 #: src/zope/app/homefolder/homefolder.pt:29
-#, fuzzy
 msgid "Unassign Principals"
-msgstr "Nutzungsberechtigte"
+msgstr "Nutzungsberechtigte entfernen"
 
 #. Default: "Unassign"
 #: src/zope/app/homefolder/homefolder.pt:37
-#, fuzzy
 msgid "unassign-button"
-msgstr "Rückgängig"
+msgstr "Nutzungsberechtigung aufheben"
 
 #: src/zope/app/homefolder/interfaces.py:28
 msgid "Home Folder"
 msgstr "Startordner"
 
 #: src/zope/app/homefolder/interfaces.py:29
-msgid ""
-"The principal's home folder; if none has been defined, this attribute will "
-"be `None`."
-msgstr ""
-"Der Startordner des Nutzungsberechtigten. Ist keiner definiert, ist dieses "
-"Attribut `None`."
+msgid "The principal's home folder; if none has been defined, this attribute will be `None`."
+msgstr "Der Startordner des Nutzungsberechtigten. Ist keiner definiert, ist dieses Attribut `None`."
 
 #: src/zope/app/homefolder/interfaces.py:41
 msgid "Base Folder"
@@ -3878,45 +3718,32 @@ msgid "Create Home Folder"
 msgstr "Startordner anlegen"
 
 #: src/zope/app/homefolder/interfaces.py:47
-msgid ""
-"Whether home folders should be created upon adding a assignment, if missing."
-msgstr ""
-"Kennzeichnet, ob Startordner beim Einfügen einer Zuordnung angelegt werden "
-"sollen, wenn diese fehlen."
+msgid "Whether home folders should be created upon adding a assignment, if missing."
+msgstr "Kennzeichnet, ob Startordner beim Einfügen einer Zuordnung angelegt werden sollen, wenn diese fehlen."
 
 #: src/zope/app/homefolder/interfaces.py:52
 msgid "Auto create assignment"
 msgstr "Zuordnung automatisch erzeugen"
 
 #: src/zope/app/homefolder/interfaces.py:53
-msgid ""
-"Whether assignment and folder should be created when calling getHomeFolder, "
-"if not existing."
-msgstr ""
-"Kennzeichnet, ob ein Ordner angelegt werden soll, wenn dieser beim Aufruf "
-"von getHomeFolder fehlt."
+msgid "Whether assignment and folder should be created when calling getHomeFolder, if not existing."
+msgstr "Kennzeichnet, ob ein Ordner angelegt werden soll, wenn dieser beim Aufruf von getHomeFolder fehlt."
 
 #: src/zope/app/homefolder/interfaces.py:59
 msgid "Local Home Folder Role"
 msgstr "Rolle für den lokalen Startordner"
 
 #: src/zope/app/homefolder/interfaces.py:60
-msgid ""
-"The local role that the user will have in its home folder. This role is only "
-"set on folders that are created by the manager."
-msgstr ""
-"Die lokale Rolle des Benutzers in seinem Startordner. Die Rolle wird nur "
-"gesetzt, wenn der Startordner vom Verwalter erzeugt wurde."
+msgid "The local role that the user will have in its home folder. This role is only set on folders that are created by the manager."
+msgstr "Die lokale Rolle des Benutzers in seinem Startordner. Die Rolle wird nur gesetzt, wenn der Startordner vom Verwalter erzeugt wurde."
 
 #: src/zope/app/homefolder/interfaces.py:68
 msgid "Container Type to create"
-msgstr ""
+msgstr "Typ des zu erzeugenden Behälters"
 
 #: src/zope/app/homefolder/interfaces.py:69
-msgid ""
-"The container type that will be created upon first call of getHomeFolder (if "
-"autoCreate is on)"
-msgstr ""
+msgid "The container type that will be created upon first call of getHomeFolder (if autoCreate is on)"
+msgstr "Der Behältertyp, der beim ersten Aufruf von 'getHomeFolder' erzeugt wird (wenn die automatische Erzeugung eingeschaltet ist)"
 
 #: src/zope/app/i18n/browser/configure.zcml:10
 msgid "Translate"
@@ -3945,9 +3772,7 @@ msgstr "Nachrichten Importieren und Exportieren"
 
 #: src/zope/app/i18n/browser/exportimport.pt:13
 msgid "Here you can export and import messages from your Translation Domain."
-msgstr ""
-"Hier können Sie Nachrichten von und zu Ihrer Übersetzungsdomäne im- bzw. "
-"exportieren."
+msgstr "Hier können Sie Nachrichten von und zu Ihrer Übersetzungsdomäne im- bzw. exportieren."
 
 #: src/zope/app/i18n/browser/exportimport.pt:21
 #: src/zope/app/i18n/browser/synchronize.pt:44
@@ -3977,8 +3802,7 @@ msgstr "Exportieren"
 
 #: src/zope/app/i18n/browser/synchronize.pt:123
 msgid "No connection could be made to remote data source."
-msgstr ""
-"Es konnte keine Verbindung mit der Fremddatenquelle hergestellt werden."
+msgstr "Es konnte keine Verbindung mit der Fremddatenquelle hergestellt werden."
 
 #: src/zope/app/i18n/browser/synchronize.pt:27
 msgid "Server URL"
@@ -4104,18 +3928,12 @@ msgid "Edit Form"
 msgstr "Bearbeitungsformular"
 
 #: src/zope/app/i18nfile/browser/i18nfile.py:47
-msgid ""
-"This edit form allows you to make changes to the properties of this file."
-msgstr ""
-"Dieses Bearbeitungsformular erlaubt es Ihnen, Änderungen an den "
-"Einstellungen Ihrer Datei vorzunehmen."
+msgid "This edit form allows you to make changes to the properties of this file."
+msgstr "Dieses Bearbeitungsformular erlaubt es Ihnen, Änderungen an den Einstellungen Ihrer Datei vorzunehmen."
 
 #: src/zope/app/i18nfile/browser/i18nimage.py:33
-msgid ""
-"This edit form allows you to make changes to the properties of this image."
-msgstr ""
-"Dieses Bearbeitungsformular erlaubt es Ihnen, Änderungen an den "
-"Einstellungen Ihres Bildes vorzunehmen."
+msgid "This edit form allows you to make changes to the properties of this image."
+msgstr "Dieses Bearbeitungsformular erlaubt es Ihnen, Änderungen an den Einstellungen Ihres Bildes vorzunehmen."
 
 #: src/zope/app/i18nfile/browser/image_edit.pt:86
 msgid "Dimensions"
@@ -4160,12 +3978,8 @@ msgid "${count} objects"
 msgstr "${count} Objekte"
 
 #: src/zope/app/introspector/configure.zcml:6
-msgid ""
-"       Use the object-introspection facility to discover       and browse "
-"interfaces and classes.       "
-msgstr ""
-"       Nutzen Sie die Objektintrospektion, um Schnittstellen und Klassen zu "
-"erkunden.       "
+msgid "       Use the object-introspection facility to discover       and browse interfaces and classes.       "
+msgstr "       Nutzen Sie die Objektintrospektion, um Schnittstellen und Klassen zu erkunden.       "
 
 #. Default: "Introspect Object Classes and Interfaces"
 #: src/zope/app/introspector/configure.zcml:6
@@ -4181,12 +3995,8 @@ msgid "Key Type Id"
 msgstr "Kennung des Schlüsseltyps"
 
 #: src/zope/app/keyreference/interfaces.py:39
-msgid ""
-"Key references should sort first on their key type and second on any type-"
-"specific information."
-msgstr ""
-"Schlüsselreferenzen sollten erst nach ihrem Schlüsseltypen und erst dann "
-"nach Typenspezifischen Informationen sortieren."
+msgid "Key references should sort first on their key type and second on any type-specific information."
+msgstr "Schlüsselreferenzen sollten erst nach ihrem Schlüsseltypen und erst dann nach Typenspezifischen Informationen sortieren."
 
 #: src/zope/app/locking/adapter.py:62
 msgid "Multiple principals found"
@@ -4200,7 +4010,8 @@ msgstr "Kein Nutzungsberechtigter gefunden"
 msgid "Object is already locked"
 msgstr "Objekt ist bereits gesperrt"
 
-#: src/zope/app/locking/adapter.py:82 src/zope/app/locking/adapter.py:92
+#: src/zope/app/locking/adapter.py:82
+#: src/zope/app/locking/adapter.py:92
 msgid "Object is not locked"
 msgstr "Objekttyp ist nicht gesperrt"
 
@@ -4218,30 +4029,24 @@ msgstr "Zeitangabe für die Erzeugung"
 
 #: src/zope/app/locking/interfaces.py:113
 msgid "time value indicating the lock timeout from creation"
-msgstr ""
-"Zeitangabe für die Zeitüberschreitung einer Sperre nach ihrer Erzeugung"
+msgstr "Zeitangabe für die Zeitüberschreitung einer Sperre nach ihrer Erzeugung"
 
 #: src/zope/app/menus.zcml:11
 msgid "Menu for displaying actions to be performed"
 msgstr "Menü zum Darstellen von verfügbaren Aktionen"
 
-#: src/zope/app/menus.zcml:11 src/zope/app/zopetop/widget_macros.pt:171
+#: src/zope/app/menus.zcml:11
+#: src/zope/app/zopetop/widget_macros.pt:171
 msgid "Actions"
 msgstr "Tätigkeiten"
 
 #: src/zope/app/menus.zcml:17
-msgid ""
-"Menu for objects to be added according to                    containment "
-"constraints"
-msgstr ""
-"Menü der Objekte, die dem Behälter anhand seiner  Bedingungen hinzugefügt "
-"werden können"
+msgid "Menu for objects to be added according to                    containment constraints"
+msgstr "Menü der Objekte, die dem Behälter anhand seiner  Bedingungen hinzugefügt werden können"
 
 #: src/zope/app/menus.zcml:25
 msgid "Menu of objects to be added to site management folders"
-msgstr ""
-"Menü von Objekten, die Web-Auftritt-Verwaltungsordnern hinzugefügt werden "
-"können"
+msgstr "Menü von Objekten, die Web-Auftritt-Verwaltungsordnern hinzugefügt werden können"
 
 #: src/zope/app/menus.zcml:31
 msgid "Menu of addable configuration objects"
@@ -4255,7 +4060,8 @@ msgstr "Registrierung hinzufügen"
 msgid "Menu for displaying alternate representations of an object"
 msgstr "Menü zum Darstellen alternativen Präsentationen eines Objektes"
 
-#: src/zope/app/menus.zcml:5 src/zope/app/apidoc/ifacemodule/index.pt:168
+#: src/zope/app/menus.zcml:5
+#: src/zope/app/apidoc/ifacemodule/index.pt:168
 #: src/zope/app/zopetop/widget_macros.pt:154
 msgid "Views"
 msgstr "Ansichten"
@@ -4320,15 +4126,12 @@ msgid "Path to the Resource"
 msgstr "Pfad zur Ressource"
 
 #: src/zope/app/onlinehelp/interfaces.py:173
-msgid ""
-"The Path to the Resource, assumed to be in the same directory as the Help "
-"Topic"
-msgstr ""
-"Der Pfad zur Ressource (wird im selbem Verzeichnis wie das Hilfethema "
-"angenommen)"
+msgid "The Path to the Resource, assumed to be in the same directory as the Help Topic"
+msgstr "Der Pfad zur Ressource (wird im selbem Verzeichnis wie das Hilfethema angenommen)"
 
 #: src/zope/app/onlinehelp/interfaces.py:53
-#: src/zope/security/interfaces.py:258 src/zope/security/interfaces.py:308
+#: src/zope/security/interfaces.py:258
+#: src/zope/security/interfaces.py:308
 msgid "Id"
 msgstr "Kennung"
 
@@ -4381,14 +4184,8 @@ msgid "The View Name for which this Help Topic is registered"
 msgstr "Der Ansichtenname, für welchen dieses Hilfethema registriert ist"
 
 #: src/zope/app/pagetemplate/engine.py:121
-msgid ""
-"Inline Code Evaluation is deactivated, which means that you cannot have "
-"inline code snippets in your Page Template. Activate Inline Code Evaluation "
-"and try again."
-msgstr ""
-"\"Inline Code\"-Ausführung ist deaktiviert. Das bedeutet, dass Sie keinen "
-"\"Inline Code\" in Ihren Schablonen haben dürfen. Aktivieren Sie \"Inline "
-"Code\"-Ausführung und versuchen Sie es nochmals."
+msgid "Inline Code Evaluation is deactivated, which means that you cannot have inline code snippets in your Page Template. Activate Inline Code Evaluation and try again."
+msgstr "\"Inline Code\"-Ausführung ist deaktiviert. Das bedeutet, dass Sie keinen \"Inline Code\" in Ihren Schablonen haben dürfen. Aktivieren Sie \"Inline Code\"-Ausführung und versuchen Sie es nochmals."
 
 #. Default: ""
 #: src/zope/app/pagetemplate/engine.py:130
@@ -4413,8 +4210,7 @@ msgstr "Benutzerinformationen bearbeiten"
 
 #: src/zope/app/pluggableauth/interfaces.py:33
 msgid "The Login/Username of the user. This value can change."
-msgstr ""
-"Eine Anmeldung (Benutzername) für den Nutzer. Dieser Wert kann sich ändern."
+msgstr "Eine Anmeldung (Benutzername) für den Nutzer. Dieser Wert kann sich ändern."
 
 #: src/zope/app/pluggableauth/interfaces.py:39
 msgid "The password for the user."
@@ -4455,7 +4251,7 @@ msgstr "Speichert Anmerkungen für Nutzungsberechtigte"
 
 #: src/zope/app/publisher/configure.zcml:18
 msgid "Creating HTTP Results"
-msgstr ""
+msgstr "Creating HTTP Results"
 
 #: src/zope/app/publisher/interfaces/browser.py:104
 #: src/zope/app/publisher/interfaces/browser.py:156
@@ -4463,27 +4259,16 @@ msgid "The URL to display if the item is selected"
 msgstr "Die URL, die aufgerufen werden soll, wenn der Eintrag ausgewählt ist"
 
 #: src/zope/app/publisher/interfaces/browser.py:105
-msgid ""
-"When a user selects a browser menu item, the URLgiven in the action is "
-"displayed. The action is usually given as a relative URL, relative to the "
-"object the menu item is for."
-msgstr ""
-"Wenn der Benutzer einen Menüeintrag im Browser auswählt, wird die in der "
-"Aktion angegebene URL aufgerufen. Dabei wird üblicherweise eine relative URL "
-"angegeben, relativ zu dem Objekt, für das der Menüeintrag vorhanden ist."
+msgid "When a user selects a browser menu item, the URLgiven in the action is displayed. The action is usually given as a relative URL, relative to the object the menu item is for."
+msgstr "Wenn der Benutzer einen Menüeintrag im Browser auswählt, wird die in der Aktion angegebene URL aufgerufen. Dabei wird üblicherweise eine relative URL angegeben, relativ zu dem Objekt, für das der Menüeintrag vorhanden ist."
 
 #: src/zope/app/publisher/interfaces/browser.py:113
 msgid "Menu item ordering hint"
 msgstr "Hinweis zum Ordnen des Menüeintrags"
 
 #: src/zope/app/publisher/interfaces/browser.py:114
-msgid ""
-"This attribute provides a hint for menu item ordering.Menu items will "
-"generally be sorted by the `for_`attribute and then by the order."
-msgstr ""
-"Dieses Attribut enthält einen Hinweis zum Einordnen des Menüeintrags. Im "
-"allgemeinen werden Menüeinträge nach dem '_for'-Attribut und danach 'order'-"
-"Attribut geordnet."
+msgid "This attribute provides a hint for menu item ordering.Menu items will generally be sorted by the `for_`attribute and then by the order."
+msgstr "Dieses Attribut enthält einen Hinweis zum Einordnen des Menüeintrags. Im allgemeinen werden Menüeinträge nach dem '_for'-Attribut und danach 'order'-Attribut geordnet."
 
 #: src/zope/app/publisher/interfaces/browser.py:120
 msgid "A condition for displaying the menu item"
@@ -4491,8 +4276,7 @@ msgstr "Eine Bedingung zum Darstellen des Menüeintrags"
 
 #: src/zope/app/publisher/interfaces/browser.py:121
 msgid ""
-"The condition is given as a TALES expression. The expression has access to "
-"the variables:\n"
+"The condition is given as a TALES expression. The expression has access to the variables:\n"
 "\n"
 "context -- The object the menu is being displayed for\n"
 "\n"
@@ -4503,16 +4287,14 @@ msgid ""
 "The menu item will not be displayed if there is a \n"
 "filter and the filter evaluates to a false value."
 msgstr ""
-"Die Bedingung wird als TALES-Ausdruck angegeben. Der Ausdruck hat Zugriff "
-"auf die folgenden Variablen:\n"
+"Die Bedingung wird als TALES-Ausdruck angegeben. Der Ausdruck hat Zugriff auf die folgenden Variablen:\n"
 "context -- Das Objekt für das der Eintrag angezeigt wird\n"
 "\n"
 "request -- Die Browseranfrage\n"
 "\n"
 "nothing -- None\n"
 "\n"
-"Der Menüeintrag wird nicht angezeigt, falls ein Filter existiert und der "
-"Filter einen unwahren Wert zurückgibt."
+"Der Menüeintrag wird nicht angezeigt, falls ein Filter existiert und der Filter einen unwahren Wert zurückgibt."
 
 #: src/zope/app/publisher/interfaces/browser.py:136
 msgid "Icon URI"
@@ -4528,19 +4310,11 @@ msgstr "Untermenükennung"
 
 #: src/zope/app/publisher/interfaces/browser.py:151
 msgid "The menu id of the menu that describes the sub-menu below this item."
-msgstr ""
-"Die Menükennung eines Menüs, das die Untermenüs unter diesem Eintrag "
-"beschreibt."
+msgstr "Die Menükennung eines Menüs, das die Untermenüs unter diesem Eintrag beschreibt."
 
 #: src/zope/app/publisher/interfaces/browser.py:157
-msgid ""
-"When a user selects a browser menu item, the URL given in the action is "
-"displayed. The action is usually given as a relative URL, relative to the "
-"object the menu item is for."
-msgstr ""
-"Wenn der Benutzer einen Menüeintrag im Browser auswählt, wird die in der "
-"Aktion angegebene URL aufgerufen. Dabei wird üblicherweise eine relative URL "
-"angegeben, relativ zu dem Objekt, für das der Menüeintrag vorhanden ist."
+msgid "When a user selects a browser menu item, the URL given in the action is displayed. The action is usually given as a relative URL, relative to the object the menu item is for."
+msgstr "Wenn der Benutzer einen Menüeintrag im Browser auswählt, wird die in der Aktion angegebene URL aufgerufen. Dabei wird üblicherweise eine relative URL angegeben, relativ zu dem Objekt, für das der Menüeintrag vorhanden ist."
 
 #: src/zope/app/publisher/interfaces/browser.py:58
 #: src/zope/app/schemacontent/interfaces.py:45
@@ -4564,12 +4338,8 @@ msgid "Menu description"
 msgstr "Beschreibung zum Menü"
 
 #: src/zope/app/publisher/interfaces/browser.py:71
-msgid ""
-"A description of the menu. This might be shown on menu pages or in pop-up "
-"help for menus."
-msgstr ""
-"Eine Beschreibung für das Menü. Sie kann auf Menüseiten oder in Pop-up-"
-"Hilfefenstern angezeigt werden."
+msgid "A description of the menu. This might be shown on menu pages or in pop-up help for menus."
+msgstr "Eine Beschreibung für das Menü. Sie kann auf Menüseiten oder in Pop-up-Hilfefenstern angezeigt werden."
 
 #: src/zope/app/publisher/interfaces/browser.py:91
 msgid "Menu item title"
@@ -4584,12 +4354,8 @@ msgid "Menu item description"
 msgstr "Beschreibung zum Menüeintrag"
 
 #: src/zope/app/publisher/interfaces/browser.py:98
-msgid ""
-"A description of the menu item. This might be shown on menu pages or in pop-"
-"up help for menu items."
-msgstr ""
-"Eine Beschreibung für den Menüeintrag. Sie kann auf Menüseiten oder in Pop-"
-"up-Hilfefenstern angezeigt werden."
+msgid "A description of the menu item. This might be shown on menu pages or in pop-up help for menu items."
+msgstr "Eine Beschreibung für den Menüeintrag. Sie kann auf Menüseiten oder in Pop-up-Hilfefenstern angezeigt werden."
 
 #: src/zope/app/pythonpage/__init__.py:42
 msgid "The source of the Python page."
@@ -4640,8 +4406,7 @@ msgstr "Zu ignorierende URL's"
 msgid ""
 "A list of regular expressions.\n"
 "\n"
-"                     Requests whose paths match any of the expressions "
-"listed\n"
+"                     Requests whose paths match any of the expressions listed\n"
 "                     here will not be shown."
 msgstr ""
 "Eine Liste regulärer Ausdrücke.\n"
@@ -4873,7 +4638,8 @@ msgstr "Ganzahlfeld bearbeiten"
 msgid "BytesLine Field"
 msgstr "Feld für Byteszeile"
 
-#: src/zope/app/schema/fields.zcml:114 src/zope/app/schema/fieldforms.zcml:7
+#: src/zope/app/schema/fields.zcml:114
+#: src/zope/app/schema/fieldforms.zcml:7
 msgid "Text Field"
 msgstr "Textfeld"
 
@@ -4881,15 +4647,18 @@ msgstr "Textfeld"
 msgid "Text Line Field"
 msgstr "Feld Textzeile"
 
-#: src/zope/app/schema/fields.zcml:140 src/zope/app/schema/fieldforms.zcml:59
+#: src/zope/app/schema/fields.zcml:140
+#: src/zope/app/schema/fieldforms.zcml:59
 msgid "Boolean Field"
 msgstr "Boolsches Feld"
 
-#: src/zope/app/schema/fields.zcml:151 src/zope/app/schema/fieldforms.zcml:85
+#: src/zope/app/schema/fields.zcml:151
+#: src/zope/app/schema/fieldforms.zcml:85
 msgid "Integer Field"
 msgstr "Ganzahlfeld"
 
-#: src/zope/app/schema/fields.zcml:163 src/zope/app/schema/fieldforms.zcml:111
+#: src/zope/app/schema/fields.zcml:163
+#: src/zope/app/schema/fieldforms.zcml:111
 msgid "Float Field"
 msgstr "Fließkommazahlenfeld"
 
@@ -4913,7 +4682,8 @@ msgstr "Passwortfeld"
 msgid "Dict Field"
 msgstr "Dict-Feld"
 
-#: src/zope/app/schema/fields.zcml:232 src/zope/app/schema/fieldforms.zcml:137
+#: src/zope/app/schema/fields.zcml:232
+#: src/zope/app/schema/fieldforms.zcml:137
 msgid "Datetime Field"
 msgstr "Zeitdatumfeld"
 
@@ -5005,17 +4775,8 @@ msgid "Create Menu"
 msgstr "Menü erstellen"
 
 #: src/zope/app/schemacontent/interfaces.py:52
-msgid ""
-"If set to True, the system will create a local browser menu for you. If this "
-"option is set to False, the system will try to find the next site manager "
-"that has a menu with the specified id. If no menu was found or the menu is a "
-"global menu, then an error is occurred."
-msgstr ""
-"Wenn dies auf True (wahr) gesetzt ist, wird das System einen lokalen "
-"Browsermenüeintrag für Sie erstellen. Falls False (falsch, unwahr) angegeben "
-"ist, wird das System versuchen, die nächste Web-Auftritt-Verwaltung mit "
-"einem Menü mit der spezifizierten Kennung zu finden. Falls kein Menü "
-"gefunden werden kann oder das Menü global ist, wird ein Fehler erzeugt."
+msgid "If set to True, the system will create a local browser menu for you. If this option is set to False, the system will try to find the next site manager that has a menu with the specified id. If no menu was found or the menu is a global menu, then an error is occurred."
+msgstr "Wenn dies auf True (wahr) gesetzt ist, wird das System einen lokalen Browsermenüeintrag für Sie erstellen. Falls False (falsch, unwahr) angegeben ist, wird das System versuchen, die nächste Web-Auftritt-Verwaltung mit einem Menü mit der spezifizierten Kennung zu finden. Falls kein Menü gefunden werden kann oder das Menü global ist, wird ein Fehler erzeugt."
 
 #: src/zope/app/schemacontent/interfaces.py:73
 #: src/zope/app/schemacontent/interfaces.py:105
@@ -5043,19 +4804,8 @@ msgid "Copy Schema"
 msgstr "Schema kopieren"
 
 #: src/zope/app/schemacontent/interfaces.py:85
-msgid ""
-"If this field is set to True, a copied version of the schema will be used in "
-"the Content Component instance. This has the advantage that an existing "
-"Content Component's schema is set in stone and can never change, even when a "
-"mutable schema evolves. If the value is False, then the Content Component's "
-"can change (which is desirable in some cases - i.e. during development.)"
-msgstr ""
-"Falls dieses Feld auf Wahr gesetzt ist, wird eine Kopie des Schemas in der "
-"Instanz der Inhaltskomponente verwendet. Dies hat den Vorteil, dass das "
-"Schema einer bereits existierenden Inhaltskomponente in Stein gemeißelt ist "
-"und sich niemals ändern kann, selbst wenn das Schema verändert wird. Falls "
-"der Wert Falsch ist, dann können sich Inhaltskomponenten ändern (was "
-"manchmal erwünscht ist, z.B. während der Entwicklung)"
+msgid "If this field is set to True, a copied version of the schema will be used in the Content Component instance. This has the advantage that an existing Content Component's schema is set in stone and can never change, even when a mutable schema evolves. If the value is False, then the Content Component's can change (which is desirable in some cases - i.e. during development.)"
+msgstr "Falls dieses Feld auf Wahr gesetzt ist, wird eine Kopie des Schemas in der Instanz der Inhaltskomponente verwendet. Dies hat den Vorteil, dass das Schema einer bereits existierenden Inhaltskomponente in Stein gemeißelt ist und sich niemals ändern kann, selbst wenn das Schema verändert wird. Falls der Wert Falsch ist, dann können sich Inhaltskomponenten ändern (was manchmal erwünscht ist, z.B. während der Entwicklung)"
 
 #: src/zope/app/security/browser/auth.py:158
 msgid "[Login]"
@@ -5116,9 +4866,7 @@ msgstr "Sie werden gerade umgeleitet!"
 
 #: src/zope/app/security/browser/redirect.pt:15
 msgid "If you see this screen for more than 5 seconds, click here."
-msgstr ""
-"Wenn Sie diesen Bildschirm für mehr als 5 Sekunden sehen, klicken Sie bitte "
-"hier."
+msgstr "Wenn Sie diesen Bildschirm für mehr als 5 Sekunden sehen, klicken Sie bitte hier."
 
 #. Default: "Manage Site"
 #: src/zope/app/security/configure.zcml:103
@@ -5131,9 +4879,7 @@ msgid "manage-principal-permission"
 msgstr "Nutzungsberechtigungen verwalten"
 
 #: src/zope/app/security/configure.zcml:113
-msgid ""
-"Manage the Zope Application, such as Restart/Shutdown or                    "
-"packing the ZODB."
+msgid "Manage the Zope Application, such as Restart/Shutdown or                    packing the ZODB."
 msgstr "Zope-Anwendung verwalten (z.B. Neustarten/Herunterfahren/ZODB packen)"
 
 #. Default: "Manage Application"
@@ -5147,12 +4893,8 @@ msgid "public-permission"
 msgstr "Berechtigung für Alle"
 
 #: src/zope/app/security/configure.zcml:6
-msgid ""
-"Special permission indicating unconditional access.                    "
-"Public resources are always accessible."
-msgstr ""
-"Spezielle Berechtigung, die bedingungslosen Zugriff bereitstellt. \"Public\" "
-"Resourcen sind immer zugänglich."
+msgid "Special permission indicating unconditional access.                    Public resources are always accessible."
+msgstr "Spezielle Berechtigung, die bedingungslosen Zugriff bereitstellt. \"Public\" Resourcen sind immer zugänglich."
 
 #. Default: "View"
 #: src/zope/app/security/configure.zcml:72
@@ -5292,26 +5034,13 @@ msgid "Setting"
 msgstr "Einstellung"
 
 #: src/zope/app/securitypolicy/browser/manage_roleform.pt:19
-msgid ""
-"This page shows the permissions allowed and denied the role ${role_title} "
-"(id: ${role_id}). To change settings, simply select different permissions in "
-"the Allow or Deny lists. Make sure you don't select the same permission in "
-"both lists though."
-msgstr ""
-"Diese Seite zeigt die Berechtigungen, die der Rolle ${role_title} (Kennung: "
-"${role_id}) erlaubt oder verweigert wurden. Um Einstellungen zu ändern, "
-"wählen sie einfach Berechtigungen in den 'Erlauben'- und 'Verweigern'-Liste. "
-"Stellen Sie jedoch sicher, daß sie nicht die gleiche Berechtigung in beiden "
-"Listen auswählen."
+msgid "This page shows the permissions allowed and denied the role ${role_title} (id: ${role_id}). To change settings, simply select different permissions in the Allow or Deny lists. Make sure you don't select the same permission in both lists though."
+msgstr "Diese Seite zeigt die Berechtigungen, die der Rolle ${role_title} (Kennung: ${role_id}) erlaubt oder verweigert wurden. Um Einstellungen zu ändern, wählen sie einfach Berechtigungen in den 'Erlauben'- und 'Verweigern'-Liste. Stellen Sie jedoch sicher, daß sie nicht die gleiche Berechtigung in beiden Listen auswählen."
 
 #. Default: ""
 #: src/zope/app/securitypolicy/browser/rolepermissionview.py:148
-msgid ""
-"You choose both allow and deny for permission \"${permission}\". This is not "
-"allowed."
-msgstr ""
-"Sie haben sowohl das Gewähren wie auch das Verweigern für die Berechtigung "
-"\"${permission}\" vorgegeben. Dies ist nicht zugelassen."
+msgid "You choose both allow and deny for permission \"${permission}\". This is not allowed."
+msgstr "Sie haben sowohl das Gewähren wie auch das Verweigern für die Berechtigung \"${permission}\" vorgegeben. Dies ist nicht zugelassen."
 
 #. Default: ""
 #: src/zope/app/securitypolicy/browser/rolepermissionview.py:163
@@ -5327,8 +5056,7 @@ msgid ""
 "        "
 msgstr ""
 "Für jede Berechtigung, die einer Rolle gewährt (oder verweigert) wird,\n"
-"       setzen Sie den Eintrag für diese Berechtigung und Rolle auf '+' (oder "
-"'-').\n"
+"       setzen Sie den Eintrag für diese Berechtigung und Rolle auf '+' (oder '-').\n"
 "       Berechtigungen werden auf der linken Seite senkrecht angezeigt,\n"
 "       Rollen waagerecht oben.\n"
 "        "
@@ -5381,12 +5109,8 @@ msgid "Session Data Container Properties"
 msgstr "Eigenschaften von Sitzungsdatenspeicher"
 
 #: src/zope/app/session/browser.zcml:8
-msgid ""
-"Uses a cookie to uniquely identify a client, allowing        state to be "
-"maintained between requests"
-msgstr ""
-"Benutzt einen Cookie, um einen Klient eindeutig zu identifzieren, so dass "
-"der Sitzungsstatus zwischen Anfragen behalten werden kann."
+msgid "Uses a cookie to uniquely identify a client, allowing        state to be maintained between requests"
+msgstr "Benutzt einen Cookie, um einen Klient eindeutig zu identifzieren, so dass der Sitzungsstatus zwischen Anfragen behalten werden kann."
 
 #: src/zope/app/session/browser.zcml:8
 msgid "Cookie Client Id Manager"
@@ -5405,65 +5129,40 @@ msgid "Cookie Name"
 msgstr "Cookie-Name"
 
 #: src/zope/app/session/http.py:49
-msgid ""
-"Name of cookie used to maintain state. Must be unique to the site domain "
-"name, and only contain ASCII letters, digits and '_'"
-msgstr ""
-"Name des Cookies, der zur Sitzungsidentifkation benutzt wird. Er muss "
-"eindeutig sein und darf nur ASCII Buchstaben, Zahlen und '_' enthalten."
+msgid "Name of cookie used to maintain state. Must be unique to the site domain name, and only contain ASCII letters, digits and '_'"
+msgstr "Name des Cookies, der zur Sitzungsidentifkation benutzt wird. Er muss eindeutig sein und darf nur ASCII Buchstaben, Zahlen und '_' enthalten."
 
 #: src/zope/app/session/http.py:61
 msgid "Cookie Lifetime"
 msgstr "Cookie-Lebensdauer"
 
 #: src/zope/app/session/http.py:62
-msgid ""
-"Number of seconds until the browser expires the cookie. Leave blank expire "
-"the cookie when the browser is quit. Set to 0 to never expire. "
-msgstr ""
-"Anzahl von Sekunden bis der Cookie im Browser verfällt. Lassen Sie dieses "
-"Feld leer, verfällt der Cookie, wenn der Browser beendet wird, setzten sie "
-"es auf 0, verfällt der Cookie niemals. "
+msgid "Number of seconds until the browser expires the cookie. Leave blank expire the cookie when the browser is quit. Set to 0 to never expire. "
+msgstr "Anzahl von Sekunden bis der Cookie im Browser verfällt. Lassen Sie dieses Feld leer, verfällt der Cookie, wenn der Browser beendet wird, setzten sie es auf 0, verfällt der Cookie niemals. "
 
 #: src/zope/app/session/interfaces.py:126
 msgid "Last Access Time"
 msgstr "Letzter Zugriff"
 
 #: src/zope/app/session/interfaces.py:127
-msgid ""
-"Approximate epoch time this ISessionData was last retrieved from its "
-"ISessionDataContainer"
-msgstr ""
-"Ungefähre Epochen-Zeit, zu der der ISessionDataContainer zuletzt auf dieses "
-"ISessionData zugegriffen hat."
+msgid "Approximate epoch time this ISessionData was last retrieved from its ISessionDataContainer"
+msgstr "Ungefähre Epochen-Zeit, zu der der ISessionDataContainer zuletzt auf dieses ISessionData zugegriffen hat."
 
 #: src/zope/app/session/interfaces.py:66
 msgid "Timeout"
 msgstr "Auszeit"
 
 #: src/zope/app/session/interfaces.py:67
-msgid ""
-"Number of seconds before data becomes stale and may be removed. A value of "
-"'0' means no expiration."
-msgstr ""
-"Anzahl von Sekunden, bis die Daten verfallen und gelöscht werden können. Ein "
-"Wert von '0' bedeutet keinen Verfall."
+msgid "Number of seconds before data becomes stale and may be removed. A value of '0' means no expiration."
+msgstr "Anzahl von Sekunden, bis die Daten verfallen und gelöscht werden können. Ein Wert von '0' bedeutet keinen Verfall."
 
 #: src/zope/app/session/interfaces.py:75
 msgid "Timeout resolution (in seconds)"
 msgstr "Auszeit-Auflösung (in Sekunden)"
 
 #: src/zope/app/session/interfaces.py:76
-msgid ""
-"Defines what the 'resolution' of item timeout is. Setting this higher allows "
-"the transience machinery to do fewer 'writes' at the expense of  causing "
-"items to time out later than the 'Data object timeout value' by  a factor of "
-"(at most) this many seconds."
-msgstr ""
-"Definiert die 'Auflösung' der Auszeit. Wenn man diesen Wert höher setzt, "
-"dann muss die Vergänglichkeitmaschinerie weniger 'schreiben' zu Kosten das "
-"die Objekte später verfallen als der 'Datenobjekt Timeout Wert' mit einem "
-"Faktor von (am meisten) so vielen Sekunden."
+msgid "Defines what the 'resolution' of item timeout is. Setting this higher allows the transience machinery to do fewer 'writes' at the expense of  causing items to time out later than the 'Data object timeout value' by  a factor of (at most) this many seconds."
+msgstr "Definiert die 'Auflösung' der Auszeit. Wenn man diesen Wert höher setzt, dann muss die Vergänglichkeitmaschinerie weniger 'schreiben' zu Kosten das die Objekte später verfallen als der 'Datenobjekt Timeout Wert' mit einem Faktor von (am meisten) so vielen Sekunden."
 
 #. Default: "Add and Test"
 #: src/zope/app/sqlscript/browser/add.pt:12
@@ -5532,12 +5231,8 @@ msgid "Arguments"
 msgstr "Argumente"
 
 #: src/zope/app/sqlscript/interfaces.py:37
-msgid ""
-"A set of attributes that can be used during the SQL command rendering "
-"process to provide dynamic data."
-msgstr ""
-"Eine Sammlung von Attributen, die, während der SQL-Befehl zusammengestellt "
-"wird, als dynamische Variablen verfügbar sind."
+msgid "A set of attributes that can be used during the SQL command rendering process to provide dynamic data."
+msgstr "Eine Sammlung von Attributen, die, während der SQL-Befehl zusammengestellt wird, als dynamische Variablen verfügbar sind."
 
 #: src/zope/app/sqlscript/interfaces.py:46
 msgid "The SQL command to be run."
@@ -5575,11 +5270,13 @@ msgstr "Zope Tree"
 msgid "Redo!"
 msgstr "Wiederherstellen!"
 
-#: src/zope/app/undo/configure.zcml:117 src/zope/app/undo/undo_more.pt:6
+#: src/zope/app/undo/configure.zcml:117
+#: src/zope/app/undo/undo_more.pt:6
 msgid "Undo more"
 msgstr "Mehr rückgängig"
 
-#: src/zope/app/undo/configure.zcml:125 src/zope/app/undo/undo_all.pt:6
+#: src/zope/app/undo/configure.zcml:125
+#: src/zope/app/undo/undo_all.pt:6
 msgid "Undo all"
 msgstr "Alles rückgängig"
 
@@ -5589,20 +5286,12 @@ msgid "undo-all-transactions-permission"
 msgstr "Alle Transaktionen rückgängig machen"
 
 #: src/zope/app/undo/configure.zcml:14
-msgid ""
-"With this permission a user may undo all transactions,                    "
-"regardless of who initiated them"
-msgstr ""
-"Mit dieser Berechtigung darf ein Benutzer alle Transaktionen, gleichgültig "
-"wer sie initiiert hat, rückgängig machen."
+msgid "With this permission a user may undo all transactions,                    regardless of who initiated them"
+msgstr "Mit dieser Berechtigung darf ein Benutzer alle Transaktionen, gleichgültig wer sie initiiert hat, rückgängig machen."
 
 #: src/zope/app/undo/configure.zcml:7
-msgid ""
-"With this permission a user may undo his/her own                    "
-"transactions."
-msgstr ""
-"Mit dieser Berechtigung darf ein Benutzer seine eigenen Transaktionen "
-"rückgängig machen"
+msgid "With this permission a user may undo his/her own                    transactions."
+msgstr "Mit dieser Berechtigung darf ein Benutzer seine eigenen Transaktionen rückgängig machen"
 
 #. Default: "Undo one's one transactions"
 #: src/zope/app/undo/configure.zcml:7
@@ -5613,22 +5302,14 @@ msgstr "Eigene Transaktionen rückgängig machen"
 msgid "Undo!"
 msgstr "Rückgängig!"
 
-#: src/zope/app/undo/undo_all.pt:11 src/zope/app/undo/undo_more.pt:11
-msgid ""
-"Select one or more transactions from the list below and click the button "
-"below. Please be aware that you may only undo a transaction if the object "
-"has not been modified in a later transaction by you or any other user."
-msgstr ""
-"Wählen Sie eine oder mehrere Transaktionen aus der Liste und klicken sie auf "
-"die Schaltfläche unten. Bitte beachten Sie, dass Sie nur Transaktionen "
-"rückgängig machen können, wenn das Objekt seitdem in einer späteren "
-"Transaktionen weder von Ihnen noch von jemand anderes verändert wurde."
+#: src/zope/app/undo/undo_all.pt:11
+#: src/zope/app/undo/undo_more.pt:11
+msgid "Select one or more transactions from the list below and click the button below. Please be aware that you may only undo a transaction if the object has not been modified in a later transaction by you or any other user."
+msgstr "Wählen Sie eine oder mehrere Transaktionen aus der Liste und klicken sie auf die Schaltfläche unten. Bitte beachten Sie, dass Sie nur Transaktionen rückgängig machen können, wenn das Objekt seitdem in einer späteren Transaktionen weder von Ihnen noch von jemand anderes verändert wurde."
 
 #: src/zope/app/undo/undo_all.pt:8
 msgid "This form lets you undo all transactions initiated by any user."
-msgstr ""
-"Dieses Formular bietet die Möglichkeit, Transaktionen aller Benutzer "
-"rückgängig zu machen"
+msgstr "Dieses Formular bietet die Möglichkeit, Transaktionen aller Benutzer rückgängig zu machen"
 
 #: src/zope/app/undo/undo_macros.pt:102
 msgid "View ${number} earlier transactions"
@@ -5685,19 +5366,16 @@ msgid "heading-description"
 msgstr "Beschreibung"
 
 #. Default: "not available"
-#: src/zope/app/undo/undo_macros.pt:62 src/zope/app/undo/undo_macros.pt:69
-#: src/zope/app/undo/undo_macros.pt:76 src/zope/app/undo/undo_macros.pt:88
+#: src/zope/app/undo/undo_macros.pt:62
+#: src/zope/app/undo/undo_macros.pt:69
+#: src/zope/app/undo/undo_macros.pt:76
+#: src/zope/app/undo/undo_macros.pt:88
 msgid "label-not-available"
 msgstr "nicht verfügbar"
 
 #: src/zope/app/undo/undo_more.pt:8
-msgid ""
-"This form lets you undo your last transactions. You are only viewing "
-"transactions initiated by you."
-msgstr ""
-"Dieses Formular bietet Ihnen die Möglichkeit, Ihre letzten Transaktionen "
-"rückgängig zu machen. Sie betrachten gerade die Transaktionen, die von Ihnen "
-"ausgegangen sind."
+msgid "This form lets you undo your last transactions. You are only viewing transactions initiated by you."
+msgstr "Dieses Formular bietet Ihnen die Möglichkeit, Ihre letzten Transaktionen rückgängig zu machen. Sie betrachten gerade die Transaktionen, die von Ihnen ausgegangen sind."
 
 #: src/zope/app/versioncontrol/interfaces.py:185
 msgid "time value indicating the when the bookkeeping information was created"
@@ -5706,15 +5384,13 @@ msgstr "Zeitpunkt, zu dem die Protokolldaten erzeugt wurden"
 #: src/zope/app/versioncontrol/interfaces.py:191
 msgid ""
 "\n"
-"        Id of the version history related to the version controlled "
-"resource.\n"
+"        Id of the version history related to the version controlled resource.\n"
 "\n"
 "        If this isn't set (is None), \n"
 "        "
 msgstr ""
 "\n"
-"        Kennung des Versionsablauf in Bezug auf die versionsgeführte "
-"Ressource.\n"
+"        Kennung des Versionsablauf in Bezug auf die versionsgeführte Ressource.\n"
 "\n"
 "    Wenn sie nicht gesetzt ist (ist `None`), ... \n"
 "        "
@@ -5736,11 +5412,8 @@ msgid "Checked in"
 msgstr "Eingebucht"
 
 #: src/zope/app/versioncontrol/interfaces.py:214
-msgid ""
-"id of the effective user at the time the bookkeeping information was created"
-msgstr ""
-"Kennung des tatsächlichen Benutzers zu dem Zeitpunkt, als die Protokolldaten "
-"erzeugt wurden"
+msgid "id of the effective user at the time the bookkeeping information was created"
+msgstr "Kennung des tatsächlichen Benutzers zu dem Zeitpunkt, als die Protokolldaten erzeugt wurden"
 
 #: src/zope/app/versioncontrol/interfaces.py:228
 msgid "time that the log entry was created"
@@ -5748,8 +5421,7 @@ msgstr "Zeitpunkt, an dem der Protokolleintrag erzeugt wurde"
 
 #: src/zope/app/versioncontrol/interfaces.py:231
 msgid "version id of the resource related to the log entry"
-msgstr ""
-"Versionskennung der Ressource, auf die sich der Protokolleintrag bezieht"
+msgstr "Versionskennung der Ressource, auf die sich der Protokolleintrag bezieht"
 
 #: src/zope/app/versioncontrol/interfaces.py:234
 msgid "the action that was taken"
@@ -5772,11 +5444,8 @@ msgid "Update"
 msgstr "Aktualisiert"
 
 #: src/zope/app/versioncontrol/interfaces.py:242
-msgid ""
-"Message provided by the user at the time of the action.  This may be empty."
-msgstr ""
-"Vom Benutzer zum Zeitpunkt der Aktion bereitgestellte Nachricht. Sie kann "
-"leer sein."
+msgid "Message provided by the user at the time of the action.  This may be empty."
+msgstr "Vom Benutzer zum Zeitpunkt der Aktion bereitgestellte Nachricht. Sie kann leer sein."
 
 #: src/zope/app/versioncontrol/interfaces.py:246
 msgid "id of the user causing the audited action"
@@ -5792,8 +5461,7 @@ msgstr "Nachricht"
 
 #: src/zope/app/versioncontrol/interfaces.py:335
 msgid "Message text passed to applyVersionControl() for the object."
-msgstr ""
-"Nachrichtentext, der für das Objekt an applyVersionControl() gereicht wird."
+msgstr "Nachrichtentext, der für das Objekt an applyVersionControl() gereicht wird."
 
 #: src/zope/app/versioncontrol/interfaces.py:347
 msgid "Checkin Message"
@@ -5930,9 +5598,7 @@ msgstr "Bedingung"
 msgid ""
 "The condition that is evaluated to decide if the\n"
 "                        transition can be fired or not."
-msgstr ""
-"Die auszuwertende Bedingung um zu entscheiden, ob ein Übergang möglich ist "
-"oder nicht."
+msgstr "Die auszuwertende Bedingung um zu entscheiden, ob ein Übergang möglich ist oder nicht."
 
 #: src/zope/app/workflow/stateful/interfaces.py:117
 msgid "Script"
@@ -5942,9 +5608,7 @@ msgstr "Skript"
 msgid ""
 "The script that is evaluated to decide if the\n"
 "                        transition can be fired or not."
-msgstr ""
-"Das Skript, das für die Entscheidung ausgewertet wird, ob ein Übergang "
-"möglich ist oder nicht."
+msgstr "Das Skript, das für die Entscheidung ausgewertet wird, ob ein Übergang möglich ist oder nicht."
 
 #: src/zope/app/workflow/stateful/interfaces.py:123
 msgid "The permission needed to fire the Transition."
@@ -5963,12 +5627,8 @@ msgid "Workflow-Relevant Data Schema"
 msgstr "Arbeitsablauf-relevantes Datenschema"
 
 #: src/zope/app/workflow/stateful/interfaces.py:148
-msgid ""
-"Specifies the schema that characterizes the workflow relevant data of a "
-"process instance, found in pd.data."
-msgstr ""
-"Gibt das Schema an, welches die arbeitsablauf-relevanten Daten einer "
-"Prozessinstanz charakterisiert."
+msgid "Specifies the schema that characterizes the workflow relevant data of a process instance, found in pd.data."
+msgstr "Gibt das Schema an, welches die arbeitsablauf-relevanten Daten einer Prozessinstanz charakterisiert."
 
 #: src/zope/app/workflow/stateful/interfaces.py:99
 msgid "Source State"
@@ -6039,26 +5699,12 @@ msgid "Inline Code"
 msgstr "Inline Code"
 
 #: src/zope/app/zptpage/browser/inlinecode.pt:29
-msgid ""
-"This screen allows you to activate Inline Code Evaluation. This means that "
-"you can say ${code-example-1} or ${code-example-2}"
-msgstr ""
-"Dieser Bildschirm erlaubt das Aktivieren der 'Inline Code'-Auswertung. Dies "
-"bedeutet, daß Sie ${code-example-1} oder ${code-example-2} sagen können."
+msgid "This screen allows you to activate Inline Code Evaluation. This means that you can say ${code-example-1} or ${code-example-2}"
+msgstr "Dieser Bildschirm erlaubt das Aktivieren der 'Inline Code'-Auswertung. Dies bedeutet, daß Sie ${code-example-1} oder ${code-example-2} sagen können."
 
 #: src/zope/app/zptpage/browser/inlinecode.pt:35
-msgid ""
-"Many Zope 3 developers consider inline code blocks something very bad, since "
-"it does not follow the design of Page Templates or Zope 3 in general. "
-"However, application and application server developers are not the only "
-"audience for Zope 3. Scripters are used to inline code from other "
-"technologies like PHP and it fits their brain, which is very important."
-msgstr ""
-"Viele Zope 3 Entwickler halten 'Inline Code'-Blöcke für sehr schlecht, da "
-"sie nicht dem Design von Page Templates und Zope 3 entsprechen. Aber Zope 3 "
-"soll nicht nur Anwendungsentwickler ansprechen. Script-Schreiber sind "
-"'Inline Code' von anderen Technologien wie PHP gewöhnt. Es ist wichtig, daß "
-"für sie 'Inline Code' paßt."
+msgid "Many Zope 3 developers consider inline code blocks something very bad, since it does not follow the design of Page Templates or Zope 3 in general. However, application and application server developers are not the only audience for Zope 3. Scripters are used to inline code from other technologies like PHP and it fits their brain, which is very important."
+msgstr "Viele Zope 3 Entwickler halten 'Inline Code'-Blöcke für sehr schlecht, da sie nicht dem Design von Page Templates und Zope 3 entsprechen. Aber Zope 3 soll nicht nur Anwendungsentwickler ansprechen. Script-Schreiber sind 'Inline Code' von anderen Technologien wie PHP gewöhnt. Es ist wichtig, daß für sie 'Inline Code' paßt."
 
 #: src/zope/app/zptpage/configure.zcml:12
 #: src/zope/app/zptpage/browser/configure.zcml:23
@@ -6087,12 +5733,8 @@ msgid "Evaluate Inline Code"
 msgstr "Inline Code ausprobieren"
 
 #: src/zope/app/zptpage/interfaces.py:49
-msgid ""
-"Evaluate code snippets in TAL. We usually discourage people from using this "
-"feature."
-msgstr ""
-"Codeschnipsel in TAL ausprobieren. Wir raten Entwicklern normalerweise von "
-"der Benutzung dieser Funktion ab."
+msgid "Evaluate code snippets in TAL. We usually discourage people from using this feature."
+msgstr "Codeschnipsel in TAL ausprobieren. Wir raten Entwicklern normalerweise von der Benutzung dieser Funktion ab."
 
 #: src/zope/app/zptpage/zptpage.py:109
 msgid "1 line"
@@ -6113,7 +5755,8 @@ msgstr ""
 "\n"
 "Dieses Attribut erlaubt Ihnen die Angabe des Namens für diesen Adapter."
 
-#: src/zope/component/zcml.py:112 src/zope/component/zcml.py:271
+#: src/zope/component/zcml.py:112
+#: src/zope/component/zcml.py:271
 msgid "Trusted"
 msgstr "Vertrauenswürdig"
 
@@ -6138,7 +5781,8 @@ msgstr ""
 "       der Objekte.\n"
 "        "
 
-#: src/zope/component/zcml.py:126 src/zope/component/zcml.py:285
+#: src/zope/component/zcml.py:126
+#: src/zope/component/zcml.py:285
 msgid "Locate"
 msgstr "Platzieren"
 
@@ -6177,11 +5821,8 @@ msgid "Interfaces or classes that this subscriber depends on"
 msgstr "Schnittstellen oder Klassen, auf die ein Abonnent sich verlässt"
 
 #: src/zope/component/zcml.py:265
-msgid ""
-"This subscriber is only available, if the principal has this permission."
-msgstr ""
-"Der Abonnent ist nur verfügbar, wenn der Nutzungsberechtigte diese "
-"Berechtigung hat."
+msgid "This subscriber is only available, if the principal has this permission."
+msgstr "Der Abonnent ist nur verfügbar, wenn der Nutzungsberechtigte diese Berechtigung hat."
 
 #: src/zope/component/zcml.py:272
 msgid ""
@@ -6197,10 +5838,8 @@ msgstr ""
 "Macht den Abonnenten zu einem vertrauenswürdigen Abonnenten\n"
 "\n"
 "    Vertrauenswürdige Abonnenten haben unbegrenzten Zugriff auf Objekte,\n"
-"    die sie adaptieren. Wenn ein geschütztes Objekt aufgesucht wird, dann "
-"wird \n"
-"    nicht ein ungesicherter Abonnent für ein geschütztes Objekt, sondern "
-"ein     geschützter Abonnent für ein ungeschütztes Objekt geliefert.\n"
+"    die sie adaptieren. Wenn ein geschütztes Objekt aufgesucht wird, dann wird \n"
+"    nicht ein ungesicherter Abonnent für ein geschütztes Objekt, sondern ein     geschützter Abonnent für ein ungeschütztes Objekt geliefert.\n"
 "        "
 
 #: src/zope/component/zcml.py:286
@@ -6222,26 +5861,16 @@ msgid "Interface provided by the utility."
 msgstr "Die von dem Utility bereitgestellte Schnittstelle"
 
 #: src/zope/component/zcml.py:378
-msgid ""
-"Name of the registration.  This is used by application code when locating a "
-"utility."
-msgstr ""
-"Name der Registrierung. Er wird vom Anwendungsprogramm gebraucht, um eine "
-"Utility festzustellen."
+msgid "Name of the registration.  This is used by application code when locating a utility."
+msgstr "Name der Registrierung. Er wird vom Anwendungsprogramm gebraucht, um eine Utility festzustellen."
 
 #: src/zope/component/zcml.py:43
 msgid "Component to use"
 msgstr "Zu benutzende Komponente"
 
 #: src/zope/component/zcml.py:44
-msgid ""
-"Python name of the implementation object.  This must identify an object in a "
-"module using the full dotted name.  If specified, the ``factory`` field must "
-"be left blank."
-msgstr ""
-"Python-Bezeichner des implementierenden Objekts. Mit einem vollständigen "
-"gepunkteten Namen wird ein Objekt innerhalb eines Moduls identifiziert. Wird "
-"dieser Name angegeben, muß das 'Fabrik'-Feld leer bleiben."
+msgid "Python name of the implementation object.  This must identify an object in a module using the full dotted name.  If specified, the ``factory`` field must be left blank."
+msgstr "Python-Bezeichner des implementierenden Objekts. Mit einem vollständigen gepunkteten Namen wird ein Objekt innerhalb eines Moduls identifiziert. Wird dieser Name angegeben, muß das 'Fabrik'-Feld leer bleiben."
 
 #: src/zope/component/zcml.py:444
 msgid "Interface type"
@@ -6252,51 +5881,39 @@ msgid "Permission required to use this component."
 msgstr "Die Berechtigung, die zur Verwendung dieser Komponente benötigt wird"
 
 #: src/zope/component/zcml.py:59
-msgid ""
-"Python name of a factory which can create the implementation object.  This "
-"must identify an object in a module using the full dotted name. If "
-"specified, the ``component`` field must be left blank."
-msgstr ""
-"Python-Bezeichner einer Fabrik, die das implementierte Objekt erzeugen kann. "
-"Er muß ein Objekt in einem Modul mit einem vollständigen gepunkteten Namen "
-"identifizieren. Wird dieser Name angegeben, muß das 'Component'-Feld leer "
-"bleiben."
+msgid "Python name of a factory which can create the implementation object.  This must identify an object in a module using the full dotted name. If specified, the ``component`` field must be left blank."
+msgstr "Python-Bezeichner einer Fabrik, die das implementierte Objekt erzeugen kann. Er muß ein Objekt in einem Modul mit einem vollständigen gepunkteten Namen identifizieren. Wird dieser Name angegeben, muß das 'Component'-Feld leer bleiben."
 
 #: src/zope/component/zcml.py:73
 msgid "Adapter factory/factories"
 msgstr "Adapterfabrik(en)"
 
 #: src/zope/component/zcml.py:74
-msgid ""
-"A list of factories (usually just one) that create the adapter instance."
-msgstr ""
-"Eine Liste von Fabriken (üblicherweise nur eine), die die Adapter-Instanz "
-"erzeugt."
+msgid "A list of factories (usually just one) that create the adapter instance."
+msgstr "Eine Liste von Fabriken (üblicherweise nur eine), die die Adapter-Instanz erzeugt."
 
-#: src/zope/component/zcml.py:81 src/zope/component/zcml.py:248
+#: src/zope/component/zcml.py:81
+#: src/zope/component/zcml.py:248
 msgid "Interface the component provides"
 msgstr "Schnittstelle, die die Komponente bereitstellt"
 
-#: src/zope/component/zcml.py:82 src/zope/component/zcml.py:249
-msgid ""
-"This attribute specifies the interface the adapter instance must provide."
-msgstr ""
-"Dieses Attribut spezifiziert die Schnittstelle, die von der Adapter-Instanz "
-"bereitgestellt werden muß"
+#: src/zope/component/zcml.py:82
+#: src/zope/component/zcml.py:249
+msgid "This attribute specifies the interface the adapter instance must provide."
+msgstr "Dieses Attribut spezifiziert die Schnittstelle, die von der Adapter-Instanz bereitgestellt werden muß"
 
 #: src/zope/component/zcml.py:88
 msgid "Specifications to be adapted"
 msgstr "Spezifikationen, die zu adaptieren sind"
 
-#: src/zope/component/zcml.py:89 src/zope/component/zcml.py:256
+#: src/zope/component/zcml.py:89
+#: src/zope/component/zcml.py:256
 msgid "This should be a list of interfaces or classes"
 msgstr "Dies sollte eine Liste von Schnittstellen oder Klassen sein"
 
 #: src/zope/component/zcml.py:98
 msgid "This adapter is only available, if the principal has this permission."
-msgstr ""
-"Der Adapter ist nur verfügbar, wenn der Nutzungsberechtigte die Berechtigung "
-"hierfür besitzt."
+msgstr "Der Adapter ist nur verfügbar, wenn der Nutzungsberechtigte die Berechtigung hierfür besitzt."
 
 #: src/zope/contentprovider/configure.zcml:14
 msgid "Content Providers"
@@ -6413,8 +6030,7 @@ msgstr "Datenbankadapter - Testverbindung"
 
 #: src/zope/rdb/browser/rdbtestsql.pt:14
 msgid "Here you can enter an SQL statement, so you can test the connection."
-msgstr ""
-"Sie können hier eine SQL-Abfrage eingeben, um die Verbindung zu testen."
+msgstr "Sie können hier eine SQL-Abfrage eingeben, um die Verbindung zu testen."
 
 #: src/zope/rdb/browser/rdbtestsql.pt:19
 msgid "Query"
@@ -6427,7 +6043,6 @@ msgstr "Ausführen"
 
 #. Default: "Use Database Connections"
 #: src/zope/rdb/configure.zcml:6
-#, fuzzy
 msgid "zope.rdb.Use"
 msgstr "Datenbankverbindungen benutzen"
 
@@ -6452,8 +6067,7 @@ msgid ""
 "\n"
 "All values should be properly URL-encoded."
 msgstr ""
-"Geben Sie die DSN (Data Source Name; Name der Datenquelle) der Datenbank an. "
-"Beispiele:\n"
+"Geben Sie die DSN (Data Source Name; Name der Datenquelle) der Datenbank an. Beispiele:\n"
 "\n"
 "dbi://dbname\n"
 "dbi://dbname;param1=wert...\n"
@@ -6536,19 +6150,19 @@ msgstr "Nur lesbar"
 msgid "If true, the field's value cannot be changed."
 msgstr "Bei 'wahr' kann der Wert dieses Feldes nicht geändert werden."
 
-#: src/zope/schema/interfaces.py:127 src/zope/schema/interfaces.py:267
+#: src/zope/schema/interfaces.py:127
+#: src/zope/schema/interfaces.py:267
 #: src/zope/schema/interfaces.py:319
 msgid "Default Value"
 msgstr "Vorgegebener Wert"
 
-#: src/zope/schema/interfaces.py:128 src/zope/schema/interfaces.py:268
+#: src/zope/schema/interfaces.py:128
+#: src/zope/schema/interfaces.py:268
 #: src/zope/schema/interfaces.py:320
 msgid ""
 "The field default value may be None or a legal\n"
 "                        field value"
-msgstr ""
-"Der vorgegebene (\"default\") Wert des Feldes kann None oder ein "
-"zugelassener Feldwert sein"
+msgstr "Der vorgegebene (\"default\") Wert des Feldes kann None oder ein zugelassener Feldwert sein"
 
 #: src/zope/schema/interfaces.py:133
 msgid "Missing Value"
@@ -6558,9 +6172,7 @@ msgstr "Fehlender Wert"
 msgid ""
 "If input for this Field is missing, and that's ok,\n"
 "                          then this is the value to use"
-msgstr ""
-"Wenn ein Eingabewert für dieses Feld fehlt, und wenn dies zugelassen ist, "
-"dann wird dieser Wert benutzt."
+msgstr "Wenn ein Eingabewert für dieses Feld fehlt, und wenn dies zugelassen ist, dann wird dieser Wert benutzt."
 
 #: src/zope/schema/interfaces.py:139
 msgid "Field Order"
@@ -6587,11 +6199,13 @@ msgstr ""
 "       Ordnungsnummer haben.)\n"
 "        "
 
-#: src/zope/schema/interfaces.py:221 src/zope/schema/interfaces.py:307
+#: src/zope/schema/interfaces.py:221
+#: src/zope/schema/interfaces.py:307
 msgid "Start of the range"
 msgstr "Anfang der Auswahl"
 
-#: src/zope/schema/interfaces.py:227 src/zope/schema/interfaces.py:313
+#: src/zope/schema/interfaces.py:227
+#: src/zope/schema/interfaces.py:313
 msgid "End of the range (excluding the value itself)"
 msgstr "Ende der Auswahl (ausschließlich dem Wert selbst)"
 
@@ -6609,10 +6223,7 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"        Der Wert nach der Leerzeichenbearbeitung kann nicht weniger als "
-"`min_length` Zeichen (wenn es eine Zeichenkette ist) oder Elemente (für alel "
-"anderen Folgetypen) haben. Wenn `min_length` ``None ``ist, dann gibt es kein "
-"Minimum.\n"
+"        Der Wert nach der Leerzeichenbearbeitung kann nicht weniger als `min_length` Zeichen (wenn es eine Zeichenkette ist) oder Elemente (für alel anderen Folgetypen) haben. Wenn `min_length` ``None ``ist, dann gibt es kein Minimum.\n"
 "        "
 
 #: src/zope/schema/interfaces.py:249
@@ -6628,18 +6239,14 @@ msgid ""
 "        ``None``, there is no maximum."
 msgstr ""
 "\n"
-"        Der Wert nach der Leerzeichenbearbeitung darf nicht mehr als "
-"`max_length` Zeichen (wenn es eine Zeichenkette ist) oder Elemente (für alle "
-"anderen Folgetypen) haben. Wenn `max_length` ``None`` ist, dann gibt es kein "
-"Maximum."
+"        Der Wert nach der Leerzeichenbearbeitung darf nicht mehr als `max_length` Zeichen (wenn es eine Zeichenkette ist) oder Elemente (für alle anderen Folgetypen) haben. Wenn `max_length` ``None`` ist, dann gibt es kein Maximum."
 
 #: src/zope/schema/interfaces.py:383
 msgid "Value Type"
 msgstr "Werttyp"
 
 #: src/zope/schema/interfaces.py:384
-msgid ""
-"Field value items must conform to the given type, expressed via a Field."
+msgid "Field value items must conform to the given type, expressed via a Field."
 msgstr "Feldwerte müssen dem Typ dieses Feldes entsprechen."
 
 #: src/zope/schema/interfaces.py:388
@@ -6726,9 +6333,7 @@ msgstr "Die eindeutige Identifikation des Nutzungsberechtigten."
 
 #: src/zope/security/interfaces.py:265
 msgid "The title of the principal. This is usually used in the UI."
-msgstr ""
-"Der Titel des Nutzungsberechtigten. Dieser wird normalerweise in der "
-"Benutzeroberfläche verwendet."
+msgstr "Der Titel des Nutzungsberechtigten. Dieser wird normalerweise in der Benutzeroberfläche verwendet."
 
 #: src/zope/security/interfaces.py:271
 msgid "A detailed description of the principal."
@@ -6736,8 +6341,7 @@ msgstr "Eine detailierte Beschreibung des Nutzungsberechtigten."
 
 #: src/zope/security/interfaces.py:309
 msgid "Id as which this permission will be known and used."
-msgstr ""
-"Kennung, unter der diese Berechtigung bekannt sein und benutzt werden wird."
+msgstr "Kennung, unter der diese Berechtigung bekannt sein und benutzt werden wird."
 
 #. Default: "Send out mail with arbitrary from and to addresses"
 #: src/zope/sendmail/configure.zcml:7
@@ -6748,7 +6352,8 @@ msgstr "E-Mails versenden"
 msgid "Queue path"
 msgstr "Warteschlangenpfad"
 
-#: src/zope/sendmail/interfaces.py:107 src/zope/sendmail/interfaces.py:116
+#: src/zope/sendmail/interfaces.py:107
+#: src/zope/sendmail/interfaces.py:116
 msgid "Pathname of the directory used to queue mail."
 msgstr "Verzeichnispfad der Email-Warteschlange."
 
@@ -6762,9 +6367,7 @@ msgstr "Abfrageintervall"
 
 #: src/zope/sendmail/interfaces.py:120
 msgid "How often the queue is checked for new messages (in milliseconds)"
-msgstr ""
-"Gibt an, wie oft die Warteschlange für neue Nachrichten abgefragt wird (in "
-"Millisekunden)"
+msgstr "Gibt an, wie oft die Warteschlange für neue Nachrichten abgefragt wird (in Millisekunden)"
 
 #: src/zope/sendmail/interfaces.py:152
 msgid "Hostname"
@@ -6819,12 +6422,8 @@ msgid "${size} KB"
 msgstr "${size} KB"
 
 #: src/zope/traversing/browser/absoluteurl.py:28
-msgid ""
-"There isn't enough context to get URL information. This is probably due to a "
-"bug in setting up location information."
-msgstr ""
-"Es gibt nicht genug Kontext, um die URL-Informationen abzurufen. "
-"Wahrscheinlich ist daran ein Softwarefehler schuld."
+msgid "There isn't enough context to get URL information. This is probably due to a bug in setting up location information."
+msgstr "Es gibt nicht genug Kontext, um die URL-Informationen abzurufen. Wahrscheinlich ist daran ein Softwarefehler schuld."
 
 #: src/zope/viewlet/configure.zcml:13
 msgid "Viewlet-related ZCML Directives"
@@ -6839,48 +6438,32 @@ msgid "The view the content provider is registered for."
 msgstr "Die Ansicht für welche der Inhaltsversorger registriert ist."
 
 #: src/zope/viewlet/metadirectives.py:42
-msgid ""
-"The view can either be an interface or a class. By default the provider is "
-"registered for all views, the most common case."
-msgstr ""
-"Die Ansicht kann entweder eine Schnittstelle oder eine Klasse sein. "
-"Normalerweise ist der Inhaltsversorger für alle Ansichten registriert."
+msgid "The view can either be an interface or a class. By default the provider is registered for all views, the most common case."
+msgstr "Die Ansicht kann entweder eine Schnittstelle oder eine Klasse sein. Normalerweise ist der Inhaltsversorger für alle Ansichten registriert."
 
 #: src/zope/viewlet/metadirectives.py:49
 msgid "The name of the content provider."
 msgstr "Der Name des Inhaltsversorgers"
 
 #: src/zope/viewlet/metadirectives.py:50
-msgid ""
-"The name of the content provider is used in the TALES ``provider`` namespace "
-"to look up the content provider."
-msgstr ""
-"Der Name des Inhaltsversorgers wird dazu genutzt, mit dem TALES ``provider`` "
-"Namensraum den Inhaltsversorger nachzuschauen."
+msgid "The name of the content provider is used in the TALES ``provider`` namespace to look up the content provider."
+msgstr "Der Name des Inhaltsversorgers wird dazu genutzt, mit dem TALES ``provider`` Namensraum den Inhaltsversorger nachzuschauen."
 
 #: src/zope/viewlet/metadirectives.py:61
 msgid "Content-generating template."
 msgstr "Inhaltsgenerierende Schablone"
 
 #: src/zope/viewlet/metadirectives.py:62
-msgid ""
-"Refers to a file containing a page template (should end in extension ``.pt`` "
-"or ``.html``)."
-msgstr ""
-"Zeigt auf eine Datei, die ein Page Template repräsentiert (sollte mit ``."
-"pt`` oder ``.html`` enden)"
+msgid "Refers to a file containing a page template (should end in extension ``.pt`` or ``.html``)."
+msgstr "Zeigt auf eine Datei, die ein Page Template repräsentiert (sollte mit ``.pt`` oder ``.html`` enden)"
 
 #: src/zope/viewlet/metadirectives.py:77
 msgid "The interface this viewlet manager provides."
 msgstr "Die von dem Viewlet-Verwalter bereitgestellte Schnittstelle"
 
 #: src/zope/viewlet/metadirectives.py:78
-msgid ""
-"A viewlet manager can provide an interface, which is used to lookup its "
-"contained viewlets."
-msgstr ""
-"Ein Viewlet-Verwalter kann eine Schnittstelle bereitstellen, welche dazu "
-"benutzt wird die eigenen Viewlets zu finden."
+msgid "A viewlet manager can provide an interface, which is used to lookup its contained viewlets."
+msgstr "Ein Viewlet-Verwalter kann eine Schnittstelle bereitstellen, welche dazu benutzt wird die eigenen Viewlets zu finden."
 
 #: src/zope/viewlet/metadirectives.py:99
 msgid "view"
@@ -6888,236 +6471,166 @@ msgstr "Ansicht"
 
 #~ msgid "Registration Framework"
 #~ msgstr "Registration Framework"
-
 #~ msgid "Local Adapter Registry"
 #~ msgstr "Local Adapter Registry"
-
 #~ msgid "<subscription>"
 #~ msgstr "Abonnement"
-
 #~ msgid "layer:"
 #~ msgstr "Ebene:"
-
 #~ msgid "Authenticator Plugin"
 #~ msgstr "Plugin für Authentifizierung"
-
 #~ msgid "New Pluggable Authentication Utility Registration"
 #~ msgstr ""
 #~ "Registrieren eines Utility für die neue einhängbare Authentifizierung"
-
 #~ msgid "New Credentials Plugin Registration"
 #~ msgstr "Registrierung eines neuen Sich-Ausweisen-Plugin"
-
 #~ msgid "New Authenticator Plugin Registration"
 #~ msgstr "Registration eines neuen Plugin zum Sich-Ausweisen"
-
 #~ msgid "Credentials Plugin"
 #~ msgstr "Plugin zum Sich-Ausweisen"
-
 #~ msgid "Groups Folder"
 #~ msgstr "Gruppenordner"
-
 #~ msgid "Caches can be used to make your site run faster."
 #~ msgstr ""
 #~ "Caches können Sie dazu benutzen, Ihren Web-Auftritt schneller laufen zu "
 #~ "lassen."
-
 #~ msgid "Caches"
 #~ msgstr "Caches"
-
 #~ msgid "Objects that support indexed searching"
 #~ msgstr "Mittel, die indiziertes Suchen unterstützen"
-
 #~ msgid "Visit default folder"
 #~ msgstr "Direkt zum 'default' Paket (= 'voreingestellt')"
-
 #~ msgid "Software"
 #~ msgstr "Software"
-
 #~ msgid "Site Management"
 #~ msgstr "Web-Auftritt-Verwaltung"
-
 #~ msgid "New Utility Registration"
 #~ msgstr "Neue Registrierung eines Utility"
-
 #~ msgid "Edit Utility Registration"
 #~ msgstr "Utility-Registrierung bearbeiten"
-
 #~ msgid "Change adapter"
 #~ msgstr "Adapter ändern"
-
 #~ msgid "Summary"
 #~ msgstr "Zusammenfassung"
-
 #~ msgid "Config item ${name}"
 #~ msgstr "Konfigurationseintrag ${name}"
-
 #~ msgid "(disabled)"
 #~ msgstr "(Deaktiviert)"
-
 #~ msgid "Add a registration for this object"
 #~ msgstr "Registrierung für dieses Objekt hinzufügen"
-
 #~ msgid "(modify)"
 #~ msgstr "(ändern)"
-
 #~ msgid "This object is currently active."
 #~ msgstr "Dieses Objekt ist momentan aktiv."
-
 #~ msgid "deactivate-button"
 #~ msgstr "Deaktivieren"
-
 #~ msgid "This object is currently inactive."
 #~ msgstr "Dieses Objekt ist momentan nicht aktiv."
-
 #~ msgid "activate-button"
 #~ msgstr "Aktivieren"
-
 #~ msgid "Advanced Options"
 #~ msgstr "Fortgeschrittene Optionen"
-
 #~ msgid "This object is not currently active."
 #~ msgstr "Dieses Objekt ist momentan nicht aktiv."
-
 #~ msgid ""
 #~ "This object won't actually be used unless it is registered to perform a "
 #~ "specific function and is activated."
 #~ msgstr ""
 #~ "Dieses Objekt wird eigentlich nicht benutzt werden, es sei denn es ist "
 #~ "registriert, um eine spezielle Funktion zu erfüllen, und es ist aktiv."
-
 #~ msgid "<i>No instances of this utility are available yet.</i>"
 #~ msgstr "<i>Von diesem Utility sind keine Instanzen vorhanden.</i>"
-
 #~ msgid "ADD-TOOL-SUBMIT"
 #~ msgstr "Hinzufügen"
-
 #~ msgid "CANCEL-ADD-TOOL-SUBMIT"
 #~ msgstr "Abbrechen"
-
 #~ msgid "ACTIVATE-SUBMIT"
 #~ msgstr "Aktivieren"
-
 #~ msgid "DEACTIVATE-SUBMIT"
 #~ msgstr "Deaktivieren"
-
 #~ msgid "ADD-SUBMIT"
 #~ msgstr "Hinzufügen"
-
 #~ msgid "DELETE-SUBMIT"
 #~ msgstr "Löschen"
-
 #~ msgid "RENAME-SUBMIT"
 #~ msgstr "Umbenennen"
-
 #~ msgid "RENAME-CANCEL-SUBMIT"
 #~ msgstr "Umbenennen abbrechen"
-
 #~ msgid "Unique Utilities"
 #~ msgstr "Eindeutige Utilities"
-
 #~ msgid ""
 #~ "Unique utilities can only exist once per site manager and have no name."
 #~ msgstr ""
 #~ "Eindeutige Utilities können pro Web-Auftritt-Verwaltung nur einmal "
 #~ "vorhanden sein und haben keinen Namen."
-
 #~ msgid "INSTALL-SUBMIT"
 #~ msgstr "Installieren"
-
 #~ msgid "UNINSTALL-SUBMIT"
 #~ msgstr "Deinstallieren"
-
 #~ msgid "<b>Site Management</b>"
 #~ msgstr "<b>Web-Auftritt-Verwaltung</b>"
-
 #~ msgid "${name} (Active)"
 #~ msgstr "${name} (Aktiv)"
-
 #~ msgid "${name} (Inactive)"
 #~ msgstr "${name} (Inaktiv)"
-
 #~ msgid "Tools successfully activated."
 #~ msgstr "Werkzeug erfolgreich aktiviert."
-
 #~ msgid "Tools successfully deactivated."
 #~ msgstr "Werkzeug erfolgreich deaktiviert."
-
 #~ msgid "Tools successfully deleted."
 #~ msgstr "Werkzeug erfolgreich gelöscht."
-
 #~ msgid "No tools selected."
 #~ msgstr "Kein Werkzeug ausgewählt."
-
 #~ msgid "Tools successfully renamed."
 #~ msgstr "Werkzeug erfolgreich umbenannt."
-
 #~ msgid "The given tool name is already being used."
 #~ msgstr "Der angegebene Werkzeugname existiert bereits."
-
 #~ msgid "Tools successfully installed."
 #~ msgstr "Werkzeug erfolgreich installiert."
-
 #~ msgid "Tools successfully uninstalled."
 #~ msgstr "Werkzeug erfolgreich deinstalliert."
-
 #~ msgid "component:"
 #~ msgstr "Komponente:"
-
 #~ msgid "provided:"
 #~ msgstr "liefert:"
-
 #~ msgid "The layer the resource is in."
 #~ msgstr "Die Ebene, für welche die Ansicht registriert ist"
-
 #~ msgid "Can't delete active registration (${path})"
 #~ msgstr "Kann eine aktive Registrierung (${path}) nicht löschen"
-
 #~ msgid "Can't move a registered component from its container."
 #~ msgstr ""
 #~ "Kann eine registrierte Komponente nicht aus ihrem Container verschieben."
-
 #~ msgid "Error Reporting"
 #~ msgstr "Fehlerbericht ansehen"
-
 #~ msgid "Component to record all uncaught errors and exceptions."
 #~ msgstr ""
 #~ "Komponente zum Aufzeichnen aller nicht abgefangenen Fehler und "
 #~ "Ausnahmebedingungen."
-
 #~ msgid "remove-selected-items"
 #~ msgstr "Ausgewählte Einträge entfernen"
-
 #~ msgid "A Principal Home Folder Manager"
 #~ msgstr "Eine Verwaltung für den Startordner eines Nutzungsberechtigten"
-
 #~ msgid ""
 #~ "Translation Domains allow you to localize your software by       "
 #~ "providing message translations."
 #~ msgstr ""
 #~ "Übersetzungsdomänen erlauben Ihnen, Ihre Software durch Übersetzungen "
 #~ "einzelner Nachrichten lokal anzupassen."
-
 #~ msgid "Unique Id Tool"
 #~ msgstr "Werkzeug für eindeutige Kennungen"
-
 #~ msgid ""
 #~ "Unique Ids Tools are used to provide system-wide unique ids       for "
 #~ "documents."
 #~ msgstr ""
 #~ "Das Utility 'Eindeutige Kennungen' stellt systemweit eindeutige Kennungen "
 #~ "für Dokumente bereit."
-
 #~ msgid "Menu of caches to be added"
 #~ msgstr "Menü der hinzufügbaren Caches"
-
 #~ msgid "Menu of objects to be added to content folders"
 #~ msgstr ""
 #~ "Menü von Objekten, die als Inhalt zu dem Ordner hinzugefügt werden können"
-
 #~ msgid "Menu of database connections to be added"
 #~ msgstr "Menü der Datenbank-Verbindungen, die hinzugefügt werden können"
-
 #~ msgid ""
 #~ "           This component lets you define the local default "
 #~ "user           preferences. The values of this provider are used, if "
@@ -7126,177 +6639,127 @@ msgstr "Ansicht"
 #~ "           Sie können mit dieser Komponente die lokalen Voreinstellungen "
 #~ "für Benutzervorlieben festlegen. Die Angaben dieses Lieferanten werden "
 #~ "verwendet, solange der Nutzer keine Auswahl getroffen hat."
-
 #~ msgid "Change page"
 #~ msgstr "Seite ändern"
-
 #~ msgid "Default Registration"
 #~ msgstr "Standard-Registrierung"
-
 #~ msgid "Default registration parameters"
 #~ msgstr "Standard-Parameter für die Registrierung"
-
 #~ msgid "Register a view page"
 #~ msgstr "Eine neue Ansichtsseite registrieren"
-
 #~ msgid "Page Folder"
 #~ msgstr "Seitenordner"
-
 #~ msgid "Register a view ZPT"
 #~ msgstr "Eine ZPT-Schablone registrieren"
-
 #~ msgid "View Folder"
 #~ msgstr "Ansichtenordner"
-
 #~ msgid "Persistent View Page Template"
 #~ msgstr "Persistente Ansichtsseiten-Schablone"
-
 #~ msgid "ZPT Template"
 #~ msgstr "ZPT-Schablone"
-
 #~ msgid "The dotted name of a factory for creating the view"
 #~ msgstr ""
 #~ "Der gepunktete Name der zur Erzeugung notwendigen Fabrik einer Ansicht"
-
 #~ msgid "The permission required to use the view"
 #~ msgstr "Die Berechtigung, die zur Verwendung der Ansicht benötigt wird"
-
 #~ msgid "Apply changes to existing pages"
 #~ msgstr "Änderungen auf die existierenden Seiten anwenden"
-
 #~ msgid "The type of requests the view works with"
 #~ msgstr "Der Typ der Anfrage, mit welcher die Ansicht arbeitet"
-
 #~ msgid "Class attribute"
 #~ msgstr "Klassenattribut"
-
 #~ msgid "The interface of the objects being viewed"
 #~ msgstr "Die Schnittstelle der angezeigten Objekte"
-
 #~ msgid "for:"
 #~ msgstr "for:"
-
 #~ msgid "name:"
 #~ msgstr "Name:"
-
 #~ msgid "Stores annotations for any principal."
 #~ msgstr "Speichert Anmerkungen für Nutzungsberechtigte"
-
 #~ msgid "Principal Annotations"
 #~ msgstr "Anmerkungen zum Nutzungsberechtigten"
-
 #~ msgid "Database Adapter"
 #~ msgstr "Datenbankadapter"
-
 #~ msgid ""
 #~ "Database Adapters are used to connect to external       relational "
 #~ "databases."
 #~ msgstr ""
 #~ "Datenbankadapter werden benutzt, um Verbindungen zu externen relationalen "
 #~ "Datenbanken herzustellen."
-
 #~ msgid "These are schemas that live in the ZODB and are modifiable."
 #~ msgstr ""
 #~ "Es handelt sich um Schemas, die in der ZODB leben und die verändert "
 #~ "werden können."
-
 #~ msgid "Persistent, Local Schemas"
 #~ msgstr "Persistente lokale Schemas"
-
 #~ msgid ""
 #~ "Content Component Definitions are used to declare       schema-based "
 #~ "content objects."
 #~ msgstr ""
 #~ "Inhaltskomponentendefinitionen werden dazu verwendet, um schema-basierte "
 #~ "Inhaltsobjekte zu deklarieren."
-
 #~ msgid "Authenticates Principals."
 #~ msgstr "Legitimiert Nutzungsberechtigte."
-
 #~ msgid "Authentication"
 #~ msgstr "Legitimierung"
-
 #~ msgid "Security Permission"
 #~ msgstr "Zur Steuerung der Sicherheit verwendbare Berechtigung"
-
 #~ msgid ""
 #~ "Roles are used to combine permissions and can be assigned       to "
 #~ "principals."
 #~ msgstr ""
 #~ "Rollen werden dazu benutzt, Berechtigungen zu kombinieren. Sie können "
 #~ "Nutzungsberechtigten zugewiesen werden."
-
 #~ msgid ""
 #~ "Workflow Process Definitions define a particular workflow       for an "
 #~ "object."
 #~ msgstr ""
 #~ "Prozessdefinitionen werden dazu benutzt, das Verhalten von "
 #~ "Arbeitsabläufen zu definieren."
-
 #~ msgid "List of ids of groups the principal belongs to"
 #~ msgstr ""
 #~ "Liste der Kennungen derjenigen Gruppen, zu denen der Nutzungsberechtigte "
 #~ "gehört."
-
 #~ msgid "${name} Views"
 #~ msgstr "${name} Ansichten"
-
 #~ msgid "Shutdown time"
 #~ msgstr "Abschalt-Zeit:"
-
 #~ msgid "You restarted the server."
 #~ msgstr "Sie haben den Server neugestartet."
-
 #~ msgid "You shut down the server."
 #~ msgstr "Sie haben den Server heruntergefahren."
-
 #~ msgid "minutes%02d"
 #~ msgstr "Minuten%02d"
-
 #~ msgid "language"
 #~ msgstr "Sprache"
-
 #~ msgid "Disabled"
 #~ msgstr "Deaktiviert"
-
 #~ msgid "Updated"
 #~ msgstr "Aktualisiert"
-
 #~ msgid "previous-button"
 #~ msgstr "Zurück"
-
 #~ msgid "next-button"
 #~ msgstr "Nächste"
-
 #~ msgid "No changes to save"
 #~ msgstr "Keine Änderungen zu speichern"
-
 #~ msgid "Changes saved"
 #~ msgstr "Änderungen gespeichert"
-
 #~ msgid "Process Definition: ${pd_name}"
 #~ msgstr "Prozessdefinition: ${pd_name}"
-
 #~ msgid "Process Definition"
 #~ msgstr "Prozessdefinition"
-
 #~ msgid "Import / Export Process Definitions:"
 #~ msgstr "Import / Export Prozessdefinitionen:"
-
 #~ msgid "Import:"
 #~ msgstr "Importieren:"
-
 #~ msgid "Export: <a href=\"@@export.html\">save as file</a>"
 #~ msgstr "Exportieren: <a href=\"@@export.html\">Speichere als Datei</a>"
-
 #~ msgid "Import was successful!"
 #~ msgstr "Import war erfolgreich!"
-
 #~ msgid "Status: ${status}"
 #~ msgstr "Status: ${status}"
-
 #~ msgid "Outgoing Transitions:"
 #~ msgstr "Verlassende Übergänge:"
-
 #~ msgid "Key"
 #~ msgstr "Schlüssel"
+
