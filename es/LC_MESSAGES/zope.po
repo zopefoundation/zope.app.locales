@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zope X3 Pre-M4\n"
-"POT-Creation-Date: Fri Apr 28 15:36:38 2006\n"
+"POT-Creation-Date: Tue May 02 21:39:45 2006\n"
 "PO-Revision-Date: 2003-08-06 11:22-0500\n"
 "Last-Translator: Philipp von Weitershausen\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
@@ -2172,7 +2172,7 @@ msgid "Additionally required interfaces"
 msgstr ""
 
 #: src/zope/app/component/back35.py:295 src/zope/app/component/back35.py:340
-#: src/zope/app/component/browser/registration.py:196
+#: src/zope/app/component/browser/registration.py:199
 #: src/zope/component/zcml.py:371
 msgid "Provided interface"
 msgstr ""
@@ -2199,17 +2199,17 @@ msgid "Factory Name"
 msgstr "Fábricas"
 
 #: src/zope/app/component/back35.py:332
-#: src/zope/app/component/browser/registration.py:203
+#: src/zope/app/component/browser/registration.py:206
 msgid "Register As"
 msgstr "Registrar como"
 
 #: src/zope/app/component/back35.py:333
-#: src/zope/app/component/browser/registration.py:204
+#: src/zope/app/component/browser/registration.py:207
 msgid "The name under which the utility will be known."
 msgstr ""
 
 #: src/zope/app/component/back35.py:341
-#: src/zope/app/component/browser/registration.py:197
+#: src/zope/app/component/browser/registration.py:200
 msgid "The interface provided by the utility"
 msgstr ""
 
@@ -2284,24 +2284,51 @@ msgid "This object is registered:"
 msgstr "El nombre que es registrado"
 
 #. Default: "Unregister"
-#: src/zope/app/component/browser/registration.pt:38
-#: src/zope/app/component/browser/siteregistration.pt:34
+#: src/zope/app/component/browser/registration.pt:45
+#: src/zope/app/component/browser/siteregistration.pt:52
 #, fuzzy
 msgid "unregister-button"
 msgstr "Registrar"
 
-#: src/zope/app/component/browser/registration.py:211
+#: src/zope/app/component/browser/registration.pt:50
+msgid ""
+"Click <a href=\"@@addRegistration.html\">here</a> to register the object "
+"again."
+msgstr ""
+
+#. Default: ""
+#: src/zope/app/component/browser/registration.py:117
+#, fuzzy
+msgid "comment: ${comment}"
+msgstr "Documentos: ${doc_count}"
+
+#. Default: ""
+#: src/zope/app/component/browser/registration.py:124
+msgid "${provided} utility named '${name}'"
+msgstr ""
+
+#. Default: ""
+#: src/zope/app/component/browser/registration.py:127
+#, fuzzy
+msgid "${provided} utility"
+msgstr "Añadir herramienta"
+
+#: src/zope/app/component/browser/registration.py:171
+msgid "(unknown name)"
+msgstr ""
+
+#: src/zope/app/component/browser/registration.py:214
 #, fuzzy
 msgid "Comment"
 msgstr "Componente:"
 
 #. Default: ""
-#: src/zope/app/component/browser/registration.py:241
+#: src/zope/app/component/browser/registration.py:244
 #, fuzzy
 msgid "Register a $classname"
 msgstr "Registrar un adaptador"
 
-#: src/zope/app/component/browser/registration.py:245
+#: src/zope/app/component/browser/registration.py:248
 #, fuzzy
 msgid "Register"
 msgstr "Registrar como"
@@ -2310,6 +2337,10 @@ msgstr "Registrar como"
 #, fuzzy
 msgid "Registrations for this site:"
 msgstr "Registraciones para este objeto:"
+
+#: src/zope/app/component/browser/siteregistration.pt:32
+msgid "${name} (moved or deleted)"
+msgstr ""
 
 #: src/zope/app/component/browser/siteregistration.pt:9
 #, fuzzy
@@ -3335,12 +3366,12 @@ msgid "Add an Image"
 msgstr "Añadir un imagen"
 
 #. Default: ""
-#: src/zope/app/file/browser/file.py:222 src/zope/app/file/browser/file.py:364
+#: src/zope/app/file/browser/file.py:300 src/zope/app/file/browser/file.py:442
 #: src/zope/app/form/browser/editview.py:114 src/zope/formlib/form.py:793
 msgid "Updated on ${date_time}"
 msgstr "Los datos han sido cambiado ${date_time}"
 
-#: src/zope/app/file/browser/file.py:233 src/zope/app/file/interfaces.py:44
+#: src/zope/app/file/browser/file.py:311 src/zope/app/file/interfaces.py:44
 #: src/zope/app/file/browser/file_add.pt:31
 #: src/zope/app/file/browser/file_upload.pt:33
 #: src/zope/app/i18nfile/browser/file_edit.pt:79
@@ -3348,34 +3379,34 @@ msgstr "Los datos han sido cambiado ${date_time}"
 msgid "Data"
 msgstr "Datos"
 
-#: src/zope/app/file/browser/file.py:234 src/zope/app/file/interfaces.py:45
+#: src/zope/app/file/browser/file.py:312 src/zope/app/file/interfaces.py:45
 #: src/zope/app/file/browser/file_add.pt:31
 #: src/zope/app/file/browser/file_upload.pt:33
 msgid "The actual content of the object."
 msgstr "El contenido real de este objeto."
 
 #. Default: ""
-#: src/zope/app/file/browser/file.py:343
+#: src/zope/app/file/browser/file.py:421
 msgid ""
 "The character set specified in the content type ($charset) is not supported."
 msgstr ""
 
 #. Default: ""
-#: src/zope/app/file/browser/file.py:348
+#: src/zope/app/file/browser/file.py:426
 msgid ""
 "The character set specified in the content type ($charset) does not match "
 "file content."
 msgstr ""
 
 #. Default: ""
-#: src/zope/app/file/browser/file.py:371
+#: src/zope/app/file/browser/file.py:449
 msgid ""
 "The character set you specified ($charset) cannot encode all characters in "
 "text."
 msgstr ""
 
 #. Default: ""
-#: src/zope/app/file/browser/file.py:376
+#: src/zope/app/file/browser/file.py:454
 msgid "The character set you specified ($charset) is not supported."
 msgstr ""
 
@@ -3490,26 +3521,26 @@ msgstr ""
 msgid "on"
 msgstr ""
 
-#: src/zope/app/form/browser/configure.zcml:494
+#: src/zope/app/form/browser/configure.zcml:512
 msgid "Widgets and Forms"
 msgstr ""
 
-#: src/zope/app/form/browser/configure.zcml:498
+#: src/zope/app/form/browser/configure.zcml:516
 #, fuzzy
 msgid "Basic Widgets"
 msgstr "Campo Básico"
 
-#: src/zope/app/form/browser/configure.zcml:504
+#: src/zope/app/form/browser/configure.zcml:522
 #, fuzzy
 msgid "Source Widgets"
 msgstr "Texto Fuente"
 
-#: src/zope/app/form/browser/configure.zcml:510
+#: src/zope/app/form/browser/configure.zcml:528
 #, fuzzy
 msgid "Advanced Widgets"
 msgstr "Opciones Avanzadas"
 
-#: src/zope/app/form/browser/configure.zcml:516
+#: src/zope/app/form/browser/configure.zcml:534
 msgid "The browser:form Directive"
 msgstr ""
 
@@ -3603,37 +3634,37 @@ msgid "Add %s"
 msgstr "Añadir %s"
 
 #. Default: "Selected"
-#: src/zope/app/form/browser/source.py:197
-#: src/zope/app/form/browser/source.py:220
+#: src/zope/app/form/browser/source.py:206
+#: src/zope/app/form/browser/source.py:229
 msgid "SourceDisplayWidget-label"
 msgstr ""
 
 #. Default: "Apply"
-#: src/zope/app/form/browser/source.py:259
+#: src/zope/app/form/browser/source.py:268
 #, fuzzy
 msgid "SourceInputWidget-apply"
 msgstr "Texto Fuente"
 
 #. Default: "Remove"
-#: src/zope/app/form/browser/source.py:430
+#: src/zope/app/form/browser/source.py:439
 msgid "MultipleSourceInputWidget-remove"
 msgstr ""
 
 #. Default: "Apply"
-#: src/zope/app/form/browser/source.py:459
+#: src/zope/app/form/browser/source.py:468
 msgid "SourceListInputWidget-apply"
 msgstr ""
 
 #. Default: "Nothing"
-#: src/zope/app/form/browser/source.py:56
-#: src/zope/app/form/browser/source.py:203
-#: src/zope/app/form/browser/source.py:213
+#: src/zope/app/form/browser/source.py:65
+#: src/zope/app/form/browser/source.py:212
+#: src/zope/app/form/browser/source.py:222
 msgid "SourceDisplayWidget-missing"
 msgstr ""
 
 #. Default: "Invalid value"
-#: src/zope/app/form/browser/source.py:67
-#: src/zope/app/form/browser/source.py:98
+#: src/zope/app/form/browser/source.py:76
+#: src/zope/app/form/browser/source.py:107
 msgid "SourceDisplayWidget-invalid"
 msgstr ""
 
@@ -3731,11 +3762,11 @@ msgstr "Generaciones de Base de Datos"
 msgid "Generations"
 msgstr "Presentaciones"
 
-#: src/zope/app/homefolder/browser.py:41
+#: src/zope/app/homefolder/browser.py:43
 msgid "path is not correct !"
 msgstr ""
 
-#: src/zope/app/homefolder/browser.py:56
+#: src/zope/app/homefolder/browser.py:58
 msgid "dotted name is not correct !"
 msgstr ""
 
@@ -3762,6 +3793,28 @@ msgstr "Argumentos"
 #, fuzzy
 msgid "Principal Home Folder"
 msgstr "Carpeta mínima"
+
+#: src/zope/app/homefolder/homefolder.pt:12
+#, fuzzy
+msgid "Assign a Principal"
+msgstr "Principal"
+
+#. Default: "Assign"
+#: src/zope/app/homefolder/homefolder.pt:24
+#, fuzzy
+msgid "assign-button"
+msgstr "Buscar"
+
+#: src/zope/app/homefolder/homefolder.pt:29
+#, fuzzy
+msgid "Unassign Principals"
+msgstr "Principal"
+
+#. Default: "Unassign"
+#: src/zope/app/homefolder/homefolder.pt:37
+#, fuzzy
+msgid "unassign-button"
+msgstr "Deshacer"
 
 #: src/zope/app/homefolder/interfaces.py:28
 #, fuzzy
@@ -6988,22 +7041,6 @@ msgstr "Vista"
 #~ msgstr "Cometer acción"
 
 #, fuzzy
-#~ msgid "Assign a Principal"
-#~ msgstr "Principal"
-
-#, fuzzy
-#~ msgid "assign-button"
-#~ msgstr "Buscar"
-
-#, fuzzy
-#~ msgid "Unassign Principals"
-#~ msgstr "Principal"
-
-#, fuzzy
-#~ msgid "unassign-button"
-#~ msgstr "Deshacer"
-
-#, fuzzy
 #~ msgid "XXX objects"
 #~ msgstr "Campo de Objeto"
 
@@ -7248,9 +7285,6 @@ msgstr "Vista"
 #~ msgid "Utility Service"
 #~ msgstr "Servicio de herramientas"
 
-#~ msgid "Add utility"
-#~ msgstr "Añadir herramienta"
-
 #~ msgid "change registration"
 #~ msgstr "cambiar registración"
 
@@ -7394,9 +7428,6 @@ msgstr "Vista"
 
 #~ msgid "FieldIndex Control Page"
 #~ msgstr "Página Control del Índice de Campo"
-
-#~ msgid "Documents: ${doc_count}"
-#~ msgstr "Documentos: ${doc_count}"
 
 #~ msgid "TextIndex Control Page"
 #~ msgstr "Pagína control de Índice de Texto"

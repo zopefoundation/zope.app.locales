@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: zope\n"
-"POT-Creation-Date: Fri Apr 28 15:36:38 2006\n"
+"POT-Creation-Date: Tue May 02 21:39:45 2006\n"
 "PO-Revision-Date: 2005-12-11 15:52+0800\n"
 "Last-Translator: Joe Y.S. Jaw <joeysj@ms3.hinet.net>\n"
 "Language-Team: Chinese (Taiwan) <zh_TW@li.org>\n"
@@ -2113,7 +2113,7 @@ msgid "Additionally required interfaces"
 msgstr "額外需求的介面"
 
 #: src/zope/app/component/back35.py:295 src/zope/app/component/back35.py:340
-#: src/zope/app/component/browser/registration.py:196
+#: src/zope/app/component/browser/registration.py:199
 #: src/zope/component/zcml.py:371
 msgid "Provided interface"
 msgstr "提供介面"
@@ -2139,17 +2139,17 @@ msgid "Factory Name"
 msgstr "工廠名稱"
 
 #: src/zope/app/component/back35.py:332
-#: src/zope/app/component/browser/registration.py:203
+#: src/zope/app/component/browser/registration.py:206
 msgid "Register As"
 msgstr "登錄為"
 
 #: src/zope/app/component/back35.py:333
-#: src/zope/app/component/browser/registration.py:204
+#: src/zope/app/component/browser/registration.py:207
 msgid "The name under which the utility will be known."
 msgstr "公用工具名稱"
 
 #: src/zope/app/component/back35.py:341
-#: src/zope/app/component/browser/registration.py:197
+#: src/zope/app/component/browser/registration.py:200
 msgid "The interface provided by the utility"
 msgstr "公用工具提供的介面"
 
@@ -2220,24 +2220,52 @@ msgid "This object is registered:"
 msgstr "此物件登錄為："
 
 #. Default: "Unregister"
-#: src/zope/app/component/browser/registration.pt:38
-#: src/zope/app/component/browser/siteregistration.pt:34
+#: src/zope/app/component/browser/registration.pt:45
+#: src/zope/app/component/browser/siteregistration.pt:52
 #, fuzzy
 msgid "unregister-button"
 msgstr "登錄"
 
-#: src/zope/app/component/browser/registration.py:211
+#: src/zope/app/component/browser/registration.pt:50
+msgid ""
+"Click <a href=\"@@addRegistration.html\">here</a> to register the object "
+"again."
+msgstr ""
+
+#. Default: ""
+#: src/zope/app/component/browser/registration.py:117
+#, fuzzy
+msgid "comment: ${comment}"
+msgstr "上層：${parent}"
+
+#. Default: ""
+#: src/zope/app/component/browser/registration.py:124
+msgid "${provided} utility named '${name}'"
+msgstr ""
+
+#. Default: ""
+#: src/zope/app/component/browser/registration.py:127
+#, fuzzy
+msgid "${provided} utility"
+msgstr "公用工具提供的介面。"
+
+#: src/zope/app/component/browser/registration.py:171
+#, fuzzy
+msgid "(unknown name)"
+msgstr "<沒有名稱>"
+
+#: src/zope/app/component/browser/registration.py:214
 #, fuzzy
 msgid "Comment"
 msgstr "元件："
 
 #. Default: ""
-#: src/zope/app/component/browser/registration.py:241
+#: src/zope/app/component/browser/registration.py:244
 #, fuzzy
 msgid "Register a $classname"
 msgstr "登錄管理器"
 
-#: src/zope/app/component/browser/registration.py:245
+#: src/zope/app/component/browser/registration.py:248
 #, fuzzy
 msgid "Register"
 msgstr "登錄為"
@@ -2246,6 +2274,10 @@ msgstr "登錄為"
 #, fuzzy
 msgid "Registrations for this site:"
 msgstr "此物件的登錄內容："
+
+#: src/zope/app/component/browser/siteregistration.pt:32
+msgid "${name} (moved or deleted)"
+msgstr ""
 
 #: src/zope/app/component/browser/siteregistration.pt:9
 #, fuzzy
@@ -3289,12 +3321,12 @@ msgid "Add an Image"
 msgstr "新增圖片"
 
 #. Default: ""
-#: src/zope/app/file/browser/file.py:222 src/zope/app/file/browser/file.py:364
+#: src/zope/app/file/browser/file.py:300 src/zope/app/file/browser/file.py:442
 #: src/zope/app/form/browser/editview.py:114 src/zope/formlib/form.py:793
 msgid "Updated on ${date_time}"
 msgstr "於 ${date_time} 更新"
 
-#: src/zope/app/file/browser/file.py:233 src/zope/app/file/interfaces.py:44
+#: src/zope/app/file/browser/file.py:311 src/zope/app/file/interfaces.py:44
 #: src/zope/app/file/browser/file_add.pt:31
 #: src/zope/app/file/browser/file_upload.pt:33
 #: src/zope/app/i18nfile/browser/file_edit.pt:79
@@ -3302,34 +3334,34 @@ msgstr "於 ${date_time} 更新"
 msgid "Data"
 msgstr "資料"
 
-#: src/zope/app/file/browser/file.py:234 src/zope/app/file/interfaces.py:45
+#: src/zope/app/file/browser/file.py:312 src/zope/app/file/interfaces.py:45
 #: src/zope/app/file/browser/file_add.pt:31
 #: src/zope/app/file/browser/file_upload.pt:33
 msgid "The actual content of the object."
 msgstr "物件的真正內容。"
 
 #. Default: ""
-#: src/zope/app/file/browser/file.py:343
+#: src/zope/app/file/browser/file.py:421
 msgid ""
 "The character set specified in the content type ($charset) is not supported."
 msgstr "內容型態所指定的字元集 ($charset) 不被支援。"
 
 #. Default: ""
-#: src/zope/app/file/browser/file.py:348
+#: src/zope/app/file/browser/file.py:426
 msgid ""
 "The character set specified in the content type ($charset) does not match "
 "file content."
 msgstr "內容型態所指定的字元集 ($charset) 與檔案內容不符。"
 
 #. Default: ""
-#: src/zope/app/file/browser/file.py:371
+#: src/zope/app/file/browser/file.py:449
 msgid ""
 "The character set you specified ($charset) cannot encode all characters in "
 "text."
 msgstr "你指定的字元集 ($charset) 無法將文字中的全部字元編碼。"
 
 #. Default: ""
-#: src/zope/app/file/browser/file.py:376
+#: src/zope/app/file/browser/file.py:454
 msgid "The character set you specified ($charset) is not supported."
 msgstr "你指定的字元集 ($charset) 不被支援。"
 
@@ -3442,26 +3474,26 @@ msgstr "關"
 msgid "on"
 msgstr "開"
 
-#: src/zope/app/form/browser/configure.zcml:494
+#: src/zope/app/form/browser/configure.zcml:512
 msgid "Widgets and Forms"
 msgstr ""
 
-#: src/zope/app/form/browser/configure.zcml:498
+#: src/zope/app/form/browser/configure.zcml:516
 #, fuzzy
 msgid "Basic Widgets"
 msgstr "部件"
 
-#: src/zope/app/form/browser/configure.zcml:504
+#: src/zope/app/form/browser/configure.zcml:522
 #, fuzzy
 msgid "Source Widgets"
 msgstr "內文文字"
 
-#: src/zope/app/form/browser/configure.zcml:510
+#: src/zope/app/form/browser/configure.zcml:528
 #, fuzzy
 msgid "Advanced Widgets"
 msgstr "進階選項"
 
-#: src/zope/app/form/browser/configure.zcml:516
+#: src/zope/app/form/browser/configure.zcml:534
 msgid "The browser:form Directive"
 msgstr ""
 
@@ -3555,36 +3587,36 @@ msgid "Add %s"
 msgstr "新增 %s"
 
 #. Default: "Selected"
-#: src/zope/app/form/browser/source.py:197
-#: src/zope/app/form/browser/source.py:220
+#: src/zope/app/form/browser/source.py:206
+#: src/zope/app/form/browser/source.py:229
 msgid "SourceDisplayWidget-label"
 msgstr "已選"
 
 #. Default: "Apply"
-#: src/zope/app/form/browser/source.py:259
+#: src/zope/app/form/browser/source.py:268
 msgid "SourceInputWidget-apply"
 msgstr "套用"
 
 #. Default: "Remove"
-#: src/zope/app/form/browser/source.py:430
+#: src/zope/app/form/browser/source.py:439
 msgid "MultipleSourceInputWidget-remove"
 msgstr "移除"
 
 #. Default: "Apply"
-#: src/zope/app/form/browser/source.py:459
+#: src/zope/app/form/browser/source.py:468
 msgid "SourceListInputWidget-apply"
 msgstr "套用"
 
 #. Default: "Nothing"
-#: src/zope/app/form/browser/source.py:56
-#: src/zope/app/form/browser/source.py:203
-#: src/zope/app/form/browser/source.py:213
+#: src/zope/app/form/browser/source.py:65
+#: src/zope/app/form/browser/source.py:212
+#: src/zope/app/form/browser/source.py:222
 msgid "SourceDisplayWidget-missing"
 msgstr "遺漏"
 
 #. Default: "Invalid value"
-#: src/zope/app/form/browser/source.py:67
-#: src/zope/app/form/browser/source.py:98
+#: src/zope/app/form/browser/source.py:76
+#: src/zope/app/form/browser/source.py:107
 msgid "SourceDisplayWidget-invalid"
 msgstr "無效的值"
 
@@ -3682,11 +3714,11 @@ msgstr "資料庫世代"
 msgid "Generations"
 msgstr "最小世代"
 
-#: src/zope/app/homefolder/browser.py:41
+#: src/zope/app/homefolder/browser.py:43
 msgid "path is not correct !"
 msgstr "路徑不對！"
 
-#: src/zope/app/homefolder/browser.py:56
+#: src/zope/app/homefolder/browser.py:58
 #, fuzzy
 msgid "dotted name is not correct !"
 msgstr "路徑不對！"
@@ -3711,6 +3743,28 @@ msgstr "指派"
 #, fuzzy
 msgid "Principal Home Folder"
 msgstr "主體資料夾"
+
+#: src/zope/app/homefolder/homefolder.pt:12
+#, fuzzy
+msgid "Assign a Principal"
+msgstr "主體"
+
+#. Default: "Assign"
+#: src/zope/app/homefolder/homefolder.pt:24
+#, fuzzy
+msgid "assign-button"
+msgstr "尋找"
+
+#: src/zope/app/homefolder/homefolder.pt:29
+#, fuzzy
+msgid "Unassign Principals"
+msgstr "主體"
+
+#. Default: "Unassign"
+#: src/zope/app/homefolder/homefolder.pt:37
+#, fuzzy
+msgid "unassign-button"
+msgstr "回復"
 
 #: src/zope/app/homefolder/interfaces.py:28
 msgid "Home Folder"
@@ -6711,9 +6765,6 @@ msgstr "視圖"
 #~ "This object won't actually be used unless it is registered to perform a "
 #~ "specific function and is activated."
 #~ msgstr "你必須為此物件登錄特定的功能並啟用之，否則此物件不能被使用。"
-
-#~ msgid "<no name>"
-#~ msgstr "<沒有名稱>"
 
 #~ msgid "<i>No instances of this utility are available yet.</i>"
 #~ msgstr "<i>此公用工具尚無實體可用。</i>"
