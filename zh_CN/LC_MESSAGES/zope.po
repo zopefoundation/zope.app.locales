@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Development/Revision: 37524\n"
 "POT-Creation-Date: Mon May 22 13:53:11 2006\n"
-"PO-Revision-Date: 2006-05-28 12:08+0000\n"
+"PO-Revision-Date: 2006-06-06 11:41+0000\n"
 "Last-Translator: Army <guhongjun@gmail.com>\n"
 "Language-Team: Chinese <zope3-dev@zope.org>\n"
 "MIME-Version: 1.0\n"
@@ -419,12 +419,12 @@ msgstr "该类没有方法"
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:200
 msgid "Mapping Items"
-msgstr ""
+msgstr "映射项"
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:206
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:248
 msgid "There are no items."
-msgstr ""
+msgstr "没有内容"
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:21
 msgid "&lt;no name&gt;"
@@ -436,11 +436,11 @@ msgstr ""
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:280
 msgid "Annotations"
-msgstr ""
+msgstr "Annotations"
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:286
 msgid "There were no annotations or they were not inspectable."
-msgstr ""
+msgstr "没有注释或它们不需要检查。"
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:30
 msgid "Parent: ${parent}"
@@ -1547,7 +1547,7 @@ msgstr "组文件夹"
 
 #: src/zope/app/authentication/idpicker.py:100
 msgid "Ids must contain only printable 7-bit non-space ASCII characters"
-msgstr ""
+msgstr "Ids 必须且只能包含无空白符的 7 比特 ASCII 字符。"
 
 #: src/zope/app/authentication/idpicker.py:105
 msgid "Ids can't be more than 100 characters long."
