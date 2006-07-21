@@ -16,7 +16,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Development/Revision: 29457\n"
-"POT-Creation-Date: Mon May 22 13:53:11 2006\n"
+"POT-Creation-Date: Fri Jul 21 17:26:36 2006\n"
 "PO-Revision-Date: 2006-05-01 22:27+0300\n"
 "Last-Translator: Dmitry Vasiliev <dima@hlabs.spb.ru>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
@@ -293,6 +293,17 @@ msgstr "Меню"
 msgid "Zope 3 API Docs"
 msgstr "Документация по Zope 3 API"
 
+#: src/zope/app/apidoc/browser/notfound.pt:4
+msgid "Page Not Found"
+msgstr "Страница не найдена"
+
+#: src/zope/app/apidoc/browser/notfound.pt:8
+msgid ""
+"While broken links occur occassionally, they are considered bugs. Please "
+"report any broken link to <a href=\"mailto:zope3-dev@zope.org\">zope3-"
+"dev@zope.org</a>."
+msgstr "Хотя отсутствующие страницы могут иногда попадаться они рассматриваются как ошибки. Пожалуйста сообщайте обо всех отсутствующих страницах по адресу <a href=\"mailto:zope3-dev@zope.org\">zope3-dev@zope.org</a>."
+
 #: src/zope/app/apidoc/browser/prefmenu.pt:4
 msgid "Preferences"
 msgstr "Настройки"
@@ -484,7 +495,7 @@ msgstr "(Введите путь Python)"
 #: src/zope/app/rotterdam/xmlobject.py:161
 #: src/zope/app/rotterdam/template.pt:95
 #: src/zope/app/rotterdam/template_tablelayout.pt:74
-#: src/zope/app/boston/browser/template.pt:60
+#: src/zope/app/boston/browser/template.pt:62
 msgid "[top]"
 msgstr "[основная]"
 
@@ -584,7 +595,12 @@ msgstr "Корневой элемент XML"
 msgid "XML element representing the configuration root."
 msgstr "Элемент XML обозначающий корень конфигурации."
 
-#: src/zope/app/apidoc/component.py:222 src/zope/app/apidoc/component.py:255
+#: src/zope/app/apidoc/component.py:178 src/zope/app/apidoc/component.py:179
+msgid "<unknown>"
+msgstr "<неизвестное имя>"
+
+#: src/zope/app/apidoc/component.py:223 src/zope/app/apidoc/component.py:256
+#: src/zope/app/apidoc/presentation.py:169
 msgid "<i>no name</i>"
 msgstr "<i>без названия</i>"
 
@@ -1506,7 +1522,6 @@ msgstr "Подключаемая аутентификация"
 #: src/zope/app/form/browser/ftests/test_i18n.py:33
 #: src/zope/schema/interfaces.py:101 src/zope/schema/interfaces.py:476
 #: src/zope/security/interfaces.py:264 src/zope/security/interfaces.py:314
-#: src/zope/app/schema/browser/schema_edit.pt:39
 #: src/zope/app/container/browser/contents.pt:34
 #: src/zope/app/container/browser/index.pt:28
 #: src/zope/dublincore/browser/edit.pt:17
@@ -1712,7 +1727,7 @@ msgstr "${name} (не найдено; уберите выборку для уд�
 msgid "User: ${user_title}"
 msgstr "Пользователь: ${user_title}"
 
-#: src/zope/app/boston/browser/template.pt:58
+#: src/zope/app/boston/browser/template.pt:60
 msgid "Location:&nbsp;"
 msgstr "Путь:&nbsp;"
 
@@ -2043,7 +2058,6 @@ msgid "The component the registration is for."
 msgstr "Компонент для которого предназначена регистрация."
 
 #: src/zope/app/component/browser/__init__.py:101
-#: src/zope/app/schema/browser/schema_add.pt:9
 msgid "Add Utility"
 msgstr "Добавить утилиту"
 
@@ -2415,39 +2429,45 @@ msgid "Find"
 msgstr "Поиск"
 
 #. Default: "Rename"
-#: src/zope/app/container/browser/contents.pt:127
+#: src/zope/app/container/browser/contents.pt:126
 msgid "container-rename-button"
 msgstr "Переименовать"
 
 #. Default: "Cut"
-#: src/zope/app/container/browser/contents.pt:131
+#: src/zope/app/container/browser/contents.pt:130
 msgid "container-cut-button"
 msgstr "Вырезать"
 
 #. Default: "Copy"
-#: src/zope/app/container/browser/contents.pt:135
+#: src/zope/app/container/browser/contents.pt:134
 msgid "container-copy-button"
 msgstr "Копировать"
 
 #. Default: "Paste"
-#: src/zope/app/container/browser/contents.pt:139
+#: src/zope/app/container/browser/contents.pt:138
 msgid "container-paste-button"
 msgstr "Вставить"
 
 #. Default: "Delete"
-#: src/zope/app/container/browser/contents.pt:143
+#: src/zope/app/container/browser/contents.pt:142
 msgid "container-delete-button"
 msgstr "Удалить"
 
 #. Default: "Apply"
-#: src/zope/app/container/browser/contents.pt:174
+#: src/zope/app/container/browser/contents.pt:173
 msgid "container-apply-button"
 msgstr "Применить"
 
 #. Default: "Cancel"
-#: src/zope/app/container/browser/contents.pt:177
+#: src/zope/app/container/browser/contents.pt:176
 msgid "container-cancel-button"
 msgstr "Отказаться"
+
+#: src/zope/app/container/browser/contents.pt:27
+#: src/zope/app/container/browser/index.pt:19
+#: src/zope/app/intid/browser/registrations.pt:9
+msgid "Content listing"
+msgstr "Контент"
 
 #: src/zope/app/container/browser/contents.pt:36
 #: src/zope/app/container/browser/index.pt:29
@@ -2519,12 +2539,11 @@ msgid "Contents"
 msgstr "Содержимое"
 
 #: src/zope/app/container/browser/metaconfigure.py:85
-#: src/zope/formlib/form.py:837 src/zope/app/menus.zcml:17
+#: src/zope/formlib/form.py:840 src/zope/app/menus.zcml:17
 #: src/zope/app/menus.zcml:25 src/zope/app/component/browser/configure.zcml:56
 #: src/zope/app/workflow/stateful/browser/configure.zcml:48
 #: src/zope/app/workflow/stateful/browser/configure.zcml:85
 #: src/zope/app/authentication/browser/configure.zcml:56
-#: src/zope/app/schema/browser/configure.zcml:9
 #: src/zope/app/boston/viewlets/addinginfo/viewlet.pt:5
 msgid "Add"
 msgstr "Добавить"
@@ -3154,7 +3173,7 @@ msgstr "Добавить изображение"
 
 #. Default: ""
 #: src/zope/app/file/browser/file.py:300 src/zope/app/file/browser/file.py:442
-#: src/zope/app/form/browser/editview.py:114 src/zope/formlib/form.py:795
+#: src/zope/app/form/browser/editview.py:114 src/zope/formlib/form.py:798
 msgid "Updated on ${date_time}"
 msgstr "Обновлено ${date_time}"
 
@@ -3275,7 +3294,7 @@ msgstr "Определяет тип данных."
 #: src/zope/app/file/browser/configure.zcml:121
 #: src/zope/app/pythonpage/configure.zcml:72
 #: src/zope/app/dtmlpage/configure.zcml:93
-#: src/zope/app/zptpage/browser/configure.zcml:70
+#: src/zope/app/zptpage/browser/configure.zcml:68
 msgid "Preview"
 msgstr "Просмотр"
 
@@ -3366,13 +3385,13 @@ msgid "vocabulary-missing-multiple-value-for-display"
 msgstr "(нет значений)"
 
 #. Default: "(no value)"
-#: src/zope/app/form/browser/itemswidgets.py:399
-#: src/zope/app/form/browser/itemswidgets.py:444
+#: src/zope/app/form/browser/itemswidgets.py:417
+#: src/zope/app/form/browser/itemswidgets.py:447
 msgid "vocabulary-missing-single-value-for-edit"
 msgstr "(нет значения)"
 
 #. Default: "(no values)"
-#: src/zope/app/form/browser/itemswidgets.py:517
+#: src/zope/app/form/browser/itemswidgets.py:486
 msgid "vocabulary-missing-multiple-value-for-edit"
 msgstr "(нет значений)"
 
@@ -3398,12 +3417,6 @@ msgstr "(нет значений)"
 #: src/zope/app/demo/widget/browser/textareawidget.zcml:29
 #: src/zope/app/homefolder/configure.zcml:56
 #: src/zope/app/pluggableauth/browser/configure.zcml:56
-#: src/zope/app/schema/fieldforms.zcml:21
-#: src/zope/app/schema/fieldforms.zcml:47
-#: src/zope/app/schema/fieldforms.zcml:73
-#: src/zope/app/schema/fieldforms.zcml:99
-#: src/zope/app/schema/fieldforms.zcml:125
-#: src/zope/app/schema/fieldforms.zcml:151
 #: src/zope/app/session/browser.zcml:15 src/zope/app/session/browser.zcml:38
 #: src/zope/app/zptpage/browser/configure.zcml:39
 #: src/zope/app/securitypolicy/browser/configure.zcml:28
@@ -3463,31 +3476,32 @@ msgstr "Отсутствуют"
 msgid "SourceDisplayWidget-invalid"
 msgstr "Ошибочное значение"
 
-#: src/zope/app/form/browser/textwidgets.py:148
+#: src/zope/app/form/browser/textwidgets.py:149
 msgid "Invalid text data"
 msgstr "Ошибочные текстовые данные"
 
-#: src/zope/app/form/browser/textwidgets.py:160
+#: src/zope/app/form/browser/textwidgets.py:161
 msgid "Invalid textual data"
 msgstr "Ошибочные байт-данные"
 
-#: src/zope/app/form/browser/textwidgets.py:303
+#: src/zope/app/form/browser/textwidgets.py:304
 msgid "Invalid unicode data"
 msgstr "Ошибочные unicode данные"
 
-#: src/zope/app/form/browser/textwidgets.py:432
+#: src/zope/app/form/browser/textwidgets.py:433
 msgid "Form input is not a file object"
 msgstr "Данные формы должны быть файловым объектом"
 
-#: src/zope/app/form/browser/textwidgets.py:471
+#: src/zope/app/form/browser/textwidgets.py:472
 msgid "Invalid integer data"
 msgstr "Ошибочные данные для целого числа"
 
-#: src/zope/app/form/browser/textwidgets.py:485
+#: src/zope/app/form/browser/textwidgets.py:486
 msgid "Invalid floating point data"
 msgstr "Ошибочные данные для вещественного числа"
 
-#: src/zope/app/form/browser/textwidgets.py:500
+#: src/zope/app/form/browser/textwidgets.py:504
+#: src/zope/app/form/browser/textwidgets.py:542
 msgid "Invalid datetime data"
 msgstr "Ошибочные данные для даты и времени"
 
@@ -4202,7 +4216,7 @@ msgstr "Название представления"
 msgid "The View Name for which this Help Topic is registered"
 msgstr "Название представления для которого зарегистрирована данная тема справки"
 
-#: src/zope/app/pagetemplate/engine.py:112
+#: src/zope/app/pagetemplate/engine.py:120
 msgid ""
 "Inline Code Evaluation is deactivated, which means that you cannot have "
 "inline code snippets in your Page Template. Activate Inline Code Evaluation "
@@ -4213,7 +4227,7 @@ msgstr ""
 "кода и повторите попытку."
 
 #. Default: ""
-#: src/zope/app/pagetemplate/engine.py:121
+#: src/zope/app/pagetemplate/engine.py:129
 msgid "No interpreter named \"${lang_name}\" was found."
 msgstr "Не было найдено интерпретатора с именем \"${lang_name}\"."
 
@@ -4273,10 +4287,6 @@ msgstr "Сохраняет аннотации для пользователей"
 #: src/zope/app/principalannotation/configure.zcml:18
 msgid "Principal Annotation Utility"
 msgstr "Утилита аннотаций пользователя"
-
-#: src/zope/app/publisher/configure.zcml:18
-msgid "Creating HTTP Results"
-msgstr "Создание HTTP ответов"
 
 #: src/zope/app/publisher/interfaces/browser.py:104
 #: src/zope/app/publisher/interfaces/browser.py:156
@@ -4562,225 +4572,111 @@ msgstr "Элементов: $${num}"
 msgid "Loading..."
 msgstr "Загрузка..."
 
-#: src/zope/app/schema/browser/__init__.py:27
-msgid "An error occurred"
-msgstr "Ошибка"
-
-#: src/zope/app/schema/browser/__init__.py:54
-msgid "Must select a field to delete"
-msgstr "Необходимо выбрать поле для удаления"
-
-#: src/zope/app/schema/browser/__init__.py:67
-msgid "Invalid field name: %s"
-msgstr "Неверное название поля: %s"
-
-#: src/zope/app/schema/browser/__init__.py:75
-msgid "Invalid position: %s"
-msgstr "Неверная позиция: %s"
-
-#: src/zope/app/schema/browser/configure.zcml:33
-msgid "Edit Schema"
-msgstr "Редактировать схему"
-
-#: src/zope/app/schema/browser/configure.zcml:5
-msgid "Menu of Fields to be added to a schema."
-msgstr "Меню полей для добавления к схеме."
-
-#: src/zope/app/schema/browser/schema_edit.pt:10
-msgid "Schema Name: ${schema_name}"
-msgstr "Название схемы: ${schema_name}"
-
-#: src/zope/app/schema/browser/schema_edit.pt:31
-#: src/zope/app/container/browser/contents.pt:27
-#: src/zope/app/container/browser/index.pt:19
-#: src/zope/app/intid/browser/registrations.pt:9
-msgid "Content listing"
-msgstr "Контент"
-
-#: src/zope/app/schema/browser/schema_edit.pt:41
-msgid "Read-Only"
-msgstr "Только для чтения"
-
-#. Default: "Delete"
-#: src/zope/app/schema/browser/schema_edit.pt:69
-msgid "delete-field-button"
-msgstr "Удалить"
-
-#: src/zope/app/schema/configure.zcml:5
-#: src/zope/app/schema/browser/configure.zcml:22
-msgid "Mutable Schema"
-msgstr "Изменяемая схема"
-
-#: src/zope/app/schema/configure.zcml:5
-#: src/zope/app/schema/browser/configure.zcml:22
-msgid "A Persistent Schema that can be edited through the web"
-msgstr "Сохраняемая схема которая может редактироваться через web"
-
-#: src/zope/app/schema/fieldforms.zcml:111
-msgid "A Float Field"
-msgstr "Поле для вещественного числа"
-
-#: src/zope/app/schema/fieldforms.zcml:111
-msgid "Add Float Field"
-msgstr "Добавить поле для вещественного числа"
-
-#: src/zope/app/schema/fieldforms.zcml:125
-msgid "Edit Float Field"
-msgstr "Редактировать поле для вещественного числа"
-
-#: src/zope/app/schema/fieldforms.zcml:137
-msgid "Add Datetime Field"
-msgstr "Добавить поле для даты и времени"
-
-#: src/zope/app/schema/fieldforms.zcml:137
-msgid "A Datetime Field"
-msgstr "Поле для даты и времени"
-
-#: src/zope/app/schema/fieldforms.zcml:151
-msgid "Edit Datetime Field"
-msgstr "Редактировать поле для даты и времени"
-
-#: src/zope/app/schema/fieldforms.zcml:21
-msgid "Edit Text Field"
-msgstr "Редактировать поле для текста"
-
-#: src/zope/app/schema/fieldforms.zcml:33
-msgid "A TextLine Field"
-msgstr "Поле для текстовой строки"
-
-#: src/zope/app/schema/fieldforms.zcml:33
-msgid "TextLine Field"
-msgstr "Поле для текстовой строки"
-
-#: src/zope/app/schema/fieldforms.zcml:33
-msgid "Add TextLine Field"
-msgstr "Добавить поле для текстовой строки"
-
-#: src/zope/app/schema/fieldforms.zcml:47
-msgid "Edit TextLine Field"
-msgstr "Редактировать поле для текстовой строки"
-
-#: src/zope/app/schema/fieldforms.zcml:59
-msgid "A Boolean Field"
-msgstr "Поле для булевского значения"
-
-#: src/zope/app/schema/fieldforms.zcml:59
-msgid "Add Boolean Field"
-msgstr "Добавить поле для булевского значения"
-
-#: src/zope/app/schema/fieldforms.zcml:7
-msgid "A Text Field"
-msgstr "Поле для текста"
-
-#: src/zope/app/schema/fieldforms.zcml:7
-msgid "Add Text Field"
-msgstr "Добавить поле для текста"
-
-#: src/zope/app/schema/fieldforms.zcml:73
-msgid "Edit Boolean Field"
-msgstr "Редактировать поле для булевского значения"
-
-#: src/zope/app/schema/fieldforms.zcml:85
-msgid "Add Integer Field"
-msgstr "Добавить поле для целого числа"
-
-#: src/zope/app/schema/fieldforms.zcml:85
-msgid "An Integer Field"
-msgstr "Поле для целого числа"
-
-#: src/zope/app/schema/fieldforms.zcml:99
-msgid "Edit Integer Field"
-msgstr "Редактировать поле для целого числа"
-
-#: src/zope/app/schema/fields.zcml:102
+#: src/zope/app/schema/configure.zcml:102
 msgid "BytesLine Field"
 msgstr "Поле для байтовой строки"
 
-#: src/zope/app/schema/fields.zcml:114 src/zope/app/schema/fieldforms.zcml:7
+#: src/zope/app/schema/configure.zcml:114
 msgid "Text Field"
 msgstr "Поле для текста"
 
-#: src/zope/app/schema/fields.zcml:128
+#: src/zope/app/schema/configure.zcml:128
 msgid "Text Line Field"
 msgstr "Поле для текстовой строки"
 
-#: src/zope/app/schema/fields.zcml:140 src/zope/app/schema/fieldforms.zcml:59
+#: src/zope/app/schema/configure.zcml:140
 msgid "Boolean Field"
 msgstr "Поле для булевского значения"
 
-#: src/zope/app/schema/fields.zcml:151 src/zope/app/schema/fieldforms.zcml:85
+#: src/zope/app/schema/configure.zcml:151
 msgid "Integer Field"
 msgstr "Поле для целого числа"
 
-#: src/zope/app/schema/fields.zcml:163 src/zope/app/schema/fieldforms.zcml:111
+#: src/zope/app/schema/configure.zcml:163
 msgid "Float Field"
 msgstr "Поле для вещественного числа"
 
-#: src/zope/app/schema/fields.zcml:175
+#: src/zope/app/schema/configure.zcml:175
 msgid "Tuple Field"
 msgstr "Поле для кортежа"
 
-#: src/zope/app/schema/fields.zcml:186
+#: src/zope/app/schema/configure.zcml:186
 msgid "List Field"
 msgstr "Поле для списка"
 
-#: src/zope/app/schema/fields.zcml:197
+#: src/zope/app/schema/configure.zcml:196
+msgid "Choice Field"
+msgstr "Поле для выбора"
+
+#: src/zope/app/schema/configure.zcml:208
 msgid "Set Field"
 msgstr "Поле для набора"
 
-#: src/zope/app/schema/fields.zcml:208
+#: src/zope/app/schema/configure.zcml:219
 msgid "Password Field"
 msgstr "Поле для пароля"
 
-#: src/zope/app/schema/fields.zcml:220
+#: src/zope/app/schema/configure.zcml:231
 msgid "Dict Field"
 msgstr "Поле для словаря"
 
-#: src/zope/app/schema/fields.zcml:232 src/zope/app/schema/fieldforms.zcml:137
+#: src/zope/app/schema/configure.zcml:243
 msgid "Datetime Field"
 msgstr "Поле для даты и времени"
 
-#: src/zope/app/schema/fields.zcml:244
+#: src/zope/app/schema/configure.zcml:255
+msgid "Date Field"
+msgstr "Поле для даты"
+
+#: src/zope/app/schema/configure.zcml:268
+msgid "Timedelta Field"
+msgstr "Поле для интервала времени"
+
+#: src/zope/app/schema/configure.zcml:281
 msgid "SourceText Field"
 msgstr "Поле для исходного текста"
 
-#: src/zope/app/schema/fields.zcml:256
+#: src/zope/app/schema/configure.zcml:293
 msgid "Object Field"
 msgstr "Поле для объекта"
 
-#: src/zope/app/schema/fields.zcml:269
+#: src/zope/app/schema/configure.zcml:306
 msgid "URI Field"
 msgstr "Поле для URI"
 
-#: src/zope/app/schema/fields.zcml:281
+#: src/zope/app/schema/configure.zcml:317
+msgid "Dotted Name"
+msgstr "Поле для идентификатора"
+
+#: src/zope/app/schema/configure.zcml:330
 msgid "Id Field"
 msgstr "Поле для идентификатора"
 
-#: src/zope/app/schema/fields.zcml:293
+#: src/zope/app/schema/configure.zcml:342
 msgid "Interface Field"
 msgstr "Поле для интерфейса"
 
-#: src/zope/app/schema/fields.zcml:38
+#: src/zope/app/schema/configure.zcml:38
 msgid "Container Field"
 msgstr "Поле для контейнера"
 
-#: src/zope/app/schema/fields.zcml:49
+#: src/zope/app/schema/configure.zcml:49
 msgid "Iterable Field"
 msgstr "Поле для итератора"
 
-#: src/zope/app/schema/fields.zcml:5
+#: src/zope/app/schema/configure.zcml:5
 msgid "Basic Field"
 msgstr "Простое поле"
 
-#: src/zope/app/schema/fields.zcml:60
+#: src/zope/app/schema/configure.zcml:60
 msgid "Orderable Field"
 msgstr "Поле с указанием порядка"
 
-#: src/zope/app/schema/fields.zcml:75
+#: src/zope/app/schema/configure.zcml:75
 msgid "MinMaxLen Field"
 msgstr "Поле с ограничением длины"
 
-#: src/zope/app/schema/fields.zcml:90
+#: src/zope/app/schema/configure.zcml:90
 msgid "Bytes Field"
 msgstr "Поле для байта"
 
@@ -5333,7 +5229,6 @@ msgid "Argument Name"
 msgstr "Название аргумента"
 
 #: src/zope/app/sqlscript/browser/test.pt:16
-#: src/zope/app/schema/browser/schema_edit.pt:38
 msgid "Type"
 msgstr "Тип"
 
@@ -6097,11 +5992,7 @@ msgstr "Корневая папка"
 msgid "Add a ZPT Page"
 msgstr "Добавить шаблон страницы"
 
-#: src/zope/app/zptpage/browser/configure.zcml:39
-msgid "Edit a ZPT page"
-msgstr "Редактировать шаблон страницы"
-
-#: src/zope/app/zptpage/browser/configure.zcml:49
+#: src/zope/app/zptpage/browser/configure.zcml:47
 msgid "Inline Code"
 msgstr "Встроенный код"
 
@@ -6393,21 +6284,25 @@ msgstr "Просмотр мета-данных Dublin-Core"
 msgid "zope.app.dublincore.change-permission"
 msgstr "Изменение мета-данных Dublin-Core"
 
-#: src/zope/formlib/form.py:725
+#: src/zope/formlib/form.py:728
 msgid "There were errors"
 msgstr "Произошли ошибки"
 
-#: src/zope/formlib/form.py:783
+#: src/zope/formlib/form.py:786
 msgid "Apply"
 msgstr "Применить"
 
-#: src/zope/formlib/form.py:804
+#: src/zope/formlib/form.py:807
 msgid "No changes"
 msgstr "Нет изменений для сохранения"
 
 #: src/zope/pagetemplate/tests/test_htmltests.py:130
 msgid "Translate this!"
 msgstr "Переведи это!"
+
+#: src/zope/publisher/configure.zcml:17
+msgid "Creating HTTP Results"
+msgstr "Создание HTTP ответов"
 
 #. Default: "Test"
 #: src/zope/rdb/browser/configure.zcml:32
@@ -6569,7 +6464,6 @@ msgid "A description of the field"
 msgstr "Описание поля"
 
 #: src/zope/schema/interfaces.py:115
-#: src/zope/app/schema/browser/schema_edit.pt:40
 msgid "Required"
 msgstr "Необходим"
 
