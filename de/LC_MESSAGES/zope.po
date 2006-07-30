@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zope\n"
 "POT-Creation-Date: Fri Jul 21 17:26:36 2006\n"
-"PO-Revision-Date: 2006-07-21 22:33+0100\n"
+"PO-Revision-Date: 2006-07-30 10:12+0100\n"
 "Last-Translator: Egon Frerich <e.frerich@nord-com.net>\n"
 "Language-Team: German <zope3-dev@zope.org>\n"
 "MIME-Version: 1.0\n"
@@ -232,12 +232,12 @@ msgstr "Module sind normalerweise voneinander abhängig, da sie Referenzen zu an
 #: src/zope/app/apidoc/browser/index.pt:3
 #: src/zope/app/apidoc/browser/static_index.pt:3
 msgid "Zope 3 API Documentation"
-msgstr "Zope 3 API Dokumentation"
+msgstr "'Zope 3'-API-Dokumentation"
 
 #: src/zope/app/apidoc/browser/contents.pt:7
 #: src/zope/app/apidoc/browser/static_contents.pt:7
 msgid "Welcome to the Zope 3 API documentation tool. The documentation provided here is separated in several discrete documentation modules. You can see the list of available modules in the top-left box on your screen. When you click on a module, the module's menu will appear below. In the menu you have then navigational means to access the documentation content of the module."
-msgstr "Willkommen zum Zope 3 API Dokumentationstool. Die hier bereitgestellte Dokumentation ist in diskrete Dokumentationsmodule unterteilt. Sie können eine Liste aller Module in der links oben platzierten Box auf Ihrem Bildschirm sehen. Wenn Sie auf ein Modul klicken, dann öffnet sich das Modulmenü darunter. Das Menü bietet dann Navigationsmöglichkeiten, um auf den Inhalt der Dokumentation zugreifen zu können."
+msgstr "Willkommen zum 'Zope 3'-API-Dokumentationstool. Die hier bereitgestellte Dokumentation ist in diskrete Dokumentationsmodule unterteilt. Sie können eine Liste aller Module in der links oben platzierten Box auf Ihrem Bildschirm sehen. Wenn Sie auf ein Modul klicken, dann öffnet sich das Modulmenü darunter. Das Menü bietet dann Navigationsmöglichkeiten, um auf den Inhalt der Dokumentation zugreifen zu können."
 
 #: src/zope/app/apidoc/browser/menu.pt:6
 #: src/zope/app/apidoc/browser/static_menu.pt:6
@@ -248,7 +248,7 @@ msgstr "Klicken Sie auf ein Dokumentationsmodul, um ein Menü für dieses Modul 
 #: src/zope/app/apidoc/browser/static_menu_macros.pt:10
 #: src/zope/app/apidoc/browser/details_macros.pt:10
 msgid "Zope 3 apidoc"
-msgstr "Zope 3 API Doku"
+msgstr "'Zope 3'-API-Doku"
 
 #: src/zope/app/apidoc/browser/menu_macros.pt:28
 #: src/zope/app/apidoc/browser/static_menu_macros.pt:31
@@ -258,7 +258,7 @@ msgstr "Menü"
 #: src/zope/app/apidoc/browser/modules.pt:7
 #: src/zope/app/apidoc/browser/static_modules.pt:7
 msgid "Zope 3 API Docs"
-msgstr "Zope 3 API Doku"
+msgstr "'Zope 3'-API-Doku"
 
 #: src/zope/app/apidoc/browser/notfound.pt:4
 msgid "Page Not Found"
@@ -266,7 +266,7 @@ msgstr "Seite nicht gefunden"
 
 #: src/zope/app/apidoc/browser/notfound.pt:8
 msgid "While broken links occur occassionally, they are considered bugs. Please report any broken link to <a href=\"mailto:zope3-dev@zope.org\">zope3-dev@zope.org</a>."
-msgstr "Falsche Links können gelegentlci vorkommen, sind aber Fehler. Bitte melden Sie jeden falschen Link an <a href=\"mailto:zope3-dev@zope.org\">zope3-dev@zope.org</a>."
+msgstr "Falsche Links können gelegentlich vorkommen, sind aber Fehler. Bitte melden Sie jeden falschen Link an <a href=\"mailto:zope3-dev@zope.org\">zope3-dev@zope.org</a>."
 
 #: src/zope/app/apidoc/browser/prefmenu.pt:4
 msgid "Preferences"
@@ -465,7 +465,7 @@ msgstr "[oben]"
 
 #: src/zope/app/apidoc/codemodule/browser/module_index.pt:5
 msgid "Zope 3 Code Browser"
-msgstr "Zope 3 Quelltext-Browser"
+msgstr "'Zope 3'-Quelltext-Browser"
 
 #: src/zope/app/apidoc/codemodule/browser/static_menu.pt:34
 #: src/zope/app/apidoc/ifacemodule/static_menu.pt:30
@@ -502,16 +502,16 @@ msgid ""
 msgstr ""
 "\n"
 "    Mit diesem Modul können Sie einen Überblick über die Module und Klassen \n"
-"    erhalten, die im Zope 3 Framework und ihren unterstützenden Paketen \n"
+"    erhalten, die im 'Zope 3'-Framework und ihren unterstützenden Paketen \n"
 "    enthalten sind. Sie können auf zwei Wegen durch die Module navigieren, um \n"
-"    die Sie interessierenden Klassen zu finden.\n"
+"    die Klassen zu finden, die Sie interessieren.\n"
 "\n"
 "    Die erste Methode besteht darin, einen Teil des Pythonpfades der Klasse \n"
 "    einzugeben. Das Modul sucht im Klassenregister nach Übereinstimmungen. \n"
 "    Das Menü gibt dann eine Liste aller Treffer aus.\n"
 "\n"
-"    Für die zweite Methode klicken Sie einfach auf den \"Zope Quelltext \n"
-"    durchblättern\" Link. In dem Hauptfenster sehen Sie eine Verzeichnisauflistung \n"
+"    Für die zweite Methode klicken Sie einfach auf den Link \"Zope Quelltext \n"
+"    durchblättern\". In dem Hauptfenster sehen Sie eine Verzeichnisauflistung \n"
 "    aller Zope 3 Wurzelmodule. Sie können auf diese Module klicken, um ihren \n"
 "    Inhalt zu erforschen. Wenn eine Klasse gefunden wurde, wird sie als fetter \n"
 "    Eintrag in der Liste angezeigt.\n"
@@ -526,7 +526,7 @@ msgstr ""
 
 #: src/zope/app/apidoc/codemodule/codemodule.py:80
 msgid "Zope 3 root."
-msgstr "Zope-3-Wurzel"
+msgstr "'Zope-3'-Wurzel"
 
 #: src/zope/app/apidoc/codemodule/interfaces.py:185
 msgid "Configuration Filename"
@@ -548,7 +548,7 @@ msgid ""
 msgstr ""
 "Gibt das Paket an, für das die Konfigurationsdatei ausgeführt wird. Wenn \n"
 "     Sie keinen Paketnamen angeben, kann die Konfiguration nicht vollständig \n"
-"     geprüft werden und können die ZCML-Dateien unrichtig geschrieben werden."
+"     geprüft werden und können falsche ZCML-Dateien geschrieben werden."
 
 #: src/zope/app/apidoc/codemodule/interfaces.py:198
 msgid "XML Root Element"
@@ -561,7 +561,7 @@ msgstr "XML-Element, das die Konfigurationswurzel darstellt"
 #: src/zope/app/apidoc/component.py:178
 #: src/zope/app/apidoc/component.py:179
 msgid "<unknown>"
-msgstr "<Name unbekannt>"
+msgstr "<unbekannt>"
 
 #: src/zope/app/apidoc/component.py:223
 #: src/zope/app/apidoc/component.py:256
@@ -2145,7 +2145,7 @@ msgstr ""
 
 #: src/zope/app/component/metadirectives.py:190
 msgid "The layer the resource is in.  This argument has been deprecated and will be removed in Zope 3.5.  Use the 'type' argument instead."
-msgstr "Die Schicht, in der sich die Ressource befindet. Dieses Argument ist veraltet und mitrd in Zope 3.5 entfernt. Stattdessen ist das 'type'-Argument zu benutzen."
+msgstr "Die Schicht, in der sich die Ressource befindet. Dieses Argument ist veraltet und wird in Zope 3.5 entfernt. Stattdessen ist das 'type'-Argument zu benutzen."
 
 #: src/zope/app/component/metadirectives.py:203
 msgid "View attributes that are also allowed if user has permission."
@@ -5761,7 +5761,7 @@ msgstr "Dieser Bildschirm erlaubt das Aktivieren der 'Inline Code'-Auswertung. D
 
 #: src/zope/app/zptpage/browser/inlinecode.pt:35
 msgid "Many Zope 3 developers consider inline code blocks something very bad, since it does not follow the design of Page Templates or Zope 3 in general. However, application and application server developers are not the only audience for Zope 3. Scripters are used to inline code from other technologies like PHP and it fits their brain, which is very important."
-msgstr "Viele Zope 3 Entwickler halten 'Inline Code'-Blöcke für sehr schlecht, da sie nicht dem Design von Page Templates und Zope 3 entsprechen. Aber Zope 3 soll nicht nur Anwendungsentwickler ansprechen. Script-Schreiber sind 'Inline Code' von anderen Technologien wie PHP gewöhnt. Es ist wichtig, daß für sie 'Inline Code' paßt."
+msgstr "Viele 'Zope 3'-Entwickler halten 'Inline Code'-Blöcke für sehr schlecht, da sie nicht dem Design von Page Templates und Zope 3 entsprechen. Aber Zope 3 soll nicht nur Anwendungsentwickler ansprechen. Script-Schreiber sind 'Inline Code' von anderen Technologien wie PHP gewöhnt. Es ist wichtig, daß für sie 'Inline Code' paßt."
 
 #: src/zope/app/zptpage/configure.zcml:12
 #: src/zope/app/zptpage/browser/configure.zcml:23
