@@ -373,6 +373,7 @@ def zcml_strings(dir, domain="zope", site_zcml=None):
     import zope
     dirname = os.path.dirname
     if site_zcml is None:
+        # TODO this assumes a checkout directory structure
         site_zcml = os.path.join(dirname(dirname(dirname(zope.__file__))),
                                  "site.zcml")
     context = config(site_zcml, features=("devmode",), execute=False)
