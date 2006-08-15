@@ -381,6 +381,31 @@ def zcml_strings(dir, domain="zope", site_zcml=None):
 
 def tal_strings(dir, domain="zope", include_default_domain=False, exclude=()):
     """Retrieve all TAL messages from `dir` that are in the `domain`.
+    
+      >>> from zope.app.locales import extract
+      >>> import tempfile
+      >>> dir = tempfile.mkdtemp()
+      
+    Let's create a page template in the i18n domain ``test``:
+      >>> testpt = open(os.path.join(dir, 'test.pt'), 'w')
+      >>> testpt.write('<tal:block i18n:domain="test" i18n:translate="">test</tal:block>')
+      >>> testpt.close()
+      
+    And now one in no domain:
+      >>> nopt = open(os.path.join(dir, 'no.pt'), 'w')
+      >>> nopt.write('<tal:block i18n:translate="">no domain</tal:block>')
+      >>> nopt.close()
+      
+    Now let's find the strings for the domain ``test``: 
+      >>> extract.tal_strings(dir, domain='test', include_default_domain=True)
+      {'test': [('...test.pt', 1)], 'no domain': [('...no.pt', 1)]}
+
+
+    Cleanup
+    
+      >>> import shutil
+      >>> shutil.rmtree(dir) 
+
     """
     # We import zope.tal.talgettext here because we can't rely on the
     # right sys path until app_dir has run
@@ -412,6 +437,9 @@ def tal_strings(dir, domain="zope", include_default_domain=False, exclude=()):
     # When the Domain is 'default', then this means that none was found;
     # Include these strings; yes or no?
     if include_default_domain:
+        defaultCatalog = engine.catalog.get('default')
+        if defaultCatalog == None:
+            engine.catalog['default'] = {}
         catalog.update(engine.catalog['default'])
     for msgid, locations in catalog.items():
         catalog[msgid] = map(lambda l: (l[0], l[1][0]), locations)
