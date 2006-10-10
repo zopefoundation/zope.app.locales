@@ -1418,7 +1418,7 @@ msgid ""
 "You are not authorized to perform this action. However, you may login as a "
 "different user who is authorized."
 msgstr ""
-"Vous n'êtes pas autorisez à effectuer cette action. Cependant, vous pouvez "
+"Vous n'êtes pas autorisé à effectuer cette action. Cependant, vous pouvez "
 "vous connecter sous un utilisateur différent qui est autorisé."
 
 #: src/zope/app/authentication/browser/loginform.pt:20
@@ -5190,7 +5190,7 @@ msgid ""
 "You choose both allow and deny for permission \"${permission}\". This is not "
 "allowed."
 msgstr ""
-"Vous avez choisis autorisé et refusé pour la permissions \"${permission}\". "
+"Vous avez choisis autorisé et refusé pour la permission \"${permission}\". "
 "Ceci n'est pas autorisé."
 
 #. Default: ""
@@ -6323,7 +6323,7 @@ msgid ""
 msgstr ""
 "Rendre l'abonné localisable\n"
 "\n"
-" Un abonné localisable doit être utilisé si une permission non public est "
+" Un abonné localisable doit être utilisé si une permission non publique est "
 "utilisée.\n"
 "        "
 
@@ -6350,7 +6350,7 @@ msgid ""
 "be left blank."
 msgstr ""
 "Nom Python de l'objet implémenté. Ceci doit identifier un objet dans un "
-"module utilisant la notation pointée complète. Si cela est spécifiée, le "
+"module utilisant la notation pointée complète. Si cela est spécifié, le "
 "champ producteur doit rester vide."
 
 #: src/zope/component/zcml.py:444
@@ -6404,7 +6404,7 @@ msgstr "Ceci doit être une liste d'interfaces ou de classes"
 #: src/zope/component/zcml.py:98
 msgid "This adapter is only available, if the principal has this permission."
 msgstr ""
-"Cet adaptateur est disponible seulement si le Principal a cet permission."
+"Cet adaptateur est disponible seulement si le Principal a cette permission."
 
 #: src/zope/contentprovider/configure.zcml:14
 msgid "Content Providers"
@@ -6536,7 +6536,7 @@ msgstr "Requête"
 #. Default: "Execute"
 #: src/zope/rdb/browser/rdbtestsql.pt:28
 msgid "execute-button"
-msgstr "Executer"
+msgstr "Exécuter"
 
 #. Default: "Use Database Connections"
 #: src/zope/rdb/configure.zcml:6
@@ -6671,12 +6671,12 @@ msgid ""
 "If input for this Field is missing, and that's ok,\n"
 "                          then this is the value to use"
 msgstr ""
-"Si le contenu de ce champ est manquant, et que s'est correct,\n"
+"Si le contenu de ce champ est manquant, et que c'est correct,\n"
 "                          alors ceci est la valeur à utiliser"
 
 #: src/zope/schema/interfaces.py:139
 msgid "Field Order"
-msgstr "Champ ordonné"
+msgstr "Champ ordre"
 
 #: src/zope/schema/interfaces.py:140
 msgid ""
@@ -6756,8 +6756,8 @@ msgstr "Type de valeur"
 msgid ""
 "Field value items must conform to the given type, expressed via a Field."
 msgstr ""
-"La valeur des champs des éléments doit être conforme au type spécifié dans "
-"un champ."
+"La valeur des champs des éléments doit être conforme au type donné spécifié "
+"par un champ."
 
 #: src/zope/schema/interfaces.py:388
 msgid "Unique Members"
@@ -6843,7 +6843,7 @@ msgstr "L'identifiant unique du Principal."
 
 #: src/zope/security/interfaces.py:265
 msgid "The title of the principal. This is usually used in the UI."
-msgstr "Le titre du Principal. Celui-ci est généralement utilisé dans l'UI."
+msgstr "Le titre du Principal. Celui-ci est généralement utilisé à l'affichage."
 
 #: src/zope/security/interfaces.py:271
 msgid "A detailed description of the principal."
@@ -6917,28 +6917,28 @@ msgstr "non disponible"
 
 #: src/zope/size/__init__.py:47
 msgid "0 KB"
-msgstr "0 KB"
+msgstr "0 ko"
 
 #: src/zope/size/__init__.py:49
 msgid "1 KB"
-msgstr "1 KB"
+msgstr "1 ko"
 
 #. Default: ""
 #: src/zope/size/__init__.py:51
 msgid "${size} MB"
-msgstr "${size} MB"
+msgstr "${size} Mo"
 
 #. Default: ""
 #: src/zope/size/__init__.py:52
 msgid "${size} KB"
-msgstr "${size} KB"
+msgstr "${size} ko"
 
 #: src/zope/traversing/browser/absoluteurl.py:28
 msgid ""
 "There isn't enough context to get URL information. This is probably due to a "
 "bug in setting up location information."
 msgstr ""
-"Il n'y a pas assez de contexte pour obtenir l'information l'URL. Ceci est "
+"Il n'y a pas assez de contexte pour obtenir l'information d'URL. Ceci est "
 "probablement dû à un bogue lors de la mise en place des informations de "
 "localisation."
 
@@ -6948,19 +6948,19 @@ msgstr "Directives ZCML en relation avec la viewlet"
 
 #: src/zope/viewlet/configure.zcml:6
 msgid "Viewlets and Viewlet Managers"
-msgstr "Viewlets et gestionnaire de viewlet"
+msgstr "Viewlets et gestionnaires de viewlet"
 
 #: src/zope/viewlet/metadirectives.py:41
 msgid "The view the content provider is registered for."
-msgstr "La vue pour laquelle la vue est enregistrée"
+msgstr "La vue pour laquelle le fournisseur de contenu est enregistré"
 
 #: src/zope/viewlet/metadirectives.py:42
 msgid ""
 "The view can either be an interface or a class. By default the provider is "
 "registered for all views, the most common case."
 msgstr ""
-"La vue pour être une interface ou une classe. Par défaut le fournisseur est "
-"enregistré pour toutes les veus, qui est le cas le plus commun."
+"La vue peut être une interface ou une classe. Par défaut le fournisseur est "
+"enregistré pour toutes les vues, ce qui est le cas le plus commun."
 
 #: src/zope/viewlet/metadirectives.py:49
 msgid "The name of the content provider."
@@ -6972,7 +6972,7 @@ msgid ""
 "to look up the content provider."
 msgstr ""
 "Le nom du fournisseur de contenu utilisé par l'espace de nom du "
-"`fourrnisseur` TALES pour rechercher le fournisseur de contenu."
+"`fournisseur` TALES pour rechercher le fournisseur de contenu."
 
 #: src/zope/viewlet/metadirectives.py:61
 msgid "Content-generating template."
@@ -6983,7 +6983,7 @@ msgid ""
 "Refers to a file containing a page template (should end in extension ``.pt`` "
 "or ``.html``)."
 msgstr ""
-"Se référe à un fichier contenu une page template (doit se terminer avec "
+"Se réfère à un fichier contenant une page template (doit se terminer avec "
 "l'extension ``.pt`` ou ``.html``)."
 
 #: src/zope/viewlet/metadirectives.py:77
