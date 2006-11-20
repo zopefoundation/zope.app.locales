@@ -395,22 +395,40 @@ def tal_strings(dir, domain="zope", include_default_domain=False, exclude=()):
       >>> nopt = open(os.path.join(dir, 'no.pt'), 'w')
       >>> nopt.write('<tal:block i18n:translate="">no domain</tal:block>')
       >>> nopt.close()
-      
-    Now let's find the strings for the domain ``test``: 
+
+    Now let's find the strings for the domain ``test``:
+    
       >>> extract.tal_strings(dir, domain='test', include_default_domain=True)
       {'test': [('...test.pt', 1)], 'no domain': [('...no.pt', 1)]}
 
+    And now an xml file
+      >>> xml = open(os.path.join(dir, 'xml.pt'), 'w')
+      >>> xml.write('''<?xml version="1.0" encoding="utf-8"?>
+      ... <rss version="2.0"
+      ...     i18n:domain="xml"
+      ...     xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      ...     xmlns:tal="http://xml.zope.org/namespaces/tal"
+      ...     xmlns="http://purl.org/rss/1.0/modules/content/">
+      ...  <channel>
+      ...    <link i18n:translate="">Link Content</link>
+      ...  </channel>
+      ... </rss>
+      ... ''')
+      >>> xml.close()
+      >>> extract.tal_strings(dir, domain='xml')
+      {u'Link Content': [('...xml.pt', 8)]}
 
     Cleanup
     
       >>> import shutil
       >>> shutil.rmtree(dir) 
-
     """
+      
     # We import zope.tal.talgettext here because we can't rely on the
     # right sys path until app_dir has run
     from zope.tal.talgettext import POEngine, POTALInterpreter
     from zope.tal.htmltalparser import HTMLTALParser
+    from zope.tal.talparser import TALParser
     engine = POEngine()
 
     class Devnull(object):
@@ -418,9 +436,16 @@ def tal_strings(dir, domain="zope", include_default_domain=False, exclude=()):
             pass
 
     for filename in find_files(dir, '*.pt', exclude=tuple(exclude)):
+        f = file(filename,'rb')
+        start = f.read(6)
+        f.close()
+        if start.startswith('<?xml'):
+            parserFactory = TALParser
+        else:
+            parserFactory = HTMLTALParser
         try:
             engine.file = filename
-            p = HTMLTALParser()
+            p = parserFactory()
             p.parseFile(filename)
             program, macros = p.getCode()
             POTALInterpreter(program, macros, engine, stream=Devnull(),
