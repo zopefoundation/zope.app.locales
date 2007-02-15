@@ -31,6 +31,7 @@ from zope.app.locales.interfaces import IPOTEntry, IPOTMaker, ITokenEater
 
 DEFAULT_CHARSET = 'UTF-8'
 DEFAULT_ENCODING = '8bit'
+_import_chickens = {}, {}, ("*",) # dead chickens needed by __import__
 
 pot_header = '''\
 ##############################################################################
@@ -342,13 +343,79 @@ def find_files(dir, pattern, exclude=()):
     os.path.walk(dir, visit, files)
     return files
 
-def py_strings(dir, domain="zope", exclude=()):
+
+def module_from_filename(filename, sys_path=None):
+    """Translate a filename into a name of a module.
+
+    We are using the python path to determine what the shortest module
+    name should be:
+
+       >>> sys_path = ["/home/pete/src/project/Zope3/src/",
+       ...             "/home/pete/src/project/src/schooltool",
+       ...             "/home/pete/python2.4/site-packages"]
+
+       >>> module_from_filename("/home/pete/src/project/src/schooltool/module/__init__.py",
+       ...                      sys_path=sys_path)
+       'module'
+
+       >>> module_from_filename("/home/pete/src/project/src/schooltool/module/file.py",
+       ...                      sys_path=sys_path)
+       'module.file'
+
+       >>> module_from_filename("/home/pete/src/project/Zope3/src/zope/app/locales/extract.py",
+       ...                      sys_path=sys_path)
+       'zope.app.locales.extract'
+
+    """
+    if sys_path is None:
+        sys_path = sys.path
+
+    filename = os.path.abspath(filename)
+    common_path_lengths = [
+        len(os.path.commonprefix([filename, path]))
+        for path in sys_path]
+    l = sorted(common_path_lengths)[-1]
+    if filename[l - 1] == os.path.sep: # a path in sys.path ends with a separator
+        l = l - 1
+    # remove .py ending from filenames
+    # replace all path separators with a dot
+    # remove the __init__ from the import path
+    return filename[l+1:-3].replace(os.path.sep, ".").replace(".__init__", "")
+
+
+def py_strings(dir, domain="zope", exclude=(), verify_domain=False):
     """Retrieve all Python messages from `dir` that are in the `domain`.
+
+    Retrieves all the messages in all the domains if verify_domain is
+    False.
     """
     eater = TokenEater()
     make_escapes(0)
     for filename in find_files(
             dir, '*.py', exclude=('extract.py', 'pygettext.py')+tuple(exclude)):
+
+        if verify_domain:
+            module_name = module_from_filename(filename)
+            try:
+                module = __import__(module_name, *_import_chickens)
+            except ImportError, e:
+                # XXX if we can't import it - we assume that the domain is
+                # the right one
+                print >> sys.stderr, ("Could not import %s, "
+                                      "assuming i18n domain OK" % module_name)
+            else:
+                mf = getattr(module, '_', None)
+                # XXX if _ is has no _domain set we assume that the domain
+                # is the right one, so if you are using something non
+                # MessageFactory you should set it's _domain attribute.
+                if hasattr(mf, '_domain'):
+                    if mf._domain != domain:
+                        # domain mismatch - skip this file
+                        continue
+                elif mf:
+                    print >> sys.stderr, ("Could not figure out the i18n domain"
+                                          "for module %s, assuming it is OK" % module_name)
+
         fp = open(filename)
         try:
             eater.set_filename(filename)
@@ -359,11 +426,6 @@ def py_strings(dir, domain="zope", exclude=()):
                     e[0], filename, e[1][0], e[1][1])
         finally:
             fp.close()
-    # One limitation of the Python message extractor is that it cannot
-    # determine the domain of the string, since it is not contained anywhere
-    # directly. The only way this could be done is by loading the module and
-    # inspect the '_' function. For now we simply assume that all the found
-    # strings have the domain the user specified.
     return eater.getCatalog()
 
 def zcml_strings(dir, domain="zope", site_zcml=None):
