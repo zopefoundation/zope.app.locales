@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: zope\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: Mon May 22 13:53:11 2006\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2007-03-14 15:41+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Japanese <ja@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -6454,7 +6454,7 @@ msgstr "適用"
 
 #: src/zope/formlib/form.py:804
 msgid "No changes"
-msgstr "変更がありません"
+msgstr "変更はありません"
 
 #: src/zope/pagetemplate/tests/test_htmltests.py:130
 #, fuzzy
@@ -6576,7 +6576,7 @@ msgstr "データベースコンテンツのエンコーディング"
 
 #: src/zope/schema/_bootstrapinterfaces.py:43
 msgid "Required input is missing."
-msgstr "必要な入力がされていません"
+msgstr "必須項目です。入力してください。"
 
 #: src/zope/schema/_bootstrapinterfaces.py:46
 msgid "Object is of wrong type."
