@@ -350,20 +350,23 @@ def module_from_filename(filename, sys_path=None):
     We are using the python path to determine what the shortest module
     name should be:
 
-       >>> sys_path = ["/home/pete/src/project/Zope3/src/",
-       ...             "/home/pete/src/project/src/schooltool",
-       ...             "/home/pete/python2.4/site-packages"]
+       >>> sys_path = ["/src/project/Zope3/src/",
+       ...             "/src/project/src/schooltool",
+       ...             "/python2.4/site-packages"]
 
-       >>> module_from_filename("/home/pete/src/project/src/schooltool/module/__init__.py",
-       ...                      sys_path=sys_path)
+       >>> module_from_filename(
+       ...     "/src/project/src/schooltool/module/__init__.py",
+       ...     sys_path=sys_path)
        'module'
 
-       >>> module_from_filename("/home/pete/src/project/src/schooltool/module/file.py",
-       ...                      sys_path=sys_path)
+       >>> module_from_filename(
+       ...     "/src/project/src/schooltool/module/file.py",
+       ...     sys_path=sys_path)
        'module.file'
 
-       >>> module_from_filename("/home/pete/src/project/Zope3/src/zope/app/locales/extract.py",
-       ...                      sys_path=sys_path)
+       >>> module_from_filename(
+       ...     "/src/project/Zope3/src/zope/app/locales/extract.py",
+       ...     sys_path=sys_path)
        'zope.app.locales.extract'
 
     """
@@ -372,15 +375,16 @@ def module_from_filename(filename, sys_path=None):
 
     filename = os.path.abspath(filename)
     common_path_lengths = [
-        len(os.path.commonprefix([filename, path]))
+        len(os.path.commonprefix([filename, os.path.abspath(path)]))
         for path in sys_path]
-    l = sorted(common_path_lengths)[-1]
-    if filename[l - 1] == os.path.sep: # a path in sys.path ends with a separator
-        l = l - 1
+    s = max(common_path_lengths) + 1
+    # a path in sys.path ends with a separator
+    if filename[s - 2] == os.path.sep:
+        s -= 1
     # remove .py ending from filenames
     # replace all path separators with a dot
     # remove the __init__ from the import path
-    return filename[l+1:-3].replace(os.path.sep, ".").replace(".__init__", "")
+    return filename[s:-3].replace(os.path.sep, ".").replace(".__init__", "")
 
 
 def py_strings(dir, domain="zope", exclude=(), verify_domain=False):
@@ -443,7 +447,7 @@ def zcml_strings(dir, domain="zope", site_zcml=None):
 
 def tal_strings(dir, domain="zope", include_default_domain=False, exclude=()):
     """Retrieve all TAL messages from `dir` that are in the `domain`.
-    
+
       >>> from zope.app.locales import extract
       >>> import tempfile
       >>> dir = tempfile.mkdtemp()
@@ -459,7 +463,7 @@ def tal_strings(dir, domain="zope", include_default_domain=False, exclude=()):
       >>> nopt.close()
 
     Now let's find the strings for the domain ``test``:
-    
+
       >>> extract.tal_strings(dir, domain='test', include_default_domain=True)
       {'test': [('...test.pt', 1)], 'no domain': [('...no.pt', 1)]}
 
@@ -481,11 +485,11 @@ def tal_strings(dir, domain="zope", include_default_domain=False, exclude=()):
       {u'Link Content': [('...xml.pt', 8)]}
 
     Cleanup
-    
+
       >>> import shutil
       >>> shutil.rmtree(dir) 
     """
-      
+
     # We import zope.tal.talgettext here because we can't rely on the
     # right sys path until app_dir has run
     from zope.tal.talgettext import POEngine, POTALInterpreter
