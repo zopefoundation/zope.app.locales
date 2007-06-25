@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zope\n"
 "POT-Creation-Date: Wed Sep 27 14:50:18 2006\n"
-"PO-Revision-Date: 2007-06-18 13:15+0200\n"
+"PO-Revision-Date: 2007-06-25 13:15+0200\n"
 "Last-Translator: Christian Zagrodnick <cz@gocept.com>\n"
 "Language-Team: German <zope3-dev@zope.org>\n"
 "MIME-Version: 1.0\n"
@@ -1426,7 +1426,7 @@ msgstr "Austauschbares Authentifizierungs-Utility"
 
 #: src/zope/app/authentication/browser/configure.zcml:39
 msgid "Edit Pluggable Authentication Utility"
-msgstr "Bearbeite einhängbares Authentifizierungs-Utility"
+msgstr "Bearbeite erweiterbares Authentifizierungs-Utility"
 
 #: src/zope/app/authentication/browser/configure.zcml:47
 msgid "Plugins"
@@ -1434,7 +1434,7 @@ msgstr "Plugins"
 
 #: src/zope/app/authentication/browser/configure.zcml:6
 msgid "Add Pluggable Authentication"
-msgstr "Einhängbare Authentifizierung hinzufügen"
+msgstr "Erweiterbares Authentifizierung hinzufügen"
 
 #: src/zope/app/authentication/browser/groupfolder.zcml:15
 msgid "Add group information"
@@ -1640,7 +1640,7 @@ msgid ""
 "            created, like the group folder in this package.)\n"
 "            "
 msgstr ""
-"IDs der Gruppen, zu denen der Nutzungsberechtigte direktgehört.\n"
+"IDs der Gruppen, zu denen der Nutzungsberechtigte direkt gehört.\n"
 "\n"
 " Plugins können die Liste erweitern. Eine Veränderung "
 "der Liste ist nur während der Objektdauer  des Nutzungsberechtigten gültig "
@@ -2678,7 +2678,7 @@ msgstr "Fehlertyp: ${error_type}"
 #: src/zope/app/debugskin/unauthorized.pt:8
 #: src/zope/app/exception/browser/unauthorized.pt:7
 msgid "Unauthorized"
-msgstr "Unberechtigt"
+msgstr "Zugriff verweigert"
 
 #: src/zope/app/debugskin/unauthorized.pt:9
 msgid "You're not allowed in here."
@@ -3235,7 +3235,7 @@ msgstr "Ein Systemfehler ist aufgetreten."
 
 #: src/zope/app/exception/browser/unauthorized.pt:9
 msgid "You are not authorized"
-msgstr "Sie sind nicht bevollmächtigt"
+msgstr "Der Zugriff wurde verweigert."
 
 #: src/zope/app/externaleditor/configure.zcml:7
 msgid "External Edit"
@@ -5000,7 +5000,7 @@ msgstr "Rollen-Berechtigungen:"
 
 #: src/zope/app/securitypolicy/browser/configure.zcml:86
 msgid "Grant"
-msgstr "Gewähren"
+msgstr "Zugriffsrechte"
 
 #: src/zope/app/securitypolicy/browser/granting.pt:18
 msgid "Grants for the selected principal"
