@@ -1,0 +1,11 @@
+<configure xmlns="http://namespaces.zope.org/zope">
+
+  <include package="zope.security" file="meta.zcml" />
+
+  <permission
+      id="testpkg.TestPermission"
+      title="Test Permission"
+      description="This test permission is defined in ZCML"
+      />
+
+</configure>
