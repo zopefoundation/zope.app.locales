@@ -20,6 +20,7 @@ $Id$
 __docformat__ = 'restructuredtext'
 
 import os, sys, fnmatch
+import getopt
 import time
 import tokenize
 import traceback
@@ -436,12 +437,7 @@ def zcml_strings(dir, domain="zope", site_zcml=None):
     """Retrieve all ZCML messages from `dir` that are in the `domain`.
     """
     from zope.app.appsetup import config
-    import zope
     dirname = os.path.dirname
-    if site_zcml is None:
-        # TODO this assumes a checkout directory structure
-        site_zcml = os.path.join(dirname(dirname(dirname(zope.__file__))),
-                                 "site.zcml")
     context = config(site_zcml, features=("devmode",), execute=False)
     return context.i18n_strings.get(domain, {})
 
@@ -535,3 +531,136 @@ def tal_strings(dir, domain="zope", include_default_domain=False, exclude=()):
     for msgid, locations in catalog.items():
         catalog[msgid] = map(lambda l: (l[0], l[1][0]), locations)
     return catalog
+
+USAGE = """Program to extract internationalization markup from Python Code,
+Page Templates and ZCML.
+
+This tool will extract all findable message strings from all
+internationalizable files in your Zope code. It only extracts message
+IDs of the specified domain, except in Python code where it extracts
+*all* message strings (because it can't detect which domain they are
+created with).
+
+Usage: i18nextract -p PATH -s .../site.zcml [options]
+Options:
+    -p / --path <path>
+        Specifies the directory that is supposed to be searched for
+        modules (i.e. 'src').  This argument is mandatory.
+    -s / --site_zcml <path>
+        Specify the location of the root ZCML file to parse (typically
+        'site.zcml').  This argument is mandatory
+    -d / --domain <domain>
+        Specifies the domain that is supposed to be extracted (defaut: 'zope')
+    -e / --exclude-default-domain
+        Exclude all messages found as part of the default domain. Messages are
+        in this domain, if their domain could not be determined. This usually
+        happens in page template snippets.
+    -o dir
+        Specifies a directory, relative to the package in which to put the
+        output translation template.
+    -x dir
+        Specifies a directory, relative to the package, to exclude.
+        May be used more than once.
+    --python-only
+        Only extract message ids from Python
+    -h / --help
+        Print this message and exit.
+"""
+
+def usage(code, msg=''):
+    # Python 2.1 required
+    print >> sys.stderr, USAGE
+    if msg:
+        print >> sys.stderr, msg
+    sys.exit(code)
+
+def normalize_path(path):
+    """Normalize a possibly relative path or symlink"""
+    if path == os.path.abspath(path):
+        return path
+
+    # This is for symlinks. Thanks to Fred for this trick.
+    cwd = os.getcwd()
+    if os.environ.has_key('PWD'):
+        cwd = os.environ['PWD']
+    return os.path.normpath(os.path.join(cwd, path))
+
+def main(argv=None):
+    if argv is None:
+        argv = sys.argv[1:]
+
+    try:
+        opts, args = getopt.getopt(
+            argv,
+            'hd:s:i:p:o:x:',
+            ['help', 'domain=', 'site_zcml=', 'path=', 'python-only'])
+    except getopt.error, msg:
+        usage(1, msg)
+
+    domain = 'zope'
+    path = None
+    include_default_domain = True
+    output_dir = None
+    exclude_dirs = []
+    python_only = False
+    site_zcml = None
+    for opt, arg in opts:
+        if opt in ('-h', '--help'):
+            usage(0)
+        elif opt in ('-d', '--domain'):
+            domain = arg
+        elif opt in ('-s', '--site_zcml'):
+            if not os.path.exists(arg):
+                usage(1, 'The specified location for site.zcml does not exist')
+            site_zcml = normalize_path(arg)
+        elif opt in ('-e', '--exclude-default-domain'):
+            include_default_domain = False
+        elif opt in ('-o', ):
+            output_dir = arg
+        elif opt in ('-x', ):
+            exclude_dirs.append(arg)
+        elif opt in ('--python-only',):
+            python_only = True
+        elif opt in ('-p', '--path'):
+            if not os.path.exists(arg):
+                usage(1, 'The specified path does not exist.')
+            path = normalize_path(arg)
+
+    if path is None:
+        usage(1, 'You need to provide the module search path with -p PATH.')
+    sys.path.insert(0, path)
+
+    if site_zcml is None:
+        usage(1, "You need to provide the location of the root ZCML file \n"
+                 "(typically 'site.zcml') with -s .../site.zcml.")
+
+    # When generating the comments, we will not need the base directory info,
+    # since it is specific to everyone's installation
+    src_start = path.rfind('src')
+    base_dir = path[:src_start]
+
+    output_file = domain+'.pot'
+    if output_dir:
+        output_dir = os.path.join(path, output_dir)
+        if not os.path.exists(output_dir):
+            os.mkdir(output_dir)
+        output_file = os.path.join(output_dir, output_file)
+
+    print "base path: %r\n" \
+          "search path: %s\n" \
+          "'site.zcml' location: %s\n" \
+          "exclude dirs: %r\n" \
+          "domain: %r\n" \
+          "include default domain: %r\n" \
+          "output file: %r\n" \
+          "Python only: %r" \
+          % (base_dir, path, site_zcml, exclude_dirs, domain,
+             include_default_domain, output_file, python_only)
+
+    maker = POTMaker(output_file, path)
+    maker.add(py_strings(path, domain, exclude=exclude_dirs), base_dir)
+    if not python_only:
+        maker.add(zcml_strings(path, domain, site_zcml), base_dir)
+        maker.add(tal_strings(path, domain, include_default_domain,
+                              exclude=exclude_dirs), base_dir)
+    maker.write()

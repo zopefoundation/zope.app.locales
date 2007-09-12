@@ -15,9 +15,6 @@
 
 $Id$
 """
-
-import os
-
 from setuptools import setup, find_packages, Extension
 
 setup(name='zope.app.locales',
@@ -40,4 +37,8 @@ setup(name='zope.app.locales',
                         ],
       include_package_data = True,
       zip_safe = False,
+      entry_points="""
+      [console_scripts]
+      i18nextract = zope.app.locales.extract:main
+      """
       )
