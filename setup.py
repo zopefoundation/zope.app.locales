@@ -15,24 +15,41 @@
 
 $Id$
 """
-from setuptools import setup, find_packages, Extension
+import os
+from setuptools import setup, find_packages
+
+def read(*rnames):
+    return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
 setup(name='zope.app.locales',
       version = '3.4.0',
-      url='http://pypi.python.org/pypi/zope.app.locales',
-      license='ZPL 2.1',
-      description='Zope locale extraction and management utilities',
-      long_description=open('README.txt').read(),
       author='Zope Corporation and Contributors',
       author_email='zope3-dev@zope.org',
-      classifiers=['Environment :: Web Environment',
-                   'Intended Audience :: Developers',
-                   'License :: OSI Approved :: Zope Public License',
-                   'Programming Language :: Python',
-                   'Topic :: Software Development :: Internationalization',
-                   'Framework :: Zope3',
-                   ],
-
+      description='Zope locale extraction and management utilities',
+      long_description=(
+          read('README.txt')
+          + '\n\n' +
+          'Detailed Dcoumentation\n' +
+          '----------------------\n'
+          + '\n\n' +
+          read('src', 'zope', 'app', 'locales', 'TRANSLATE.txt')
+          + '\n\n' +
+          read('CHANGES.txt')
+          ),
+      keywords = "zope3 i18n l10n translation gettext",
+      classifiers = [
+          'Development Status :: 5 - Production/Stable',
+          'Environment :: Web Environment',
+          'Intended Audience :: Developers',
+          'License :: OSI Approved :: Zope Public License',
+          'Programming Language :: Python',
+          'Natural Language :: English',
+          'Operating System :: OS Independent',
+          'Topic :: Internet :: WWW/HTTP',
+          'Topic :: Software Development :: Internationalization',
+          'Framework :: Zope3'],
+      url='http://pypi.python.org/pypi/zope.app.locales',
+      license='ZPL 2.1',
       packages=find_packages('src'),
       package_dir = {'': 'src'},
       namespace_packages=['zope', 'zope.app'],
