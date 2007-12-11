@@ -2,10 +2,10 @@
 CHANGES
 =======
 
-3.4.1 (2007-??-??)
+3.4.1 (2007-12-12)
 ------------------
 
-* fixed and updated french translation
+* fixed and updated the french translation
 
 3.4.0 (2007-10-25)
 ------------------
