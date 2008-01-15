@@ -5069,7 +5069,7 @@ msgstr "Conteneur de sessions persistantes"
 
 #: src/zope/app/session/browser.zcml:31
 msgid "Stores session data in RAM"
-msgstr "Stocke le données de session en RAM"
+msgstr "Stocke les données de session en RAM"
 
 #: src/zope/app/session/browser.zcml:31
 msgid "RAM Session Data Container"
