@@ -5,12 +5,13 @@ CHANGES
 3.4.2 (unreleased)
 ------------------
 
-* ...
+* Fixed and updated Russian translation. Fixed issue #186628 (Typos and errors
+  in russian translation)
 
 3.4.1 (2007-12-12)
 ------------------
 
-* fixed and updated the french translation
+* Fixed and updated the french translation
 
 3.4.0 (2007-10-25)
 ------------------
