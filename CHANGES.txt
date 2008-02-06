@@ -2,7 +2,7 @@
 CHANGES
 =======
 
-3.4.2 (unreleased)
+3.4.2 (2008-02-06)
 ------------------
 
 * Fixed and updated Russian translation. Fixed issue #186628 (Typos and errors
