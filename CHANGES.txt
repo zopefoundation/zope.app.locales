@@ -5,7 +5,7 @@ CHANGES
 3.4.3 (unreleased)
 ------------------
 
-* ...
+* Updated Japanese translation
 
 3.4.2 (2008-02-06)
 ------------------
