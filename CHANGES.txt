@@ -2,7 +2,7 @@
 CHANGES
 =======
 
-3.4.4 (unreleased)
+3.4.4 (2008-03-05)
 ------------------
 
 * Updated Spanish translation
