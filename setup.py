@@ -22,7 +22,7 @@ def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
 setup(name='zope.app.locales',
-      version = '3.4.4dev',
+      version = '3.4.4',
       author='Zope Corporation and Contributors',
       author_email='zope3-dev@zope.org',
       description='Zope locale extraction and management utilities',
