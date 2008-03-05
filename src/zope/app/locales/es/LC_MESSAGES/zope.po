@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zope 3\n"
 "POT-Creation-Date: Mon May 22 13:53:11 2006\n"
-"PO-Revision-Date: 2008-02-19 14:12+0100\n"
+"PO-Revision-Date: 2008-02-22 19:42+0100\n"
 "Last-Translator: Lorenzo Gil Sánchez <lgs@sicem.biz>\n"
 "Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
 "MIME-Version: 1.0\n"
@@ -396,12 +396,12 @@ msgstr "No hay métodos en este clase."
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:200
 msgid "Mapping Items"
-msgstr "Administrar estados"
+msgstr "Elementos Mapeados"
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:206
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:248
 msgid "There are no items."
-msgstr "No hay interfaces implementados."
+msgstr "No hay elementos."
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:21
 msgid "&lt;no name&gt;"
@@ -425,7 +425,7 @@ msgstr "Padre: ${parent}"
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:36
 msgid "&lt;No Name&gt;"
-msgstr "&lt;Si Nombre&gt;"
+msgstr "&lt;Sin Nombre&gt;"
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:42
 msgid "Directly Provided Interfaces"
@@ -450,7 +450,7 @@ msgstr "No hay clases base."
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.zcml:46
 msgid "Introspector"
-msgstr "Entrevisor"
+msgstr "Introspector"
 
 #. Default: "Find"
 #: src/zope/app/apidoc/codemodule/browser/menu.pt:14
@@ -2049,7 +2049,7 @@ msgstr "Registros"
 #: src/zope/app/component/browser/configure.zcml:14
 #: src/zope/app/component/browser/configure.zcml:131
 msgid "Registration"
-msgstr "Registración"
+msgstr "Registros"
 
 #: src/zope/app/component/browser/configure.zcml:34
 msgid "Site-Management Folder"
@@ -4082,7 +4082,7 @@ msgstr "Ver Nombres de Módulos"
 #: src/zope/app/demo/menu/configure.zcml:278
 #: src/zope/app/zopetop/widget_macros.pt:237
 msgid "Help"
-msgstr "Auxilio"
+msgstr "Ayuda"
 
 #: src/zope/app/onlinehelp/browser/configure.zcml:7
 msgid "Menu for displaying help actions to be performed with popup"
@@ -6389,7 +6389,7 @@ msgstr "Título:"
 #: src/zope/dublincore/browser/configure.zcml:10
 #: src/zope/app/zopetop/widget_macros.pt:188
 msgid "Metadata"
-msgstr "Datos de meta"
+msgstr "Metadatos"
 
 #: src/zope/dublincore/browser/edit.pt:37
 msgid "Content Last Modified"
