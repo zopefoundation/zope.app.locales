@@ -1,20 +1,21 @@
 # Dutch translation for zope
 # Copyright (c) (c) 2005 Canonical Ltd, and Rosetta Contributors 2005
 # This file is distributed under the same license as the zope package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2005.
+# Marc Rijken <marc@rijken.org>, 2005"
+# Maurits van Rees <maurits@vanrees.org>, 2008"
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: zope\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: Wed Feb  1 15:36:55 2006\n"
-"PO-Revision-Date: 2005-08-15 20:48+0100\n"
-"Last-Translator: Marc Rijken <marc@rijken.org>\n"
+"PO-Revision-Date: 2008-04-23 23:42+0200\n"
+"Last-Translator: Maurits van Rees <maurits@vanrees.org>\n"
 "Language-Team: Dutch <nl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Rosetta-Version: 0.1\n"
+"X-Is-Fallback-For: nl-be nl-nl\n"
 
 #: securitypolicy.zcml:11
 msgid "All users have this role implicitly"
@@ -90,13 +91,12 @@ msgid "Testing"
 msgstr "Testen"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:161
-#, fuzzy
 msgid "The Test Browser"
-msgstr "Code Browser"
+msgstr "De testbrowser"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:167
 msgid "Using testbrowser On the Internet"
-msgstr ""
+msgstr "Testbrowser gebruiken op het internet"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:17
 msgid "Adapter Registry"
@@ -119,9 +119,8 @@ msgid "I18n and L10n"
 msgstr "I18n en L10n"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:205
-#, fuzzy
 msgid "Messages"
-msgstr "Bericht"
+msgstr "Berichten"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:215
 msgid "Cached Properties"
@@ -144,9 +143,8 @@ msgid "Persistent Framework"
 msgstr "Persistent Framework"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:252
-#, fuzzy
 msgid "Transactions"
-msgstr "Sub-Transacties"
+msgstr "Transacties"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:257
 #: src/zope/app/apidoc/bookmodule/book.zcml:301
@@ -160,7 +158,7 @@ msgstr "Zope Object Database (ZODB)"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:271
 msgid "Multiple Databases"
-msgstr ""
+msgstr "Meer dan een database"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:277
 #, fuzzy
@@ -399,7 +397,7 @@ msgstr "Methoden"
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:18
 msgid "Object Introspector: ${class-name} ( ${object-name} )"
-msgstr ""
+msgstr "Object zelfonderzoeker: ${class-name} ( ${object-name} )"
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:193
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:157
@@ -441,19 +439,19 @@ msgstr "Geen Naam"
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:42
 msgid "Directly Provided Interfaces"
-msgstr ""
+msgstr "Rechtstreeks verschafte interfaces"
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:56
 msgid "No interfaces are directly provided."
-msgstr ""
+msgstr "Er worden geen interfaces rechtstreeks verschaft."
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:62
 msgid "Provided Interfaces"
-msgstr ""
+msgstr "Verschafte interfaces"
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:78
 msgid "Bases"
-msgstr ""
+msgstr "Basisklassen"
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:96
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:35
@@ -462,7 +460,7 @@ msgstr "Er zijn geen basisklassen."
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.zcml:46
 msgid "Introspector"
-msgstr "Introspector"
+msgstr "Zelfonderzoeker"
 
 #: src/zope/app/apidoc/codemodule/browser/menu.pt:14
 #: src/zope/app/apidoc/codemodule/browser/static_menu.pt:17
@@ -502,7 +500,7 @@ msgstr "Zope 3 Code Browser"
 #: src/zope/app/apidoc/codemodule/browser/static_menu.pt:34
 #: src/zope/app/apidoc/ifacemodule/static_menu.pt:30
 msgid "Search results:"
-msgstr ""
+msgstr "Zoekresultaten:"
 
 #: src/zope/app/apidoc/codemodule/codemodule.py:38
 msgid "Code Browser"
@@ -640,7 +638,7 @@ msgstr ""
 # Default: "Access Online API documentation"
 #: src/zope/app/apidoc/configure.zcml:8
 msgid "zope.app.apidoc.UseAPIDoc"
-msgstr ""
+msgstr "Bekijk de online API documentatie"
 
 #: src/zope/app/apidoc/ifacemodule/browser.py:267
 #, fuzzy
@@ -669,11 +667,11 @@ msgstr "XML-RPC Views"
 
 #: src/zope/app/apidoc/ifacemodule/browser.py:276
 msgid "HTTP"
-msgstr ""
+msgstr "HTTP"
 
 #: src/zope/app/apidoc/ifacemodule/browser.py:277
 msgid "FTP"
-msgstr ""
+msgstr "FTP"
 
 #: src/zope/app/apidoc/ifacemodule/browser.py:278
 #, fuzzy
@@ -1314,12 +1312,12 @@ msgstr "Sluit server af"
 # Default: ""
 #: src/zope/app/applicationcontrol/browser/servercontrol.py:38
 msgid "The server will be restarted in ${number} seconds."
-msgstr ""
+msgstr "De server wordt herstart over ${number} seconden."
 
 # Default: ""
 #: src/zope/app/applicationcontrol/browser/servercontrol.py:42
 msgid "The server will be shutdown in ${number} seconds."
-msgstr ""
+msgstr "De server wordt gestopt over ${number} seconden."
 
 #: src/zope/app/applicationcontrol/browser/translationdomaincontrol.pt:16
 msgid "Domain"
@@ -1588,11 +1586,11 @@ msgstr "Groepmappen"
 
 #: src/zope/app/authentication/idpicker.py:101
 msgid "Ids must contain only printable 7-bit non-space ASCII characters"
-msgstr ""
+msgstr "Ids mogen alleen printbare 7-bit karakters zonder witruimte bevatten."
 
 #: src/zope/app/authentication/idpicker.py:106
 msgid "Ids can't be more than 100 characters long."
-msgstr ""
+msgstr "Ids mogen niet meer dan 100 karakters lang zijn."
 
 #: src/zope/app/authentication/interfaces.py:38
 msgid "Credentials Plugins"
@@ -2108,11 +2106,11 @@ msgstr "De opgegeven toolnaam is al in gebruik."
 
 #: src/zope/app/component/browser/tools.py:85
 msgid "Tools successfully installed."
-msgstr ""
+msgstr "Tools met success geïnstalleerd."
 
 #: src/zope/app/component/browser/tools.py:88
 msgid "Tools successfully uninstalled."
-msgstr ""
+msgstr "Tools met success gedeïnstalleerd."
 
 #: src/zope/app/component/browser/utilreg_details.pt:11
 msgid "component:"
@@ -3621,7 +3619,7 @@ msgstr "De browser:form directive"
 
 #: src/zope/app/form/browser/ftests/test_i18n.py:34
 msgid "A short description of the event."
-msgstr ""
+msgstr "Een korte beschrijving van de event."
 
 #: src/zope/app/form/browser/ftests/test_i18n.py:41
 msgid "A long description of the event."
@@ -3791,7 +3789,7 @@ msgstr "${application_id} Applicatie Manager Details"
 msgid ""
 "The database was updated to generation ${generation} for ${application}."
 msgstr ""
-"De database is gewijzigd om ${generation} te genereren voor ${application}."
+"De database is bijgewerkt naar generatie ${generation} voor ${application}."
 
 #: src/zope/app/generations/browser/managers.pt:23
 msgid "The database is up to date for ${application}."
@@ -4359,7 +4357,7 @@ msgstr "Directory voor de mailwachtrij"
 
 #: src/zope/app/mail/interfaces.py:114
 msgid "Queue Path"
-msgstr "Wachtijpad"
+msgstr "Wachtrijpad"
 
 #: src/zope/app/mail/interfaces.py:118
 msgid "Polling Interval"
@@ -4692,7 +4690,7 @@ msgstr "Klasse attribuut:"
 
 #: src/zope/app/presentation/interfaces.py:98
 msgid "The interface of the objects being viewed"
-msgstr ""
+msgstr "De interface van de objecten die bekeken worden"
 
 #: src/zope/app/presentation/pagereg_details.pt:12
 #: src/zope/app/apidoc/ifacemodule/presentation_macros.pt:72
@@ -4726,7 +4724,7 @@ msgstr "Principal Opmerkingen"
 
 #: src/zope/app/publisher/configure.zcml:18
 msgid "Creating HTTP Results"
-msgstr ""
+msgstr "HTTP-resultaten maken"
 
 #: src/zope/app/publisher/interfaces/browser.py:106
 msgid "Menu item ordering hint"
@@ -4801,7 +4799,7 @@ msgstr "Menu Id"
 
 #: src/zope/app/publisher/interfaces/browser.py:52
 msgid "The id uniquely identifies this menu."
-msgstr ""
+msgstr "Het id dat een unieke identificatie is voor dit menu."
 
 #: src/zope/app/publisher/interfaces/browser.py:57
 msgid "Menu title"
@@ -5119,7 +5117,7 @@ msgstr "Bezig met laden..."
 
 #: src/zope/app/schema/browser/__init__.py:28
 msgid "An error occurred"
-msgstr ""
+msgstr "Er is een fout opgetreden"
 
 #: src/zope/app/schema/browser/__init__.py:55
 msgid "Must select a field to delete"
@@ -5515,7 +5513,7 @@ msgstr "Je wordt doorgestuurd!"
 
 #: src/zope/app/security/browser/redirect.pt:15
 msgid "If you see this screen for more than 5 seconds, click here."
-msgstr ""
+msgstr "Als u dit scherm meer dan 5 seconden ziet, klik dan hier."
 
 #: src/zope/app/security/configure.zcml:102
 msgid "manage-site-permission"
@@ -6499,11 +6497,11 @@ msgstr "De broncode van de Page Template"
 
 #: src/zope/app/zptpage/interfaces.py:41
 msgid "Expand macros when editing"
-msgstr ""
+msgstr "Macro's expanderen bij het bewerken"
 
 #: src/zope/app/zptpage/interfaces.py:42
 msgid "Expand macros so that they all are shown in the code."
-msgstr ""
+msgstr "Macro's expanderen zodat ze allemaal getoond worden in de code."
 
 #: src/zope/app/zptpage/interfaces.py:48
 msgid "Evaluate Inline Code"
@@ -6532,15 +6530,15 @@ msgstr "Inhoud"
 
 #: src/zope/formlib/form.py:715
 msgid "There were errors"
-msgstr ""
+msgstr "Er waren fouten"
 
 #: src/zope/formlib/form.py:771
 msgid "Apply"
-msgstr ""
+msgstr "Toepassen"
 
 #: src/zope/formlib/form.py:793
 msgid "No changes"
-msgstr ""
+msgstr "Geen wijzigingen"
 
 #: src/zope/schema/_bootstrapinterfaces.py:43
 msgid "Required input is missing."
