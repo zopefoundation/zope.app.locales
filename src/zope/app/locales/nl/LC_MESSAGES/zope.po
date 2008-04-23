@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zope\n"
 "POT-Creation-Date: Mon Feb 04 19:17:17 2008\n"
-"PO-Revision-Date: 2008-04-24 00:45+0200\n"
+"PO-Revision-Date: 2008-04-24 01:13+0200\n"
 "Last-Translator: Maurits van Rees <maurits@vanrees.org>\n"
 "Language-Team: Dutch <nl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -1287,11 +1287,11 @@ msgstr "Regels"
 
 #: zope/app/error/browser/configure.zcml:35
 msgid "Error Logging Utility"
-msgstr "Fout logutility"
+msgstr "Foutlog utility"
 
 #: zope/app/error/browser/configure.zcml:35
 msgid "Error Reporting Utility for Logging Errors"
-msgstr "Fout Rapprtage Utility voor registreren van fouten"
+msgstr "Fout Rapportage Utility voor registreren van fouten"
 
 #: zope/app/applicationcontrol/browser/zodbcontrol.py:59
 msgid "Error: Invalid Number"
@@ -2736,7 +2736,7 @@ msgstr "Principal"
 
 #: zope/app/principalannotation/configure.zcml:21
 msgid "Principal Annotation Utility"
-msgstr "Pincipal Opmerkingenutility"
+msgstr "Principal Annotation Utility"
 
 #: zope/app/authentication/browser/principalfolder.zcml:14
 #: zope/app/authentication/principalfolder.zcml:50
@@ -4547,7 +4547,7 @@ msgstr "U kiest zowel toestaan en weigeren voor permissie \"${permission}\". Dit
 
 #: zope/app/container/browser/contents.py:267
 msgid "You didn't specify any ids to copy."
-msgstr "Je hebt geen id's opgegeven om te kopieren."
+msgstr "Je hebt geen id's opgegeven om te kopiëren."
 
 #: zope/app/container/browser/contents.py:304
 msgid "You didn't specify any ids to cut."
@@ -4895,7 +4895,7 @@ msgstr "annuleren"
 #. Default: "Copy"
 #: zope/app/container/browser/contents.pt:134
 msgid "container-copy-button"
-msgstr "kopieren"
+msgstr "kopiëren"
 
 #. Default: "Cut"
 #: zope/app/container/browser/contents.pt:130
