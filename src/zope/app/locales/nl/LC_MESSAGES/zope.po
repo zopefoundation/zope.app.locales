@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zope\n"
 "POT-Creation-Date: Mon Feb 04 19:17:17 2008\n"
-"PO-Revision-Date: 2008-04-23 23:42+0200\n"
+"PO-Revision-Date: 2008-04-24 00:45+0200\n"
 "Last-Translator: Maurits van Rees <maurits@vanrees.org>\n"
 "Language-Team: Dutch <nl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -23,9 +23,8 @@ msgstr ""
 "X-Is-Fallback-For: nl-be nl-nl\n"
 
 #: zope/app/apidoc/enabled.zcml:82
-#, fuzzy
 msgid "          These are all the preferences related to viewing the API          documentation."
-msgstr "          Dit zijn de voorkeuren voor het bekijken van de API documentatie."
+msgstr "         Dit zijn alle voorkeuren voor het bekijken van de API documentatie."
 
 #. Default: ""
 #: zope/app/file/image.py:78
@@ -64,7 +63,7 @@ msgstr "${lines} regels"
 
 #: zope/app/component/browser/siteregistration.pt:32
 msgid "${name} (moved or deleted)"
-msgstr ""
+msgstr "${name} (verplaatst of verwijderd)"
 
 #: zope/app/preference/browser.py:71
 msgid "${name} Preferences"
@@ -78,12 +77,12 @@ msgstr "${num} robot unit"
 #. Default: ""
 #: zope/app/component/browser/registration.py:125
 msgid "${provided} utility"
-msgstr ""
+msgstr "${provided} utility"
 
 #. Default: ""
 #: zope/app/component/browser/registration.py:122
 msgid "${provided} utility named '${name}'"
-msgstr ""
+msgstr "${provided} utility met de naam '${name}'"
 
 #. Default: ""
 #: zope/size/__init__.py:56
@@ -136,7 +135,7 @@ msgstr "(lezen)"
 
 #: zope/app/component/browser/registration.py:169
 msgid "(unknown name)"
-msgstr ""
+msgstr "(onbekende naam)"
 
 #: zope/app/component/vocabulary.py:296
 msgid "(unnamed utility)"
@@ -206,7 +205,7 @@ msgstr "<strong>Niet aangegeven</strong>&nbsp;"
 #: zope/app/apidoc/component.py:178
 #: zope/app/apidoc/component.py:186
 msgid "<unknown>"
-msgstr ""
+msgstr "<onbekend>"
 
 #: zope/app/catalog/browser/configure.zcml:8
 msgid "A Catalog allows indexing and searching of objects"
@@ -370,7 +369,7 @@ msgstr "Een utility die unieke id's aan objecten toekent"
 
 #: zope/viewlet/metadirectives.py:78
 msgid "A viewlet manager can provide an interface, which is used to lookup its contained viewlets."
-msgstr ""
+msgstr "Een viewletmanager kan een interface leveren die gebruikt wordt om zijn viewlets op te zoeken."
 
 #: zope/session/configure.zcml:102
 msgid "API"
@@ -418,7 +417,7 @@ msgstr ""
 
 #: zope/app/apidoc/ifacemodule/index.pt:72
 msgid "Adapters for objects providing this interface:"
-msgstr ""
+msgstr "Adapters voor objecten die deze interface leveren:"
 
 #: zope/app/apidoc/ifacemodule/index.pt:152
 msgid "Adapters that provide this interface:"
@@ -476,7 +475,7 @@ msgstr "Voeg een Python Pagina toe"
 
 #: zope/app/zcmlfiles/menus.zcml:31
 msgid "Add Registration"
-msgstr ""
+msgstr "Voeg registratie toe"
 
 #: zope/app/pluggableauth/browser/configure.zcml:38
 msgid "Add Simple User with details"
@@ -488,11 +487,11 @@ msgstr "Voeg Site Management map toe"
 
 #: zope/app/workflow/stateful/browser/addstate.pt:3
 msgid "Add State"
-msgstr ""
+msgstr "Voeg status toe"
 
 #: zope/app/workflow/stateful/browser/addtransition.pt:3
 msgid "Add Transition"
-msgstr ""
+msgstr "Voeg transitie toe"
 
 #: zope/app/component/browser/__init__.py:97
 msgid "Add Utility"
@@ -808,7 +807,7 @@ msgstr "Wijzigingsdatum ${datetime}"
 #: zope/app/schema/configure.zcml:208
 #: zope/app/schema/configure.zcml:208
 msgid "Choice Field"
-msgstr ""
+msgstr "Keuzeveld"
 
 #: zope/app/component/metadirectives.py:56
 #: zope/app/component/metadirectives.py:228
@@ -853,7 +852,7 @@ msgstr "Commandoregel"
 
 #: zope/app/component/browser/registration.py:212
 msgid "Comment"
-msgstr ""
+msgstr "Opmerking"
 
 #: zope/app/apidoc/bookmodule/book.zcml:52
 msgid "Component Architecture"
@@ -934,7 +933,7 @@ msgstr "Container veld"
 
 #: zope/app/homefolder/interfaces.py:69
 msgid "Container Type to create"
-msgstr ""
+msgstr "Containertype om te maken"
 
 #: zope/app/container/constraints.py:190
 msgid "Container is not a valid Zope container."
@@ -1056,7 +1055,7 @@ msgstr "Huidige Database Generatie"
 
 #: zope/app/workflow/stateful/browser/instance_manage.pt:42
 msgid "Current Status: ${status}"
-msgstr ""
+msgstr "Huidige status: ${status}"
 
 #: zope/app/cache/browser/cacheableedit.pt:16
 msgid "Currently the object uses ${cache_id_or_url}."
@@ -1088,7 +1087,7 @@ msgstr "Database Adapter - Test Verbinding"
 
 #: zope/app/applicationcontrol/browser/zodbcontrol.pt:19
 msgid "Database Name"
-msgstr ""
+msgstr "Databasenaam"
 
 #: zope/app/generations/browser/configure.zcml:6
 msgid "Database Schemas"
@@ -1105,7 +1104,7 @@ msgstr "Database generaties"
 #: zope/app/schema/configure.zcml:267
 #: zope/app/schema/configure.zcml:267
 msgid "Date Field"
-msgstr ""
+msgstr "Datum veld"
 
 #: zope/app/schema/configure.zcml:255
 #: zope/app/schema/configure.zcml:255
@@ -1115,7 +1114,7 @@ msgstr "Datum/tijd veld"
 #: zope/app/schema/configure.zcml:175
 #: zope/app/schema/configure.zcml:175
 msgid "Decimal Field"
-msgstr ""
+msgstr "Decimaal veld"
 
 #: zope/app/i18nfile/browser/file_edit.pt:40
 #: zope/app/i18nfile/browser/image_edit.pt:41
@@ -1169,7 +1168,7 @@ msgstr "Bestemmingsstate"
 
 #: zope/app/applicationcontrol/browser/runtimeinfo.pt:52
 msgid "Developer mode"
-msgstr ""
+msgstr "Ontwikkelaarsmodus"
 
 #: zope/app/schema/configure.zcml:243
 #: zope/app/schema/configure.zcml:243
@@ -1182,7 +1181,7 @@ msgstr "Afmetingen"
 
 #: zope/app/apidoc/codemodule/browser/introspector.pt:42
 msgid "Directly Provided Interfaces"
-msgstr "Rechtstreeks verschafte interfaces"
+msgstr "Rechtstreeks geleverde interfaces"
 
 #: zope/app/error/browser/errorentry.pt:60
 msgid "Display traceback as text"
@@ -1207,7 +1206,7 @@ msgstr "Domein"
 #: zope/app/schema/configure.zcml:329
 #: zope/app/schema/configure.zcml:329
 msgid "Dotted Name"
-msgstr ""
+msgstr "Naam met puntjes"
 
 #. Default: ""
 #: zope/app/applicationcontrol/browser/zodbcontrol.py:69
@@ -1296,7 +1295,7 @@ msgstr "Fout Rapprtage Utility voor registreren van fouten"
 
 #: zope/app/applicationcontrol/browser/zodbcontrol.py:59
 msgid "Error: Invalid Number"
-msgstr ""
+msgstr "Fout: ongeldig nummer"
 
 #: zope/app/error/browser/configure.zcml:13
 #: zope/app/error/browser/configure.zcml:26
@@ -1362,7 +1361,7 @@ msgstr "Macro's expanderen bij het bewerken"
 
 #: zope/app/workflow/browser/importexport_index.pt:21
 msgid "Export: <a href=\"@@export.html\">save as file</a>"
-msgstr ""
+msgstr "Export: <a href=\"@@export.html\">sla op als bestand</a>"
 
 #: zope/app/apidoc/ifacemodule/index.pt:104
 msgid "Extended Adapters"
@@ -1374,7 +1373,7 @@ msgstr "Uitgebreide browser Views"
 
 #: zope/app/rotterdam/simpleeditingrow.pt:3
 msgid "Extended Editor"
-msgstr ""
+msgstr "Uitgebreide editor"
 
 #: zope/app/apidoc/ifacemodule/interfaces.py:139
 msgid "Extended FTP Views"
@@ -1539,7 +1538,7 @@ msgstr "Voor interface"
 
 #: zope/sendmail/interfaces.py:173
 msgid "Force TLS"
-msgstr ""
+msgstr "Forceer TLS"
 
 #: zope/app/apidoc/bookmodule/book.zcml:177
 msgid "Form Parser"
@@ -1551,7 +1550,7 @@ msgstr "Formulierinvoer is geen bestandsobject"
 
 #: zope/app/apidoc/codemodule/browser/function_index.pt:6
 msgid "Function"
-msgstr ""
+msgstr "Functie"
 
 #: zope/app/apidoc/bookmodule/book.zcml:163
 msgid "Functional DocTest"
@@ -1820,7 +1819,7 @@ msgstr "Importeren en exporteren van berichten"
 
 #: zope/app/workflow/browser/importexport_index.pt:6
 msgid "Import was successfull!"
-msgstr ""
+msgstr "Import is gelukt~"
 
 #: zope/app/i18n/browser/configure.zcml:28
 #: zope/app/workflow/browser/configure.zcml:8
@@ -1829,7 +1828,7 @@ msgstr "Importeren/Exporteren"
 
 #: zope/app/workflow/browser/importexport_index.pt:13
 msgid "Import:"
-msgstr ""
+msgstr "Importeer:"
 
 #: zope/app/component/back35.py:56
 msgid "Inactive"
@@ -1950,7 +1949,7 @@ msgstr "Ongeldie datum/tijdgegevens"
 
 #: zope/app/form/browser/textwidgets.py:549
 msgid "Invalid decimal data"
-msgstr ""
+msgstr "Ongeldige decimale gegevens"
 
 #: zope/app/form/browser/textwidgets.py:536
 msgid "Invalid floating point data"
@@ -2353,7 +2352,7 @@ msgstr "Navigatie"
 
 #: zope/sendmail/interfaces.py:170
 msgid "Never use TLS for sending email."
-msgstr ""
+msgstr "Nooit TLS gebruiken voor het versturen van e-mail"
 
 #: zope/app/i18n/browser/translate.pt:46
 msgid "New Language:"
@@ -2377,7 +2376,7 @@ msgstr "Nieuwere Local"
 
 #: zope/sendmail/interfaces.py:169
 msgid "No TLS"
-msgstr ""
+msgstr "Geen TLS"
 
 #: zope/formlib/form.py:837
 msgid "No changes"
@@ -2402,7 +2401,7 @@ msgstr "Geen interface vereist."
 
 #: zope/app/apidoc/codemodule/browser/introspector.pt:56
 msgid "No interfaces are directly provided."
-msgstr "Er worden geen interfaces rechtstreeks verschaft."
+msgstr "Er worden geen interfaces rechtstreeks geleverd."
 
 #. Default: ""
 #: zope/app/pagetemplate/engine.py:125
@@ -2432,7 +2431,7 @@ msgstr "Opmerking: Dit zijn alleen interface die met de Interface Service zijn g
 
 #: zope/app/component/browser/siteregistration.pt:9
 msgid "Nothing is registered for this site."
-msgstr ""
+msgstr "Niets is geregistreerd voor deze site"
 
 #: zope/app/error/browser/error_config.pt:19
 msgid "Number of exceptions to keep"
@@ -2546,19 +2545,19 @@ msgstr "Verouderd"
 
 #: zope/app/workflow/browser/instance_index.pt:22
 msgid "Outgoing Transitions:"
-msgstr ""
+msgstr "Uitgaande transities:"
 
 #: zope/app/applicationcontrol/browser/zodbcontrol.pt:17
 msgid "Pack"
-msgstr ""
+msgstr "Onderhoud"
 
 #: zope/app/apidoc/codemodule/browser/module_index.pt:12
 msgid "Package"
-msgstr ""
+msgstr "Pakket"
 
 #: zope/app/apidoc/browser/notfound.pt:4
 msgid "Page Not Found"
-msgstr ""
+msgstr "Pagina niet gevonden"
 
 #: zope/app/onlinehelp/interfaces.py:64
 msgid "Parent Path"
@@ -2691,7 +2690,7 @@ msgstr "Poort van de SMTP service"
 
 #: zope/app/workflow/stateful/browser/instance_manage.pt:45
 msgid "Possible State Changes:"
-msgstr ""
+msgstr "Mogelijke statuswijzigingen"
 
 #: zope/app/basicskin/view_macros.pt:43
 #: zope/app/rotterdam/dialog_macros.pt:161
@@ -2800,7 +2799,7 @@ msgstr "Procesnummer"
 
 #: zope/app/apidoc/codemodule/browser/introspector.pt:62
 msgid "Provided Interfaces"
-msgstr "Verschafte interfaces"
+msgstr "Geleverde interfaces"
 
 #: zope/app/component/back35.py:294
 #: zope/app/component/back35.py:339
@@ -2901,7 +2900,7 @@ msgstr ""
 
 #: zope/app/component/browser/registration.py:246
 msgid "Register"
-msgstr ""
+msgstr "Registreer"
 
 #: zope/app/component/back35.py:331
 #: zope/app/component/browser/registration.py:204
@@ -2911,11 +2910,11 @@ msgstr "Registreer als"
 #. Default: ""
 #: zope/app/component/browser/registration.py:242
 msgid "Register a $classname"
-msgstr ""
+msgstr "Registreer een $classname"
 
 #: zope/app/authentication/browser/register.py:26
 msgid "Register a pluggable authentication utility"
-msgstr ""
+msgstr "Registreer een 'pluggable authentication utility'"
 
 #: zope/app/intid/browser/configure.zcml:14
 msgid "Registered Objects"
@@ -2944,7 +2943,7 @@ msgstr "Registraties"
 
 #: zope/app/component/browser/siteregistration.pt:12
 msgid "Registrations for this site:"
-msgstr ""
+msgstr "Registraties voor deze site:"
 
 #: zope/app/workflow/stateful/browser/configure.zcml:21
 msgid "Relevant Data Schema"
@@ -3291,20 +3290,20 @@ msgstr "Sourcepad"
 #: zope/app/form/browser/source.py:76
 #: zope/app/form/browser/source.py:107
 msgid "SourceDisplayWidget-invalid"
-msgstr ""
+msgstr "Ongeldige waarde"
 
 #. Default: "Selected"
 #: zope/app/form/browser/source.py:206
 #: zope/app/form/browser/source.py:229
 msgid "SourceDisplayWidget-label"
-msgstr ""
+msgstr "Geselecteerd"
 
 #. Default: "Nothing"
 #: zope/app/form/browser/source.py:65
 #: zope/app/form/browser/source.py:212
 #: zope/app/form/browser/source.py:222
 msgid "SourceDisplayWidget-missing"
-msgstr ""
+msgstr "Niets"
 
 #. Default: "Apply"
 #: zope/app/form/browser/source.py:268
@@ -3409,7 +3408,7 @@ msgstr "Stateful transitie"
 
 #: zope/app/workflow/stateful/browser/definition_states.pt:10
 msgid "States"
-msgstr ""
+msgstr "Statussen"
 
 #: zope/app/cache/browser/configure.zcml:20
 msgid "Statistics"
@@ -3421,7 +3420,7 @@ msgstr "Status"
 
 #: zope/app/workflow/browser/instance_index.pt:19
 msgid "Status: ${status}"
-msgstr ""
+msgstr "Status: ${status}"
 
 #: zope/app/principalannotation/configure.zcml:21
 msgid "Stores Annotations for Principals"
@@ -3503,7 +3502,7 @@ msgstr "Tekstveld"
 
 #: zope/app/apidoc/codemodule/browser/textfile_index.pt:11
 msgid "Text File"
-msgstr ""
+msgstr "Tekstbestand"
 
 #: zope/app/catalog/browser/configure.zcml:77
 #: zope/app/catalog/browser/configure.zcml:86
@@ -3707,7 +3706,7 @@ msgstr "De standaard interface voor deze view."
 
 #: zope/viewlet/metadirectives.py:77
 msgid "The interface this viewlet manager provides."
-msgstr ""
+msgstr "De interface die deze viewletmanager levert."
 
 #: zope/app/component/metadirectives.py:206
 msgid "The layer the resource is in."
@@ -3740,7 +3739,7 @@ msgstr ""
 
 #: zope/viewlet/metadirectives.py:49
 msgid "The name of the content provider."
-msgstr ""
+msgstr "De naam van de content provider"
 
 #: zope/app/workflow/stateful/browser/contentworkflow.py:43
 msgid "The name of the process that will be available for this content type. Feel free to select several at once."
@@ -3949,7 +3948,7 @@ msgstr "Er zijn geen annotaties die geïnspecteerd kunnen worden."
 
 #: zope/session/http.py:83
 msgid "Third party cookie"
-msgstr ""
+msgstr "Cookies van derden"
 
 #: zope/component/zcml.py:98
 msgid "This adapter is only available, if the principal has this permission."
@@ -3962,7 +3961,7 @@ msgstr "Deze attribuut geeft een hint voor het sorteren van de menu items. Norma
 #: zope/component/zcml.py:82
 #: zope/component/zcml.py:249
 msgid "This attribute specifies the interface the adapter instance must provide."
-msgstr ""
+msgstr "Dit attribuut specificeert de interface die de instantie van de adapter moet leveren."
 
 #: zope/app/cache/browser/cacheableedit.pt:6
 msgid "This edit form allows you to associate a cache with this object."
@@ -3994,23 +3993,23 @@ msgstr "Dit is een lijst van attributen die kan worden gewijzigd."
 
 #: zope/app/component/browser/__init__.py:156
 msgid "This is already a site"
-msgstr ""
+msgstr "Dit is al een site"
 
 #: zope/app/broken/broken.pt:12
 msgid "This is probably because the module of the class, ${module}, can't be found or because the name, ${name}, is no longer defined by the module."
-msgstr ""
+msgstr "Dit komt waarschijnlijk doordat de module van de class, ${module}, niet gevonden kan worden of doordat de naam, ${name}, niet langer gedefinieerd wordt door de module."
 
 #: zope/app/broken/broken.pt:6
 msgid "This object is broken because its class can not be found."
-msgstr ""
+msgstr "Dit object is gebroken omdat zijn class niet gevonden kan worden."
 
 #: zope/app/component/browser/registration.pt:15
 msgid "This object is registered:"
-msgstr ""
+msgstr "Dit object is geregistreerd:"
 
 #: zope/app/component/browser/registration.pt:8
 msgid "This object isn't yet registered."
-msgstr ""
+msgstr "Dit object is nog niet geregistreerd:"
 
 #: zope/app/error/browser/error.pt:11
 msgid "This page lists the exceptions that have occurred in this site recently."
@@ -4103,7 +4102,7 @@ msgstr "Transitie Items"
 
 #: zope/app/workflow/stateful/browser/definition_transitions.pt:10
 msgid "Transitions"
-msgstr ""
+msgstr "Transities"
 
 #: zope/app/i18n/browser/configure.zcml:10
 msgid "Translate"
@@ -4111,7 +4110,7 @@ msgstr "Vertaal"
 
 #: zope/pagetemplate/tests/test_htmltests.py:130
 msgid "Translate this!"
-msgstr ""
+msgstr "Vertaal dit!"
 
 #: zope/app/i18n/browser/configure.zcml:54
 msgid "Translation Domain"
@@ -4249,7 +4248,7 @@ msgstr "Draaitijd"
 
 #: zope/sendmail/interfaces.py:174
 msgid "Use TLS always for sending email."
-msgstr ""
+msgstr "Gebruik altijd TLS voor het versturen van e-mail"
 
 #: zope/app/authentication/interfaces.py:59
 msgid "Used for converting credentials to principals.\n        Names may be of ids of non-utility IAuthenticatorPlugins contained in\n        the IPluggableAuthentication, or names of registered\n        IAuthenticatorPlugins utilities.  Contained non-utility ids mask \n        utility names."
@@ -4323,7 +4322,7 @@ msgstr "Utilities"
 
 #: zope/app/applicationcontrol/browser/zodbcontrol.pt:18
 msgid "Utility Name"
-msgstr ""
+msgstr "Naam van utility"
 
 #: zope/app/preference/macros.pt:121
 #: zope/app/workflow/browser/instance_index.pt:38
@@ -4371,7 +4370,7 @@ msgstr "Bekijk Fout Log Rapport"
 
 #: zope/app/module/browser/browse_module.pt:3
 msgid "View Module Names"
-msgstr ""
+msgstr "Bekijk naam van modules"
 
 #: zope/app/onlinehelp/interfaces.py:88
 msgid "View Name"
@@ -4458,7 +4457,7 @@ msgstr "Aantal Woorden"
 
 #: zope/app/workflow/stateful/browser/instance_manage.pt:5
 msgid "Workflow Options"
-msgstr ""
+msgstr "Opties voor workflow"
 
 #: zope/app/workflow/stateful/interfaces.py:147
 msgid "Workflow-Relevant Data Schema"
@@ -4470,11 +4469,11 @@ msgstr ""
 
 #: zope/app/workflow/stateful/browser/instance_manage.pt:16
 msgid "Workflow:"
-msgstr ""
+msgstr "Workflow"
 
 #: zope/app/workflow/stateful/browser/instance_manage.pt:28
 msgid "Workflow: ${wf_title}"
-msgstr ""
+msgstr "Workflow: ${wf_title}"
 
 #: zope/app/workflow/stateful/browser/configure.zcml:144
 msgid "Workflows"
@@ -4544,7 +4543,7 @@ msgstr "Je hebt de inlogprocedure afgebroken."
 #. Default: ""
 #: zope/app/securitypolicy/browser/rolepermissionview.py:148
 msgid "You choose both allow and deny for permission \"${permission}\". This is not allowed."
-msgstr ""
+msgstr "U kiest zowel toestaan en weigeren voor permissie \"${permission}\". Dit is niet toegestaan."
 
 #: zope/app/container/browser/contents.py:267
 msgid "You didn't specify any ids to copy."
@@ -4584,7 +4583,7 @@ msgstr "ZAPI"
 
 #: zope/app/apidoc/codemodule/browser/zcmlfile_index.pt:56
 msgid "ZCML File"
-msgstr ""
+msgstr "ZCML bestand"
 
 #: zope/app/apidoc/zcmlmodule/__init__.py:120
 msgid "ZCML Reference"
@@ -4601,7 +4600,7 @@ msgstr "ZODB Controller"
 #. Default: ""
 #: zope/app/applicationcontrol/browser/zodbcontrol.py:66
 msgid "ZODB \"${name}\" successfully packed."
-msgstr ""
+msgstr "ZODB \"${name}\" met succes onderhouden."
 
 #: zope/app/zptpage/configure.zcml:12
 #: zope/app/zptpage/browser/configure.zcml:23
@@ -4805,7 +4804,7 @@ msgstr ""
 
 #: zope/app/container/dependency.py:28
 msgid "\nRemoval of object (${object}) which has dependents (${dependents})\nis not possible !\n\nYou must deactivate this object before trying to remove it.\n"
-msgstr ""
+msgstr "\nVerwijdering van object (${object}) dat afhankelijkheden heeft (${dependents})\nis niet mogelijk !\n\nU moet dit object deactiveren voordat u het verwijdert.\n"
 
 #: zope/app/securitypolicy/browser/granting.pt:46
 #: zope/app/securitypolicy/browser/granting.pt:72
@@ -4861,7 +4860,7 @@ msgstr "wijzigen en testen"
 #. Default: "Change"
 #: zope/app/workflow/stateful/browser/definition_edit.pt:53
 msgid "change-button"
-msgstr ""
+msgstr "Wijzig"
 
 #. Default: "Change security settings"
 #: zope/app/security/configure.zcml:87
@@ -4871,12 +4870,12 @@ msgstr "Wijzig beveiligingsinstellingen"
 #. Default: "Choose"
 #: zope/app/workflow/stateful/browser/instance_manage.pt:22
 msgid "choose-button"
-msgstr ""
+msgstr "Kies"
 
 #. Default: ""
 #: zope/app/component/browser/registration.py:115
 msgid "comment: ${comment}"
-msgstr ""
+msgstr "opmerking: ${comment}"
 
 #. Default: "Connect"
 #: zope/rdb/browser/rdbconnection.pt:36
@@ -4947,7 +4946,7 @@ msgstr "verbinding verbreken"
 
 #: zope/app/homefolder/browser.py:58
 msgid "dotted name is not correct !"
-msgstr ""
+msgstr "naam met puntjes is niet correct!"
 
 #. Default: "Edit"
 #: zope/app/i18n/browser/translate.pt:35
@@ -5053,7 +5052,7 @@ msgstr "inloggen"
 #. Default: "Make Transition"
 #: zope/app/workflow/stateful/browser/instance_manage.pt:57
 msgid "make-transition-button"
-msgstr ""
+msgstr "Maak transitie"
 
 #. Default: "Manage Application"
 #: zope/app/security/configure.zcml:123
@@ -5174,7 +5173,7 @@ msgstr "verversen"
 #. Default: "Register this object again"
 #: zope/app/component/browser/registration.pt:50
 msgid "register-again-button"
-msgstr ""
+msgstr "Registreer dit object weer"
 
 #. Default: "Register this object"
 #: zope/app/component/browser/registration.pt:9
