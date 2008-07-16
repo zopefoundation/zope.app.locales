@@ -2,9 +2,11 @@
 CHANGES
 =======
 
-3.4.5 (unreleased)
+3.4.5 (2008-07-16)
 ------------------
 
+* added filePattern parameter for tal_strings to be able to not only parse
+  "*.pt" files.
 * Updated Dutch translation
 
 3.4.4 (2008-03-05)

@@ -441,7 +441,11 @@ def zcml_strings(dir, domain="zope", site_zcml=None):
     context = config(site_zcml, features=("devmode",), execute=False)
     return context.i18n_strings.get(domain, {})
 
-def tal_strings(dir, domain="zope", include_default_domain=False, exclude=()):
+def tal_strings(dir,
+                domain="zope",
+                include_default_domain=False,
+                exclude=(),
+                filePattern='*.pt'):
     """Retrieve all TAL messages from `dir` that are in the `domain`.
 
       >>> from zope.app.locales import extract
@@ -480,6 +484,16 @@ def tal_strings(dir, domain="zope", include_default_domain=False, exclude=()):
       >>> extract.tal_strings(dir, domain='xml')
       {u'Link Content': [('...xml.pt', 8)]}
 
+    We also provide a file with a different file ending:
+
+      >>> testpt = open(os.path.join(dir, 'test.html'), 'w')
+      >>> testpt.write('<tal:block i18n:domain="html" i18n:translate="">html</tal:block>')
+      >>> testpt.close()
+
+      >>> extract.tal_strings(dir, domain='html', include_default_domain=True,
+      ...                     filePattern='*.html')
+      {'html': [('...test.html', 1)]}
+
     Cleanup
 
       >>> import shutil
@@ -497,7 +511,7 @@ def tal_strings(dir, domain="zope", include_default_domain=False, exclude=()):
         def write(self, s):
             pass
 
-    for filename in find_files(dir, '*.pt', exclude=tuple(exclude)):
+    for filename in find_files(dir, filePattern, exclude=tuple(exclude)):
         f = file(filename,'rb')
         start = f.read(6)
         f.close()
