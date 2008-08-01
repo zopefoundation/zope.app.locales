@@ -2,6 +2,11 @@
 CHANGES
 =======
 
+3.4.6dev (unreleased)
+---------------------
+
+* Fixed bug #227582 (bad size in zh_CN locale)
+
 3.4.5 (2008-07-16)
 ------------------
 

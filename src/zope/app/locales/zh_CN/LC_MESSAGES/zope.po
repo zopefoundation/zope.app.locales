@@ -6643,11 +6643,11 @@ msgstr "1 KB"
 
 #: src/zope/size/__init__.py:51
 msgid "${size} MB"
-msgstr "${size}MB"
+msgstr "${size} MB"
 
 #: src/zope/size/__init__.py:52
 msgid "${size} KB"
-msgstr "${SIZE}KB"
+msgstr "${size} KB"
 
 #: src/zope/traversing/browser/absoluteurl.py:28
 msgid ""
