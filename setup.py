@@ -22,7 +22,7 @@ def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
 setup(name='zope.app.locales',
-      version = '3.4.5',
+      version = '3.5.0dev',
       author='Zope Corporation and Contributors',
       author_email='zope3-dev@zope.org',
       description='Zope locale extraction and management utilities',
@@ -54,17 +54,21 @@ setup(name='zope.app.locales',
       package_dir = {'': 'src'},
       namespace_packages=['zope', 'zope.app'],
       install_requires=['setuptools',
-                        'zope.app.applicationcontrol',
-                        'zope.app.appsetup',
                         'zope.i18nmessageid',
                         'zope.interface',
-                        'zope.tal',
                         ],
-      extras_require = dict(test=['zope.testing']),
+      extras_require = dict(
+          test=['zope.testing'],
+          extract=[
+              'zope.tal',
+              'zope.app.applicationcontrol',
+              'zope.app.appsetup',
+              ],
+          ),
       include_package_data = True,
       zip_safe = False,
       entry_points="""
       [console_scripts]
-      i18nextract = zope.app.locales.extract:main
+      i18nextract = zope.app.locales.extract:main [extract]
       """
       )
