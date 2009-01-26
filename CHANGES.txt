@@ -2,8 +2,8 @@
 CHANGES
 =======
 
-3.5.0dev (unreleased)
----------------------
+3.5.0 (2009-01-26)
+------------------
 
 * Moved the dependencies of the extract console script into an `extract`
   extras_require to avoid runtime dependencies.
