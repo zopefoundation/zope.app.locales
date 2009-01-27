@@ -2,7 +2,7 @@
 CHANGES
 =======
 
-3.5.1 (unreleased)
+3.5.1 (2009-01-27)
 ------------------
 
 * Added missing dependency (zope.tal) for tests.
