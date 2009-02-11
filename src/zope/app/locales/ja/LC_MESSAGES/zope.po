@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: zope\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: Mon May 22 13:53:11 2006\n"
-"PO-Revision-Date: 2008-02-16 14:37+0900\n"
+"PO-Revision-Date: 2009-02-11 21:41+0900\n"
 "Last-Translator: Retsu <tyam@mac.com>\n"
 "Language-Team: Japanese <ja@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -91,7 +91,7 @@ msgstr "インターネット上でテストブラウザを使用"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:163
 msgid "Functional DocTest"
-msgstr "Functional DocTest"
+msgstr "ファンクショナルドックテスト"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:17
 msgid "Adapter Registry"
@@ -200,7 +200,7 @@ msgstr "グローバルコンポーネントアーキテクチャ"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:6
 msgid "Interfaces and Schemas"
-msgstr "インターフェースとスキーマ"
+msgstr "インタフェースとスキーマ"
 
 #: src/zope/app/apidoc/bookmodule/book.zcml:64
 msgid "Global CA (Socket Example)"
@@ -285,11 +285,11 @@ msgstr "認識されているサブクラスはありません。"
 
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:40
 msgid "Implemented Interfaces"
-msgstr "実装されているインターフェース"
+msgstr "実装されているインタフェース"
 
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:58
 msgid "There are no implemented interfaces."
-msgstr "実装されているインターフェースはありません。"
+msgstr "実装されているインタフェースはありません。"
 
 #: src/zope/app/apidoc/codemodule/browser/function_index.pt:10
 msgid "Signature"
@@ -325,7 +325,7 @@ msgstr "アトリビュート/プロパティ"
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:88
 #: src/zope/app/apidoc/codemodule/browser/class_index.pt:133
 msgid "Interface:"
-msgstr "インターフェース:"
+msgstr "インタフェース:"
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:141
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:182
@@ -387,11 +387,11 @@ msgstr "配列アイテム"
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:280
 msgid "Annotations"
-msgstr "アノーテーション"
+msgstr "アノテーション"
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:286
 msgid "There were no annotations or they were not inspectable."
-msgstr "アノーテーションがないか、もしくはイントロスペクトできません。"
+msgstr "アノテーションがないか、もしくはイントロスペクトできません。"
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:30
 msgid "Parent: ${parent}"
@@ -403,15 +403,15 @@ msgstr "&lt;名前無し&gt;"
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:42
 msgid "Directly Provided Interfaces"
-msgstr "動的に提供されているインターフェース"
+msgstr "動的に提供されているインタフェース"
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:56
 msgid "No interfaces are directly provided."
-msgstr "動的に提供されているインターフェースはありません。"
+msgstr "動的に提供されているインタフェースはありません。"
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:62
 msgid "Provided Interfaces"
-msgstr "提供されているインターフェース"
+msgstr "提供されているインタフェース"
 
 #: src/zope/app/apidoc/codemodule/browser/introspector.pt:78
 msgid "Bases"
@@ -507,7 +507,7 @@ msgstr ""
 "    モジュールの名前をクリックしてその中身を見ることができます。\n"
 "    クラスは一覧の中で太字で表わされます。\n"
 "\n"
-"    クラスのページには非常に大量の情報があります。そのベースクラスについてだけでなく、実装されているインターフェースやアトリビュート、メソッドがわかります。\n"
+"    クラスのページには非常に大量の情報があります。そのベースクラスについてだけでなく、実装されているインタフェースやアトリビュート、メソッドがわかります。\n"
 "    さらに実装する必要のあるメソッドやアトリビュート、アクセスに必要なパーミッションの一覧があります。\n"
 "    "
 
@@ -633,7 +633,7 @@ msgstr "要求:"
 #: src/zope/app/apidoc/ifacemodule/component_macros.pt:49
 #: src/zope/app/apidoc/ifacemodule/presentation_macros.pt:34
 msgid "No interface required."
-msgstr "インターフェースは要りません。"
+msgstr "インタフェースは要りません。"
 
 #: src/zope/app/apidoc/ifacemodule/component_macros.pt:55
 #: src/zope/app/apidoc/ifacemodule/presentation_macros.pt:41
@@ -642,7 +642,7 @@ msgstr "提供:"
 
 #: src/zope/app/apidoc/ifacemodule/component_macros.pt:62
 msgid "No interface provided."
-msgstr "インターフェースは提供されていません。"
+msgstr "インタフェースは提供されていません。"
 
 #: src/zope/app/apidoc/ifacemodule/component_macros.pt:68
 msgid "registration info:"
@@ -650,7 +650,7 @@ msgstr "登録情報:"
 
 #: src/zope/app/apidoc/ifacemodule/configure.zcml:81
 msgid "Interface Details"
-msgstr "インターフェースの詳細"
+msgstr "インタフェースの詳細"
 
 #: src/zope/app/apidoc/ifacemodule/iface_macros.pt:3
 msgid "(Attribute)"
@@ -678,7 +678,7 @@ msgstr "利用可能なビューはありません。"
 #: src/zope/app/apidoc/configure.zcml:37
 #: src/zope/app/apidoc/bookmodule/book.zcml:11
 msgid "Interfaces"
-msgstr "インターフェース"
+msgstr "インタフェース"
 
 #: src/zope/app/apidoc/ifacemodule/ifacemodule.py:55
 msgid ""
@@ -695,13 +695,13 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"    全ての使用されている重要なインターフェースはサイトマネージャを通して登録されます。\n"
+"    全ての使用されている重要なインタフェースはサイトマネージャを通して登録されます。\n"
 "    全てのアトリビュートを一覧にすることもできますが、量が多すぎてユーザが読む際に不便になります。\n"
-"    そのため、部分的に共通のモジュールパスがあるインターフェースは一緒にしました。\n"
+"    そのため、部分的に共通のモジュールパスがあるインタフェースは一緒にしました。\n"
 "\n"
-"    インターフェースのドキュメントもまた幅広い様々の情報を提供します。\n"
+"    インタフェースのドキュメントもまた幅広い様々の情報を提供します。\n"
 "    これには宣言されたアトリビュート/フィールドやメソッドはもちろん、\n"
-"    そのインターフェースを提供する利用可能なアダプタやユーティリティが含まれます。\n"
+"    そのインタフェースを提供する利用可能なアダプタやユーティリティが含まれます。\n"
 "    "
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:101
@@ -710,7 +710,7 @@ msgstr "関連しているアダプタ"
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:112
 msgid "There are no extended adapters registered for this interface."
-msgstr "このインターフェースに合う関連しているアダプタはありません。"
+msgstr "このインタフェースに合う関連しているアダプタはありません。"
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:125
 msgid "Generic Adapters"
@@ -722,11 +722,11 @@ msgstr "総称アダプタは登録されていません。"
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:149
 msgid "Adapters that provide this interface:"
-msgstr "このインターフェースを提供するアダプタ"
+msgstr "このインタフェースを提供するアダプタ"
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:161
 msgid "There are no adapters registered for this interface."
-msgstr "このインターフェースに合うアダプタはありません。"
+msgstr "このインタフェースに合うアダプタはありません。"
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:281
 msgid "Other Information"
@@ -734,15 +734,15 @@ msgstr "その他の情報"
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:288
 msgid "A list of factories that create objects implementing this interface."
-msgstr "このインターフェースを実装したオブジェクトを生成するファクトリの一覧"
+msgstr "このインタフェースを実装したオブジェクトを生成するファクトリの一覧"
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:29
 msgid "Base interfaces"
-msgstr "ベースインターフェース"
+msgstr "ベースインタフェース"
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:303
 msgid "A list of utilities that are registered to provide this interface."
-msgstr "このインターフェースを提供するために登録されたユーティリティの一覧。"
+msgstr "このインタフェースを提供するために登録されたユーティリティの一覧。"
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:316
 msgid "Classes"
@@ -750,11 +750,11 @@ msgstr "クラス"
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:318
 msgid "A list of classes that implement this interface. This might duplicate the entries in Utilities."
-msgstr "このインターフェースを実装したクラスの一覧。ユーティリティの項目と重複するかもしれません。"
+msgstr "このインタフェースを実装したクラスの一覧。ユーティリティの項目と重複するかもしれません。"
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:44
 msgid "There are no base interfaces."
-msgstr "ベースインターフェースはありません。"
+msgstr "ベースインタフェースはありません。"
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:59
 msgid "Adapters"
@@ -762,7 +762,7 @@ msgstr "アダプタ"
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:69
 msgid "Adapters where this interface is required:"
-msgstr "このインターフェースを要求するアダプタ"
+msgstr "このインタフェースを要求するアダプタ"
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:77
 msgid "Specific Adapters"
@@ -770,7 +770,7 @@ msgstr "特定しているアダプタ"
 
 #: src/zope/app/apidoc/ifacemodule/index.pt:88
 msgid "There are no specific adapters registered for this interface."
-msgstr "このインターフェースを特定しているアダプタはありません。"
+msgstr "このインタフェースを特定しているアダプタはありません。"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:103
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:121
@@ -880,27 +880,27 @@ msgstr ""
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:37
 msgid "Specific Required Interface Adapters"
-msgstr "インターフェースを特定して要求するアダプタ"
+msgstr "インタフェースを特定して要求するアダプタ"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:38
 msgid "Show specific required interface adapters"
-msgstr "インターフェースを特定して要求するアダプタを表示する"
+msgstr "インタフェースを特定して要求するアダプタを表示する"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:43
 msgid "Extended Required Interface Adapters"
-msgstr "インターフェースを間接的に要求するアダプタ"
+msgstr "インタフェースを間接的に要求するアダプタ"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:44
 msgid "Show extended required interface adapters"
-msgstr "インターフェースを間接的に要求するアダプタを表示する"
+msgstr "インタフェースを間接的に要求するアダプタを表示する"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:49
 msgid "Generic Required Interface Adapters"
-msgstr "インターフェースを総称して要求するアダプタ"
+msgstr "インタフェースを総称して要求するアダプタ"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:50
 msgid "Show generic required interface adapters"
-msgstr "インターフェースを総称して要求するアダプタを表示する"
+msgstr "インタフェースを総称して要求するアダプタを表示する"
 
 #: src/zope/app/apidoc/ifacemodule/interfaces.py:55
 msgid "Browser Views"
@@ -973,12 +973,12 @@ msgstr "名前だけ検索"
 #: src/zope/app/apidoc/ifacemodule/menu.pt:36
 #: src/zope/app/apidoc/ifacemodule/static_menu.pt:46
 msgid "Note: These are only interfaces that are registered with the site manager."
-msgstr "注:これらはサイトマネージャに登録されたインターフェースだけです。"
+msgstr "注:これらはサイトマネージャに登録されたインタフェースだけです。"
 
 #: src/zope/app/apidoc/ifacemodule/menu.pt:8
 #: src/zope/app/apidoc/ifacemodule/static_menu.pt:9
 msgid "Interface Finder:"
-msgstr "インターフェース検索:"
+msgstr "インタフェース検索:"
 
 #: src/zope/app/apidoc/ifacemodule/presentation_macros.pt:16
 msgid "presentation type:"
@@ -1002,7 +1002,7 @@ msgstr "パーミッション:"
 
 #: src/zope/app/apidoc/typemodule/type.py:100
 msgid "Interface Types"
-msgstr "インターフェース型"
+msgstr "インタフェース型"
 
 #: src/zope/app/apidoc/typemodule/type.py:103
 msgid ""
@@ -1014,9 +1014,9 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"    ここでは全ての登録されたインターフェースタイプをみることができます。\n"
-"    インターフェースタイプのサブツリーを展開すると、そのタイプの提供する全インターフェースを確認できます。\n"
-"    全てのコンテンツタイプのインターフェースを確かめる場合などに非常に便利です。\n"
+"    ここでは全ての登録されたインタフェースタイプをみることができます。\n"
+"    インタフェースタイプのサブツリーを展開すると、そのタイプの提供する全インタフェースを確認できます。\n"
+"    全てのコンテンツタイプのインタフェースを確かめる場合などに非常に便利です。\n"
 "    "
 
 #: src/zope/app/apidoc/utilities.py:172
@@ -1048,7 +1048,7 @@ msgid ""
 msgstr ""
 "\n"
 "    ユーティリティはサイトマネージャに整理して登録されるので、簡単に利用可能なユーティリティの一覧を作ることができます。\n"
-"    ユーティリティは提供するインターフェースと名前を使って識別されます。名前は空にできます。\n"
+"    ユーティリティは提供するインタフェースと名前を使って識別されます。名前は空にできます。\n"
 "    メニューにはユーティリティが提供するインターフェースの一覧が表示され、その下にはさまざまな実装の名前が表示されます。\n"
 "\n"
 "    さらに、ユーティリティのページではそのユーティリティが提供する全てのアトリビュートとフィールド、メソッドが一覧表示され、実装へのリンクが示されます。\n"
@@ -1083,9 +1083,9 @@ msgstr ""
 "    メニューには名前空間ごとにディレクティブをまとめたツリーを表示します。\n"
 "\n"
 "    それぞれのディレクティブのページで全ての利用可能なアトリビュートとそれらの意味合いがわかります。\n"
-"    またそのディレクティブが認めたインターフェースへのリンクがあります。\n"
+"    またそのディレクティブが認めたインタフェースへのリンクがあります。\n"
 "    もし可能であれば、さらにそのディレクティブが宣言されたファイルを示します。\n"
-"    最後に、利用可能なサブディレクティブの一覧があれば、さらにそれらを実装したインターフェースと有効なアトリビュートの一覧も表示します。\n"
+"    最後に、利用可能なサブディレクティブの一覧があれば、さらにそれらを実装したインタフェースと有効なアトリビュートの一覧も表示します。\n"
 "    "
 
 #: src/zope/app/apidoc/zcmlmodule/index.pt:22
@@ -1810,12 +1810,12 @@ msgstr "フィールドインデックス"
 #: src/zope/app/component/metadirectives.py:297
 #: src/zope/component/zcml.py:439
 msgid "Interface"
-msgstr "インターフェース"
+msgstr "インタフェース"
 
 #: src/zope/app/catalog/interfaces.py:65
 #: src/zope/app/catalog/text.py:34
 msgid "Objects will be adapted to this interface"
-msgstr "オブジェクトはこのインターフェースに変換されます。"
+msgstr "オブジェクトはこのインタフェースに変換されます。"
 
 #: src/zope/app/catalog/interfaces.py:71
 #: src/zope/app/catalog/text.py:41
@@ -1839,11 +1839,11 @@ msgstr "もしTrueなら、インデックス化する値を得るためにフ�
 
 #: src/zope/app/component/back35.py:100
 msgid "Component Interface"
-msgstr "コンポーネントインターフェース"
+msgstr "コンポーネントインタフェース"
 
 #: src/zope/app/component/back35.py:101
 msgid "The interface the component provides through this registration."
-msgstr "コンポーネントがこの登録で提供するインターフェース"
+msgstr "コンポーネントがこの登録で提供するインタフェース"
 
 #: src/zope/app/component/back35.py:107
 msgid "The permission needed to use the component"
@@ -1859,30 +1859,30 @@ msgstr "登録マネージャはコンポーネントの登録をすべて記録
 
 #: src/zope/app/component/back35.py:279
 msgid "For interface"
-msgstr "このインターフェースに"
+msgstr "このインタフェースに"
 
 #: src/zope/app/component/back35.py:280
 msgid "The interface of the objects being adapted"
-msgstr "変換されるオブジェクトのインターフェース"
+msgstr "変換されるオブジェクトのインタフェース"
 
 #: src/zope/app/component/back35.py:287
 msgid "With interfaces"
-msgstr "このインターフェースと"
+msgstr "このインタフェースと"
 
 #: src/zope/app/component/back35.py:288
 msgid "Additionally required interfaces"
-msgstr "他に必要なインターフェース"
+msgstr "他に必要なインタフェース"
 
 #: src/zope/app/component/back35.py:295
 #: src/zope/app/component/back35.py:340
 #: src/zope/app/component/browser/registration.py:199
 #: src/zope/component/zcml.py:371
 msgid "Provided interface"
-msgstr "提供するインターフェース"
+msgstr "提供するインタフェース"
 
 #: src/zope/app/component/back35.py:296
 msgid "The interface provided"
-msgstr "インターフェースが提供されました"
+msgstr "インタフェースが提供されました"
 
 #: src/zope/app/component/back35.py:302
 #: src/zope/component/zcml.py:104
@@ -1914,7 +1914,7 @@ msgstr "認知されているユーティリティの名前"
 #: src/zope/app/component/back35.py:341
 #: src/zope/app/component/browser/registration.py:200
 msgid "The interface provided by the utility"
-msgstr "ユーティリティから提供されたインターフェース"
+msgstr "ユーティリティから提供されたインタフェース"
 
 #: src/zope/app/component/back35.py:57
 msgid "Inactive"
@@ -2051,7 +2051,7 @@ msgid ""
 "        views that support other views."
 msgstr ""
 "\n"
-"        ビューはインターフェースを提供することができます。\n"
+"        ビューはインタフェースを提供することができます。\n"
 "        この特徴は他のビューをサポートするビューに使われます。"
 
 #: src/zope/app/component/metadirectives.py:119
@@ -2072,7 +2072,7 @@ msgstr "ID"
 #: src/zope/app/component/metadirectives.py:140
 #: src/zope/app/component/metadirectives.py:316
 msgid "Text suitable for use in the 'add content' menu of a management interface"
-msgstr "管理インターフェースの'add content'メニューでの使用に適するテキスト"
+msgstr "管理インタフェースの'add content'メニューでの使用に適するテキスト"
 
 #: src/zope/app/component/metadirectives.py:147
 #: src/zope/app/component/metadirectives.py:323
@@ -2086,7 +2086,7 @@ msgstr "ファクトリ"
 
 #: src/zope/app/component/metadirectives.py:173
 msgid "The interface this view is the default for."
-msgstr "このビューのデフォルトインターフェース"
+msgstr "このビューのデフォルトインタフェース"
 
 #: src/zope/app/component/metadirectives.py:174
 msgid ""
@@ -2097,8 +2097,8 @@ msgid ""
 "        for all objects."
 msgstr ""
 "\n"
-"        デフォルトのビューが宣言されているインターフェースを指定します。\n"
-"        このインターフェースを実装するすべてのオブジェクトは、このデフォルト設定を使います。\n"
+"        デフォルトのビューが宣言されているインタフェースを指定します。\n"
+"        このインタフェースを実装するすべてのオブジェクトは、このデフォルト設定を使います。\n"
 "        このアトリビュートを指定しないと、すべてのオブジェクトに有効になります。"
 
 #: src/zope/app/component/metadirectives.py:190
@@ -2111,7 +2111,7 @@ msgstr "ユーザがパーミッションを持っている場合に許可され
 
 #: src/zope/app/component/metadirectives.py:224
 msgid "One or more interfaces"
-msgstr "ひとつ以上のインターフェース"
+msgstr "ひとつ以上のインタフェース"
 
 #: src/zope/app/component/metadirectives.py:236
 msgid ""
@@ -2140,7 +2140,7 @@ msgstr "変更可能なアトリビュートのリストです。"
 
 #: src/zope/app/component/metadirectives.py:260
 msgid "The listed interfaces' methods and attributes can be accessed."
-msgstr "記載されたインターフェースのメソッドとアトリビュートはアクセス可能です。"
+msgstr "記載されたインタフェースのメソッドとアトリビュートはアクセス可能です。"
 
 #: src/zope/app/component/metadirectives.py:267
 msgid "The attributes specified by the schema can be set"
@@ -2194,7 +2194,7 @@ msgid ""
 "This should be a list of interfaces or classes\n"
 "        "
 msgstr ""
-"インターフェースまたはクラスのリストでなければなりません。\n"
+"インタフェースまたはクラスのリストでなければなりません。\n"
 "        "
 
 #: src/zope/app/component/metadirectives.py:50
@@ -2240,7 +2240,7 @@ msgstr ""
 #: src/zope/app/component/metadirectives.py:72
 #: src/zope/app/component/metadirectives.py:197
 msgid "Interface that is also allowed if user has permission."
-msgstr "ユーザーがパーミッションを持っている場合に許可されるインターフェース"
+msgstr "ユーザがパーミッションを持っている場合に許可されるインタフェース"
 
 #: src/zope/app/component/metadirectives.py:73
 msgid ""
@@ -2254,9 +2254,9 @@ msgid ""
 "        whitespace."
 msgstr ""
 "\n"
-"        デフォルトでは、'permission'はビューとサブビューを見る時だけに適用されます。このアトリビュートを設定することで、与えられたインターフェース内に書かれているものすべてにこのパーミッションを適用することができます。\n"
+"        デフォルトでは、'permission'はビューとサブビューを見る時だけに適用されます。このアトリビュートを設定することで、与えられたインタフェース内に書かれているものすべてにこのパーミッションを適用することができます。\n"
 "\n"
-"        インターフェースが複数の場合は、空白で区切って提供しまうす。"
+"        インタフェースが複数の場合は、空白で区切って提供しまうす。"
 
 #: src/zope/app/component/metadirectives.py:86
 msgid "View attributes that are also allowed if the user has permission."
@@ -2570,7 +2570,7 @@ msgstr "ZMI設定"
 
 #: src/zope/app/demo/skinpref/configure.zcml:10
 msgid "         In this category you will find all preferences related to the Zope         Management Interface (ZMI).         "
-msgstr "         このカテゴリーではZope マネージメント インターフェース(ZMI)への全ての優先関係をみつけられるでしょう         "
+msgstr "         このカテゴリーではZope マネージメント インタフェース(ZMI)への全ての優先関係をみつけられるでしょう         "
 
 #: src/zope/app/demo/skinpref/configure.zcml:20
 msgid "Skin Selection"
@@ -3394,7 +3394,7 @@ msgstr "データベーススキーマ"
 
 #: src/zope/app/generations/browser/managerdetails.pt:19
 msgid "Evolver from Generation ${from} to Generation ${to}"
-msgstr "${from}ジェネレーションから${to}ジェネレーションへのイボルバ"
+msgstr "${from}世代から${to}世代への進化スクリプト"
 
 #: src/zope/app/generations/browser/managerdetails.pt:9
 msgid "${application_id} Application Manager Details"
@@ -3402,7 +3402,7 @@ msgstr "${application_id}アプリケーションマネージャ詳細"
 
 #: src/zope/app/generations/browser/managers.pt:18
 msgid "The database was updated to generation ${generation} for ${application}."
-msgstr "データベースは ${application}の${generation}ジェネレーションにアップデートされました。"
+msgstr "データベースは ${application}の${generation}世代にアップデートされました。"
 
 #: src/zope/app/generations/browser/managers.pt:23
 msgid "The database is up to date for ${application}."
@@ -3414,15 +3414,15 @@ msgstr "アプリケーション"
 
 #: src/zope/app/generations/browser/managers.pt:33
 msgid "Minimum Generation"
-msgstr "最小ジェネレーション"
+msgstr "最小世代"
 
 #: src/zope/app/generations/browser/managers.pt:34
 msgid "Maximum Generation"
-msgstr "最大ジェネレーション"
+msgstr "最大世代"
 
 #: src/zope/app/generations/browser/managers.pt:35
 msgid "Current Database Generation"
-msgstr "現在のデータベースジェネレーション"
+msgstr "現在のデータベース世代"
 
 #: src/zope/app/generations/browser/managers.pt:36
 msgid "Evolve?"
@@ -3434,11 +3434,11 @@ msgstr "いいえ、最新です。"
 
 #: src/zope/app/generations/browser/managers.pt:8
 msgid "Database generations"
-msgstr "データベースジェネレーション"
+msgstr "データベース世代"
 
 #: src/zope/app/generations/configure.zcml:28
 msgid "Generations"
-msgstr "ジェネレーション"
+msgstr "世代"
 
 #: src/zope/app/homefolder/browser.py:43
 msgid "path is not correct !"
@@ -3772,7 +3772,7 @@ msgstr "zope.app.introspector.Introspect"
 
 #: src/zope/app/introspector/configure.zcml:6
 msgid "       Use the object-introspection facility to discover       and browse interfaces and classes.       "
-msgstr "       インターフェースやクラスを探したり見るのにはオブジェクトのイントロスペクション機能を使います。       "
+msgstr "       インタフェースやクラスを探したり見るのにはオブジェクトのイントロスペクション機能を使います。       "
 
 #. Default: "Modify"
 #: src/zope/app/introspector/introspector.pt:190
@@ -3781,7 +3781,7 @@ msgstr "変更"
 
 #: src/zope/app/introspector/introspector.pt:27
 msgid "Interface Browser"
-msgstr "インターフェースブラウザ"
+msgstr "インタフェースブラウザ"
 
 #. Default: "Attributes"
 #: src/zope/app/introspector/introspector.pt:67
@@ -3795,7 +3795,7 @@ msgstr "メソッド"
 
 #: src/zope/app/introspector/marker.pt:108
 msgid "Remove Interfaces:"
-msgstr "インターフェースを除去:"
+msgstr "インタフェースを除去:"
 
 #. Default: "Remove"
 #: src/zope/app/introspector/marker.pt:117
@@ -3804,7 +3804,7 @@ msgstr "削除"
 
 #: src/zope/app/introspector/marker.pt:123
 msgid "Add Interfaces:"
-msgstr "インターフェースを追加:"
+msgstr "インタフェースを追加:"
 
 #: src/zope/app/introspector/marker.pt:26
 #: src/zope/app/introspector/introspector.pt:108
@@ -3832,12 +3832,12 @@ msgstr "モジュール"
 #: src/zope/app/introspector/marker.pt:73
 #: src/zope/app/introspector/introspector.pt:153
 msgid "Interfaces from Class"
-msgstr "クラスからのインターフェース"
+msgstr "クラスからのインタフェース"
 
 #: src/zope/app/introspector/marker.pt:91
 #: src/zope/app/introspector/introspector.pt:172
 msgid "Interfaces from Object"
-msgstr "オブジェクトからのインターフェース"
+msgstr "オブジェクトからのインタフェース"
 
 #: src/zope/app/keyreference/configure.zcml:26
 msgid "Persistent Key References"
@@ -3952,7 +3952,7 @@ msgstr "オンラインヘルプ"
 
 #: src/zope/app/onlinehelp/help/configure.zcml:28
 msgid "User interface ZMI"
-msgstr "ユーザインターフェイス ZMI"
+msgstr "ユーザインタフェース ZMI"
 
 #: src/zope/app/onlinehelp/help/configure.zcml:35
 msgid "Samples"
@@ -4028,11 +4028,11 @@ msgstr "ヘルプトピックの定義へのパス"
 
 #: src/zope/app/onlinehelp/interfaces.py:77
 msgid "Object Interface"
-msgstr "オブジェクトインターフェイス"
+msgstr "オブジェクトインタフェース"
 
 #: src/zope/app/onlinehelp/interfaces.py:78
 msgid "Interface for which this Help Topic is registered."
-msgstr "このヘルプトピックのためのインターフェースは登録されている。"
+msgstr "このヘルプトピックのためのインタフェースは登録されている。"
 
 #: src/zope/app/onlinehelp/interfaces.py:83
 msgid "View Name"
@@ -4331,11 +4331,11 @@ msgstr "リストラクチャード(ReST)ソース"
 
 #: src/zope/app/renderer/stx.py:36
 msgid "Structured Text (STX)"
-msgstr "構造化テキスト(STX)"
+msgstr "ストラクチャードテキスト(STX)"
 
 #: src/zope/app/renderer/stx.py:37
 msgid "Structured Text (STX) Source"
-msgstr "構造化テキスト(STX)ソース"
+msgstr "ストラクチャードテキスト(STX)ソース"
 
 #: src/zope/app/rotterdam/dialog_macros.pt:11
 msgid "Z3 UI"
@@ -4572,7 +4572,7 @@ msgstr "IDフィールド"
 
 #: src/zope/app/schema/fields.zcml:293
 msgid "Interface Field"
-msgstr "インターフェースフィールド"
+msgstr "インタフェースフィールド"
 
 #: src/zope/app/schema/fields.zcml:38
 msgid "Container Field"
@@ -4649,11 +4649,11 @@ msgstr "コンテンツコンポーネントの定義"
 #: src/zope/app/schemacontent/interfaces.py:38
 #: src/zope/app/introspector/introspector.pt:32
 msgid "interface-component"
-msgstr "インターフェース"
+msgstr "インタフェース"
 
 #: src/zope/app/schemacontent/interfaces.py:39
 msgid "Specifies the interface this menu item is for."
-msgstr "このメニューアイテムのインターフェースを指定する"
+msgstr "このメニューアイテムのインタフェースを指定する"
 
 #: src/zope/app/schemacontent/interfaces.py:46
 msgid "Specifies the menu this menu item will be added to."
@@ -5196,7 +5196,7 @@ msgstr "下のリストから1つまたは複数のトランザクションを�
 
 #: src/zope/app/undo/undo_all.pt:8
 msgid "This form lets you undo all transactions initiated by any user."
-msgstr "このフォームでは、あらゆるユーザーが行った全てのトランザクションを取り消すことができます。"
+msgstr "このフォームでは、あらゆるユーザが行った全てのトランザクションを取り消すことができます。"
 
 #: src/zope/app/undo/undo_macros.pt:102
 msgid "View ${number} earlier transactions"
@@ -5336,7 +5336,7 @@ msgstr "アクション実行時にユーザーが記録したメッセージ。
 
 #: src/zope/app/versioncontrol/interfaces.py:246
 msgid "id of the user causing the audited action"
-msgstr "観察されたアクションを実行したユーザーのid"
+msgstr "観察されたアクションを実行したユーザのid"
 
 #: src/zope/app/versioncontrol/interfaces.py:249
 msgid "path to the object upon which the action was taken"
@@ -5475,11 +5475,11 @@ msgstr "トランジションの編集"
 
 #: src/zope/app/workflow/stateful/browser/configure.zcml:108
 msgid "Stateful Transition"
-msgstr "ステートフル・トランジション"
+msgstr "ステートフルトランジション"
 
 #: src/zope/app/workflow/stateful/browser/configure.zcml:121
 msgid "Content Workflows Manager"
-msgstr "コンテンツ・ワークフロー・マネージャー"
+msgstr "コンテンツワークフローマネージャ"
 
 #: src/zope/app/workflow/stateful/browser/configure.zcml:121
 msgid "An utility to manage content and workflow interaction."
@@ -5515,7 +5515,7 @@ msgstr "トランジション一覧"
 
 #: src/zope/app/workflow/stateful/browser/configure.zcml:7
 msgid "A stateful workflow process definition"
-msgstr "ステートフル・ワークフロープロセスの定義"
+msgstr "ステートフルワークフロープロセスの定義"
 
 #: src/zope/app/workflow/stateful/browser/configure.zcml:7
 msgid "Stateful Process Definition"
@@ -5535,7 +5535,7 @@ msgstr "対応を削除しました。"
 
 #: src/zope/app/workflow/stateful/browser/contentworkflow_registry.pt:15
 msgid "This screen let's you specify which content types (by interface) can receive which workflows (process definitions)."
-msgstr "このスクリーンはどのコンテンツタイプ(インターフェースによって)がどのワークフロー (プロセス定義)を受け取ることができるのかを定義します。"
+msgstr "このスクリーンはどのコンテンツタイプ(インタフェースによって)がどのワークフロー (プロセス定義)を受け取ることができるのかを定義します。"
 
 #: src/zope/app/workflow/stateful/browser/contentworkflow_registry.pt:20
 msgid "Available Mappings"
@@ -5841,7 +5841,7 @@ msgstr "ZPT ページ"
 #: src/zope/app/zptpage/configure.zcml:12
 #: src/zope/app/zptpage/browser/configure.zcml:23
 msgid "A simple, content-based Page Template"
-msgstr "サンプル, コンテンツ主体のページテンプレート"
+msgstr "簡単なコンテンツベースのページテンプレート"
 
 #: src/zope/app/zptpage/interfaces.py:37
 msgid "The source of the page template."
@@ -5942,7 +5942,7 @@ msgstr "呼び出し可能なイベントを扱うオブジェクト"
 
 #: src/zope/component/zcml.py:255
 msgid "Interfaces or classes that this subscriber depends on"
-msgstr "サブスクライバが依存するインターフェースやクラス"
+msgstr "サブスクライバが依存するインタフェースやクラス"
 
 #: src/zope/component/zcml.py:265
 msgid "This subscriber is only available, if the principal has this permission."
@@ -5983,7 +5983,7 @@ msgstr ""
 
 #: src/zope/component/zcml.py:372
 msgid "Interface provided by the utility."
-msgstr "ユーティリティが提供するインターフェース"
+msgstr "ユーティリティが提供するインタフェース"
 
 #: src/zope/component/zcml.py:378
 msgid "Name of the registration.  This is used by application code when locating a utility."
@@ -5999,7 +5999,7 @@ msgstr "実装オブジェクトのPython名です。モジュール内のオブ
 
 #: src/zope/component/zcml.py:444
 msgid "Interface type"
-msgstr "インターフェースタイプ"
+msgstr "インタフェースタイプ"
 
 #: src/zope/component/zcml.py:53
 msgid "Permission required to use this component."
@@ -6020,12 +6020,12 @@ msgstr "アダプタインスタンスを作成するファクトリ(通常は1�
 #: src/zope/component/zcml.py:81
 #: src/zope/component/zcml.py:248
 msgid "Interface the component provides"
-msgstr "コンポーネントが提供するインターフェース"
+msgstr "コンポーネントが提供するインタフェース"
 
 #: src/zope/component/zcml.py:82
 #: src/zope/component/zcml.py:249
 msgid "This attribute specifies the interface the adapter instance must provide."
-msgstr "このアトリビュートにはアダプタインスタンスが実装すべきインターフェースを指定します。"
+msgstr "このアトリビュートにはアダプタインスタンスが実装すべきインタフェースを指定します。"
 
 #: src/zope/component/zcml.py:88
 msgid "Specifications to be adapted"
@@ -6034,7 +6034,7 @@ msgstr "アダプトする対象"
 #: src/zope/component/zcml.py:89
 #: src/zope/component/zcml.py:256
 msgid "This should be a list of interfaces or classes"
-msgstr "インターフェースまたはクラスのリストでなければなりません。"
+msgstr "インタフェースまたはクラスのリストでなければなりません。"
 
 #: src/zope/component/zcml.py:98
 msgid "This adapter is only available, if the principal has this permission."
@@ -6402,7 +6402,7 @@ msgstr "1つまたは複数の配列のエントリが一意ではありませ�
 
 #: src/zope/schema/interfaces.py:434
 msgid "The Interface that defines the Fields comprising the Object."
-msgstr "オブジェクトを構成するフィールドを定義するインターフェース"
+msgstr "オブジェクトを構成するフィールドを定義するインタフェース"
 
 #: src/zope/schema/interfaces.py:444
 msgid ""
@@ -6574,7 +6574,7 @@ msgstr "コンテンツプロバイダの対象となるビュー"
 
 #: src/zope/viewlet/metadirectives.py:42
 msgid "The view can either be an interface or a class. By default the provider is registered for all views, the most common case."
-msgstr "ビューはインターフェースとクラスのどちらにもできます。デフォルトではプロバイダは全てのビューを対象にして登録されます。これがコモンケースです。"
+msgstr "ビューはインタフェースとクラスのどちらにもできます。デフォルトではプロバイダは全てのビューを対象にして登録されます。これがコモンケースです。"
 
 #: src/zope/viewlet/metadirectives.py:49
 msgid "The name of the content provider."
@@ -6594,11 +6594,11 @@ msgstr "ページテンプレートを含むファイルを参照します(拡�
 
 #: src/zope/viewlet/metadirectives.py:77
 msgid "The interface this viewlet manager provides."
-msgstr "ビューレットマネージャが提供するインターフェース"
+msgstr "ビューレットマネージャが提供するインタフェース"
 
 #: src/zope/viewlet/metadirectives.py:78
 msgid "A viewlet manager can provide an interface, which is used to lookup its contained viewlets."
-msgstr "ビューレットマネージャはそれが格納しているビューレットを検索するのに使うインターフェースを提供します。"
+msgstr "ビューレットマネージャはそれが格納しているビューレットを検索するのに使うインタフェースを提供します。"
 
 #: src/zope/viewlet/metadirectives.py:99
 msgid "view"
