@@ -24,7 +24,8 @@ CHANGES
 ------------------
 
 * added filePattern parameter for tal_strings to be able to not only parse
-  "*.pt" files.
+  `.pt` files.
+
 * Updated Dutch translation
 
 3.4.4 (2008-03-05)
