@@ -465,7 +465,7 @@ def tal_strings(dir,
     Now let's find the strings for the domain ``test``:
 
       >>> extract.tal_strings(dir, domain='test', include_default_domain=True)
-      {'test': [('...test.pt', 1)], 'no domain': [('...no.pt', 1)]}
+      {u'test': [('...test.pt', 1)], u'no domain': [('...no.pt', 1)]}
 
     And now an xml file
       >>> xml = open(os.path.join(dir, 'xml.pt'), 'w')
@@ -492,7 +492,7 @@ def tal_strings(dir,
 
       >>> extract.tal_strings(dir, domain='html', include_default_domain=True,
       ...                     filePattern='*.html')
-      {'html': [('...test.html', 1)]}
+      {u'html': [('...test.html', 1)]}
 
     Cleanup
 

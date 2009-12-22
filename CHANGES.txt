@@ -5,6 +5,8 @@ CHANGES
 3.5.2 (unreleased)
 ------------------
 
+- Updated tests to handle Unicode correctly.
+
 - Update Japanese Translation (thanks Takeshi Yamamoto).
 
 3.5.1 (2009-01-27)
