@@ -2,7 +2,7 @@
 CHANGES
 =======
 
-3.5.2 (unreleased)
+3.5.2 (2009-12-22)
 ------------------
 
 - Updated tests to handle Unicode correctly.
