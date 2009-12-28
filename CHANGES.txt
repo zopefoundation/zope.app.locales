@@ -5,6 +5,10 @@ CHANGES
 3.5.3 (unreleased)
 ------------------
 
+- Added `configure.zcml` which registers the translations in the
+  package. So the package contains its configuration. (Till now it was
+  done in `zope.app.zcmlfiles`.)
+
 
 3.5.2 (2009-12-22)
 ------------------
