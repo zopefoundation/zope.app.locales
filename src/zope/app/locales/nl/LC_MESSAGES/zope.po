@@ -2967,7 +2967,7 @@ msgstr "Verplicht"
 
 #: zope/schema/_bootstrapinterfaces.py:43
 msgid "Required input is missing."
-msgstr "Verplichte invoer was niet aanwezig."
+msgstr "Dit is een verplicht veld."
 
 #: zope/app/applicationcontrol/browser/servercontrol.pt:31
 msgid "Restart server"
