@@ -678,9 +678,8 @@ msgid "Available Mappings"
 msgstr ""
 
 #: zope/app/apidoc/bookmodule/book.zcml:299
-#, fuzzy
 msgid "BTree Developer Information"
-msgstr "Zope Ontwikkelaar Info"
+msgstr "BTree Ontwikkelings Informatie"
 
 #: zope/app/security/browser/login.pt:14
 #: zope/app/security/browser/logout.pt:32
@@ -744,7 +743,6 @@ msgid "Browse Zope Source"
 msgstr "Blader door Zope Broncode"
 
 #: zope/app/apidoc/ifacemodule/browser.py:272
-#, fuzzy
 msgid "Browser"
 msgstr "Code Browser"
 
@@ -842,9 +840,8 @@ msgid "Code Browser"
 msgstr "Code Browser"
 
 #: zope/app/apidoc/bookmodule/book.zcml:259
-#, fuzzy
 msgid "Collaboration Diagrams"
-msgstr "Samenwerkingen"
+msgstr "Samenwerkingsdiagrammen"
 
 #: zope/app/applicationcontrol/browser/runtimeinfo.pt:32
 msgid "Command line"
@@ -948,9 +945,8 @@ msgid "Content Last Modified"
 msgstr "Inhoud laatst gewijzigd"
 
 #: zope/contentprovider/configure.zcml:14
-#, fuzzy
 msgid "Content Providers"
-msgstr "Inhoud"
+msgstr "Content Providers"
 
 #: zope/app/file/interfaces.py:28
 #: zope/app/pythonpage/__init__.py:46
