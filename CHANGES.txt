@@ -2,11 +2,10 @@
 CHANGES
 =======
 
-3.6.1 (unreleased)
+3.6.1 (2010-05-17)
 ------------------
 
-- Updated Dutch translation
-
+- Updated Dutch and German translations.
 
 3.6.0 (2009-12-28)
 ------------------
@@ -14,7 +13,6 @@ CHANGES
 - Added `configure.zcml` which registers the translations in the
   package. So the package contains its configuration. (Till now it was
   done in `zope.app.zcmlfiles`.)
-
 
 3.5.2 (2009-12-22)
 ------------------
