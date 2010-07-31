@@ -54,7 +54,7 @@ msgstr ""
 "POT-Creation-Date: %(time)s\\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\\n"
-"Language-Team: Zope 3 Developers <zope3-dev@zope.org>\\n"
+"Language-Team: Zope 3 Developers <zope-dev@zope.org>\\n"
 "MIME-Version: 1.0\\n"
 "Content-Type: text/plain; charset=%(charset)s\\n"
 "Content-Transfer-Encoding: %(encoding)s\\n"
@@ -451,12 +451,12 @@ def tal_strings(dir,
       >>> from zope.app.locales import extract
       >>> import tempfile
       >>> dir = tempfile.mkdtemp()
-      
+
     Let's create a page template in the i18n domain ``test``:
       >>> testpt = open(os.path.join(dir, 'test.pt'), 'w')
       >>> testpt.write('<tal:block i18n:domain="test" i18n:translate="">test</tal:block>')
       >>> testpt.close()
-      
+
     And now one in no domain:
       >>> nopt = open(os.path.join(dir, 'no.pt'), 'w')
       >>> nopt.write('<tal:block i18n:translate="">no domain</tal:block>')
@@ -497,7 +497,7 @@ def tal_strings(dir,
     Cleanup
 
       >>> import shutil
-      >>> shutil.rmtree(dir) 
+      >>> shutil.rmtree(dir)
     """
 
     # We import zope.tal.talgettext here because we can't rely on the

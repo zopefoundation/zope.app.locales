@@ -5,6 +5,11 @@ CHANGES
 3.6.2 (unreleased)
 ------------------
 
+- Updated copyright to `Zope Foundation`, even in pot template.
+
+- Updated e-mail address in pot template to current address of zope
+  mailing list.
+
 
 3.6.1 (2010-05-17)
 ------------------
