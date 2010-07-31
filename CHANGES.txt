@@ -10,6 +10,8 @@ CHANGES
 - Updated e-mail address in pot template to current address of zope
   mailing list.
 
+- Added missing test dependency on `zope.i18n`.
+
 
 3.6.1 (2010-05-17)
 ------------------

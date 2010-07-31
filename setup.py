@@ -63,8 +63,10 @@ setup(name='zope.app.locales',
                         'zope.interface',
                         ],
       extras_require = dict(
-          test=['zope.tal',
-                'zope.testing',
+          test=[
+              'zope.i18n',
+              'zope.tal',
+              'zope.testing',
                 ],
           extract=[
               'zope.tal',
