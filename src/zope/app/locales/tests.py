@@ -11,21 +11,19 @@
 # FOR A PARTICULAR PURPOSE.
 #
 ##############################################################################
-"""Tests for the message string extraction tool.
+"""Tests for the message string extraction tool."""
 
-$Id$
-"""
 import os
 import doctest
 import unittest
-from zope.testing.doctest import DocTestSuite
+
 
 class TestIsUnicodeInAllCatalog(unittest.TestCase):
     """
     """
     def setUp(self):
         pass
-    
+
     def test_is_unicode(self):
         from zope.i18n.gettextmessagecatalog import GettextMessageCatalog
         path = os.path.dirname(__file__)
@@ -39,16 +37,16 @@ class TestIsUnicodeInAllCatalog(unittest.TestCase):
                         mcatalog = GettextMessageCatalog(lang, 'zope',
                                            os.path.join(lc_path, f))
                         catalog = mcatalog._catalog
-                        self.failUnless(catalog._charset, 
-            u"""Charset value for the Message catalog is missing. 
-                The language is %s (zope.po). 
+                        self.failUnless(catalog._charset,
+            u"""Charset value for the Message catalog is missing.
+                The language is %s (zope.po).
                 Value of the message catalog should be in unicode""" % (lang,)
                                         )
 
 
 def test_suite():
     return unittest.TestSuite((
-        DocTestSuite('zope.app.locales.extract',
+        doctest.DocTestSuite('zope.app.locales.extract',
             optionflags=doctest.NORMALIZE_WHITESPACE|doctest.ELLIPSIS,),
         unittest.makeSuite(TestIsUnicodeInAllCatalog),
         ))
