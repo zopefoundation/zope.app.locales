@@ -22,10 +22,6 @@ import zope.configuration.xmlconfig
 
 
 class TestIsUnicodeInAllCatalog(unittest.TestCase):
-    """
-    """
-    def setUp(self):
-        pass
 
     def test_is_unicode(self):
         from zope.i18n.gettextmessagecatalog import GettextMessageCatalog
@@ -45,6 +41,8 @@ class TestIsUnicodeInAllCatalog(unittest.TestCase):
                 The language is %s (zope.po).
                 Value of the message catalog should be in unicode""" % (lang,)
                                         )
+
+
 class ZCMLTest(unittest.TestCase):
 
     def test_configure_zcml_should_be_loadable(self):
