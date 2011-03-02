@@ -5,8 +5,12 @@ CHANGES
 3.6.3 (unreleased)
 ------------------
 
+- Include zcml dependencies in ``configure.zcml``, require the necessary
+  packages via a `zcml` extra, added tests for zcml.
+
 - Using Python's ``doctest`` module instead of depreacted
   ``zope.testing.doctest``.
+
 
 3.6.2 (2010-07-31)
 ------------------

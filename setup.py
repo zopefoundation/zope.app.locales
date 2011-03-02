@@ -68,6 +68,10 @@ setup(name='zope.app.locales',
               'zope.tal',
               'zope.testing',
                 ],
+          zcml=[
+              'zope.i18n',
+              'zope.configuration',
+              ],
           extract=[
               'zope.tal',
               'zope.app.applicationcontrol',
