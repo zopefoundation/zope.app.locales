@@ -1941,7 +1941,7 @@ msgstr "Zelfonderzoeker"
 #: zope/app/form/browser/textwidgets.py:574
 #: zope/app/form/browser/textwidgets.py:612
 msgid "Invalid datetime data"
-msgstr "Ongeldie datum/tijdgegevens"
+msgstr "Ongeldige datum/tijdgegevens"
 
 #: zope/app/form/browser/textwidgets.py:549
 msgid "Invalid decimal data"
