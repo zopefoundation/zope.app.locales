@@ -5,8 +5,9 @@ CHANGES
 3.7.1 (unreleased)
 ------------------
 
-- Updated Brazilian Portuguese translation [erico_andrei]
+- Fix nl translations.
 
+- Updated Brazilian Portuguese translation [erico_andrei]
 
 3.7.0 (2011-03-02)
 ------------------
