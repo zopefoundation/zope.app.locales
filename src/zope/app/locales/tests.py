@@ -67,9 +67,49 @@ class ZCMLTest(unittest.TestCase):
         self.assertEqual(h_count, len(list(gsm.registeredHandlers())))
 
 
+def doctest_POTMaker_add():
+    """Test for POTMaker.add
+
+        >>> from zope.app.locales.extract import POTMaker
+        >>> pm = POTMaker('/dev/null', 'path')
+        >>> pm.add({'msgid1': [('file2.py', 2), ('file1.py', 3)],
+        ...         'msgid2': [('file1.py', 5)]})
+
+        >>> sorted(pm.catalog)
+        ['msgid1', 'msgid2']
+
+        >>> pm.catalog['msgid1']
+        <POTEntry: 'msgid1'>
+
+        >>> pm.catalog['msgid2']
+        <POTEntry: 'msgid2'>
+
+    The locations have been sorted
+
+        >>> print pm.catalog['msgid1'].comments
+        #: file1.py:3
+        #: file2.py:2
+        <BLANKLINE>
+
+    You can call add multiple times and it will merge the entries
+
+        >>> pm.add({'msgid1': [('file1.zcml', 4)],
+        ...         'msgid3': [('file2.zcml', 5)]})
+
+        >>> print pm.catalog['msgid1'].comments
+        #: file1.py:3
+        #: file2.py:2
+        #: file1.zcml:4
+        <BLANKLINE>
+
+    Unfortunately it doesn't re-sort the locations, which is arguably a bug.
+    Please feel free to fix and update this test.
+    """
+
 
 def test_suite():
     return unittest.TestSuite((
+        doctest.DocTestSuite(),
         doctest.DocTestSuite('zope.app.locales.extract',
             optionflags=doctest.NORMALIZE_WHITESPACE|doctest.ELLIPSIS,),
         unittest.makeSuite(TestIsUnicodeInAllCatalog),

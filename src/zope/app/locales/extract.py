@@ -139,6 +139,10 @@ class POTEntry(object):
     def __cmp__(self, other):
         return cmp(self.comments, other.comments)
 
+    def __repr__(self):
+        return '<POTEntry: %r>' % self.msgid
+
+
 class POTMaker(object):
     """This class inserts sets of strings into a POT file.
     """
@@ -156,7 +160,7 @@ class POTMaker(object):
             if msgid not in self.catalog:
                 self.catalog[msgid] = POTEntry(msgid)
 
-            for filename, lineno in locations:
+            for filename, lineno in sorted(locations):
                 if base_dir is not None:
                     filename = filename.replace(base_dir, '')
                 self.catalog[msgid].addLocationComment(filename, lineno)
