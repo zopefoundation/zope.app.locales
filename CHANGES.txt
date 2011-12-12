@@ -5,7 +5,7 @@ CHANGES
 3.7.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Handle Unicode msgids and default values.
 
 
 3.7.1 (2011-12-07)

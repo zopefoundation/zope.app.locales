@@ -96,6 +96,16 @@ class POTEntry(object):
     msgid "test"
     msgstr ""
     <BLANKLINE>
+
+    Unicode can be used in msgids and default values
+
+    >>> entry = POTEntry(Message(u"\u263B", default=u"\u253A"))
+    >>> entry.write(FakeFile())
+    #. Default: "\342\224\272"
+    msgid "\342\230\273"
+    msgstr ""
+    <BLANKLINE>
+
     """
 
     implements(IPOTEntry)
@@ -116,13 +126,13 @@ class POTEntry(object):
             file.write(self.comments)
         if (isinstance(self.msgid, Message) and
             self.msgid.default is not None):
-            default = self.msgid.default.strip()
+            default = self.msgid.default.strip().encode(DEFAULT_CHARSET)
             lines = normalize(default).split("\n")
             lines[0] = "#. Default: %s\n" % lines[0]
             for i in range(1, len(lines)):
                 lines[i] = "#.  %s\n" % lines[i]
             file.write("".join(lines))
-        file.write('msgid %s\n' % normalize(self.msgid))
+        file.write('msgid %s\n' % normalize(self.msgid.encode(DEFAULT_CHARSET)))
         file.write('msgstr ""\n')
         file.write('\n')
 
