@@ -113,19 +113,21 @@ class POTEntry(object):
     def __init__(self, msgid, comments=None):
         self.msgid = msgid
         self.comments = comments or ''
-        self._location = []
+        self.locations = []
 
     def addComment(self, comment):
         self.comments += comment + '\n'
 
     def addLocationComment(self, filename, line):
         filename = filename.replace(os.sep, '/')
-        self.comments += '#: %s:%s\n' % (filename, line)
-        self._location.append((filename, line))
+        self.locations.append((filename, line))
+        self.locations.sort()
 
     def write(self, file):
         if self.comments:
             file.write(self.comments)
+        for filename, line in self.locations:
+            file.write('#: %s:%s\n' % (filename, line))
         if (isinstance(self.msgid, Message) and
             self.msgid.default is not None):
             default = self.msgid.default.strip().encode(DEFAULT_CHARSET)
@@ -139,8 +141,8 @@ class POTEntry(object):
         file.write('\n')
 
     def __cmp__(self, other):
-        return cmp((self._location, self.msgid),
-                   (other._location, other.msgid))
+        return cmp((self.locations, self.msgid),
+                   (other.locations, other.msgid))
 
     def __repr__(self):
         return '<POTEntry: %r>' % self.msgid
@@ -163,10 +165,9 @@ class POTMaker(object):
             if msgid not in self.catalog:
                 self.catalog[msgid] = POTEntry(msgid)
 
-            if base_dir:
-                locations = [(strip_base_dir(filename, base_dir), lineno)
-                             for filename, lineno in locations]
-            for filename, lineno in sorted(locations):
+            for filename, lineno in locations:
+                if base_dir:
+                    filename = strip_base_dir(filename, base_dir)
                 self.catalog[msgid].addLocationComment(filename, lineno)
 
     def _getProductVersion(self):

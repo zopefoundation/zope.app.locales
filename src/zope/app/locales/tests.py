@@ -103,7 +103,7 @@ def doctest_POTEntry_sort_order():
 
 
 def doctest_POTMaker_add():
-    """Test for POTMaker.add
+    r"""Test for POTMaker.add
 
         >>> from zope.app.locales.extract import POTMaker
         >>> pm = POTMaker('/dev/null', 'path')
@@ -121,24 +121,17 @@ def doctest_POTMaker_add():
 
     The locations have been sorted
 
-        >>> print pm.catalog['msgid1'].comments
-        #: file1.py:3
-        #: file2.py:2
-        <BLANKLINE>
+        >>> pm.catalog['msgid1'].locations
+        [('file1.py', 3), ('file2.py', 2)]
 
     You can call add multiple times and it will merge the entries
 
         >>> pm.add({'msgid1': [('file1.zcml', 4)],
         ...         'msgid3': [('file2.zcml', 5)]})
 
-        >>> print pm.catalog['msgid1'].comments
-        #: file1.py:3
-        #: file2.py:2
-        #: file1.zcml:4
-        <BLANKLINE>
+        >>> pm.catalog['msgid1'].locations
+        [('file1.py', 3), ('file1.zcml', 4), ('file2.py', 2)]
 
-    Unfortunately it doesn't re-sort the locations, which is arguably a bug.
-    Please feel free to fix and update this test.
     """
 
 
@@ -163,11 +156,8 @@ def doctest_POTMaker_add_strips_basedirs():
         ...                    ('file1.py', 3),
         ...                    ('notbasedir/file3.py', 5)]},
         ...        'basedir/')
-        >>> print pm.catalog['msgid1'].comments
-        #: file1.py:3
-        #: file2.py:2
-        #: notbasedir/file3.py:5
-        <BLANKLINE>
+        >>> pm.catalog['msgid1'].locations
+        [('file1.py', 3), ('file2.py', 2), ('notbasedir/file3.py', 5)]
 
     """
 
