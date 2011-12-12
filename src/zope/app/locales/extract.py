@@ -113,13 +113,15 @@ class POTEntry(object):
     def __init__(self, msgid, comments=None):
         self.msgid = msgid
         self.comments = comments or ''
+        self._location = []
 
     def addComment(self, comment):
         self.comments += comment + '\n'
 
     def addLocationComment(self, filename, line):
-        self.comments += '#: %s:%s\n' % (
-            filename.replace(os.sep, '/'), line)
+        filename = filename.replace(os.sep, '/')
+        self.comments += '#: %s:%s\n' % (filename, line)
+        self._location.append((filename, line))
 
     def write(self, file):
         if self.comments:
@@ -137,7 +139,8 @@ class POTEntry(object):
         file.write('\n')
 
     def __cmp__(self, other):
-        return cmp(self.comments, other.comments)
+        return cmp((self._location, self.msgid),
+                   (other._location, other.msgid))
 
     def __repr__(self):
         return '<POTEntry: %r>' % self.msgid

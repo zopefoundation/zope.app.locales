@@ -7,6 +7,9 @@ CHANGES
 
 - Handle Unicode msgids and default values.
 
+- Consistent sorting of source filenames for each msgid.  Also sort line
+  numbers numerically, not lexicographically.
+
 
 3.7.1 (2011-12-07)
 ------------------

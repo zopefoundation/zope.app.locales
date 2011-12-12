@@ -67,6 +67,41 @@ class ZCMLTest(unittest.TestCase):
         self.assertEqual(h_count, len(list(gsm.registeredHandlers())))
 
 
+def doctest_POTEntry_sort_order():
+    """Test for POTEntry.__cmp__
+
+        >>> from zope.app.locales.extract import POTEntry
+
+    'file1' comes before 'file2'
+
+        >>> pe1 = POTEntry('msgid1')
+        >>> pe1.addLocationComment('file1', 42)
+
+        >>> pe2 = POTEntry('msgid1')
+        >>> pe2.addLocationComment('file2', 42)
+
+        >>> pe1 < pe2
+        True
+
+    line 9 comes before line 42
+
+        >>> pe3 = POTEntry('msgid1')
+        >>> pe3.addLocationComment('file1', 9)
+
+        >>> pe3 < pe1
+        True
+
+    Finally, msgid1 comes before msgid2
+
+        >>> pe4 = POTEntry('msgid2')
+        >>> pe4.addLocationComment('file1', 42)
+
+        >>> pe1 < pe4
+        True
+
+    """
+
+
 def doctest_POTMaker_add():
     """Test for POTMaker.add
 
