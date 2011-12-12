@@ -160,9 +160,10 @@ class POTMaker(object):
             if msgid not in self.catalog:
                 self.catalog[msgid] = POTEntry(msgid)
 
+            if base_dir:
+                locations = [(strip_base_dir(filename, base_dir), lineno)
+                             for filename, lineno in locations]
             for filename, lineno in sorted(locations):
-                if base_dir is not None:
-                    filename = filename.replace(base_dir, '')
                 self.catalog[msgid].addLocationComment(filename, lineno)
 
     def _getProductVersion(self):
@@ -612,6 +613,22 @@ def normalize_path(path):
     if os.environ.has_key('PWD'):
         cwd = os.environ['PWD']
     return os.path.normpath(os.path.join(cwd, path))
+
+def strip_base_dir(filename, base_dir):
+    """Strip base directory from filename if it starts there.
+
+        >>> strip_base_dir('/path/to/base/relpath/to/file',
+        ...                '/path/to/base/')
+        'relpath/to/file'
+
+        >>> strip_base_dir('/path/to/somewhere/else/relpath/to/file',
+        ...                '/path/to/base/')
+        '/path/to/somewhere/else/relpath/to/file'
+
+    """
+    if filename.startswith(base_dir):
+        filename = filename[len(base_dir):]
+    return filename
 
 def main(argv=None):
     if argv is None:

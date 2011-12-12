@@ -107,6 +107,36 @@ def doctest_POTMaker_add():
     """
 
 
+def doctest_POTMaker_add_skips_blank_msgids():
+    """Test for POTMaker.add
+
+        >>> from zope.app.locales.extract import POTMaker
+        >>> pm = POTMaker('/dev/null', 'path')
+        >>> pm.add({'': [('file2.py', 2), ('file1.py', 3)]})
+        >>> sorted(pm.catalog)
+        []
+
+    """
+
+
+def doctest_POTMaker_add_strips_basedirs():
+    """Test for POTMaker.add
+
+        >>> from zope.app.locales.extract import POTMaker
+        >>> pm = POTMaker('/dev/null', 'path')
+        >>> pm.add({'msgid1': [('basedir/file2.py', 2),
+        ...                    ('file1.py', 3),
+        ...                    ('notbasedir/file3.py', 5)]},
+        ...        'basedir/')
+        >>> print pm.catalog['msgid1'].comments
+        #: file1.py:3
+        #: file2.py:2
+        #: notbasedir/file3.py:5
+        <BLANKLINE>
+
+    """
+
+
 def test_suite():
     return unittest.TestSuite((
         doctest.DocTestSuite(),
