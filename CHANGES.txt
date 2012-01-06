@@ -5,7 +5,9 @@ CHANGES
 3.7.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- i18nextract bugfix: _("msgid", mapping={...}) does not have a default, just
+  like _("msgid").  Previously it would get a ``#. Default: ""`` annotation in
+  the .pot file.
 
 
 3.7.2 (2011-12-12)

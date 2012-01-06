@@ -213,7 +213,9 @@ class TokenEater(object):
 
     >>> file = StringIO(
     ...     "_(u'hello ${name}', u'buenos dias', {'name': 'Bob'}); "
-    ...     "_(u'hi ${name}', mapping={'name': 'Bob'})"
+    ...     "_(u'hi ${name}', mapping={'name': 'Bob'}); "
+    ...     "_('k, bye', ''); "
+    ...     "_('kthxbye')"
     ...     )
     >>> tokenize.tokenize(file.readline, eater)
 
@@ -223,7 +225,10 @@ class TokenEater(object):
     >>> items = catalog.items()
     >>> items.sort()
     >>> items
-    [(u'hello ${name}', [(None, 1)]), (u'hi ${name}', [(None, 1)])]
+    [(u'hello ${name}', [(None, 1)]),
+     (u'hi ${name}', [(None, 1)]),
+     (u'k, bye', [(None, 1)]),
+     (u'kthxbye', [(None, 1)])]
 
     The key in the catalog is not a unicode string, it's a real
     message id with a default value:
@@ -238,7 +243,17 @@ class TokenEater(object):
     >>> msgid
     u'hi ${name}'
     >>> msgid.default
+
+    >>> msgid = items.pop(0)[0]
+    >>> msgid
+    u'k, bye'
+    >>> msgid.default
     u''
+
+    >>> msgid = items.pop(0)[0]
+    >>> msgid
+    u'kthxbye'
+    >>> msgid.default
 
     Note that everything gets converted to unicode.
     """
@@ -278,7 +293,7 @@ class TokenEater(object):
         if ttype == tokenize.OP and tstring == '(':
             self.__data = []
             self.__msgid = ''
-            self.__default = ''
+            self.__default = None
             self.__lineno = lineno
             self.__state = self.__openseen
         else:
@@ -297,7 +312,10 @@ class TokenEater(object):
                     default = self.__default
                 elif self.__msgid:
                     msgid = self.__msgid
-                    default = ''.join(self.__data)
+                    if self.__data:
+                        default = ''.join(self.__data)
+                    else:
+                        default = None
                 else:
                     msgid = ''.join(self.__data)
                     default = None
@@ -306,7 +324,7 @@ class TokenEater(object):
         elif ttype == tokenize.OP and tstring == ',':
             if not self.__msgid:
                 self.__msgid = ''.join(self.__data)
-            elif not self.__default:
+            elif not self.__default and self.__data:
                 self.__default = ''.join(self.__data)
             self.__data = []
         elif ttype == tokenize.STRING:
