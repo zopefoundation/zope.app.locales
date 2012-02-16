@@ -12,10 +12,12 @@
 #
 ##############################################################################
 """Tests for the message string extraction tool."""
+__docformat__ = 'restructuredtext'
 
 import doctest
 import os
 import unittest
+import tempfile
 import zope.app.locales
 import zope.component
 import zope.configuration.xmlconfig
@@ -162,11 +164,73 @@ def doctest_POTMaker_add_strips_basedirs():
     """
 
 
+def doctest_POTMaker_write():
+    r"""Test for POTMaker.write
+
+        >>> from zope.app.locales.extract import POTMaker
+        >>> f, path = tempfile.mkstemp()
+        >>> pm = POTMaker(path, '')
+        >>> pm.add({'msgid1': [('file2.py', 2), ('file1.py', 3)],
+        ...         'msgid2': [('file1.py', 5)]})
+        >>> from zope.app.locales.pygettext import make_escapes
+        >>> make_escapes(0)
+        >>> pm.write()
+
+        >>> f = open(path)
+        >>> pot = f.read()
+        >>> print pot
+        ##############################################################################
+        #
+        # Copyright (c) 2003-2004 Zope Foundation and Contributors.
+        # All Rights Reserved.
+        #
+        # This software is subject to the provisions of the Zope Public License,
+        # Version 2.1 (ZPL).  A copy of the ZPL should accompany this distribution.
+        # THIS SOFTWARE IS PROVIDED "AS IS" AND ANY AND ALL EXPRESS OR IMPLIED
+        # WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+        # WARRANTIES OF TITLE, MERCHANTABILITY, AGAINST INFRINGEMENT, AND FITNESS
+        # FOR A PARTICULAR PURPOSE.
+        #
+        ##############################################################################
+        msgid ""
+        msgstr ""
+        "Project-Id-Version: Meaningless\n"
+        "POT-Creation-Date: ...-...-... ...:...0\n"
+        "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+        "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+        "Language-Team: Zope 3 Developers <zope-dev@zope.org>\n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=UTF-8\n"
+        "Content-Transfer-Encoding: 8bit\n"
+        "Generated-By: zope/app/locales/extract.py\n"
+        <BLANKLINE>
+        #: file1.py:3
+        #: file2.py:2
+        msgid "msgid1"
+        msgstr ""
+        <BLANKLINE>
+        #: file1.py:5
+        msgid "msgid2"
+        msgstr ""
+        <BLANKLINE>
+        <BLANKLINE>
+
+        >>> f.close()
+        >>> os.unlink(path)
+
+    """
+
+
 def test_suite():
     return unittest.TestSuite((
-        doctest.DocTestSuite(),
+        doctest.DocTestSuite(
+            optionflags=doctest.NORMALIZE_WHITESPACE|
+                        doctest.ELLIPSIS|
+                        doctest.REPORT_NDIFF,),
         doctest.DocTestSuite('zope.app.locales.extract',
-            optionflags=doctest.NORMALIZE_WHITESPACE|doctest.ELLIPSIS,),
+            optionflags=doctest.NORMALIZE_WHITESPACE|
+                        doctest.ELLIPSIS|
+                        doctest.REPORT_NDIFF,),
         unittest.makeSuite(TestIsUnicodeInAllCatalog),
         unittest.makeSuite(ZCMLTest),
         ))
