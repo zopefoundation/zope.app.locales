@@ -181,8 +181,7 @@ class POTMaker(object):
 
     def write(self):
         file = open(self._output_filename, 'w')
-        ztime = time.strftime('%Y-%m-%d %H:%M%z')
-        file.write(pot_header % {'time':     ztime,
+        file.write(pot_header % {'time':     time.ctime(), 
                                  'version':  self._getProductVersion(),
                                  'charset':  DEFAULT_CHARSET,
                                  'encoding': DEFAULT_ENCODING})

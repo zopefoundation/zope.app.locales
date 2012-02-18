@@ -195,7 +195,7 @@ def doctest_POTMaker_write():
         msgid ""
         msgstr ""
         "Project-Id-Version: Meaningless\n"
-        "POT-Creation-Date: ...-...-... ...:...0\n"
+        "POT-Creation-Date: ...\n"
         "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
         "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
         "Language-Team: Zope 3 Developers <zope-dev@zope.org>\n"

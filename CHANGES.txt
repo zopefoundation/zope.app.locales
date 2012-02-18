@@ -5,7 +5,6 @@ CHANGES
 3.7.4 (unreleased)
 ------------------
 
-- Write POT creation date in standard format.
 
 
 3.7.3 (2012-01-06)
