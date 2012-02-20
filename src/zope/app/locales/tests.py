@@ -17,7 +17,6 @@ __docformat__ = 'restructuredtext'
 import doctest
 import os
 import unittest
-import tempfile
 import zope.app.locales
 import zope.component
 import zope.configuration.xmlconfig
@@ -168,7 +167,7 @@ def doctest_POTMaker_write():
     r"""Test for POTMaker.write
 
         >>> from zope.app.locales.extract import POTMaker
-        >>> f, path = tempfile.mkstemp()
+        >>> path = 'test.pot'
         >>> pm = POTMaker(path, '')
         >>> pm.add({'msgid1': [('file2.py', 2), ('file1.py', 3)],
         ...         'msgid2': [('file1.py', 5)]})
@@ -216,7 +215,7 @@ def doctest_POTMaker_write():
         <BLANKLINE>
 
         >>> f.close()
-        >>> os.unlink(path)
+        >>> os.remove(path)
 
     """
 
