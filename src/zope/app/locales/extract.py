@@ -97,12 +97,22 @@ class POTEntry(object):
     msgstr ""
     <BLANKLINE>
 
-    Unicode can be used in msgids and default values
+    Unicode can be used in msgids and default values:
 
     >>> entry = POTEntry(Message(u"\u263B", default=u"\u253A"))
     >>> entry.write(FakeFile())
     #. Default: "\342\224\272"
     msgid "\342\230\273"
+    msgstr ""
+    <BLANKLINE>
+
+    But msgid might be an ascii encoded string and `default` might be a
+    string with the DEFAULT_ENCODING, too:
+
+    >>> entry = POTEntry(Message("Oe", default="\xd6"))
+    >>> entry.write(FakeFile())
+    #. Default: "\326"
+    msgid "Oe"
     msgstr ""
     <BLANKLINE>
 
@@ -130,7 +140,9 @@ class POTEntry(object):
             file.write('#: %s:%s\n' % (filename, line))
         if (isinstance(self.msgid, Message) and
             self.msgid.default is not None):
-            default = self.msgid.default.strip().encode(DEFAULT_CHARSET)
+            default = self.msgid.default.strip()
+            if isinstance(default, unicode):
+                default = default.encode(DEFAULT_CHARSET)
             lines = normalize(default).split("\n")
             lines[0] = "#. Default: %s\n" % lines[0]
             for i in range(1, len(lines)):
@@ -181,7 +193,7 @@ class POTMaker(object):
 
     def write(self):
         file = open(self._output_filename, 'w')
-        file.write(pot_header % {'time':     time.ctime(), 
+        file.write(pot_header % {'time':     time.ctime(),
                                  'version':  self._getProductVersion(),
                                  'charset':  DEFAULT_CHARSET,
                                  'encoding': DEFAULT_ENCODING})

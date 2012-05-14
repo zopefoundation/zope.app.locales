@@ -5,6 +5,10 @@ CHANGES
 3.7.4 (unreleased)
 ------------------
 
+- In version 3.7.2 msgids and default values where forced to be
+  unicodes. This was too strict because at least the TAL extractor returns
+  UTF-8 encoded default values. Fixed this by allowing the default value to
+  be a string again.
 
 
 3.7.3 (2012-01-06)
