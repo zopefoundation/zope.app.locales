@@ -2,11 +2,17 @@
 CHANGES
 =======
 
+3.7.5 (unreleased)
+------------------
+
+- Nothing changed yet.
+
+
 3.7.4 (2012-05-14)
 ------------------
 
-- In version 3.7.2 msgids and default values where forced to be
-  unicodes. This was too strict because at least the TAL extractor returns
+- In version 3.7.2 msgids and default values were forced to be
+  ``unicode``. This was too strict because at least the TAL extractor returns
   UTF-8 encoded default values. Fixed this by allowing the default value to
   be a string again.
 
