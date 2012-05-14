@@ -2,7 +2,7 @@
 CHANGES
 =======
 
-3.7.4 (unreleased)
+3.7.4 (2012-05-14)
 ------------------
 
 - In version 3.7.2 msgids and default values where forced to be
