@@ -3323,20 +3323,20 @@ msgstr "1 elemento"
 
 #: src/zope/app/form/browser/itemswidgets.py:231
 msgid "item-missing-single-value-for-display"
-msgstr "Valore semplice mancante per la visualizzazione"
+msgstr ""
 
 #: src/zope/app/form/browser/itemswidgets.py:250
 msgid "vocabulary-missing-multiple-value-for-display"
-msgstr "Valore multiplo mancante per la visualizzazione"
+msgstr ""
 
 #: src/zope/app/form/browser/itemswidgets.py:399
 #: src/zope/app/form/browser/itemswidgets.py:444
 msgid "vocabulary-missing-single-value-for-edit"
-msgstr "Valore semplice mancante per la modifica"
+msgstr ""
 
 #: src/zope/app/form/browser/itemswidgets.py:517
 msgid "vocabulary-missing-multiple-value-for-edit"
-msgstr "Valore multiplo mancante per la modifica"
+msgstr ""
 
 #: src/zope/app/form/browser/metaconfigure.py:261
 #: src/zope/app/security/browser/configure.zcml:71
