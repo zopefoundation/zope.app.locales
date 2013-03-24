@@ -1,0 +1,10 @@
+.installed.cfg
+bin/
+eggs/
+develop-eggs/
+*.egg-info/
+*.pyc
+__pycache__/
+tags
+TAGS
+ID
