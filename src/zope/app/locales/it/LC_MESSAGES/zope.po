@@ -3400,15 +3400,15 @@ msgstr "Selected"
 
 #: src/zope/app/form/browser/source.py:268
 msgid "SourceInputWidget-apply"
-msgstr "SourceInputWidget-applicare"
+msgstr "Applica"
 
 #: src/zope/app/form/browser/source.py:439
 msgid "MultipleSourceInputWidget-remove"
-msgstr "Remove"
+msgstr "Rimuovi"
 
 #: src/zope/app/form/browser/source.py:468
 msgid "SourceListInputWidget-apply"
-msgstr "Apply"
+msgstr "Applica"
 
 #: src/zope/app/form/browser/source.py:65
 #: src/zope/app/form/browser/source.py:212
