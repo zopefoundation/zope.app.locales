@@ -1,0 +1,11 @@
+include *.py
+include *.txt
+include buildout.cfg
+recursive-include src *.po
+recursive-include src *.mo
+recursive-include src *.pot
+recursive-include src *.txt
+recursive-include src *.zcml
+recursive-include testproj *.pt
+recursive-include testproj *.py
+recursive-include testproj *.zcml
