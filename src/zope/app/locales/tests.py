@@ -193,7 +193,7 @@ def doctest_POTMaker_write():
         ##############################################################################
         msgid ""
         msgstr ""
-        "Project-Id-Version: Meaningless\n"
+        "Project-Id-Version: Unknown\n"
         "POT-Creation-Date: ...\n"
         "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
         "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
