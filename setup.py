@@ -74,7 +74,6 @@ setup(name='zope.app.locales',
               ],
           extract=[
               'zope.tal',
-              'zope.app.applicationcontrol',
               'zope.app.appsetup',
               ],
           ),

@@ -187,9 +187,7 @@ class POTMaker(object):
         fn = os.path.join(self.path, 'version.txt')
         if os.path.exists(fn):
             return open(fn, 'r').read().strip()
-        # Second, try to find a Zope version
-        from zope.app.applicationcontrol.zopeversion import ZopeVersionUtility
-        return ZopeVersionUtility.getZopeVersion()
+        return "Unknown"
 
     def write(self):
         file = open(self._output_filename, 'w')
