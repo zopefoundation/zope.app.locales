@@ -483,8 +483,14 @@ def py_strings(dir, domain="zope", exclude=(), verify_domain=False):
 def zcml_strings(dir, domain="zope", site_zcml=None):
     """Retrieve all ZCML messages from `dir` that are in the `domain`.
     """
-    from zope.app.appsetup import config
-    context = config(site_zcml, features=("devmode",), execute=False)
+    from zope.configuration import xmlconfig, config
+
+    # Load server-independent site config
+    context = config.ConfigurationMachine()
+    xmlconfig.registerCommonDirectives(context)
+    context.provideFeature("devmode")
+    context = xmlconfig.file(site_zcml, context=context, execute=False)
+
     return context.i18n_strings.get(domain, {})
 
 def tal_strings(dir,
