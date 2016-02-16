@@ -39,7 +39,7 @@ class TestIsUnicodeInAllCatalog(unittest.TestCase):
                         mcatalog = GettextMessageCatalog(lang, 'zope',
                                            os.path.join(lc_path, f))
                         catalog = mcatalog._catalog
-                        self.failUnless(catalog._charset,
+                        self.assertTrue(catalog._charset,
             u"""Charset value for the Message catalog is missing.
                 The language is %s (zope.po).
                 Value of the message catalog should be in unicode""" % (lang,)
@@ -52,7 +52,7 @@ class ZCMLTest(unittest.TestCase):
         try:
             zope.configuration.xmlconfig.XMLConfig(
                 'configure.zcml', zope.app.locales)()
-        except Exception, e:
+        except Exception as e:
             self.fail(e)
 
     def test_configure_should_register_n_components(self):
@@ -203,7 +203,7 @@ def doctest_POTMaker_write():
 
         >>> f = open(path)
         >>> pot = f.read()
-        >>> print pot
+        >>> print(pot)
         ##############################################################################
         #
         # Copyright (c) 2003-2004 Zope Foundation and Contributors.
