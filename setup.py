@@ -67,6 +67,7 @@ setup(name='zope.app.locales',
               'zope.i18n',
               'zope.tal',
               'zope.testing',
+              'zope.configuration',
                 ],
           zcml=[
               'zope.i18n',
@@ -81,5 +82,6 @@ setup(name='zope.app.locales',
       entry_points="""
       [console_scripts]
       i18nextract = zope.app.locales.extract:main [extract]
-      """
+      """,
+      test_suite='zope.app.locales.tests.test_suite'
       )
