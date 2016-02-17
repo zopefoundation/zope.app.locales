@@ -476,6 +476,10 @@ def zcml_strings(dir, domain="zope", site_zcml=None):
     """
     from zope.configuration import xmlconfig, config
 
+    # The context will return the domain as an 8-bit character string.
+    if not isinstance(domain, bytes):
+        domain = domain.encode('ascii')
+
     # Load server-independent site config
     context = config.ConfigurationMachine()
     xmlconfig.registerCommonDirectives(context)
