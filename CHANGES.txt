@@ -9,6 +9,8 @@ CHANGES
 
 - Remove zope.app.applicationcontrol and zope.app.appsetup dependencies.
 
+- Added Python 3 support.
+
 
 3.7.4 (2012-05-14)
 ------------------
