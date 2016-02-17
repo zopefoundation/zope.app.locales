@@ -471,7 +471,7 @@ def py_strings(dir, domain="zope", exclude=(), verify_domain=False):
             fp.close()
     return eater.getCatalog()
 
-def zcml_strings(dir, domain="zope", site_zcml=None):
+def zcml_strings(path, domain="zope", site_zcml=None):
     """Retrieve all ZCML messages from `dir` that are in the `domain`.
     """
     from zope.configuration import xmlconfig, config
@@ -486,7 +486,22 @@ def zcml_strings(dir, domain="zope", site_zcml=None):
     context.provideFeature("devmode")
     context = xmlconfig.file(site_zcml, context=context, execute=False)
 
-    return context.i18n_strings.get(domain, {})
+    catalog = context.i18n_strings.get(domain, {})
+    res = {}
+    duplicated = []
+    append = duplicated.append
+    for msg, locations  in catalog.items():
+        for filename, lineno in locations:
+            # only collect locations based on the given path
+            if filename.startswith(path):
+                id = '%s-%s-%s' % (msg, filename, lineno)
+                # skip duplicated entries
+                if id not in duplicated:
+                    append(id)
+                    l = res.get(msg, [])
+                    l.append((filename, lineno))
+                    res[msg] = l
+    return res
 
 def tal_strings(dir,
                 domain="zope",
