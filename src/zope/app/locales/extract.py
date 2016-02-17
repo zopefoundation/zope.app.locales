@@ -484,7 +484,6 @@ def zcml_strings(dir, domain="zope", site_zcml=None):
     """Retrieve all ZCML messages from `dir` that are in the `domain`.
     """
     from zope.app.appsetup import config
-    dirname = os.path.dirname
     context = config(site_zcml, features=("devmode",), execute=False)
     return context.i18n_strings.get(domain, {})
 

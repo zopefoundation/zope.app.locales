@@ -16,6 +16,8 @@ __docformat__ = 'restructuredtext'
 
 import doctest
 import os
+import shutil
+import tempfile
 import unittest
 import zope.app.locales
 import zope.component
@@ -66,6 +68,30 @@ class ZCMLTest(unittest.TestCase):
         self.assertEqual(
             s_count, len(list(gsm.registeredSubscriptionAdapters())))
         self.assertEqual(h_count, len(list(gsm.registeredHandlers())))
+
+    def test_zcml_extraction(self):
+        zcml = """
+            <configure xmlns="http://namespaces.zope.org/zope"
+                       i18n_domain="testdomain">
+              <include package="zope.security" file="meta.zcml" />
+                <permission
+                  id="testpkg.TestPermission"
+                  title="Test Permission"
+                  description="This test permission is defined in ZCML"
+                />
+            </configure>
+        """
+        dirname = tempfile.mkdtemp()
+        fn = os.path.join(dirname, 'configure.zcml')
+        with open(fn, 'wt') as zcmlfile:
+            zcmlfile.write(zcml)
+
+        strings = zope.app.locales.extract.zcml_strings('unused', 'testdomain',
+                                                       site_zcml=fn)
+        self.assertEqual(sorted(strings.keys()),
+                         [u'Test Permission',
+                          u'This test permission is defined in ZCML'])
+        shutil.rmtree(dirname)
 
 
 def doctest_POTEntry_sort_order():

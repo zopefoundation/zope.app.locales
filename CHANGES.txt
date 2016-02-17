@@ -5,7 +5,7 @@ CHANGES
 3.7.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Added a test for the zcml_extraction.
 
 
 3.7.4 (2012-05-14)
