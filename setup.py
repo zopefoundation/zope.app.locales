@@ -64,20 +64,20 @@ setup(name='zope.app.locales',
       install_requires=['setuptools',
                         'zope.i18nmessageid',
                         'zope.interface',
+                        'zope.configuration',
                         ],
       extras_require = dict(
           test=[
               'zope.i18n',
               'zope.tal',
               'zope.testing',
-              'zope.configuration',
                 ],
           zcml=[
               'zope.i18n',
-              'zope.configuration',
               ],
           extract=[
               'zope.tal',
+              'zope.security',
               ],
           ),
       include_package_data = True,
