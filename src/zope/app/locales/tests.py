@@ -86,7 +86,7 @@ class ZCMLTest(unittest.TestCase):
         with open(fn, 'wt') as zcmlfile:
             zcmlfile.write(zcml)
 
-        strings = zope.app.locales.extract.zcml_strings('unused', 'testdomain',
+        strings = zope.app.locales.extract.zcml_strings(dirname, 'testdomain',
                                                        site_zcml=fn)
         self.assertEqual(sorted(strings.keys()),
                          [u'Test Permission',
