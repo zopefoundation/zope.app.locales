@@ -371,12 +371,6 @@ class TokenEater(object):
 def find_files(path, pattern, exclude=()):
     files = []
 
-    def visit(files, dirname, names):
-        names[:] = [x for x in filenames if x not in exclude]
-        files += [os.path.join(dirpath, name)
-                  for name in fnmatch.filter(names, pattern)
-                  if name not in exclude]
-
     for dirpath, dirnames, filenames in os.walk(path):
         filenames = [x for x in filenames if x not in exclude]
         files += [os.path.join(dirpath, name)
