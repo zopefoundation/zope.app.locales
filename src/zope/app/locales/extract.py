@@ -21,6 +21,8 @@ $Id$
 __docformat__ = 'restructuredtext'
 
 import os, sys, fnmatch, io
+import collections
+import functools
 import getopt
 import time
 import tokenize
@@ -66,6 +68,7 @@ msgstr ""
 
 '''
 
+@functools.total_ordering
 @implementer(IPOTEntry)
 class POTEntry(object):
     r"""This class represents a single message entry in the POT file.
@@ -133,8 +136,6 @@ class POTEntry(object):
         if (isinstance(self.msgid, Message) and
             self.msgid.default is not None):
             default = self.msgid.default.strip()
-            if isinstance(default, unicode):
-                default = default
             lines = normalize(default, DEFAULT_CHARSET).split("\n")
             lines[0] = "#. Default: %s\n" % lines[0]
             for i in range(1, len(lines)):
@@ -146,7 +147,7 @@ class POTEntry(object):
 
     def __lt__(self, other):
         if not isinstance(other, POTEntry):
-            raise NotImplemented
+            return NotImplemented
         return (self.locations, self.msgid) < (other.locations, other.msgid)
 
     def __repr__(self):
@@ -164,7 +165,7 @@ class POTMaker(object):
         self.catalog = {}
 
     def add(self, strings, base_dir=None):
-        for msgid, locations in list(strings.items()):
+        for msgid, locations in strings.items():
             if msgid == '':
                 continue
             if msgid not in self.catalog:
@@ -351,7 +352,7 @@ class TokenEater(object):
         # Sort the entries.  First sort each particular entry's keys, then
         # sort all the entries by their first item.
         reverse = {}
-        for k, v in list(self.__messages.items()):
+        for k, v in self.__messages.items():
             keys = sorted(v.keys())
             reverse.setdefault(tuple(keys), []).append((k, v))
         rkeys = sorted(reverse.keys())
@@ -367,17 +368,21 @@ class TokenEater(object):
 
         return catalog
 
-def find_files(dir, pattern, exclude=()):
+def find_files(path, pattern, exclude=()):
     files = []
 
     def visit(files, dirname, names):
-        names[:] = [x for x in names if x not in exclude]
-        files += [os.path.join(dirname, name)
+        names[:] = [x for x in filenames if x not in exclude]
+        files += [os.path.join(dirpath, name)
                   for name in fnmatch.filter(names, pattern)
                   if name not in exclude]
 
-    for dirpath, dirnames, filenames in os.walk(dir, visit, files):
-        visit(files, dirpath, filenames)
+    for dirpath, dirnames, filenames in os.walk(path):
+        filenames = [x for x in filenames if x not in exclude]
+        files += [os.path.join(dirpath, name)
+                  for name in fnmatch.filter(filenames, pattern)
+                  if name not in exclude]
+
     return files
 
 
@@ -493,10 +498,10 @@ def zcml_strings(path, domain="zope", site_zcml=None):
     context = xmlconfig.file(site_zcml, context=context, execute=False)
 
     catalog = context.i18n_strings.get(domain, {})
-    res = {}
+    res = collections.defaultdict(list)
     duplicated = []
     append = duplicated.append
-    for msg, locations  in catalog.items():
+    for msg, locations in catalog.items():
         for filename, lineno in locations:
             # only collect locations based on the given path
             if filename.startswith(path):
@@ -504,9 +509,7 @@ def zcml_strings(path, domain="zope", site_zcml=None):
                 # skip duplicated entries
                 if id not in duplicated:
                     append(id)
-                    l = res.get(msg, [])
-                    l.append((filename, lineno))
-                    res[msg] = l
+                    res[msg].append((filename, lineno))
     return res
 
 def tal_strings(dir,
@@ -614,7 +617,7 @@ def tal_strings(dir,
         if defaultCatalog == None:
             engine.catalog['default'] = {}
         catalog.update(engine.catalog['default'])
-    for msgid, locations in list(catalog.items()):
+    for msgid, locations in catalog.items():
         catalog[msgid] = [(l[0], l[1][0]) for l in locations]
     return catalog
 
@@ -748,14 +751,14 @@ def main(argv=None):
             os.mkdir(output_dir)
         output_file = os.path.join(output_dir, output_file)
 
-    print("base path: %r\n" \
-          "search path: %s\n" \
-          "'site.zcml' location: %s\n" \
-          "exclude dirs: %r\n" \
-          "domain: %r\n" \
-          "include default domain: %r\n" \
-          "output file: %r\n" \
-          "Python only: %r" \
+    print("base path: %r\n"
+          "search path: %s\n"
+          "'site.zcml' location: %s\n"
+          "exclude dirs: %r\n"
+          "domain: %r\n"
+          "include default domain: %r\n"
+          "output file: %r\n"
+          "Python only: %r"
           % (base_dir, path, site_zcml, exclude_dirs, domain,
              include_default_domain, output_file, python_only))
 
