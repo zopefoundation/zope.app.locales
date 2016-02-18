@@ -11,6 +11,12 @@ CHANGES
 
 - Added Python 3 support.
 
+- The extract_zcml() dir argument now filters on directory, like
+  z3c.recipe.i18n's copy of the method does.
+
+- You can now run the tests with setup.py test, so you don't have to
+  use buildout anymore.
+
 
 3.7.4 (2012-05-14)
 ------------------
