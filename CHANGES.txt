@@ -7,7 +7,7 @@ CHANGES
 
 - Added a test for the zcml_extraction.
 
-- Remove the zope.app.applicationcontrol dependency.
+- Remove zope.app.applicationcontrol and zope.app.appsetup dependencies.
 
 
 3.7.4 (2012-05-14)
