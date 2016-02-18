@@ -473,6 +473,12 @@ def py_strings(dir, domain="zope", exclude=(), verify_domain=False):
 
 def zcml_strings(path, domain="zope", site_zcml=None):
     """Retrieve all ZCML messages from `dir` that are in the `domain`.
+
+    Note, the pot maker runs in a loop for each package and the maker collects
+    only the given messages from such a package by the given path. This allows
+    us to collect messages from eggs and external packages. This also prevents
+    to collect the same message more then one time since we use the same zcml
+    configuration for each package path.
     """
     from zope.configuration import xmlconfig, config
 
