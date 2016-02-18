@@ -16,6 +16,7 @@ __docformat__ = 'restructuredtext'
 
 import doctest
 import os
+import re
 import shutil
 import tempfile
 import unittest
@@ -23,6 +24,7 @@ import zope.app.locales
 import zope.component
 import zope.configuration.xmlconfig
 
+from zope.testing import renormalizing
 
 class TestIsUnicodeInAllCatalog(unittest.TestCase):
 
@@ -245,17 +247,26 @@ def doctest_POTMaker_write():
 
     """
 
+checker = renormalizing.RENormalizing([
+    # Python 3 unicode removed the "u".
+    (re.compile("u('.*?')"),
+     r"\1"),
+    (re.compile('u(".*?")'),
+     r"\1"),
+    ])
 
 def test_suite():
     return unittest.TestSuite((
         doctest.DocTestSuite(
             optionflags=doctest.NORMALIZE_WHITESPACE|
                         doctest.ELLIPSIS|
-                        doctest.REPORT_NDIFF,),
+                        doctest.REPORT_NDIFF,
+            checker=checker),
         doctest.DocTestSuite('zope.app.locales.extract',
             optionflags=doctest.NORMALIZE_WHITESPACE|
                         doctest.ELLIPSIS|
-                        doctest.REPORT_NDIFF,),
+                        doctest.REPORT_NDIFF,
+            checker=checker),
         unittest.makeSuite(TestIsUnicodeInAllCatalog),
         unittest.makeSuite(ZCMLTest),
         ))

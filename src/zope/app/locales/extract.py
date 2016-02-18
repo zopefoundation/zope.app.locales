@@ -238,25 +238,25 @@ class TokenEater(object):
     message id with a default value:
 
     >>> msgid = items.pop(0)[0]
-    >>> msgid == u'hello ${name}'
-    True
-    >>> msgid.default == u'buenos dias'
-    True
+    >>> msgid
+    u'hello ${name}'
+    >>> msgid.default
+    u'buenos dias'
 
     >>> msgid = items.pop(0)[0]
-    >>> msgid == u'hi ${name}'
-    True
+    >>> msgid
+    u'hi ${name}'
     >>> msgid.default
 
     >>> msgid = items.pop(0)[0]
-    >>> msgid == u'k, bye'
-    True
-    >>> msgid.default == u''
-    True
+    >>> msgid
+    u'k, bye'
+    >>> msgid.default
+    u''
 
     >>> msgid = items.pop(0)[0]
-    >>> msgid == u'kthxbye'
-    True
+    >>> msgid
+    u'kthxbye'
     >>> msgid.default
 
     Note that everything gets converted to unicode.
