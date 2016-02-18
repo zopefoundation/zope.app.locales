@@ -71,6 +71,7 @@ setup(name='zope.app.locales',
               'zope.i18n',
               'zope.tal',
               'zope.testing',
+              'zope.configuration',
                 ],
           zcml=[
               'zope.i18n',
