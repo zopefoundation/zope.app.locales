@@ -150,6 +150,11 @@ class POTEntry(object):
             return NotImplemented
         return (self.locations, self.msgid) < (other.locations, other.msgid)
 
+    def __eq__(self, other):
+        if not isinstance(other, POTEntry):
+            return NotImplemented
+        return (self.locations, self.msgid) == (other.locations, other.msgid)
+
     def __repr__(self):
         return '<POTEntry: %r>' % self.msgid
 
