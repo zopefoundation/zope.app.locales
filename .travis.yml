@@ -5,6 +5,7 @@ python:
 install:
     - pip install .
 script:
-    - python setup.py test -q
+    - zope-testrunner --test-path src
 notifications:
     email: false
+sudo: false
