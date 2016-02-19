@@ -4,6 +4,7 @@ python:
     - 3.4
 install:
     - pip install .
+    - pip install zope.testrunner zope.testing zope.i18n zope.tal zope.component zope.security
 script:
     - zope-testrunner --test-path src
 notifications:
