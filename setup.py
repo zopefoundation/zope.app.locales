@@ -29,7 +29,6 @@ tests_require = [
     'zope.tal',
     'zope.testing',
     'zope.component',
-    'zope.security',
 ]
 
 
@@ -76,6 +75,7 @@ setup(name='zope.app.locales',
                         'zope.i18nmessageid',
                         'zope.interface',
                         'zope.configuration',
+                        'zope.security',
                         ],
       extras_require = dict(
           test=tests_require,
@@ -84,7 +84,6 @@ setup(name='zope.app.locales',
               ],
           extract=[
               'zope.tal',
-              'zope.security',
               ],
           ),
       include_package_data = True,
