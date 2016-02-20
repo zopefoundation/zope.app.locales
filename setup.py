@@ -23,6 +23,15 @@ $Id$
 import os
 from setuptools import setup, find_packages
 
+
+tests_require = [
+    'zope.i18n',
+    'zope.tal',
+    'zope.testing',
+    'zope.component',
+]
+
+
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
@@ -48,6 +57,10 @@ setup(name='zope.app.locales',
           'Intended Audience :: Developers',
           'License :: OSI Approved :: Zope Public License',
           'Programming Language :: Python',
+          'Programming Language :: Python :: 2.7',
+          'Programming Language :: Python :: 3',
+          'Programming Language :: Python :: 3.4',
+          'Programming Language :: Python :: 3.5',
           'Natural Language :: English',
           'Operating System :: OS Independent',
           'Topic :: Internet :: WWW/HTTP',
@@ -61,16 +74,13 @@ setup(name='zope.app.locales',
       install_requires=['setuptools',
                         'zope.i18nmessageid',
                         'zope.interface',
+                        'zope.configuration',
+                        'zope.security',
                         ],
       extras_require = dict(
-          test=[
-              'zope.i18n',
-              'zope.tal',
-              'zope.testing',
-                ],
+          test=tests_require,
           zcml=[
               'zope.i18n',
-              'zope.configuration',
               ],
           extract=[
               'zope.tal',
@@ -81,5 +91,7 @@ setup(name='zope.app.locales',
       entry_points="""
       [console_scripts]
       i18nextract = zope.app.locales.extract:main [extract]
-      """
+      """,
+      test_suite='zope.app.locales.tests.test_suite',
+      tests_require=tests_require,
       )

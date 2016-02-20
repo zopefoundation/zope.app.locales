@@ -16,6 +16,7 @@ __docformat__ = 'restructuredtext'
 
 import doctest
 import os
+import re
 import shutil
 import tempfile
 import unittest
@@ -23,6 +24,7 @@ import zope.app.locales
 import zope.component
 import zope.configuration.xmlconfig
 
+from zope.testing import renormalizing
 
 class TestIsUnicodeInAllCatalog(unittest.TestCase):
 
@@ -39,7 +41,7 @@ class TestIsUnicodeInAllCatalog(unittest.TestCase):
                         mcatalog = GettextMessageCatalog(lang, 'zope',
                                            os.path.join(lc_path, f))
                         catalog = mcatalog._catalog
-                        self.failUnless(catalog._charset,
+                        self.assertTrue(catalog._charset,
             u"""Charset value for the Message catalog is missing.
                 The language is %s (zope.po).
                 Value of the message catalog should be in unicode""" % (lang,)
@@ -52,7 +54,7 @@ class ZCMLTest(unittest.TestCase):
         try:
             zope.configuration.xmlconfig.XMLConfig(
                 'configure.zcml', zope.app.locales)()
-        except Exception, e:
+        except Exception as e:
             self.fail(e)
 
     def test_configure_should_register_n_components(self):
@@ -86,7 +88,7 @@ class ZCMLTest(unittest.TestCase):
         with open(fn, 'wt') as zcmlfile:
             zcmlfile.write(zcml)
 
-        strings = zope.app.locales.extract.zcml_strings('unused', 'testdomain',
+        strings = zope.app.locales.extract.zcml_strings(dirname, 'testdomain',
                                                        site_zcml=fn)
         self.assertEqual(sorted(strings.keys()),
                          [u'Test Permission',
@@ -203,7 +205,7 @@ def doctest_POTMaker_write():
 
         >>> f = open(path)
         >>> pot = f.read()
-        >>> print pot
+        >>> print(pot)
         ##############################################################################
         #
         # Copyright (c) 2003-2004 Zope Foundation and Contributors.
@@ -245,17 +247,26 @@ def doctest_POTMaker_write():
 
     """
 
+checker = renormalizing.RENormalizing([
+    # Python 3 unicode removed the "u".
+    (re.compile("u('.*?')"),
+     r"\1"),
+    (re.compile('u(".*?")'),
+     r"\1"),
+    ])
 
 def test_suite():
     return unittest.TestSuite((
         doctest.DocTestSuite(
             optionflags=doctest.NORMALIZE_WHITESPACE|
                         doctest.ELLIPSIS|
-                        doctest.REPORT_NDIFF,),
+                        doctest.REPORT_NDIFF,
+            checker=checker),
         doctest.DocTestSuite('zope.app.locales.extract',
             optionflags=doctest.NORMALIZE_WHITESPACE|
                         doctest.ELLIPSIS|
-                        doctest.REPORT_NDIFF,),
+                        doctest.REPORT_NDIFF,
+            checker=checker),
         unittest.makeSuite(TestIsUnicodeInAllCatalog),
         unittest.makeSuite(ZCMLTest),
         ))
