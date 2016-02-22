@@ -65,6 +65,7 @@ setup(name='zope.app.locales',
       extras_require = dict(
           test=[
               'zope.i18n',
+              'zope.security',
               'zope.tal',
               'zope.testing',
                 ],
