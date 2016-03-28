@@ -5,7 +5,7 @@ CHANGES
 3.7.5 (unreleased)
 ------------------
 
-- Added a test for the zcml_extraction.
+- Add a test for the zcml_extraction.
 
 - Remove zope.app.applicationcontrol and zope.app.appsetup dependencies.
 
