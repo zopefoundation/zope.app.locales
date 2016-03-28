@@ -2,7 +2,7 @@
 CHANGES
 =======
 
-3.7.5 (unreleased)
+3.7.5 (2016-03-28)
 ------------------
 
 - Add a test for the zcml_extraction.

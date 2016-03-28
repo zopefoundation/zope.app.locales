@@ -26,7 +26,7 @@ def read(*rnames):
 
 
 setup(name='zope.app.locales',
-      version='3.7.5dev',
+      version='3.7.5',
       author='Zope Corporation and Contributors',
       author_email='zope-dev@zope.org',
       description='Zope locale extraction and management utilities',
