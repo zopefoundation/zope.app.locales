@@ -9,6 +9,8 @@ CHANGES
 
 - Remove zope.app.applicationcontrol and zope.app.appsetup dependencies.
 
+- Add list of supported Python versions to Trove classifiers.
+
 
 3.7.4 (2012-05-14)
 ------------------
