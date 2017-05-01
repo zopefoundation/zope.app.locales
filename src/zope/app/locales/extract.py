@@ -19,6 +19,7 @@ and ZCML files.
 from __future__ import print_function
 __docformat__ = 'restructuredtext'
 
+from collections import defaultdict
 import os
 import sys
 import fnmatch
@@ -33,11 +34,11 @@ from zope.interface import implementer
 from zope.i18nmessageid import Message
 from zope.app.locales.interfaces import IPOTEntry, IPOTMaker, ITokenEater
 
-if not hasattr(tokenize, 'generate_tokens'):
+try:
+    from tokenize import generate_tokens
+except ImportError:
     # The function was renamed in Python 3
-    generate_tokens = tokenize.tokenize
-else:
-    generate_tokens = tokenize.generate_tokens
+    from tokenize import tokenize as generate_tokens
 
 try:
     text_type = unicode
@@ -51,7 +52,7 @@ _import_chickens = {}, {}, ("*",) # dead chickens needed by __import__
 pot_header = u'''\
 ##############################################################################
 #
-# Copyright (c) 2003-2004 Zope Foundation and Contributors.
+# Copyright (c) 2003-2017 Zope Foundation and Contributors.
 # All Rights Reserved.
 #
 # This software is subject to the provisions of the Zope Public License,
@@ -129,7 +130,9 @@ class POTEntry(object):
     ``unicode`` on its value and default value; on Python 3, ``unicode`` is str, so if
     we pass a bytes literal, we wind up doing str(bytes), which produces awkward
     data: "b'\\xd6"; this doesn't work at all when the C extension is not available
-    on Python 2 because the ``unicode`` constructor raises an error):
+    on Python 2 because the ``unicode`` constructor raises an error).
+    See https://github.com/zopefoundation/zope.i18nmessageid/issues/5 and
+    https://github.com/zopefoundation/zope.i18nmessageid/issues/4:
 
     >>> from zope.i18nmessageid.message import pyMessage
     >>> if pyMessage is not Message and str is bytes:
@@ -275,13 +278,13 @@ class TokenEater(object):
     ...     u"_('k, bye', ''); "
     ...     u"_('kthxbye')"
     ...     )
-    >>> for t in generate_tokens(file.readline): eater(*t)
+    >>> for t in generate_tokens(file.readline):
+    ...     eater(*t)
 
     The catalog of collected message ids contains our example
 
     >>> catalog = eater.getCatalog()
-    >>> items = list(catalog.items())
-    >>> items.sort()
+    >>> items = sorted(catalog.items())
     >>> items
     [(u'hello ${name}', [(None, 1)]),
      (u'hi ${name}', [(None, 1)]),
@@ -315,7 +318,6 @@ class TokenEater(object):
 
     Note that everything gets converted to unicode.
     """
-
 
     def __init__(self):
         self.__messages = {}
@@ -406,11 +408,10 @@ class TokenEater(object):
         catalog = {}
         # Sort the entries.  First sort each particular entry's keys, then
         # sort all the entries by their first item.
-        reverse = {}
+        reverse = defaultdict(list)
         for k, v in self.__messages.items():
-            keys = list(v.keys())
-            keys.sort()
-            reverse.setdefault(tuple(keys), []).append((k, v))
+            reverse[tuple(sorted(v.keys()))].append((k, v))
+
         rkeys = reverse.keys()
         for rkey in sorted(rkeys):
             rentries = reverse[rkey]
@@ -427,12 +428,6 @@ class TokenEater(object):
 
 def find_files(dir, pattern, exclude=()):
     files = []
-
-    # def visit(files, dirname, names):
-    #     names[:] = filter(lambda x:x not in exclude, names)
-    #     files += [os.path.join(dirname, name)
-    #               for name in fnmatch.filter(names, pattern)
-    #               if name not in exclude]
 
     for dirpath, _dirnames, filenames in os.walk(dir):
         files += [os.path.join(dirpath, name)

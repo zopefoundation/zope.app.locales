@@ -203,7 +203,7 @@ def doctest_POTMaker_write():
         >>> print(pot)
         ##############################################################################
         #
-        # Copyright (c) 2003-2004 Zope Foundation and Contributors.
+        # Copyright (c) 2003-2017 Zope Foundation and Contributors.
         # All Rights Reserved.
         #
         # This software is subject to the provisions of the Zope Public License,
@@ -313,8 +313,11 @@ class TestPygettext(MainTestMixin,
         main(argv)
 
     def test_extract(self):
+        me = __file__
+        if me.endswith(".pyc"):
+            me = me[:-1]
         out, _err = self.run_patched(['-d', 'TESTDOMAIN',
-                                      '-v', '-a', '-D', '-o', '-', __file__])
+                                      '-v', '-a', '-D', '-o', '-', me])
         self.assertIn('POT-Creation-Date', out.getvalue())
 
 

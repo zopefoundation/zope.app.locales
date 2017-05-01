@@ -146,11 +146,11 @@ import getopt
 import tokenize
 
 
-if not hasattr(tokenize, 'generate_tokens'):
+try:
+    from tokenize import generate_tokens
+except ImportError:
     # The function was renamed in Python 3
-    generate_tokens = tokenize.tokenize
-else:
-    generate_tokens = tokenize.generate_tokens
+    from tokenize import tokenize as generate_tokens
 
 
 # for selftesting
@@ -264,9 +264,6 @@ class TokenEater(object):
 
     def __call__(self, ttype, tstring, stup, etup, line):
         # dispatch
-##        import token
-##        print(\, file=sys.stderr, 'ttype:', token.tok_name[ttype])
-##              'tstring:', tstring
         self.__state(ttype, tstring, stup[0])
 
     def __waiting(self, ttype, tstring, lineno):
@@ -363,8 +360,8 @@ class TokenEater(object):
                 # k is the message string, v is a dictionary-set of (filename,
                 # lineno) tuples.  We want to sort the entries in v first by
                 # file name and then by line number.
-                v = list(v.keys())
-                v.sort()
+                v = sorted(v.keys())
+
                 if not options.writelocations:
                     pass
                 # location comments are different b/w Solaris and GNU:
@@ -476,15 +473,12 @@ def main(argv=None):
         elif opt in ('-x', '--exclude-file'):
             options.excludefilename = arg
         elif opt in ('-X', '--no-docstrings'):
-            fp = open(arg)
-            try:
+            with open(arg) as fp:
                 while 1:
                     line = fp.readline()
                     if not line:
                         break
                     options.nodocstrings[line[:-1]] = 1
-            finally:
-                fp.close()
 
     # calculate escapes
     make_escapes(options.escape)
@@ -495,9 +489,8 @@ def main(argv=None):
     # initialize list of strings to exclude
     if options.excludefilename:
         try:
-            fp = open(options.excludefilename)
-            options.toexclude = fp.readlines()
-            fp.close()
+            with open(options.excludefilename) as fp:
+                options.toexclude = fp.readlines()
         except IOError:
             print(_(
                 "Can't read --exclude-file: %s") % options.excludefilename,
