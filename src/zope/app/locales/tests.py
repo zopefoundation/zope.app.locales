@@ -39,21 +39,18 @@ class TestIsUnicodeInAllCatalog(unittest.TestCase):
                         mcatalog = GettextMessageCatalog(lang, 'zope',
                                            os.path.join(lc_path, f))
                         catalog = mcatalog._catalog
-                        self.failUnless(catalog._charset,
-            u"""Charset value for the Message catalog is missing.
-                The language is %s (zope.po).
-                Value of the message catalog should be in unicode""" % (lang,)
+                        self.assertTrue(catalog._charset,
+                                        u"""Charset value for the Message catalog is missing.
+                                        The language is %s (zope.po).
+                                        Value of the message catalog should be in unicode""" % (lang,)
                                         )
 
 
 class ZCMLTest(unittest.TestCase):
 
     def test_configure_zcml_should_be_loadable(self):
-        try:
-            zope.configuration.xmlconfig.XMLConfig(
+        zope.configuration.xmlconfig.XMLConfig(
                 'configure.zcml', zope.app.locales)()
-        except Exception, e:
-            self.fail(e)
 
     def test_configure_should_register_n_components(self):
         gsm = zope.component.getGlobalSiteManager()
@@ -203,7 +200,7 @@ def doctest_POTMaker_write():
 
         >>> f = open(path)
         >>> pot = f.read()
-        >>> print pot
+        >>> print(pot)
         ##############################################################################
         #
         # Copyright (c) 2003-2004 Zope Foundation and Contributors.
@@ -245,17 +242,101 @@ def doctest_POTMaker_write():
 
     """
 
+class MainTestMixin(object):
+
+    main = None
+
+    def run_patched(self, argv, exit_code=None):
+        import sys
+        try:
+            from cStringIO import StringIO
+        except ImportError:
+            from io import StringIO
+        main = self.main
+        _exit = sys.exit
+        stderr = sys.stderr
+        stdout = sys.stdout
+        try:
+            def sys_exit(code):
+                self.assertEqual(exit_code, code)
+                raise SystemExit()
+            sys.exit = sys_exit
+            err = sys.stderr = StringIO()
+            out = sys.stdout = StringIO()
+            if exit_code is not None:
+                with self.assertRaises(SystemExit):
+                    main(argv)
+            else:
+                main(argv)
+            return out, err
+        finally:
+            sys.exit = _exit
+            sys.stderr = stderr
+            sys.stdout = stdout
+
+    def test_main_help(self):
+        self.run_patched(['-h'], 0)
+
+class TestExtract(MainTestMixin,
+                  unittest.TestCase):
+
+    def main(self, argv):
+        from zope.app.locales.extract import main
+        main(argv)
+
+
+    def test_main_extract(self):
+        _out, err = self.run_patched([], 1)
+        self.assertIn("the module search path", err.getvalue())
+
+        _out, err = self.run_patched(['-p', os.path.dirname(__file__)], 1)
+        self.assertIn('location of the root ZCML file', err.getvalue())
+
+        _out, err = self.run_patched(['-p', os.path.dirname(__file__),
+                                      '-s', 'no such file'], 1)
+        self.assertIn('does not exist', err.getvalue())
+
+        temp = tempfile.mkdtemp()
+
+        out, err = self.run_patched(['-p', os.path.dirname(__file__),
+                                     '-s', os.path.join(os.path.dirname(__file__), 'configure.zcml'),
+                                     '-o', temp],
+                                    )
+        self.assertIn('base path:', out.getvalue())
+        shutil.rmtree(temp)
+
+class TestPygettext(MainTestMixin,
+                    unittest.TestCase):
+
+    def main(self, argv):
+        from zope.app.locales.pygettext import main
+        main(argv)
+
+    def test_extract(self):
+        out, _err = self.run_patched(['-d', 'TESTDOMAIN',
+                                      '-v', '-a', '-D', '-o', '-', __file__])
+        self.assertIn('POT-Creation-Date', out.getvalue())
+
+
+from zope.testing import renormalizing
+import re
+checker = renormalizing.RENormalizing([
+    (re.compile(r"b'([^']*)'"), r"'\1'"),
+    (re.compile(r"u'([^']*)'"), r"'\1'"),
+])
 
 def test_suite():
     return unittest.TestSuite((
         doctest.DocTestSuite(
-            optionflags=doctest.NORMALIZE_WHITESPACE|
-                        doctest.ELLIPSIS|
-                        doctest.REPORT_NDIFF,),
-        doctest.DocTestSuite('zope.app.locales.extract',
-            optionflags=doctest.NORMALIZE_WHITESPACE|
-                        doctest.ELLIPSIS|
-                        doctest.REPORT_NDIFF,),
-        unittest.makeSuite(TestIsUnicodeInAllCatalog),
-        unittest.makeSuite(ZCMLTest),
-        ))
+            optionflags=(doctest.NORMALIZE_WHITESPACE
+                         | doctest.ELLIPSIS
+                         | doctest.REPORT_NDIFF),
+            checker=checker),
+        doctest.DocTestSuite(
+            'zope.app.locales.extract',
+            optionflags=(doctest.NORMALIZE_WHITESPACE
+                         | doctest.ELLIPSIS
+                         | doctest.REPORT_NDIFF),
+            checker=checker),
+        unittest.defaultTestLoader.loadTestsFromName(__name__),
+    ))

@@ -8,3 +8,5 @@ __pycache__/
 tags
 TAGS
 ID
+.coverage
+htmlcov/
