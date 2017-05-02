@@ -16,6 +16,8 @@ notifications:
 install:
   - pip install -U pip setuptools
   - pip install -U coveralls coverage
+  # XXX Temporary.
+  - pip install git+http://github.com/zopefoundation/zope.i18nmessageid#egg=zope.i18nmessageid
   - pip install -U -e ".[test,zcml,extract]"
 
 

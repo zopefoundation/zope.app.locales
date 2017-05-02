@@ -126,27 +126,30 @@ class POTEntry(object):
     <BLANKLINE>
 
     But msgid might be an ascii encoded string and `default` might be a
-    string with the DEFAULT_ENCODING, too (note that Message always runs
-    ``unicode`` on its value and default value; on Python 3, ``unicode`` is str, so if
-    we pass a bytes literal, we wind up doing str(bytes), which produces awkward
-    data: "b'\\xd6"; this doesn't work at all when the C extension is not available
-    on Python 2 because the ``unicode`` constructor raises an error).
-    See https://github.com/zopefoundation/zope.i18nmessageid/issues/5 and
-    https://github.com/zopefoundation/zope.i18nmessageid/issues/4:
+    (byte) string with the DEFAULT_ENCODING, too:
 
-    >>> from zope.i18nmessageid.message import pyMessage
-    >>> if pyMessage is not Message and str is bytes:
-    ...     entry = POTEntry(Message("Oe", default="\xd6"))
-    ...     entry.write(FakeFile())
-    ... else:
-    ...     print("#. Default: \"\\326\"\nmsgid \"Oe\"\nmsgstr \"\"\n")
+    >>> entry = POTEntry(Message("Oe", default=b"\xd6"))
+    >>> entry.write(FakeFile())
     #. Default: "\326"
     msgid "Oe"
     msgstr ""
     <BLANKLINE>
 
-    """
+    Entries are fully ordered by msgid and then locations; comments
+    are ignored:
 
+    >>> entry = POTEntry('aaa')
+    >>> entry_w_comment = POTEntry('aaa')
+    >>> entry_w_comment.addComment('comment')
+    >>> entry == entry_w_comment
+    True
+    >>> entry_w_comment.addLocationComment('zzz', 123)
+    >>> entry == entry_w_comment
+    False
+    >>> entry < entry_w_comment
+    True
+
+    """
 
     def __init__(self, msgid, comments=None):
         self.msgid = msgid
@@ -174,15 +177,7 @@ class POTEntry(object):
             default = self.msgid.default.strip()
 
             if not isinstance(default, bytes):
-                if str is not bytes:
-                    # Python 3 makes it spectacularly difficult to get
-                    # 8 bit values into here.
-                    try:
-                        default = default.encode("latin-1")
-                    except UnicodeEncodeError:
-                        default = default.encode(DEFAULT_CHARSET)
-                else:
-                    default = default.encode(DEFAULT_CHARSET)
+                default = default.encode(DEFAULT_CHARSET)
 
             lines = normalize(default).split(b"\n")
             lines[0] = b"#. Default: %s\n" % lines[0]
