@@ -342,8 +342,7 @@ class TokenEater(object):
         # sort all the entries by their first item.
         reverse = {}
         for k, v in self.__messages.items():
-            keys = list(v.keys())
-            keys.sort()
+            keys = sorted(v.keys())
             reverse.setdefault(tuple(keys), []).append((k, v))
         rkeys = reverse.keys()
 

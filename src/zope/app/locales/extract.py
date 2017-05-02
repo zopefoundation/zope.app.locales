@@ -754,16 +754,16 @@ def main(argv=None):
             os.mkdir(output_dir)
         output_file = os.path.join(output_dir, output_file)
 
-    print( "base path: %r\n" \
-           "search path: %s\n" \
-           "'site.zcml' location: %s\n" \
-           "exclude dirs: %r\n" \
-           "domain: %r\n" \
-           "include default domain: %r\n" \
-           "output file: %r\n" \
-           "Python only: %r" \
-           % (base_dir, path, site_zcml, exclude_dirs, domain,
-              include_default_domain, output_file, python_only))
+    print("base path: %r\n" \
+          "search path: %s\n" \
+          "'site.zcml' location: %s\n" \
+          "exclude dirs: %r\n" \
+          "domain: %r\n" \
+          "include default domain: %r\n" \
+          "output file: %r\n" \
+          "Python only: %r" \
+          % (base_dir, path, site_zcml, exclude_dirs, domain,
+             include_default_domain, output_file, python_only))
 
     maker = POTMaker(output_file, path)
     maker.add(py_strings(path, domain, exclude=exclude_dirs), base_dir)

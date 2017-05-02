@@ -79,7 +79,9 @@ class ZCMLTest(unittest.TestCase):
                 />
             </configure>
         """
-        dirname = tempfile.mkdtemp()
+        dirname = tempfile.mkdtemp(prefix='zope-app-locales-tests-')
+        self.addCleanup(shutil.rmtree, dirname)
+
         fn = os.path.join(dirname, 'configure.zcml')
         with open(fn, 'wt') as zcmlfile:
             zcmlfile.write(zcml)
@@ -89,7 +91,6 @@ class ZCMLTest(unittest.TestCase):
         self.assertEqual(sorted(strings.keys()),
                          [u'Test Permission',
                           u'This test permission is defined in ZCML'])
-        shutil.rmtree(dirname)
 
 
 def doctest_POTEntry_sort_order():
@@ -303,7 +304,8 @@ class TestExtract(MainTestMixin,
                                       '-s', 'no such file'], 1)
         self.assertIn('does not exist', err.getvalue())
 
-        temp = tempfile.mkdtemp()
+        temp = tempfile.mkdtemp(prefix='zope-app-locales-tests-')
+        self.addCleanup(shutil.rmtree, temp)
 
         # An object that can look like the usual i18n
         # marker, but we'll do different things with it for coverage
@@ -326,7 +328,6 @@ class TestExtract(MainTestMixin,
 
         self.assertIn('Project-Id-Version: Unknown', pot_data)
 
-        shutil.rmtree(temp)
 
     def test_py_strings_verify_domain(self):
         from zope.app.locales.extract import py_strings
@@ -368,7 +369,7 @@ class TestPygettext(MainTestMixin,
 
     def test_extract(self):
         me = __file__
-        if me.endswith(".pyc"):
+        if me.endswith((".pyc", ".pyo")):
             me = me[:-1]
         out, _err = self.run_patched(['-d', 'TESTDOMAIN',
                                       '-v', '-a', '-D', '-o', '-', me])
