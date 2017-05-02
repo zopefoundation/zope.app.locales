@@ -65,7 +65,7 @@ setup(name='zope.app.locales',
       namespace_packages=['zope', 'zope.app'],
       install_requires=[
           'setuptools',
-          'zope.i18nmessageid',
+          'zope.i18nmessageid >= 4.1.0',
           'zope.interface',
       ],
       extras_require=dict(

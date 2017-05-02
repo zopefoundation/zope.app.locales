@@ -326,23 +326,8 @@ class TokenEater(object):
         self.__state(ttype, tstring, stup[0])
 
     def __waiting(self, ttype, tstring, lineno):
-        if ttype == tokenize.NAME and tstring in ['_']:
+        if ttype == tokenize.NAME and tstring in ('_',):
             self.__state = self.__keywordseen
-
-    def __suiteseen(self, ttype, tstring, lineno):
-        # ignore anything until we see the colon
-        if ttype == tokenize.OP and tstring == ':':
-            self.__state = self.__suitedocstring
-
-    def __suitedocstring(self, ttype, tstring, lineno):
-        # ignore any intervening noise
-        if ttype == tokenize.STRING:
-            self.__addentry(safe_eval(tstring), lineno, isdocstring=1)
-            self.__state = self.__waiting
-        elif ttype not in (tokenize.NEWLINE, tokenize.INDENT,
-                           tokenize.COMMENT):
-            # there was no class docstring
-            self.__state = self.__waiting
 
     def __keywordseen(self, ttype, tstring, lineno):
         if ttype == tokenize.OP and tstring == '(':
@@ -425,9 +410,10 @@ def find_files(dir, pattern, exclude=()):
     files = []
 
     for dirpath, _dirnames, filenames in os.walk(dir):
-        files += [os.path.join(dirpath, name)
-                  for name in fnmatch.filter(filenames, pattern)
-                  if name not in exclude]
+        files.extend(
+            [os.path.join(dirpath, name)
+             for name in fnmatch.filter(filenames, pattern)
+             if name not in exclude])
 
     return files
 
@@ -483,14 +469,13 @@ def py_strings(dir, domain="zope", exclude=(), verify_domain=False):
     """
     eater = TokenEater()
     make_escapes(0)
-    for filename in find_files(
-            dir, '*.py', exclude=('extract.py', 'pygettext.py')+tuple(exclude)):
-
+    for filename in find_files(dir, '*.py',
+                               exclude=('extract.py', 'pygettext.py') + tuple(exclude)):
         if verify_domain:
             module_name = module_from_filename(filename)
             try:
                 module = __import__(module_name, *_import_chickens)
-            except ImportError as e:
+            except ImportError as e: # pragma: no cover
                 # XXX if we can't import it - we assume that the domain is
                 # the right one
                 print("Could not import %s, "
@@ -506,7 +491,7 @@ def py_strings(dir, domain="zope", exclude=(), verify_domain=False):
                         continue
                 elif mf:
                     print("Could not figure out the i18n domain"
-                          "for module %s, assuming it is OK" % module_name, file=sys.stderr)
+                          " for module %s, assuming it is OK" % module_name, file=sys.stderr)
 
         with open(filename) as fp:
             eater.set_filename(filename)

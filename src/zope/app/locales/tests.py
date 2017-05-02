@@ -14,6 +14,7 @@
 """Tests for the message string extraction tool."""
 __docformat__ = 'restructuredtext'
 
+import contextlib
 import doctest
 import os
 import shutil
@@ -242,17 +243,19 @@ def doctest_POTMaker_write():
 
     """
 
+
 class MainTestMixin(object):
 
     main = None
 
-    def run_patched(self, argv, exit_code=None):
+    @contextlib.contextmanager
+    def patched_sys(self, exit_code=None):
         import sys
         try:
             from cStringIO import StringIO
         except ImportError:
             from io import StringIO
-        main = self.main
+
         _exit = sys.exit
         stderr = sys.stderr
         stdout = sys.stdout
@@ -265,14 +268,18 @@ class MainTestMixin(object):
             out = sys.stdout = StringIO()
             if exit_code is not None:
                 with self.assertRaises(SystemExit):
-                    main(argv)
+                    yield out, err
             else:
-                main(argv)
-            return out, err
+                yield out, err
         finally:
             sys.exit = _exit
             sys.stderr = stderr
             sys.stdout = stdout
+
+    def run_patched(self, argv, exit_code=None):
+        with self.patched_sys(exit_code) as (out, err):
+            self.main(argv)
+        return out, err
 
     def test_main_help(self):
         self.run_patched(['-h'], 0)
@@ -298,12 +305,59 @@ class TestExtract(MainTestMixin,
 
         temp = tempfile.mkdtemp()
 
+        # An object that can look like the usual i18n
+        # marker, but we'll do different things with it for coverage
+        # to be sure they're handled
+        class X(object):
+            def __add__(self, other):
+                return self
+
+        _ = X()
+        _ = _ + _
+
         out, err = self.run_patched(['-p', os.path.dirname(__file__),
                                      '-s', os.path.join(os.path.dirname(__file__), 'configure.zcml'),
                                      '-o', temp],
                                     )
         self.assertIn('base path:', out.getvalue())
+
+        with open(os.path.join(temp, 'zope.pot'), 'r') as f:
+            pot_data = f.read()
+
+        self.assertIn('Project-Id-Version: Unknown', pot_data)
+
         shutil.rmtree(temp)
+
+    def test_py_strings_verify_domain(self):
+        from zope.app.locales.extract import py_strings
+        from zope.app.locales.extract import _import_chickens
+
+        cat = py_strings(os.path.dirname(__file__), verify_domain=True)
+        self.assertEqual({}, cat)
+
+        # Now with a fake MessageFactory with no domain
+        tests = __import__('tests', *_import_chickens)
+        assert not hasattr(tests, '_')
+
+        class MessageFactory(object):
+            pass
+
+        try:
+            tests._ = MessageFactory
+            with self.patched_sys() as (_out, err):
+                cat = py_strings(os.path.dirname(__file__), verify_domain=True)
+            self.assertEqual({}, cat)
+            self.assertIn("Could not figure out the i18n domain", err.getvalue())
+
+            # Now with the wrong domain
+            MessageFactory._domain = 'notthedomain'
+            with self.patched_sys() as (out, err):
+                cat = py_strings(os.path.dirname(__file__), verify_domain=True)
+            self.assertEqual({}, cat)
+            self.assertEqual('', out.getvalue())
+            self.assertEqual('', err.getvalue())
+        finally:
+            del tests._
 
 class TestPygettext(MainTestMixin,
                     unittest.TestCase):
