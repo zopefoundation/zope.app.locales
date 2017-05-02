@@ -2,10 +2,10 @@
 CHANGES
 =======
 
-3.7.6 (unreleased)
+4.0.0 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add support for Python 3.5 and 3.6 and PyPy.
 
 
 3.7.5 (2016-03-28)
@@ -146,4 +146,3 @@ CHANGES
 
 * Initial release as a separate project, corresponds to ``zope.app.locales``
   from Zope 3.4.0a1
-

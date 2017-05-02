@@ -15,29 +15,44 @@
 """Extract message strings from python modules, page template files
 and ZCML files.
 
-$Id$
 """
+from __future__ import print_function
 __docformat__ = 'restructuredtext'
 
-import os, sys, fnmatch
+from collections import defaultdict
+import os
+import sys
+import fnmatch
+import functools
 import getopt
 import time
 import tokenize
 import traceback
-from pygettext import safe_eval, normalize, make_escapes
+from zope.app.locales.pygettext import safe_eval, normalize, make_escapes
 
-from zope.interface import implements
+from zope.interface import implementer
 from zope.i18nmessageid import Message
 from zope.app.locales.interfaces import IPOTEntry, IPOTMaker, ITokenEater
+
+try:
+    from tokenize import generate_tokens
+except ImportError:
+    # The function was renamed in Python 3
+    from tokenize import tokenize as generate_tokens
+
+try:
+    text_type = unicode
+except NameError:
+    text_type = str
 
 DEFAULT_CHARSET = 'UTF-8'
 DEFAULT_ENCODING = '8bit'
 _import_chickens = {}, {}, ("*",) # dead chickens needed by __import__
 
-pot_header = '''\
+pot_header = u'''\
 ##############################################################################
 #
-# Copyright (c) 2003-2004 Zope Foundation and Contributors.
+# Copyright (c) 2003-2017 Zope Foundation and Contributors.
 # All Rights Reserved.
 #
 # This software is subject to the provisions of the Zope Public License,
@@ -62,13 +77,17 @@ msgstr ""
 
 '''
 
+
+@implementer(IPOTEntry)
+@functools.total_ordering
 class POTEntry(object):
     r"""This class represents a single message entry in the POT file.
 
     >>> make_escapes(0)
     >>> class FakeFile(object):
     ...     def write(self, data):
-    ...         print data,
+    ...         assert isinstance(data, bytes), data
+    ...         print(data.decode('utf-8'))
 
     Let's create a message entry:
 
@@ -107,18 +126,30 @@ class POTEntry(object):
     <BLANKLINE>
 
     But msgid might be an ascii encoded string and `default` might be a
-    string with the DEFAULT_ENCODING, too:
+    (byte) string with the DEFAULT_ENCODING, too:
 
-    >>> entry = POTEntry(Message("Oe", default="\xd6"))
+    >>> entry = POTEntry(Message("Oe", default=b"\xd6"))
     >>> entry.write(FakeFile())
     #. Default: "\326"
     msgid "Oe"
     msgstr ""
     <BLANKLINE>
 
-    """
+    Entries are fully ordered by msgid and then locations; comments
+    are ignored:
 
-    implements(IPOTEntry)
+    >>> entry = POTEntry('aaa')
+    >>> entry_w_comment = POTEntry('aaa')
+    >>> entry_w_comment.addComment('comment')
+    >>> entry == entry_w_comment
+    True
+    >>> entry_w_comment.addLocationComment('zzz', 123)
+    >>> entry == entry_w_comment
+    False
+    >>> entry < entry_w_comment
+    True
+
+    """
 
     def __init__(self, msgid, comments=None):
         self.msgid = msgid
@@ -135,35 +166,50 @@ class POTEntry(object):
 
     def write(self, file):
         if self.comments:
-            file.write(self.comments)
+            file.write(self.comments.encode(DEFAULT_CHARSET)
+                       if not isinstance(self.comments, bytes)
+                       else self.comments)
         for filename, line in self.locations:
-            file.write('#: %s:%s\n' % (filename, line))
+            file.write(b'#: %s:%d\n' % (filename.encode(DEFAULT_CHARSET),
+                                        line))
         if (isinstance(self.msgid, Message) and
             self.msgid.default is not None):
             default = self.msgid.default.strip()
-            if isinstance(default, unicode):
-                default = default.encode(DEFAULT_CHARSET)
-            lines = normalize(default).split("\n")
-            lines[0] = "#. Default: %s\n" % lines[0]
-            for i in range(1, len(lines)):
-                lines[i] = "#.  %s\n" % lines[i]
-            file.write("".join(lines))
-        file.write('msgid %s\n' % normalize(self.msgid.encode(DEFAULT_CHARSET)))
-        file.write('msgstr ""\n')
-        file.write('\n')
 
-    def __cmp__(self, other):
-        return cmp((self.locations, self.msgid),
-                   (other.locations, other.msgid))
+            if not isinstance(default, bytes):
+                default = default.encode(DEFAULT_CHARSET)
+
+            lines = normalize(default).split(b"\n")
+            lines[0] = b"#. Default: %s\n" % lines[0]
+            for i in range(1, len(lines)):
+                lines[i] = b"#.  %s\n" % lines[i]
+            file.write(b"".join(lines))
+        msgid = self.msgid.encode(DEFAULT_CHARSET)
+        file.write(b'msgid %s\n' % normalize(msgid))
+        file.write(b'msgstr ""\n')
+        file.write(b'\n')
+
+    def __eq__(self, other):
+        try:
+            return (self.locations == other.locations
+                    and self.msgid == other.msgid)
+        except AttributeError: # pragma: no cover
+            return NotImplemented
+
+    def __lt__(self, other):
+        try:
+            return (self.locations, self.msgid) < (other.locations, other.msgid)
+        except AttributeError: # pragma: no cover
+            return NotImplemented
 
     def __repr__(self):
         return '<POTEntry: %r>' % self.msgid
 
 
+@implementer(IPOTMaker)
 class POTMaker(object):
     """This class inserts sets of strings into a POT file.
     """
-    implements(IPOTMaker)
 
     def __init__ (self, output_fn, path):
         self._output_filename = output_fn
@@ -186,26 +232,26 @@ class POTMaker(object):
         # First, try to get the product version
         fn = os.path.join(self.path, 'version.txt')
         if os.path.exists(fn):
-            return open(fn, 'r').read().strip()
+            with open(fn, 'r') as f:
+                return f.read().strip()
         return "Unknown"
 
     def write(self):
-        file = open(self._output_filename, 'w')
-        file.write(pot_header % {'time':     time.ctime(),
-                                 'version':  self._getProductVersion(),
-                                 'charset':  DEFAULT_CHARSET,
-                                 'encoding': DEFAULT_ENCODING})
+        with open(self._output_filename, 'wb') as file:
+            file.write((pot_header % {'time':     time.ctime(),
+                                      'version':  self._getProductVersion(),
+                                      'charset':  DEFAULT_CHARSET,
+                                      'encoding': DEFAULT_ENCODING}).encode(DEFAULT_CHARSET))
 
-        # Sort the catalog entries by filename
-        catalog = self.catalog.values()
-        catalog.sort()
+            # Sort the catalog entries by filename
+            catalog = self.catalog.values()
 
-        # Write each entry to the file
-        for entry in catalog:
-            entry.write(file)
+            # Write each entry to the file
+            for entry in sorted(catalog):
+                entry.write(file)
 
-        file.close()
 
+@implementer(ITokenEater)
 class TokenEater(object):
     """This is almost 100% taken from `pygettext.py`, except that I
     removed all option handling and output a dictionary.
@@ -217,23 +263,23 @@ class TokenEater(object):
     `tokenize`.
 
     >>> import tokenize
-    >>> from StringIO import StringIO
+    >>> from io import StringIO
 
     We feed it a (fake) file:
 
     >>> file = StringIO(
-    ...     "_(u'hello ${name}', u'buenos dias', {'name': 'Bob'}); "
-    ...     "_(u'hi ${name}', mapping={'name': 'Bob'}); "
-    ...     "_('k, bye', ''); "
-    ...     "_('kthxbye')"
+    ...     u"_(u'hello ${name}', u'buenos dias', {'name': 'Bob'}); "
+    ...     u"_(u'hi ${name}', mapping={'name': 'Bob'}); "
+    ...     u"_('k, bye', ''); "
+    ...     u"_('kthxbye')"
     ...     )
-    >>> tokenize.tokenize(file.readline, eater)
+    >>> for t in generate_tokens(file.readline):
+    ...     eater(*t)
 
     The catalog of collected message ids contains our example
 
     >>> catalog = eater.getCatalog()
-    >>> items = catalog.items()
-    >>> items.sort()
+    >>> items = sorted(catalog.items())
     >>> items
     [(u'hello ${name}', [(None, 1)]),
      (u'hi ${name}', [(None, 1)]),
@@ -267,7 +313,6 @@ class TokenEater(object):
 
     Note that everything gets converted to unicode.
     """
-    implements(ITokenEater)
 
     def __init__(self):
         self.__messages = {}
@@ -281,23 +326,8 @@ class TokenEater(object):
         self.__state(ttype, tstring, stup[0])
 
     def __waiting(self, ttype, tstring, lineno):
-        if ttype == tokenize.NAME and tstring in ['_']:
+        if ttype == tokenize.NAME and tstring in ('_',):
             self.__state = self.__keywordseen
-
-    def __suiteseen(self, ttype, tstring, lineno):
-        # ignore anything until we see the colon
-        if ttype == tokenize.OP and tstring == ':':
-            self.__state = self.__suitedocstring
-
-    def __suitedocstring(self, ttype, tstring, lineno):
-        # ignore any intervening noise
-        if ttype == tokenize.STRING:
-            self.__addentry(safe_eval(tstring), lineno, isdocstring=1)
-            self.__state = self.__waiting
-        elif ttype not in (tokenize.NEWLINE, tokenize.INDENT,
-                           tokenize.COMMENT):
-            # there was no class docstring
-            self.__state = self.__waiting
 
     def __keywordseen(self, ttype, tstring, lineno):
         if ttype == tokenize.OP and tstring == '(':
@@ -344,8 +374,8 @@ class TokenEater(object):
         if lineno is None:
             lineno = self.__lineno
 
-        if default is not None:
-            default = unicode(default)
+        if default is not None and not isinstance(default, text_type):
+            default = default.decode(DEFAULT_CHARSET)
         msg = Message(msg, default=default)
         entry = (self.__curfile, lineno)
         self.__messages.setdefault(msg, {})[entry] = isdocstring
@@ -358,23 +388,20 @@ class TokenEater(object):
         catalog = {}
         # Sort the entries.  First sort each particular entry's keys, then
         # sort all the entries by their first item.
-        reverse = {}
+        reverse = defaultdict(list)
         for k, v in self.__messages.items():
-            keys = v.keys()
-            keys.sort()
-            reverse.setdefault(tuple(keys), []).append((k, v))
+            reverse[tuple(sorted(v.keys()))].append((k, v))
+
         rkeys = reverse.keys()
-        rkeys.sort()
-        for rkey in rkeys:
+        for rkey in sorted(rkeys):
             rentries = reverse[rkey]
             rentries.sort()
             for msgid, locations in rentries:
                 catalog[msgid] = []
 
                 locations = locations.keys()
-                locations.sort()
 
-                for filename, lineno in locations:
+                for filename, lineno in sorted(locations):
                     catalog[msgid].append((filename, lineno))
 
         return catalog
@@ -382,13 +409,12 @@ class TokenEater(object):
 def find_files(dir, pattern, exclude=()):
     files = []
 
-    def visit(files, dirname, names):
-        names[:] = filter(lambda x:x not in exclude, names)
-        files += [os.path.join(dirname, name)
-                  for name in fnmatch.filter(names, pattern)
-                  if name not in exclude]
+    for dirpath, _dirnames, filenames in os.walk(dir):
+        files.extend(
+            [os.path.join(dirpath, name)
+             for name in fnmatch.filter(filenames, pattern)
+             if name not in exclude])
 
-    os.path.walk(dir, visit, files)
     return files
 
 
@@ -443,18 +469,17 @@ def py_strings(dir, domain="zope", exclude=(), verify_domain=False):
     """
     eater = TokenEater()
     make_escapes(0)
-    for filename in find_files(
-            dir, '*.py', exclude=('extract.py', 'pygettext.py')+tuple(exclude)):
-
+    for filename in find_files(dir, '*.py',
+                               exclude=('extract.py', 'pygettext.py') + tuple(exclude)):
         if verify_domain:
             module_name = module_from_filename(filename)
             try:
                 module = __import__(module_name, *_import_chickens)
-            except ImportError, e:
+            except ImportError as e: # pragma: no cover
                 # XXX if we can't import it - we assume that the domain is
                 # the right one
-                print >> sys.stderr, ("Could not import %s, "
-                                      "assuming i18n domain OK" % module_name)
+                print("Could not import %s, "
+                      "assuming i18n domain OK" % module_name, file=sys.stderr)
             else:
                 mf = getattr(module, '_', None)
                 # XXX if _ is has no _domain set we assume that the domain
@@ -465,19 +490,18 @@ def py_strings(dir, domain="zope", exclude=(), verify_domain=False):
                         # domain mismatch - skip this file
                         continue
                 elif mf:
-                    print >> sys.stderr, ("Could not figure out the i18n domain"
-                                          "for module %s, assuming it is OK" % module_name)
+                    print("Could not figure out the i18n domain"
+                          " for module %s, assuming it is OK" % module_name, file=sys.stderr)
 
-        fp = open(filename)
-        try:
+        with open(filename) as fp:
             eater.set_filename(filename)
             try:
-                tokenize.tokenize(fp.readline, eater)
-            except tokenize.TokenError, e:
-                print >> sys.stderr, '%s: %s, line %d, column %d' % (
-                    e[0], filename, e[1][0], e[1][1])
-        finally:
-            fp.close()
+                for t in generate_tokens(fp.readline):
+                    eater(*t)
+            except tokenize.TokenError as e: # pragma: no cover
+                print('%s: %s, line %d, column %d' % (
+                    e[0], filename, e[1][0], e[1][1]), file=sys.stderr)
+
     return eater.getCatalog()
 
 def zcml_strings(dir, domain="zope", site_zcml=None):
@@ -505,23 +529,26 @@ def tal_strings(dir,
       >>> dir = tempfile.mkdtemp()
 
     Let's create a page template in the i18n domain ``test``:
-      >>> testpt = open(os.path.join(dir, 'test.pt'), 'w')
-      >>> testpt.write('<tal:block i18n:domain="test" i18n:translate="">test</tal:block>')
-      >>> testpt.close()
+      >>> with open(os.path.join(dir, 'test.pt'), 'w') as testpt:
+      ...    _ = testpt.write('<tal:block i18n:domain="test" i18n:translate="">test</tal:block>')
 
     And now one in no domain:
-      >>> nopt = open(os.path.join(dir, 'no.pt'), 'w')
-      >>> nopt.write('<tal:block i18n:translate="">no domain</tal:block>')
-      >>> nopt.close()
+      >>> with open(os.path.join(dir, 'no.pt'), 'w') as nopt:
+      ...    _ = nopt.write('<tal:block i18n:translate="">no domain</tal:block>')
 
     Now let's find the strings for the domain ``test``:
 
-      >>> extract.tal_strings(dir, domain='test', include_default_domain=True)
-      {u'test': [('...test.pt', 1)], u'no domain': [('...no.pt', 1)]}
+      >>> strs = extract.tal_strings(dir, domain='test', include_default_domain=True)
+      >>> len(strs)
+      2
+      >>> strs[u'test']
+      [('...test.pt', 1)]
+      >>> strs[u'no domain']
+      [('...no.pt', 1)]
 
     And now an xml file
-      >>> xml = open(os.path.join(dir, 'xml.pt'), 'w')
-      >>> xml.write('''<?xml version="1.0" encoding="utf-8"?>
+      >>> with open(os.path.join(dir, 'xml.pt'), 'w') as xml:
+      ...   _ = xml.write('''<?xml version="1.0" encoding="utf-8"?>
       ... <rss version="2.0"
       ...     i18n:domain="xml"
       ...     xmlns:i18n="http://xml.zope.org/namespaces/i18n"
@@ -532,15 +559,13 @@ def tal_strings(dir,
       ...  </channel>
       ... </rss>
       ... ''')
-      >>> xml.close()
       >>> extract.tal_strings(dir, domain='xml')
       {u'Link Content': [('...xml.pt', 8)]}
 
     We also provide a file with a different file ending:
 
-      >>> testpt = open(os.path.join(dir, 'test.html'), 'w')
-      >>> testpt.write('<tal:block i18n:domain="html" i18n:translate="">html</tal:block>')
-      >>> testpt.close()
+      >>> with open(os.path.join(dir, 'test.html'), 'w') as testpt:
+      ...    _ = testpt.write('<tal:block i18n:domain="html" i18n:translate="">html</tal:block>')
 
       >>> extract.tal_strings(dir, domain='html', include_default_domain=True,
       ...                     filePattern='*.html')
@@ -564,13 +589,14 @@ def tal_strings(dir,
             pass
 
     for filename in find_files(dir, filePattern, exclude=tuple(exclude)):
-        f = file(filename,'rb')
-        start = f.read(6)
-        f.close()
-        if start.startswith('<?xml'):
+        with open(filename,'rb') as f:
+            start = f.read(6)
+
+        if start.startswith(b'<?xml'):
             parserFactory = TALParser
         else:
             parserFactory = HTMLTALParser
+
         try:
             engine.file = filename
             p = parserFactory()
@@ -578,12 +604,12 @@ def tal_strings(dir,
             program, macros = p.getCode()
             POTALInterpreter(program, macros, engine, stream=Devnull(),
                              metal=False)()
-        except: # Hee hee, I love bare excepts!
-            print 'There was an error processing', filename
+        except: # Hee hee, I love bare excepts! pragma: no cover
+            print('There was an error processing', filename)
             traceback.print_exc()
 
     # See whether anything in the domain was found
-    if not engine.catalog.has_key(domain):
+    if domain not in engine.catalog:
         return {}
     # We do not want column numbers.
     catalog = engine.catalog[domain].copy()
@@ -591,11 +617,11 @@ def tal_strings(dir,
     # Include these strings; yes or no?
     if include_default_domain:
         defaultCatalog = engine.catalog.get('default')
-        if defaultCatalog == None:
+        if defaultCatalog is None:
             engine.catalog['default'] = {}
         catalog.update(engine.catalog['default'])
-    for msgid, locations in catalog.items():
-        catalog[msgid] = map(lambda l: (l[0], l[1][0]), locations)
+    for msgid, locations in list(catalog.items()):
+        catalog[msgid] = [(l[0], l[1][0]) for l in locations]
     return catalog
 
 USAGE = """Program to extract internationalization markup from Python Code,
@@ -635,9 +661,9 @@ Options:
 
 def usage(code, msg=''):
     # Python 2.1 required
-    print >> sys.stderr, USAGE
+    print(USAGE, file=sys.stderr)
     if msg:
-        print >> sys.stderr, msg
+        print(msg, file=sys.stderr)
     sys.exit(code)
 
 def normalize_path(path):
@@ -668,7 +694,7 @@ def strip_base_dir(filename, base_dir):
     return filename
 
 def main(argv=None):
-    if argv is None:
+    if argv is None: # pragma: no cover
         argv = sys.argv[1:]
 
     try:
@@ -676,7 +702,7 @@ def main(argv=None):
             argv,
             'hd:s:i:p:o:x:',
             ['help', 'domain=', 'site_zcml=', 'path=', 'python-only'])
-    except getopt.error, msg:
+    except getopt.error as msg: # pragma: no cover
         usage(1, msg)
 
     domain = 'zope'
@@ -721,14 +747,14 @@ def main(argv=None):
     src_start = path.rfind('src')
     base_dir = path[:src_start]
 
-    output_file = domain+'.pot'
+    output_file = domain + '.pot'
     if output_dir:
         output_dir = os.path.join(path, output_dir)
         if not os.path.exists(output_dir):
             os.mkdir(output_dir)
         output_file = os.path.join(output_dir, output_file)
 
-    print "base path: %r\n" \
+    print("base path: %r\n" \
           "search path: %s\n" \
           "'site.zcml' location: %s\n" \
           "exclude dirs: %r\n" \
@@ -737,7 +763,7 @@ def main(argv=None):
           "output file: %r\n" \
           "Python only: %r" \
           % (base_dir, path, site_zcml, exclude_dirs, domain,
-             include_default_domain, output_file, python_only)
+             include_default_domain, output_file, python_only))
 
     maker = POTMaker(output_file, path)
     maker.add(py_strings(path, domain, exclude=exclude_dirs), base_dir)

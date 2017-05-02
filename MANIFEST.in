@@ -1,10 +1,16 @@
 include *.py
 include *.txt
+include *.rst
 include buildout.cfg
+include .coveragerc
+include .travis.yml
+include tox.ini
+
 recursive-include src *.po
 recursive-include src *.mo
 recursive-include src *.pot
 recursive-include src *.txt
+recursive-include src *.rst
 recursive-include src *.zcml
 recursive-include testproj *.pt
 recursive-include testproj *.py

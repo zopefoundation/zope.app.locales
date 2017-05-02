@@ -22,20 +22,21 @@ from setuptools import setup, find_packages
 
 
 def read(*rnames):
-    return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
+    with open(os.path.join(os.path.dirname(__file__), *rnames)) as f:
+        return f.read()
 
 
 setup(name='zope.app.locales',
-      version='3.7.6.dev0',
+      version='4.0.0.dev0',
       author='Zope Corporation and Contributors',
       author_email='zope-dev@zope.org',
       description='Zope locale extraction and management utilities',
       long_description='\n\n'.join([
-          read('README.txt'),
+          read('README.rst'),
           'Detailed Documentation\n'
           '----------------------',
-          read('src', 'zope', 'app', 'locales', 'TRANSLATE.txt'),
-          read('CHANGES.txt'),
+          read('src', 'zope', 'app', 'locales', 'TRANSLATE.rst'),
+          read('CHANGES.rst'),
       ]),
       keywords="zope3 i18n l10n translation gettext",
       classifiers=[
@@ -46,29 +47,34 @@ setup(name='zope.app.locales',
           'Programming Language :: Python',
           'Programming Language :: Python :: 2',
           'Programming Language :: Python :: 2.7',
-          'Programming Language :: Python :: 2 :: Only',
-          'Programming Language :: Python :: Implementation',
+          'Programming Language :: Python :: 3',
+          'Programming Language :: Python :: 3.5',
+          'Programming Language :: Python :: 3.6',
           'Programming Language :: Python :: Implementation :: CPython',
+          'Programming Language :: Python :: Implementation :: PyPy',
           'Natural Language :: English',
           'Operating System :: OS Independent',
           'Topic :: Internet :: WWW/HTTP',
           'Topic :: Software Development :: Internationalization',
-          'Framework :: Zope3'],
+          'Framework :: Zope3',
+      ],
       url='http://pypi.python.org/pypi/zope.app.locales',
       license='ZPL 2.1',
       packages=find_packages('src'),
       package_dir={'': 'src'},
       namespace_packages=['zope', 'zope.app'],
-      install_requires=['setuptools',
-                        'zope.i18nmessageid',
-                        'zope.interface',
-                        ],
+      install_requires=[
+          'setuptools',
+          'zope.i18nmessageid >= 4.1.0',
+          'zope.interface',
+      ],
       extras_require=dict(
           test=[
               'zope.i18n',
               'zope.security',
               'zope.tal',
               'zope.testing',
+              'zope.testrunner',
           ],
           zcml=[
               'zope.i18n',
@@ -84,4 +90,4 @@ setup(name='zope.app.locales',
       [console_scripts]
       i18nextract=zope.app.locales.extract:main [extract]
       """
-      )
+)

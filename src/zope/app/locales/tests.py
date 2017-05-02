@@ -14,6 +14,7 @@
 """Tests for the message string extraction tool."""
 __docformat__ = 'restructuredtext'
 
+import contextlib
 import doctest
 import os
 import shutil
@@ -39,21 +40,18 @@ class TestIsUnicodeInAllCatalog(unittest.TestCase):
                         mcatalog = GettextMessageCatalog(lang, 'zope',
                                            os.path.join(lc_path, f))
                         catalog = mcatalog._catalog
-                        self.failUnless(catalog._charset,
-            u"""Charset value for the Message catalog is missing.
-                The language is %s (zope.po).
-                Value of the message catalog should be in unicode""" % (lang,)
+                        self.assertTrue(catalog._charset,
+                                        u"""Charset value for the Message catalog is missing.
+                                        The language is %s (zope.po).
+                                        Value of the message catalog should be in unicode""" % (lang,)
                                         )
 
 
 class ZCMLTest(unittest.TestCase):
 
     def test_configure_zcml_should_be_loadable(self):
-        try:
-            zope.configuration.xmlconfig.XMLConfig(
+        zope.configuration.xmlconfig.XMLConfig(
                 'configure.zcml', zope.app.locales)()
-        except Exception, e:
-            self.fail(e)
 
     def test_configure_should_register_n_components(self):
         gsm = zope.component.getGlobalSiteManager()
@@ -81,7 +79,9 @@ class ZCMLTest(unittest.TestCase):
                 />
             </configure>
         """
-        dirname = tempfile.mkdtemp()
+        dirname = tempfile.mkdtemp(prefix='zope-app-locales-tests-')
+        self.addCleanup(shutil.rmtree, dirname)
+
         fn = os.path.join(dirname, 'configure.zcml')
         with open(fn, 'wt') as zcmlfile:
             zcmlfile.write(zcml)
@@ -91,7 +91,6 @@ class ZCMLTest(unittest.TestCase):
         self.assertEqual(sorted(strings.keys()),
                          [u'Test Permission',
                           u'This test permission is defined in ZCML'])
-        shutil.rmtree(dirname)
 
 
 def doctest_POTEntry_sort_order():
@@ -203,10 +202,10 @@ def doctest_POTMaker_write():
 
         >>> f = open(path)
         >>> pot = f.read()
-        >>> print pot
+        >>> print(pot)
         ##############################################################################
         #
-        # Copyright (c) 2003-2004 Zope Foundation and Contributors.
+        # Copyright (c) 2003-2017 Zope Foundation and Contributors.
         # All Rights Reserved.
         #
         # This software is subject to the provisions of the Zope Public License,
@@ -246,16 +245,156 @@ def doctest_POTMaker_write():
     """
 
 
+class MainTestMixin(object):
+
+    main = None
+
+    @contextlib.contextmanager
+    def patched_sys(self, exit_code=None):
+        import sys
+        try:
+            from cStringIO import StringIO
+        except ImportError:
+            from io import StringIO
+
+        _exit = sys.exit
+        stderr = sys.stderr
+        stdout = sys.stdout
+        try:
+            def sys_exit(code):
+                self.assertEqual(exit_code, code)
+                raise SystemExit()
+            sys.exit = sys_exit
+            err = sys.stderr = StringIO()
+            out = sys.stdout = StringIO()
+            if exit_code is not None:
+                with self.assertRaises(SystemExit):
+                    yield out, err
+            else:
+                yield out, err
+        finally:
+            sys.exit = _exit
+            sys.stderr = stderr
+            sys.stdout = stdout
+
+    def run_patched(self, argv, exit_code=None):
+        with self.patched_sys(exit_code) as (out, err):
+            self.main(argv)
+        return out, err
+
+    def test_main_help(self):
+        self.run_patched(['-h'], 0)
+
+class TestExtract(MainTestMixin,
+                  unittest.TestCase):
+
+    def main(self, argv):
+        from zope.app.locales.extract import main
+        main(argv)
+
+
+    def test_main_extract(self):
+        _out, err = self.run_patched([], 1)
+        self.assertIn("the module search path", err.getvalue())
+
+        _out, err = self.run_patched(['-p', os.path.dirname(__file__)], 1)
+        self.assertIn('location of the root ZCML file', err.getvalue())
+
+        _out, err = self.run_patched(['-p', os.path.dirname(__file__),
+                                      '-s', 'no such file'], 1)
+        self.assertIn('does not exist', err.getvalue())
+
+        temp = tempfile.mkdtemp(prefix='zope-app-locales-tests-')
+        self.addCleanup(shutil.rmtree, temp)
+
+        # An object that can look like the usual i18n
+        # marker, but we'll do different things with it for coverage
+        # to be sure they're handled
+        class X(object):
+            def __add__(self, other):
+                return self
+
+        _ = X()
+        _ = _ + _
+
+        out, err = self.run_patched(['-p', os.path.dirname(__file__),
+                                     '-s', os.path.join(os.path.dirname(__file__), 'configure.zcml'),
+                                     '-o', temp],
+                                    )
+        self.assertIn('base path:', out.getvalue())
+
+        with open(os.path.join(temp, 'zope.pot'), 'r') as f:
+            pot_data = f.read()
+
+        self.assertIn('Project-Id-Version: Unknown', pot_data)
+
+
+    def test_py_strings_verify_domain(self):
+        from zope.app.locales.extract import py_strings
+        from zope.app.locales.extract import _import_chickens
+
+        cat = py_strings(os.path.dirname(__file__), verify_domain=True)
+        self.assertEqual({}, cat)
+
+        # Now with a fake MessageFactory with no domain
+        tests = __import__('tests', *_import_chickens)
+        assert not hasattr(tests, '_')
+
+        class MessageFactory(object):
+            pass
+
+        try:
+            tests._ = MessageFactory
+            with self.patched_sys() as (_out, err):
+                cat = py_strings(os.path.dirname(__file__), verify_domain=True)
+            self.assertEqual({}, cat)
+            self.assertIn("Could not figure out the i18n domain", err.getvalue())
+
+            # Now with the wrong domain
+            MessageFactory._domain = 'notthedomain'
+            with self.patched_sys() as (out, err):
+                cat = py_strings(os.path.dirname(__file__), verify_domain=True)
+            self.assertEqual({}, cat)
+            self.assertEqual('', out.getvalue())
+            self.assertEqual('', err.getvalue())
+        finally:
+            del tests._
+
+class TestPygettext(MainTestMixin,
+                    unittest.TestCase):
+
+    def main(self, argv):
+        from zope.app.locales.pygettext import main
+        main(argv)
+
+    def test_extract(self):
+        me = __file__
+        if me.endswith((".pyc", ".pyo")):
+            me = me[:-1]
+        out, _err = self.run_patched(['-d', 'TESTDOMAIN',
+                                      '-v', '-a', '-D', '-o', '-', me])
+        self.assertIn('POT-Creation-Date', out.getvalue())
+
+
+from zope.testing import renormalizing
+import re
+checker = renormalizing.RENormalizing([
+    (re.compile(r"b'([^']*)'"), r"'\1'"),
+    (re.compile(r"u'([^']*)'"), r"'\1'"),
+])
+
 def test_suite():
     return unittest.TestSuite((
         doctest.DocTestSuite(
-            optionflags=doctest.NORMALIZE_WHITESPACE|
-                        doctest.ELLIPSIS|
-                        doctest.REPORT_NDIFF,),
-        doctest.DocTestSuite('zope.app.locales.extract',
-            optionflags=doctest.NORMALIZE_WHITESPACE|
-                        doctest.ELLIPSIS|
-                        doctest.REPORT_NDIFF,),
-        unittest.makeSuite(TestIsUnicodeInAllCatalog),
-        unittest.makeSuite(ZCMLTest),
-        ))
+            optionflags=(doctest.NORMALIZE_WHITESPACE
+                         | doctest.ELLIPSIS
+                         | doctest.REPORT_NDIFF),
+            checker=checker),
+        doctest.DocTestSuite(
+            'zope.app.locales.extract',
+            optionflags=(doctest.NORMALIZE_WHITESPACE
+                         | doctest.ELLIPSIS
+                         | doctest.REPORT_NDIFF),
+            checker=checker),
+        unittest.defaultTestLoader.loadTestsFromName(__name__),
+    ))
