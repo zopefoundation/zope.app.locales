@@ -5,7 +5,7 @@ CHANGES
 4.0.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- The *.mo translation files have been recompiled
 
 
 4.0.0 (2017-05-02)
