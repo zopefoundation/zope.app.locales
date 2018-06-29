@@ -2,7 +2,7 @@
 CHANGES
 =======
 
-4.0.1 (unreleased)
+4.0.1 (2018-06-29)
 ------------------
 
 - Recompile the `*.mo` translation files.
