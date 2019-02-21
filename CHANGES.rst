@@ -5,7 +5,7 @@ CHANGES
 4.1 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Flake8 the code.
 
 
 4.0.1 (2018-06-29)

@@ -89,5 +89,4 @@ setup(name='zope.app.locales',
       entry_points="""
       [console_scripts]
       i18nextract=zope.app.locales.extract:main [extract]
-      """
-)
+      """)
