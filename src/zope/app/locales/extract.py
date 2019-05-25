@@ -203,8 +203,7 @@ class POTEntry(object):
 
 @implementer(IPOTMaker)
 class POTMaker(object):
-    """This class inserts sets of strings into a POT file.
-    """
+    """This class inserts sets of strings into a POT file."""
 
     def __init__(self, output_fn, path):
         self._output_filename = output_fn
@@ -506,8 +505,7 @@ def py_strings(dir, domain="zope", exclude=(), verify_domain=False):
 
 
 def zcml_strings(dir, domain="zope", site_zcml=None):
-    """Retrieve all ZCML messages from `dir` that are in the `domain`.
-    """
+    """Retrieve all ZCML messages from `dir` that are in the `domain`."""
     from zope.configuration import xmlconfig, config
 
     # Load server-independent site config
@@ -669,10 +667,9 @@ Options:
 
 
 def usage(code, msg=''):
-    # Python 2.1 required
-    print(USAGE, file=sys.stderr)
-    if msg:
-        print(msg, file=sys.stderr)
+    if not msg:
+        msg = USAGE
+    print(msg, file=sys.stderr)
     sys.exit(code)
 
 
@@ -691,13 +688,13 @@ def normalize_path(path):
 def strip_base_dir(filename, base_dir):
     """Strip base directory from filename if it starts there.
 
-        >>> strip_base_dir('/path/to/base/relpath/to/file',
-        ...                '/path/to/base/')
-        'relpath/to/file'
+    >>> strip_base_dir('/path/to/base/relpath/to/file',
+    ...                '/path/to/base/')
+    'relpath/to/file'
 
-        >>> strip_base_dir('/path/to/somewhere/else/relpath/to/file',
-        ...                '/path/to/base/')
-        '/path/to/somewhere/else/relpath/to/file'
+    >>> strip_base_dir('/path/to/somewhere/else/relpath/to/file',
+    ...                '/path/to/base/')
+    '/path/to/somewhere/else/relpath/to/file'
 
     """
     if filename.startswith(base_dir):
