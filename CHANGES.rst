@@ -7,6 +7,8 @@ CHANGES
 
 - Flake8 the code.
 
+- Add support for Python 3.7, 3.8a4 and PyPy3.
+
 
 4.0.1 (2018-06-29)
 ------------------

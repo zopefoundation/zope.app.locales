@@ -1,10 +1,15 @@
 language: python
-sudo: false
+dist: xenial
+
 python:
   - 2.7
   - 3.5
   - 3.6
+  - 3.7
+  - 3.8-dev
   - pypy
+  - pypy3
+
 matrix:
   include:
     - python: 3.6
@@ -12,11 +17,13 @@ matrix:
       install:  pip install -U flake8
       script: flake8 --doctests src setup.py
       after_success:
+
 script:
   - coverage run -m zope.testrunner --test-path=src  --auto-color --auto-progress
 
 after_success:
   - coveralls
+
 notifications:
   email: false
 
@@ -24,7 +31,6 @@ install:
   - pip install -U pip setuptools
   - pip install -U coveralls coverage
   - pip install -U -e ".[test,zcml,extract]"
-
 
 cache: pip
 
