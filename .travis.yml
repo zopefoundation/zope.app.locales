@@ -15,7 +15,7 @@ matrix:
     - python: 3.6
       name: "Flake8"
       install:  pip install -U flake8
-      script: flake8 --doctests src setup.py
+      script: flake8 --doctests src testproj setup.py
       after_success:
 
 script:
