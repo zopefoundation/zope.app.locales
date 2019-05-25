@@ -188,18 +188,14 @@ class POTEntry(object):
         file.write(b'\n')
 
     def __eq__(self, other):
-        try:
-            return (self.locations == other.locations
-                    and self.msgid == other.msgid)
-        except AttributeError:  # pragma: no cover
-            return NotImplemented
+        if not isinstance(other, POTEntry):
+            return NotImplemented  # pragma: no cover
+        return self.locations == other.locations and self.msgid == other.msgid
 
     def __lt__(self, other):
-        try:
-            return (
-                (self.locations, self.msgid) < (other.locations, other.msgid))
-        except AttributeError:  # pragma: no cover
-            return NotImplemented
+        if not isinstance(other, POTEntry):
+            return NotImplemented  # pragma: no cover
+        return (self.locations, self.msgid) < (other.locations, other.msgid)
 
     def __repr__(self):
         return '<POTEntry: %r>' % self.msgid
@@ -237,11 +233,12 @@ class POTMaker(object):
 
     def write(self):
         with open(self._output_filename, 'wb') as file:
-            file.write((pot_header % {
+            formatted_header = pot_header % {
                 'time': time.ctime(),
                 'version': self._getProductVersion(),
                 'charset': DEFAULT_CHARSET,
-                'encoding': DEFAULT_ENCODING}).encode(DEFAULT_CHARSET))
+                'encoding': DEFAULT_ENCODING}
+            file.write(formatted_header.encode(DEFAULT_CHARSET))
 
             # Sort the catalog entries by filename
             catalog = self.catalog.values()
@@ -470,7 +467,8 @@ def py_strings(dir, domain="zope", exclude=(), verify_domain=False):
     eater = TokenEater()
     make_escapes(0)
     filenames = find_files(
-        dir, '*.py', exclude=('extract.py', 'pygettext.py') + tuple(exclude))
+        dir, '*.py', exclude=('extract.py', 'pygettext.py') + tuple(exclude)
+    )
     for filename in filenames:
         if verify_domain:
             module_name = module_from_filename(filename)
@@ -534,15 +532,19 @@ def tal_strings(dir,
 
     Let's create a page template in the i18n domain ``test``:
       >>> with open(os.path.join(dir, 'test.pt'), 'w') as testpt:
-      ...    _ = testpt.write('<tal:block i18n:domain="test" i18n:translate="">test</tal:block>')
+      ...    _ = testpt.write(
+      ...         '<tal:block i18n:domain="test"'
+      ...         ' i18n:translate="">test</tal:block>')
 
     And now one in no domain:
       >>> with open(os.path.join(dir, 'no.pt'), 'w') as nopt:
-      ...    _ = nopt.write('<tal:block i18n:translate="">no domain</tal:block>')
+      ...    _ = nopt.write(
+      ...         '<tal:block i18n:translate="">no domain</tal:block>')
 
     Now let's find the strings for the domain ``test``:
 
-      >>> strs = extract.tal_strings(dir, domain='test', include_default_domain=True)
+      >>> strs = extract.tal_strings(
+      ...     dir, domain='test', include_default_domain=True)
       >>> len(strs)
       2
       >>> strs[u'test']
@@ -569,7 +571,9 @@ def tal_strings(dir,
     We also provide a file with a different file ending:
 
       >>> with open(os.path.join(dir, 'test.html'), 'w') as testpt:
-      ...    _ = testpt.write('<tal:block i18n:domain="html" i18n:translate="">html</tal:block>')
+      ...    _ = testpt.write(
+      ...         '<tal:block i18n:domain="html"'
+      ...         ' i18n:translate="">html</tal:block>')
 
       >>> extract.tal_strings(dir, domain='html', include_default_domain=True,
       ...                     filePattern='*.html')
@@ -579,8 +583,7 @@ def tal_strings(dir,
 
       >>> import shutil
       >>> shutil.rmtree(dir)
-    """  # noqa: E501
-
+    """
     # We import zope.tal.talgettext here because we can't rely on the
     # right sys path until app_dir has run
     from zope.tal.talgettext import POEngine, POTALInterpreter
