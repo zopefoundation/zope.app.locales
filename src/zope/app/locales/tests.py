@@ -12,11 +12,11 @@
 #
 ##############################################################################
 """Tests for the message string extraction tool."""
-__docformat__ = 'restructuredtext'
-
+from zope.testing import renormalizing
 import contextlib
 import doctest
 import os
+import re
 import shutil
 import tempfile
 import unittest
@@ -37,21 +37,22 @@ class TestIsUnicodeInAllCatalog(unittest.TestCase):
                 files = os.listdir(lc_path)
                 for f in files:
                     if f.endswith('.mo'):
-                        mcatalog = GettextMessageCatalog(lang, 'zope',
-                                           os.path.join(lc_path, f))
+                        mcatalog = GettextMessageCatalog(
+                            lang, 'zope', os.path.join(lc_path, f))
                         catalog = mcatalog._catalog
-                        self.assertTrue(catalog._charset,
-                                        u"""Charset value for the Message catalog is missing.
-                                        The language is %s (zope.po).
-                                        Value of the message catalog should be in unicode""" % (lang,)
-                                        )
+                        self.assertTrue(
+                            catalog._charset,
+                            u"Charset value for the Message catalog is"
+                            u" missing. The language is %s (zope.po). Value of"
+                            u" the message catalog should be in unicode""" % (
+                                lang,))
 
 
 class ZCMLTest(unittest.TestCase):
 
     def test_configure_zcml_should_be_loadable(self):
         zope.configuration.xmlconfig.XMLConfig(
-                'configure.zcml', zope.app.locales)()
+            'configure.zcml', zope.app.locales)()
 
     def test_configure_should_register_n_components(self):
         gsm = zope.component.getGlobalSiteManager()
@@ -86,8 +87,8 @@ class ZCMLTest(unittest.TestCase):
         with open(fn, 'wt') as zcmlfile:
             zcmlfile.write(zcml)
 
-        strings = zope.app.locales.extract.zcml_strings('unused', 'testdomain',
-                                                       site_zcml=fn)
+        strings = zope.app.locales.extract.zcml_strings(
+            'unused', 'testdomain', site_zcml=fn)
         self.assertEqual(sorted(strings.keys()),
                          [u'Test Permission',
                           u'This test permission is defined in ZCML'])
@@ -242,7 +243,7 @@ def doctest_POTMaker_write():
         >>> f.close()
         >>> os.remove(path)
 
-    """
+    """  # noqa: E501
 
 
 class MainTestMixin(object):
@@ -285,13 +286,13 @@ class MainTestMixin(object):
     def test_main_help(self):
         self.run_patched(['-h'], 0)
 
+
 class TestExtract(MainTestMixin,
                   unittest.TestCase):
 
     def main(self, argv):
         from zope.app.locales.extract import main
         main(argv)
-
 
     def test_main_extract(self):
         _out, err = self.run_patched([], 1)
@@ -317,17 +318,17 @@ class TestExtract(MainTestMixin,
         _ = X()
         _ = _ + _
 
-        out, err = self.run_patched(['-p', os.path.dirname(__file__),
-                                     '-s', os.path.join(os.path.dirname(__file__), 'configure.zcml'),
-                                     '-o', temp],
-                                    )
+        out, err = self.run_patched([
+            '-p', os.path.dirname(__file__),
+            '-s', os.path.join(os.path.dirname(__file__), 'configure.zcml'),
+            '-o', temp],
+        )
         self.assertIn('base path:', out.getvalue())
 
         with open(os.path.join(temp, 'zope.pot'), 'r') as f:
             pot_data = f.read()
 
         self.assertIn('Project-Id-Version: Unknown', pot_data)
-
 
     def test_py_strings_verify_domain(self):
         from zope.app.locales.extract import py_strings
@@ -348,7 +349,8 @@ class TestExtract(MainTestMixin,
             with self.patched_sys() as (_out, err):
                 cat = py_strings(os.path.dirname(__file__), verify_domain=True)
             self.assertEqual({}, cat)
-            self.assertIn("Could not figure out the i18n domain", err.getvalue())
+            self.assertIn(
+                "Could not figure out the i18n domain", err.getvalue())
 
             # Now with the wrong domain
             MessageFactory._domain = 'notthedomain'
@@ -359,6 +361,7 @@ class TestExtract(MainTestMixin,
             self.assertEqual('', err.getvalue())
         finally:
             del tests._
+
 
 class TestPygettext(MainTestMixin,
                     unittest.TestCase):
@@ -376,12 +379,11 @@ class TestPygettext(MainTestMixin,
         self.assertIn('POT-Creation-Date', out.getvalue())
 
 
-from zope.testing import renormalizing
-import re
 checker = renormalizing.RENormalizing([
     (re.compile(r"b'([^']*)'"), r"'\1'"),
     (re.compile(r"u'([^']*)'"), r"'\1'"),
 ])
+
 
 def test_suite():
     return unittest.TestSuite((
