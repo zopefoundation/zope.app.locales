@@ -147,27 +147,34 @@ class POTEntry(object):
     >>> entry < entry_w_comment
     True
 
+    Each location is only stored once:
+
+    >>> entry = POTEntry('aaa')
+    >>> entry.addLocationComment('zzz', 123)
+    >>> entry.addLocationComment('zzz', 123)
+    >>> list(entry.locations)
+    [('zzz', 123)]
+
     """
 
     def __init__(self, msgid, comments=None):
         self.msgid = msgid
         self.comments = comments or ''
-        self.locations = []
+        self.locations = set()
 
     def addComment(self, comment):
         self.comments += comment + '\n'
 
     def addLocationComment(self, filename, line):
         filename = filename.replace(os.sep, '/')
-        self.locations.append((filename, line))
-        self.locations.sort()
+        self.locations.add((filename, line))
 
     def write(self, file):
         if self.comments:
             file.write(self.comments.encode(DEFAULT_CHARSET)
                        if not isinstance(self.comments, bytes)
                        else self.comments)
-        for filename, line in self.locations:
+        for filename, line in sorted(self.locations):
             file.write(b'#: %s:%d\n' % (filename.encode(DEFAULT_CHARSET),
                                         line))
         if (isinstance(self.msgid, Message) and
@@ -195,7 +202,8 @@ class POTEntry(object):
     def __lt__(self, other):
         if not isinstance(other, POTEntry):
             return NotImplemented  # pragma: no cover
-        return (self.locations, self.msgid) < (other.locations, other.msgid)
+        return ((sorted(self.locations), self.msgid)
+                < (sorted(other.locations), other.msgid))
 
     def __repr__(self):
         return '<POTEntry: %r>' % self.msgid

@@ -9,6 +9,8 @@ CHANGES
 
 - Add support for Python 3.7, 3.8a4 and PyPy3.
 
+- Prevent POT files from collecting duplicate location specifiers over time.
+
 
 4.0.1 (2018-06-29)
 ------------------

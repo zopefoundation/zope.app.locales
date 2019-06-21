@@ -148,7 +148,7 @@ def doctest_POTMaker_add():
 
     The locations have been sorted
 
-        >>> pm.catalog['msgid1'].locations
+        >>> sorted(pm.catalog['msgid1'].locations)
         [('file1.py', 3), ('file2.py', 2)]
 
     You can call add multiple times and it will merge the entries
@@ -156,7 +156,7 @@ def doctest_POTMaker_add():
         >>> pm.add({'msgid1': [('file1.zcml', 4)],
         ...         'msgid3': [('file2.zcml', 5)]})
 
-        >>> pm.catalog['msgid1'].locations
+        >>> sorted(pm.catalog['msgid1'].locations)
         [('file1.py', 3), ('file1.zcml', 4), ('file2.py', 2)]
 
     """
@@ -183,7 +183,7 @@ def doctest_POTMaker_add_strips_basedirs():
         ...                    ('file1.py', 3),
         ...                    ('notbasedir/file3.py', 5)]},
         ...        'basedir/')
-        >>> pm.catalog['msgid1'].locations
+        >>> sorted(pm.catalog['msgid1'].locations)
         [('file1.py', 3), ('file2.py', 2), ('notbasedir/file3.py', 5)]
 
     """
