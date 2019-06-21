@@ -47,10 +47,10 @@ DEFAULT_CHARSET = 'UTF-8'
 DEFAULT_ENCODING = '8bit'
 _import_chickens = {}, {}, ("*",)  # dead chickens needed by __import__
 
-pot_header = u'''\
+DEFAULT_POT_HEADER = pot_header = u'''\
 ##############################################################################
 #
-# Copyright (c) 2003-2017 Zope Foundation and Contributors.
+# Copyright (c) 2003-2019 Zope Foundation and Contributors.
 # All Rights Reserved.
 #
 # This software is subject to the provisions of the Zope Public License,
@@ -205,9 +205,14 @@ class POTEntry(object):
 class POTMaker(object):
     """This class inserts sets of strings into a POT file."""
 
-    def __init__(self, output_fn, path):
+    def __init__(self, output_fn, path, header_template=None):
         self._output_filename = output_fn
         self.path = path
+        if header_template is not None and os.path.exists(header_template):
+            with open(header_template, "r") as file:
+                self._pot_header = file.read()
+        else:
+            self._pot_header = DEFAULT_POT_HEADER
         self.catalog = {}
 
     def add(self, strings, base_dir=None):
@@ -231,6 +236,7 @@ class POTMaker(object):
         return "Unknown"
 
     def write(self):
+        pot_header = self._pot_header
         with open(self._output_filename, 'wb') as file:
             formatted_header = pot_header % {
                 'time': time.ctime(),

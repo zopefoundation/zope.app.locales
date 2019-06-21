@@ -1,0 +1,6 @@
+# (probably too) minimal example header template
+"Project-Id-Version: %(version)s\\n"
+"POT-Creation-Date: %(time)s\\n"
+"Content-Type: text/plain; charset=%(charset)s\\n"
+"Content-Transfer-Encoding: %(encoding)s\\n"
+

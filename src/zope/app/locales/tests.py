@@ -206,7 +206,7 @@ def doctest_POTMaker_write():
         >>> print(pot)
         ##############################################################################
         #
-        # Copyright (c) 2003-2017 Zope Foundation and Contributors.
+        # Copyright (c) 2003-2019 Zope Foundation and Contributors.
         # All Rights Reserved.
         #
         # This software is subject to the provisions of the Zope Public License,
@@ -244,6 +244,39 @@ def doctest_POTMaker_write():
         >>> os.remove(path)
 
     """  # noqa: E501
+
+
+def doctest_POTMaker_custom_header():
+    r"""Test for POTMaker.write
+
+        >>> from zope.app.locales.extract import POTMaker
+        >>> path = 'test.pot'
+        >>> header_template = os.path.join(
+        ...     os.path.dirname(__file__), 'fixtures', 'header_template.txt')
+        >>> pm = POTMaker(path, '', header_template)
+        >>> pm.add({'msgid2': [('file1.py', 5)]})
+        >>> from zope.app.locales.pygettext import make_escapes
+        >>> make_escapes(0)
+        >>> pm.write()
+
+        >>> f = open(path)
+        >>> pot = f.read()
+        >>> print(pot)
+        # (probably too) minimal example header template
+        "Project-Id-Version: Unknown\\n"
+        "POT-Creation-Date: ...\n"
+        "Content-Type: text/plain; charset=UTF-8\\n"
+        "Content-Transfer-Encoding: 8bit\\n"
+        <BLANKLINE>
+        #: file1.py:5
+        msgid "msgid2"
+        msgstr ""
+        <BLANKLINE>
+        <BLANKLINE>
+        >>> f.close()
+        >>> os.remove(path)
+
+    """
 
 
 class MainTestMixin(object):

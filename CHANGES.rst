@@ -7,7 +7,9 @@ CHANGES
 
 - Flake8 the code.
 
-- Add support for Python 3.7, 3.8a4 and PyPy3.
+- Add support for Python 3.7, 3.8b1 and PyPy3.
+
+- Port usage of custom POT file header template here from `z3c.recipe.i18n`.
 
 
 4.0.1 (2018-06-29)
