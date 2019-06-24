@@ -193,7 +193,8 @@ def doctest_POTMaker_write():
     r"""Test for POTMaker.write
 
         >>> from zope.app.locales.extract import POTMaker
-        >>> path = 'test.pot'
+        >>> tmpdir = tempfile.mkdtemp(prefix='zope.app.locales-test-')
+        >>> path = os.path.join(tmpdir, 'test.pot')
         >>> pm = POTMaker(path, '')
         >>> pm.add({'msgid1': [('file2.py', 2), ('file1.py', 3)],
         ...         'msgid2': [('file1.py', 5)]})
@@ -201,12 +202,12 @@ def doctest_POTMaker_write():
         >>> make_escapes(0)
         >>> pm.write()
 
-        >>> f = open(path)
-        >>> pot = f.read()
-        >>> print(pot)
+        >>> with open(path) as f:
+        ...     pot = f.read()
+        ...     print(pot)
         ##############################################################################
         #
-        # Copyright (c) 2003-2017 Zope Foundation and Contributors.
+        # Copyright (c) 2003-2019 Zope Foundation and Contributors.
         # All Rights Reserved.
         #
         # This software is subject to the provisions of the Zope Public License,
@@ -240,8 +241,51 @@ def doctest_POTMaker_write():
         <BLANKLINE>
         <BLANKLINE>
 
-        >>> f.close()
-        >>> os.remove(path)
+        >>> shutil.rmtree(tmpdir)
+
+    """  # noqa: E501
+
+
+def doctest_POTMaker_custom_header():
+    r"""Test for POTMaker.write
+
+        >>> from zope.app.locales.extract import POTMaker
+        >>> tmpdir = tempfile.mkdtemp(prefix='zope.app.locales-test-')
+        >>> path = os.path.join(tmpdir, 'test.pot')
+        >>> header_template = os.path.join(
+        ...     os.path.dirname(__file__), 'fixtures', 'header_template.txt')
+        >>> pm = POTMaker(path, '', header_template)
+        >>> pm.add({'msgid2': [('file1.py', 5)]})
+        >>> from zope.app.locales.pygettext import make_escapes
+        >>> make_escapes(0)
+        >>> pm.write()
+
+        >>> with open(path) as f:
+        ...     pot = f.read()
+        ...     print(pot)
+        # (probably too) minimal example header template
+        "Project-Id-Version: Unknown\\n"
+        "POT-Creation-Date: ...\n"
+        "Content-Type: text/plain; charset=UTF-8\\n"
+        "Content-Transfer-Encoding: 8bit\\n"
+        <BLANKLINE>
+        #: file1.py:5
+        msgid "msgid2"
+        msgstr ""
+        <BLANKLINE>
+        <BLANKLINE>
+        >>> shutil.rmtree(tmpdir)
+
+    """
+
+
+def doctest_POTMaker_custom_header_not_existing_file():
+    r"""Test for POTMaker.write
+
+        >>> from zope.app.locales.extract import POTMaker
+        >>> POTMaker('test.pot', '', 'header_template.txt')
+        Traceback (most recent call last):
+        ValueError: Path '/.../zope.app.locales/header_template.txt' derived from 'header_template.txt' does not exist.
 
     """  # noqa: E501
 
