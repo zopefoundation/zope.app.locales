@@ -208,9 +208,14 @@ class POTMaker(object):
     def __init__(self, output_fn, path, header_template=None):
         self._output_filename = output_fn
         self.path = path
-        if header_template is not None and os.path.exists(header_template):
-            with open(header_template, "r") as file:
-                self._pot_header = file.read()
+        if header_template is not None:
+            if os.path.exists(header_template):
+                with open(header_template, "r") as file:
+                    self._pot_header = file.read()
+            else:
+                raise ValueError(
+                    "Path {!r} derived from {!r} does not exist.".format(
+                        os.path.abspath(header_template), header_template))
         else:
             self._pot_header = DEFAULT_POT_HEADER
         self.catalog = {}
@@ -236,9 +241,8 @@ class POTMaker(object):
         return "Unknown"
 
     def write(self):
-        pot_header = self._pot_header
         with open(self._output_filename, 'wb') as file:
-            formatted_header = pot_header % {
+            formatted_header = self._pot_header % {
                 'time': time.ctime(),
                 'version': self._getProductVersion(),
                 'charset': DEFAULT_CHARSET,
