@@ -156,6 +156,14 @@ class POTEntry(object):
     >>> entry.locations
     (('zzz', 123),)
 
+    The cache is cleared on a new entry:
+
+    >>> entry = POTEntry('aaa')
+    >>> entry.addLocationComment('zzz', 123)
+    >>> entry.addLocationComment('yyy', 456)
+    >>> entry.locations
+    (('yyy', 456), ('zzz', 123))
+
     """
 
     def __init__(self, msgid, comments=None):
