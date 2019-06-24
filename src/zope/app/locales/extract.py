@@ -31,6 +31,7 @@ from zope.app.locales.pygettext import safe_eval, normalize, make_escapes
 from zope.interface import implementer
 from zope.i18nmessageid import Message
 from zope.app.locales.interfaces import IPOTEntry, IPOTMaker, ITokenEater
+import zope.cachedescriptors.property
 
 try:
     from tokenize import generate_tokens
@@ -152,29 +153,37 @@ class POTEntry(object):
     >>> entry = POTEntry('aaa')
     >>> entry.addLocationComment('zzz', 123)
     >>> entry.addLocationComment('zzz', 123)
-    >>> list(entry.locations)
-    [('zzz', 123)]
+    >>> entry.locations
+    (('zzz', 123),)
 
     """
 
     def __init__(self, msgid, comments=None):
         self.msgid = msgid
         self.comments = comments or ''
-        self.locations = set()
+        self._locations = set()
+
+    @zope.cachedescriptors.property.Lazy
+    def locations(self):
+        return tuple(sorted(self._locations))
 
     def addComment(self, comment):
         self.comments += comment + '\n'
 
     def addLocationComment(self, filename, line):
         filename = filename.replace(os.sep, '/')
-        self.locations.add((filename, line))
+        self._locations.add((filename, line))
+        try:  # purge the cache.
+            del self.locations
+        except AttributeError:
+            pass
 
     def write(self, file):
         if self.comments:
             file.write(self.comments.encode(DEFAULT_CHARSET)
                        if not isinstance(self.comments, bytes)
                        else self.comments)
-        for filename, line in sorted(self.locations):
+        for filename, line in self.locations:
             file.write(b'#: %s:%d\n' % (filename.encode(DEFAULT_CHARSET),
                                         line))
         if (isinstance(self.msgid, Message) and
@@ -202,8 +211,7 @@ class POTEntry(object):
     def __lt__(self, other):
         if not isinstance(other, POTEntry):
             return NotImplemented  # pragma: no cover
-        return ((sorted(self.locations), self.msgid)
-                < (sorted(other.locations), other.msgid))
+        return ((self.locations, self.msgid) < (other.locations, other.msgid))
 
     def __repr__(self):
         return '<POTEntry: %r>' % self.msgid
