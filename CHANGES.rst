@@ -2,7 +2,7 @@
 CHANGES
 =======
 
-4.1 (unreleased)
+4.1 (2019-06-24)
 ----------------
 
 - Flake8 the code.
