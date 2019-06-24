@@ -31,6 +31,7 @@ from zope.app.locales.pygettext import safe_eval, normalize, make_escapes
 from zope.interface import implementer
 from zope.i18nmessageid import Message
 from zope.app.locales.interfaces import IPOTEntry, IPOTMaker, ITokenEater
+import zope.cachedescriptors.property
 
 try:
     from tokenize import generate_tokens
@@ -147,20 +148,43 @@ class POTEntry(object):
     >>> entry < entry_w_comment
     True
 
+    Each location is only stored once:
+
+    >>> entry = POTEntry('aaa')
+    >>> entry.addLocationComment('zzz', 123)
+    >>> entry.addLocationComment('zzz', 123)
+    >>> entry.locations
+    (('zzz', 123),)
+
+    The cache is cleared on a new entry:
+
+    >>> entry = POTEntry('aaa')
+    >>> entry.addLocationComment('zzz', 123)
+    >>> entry.addLocationComment('yyy', 456)
+    >>> entry.locations
+    (('yyy', 456), ('zzz', 123))
+
     """
 
     def __init__(self, msgid, comments=None):
         self.msgid = msgid
         self.comments = comments or ''
-        self.locations = []
+        self._locations = set()
+
+    @zope.cachedescriptors.property.Lazy
+    def locations(self):
+        return tuple(sorted(self._locations))
 
     def addComment(self, comment):
         self.comments += comment + '\n'
 
     def addLocationComment(self, filename, line):
         filename = filename.replace(os.sep, '/')
-        self.locations.append((filename, line))
-        self.locations.sort()
+        self._locations.add((filename, line))
+        try:  # purge the cache.
+            del self.locations
+        except AttributeError:
+            pass
 
     def write(self, file):
         if self.comments:
@@ -195,7 +219,7 @@ class POTEntry(object):
     def __lt__(self, other):
         if not isinstance(other, POTEntry):
             return NotImplemented  # pragma: no cover
-        return (self.locations, self.msgid) < (other.locations, other.msgid)
+        return ((self.locations, self.msgid) < (other.locations, other.msgid))
 
     def __repr__(self):
         return '<POTEntry: %r>' % self.msgid

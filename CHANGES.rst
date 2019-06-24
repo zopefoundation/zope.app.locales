@@ -11,6 +11,8 @@ CHANGES
 
 - Port usage of custom POT file header template here from `z3c.recipe.i18n`.
 
+- Prevent POT files from collecting duplicate location specifiers over time.
+
 
 4.0.1 (2018-06-29)
 ------------------
