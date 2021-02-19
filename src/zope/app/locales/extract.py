@@ -660,7 +660,7 @@ def tal_strings(dir,
             engine.catalog['default'] = {}
         catalog.update(engine.catalog['default'])
     for msgid, locations in list(catalog.items()):
-        catalog[msgid] = [(l[0], l[1][0]) for l in locations]
+        catalog[msgid] = [(loc[0], loc[1][0]) for loc in locations]
     return catalog
 
 
