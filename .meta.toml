@@ -17,6 +17,7 @@ fail-under = 84
 [tox]
 testenv-additional = [
     "    zcml",
+    "    extract",
     ]
 
 [manifest]
