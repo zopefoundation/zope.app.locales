@@ -33,3 +33,6 @@ additional-rules = [
 ignore-bad-ideas = [
     "src/zope/app/locales/*/LC_MESSAGES/zope.mo",
     ]
+
+[flake8]
+additional-sources = "testproj"
