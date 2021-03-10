@@ -5,7 +5,7 @@ CHANGES
 4.2 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Add support for Python 3.9.
 
 
 4.1 (2019-06-24)
