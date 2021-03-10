@@ -15,9 +15,9 @@ with-sphinx-doctests = false
 fail-under = 84
 
 [tox]
-testenv-additional = [
-    "    zcml",
-    "    extract",
+testenv-additional-extras = [
+    "zcml",
+    "extract",
     ]
 
 [manifest]
