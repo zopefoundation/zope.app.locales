@@ -5,13 +5,12 @@ include *.txt
 include buildout.cfg
 include tox.ini
 
-recursive-include src *.pt
 recursive-include src *.py
+recursive-include src *.po
+recursive-include src *.pot
 recursive-include src *.rst
 recursive-include src *.txt
 recursive-include src *.zcml
-recursive-include src *.po
-recursive-include src *.pot
 recursive-include testproj *.pt
 recursive-include testproj *.py
 recursive-include testproj *.zcml

@@ -2,14 +2,14 @@
 # https://github.com/zopefoundation/meta/tree/master/config/pure-python
 [meta]
 template = "pure-python"
-commit-id = "e732696a4c688042aa570cda7225fcf33029f4ea"
+commit-id = "5b60e8235223c5c73427d4cdf66be5fb2cce3cea"
 
 [python]
-with-appveyor = false
 with-pypy = true
 with-legacy-python = true
-with-docs = false
 with-sphinx-doctests = false
+with-windows = false
+with-future-python = false
 
 [coverage]
 fail-under = 84
@@ -19,11 +19,15 @@ testenv-additional-extras = [
     "zcml",
     "extract",
     ]
+use-flake8 = true
 
 [manifest]
 additional-rules = [
     "recursive-include src *.po",
     "recursive-include src *.pot",
+    "recursive-include src *.rst",
+    "recursive-include src *.txt",
+    "recursive-include src *.zcml",
     "recursive-include testproj *.pt",
     "recursive-include testproj *.py",
     "recursive-include testproj *.zcml",
