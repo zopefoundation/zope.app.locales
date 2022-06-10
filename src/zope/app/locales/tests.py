@@ -12,18 +12,20 @@
 #
 ##############################################################################
 """Tests for the message string extraction tool."""
-from zope.testing import renormalizing
 import contextlib
 import doctest
 import os
 import re
-import sys
 import shutil
+import sys
 import tempfile
 import unittest
-import zope.app.locales
+
 import zope.component
 import zope.configuration.xmlconfig
+from zope.testing import renormalizing
+
+import zope.app.locales
 import zope.app.locales.extract
 
 
@@ -393,8 +395,8 @@ class TestExtract(MainTestMixin,
         self.assertIn('Project-Id-Version: Unknown', pot_data)
 
     def test_py_strings_verify_domain(self):
-        from zope.app.locales.extract import py_strings
         from zope.app.locales.extract import _import_chickens
+        from zope.app.locales.extract import py_strings
 
         cat = py_strings(os.path.dirname(__file__), verify_domain=True)
         self.assertEqual({}, cat)

@@ -17,21 +17,28 @@ and ZCML files.
 
 """
 from __future__ import print_function
-from collections import defaultdict
-import os
-import sys
+
 import fnmatch
 import functools
 import getopt
+import os
+import sys
 import time
 import tokenize
 import traceback
-from zope.app.locales.pygettext import safe_eval, normalize, make_escapes
+from collections import defaultdict
 
-from zope.interface import implementer
-from zope.i18nmessageid import Message
-from zope.app.locales.interfaces import IPOTEntry, IPOTMaker, ITokenEater
 import zope.cachedescriptors.property
+from zope.i18nmessageid import Message
+from zope.interface import implementer
+
+from zope.app.locales.interfaces import IPOTEntry
+from zope.app.locales.interfaces import IPOTMaker
+from zope.app.locales.interfaces import ITokenEater
+from zope.app.locales.pygettext import make_escapes
+from zope.app.locales.pygettext import normalize
+from zope.app.locales.pygettext import safe_eval
+
 
 try:
     from tokenize import generate_tokens
@@ -579,7 +586,8 @@ def _relative_locations(locations):
 
 def zcml_strings(dir, domain="zope", site_zcml=None):
     """Retrieve all ZCML messages from `dir` that are in the `domain`."""
-    from zope.configuration import xmlconfig, config
+    from zope.configuration import config
+    from zope.configuration import xmlconfig
 
     # Load server-independent site config
     context = config.ConfigurationMachine()
@@ -660,8 +668,9 @@ def tal_strings(dir,
     """
     # We import zope.tal.talgettext here because we can't rely on the
     # right sys path until app_dir has run
-    from zope.tal.talgettext import POEngine, POTALInterpreter
     from zope.tal.htmltalparser import HTMLTALParser
+    from zope.tal.talgettext import POEngine
+    from zope.tal.talgettext import POTALInterpreter
     from zope.tal.talparser import TALParser
     engine = POEngine()
 

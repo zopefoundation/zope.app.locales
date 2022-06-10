@@ -5,7 +5,7 @@ CHANGES
 4.2 (unreleased)
 ----------------
 
-- Add support for Python 3.9.
+- Add support for Python 3.9, 3.10.
 
 - Make path in ZCML extraction relative.
 
