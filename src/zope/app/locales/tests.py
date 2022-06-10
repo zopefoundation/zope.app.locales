@@ -17,12 +17,14 @@ import contextlib
 import doctest
 import os
 import re
+import sys
 import shutil
 import tempfile
 import unittest
 import zope.app.locales
 import zope.component
 import zope.configuration.xmlconfig
+import zope.app.locales.extract
 
 
 class TestIsUnicodeInAllCatalog(unittest.TestCase):
@@ -87,11 +89,27 @@ class ZCMLTest(unittest.TestCase):
         with open(fn, 'wt') as zcmlfile:
             zcmlfile.write(zcml)
 
+        # basepath is removed if in sys.path:
+        try:
+            sys.path.append(dirname)
+            strings = zope.app.locales.extract.zcml_strings(
+                'unused', 'testdomain', site_zcml=fn)
+        finally:
+            sys.path.remove(dirname)
+        self.assertEqual(
+            sorted(strings.items()),
+            [(u'Test Permission',
+              [('configure.zcml', 5)]),
+             (u'This test permission is defined in ZCML',
+              [('configure.zcml', 5)])])
+        # If basepath is not in sys.path it is kept, only the leading '/' is
+        # removed:
         strings = zope.app.locales.extract.zcml_strings(
             'unused', 'testdomain', site_zcml=fn)
-        self.assertEqual(sorted(strings.keys()),
-                         [u'Test Permission',
-                          u'This test permission is defined in ZCML'])
+        example_path = strings['Test Permission'][0][0]
+        self.assertTrue(
+            example_path.startswith(dirname[1:]),
+            '%r does not start with %r' % (example_path, dirname[1:]))
 
 
 def doctest_POTEntry_sort_order():

@@ -7,6 +7,8 @@ CHANGES
 
 - Add support for Python 3.9.
 
+- Make path in ZCML extraction relative.
+
 
 4.1 (2019-06-24)
 ----------------
