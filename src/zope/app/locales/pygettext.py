@@ -137,10 +137,11 @@ Options:
 If `inputfile' is -, standard input is read.
 """
 from __future__ import print_function
+
+import getopt
 import os
 import sys
 import time
-import getopt
 import tokenize
 
 
