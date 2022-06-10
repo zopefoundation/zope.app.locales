@@ -448,6 +448,46 @@ def find_files(dir, pattern, exclude=()):
     return files
 
 
+def relative_path_from_filename(filename, sys_path=None):
+    """Translate a filename into a relative path.
+
+    We are using the python path to determine what the shortest relative path
+    should be:
+
+       >>> sys_path = ["/src/project/Zope3/src/",
+       ...             "/src/project/src/schooltool",
+       ...             "/python2.4/site-packages"]
+
+       >>> relative_path_from_filename(
+       ...     "/src/project/src/schooltool/module/__init__.py",
+       ...     sys_path=sys_path)
+       'module/__init__.py'
+
+       >>> relative_path_from_filename(
+       ...     "/src/project/src/schooltool/module/file.py",
+       ...     sys_path=sys_path)
+       'module/file.py'
+
+       >>> relative_path_from_filename(
+       ...     "/src/project/Zope3/src/zope/app/locales/extract.py",
+       ...     sys_path=sys_path)
+       'zope/app/locales/extract.py'
+
+    """
+    if sys_path is None:
+        sys_path = sys.path
+
+    filename = os.path.abspath(filename)
+    common_path_lengths = [
+        len(os.path.commonprefix([filename, os.path.abspath(path)]))
+        for path in sys_path]
+    s = max(common_path_lengths) + 1
+    # a path in sys.path ends with a separator
+    if filename[s - 2] == os.path.sep:
+        s -= 1
+    return filename[s:]
+
+
 def module_from_filename(filename, sys_path=None):
     """Translate a filename into a name of a module.
 
@@ -474,21 +514,11 @@ def module_from_filename(filename, sys_path=None):
        'zope.app.locales.extract'
 
     """
-    if sys_path is None:
-        sys_path = sys.path
-
-    filename = os.path.abspath(filename)
-    common_path_lengths = [
-        len(os.path.commonprefix([filename, os.path.abspath(path)]))
-        for path in sys_path]
-    s = max(common_path_lengths) + 1
-    # a path in sys.path ends with a separator
-    if filename[s - 2] == os.path.sep:
-        s -= 1
+    filename = relative_path_from_filename(filename, sys_path)
     # remove .py ending from filenames
     # replace all path separators with a dot
     # remove the __init__ from the import path
-    return filename[s:-3].replace(os.path.sep, ".").replace(".__init__", "")
+    return filename[:-3].replace(os.path.sep, ".").replace(".__init__", "")
 
 
 def py_strings(dir, domain="zope", exclude=(), verify_domain=False):
@@ -538,6 +568,15 @@ def py_strings(dir, domain="zope", exclude=(), verify_domain=False):
     return eater.getCatalog()
 
 
+def _relative_locations(locations):
+    """Return `locations` with relative paths.
+
+    locations: list of tuples(path, lineno)
+    """
+    return [(relative_path_from_filename(path), lineno)
+            for path, lineno in locations]
+
+
 def zcml_strings(dir, domain="zope", site_zcml=None):
     """Retrieve all ZCML messages from `dir` that are in the `domain`."""
     from zope.configuration import xmlconfig, config
@@ -548,7 +587,10 @@ def zcml_strings(dir, domain="zope", site_zcml=None):
     context.provideFeature("devmode")
     context = xmlconfig.file(site_zcml, context=context, execute=False)
 
-    return context.i18n_strings.get(domain, {})
+    strings = context.i18n_strings.get(domain, {})
+    strings = {key: _relative_locations(value)
+               for key, value in strings.items()}
+    return strings
 
 
 def tal_strings(dir,
