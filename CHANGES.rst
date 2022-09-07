@@ -5,8 +5,9 @@ CHANGES
 4.3 (unreleased)
 ----------------
 
-- Nothing changed yet.
-
+- Remove ``*.mo`` files from the repository and document in the README how to
+  generate them on the fly.
+  (`#7 <https://github.com/zopefoundation/zope.app.locales/issues/7>`_)
 
 4.2 (2022-06-10)
 ----------------

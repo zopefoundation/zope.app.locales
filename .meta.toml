@@ -2,7 +2,7 @@
 # https://github.com/zopefoundation/meta/tree/master/config/pure-python
 [meta]
 template = "pure-python"
-commit-id = "1f787260c4188a0db7e5194765e9684ac716b914"
+commit-id = "d04a5952b074d2a06a3b7dd7be1594a4fdf4c4f1"
 
 [python]
 with-pypy = true
@@ -20,6 +20,9 @@ testenv-additional-extras = [
     "extract",
     ]
 use-flake8 = true
+testenv-setenv = [
+    "zope_i18n_compile_mo_files=True",
+    ]
 
 [manifest]
 additional-rules = [
@@ -31,11 +34,6 @@ additional-rules = [
     "recursive-include testproj *.pt",
     "recursive-include testproj *.py",
     "recursive-include testproj *.zcml",
-    ]
-
-[check-manifest]
-ignore-bad-ideas = [
-    "src/zope/app/locales/*/LC_MESSAGES/zope.mo",
     ]
 
 [flake8]
