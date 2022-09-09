@@ -26,6 +26,7 @@ testenv-setenv = [
 
 [manifest]
 additional-rules = [
+    "recursive-include src *.mo",
     "recursive-include src *.po",
     "recursive-include src *.pot",
     "recursive-include src *.rst",

@@ -7,6 +7,7 @@ include buildout.cfg
 include tox.ini
 
 recursive-include src *.py
+recursive-include src *.mo
 recursive-include src *.po
 recursive-include src *.pot
 recursive-include src *.rst
