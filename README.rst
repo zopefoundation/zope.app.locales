@@ -12,10 +12,10 @@ template (``pot`` file).
 Usage
 =====
 
-Since version 4.2 the release no longer contains any ``*.mo`` files. This are
-the compiled translation files (``*.po``).
+Version 4.2 does not contain any ``*.mo`` files. They are the compiled
+translation files (``*.po``).
 
-To generate and update ``*.mo`` files on the fly set the following environment
+To generate or update ``*.mo`` files on the fly set the following environment
 variable::
 
     zope_i18n_compile_mo_files=True
