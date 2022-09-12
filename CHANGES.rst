@@ -2,7 +2,7 @@
 CHANGES
 =======
 
-4.3 (unreleased)
+4.3 (2022-09-12)
 ----------------
 
 - Remove ``*.mo`` files from the repository and document in the README how to
