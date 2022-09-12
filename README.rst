@@ -10,10 +10,10 @@ extract messages from all three and write them to a standard gettext
 template (``pot`` file).
 
 Usage
-=====
+-----
 
 Version 4.2 does not contain any ``*.mo`` files. They are the compiled
-translation files (``*.po``). (Future versions will contain them again.) 
+translation files (``*.po``). (Future versions will contain them again.)
 
 To generate or update ``*.mo`` files on the fly set the following environment
 variable::
