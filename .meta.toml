@@ -2,7 +2,7 @@
 # https://github.com/zopefoundation/meta/tree/master/config/pure-python
 [meta]
 template = "pure-python"
-commit-id = "1f787260c4188a0db7e5194765e9684ac716b914"
+commit-id = "fb567d8f229738dd2c7afa137b11b69b4ccaacfa"
 
 [python]
 with-pypy = true
@@ -20,9 +20,13 @@ testenv-additional-extras = [
     "extract",
     ]
 use-flake8 = true
+testenv-setenv = [
+    "zope_i18n_compile_mo_files=True",
+    ]
 
 [manifest]
 additional-rules = [
+    "recursive-include src *.mo",
     "recursive-include src *.po",
     "recursive-include src *.pot",
     "recursive-include src *.rst",
@@ -33,10 +37,16 @@ additional-rules = [
     "recursive-include testproj *.zcml",
     ]
 
-[check-manifest]
-ignore-bad-ideas = [
-    "src/zope/app/locales/*/LC_MESSAGES/zope.mo",
-    ]
-
 [flake8]
 additional-sources = "testproj"
+
+[zest-releaser]
+options = [
+    "prereleaser.before =",
+    "    zest.pocompile.compile.main",
+    ]
+
+[git]
+ignore = [
+    "*.mo",
+    ]

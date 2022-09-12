@@ -5,8 +5,12 @@ CHANGES
 4.3 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Remove ``*.mo`` files from the repository and document in the README how to
+  generate them on the fly.
+  (`#7 <https://github.com/zopefoundation/zope.app.locales/issues/7>`_)
 
+- Automatically create ``*.mo`` files during the release process so this
+  release will again contain ``*.mo`` files.
 
 4.2 (2022-06-10)
 ----------------
@@ -14,6 +18,8 @@ CHANGES
 - Add support for Python 3.9, 3.10.
 
 - Make path in ZCML extraction relative.
+
+- This release does not contain any ``*.mo`` files.
 
 
 4.1 (2019-06-24)
