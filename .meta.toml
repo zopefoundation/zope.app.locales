@@ -2,7 +2,7 @@
 # https://github.com/zopefoundation/meta/tree/master/config/pure-python
 [meta]
 template = "pure-python"
-commit-id = "fb567d8f229738dd2c7afa137b11b69b4ccaacfa"
+commit-id = "036e3ffe83ca0b92c0bac7ba0a68035a0a6fdbff"
 
 [python]
 with-pypy = true
@@ -42,8 +42,7 @@ additional-sources = "testproj"
 
 [zest-releaser]
 options = [
-    "prereleaser.before =",
-    "    zest.pocompile.compile.main",
+    "prereleaser.before = zest.pocompile.available",
     ]
 
 [git]
