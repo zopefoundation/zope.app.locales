@@ -46,9 +46,9 @@ class TestIsUnicodeInAllCatalog(unittest.TestCase):
                         catalog = mcatalog._catalog
                         self.assertTrue(
                             catalog._charset,
-                            u"Charset value for the Message catalog is"
-                            u" missing. The language is %s (zope.po). Value of"
-                            u" the message catalog should be in unicode""" % (
+                            "Charset value for the Message catalog is"
+                            " missing. The language is %s (zope.po). Value of"
+                            " the message catalog should be in unicode""" % (
                                 lang,))
 
 
@@ -88,7 +88,7 @@ class ZCMLTest(unittest.TestCase):
         self.addCleanup(shutil.rmtree, dirname)
 
         fn = os.path.join(dirname, 'configure.zcml')
-        with open(fn, 'wt') as zcmlfile:
+        with open(fn, 'w') as zcmlfile:
             zcmlfile.write(zcml)
 
         # basepath is removed if in sys.path:
@@ -100,9 +100,9 @@ class ZCMLTest(unittest.TestCase):
             sys.path.remove(dirname)
         self.assertEqual(
             sorted(strings.items()),
-            [(u'Test Permission',
+            [('Test Permission',
               [('configure.zcml', 5)]),
-             (u'This test permission is defined in ZCML',
+             ('This test permission is defined in ZCML',
               [('configure.zcml', 5)])])
         # If basepath is not in sys.path it is kept, only the leading '/' is
         # removed:
@@ -111,7 +111,7 @@ class ZCMLTest(unittest.TestCase):
         example_path = strings['Test Permission'][0][0]
         self.assertTrue(
             example_path.startswith(dirname[1:]),
-            '%r does not start with %r' % (example_path, dirname[1:]))
+            '{!r} does not start with {!r}'.format(example_path, dirname[1:]))
 
 
 def doctest_POTEntry_sort_order():
@@ -310,17 +310,14 @@ def doctest_POTMaker_custom_header_not_existing_file():
     """  # noqa: E501
 
 
-class MainTestMixin(object):
+class MainTestMixin:
 
     main = None
 
     @contextlib.contextmanager
     def patched_sys(self, exit_code=None):
         import sys
-        try:
-            from cStringIO import StringIO
-        except ImportError:
-            from io import StringIO
+        from io import StringIO
 
         _exit = sys.exit
         stderr = sys.stderr
@@ -375,7 +372,7 @@ class TestExtract(MainTestMixin,
         # An object that can look like the usual i18n
         # marker, but we'll do different things with it for coverage
         # to be sure they're handled
-        class X(object):
+        class X:
             def __add__(self, other):
                 return self
 
@@ -389,7 +386,7 @@ class TestExtract(MainTestMixin,
         )
         self.assertIn('base path:', out.getvalue())
 
-        with open(os.path.join(temp, 'zope.pot'), 'r') as f:
+        with open(os.path.join(temp, 'zope.pot')) as f:
             pot_data = f.read()
 
         self.assertIn('Project-Id-Version: Unknown', pot_data)
@@ -405,7 +402,7 @@ class TestExtract(MainTestMixin,
         tests = __import__('tests', *_import_chickens)
         assert not hasattr(tests, '_')
 
-        class MessageFactory(object):
+        class MessageFactory:
             pass
 
         try:

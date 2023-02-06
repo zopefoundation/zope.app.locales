@@ -136,7 +136,6 @@ Options:
 
 If `inputfile' is -, standard input is read.
 """
-from __future__ import print_function
 
 import getopt
 import os
@@ -145,20 +144,9 @@ import time
 import tokenize
 
 
-try:
-    from tokenize import generate_tokens
-except ImportError:
-    # The function was renamed in Python 3
-    from tokenize import tokenize as generate_tokens
+def _(s):
+    return s
 
-
-# for selftesting
-try:
-    import fintl
-    _ = fintl.gettext
-except ImportError:
-    def _(s):
-        return s
 
 __version__ = '1.4'
 
@@ -252,7 +240,7 @@ def normalize(s):
     return s
 
 
-class TokenEater(object):
+class TokenEater:
     def __init__(self, options):
         self.__options = options
         self.__messages = {}
@@ -409,7 +397,7 @@ def main(argv=None):
         usage(1, msg)
 
     # for holding option values
-    class Options(object):
+    class Options:
         # constants
         GNU = 1
         SOLARIS = 2
@@ -491,7 +479,7 @@ def main(argv=None):
         try:
             with open(options.excludefilename) as fp:
                 options.toexclude = fp.readlines()
-        except IOError:
+        except OSError:
             print(_(
                 "Can't read --exclude-file: %s") % options.excludefilename,
                 file=sys.stderr)
@@ -510,12 +498,12 @@ def main(argv=None):
         else:
             if options.verbose:
                 print(_('Working on %s') % filename)
-            fp = open(filename)
+            fp = open(filename, 'rb')
             closep = 1
         try:
             eater.set_filename(filename)
             try:
-                for t in generate_tokens(fp.readline):
+                for t in tokenize.tokenize(fp.readline):
                     eater(*t)
             except tokenize.TokenError as e:  # pragma: no cover
                 print('%s: %s, line %d, column %d' % (
@@ -543,4 +531,4 @@ def main(argv=None):
 if __name__ == '__main__':
     main()
     # some more test strings
-    _(u'a unicode string')
+    _('a unicode string')
