@@ -12,7 +12,7 @@
 #
 ##############################################################################
 # This package is developed by the Zope Toolkit project, documented here:
-# http://docs.zope.org/zopetoolkit
+# https://zopetoolkit.readthedocs.io/
 # When developing and releasing this package, please follow the documented
 # Zope Toolkit policies as described by this documentation.
 ##############################################################################
@@ -29,9 +29,9 @@ def read(*rnames):
 
 
 setup(name='zope.app.locales',
-      version='4.4.dev0',
+      version='5.0.dev0',
       author='Zope Corporation and Contributors',
-      author_email='zope-dev@zope.org',
+      author_email='zope-dev@zope.dev',
       description='Zope locale extraction and management utilities',
       long_description='\n\n'.join([
           read('README.rst'),
@@ -47,15 +47,12 @@ setup(name='zope.app.locales',
           'Intended Audience :: Developers',
           'License :: OSI Approved :: Zope Public License',
           'Programming Language :: Python',
-          'Programming Language :: Python :: 2',
-          'Programming Language :: Python :: 2.7',
           'Programming Language :: Python :: 3',
-          'Programming Language :: Python :: 3.5',
-          'Programming Language :: Python :: 3.6',
           'Programming Language :: Python :: 3.7',
           'Programming Language :: Python :: 3.8',
           'Programming Language :: Python :: 3.9',
           'Programming Language :: Python :: 3.10',
+          'Programming Language :: Python :: 3.11',
           'Programming Language :: Python :: Implementation :: CPython',
           'Programming Language :: Python :: Implementation :: PyPy',
           'Natural Language :: English',
@@ -64,11 +61,12 @@ setup(name='zope.app.locales',
           'Topic :: Software Development :: Internationalization',
           'Framework :: Zope :: 3',
       ],
-      url='http://pypi.python.org/pypi/zope.app.locales',
+      url='https://pypi.org/project/zope.app.locales/',
       license='ZPL 2.1',
       packages=find_packages('src'),
       package_dir={'': 'src'},
       namespace_packages=['zope', 'zope.app'],
+      python_requires='>=3.7',
       install_requires=[
           'setuptools',
           'zope.cachedescriptors',
