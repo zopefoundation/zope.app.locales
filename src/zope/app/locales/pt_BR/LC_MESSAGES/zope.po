@@ -6621,7 +6621,7 @@ msgstr "Valor inválido"
 
 #: src/zope/schema/_bootstrapinterfaces.py:64
 msgid "Constraint not satisfied"
-msgstr "Restrição não satisfeira"
+msgstr "Restrição não satisfeita"
 
 #: src/zope/schema/_bootstrapinterfaces.py:67
 msgid "Not a container"
