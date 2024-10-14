@@ -5,7 +5,8 @@ CHANGES
 5.1 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Fix one pt_BR translation.
+  (`#21 <https://github.com/zopefoundation/zope.app.locales/pull/21>`_)
 
 
 5.0 (2023-08-28)
