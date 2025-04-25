@@ -111,7 +111,7 @@ class ZCMLTest(unittest.TestCase):
         example_path = strings['Test Permission'][0][0]
         self.assertTrue(
             example_path.startswith(dirname[1:]),
-            '{!r} does not start with {!r}'.format(example_path, dirname[1:]))
+            f'{example_path!r} does not start with {dirname[1:]!r}')
 
 
 def doctest_POTEntry_sort_order():
