@@ -9,6 +9,9 @@ CHANGES
 
 - Drop support for Python 3.7, 3.8.
 
+- Fix one pt_BR translation.
+  (`#21 <https://github.com/zopefoundation/zope.app.locales/pull/21>`_)
+
 
 5.0 (2023-08-28)
 ----------------
