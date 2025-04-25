@@ -189,7 +189,7 @@ escapes = []
 
 
 def make_escapes(pass_iso8859):
-    global escapes
+    global escapes  # noqa F824 `global escapes` is unused
     if pass_iso8859:
         # Allow iso-8859 characters to pass through.  Otherwise we
         # escape any character outside the 32..126 range.
