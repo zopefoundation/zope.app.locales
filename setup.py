@@ -19,7 +19,6 @@
 """Setup for zope.app.locales package"""
 import os
 
-from setuptools import find_packages
 from setuptools import setup
 
 
@@ -63,9 +62,6 @@ setup(name='zope.app.locales',
       ],
       url='https://pypi.org/project/zope.app.locales/',
       license='ZPL-2.1',
-      packages=find_packages('src'),
-      package_dir={'': 'src'},
-      namespace_packages=['zope', 'zope.app'],
       python_requires='>=3.9',
       install_requires=[
           'setuptools',
@@ -79,7 +75,7 @@ setup(name='zope.app.locales',
               'zope.security',
               'zope.tal',
               'zope.testing',
-              'zope.testrunner',
+              'zope.testrunner >= 6.4',
           ],
           zcml=[
               'zope.i18n',
