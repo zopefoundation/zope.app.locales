@@ -29,7 +29,7 @@ def read(*rnames):
 
 
 setup(name='zope.app.locales',
-      version='5.1.dev0',
+      version='5.1',
       author='Zope Foundation and Contributors',
       author_email='zope-dev@zope.dev',
       description='Zope locale extraction and management utilities',
