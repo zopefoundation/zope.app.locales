@@ -19,7 +19,6 @@
 """Setup for zope.app.locales package"""
 import os
 
-from setuptools import find_packages
 from setuptools import setup
 
 
@@ -29,7 +28,7 @@ def read(*rnames):
 
 
 setup(name='zope.app.locales',
-      version='5.2.dev0',
+      version='6.0.dev0',
       author='Zope Foundation and Contributors',
       author_email='zope-dev@zope.dev',
       description='Zope locale extraction and management utilities',
@@ -63,9 +62,6 @@ setup(name='zope.app.locales',
       ],
       url='https://pypi.org/project/zope.app.locales/',
       license='ZPL-2.1',
-      packages=find_packages('src'),
-      package_dir={'': 'src'},
-      namespace_packages=['zope', 'zope.app'],
       python_requires='>=3.9',
       install_requires=[
           'setuptools',
@@ -79,7 +75,7 @@ setup(name='zope.app.locales',
               'zope.security',
               'zope.tal',
               'zope.testing',
-              'zope.testrunner',
+              'zope.testrunner >= 6.4',
           ],
           zcml=[
               'zope.i18n',
