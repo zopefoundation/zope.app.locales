@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the zope package.
 # Marc Rijken <marc@rijken.org>, 2005"
 # Maurits van Rees <maurits@vanrees.org>, 2008"
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: zope\n"
@@ -5438,4 +5438,3 @@ msgstr ""
 #: zope/rdb/configure.zcml:6
 msgid "zope.rdb.Use"
 msgstr ""
-

@@ -6859,4 +6859,3 @@ msgstr "Ansicht"
 #~ msgstr "Keine Änderungen zu speichern"
 #~ msgid "Changes saved"
 #~ msgstr "Änderungen gespeichert"
-
