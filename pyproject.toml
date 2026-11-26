@@ -7,6 +7,76 @@ requires = [
 ]
 build-backend = "setuptools.build_meta"
 
+
+[project]
+name = "zope.app.locales"
+version = "6.1.dev0"
+description = "Zope locale extraction and management utilities"
+license = "ZPL-2.1"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3.15",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Internationalization",
+    "Framework :: Zope :: 3",
+]
+dynamic = ["readme"]
+requires-python = ">=3.11"
+authors = [
+    {name = "Zope Foundation and contributors",email = "zope-dev@zope.dev"},
+]
+maintainers = [
+    {name = "Plone Foundation and contributors",email = "zope-dev@zope.dev"},
+]
+dependencies = [
+    "zope.cachedescriptors",
+    "zope.i18nmessageid >= 4.1.0",
+    "zope.interface",
+]
+keywords = [
+    "zope3",
+    "i18n",
+    "l10n",
+    "translation",
+    "gettext",
+]
+
+[project.optional-dependencies]
+test = [
+    "zope.i18n",
+    "zope.security",
+    "zope.tal",
+    "zope.testing",
+    "zope.testrunner >= 6.4",
+]
+zcml = [
+    "zope.i18n",
+    "zope.configuration",
+]
+extract = [
+    "zope.tal",
+]
+
+[project.urls]
+Source = "https://github.com/zopefoundation/zope.app.locales"
+Issues = "https://github.com/zopefoundation/zope.app.locales/issues"
+Changelog = "https://raw.githubusercontent.com/zopefoundation/zope.app.locales/master/CHANGES.rst"
+
+[project.scripts]
+i18nextract = "zope.app.locales.extract:main [extract]"
+
 [tool.coverage.run]
 branch = true
 source = ["zope.app.locales"]
@@ -32,3 +102,7 @@ directory = "parts/htmlcov"
 
 [tool.zest-releaser]
 "prereleaser.before" = "zest.pocompile.available"
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.rst", "src/zope/app/locales/TRANSLATE.rst", "CHANGES.rst"]}
+
