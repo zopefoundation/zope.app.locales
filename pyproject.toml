@@ -100,7 +100,7 @@ exclude_lines = [
 directory = "parts/htmlcov"
 
 [tool.zest-releaser]
-"prereleaser.before" = "zest.pocompile.available"
+"prereleaser.before" = ["zest.pocompile.available"]
 create-wheel = false
 extra-message = ""
 upload-pypi = false

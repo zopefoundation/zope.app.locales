@@ -43,7 +43,7 @@ additional-sources = "testproj"
 
 [zest-releaser]
 options = [
-    "prereleaser.before = zest.pocompile.available",
+    "prereleaser.before = [\"zest.pocompile.available\"]",
     ]
 
 [git]
