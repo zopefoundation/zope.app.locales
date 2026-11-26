@@ -31,5 +31,6 @@ parts/
 pyvenv.cfg
 share/
 testing.log
+uv.lock
 var/
 *.mo
