@@ -5812,4 +5812,3 @@ msgstr "Менеджер мини-представлений может пред
 #: src/zope/viewlet/metadirectives.py:99
 msgid "view"
 msgstr "представление"
-

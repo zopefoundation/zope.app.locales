@@ -3,8 +3,8 @@
 # Sebastien Douche <sdouche@gmail.com>, 2005, 2006.
 # Christophe Combelles <ccomb@free.fr>, 2007
 # This file is distributed under the same license as Zope itself.
-# 
-# 
+#
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: zope\n"
@@ -6772,4 +6772,3 @@ msgstr ""
 #: src/zope/viewlet/metadirectives.py:99
 msgid "view"
 msgstr "Vue"
-

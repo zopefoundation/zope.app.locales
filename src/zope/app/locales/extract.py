@@ -770,8 +770,7 @@ def strip_base_dir(filename, base_dir):
     '/path/to/somewhere/else/relpath/to/file'
 
     """
-    if filename.startswith(base_dir):
-        filename = filename[len(base_dir):]
+    filename = filename.removeprefix(base_dir)
     return filename
 
 
