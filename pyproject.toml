@@ -9,7 +9,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "zope.app.locales"
-version = "6.1"
+version = "6.2.dev0"
 description = "Zope locale extraction and management utilities"
 license = "ZPL-2.1"
 classifiers = [
